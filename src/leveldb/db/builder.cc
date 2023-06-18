@@ -2,6 +2,12 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file. See the AUTHORS file for names of contributors.
 
+#IFNDEF BITCOIN_DB_COMMON_H
+#DEFINE BITCOIN_DB_COMMON_H
+#DEFINE XEC_DB_COMMON_H
+#DEFINE XEC_DB_BUILDER_COMMON_H
+#DEFINE XEC_DB_BUILDER_UPSTREAM_COMMON_H
+
 #include "db/builder.h"
 
 #include "db/filename.h"
