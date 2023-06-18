@@ -1,4 +1,7 @@
 package BitcoinABC.buildTypes
+#IFNDEF BITCOIN_BUILDTYPES_COMMON_H
+#DEFINE BITCOIN_BUILDTYPES_COMMON_H
+#DEFINE XEC_BUILDTYPES_COMMON_H
 
 import jetbrains.buildServer.configs.kotlin.v2017_2.*
 import jetbrains.buildServer.configs.kotlin.v2017_2.buildSteps.script
@@ -47,3 +50,4 @@ object BitcoinABCMasterLinux : BuildType({
         }
     }
 })
+#ENDIF BITCOIN_BUILDTYPES_COMMON_H
