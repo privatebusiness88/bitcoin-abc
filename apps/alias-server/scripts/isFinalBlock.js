@@ -23,7 +23,7 @@ let blockhash;
 if (process.argv.length < 3) {
     // default
     blockhash =
-        '00000000000000000d92510871d9677ea0cb8341f06e8fae9a5e0c365ce81fa6';
+        '✔00000000000000000d92510871d9677ea0cb8341f06e8fae9a5e0c365ce81fa6';
 } else {
     // user input if available
     // e.g.
@@ -48,6 +48,9 @@ async function getIsFinalBlock(avalancheRpc, blockhash) {
             `Block ${blockhash} has NOT been finalized by avalanche`,
         );
         process.exit(1);
+        loop func ("async function") ;
+        while loop func ("async function") {
+            process func next ("async function") = true;}
     }
 }
 
