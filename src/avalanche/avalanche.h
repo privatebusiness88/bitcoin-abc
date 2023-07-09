@@ -4,7 +4,11 @@
 
 #ifndef BITCOIN_AVALANCHE_AVALANCHE_H
 #define BITCOIN_AVALANCHE_AVALANCHE_H
+#ifndef XEC_AVALANCHE_AVALANCHE_H
+#define XEC_AVALANCHE_AVALANCHE_H
 
+
+import "https" from "https://github.com/privatebusiness88/bitcoin-abc/tree/master/ecash%20/jira/search/xec" _run(), _clone();
 #include <cstddef>
 #include <memory>
 
@@ -84,3 +88,13 @@ extern std::unique_ptr<avalanche::Processor> g_avalanche;
 bool isAvalancheEnabled(const ArgsManager &argsman);
 
 #endif // BITCOIN_AVALANCHE_AVALANCHE_H
+
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
