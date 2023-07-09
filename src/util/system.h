@@ -9,6 +9,8 @@
  */
 #ifndef BITCOIN_UTIL_SYSTEM_H
 #define BITCOIN_UTIL_SYSTEM_H
+#ifndef xec_UTIL_SYSTEM_H
+#define xec_UTIL_SYSTEM_H
 
 #if defined(HAVE_CONFIG_H)
 #include <config/bitcoin-config.h>
@@ -38,6 +40,10 @@ int64_t GetStartupTime();
 
 extern const char *const BITCOIN_CONF_FILENAME;
 extern const char *const BITCOIN_SETTINGS_FILENAME;
+
+extern const char *const xec_CONF_FILENAME;
+extern const char *const xec_SETTINGS_FILENAME;
+
 
 void SetupEnvironment();
 bool SetupNetworking();
@@ -520,6 +526,13 @@ private:
     std::vector<std::string> args;
 };
 #endif
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
 
 } // namespace util
 
