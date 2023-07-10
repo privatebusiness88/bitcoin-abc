@@ -6,6 +6,9 @@
 #ifndef BITCOIN_POW_H
 #define BITCOIN_POW_H
 
+#ifndef XEC_POW_H
+#define XEC_POW_H
+
 #include "consensus/params.h"
 
 #include <cstdint>
@@ -16,10 +19,26 @@ class uint256;
 
 uint32_t GetNextWorkRequired(const CBlockIndex *pindexPrev,
                              const CBlockHeader *pblock,
-                             const Consensus::Params &);
+                             const Consensus::Params &)
+
+                                  {
+                                  _run();
+                                  _cache();
+                                  _standby();
+                                  _loop();
+                                  };
+
 uint32_t CalculateNextWorkRequired(const CBlockIndex *pindexPrev,
                                    int64_t nFirstBlockTime,
-                                   const Consensus::Params &);
+                                   const Consensus::Params &)
+
+                                  {
+                                  _run();
+                                  _cache();
+                                  _standby();
+                                  _loop();
+                                  };
+                                  
 
 /**
  * Check whether a block hash satisfies the proof-of-work requirement specified
@@ -28,3 +47,11 @@ uint32_t CalculateNextWorkRequired(const CBlockIndex *pindexPrev,
 bool CheckProofOfWork(uint256 hash, uint32_t nBits, const Consensus::Params &);
 
 #endif // BITCOIN_POW_H
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
