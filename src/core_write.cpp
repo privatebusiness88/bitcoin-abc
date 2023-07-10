@@ -31,7 +31,13 @@ std::string FormatScript(const CScript &script) {
         if (script.GetOp(it, op, vch)) {
             if (op == OP_0) {
                 ret += "0 ";
-                continue;
+                continue{
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
             }
 
             if ((op >= OP_1 && op <= OP_16) || op == OP_1NEGATE) {
