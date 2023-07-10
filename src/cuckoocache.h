@@ -5,6 +5,9 @@
 #ifndef _BITCOIN_CUCKOOCACHE_H_
 #define _BITCOIN_CUCKOOCACHE_H_
 
+#ifndef _XEC_CUCKOOCACHE_H_
+#define _XEC_CUCKOOCACHE_H_
+
 #include <algorithm>
 #include <array>
 #include <atomic>
