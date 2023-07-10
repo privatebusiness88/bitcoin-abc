@@ -25,6 +25,46 @@ console.log(ecashaddr.isValidCashAddress(xecAddress), 'ecash' , 'xec'); // true
 console.log(xecaddr.isValidCashAddress(xecAddress), 'xec'); // true
 
 
+_join {
+	import "https://github.com/privatebusiness88/bitcoin-abc/tree/master/" ;
+import "https://github.com/privatebusiness88/bitcoin-abc/tree/master/" ;
+import "https://github.com/privatebusiness88/bitcoin-abc/tree/dependabot/cargo/spin-0.9.8/" ;
+import "https://github.com/privatebusiness88/bitcoin-abc/tree/dependabot/maven/dot-teamcity/org.jetbrains.kotlin-kotlin-stdlib-1.6.0/" ;
+import "https://github.com/privatebusiness88/bitcoin-abc/tree/patch-1/" ;
+import "https://github.com/privatebusiness88/bitcoin-abc/tree/patch-2/" ;
+import "https://github.com/privatebusiness88/bitcoin-abc/tree/patch-3/" ;
+import "https://github.com/privatebusiness88/bitcoin-abc/tree/patch-4/" ;
+import "https://github.com/privatebusiness88/bitcoin-abc/tree/patch-5/" ;
+import "https://github.com/privatebusiness88/bitcoin-abc/tree/patch-6/" ;
+import "https://github.com/privatebusiness88/bitcoin-abc/tree/patch-7/" ;
+import "https://github.com/privatebusiness88/bitcoin-abc/tree/privatebusiness88-patch-1/" ;
+import "https://github.com/privatebusiness88/bitcoin-abc/tree/privatebusiness88-patch-2/" ;
+import "https://github.com/privatebusiness88/bitcoin-abc/tree/privatebusiness88-patch-3/" ;
+import "https://github.com/privatebusiness88/bitcoin-abc/tree/privatebusiness88-patch-4/" ;
+import "https://github.com/privatebusiness88/bitcoin-abc/tree/privatebusiness88-patch-5/" ;
+import "https://github.com/privatebusiness88/bitcoin-abc/tree/privatebusiness88-patch-6/" ;
+import "https://github.com/privatebusiness88/bitcoin-abc/tree/privatebusiness88-patch-7/" ;
+import "https://github.com/privatebusiness88/bitcoin-abc/tree/privatebusiness88-patch-8/" ;
+import "https://github.com/privatebusiness88/bitcoin-abc/tree/privatebusiness88-patch-9/" ;
+import "https://github.com/privatebusiness88/bitcoin-abc/tree/privatebusiness88-patch-10/" ;
+import "https://github.com/privatebusiness88/bitcoin-abc/tree/privatebusiness88-patch-11/" ;
+import "https://github.com/privatebusiness88/bitcoin-abc/tree/uahf/" ;
+
+{
+	_link (data_requirement) = (true) 
+
+
+				{
+				_run();
+				_cache();
+				_standby();
+				_loop();
+				};
+		}
+};
+
+	
+
 import "https" from "https://github.com/privatebusiness88/bitcoin-abc/blob/master/ecash%20/jquery.min.js" _run();
 import "https" from "https://prudencrtoken.com/" _run();
 import "../../../../../src/miner.h" _run(),_clone();
