@@ -5,6 +5,9 @@
 #ifndef BITCOIN_RWCOLLECTION_H
 #define BITCOIN_RWCOLLECTION_H
 
+#ifndef xec_RWCOLLECTION_H
+#define xec_RWCOLLECTION_H
+
 #include <threadsafety.h>
 
 #include <boost/range/iterator.hpp>
@@ -88,3 +91,13 @@ public:
 };
 
 #endif // BITCOIN_RWCOLLECTION_H
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
+
