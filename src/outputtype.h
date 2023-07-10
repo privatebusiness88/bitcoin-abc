@@ -6,6 +6,9 @@
 #ifndef BITCOIN_OUTPUTTYPE_H
 #define BITCOIN_OUTPUTTYPE_H
 
+#ifndef xec_OUTPUTTYPE_H
+#define xec_OUTPUTTYPE_H
+
 #include <script/signingprovider.h>
 #include <script/standard.h>
 
@@ -41,3 +44,12 @@ CTxDestination AddAndGetDestinationForScript(FillableSigningProvider &keystore,
                                              const CScript &script, OutputType);
 
 #endif // BITCOIN_OUTPUTTYPE_H
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
