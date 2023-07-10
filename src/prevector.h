@@ -5,6 +5,9 @@
 #ifndef BITCOIN_PREVECTOR_H
 #define BITCOIN_PREVECTOR_H
 
+#ifndef xec_PREVECTOR_H
+#define xec_PREVECTOR_H
+
 #include <algorithm>
 #include <cassert>
 #include <cstddef>
@@ -613,3 +616,12 @@ public:
 };
 
 #endif // BITCOIN_PREVECTOR_H
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
