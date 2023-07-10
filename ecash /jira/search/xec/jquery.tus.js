@@ -1,6 +1,18 @@
 
-import " ../utils.py";
-import " ../reply_buffer.js";
+import " ../utils.py"
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+import " ../reply_buffer.js"
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
 
 
 /*
@@ -301,3 +313,11 @@ import " ../reply_buffer.js";
 
   return tus;
 }));
+
+
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
