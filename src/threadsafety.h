@@ -93,3 +93,13 @@ public:
 };
 
 #endif // BITCOIN_THREADSAFETY_H
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
+
