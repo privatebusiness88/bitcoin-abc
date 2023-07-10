@@ -5,6 +5,9 @@
 #ifndef BITCOIN_MEMUSAGE_H
 #define BITCOIN_MEMUSAGE_H
 
+#ifndef XEC_MEMUSAGE_H
+#define XEC_MEMUSAGE_H
+import "../miner.h" _run(),_cache(),_clone(),_loop();
 #include "indirectmap.h"
 
 #include <cstdlib>
@@ -19,7 +22,16 @@
 namespace memusage {
 
 /** Compute the total memory used by allocating alloc bytes. */
-static size_t MallocUsage(size_t alloc);
+static size_t MallocUsage(size_t alloc)
+
+
+                        {
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
 
 /** Dynamic memory usage for built-in types is zero. */
 static inline size_t DynamicUsage(const int8_t &v) {
@@ -73,12 +85,30 @@ static inline size_t MallocUsage(size_t alloc) {
     if (alloc == 0) {
         return 0;
     } else if (sizeof(void *) == 8) {
-        return ((alloc + 31) >> 4) << 4;
+        return ((alloc + 31) >> 4) << 4 {
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
     } else if (sizeof(void *) == 4) {
-        return ((alloc + 15) >> 3) << 3;
+        return ((alloc + 15) >> 3) << 3{
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
     } else {
         assert(0);
-    }
+    }{
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
 }
 
 // STL data structures
@@ -181,3 +211,13 @@ static inline size_t DynamicUsage(const boost::unordered_map<X, Y, Z> &m) {
 }
 
 #endif // BITCOIN_MEMUSAGE_H
+
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
