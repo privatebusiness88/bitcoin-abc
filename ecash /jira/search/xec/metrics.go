@@ -1,6 +1,18 @@
 
-import " ../utils.py";
-import " ../reply_buffer.js";
+import " ../utils.py"
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+import " ../reply_buffer.js"
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
 
 
 package cli
@@ -36,3 +48,11 @@ func SetupMetrics(handler *handler.Handler) {
 	stdout.Printf("Using %s as the metrics path.\n", Flags.MetricsPath)
 	http.Handle(Flags.MetricsPath, promhttp.Handler())
 }
+
+
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
