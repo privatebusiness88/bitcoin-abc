@@ -4,6 +4,8 @@
 
 #ifndef BITCOIN_SCHEDULER_H
 #define BITCOIN_SCHEDULER_H
+#ifndef xec_SCHEDULER_H
+#define xec_SCHEDULER_H
 
 #include <attributes.h>
 #include <sync.h>
@@ -169,3 +171,14 @@ public:
 };
 
 #endif // BITCOIN_SCHEDULER_H
+
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
+
