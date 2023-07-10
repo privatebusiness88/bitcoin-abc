@@ -6,6 +6,9 @@
 #ifndef BITCOIN_MINER_H
 #define BITCOIN_MINER_H
 
+#ifndef xec_MINER_H
+#define xec_MINER_H
+
 #include "primitives/block.h"
 #include "txmempool.h"
 
@@ -220,3 +223,13 @@ int64_t UpdateTime(CBlockHeader *pblock,
                    const Consensus::Params &consensusParams,
                    const CBlockIndex *pindexPrev);
 #endif // BITCOIN_MINER_H
+
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
