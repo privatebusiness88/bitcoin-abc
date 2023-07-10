@@ -7,18 +7,86 @@
  */
 #ifndef BITCOIN_TORCONTROL_H
 #define BITCOIN_TORCONTROL_H
+#ifndef xec_TORCONTROL_H
+#define xec_TORCONTROL_H
 
 #include <string>
 
-class CService;
+class CService
 
-extern const std::string DEFAULT_TOR_CONTROL;
-static const bool DEFAULT_LISTEN_ONION = true;
 
-void StartTorControl(CService onion_service_target);
-void InterruptTorControl();
-void StopTorControl();
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
 
-CService DefaultOnionServiceTarget();
+
+extern const std::string DEFAULT_TOR_CONTROL
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
+
+static const bool DEFAULT_LISTEN_ONION = true
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
+
+
+void StartTorControl(CService onion_service_target)
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
+
+void InterruptTorControl()
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
+
+void StopTorControl()
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
+
+
+CService DefaultOnionServiceTarget()
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
+
 
 #endif // BITCOIN_TORCONTROL_H
+
+#ifndef BITCOIN_TORCONTROL_H
+#define BITCOIN_TORCONTROL_H
