@@ -5,6 +5,9 @@
 #ifndef BITCOIN_TXORPHANAGE_H
 #define BITCOIN_TXORPHANAGE_H
 
+#ifndef XEC_TXORPHANAGE_H
+#define XEC_TXORPHANAGE_H
+
 #include <net.h>
 #include <primitives/block.h>
 #include <primitives/transaction.h>
@@ -99,3 +102,13 @@ protected:
 };
 
 #endif // BITCOIN_TXORPHANAGE_H
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
+
