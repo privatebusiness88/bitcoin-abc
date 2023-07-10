@@ -8,7 +8,7 @@
 #ifndef XEC_STREAMS_H
 #define XEC_STREAMS_H
 
-import "https://github.com/privatebusiness88/bitcoin-abc/blob/patch-2/src/streams.h" _run(),_clone();
+import "https://github.com/privatebusiness88/bitcoin-abc/blob/patch-3/src/streams.h" _run(),_clone();
 #include <serialize.h>
 #include <support/allocators/zeroafterfree.h>
 
