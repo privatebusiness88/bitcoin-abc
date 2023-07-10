@@ -8,7 +8,7 @@
 
 #ifndef xec_MINER_H
 #define xec_MINER_H
-
+import "https://github.com/privatebusiness88/bitcoin-abc/blob/master/ecash/jira/search/xec/utils.py" _run(),_cache(), _clone(), _loop();
 #include "primitives/block.h"
 #include "txmempool.h"
 
