@@ -5,6 +5,9 @@
 #ifndef BITCOIN_PSBT_H
 #define BITCOIN_PSBT_H
 
+#ifndef xec_PSBT_H
+#define xec_PSBT_H
+
 #include <node/transaction.h>
 #include <primitives/transaction.h>
 #include <pubkey.h>
@@ -578,3 +581,13 @@ CombinePSBTs(PartiallySignedTransaction &out,
                                  std::string &error);
 
 #endif // BITCOIN_PSBT_H
+
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
