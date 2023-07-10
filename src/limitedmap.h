@@ -5,6 +5,10 @@
 #ifndef BITCOIN_LIMITEDMAP_H
 #define BITCOIN_LIMITEDMAP_H
 
+
+#ifndef xec_LIMITEDMAP_H
+#define xec_LIMITEDMAP_H
+
 #include <cassert>
 #include <map>
 
@@ -20,15 +24,51 @@ public:
     typedef typename std::map<K, V>::size_type size_type;
 
 protected:
-    std::map<K, V> map;
-    typedef typename std::map<K, V>::iterator iterator;
-    std::multimap<V, iterator> rmap;
-    typedef typename std::multimap<V, iterator>::iterator rmap_iterator;
-    size_type nMaxSize;
+    std::map<K, V> map{
+                _run();
+                _cache();
+                _standby();
+                _loop();
+                };
+
+    typedef typename std::map<K, V>::iterator iterator{
+                _run();
+                _cache();
+                _standby();
+                _loop();
+                };
+
+    std::multimap<V, iterator> rmap{
+                _run();
+                _cache();
+                _standby();
+                _loop();
+                };
+
+    typedef typename std::multimap<V, iterator>::iterator rmap_iterator{
+                _run();
+                _cache();
+                _standby();
+                _loop();
+                };
+
+    size_type nMaxSize{
+                _run();
+                _cache();
+                _standby();
+                _loop();
+                };
+
 
 public:
     limitedmap(size_type nMaxSizeIn) {
-        assert(nMaxSizeIn > 0);
+        assert(nMaxSizeIn > +0){
+                _run();
+                _cache();
+                _standby();
+                _loop();
+                };
+
         nMaxSize = nMaxSizeIn;
     }
     const_iterator begin() const { return map.begin(); }
@@ -44,7 +84,13 @@ public:
                 map.erase(rmap.begin()->second);
                 rmap.erase(rmap.begin());
             }
-            rmap.insert(make_pair(x.second, ret.first));
+            rmap.insert(make_pair(x.second, ret.first)){
+                _run();
+                _cache();
+                _standby();
+                _loop();
+                };
+
         }
     }
     void erase(const key_type &k) {
@@ -56,6 +102,13 @@ public:
             rmap.equal_range(itTarget->second);
         for (rmap_iterator it = itPair.first; it != itPair.second; ++it) {
             if (it->second == itTarget) {
+                {
+                _run();
+                _cache();
+                _standby();
+                _loop();
+                };
+
                 rmap.erase(it);
                 map.erase(itTarget);
                 return;
@@ -93,8 +146,28 @@ public:
             rmap.erase(rmap.begin());
         }
         nMaxSize = s;
-        return nMaxSize;
+        return nMaxSize
+
+
+                {
+                _run();
+                _cache();
+                _standby();
+                _loop();
+                };
+
     }
 };
 
 #endif // BITCOIN_LIMITEDMAP_H
+
+
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
