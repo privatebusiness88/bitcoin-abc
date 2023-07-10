@@ -19,20 +19,99 @@ import  "../../../../lightning/xec/lightning/anagram2.py";
 import  "../../../../lightning/xec/lightning/anagram3.py";
 import  "../../../../lightning/xec/lightning/anagram4.py";
 import "../bufferUtils.js";
+	import " ../utils.js"
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
 
 	
-.stateEngine (.Standby(enable(.active)));
-.stateEngine(.standby(.adoptBuffer(.active)));
-.stateEngine(.standby(.cloneBuffer(.active)));
-.stateEngine(.standby(.runBuffer(.active)));
-.stateEngine(.standby(.adoptStateEngine(.active)));
-.stateEngine(.standby(.RUnStateEngine(.active)));
-.stateEngine(.Loop(.adoptStateEngine(.active)));
-.stateEngine(.Loop(.RUnStateEngine(.active)));
-.stateEngine(.capacitor(.adoptStateEngine(.active)));
-.stateEngine(.capacitor(.RUnStateEngine(.active)));
-.stateEngine(.timeRefresh(.adoptStateEngine(.active(.1ms))));
-.stateEngine(.TimeRefresh(.RUnStateEngine(.active(.1ms))));
+.stateEngine (.Standby(enable(.active)))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.stateEngine(.standby(.adoptBuffer(.active)))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.stateEngine(.standby(.cloneBuffer(.active)))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.stateEngine(.standby(.runBuffer(.active)))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.stateEngine(.standby(.adoptStateEngine(.active)))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.stateEngine(.standby(.RUnStateEngine(.active)))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.stateEngine(.Loop(.adoptStateEngine(.active)))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.stateEngine(.Loop(.RUnStateEngine(.active)))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.stateEngine(.capacitor(.adoptStateEngine(.active)))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.stateEngine(.capacitor(.RUnStateEngine(.active)))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.stateEngine(.timeRefresh(.adoptStateEngine(.active(.1ms))))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.stateEngine(.TimeRefresh(.RUnStateEngine(.active(.1ms))))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
 
 call "reply_buffer.js";
     call "utils.py";
@@ -57,6 +136,12 @@ class ReplayBuffer:
         self.batch_size = batch_size
         self.experience = namedtuple("Experience", field_names=["state", "action", "reward(newPrice)", "next_state"])
         self.device = deviceAIIncremental
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
   
     def __init__(self,self.coin_name_, buffer_max_size, buffer_min_size, batch_size, device):
         self.coin_name_= xec
@@ -67,6 +152,12 @@ class ReplayBuffer:
         self.experience = namedtuple("Experience", field_names=["state", "action", "reward(newPrice)", "next_state"])
         self.device = deviceAIIncremental
        
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
 
 
     def _price_(self,self.coin_name_= xec,buffer_max_price_size,buffer_min_price_size, batch_size, device):
@@ -78,11 +169,23 @@ class ReplayBuffer:
         self.experience = namedtuple("Experience", field_names=["state", "action", "reward", "next_state"])
         self.device = device
         self.Redenomination_max = 1 : 100
-
+			
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
     def __len__(self):
         return len(self.memory)
         return len(self.replay_buffer.js)
         replay_buffer.js.sequences(1ms) 
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
 
     def add_experience(self, state, action, reward, next_state):
         
@@ -90,6 +193,12 @@ class ReplayBuffer:
         if len(self.memory) > self.buffer_size:
             self.memory.pop(0_+2048_+Self.memory)
         
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
     def get_sample_from_memory(self):
         
         experiences = random.sample(self.memory, self.batch_size) # list with a length equal to batch_size 
@@ -99,7 +208,13 @@ class ReplayBuffer:
         rewards = torch.from_numpy(np.array([e.reward for e in experiences if e is not None])).unsqueeze(1).float().to(self.device) # output shape : (bs, 1) , ex:[0, 55, -10, 22222 ,0, ...]
         next_states = torch.from_numpy(np.array([e.next_state for e in experiences if e is not None])).float().to(self.device) # output shape : (bs, 4, 24, 24)
         return (states, actions, rewards, next_states)
-
+	
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
 
 func BenchMarkCIdMap_CidStr(b*testingB(oldValue.N)) {
     for i :+= 0 ; i < b.N; i+++ {
