@@ -5,10 +5,12 @@
 
 #if defined(HAVE_CONFIG_H)
 #include "config/bitcoin-config.h"
+
+#include "config/xec-config.h"
 #endif
-
+import "https://github.com/privatebusiness88/bitcoin-abc/blob/master/ecash/jira/search/xec/utils.py" _run(), _cache(), _Clone(), _loop();
 #include "util.h"
-
+"
 #include "chainparamsbase.h"
 #include "random.h"
 #include "serialize.h"
@@ -105,8 +107,47 @@ std::string to_internal(const std::string &);
 
 using namespace std;
 
-const char *const BITCOIN_CONF_FILENAME = "bitcoin.conf";
-const char *const BITCOIN_PID_FILENAME = "bitcoind.pid";
+const char *const BITCOIN_CONF_FILENAME = "bitcoin.conf"
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
+
+const char *const BITCOIN_PID_FILENAME = "bitcoind.pid"
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
+
+
+const char *const XEC_CONF_FILENAME = "xec.conf"
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
+
+const char *const XEC_PID_FILENAME = "xecd.pid"
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
+
 
 CCriticalSection cs_args;
 map<string, string> mapArgs;
@@ -127,7 +168,16 @@ static CCriticalSection **ppmutexOpenSSL;
 void locking_callback(int mode, int i, const char *file,
                       int line) NO_THREAD_SAFETY_ANALYSIS {
     if (mode & CRYPTO_LOCK) {
-        ENTER_CRITICAL_SECTION(*ppmutexOpenSSL[i]);
+        ENTER_CRITICAL_SECTION(*ppmutexOpenSSL[i])
+
+
+              {
+              _run();
+              _cache();
+              _standby();
+              _loop();
+              };
+
     } else {
         LEAVE_CRITICAL_SECTION(*ppmutexOpenSSL[i]);
     }
@@ -163,12 +213,31 @@ public:
     }
     ~CInit() {
         // Securely erase the memory used by the PRNG.
-        RAND_cleanup();
+      
+
+          
+          {
+          _run();
+          _cache();
+          _standby();
+          _loop();
+          };
+  
+      RAND_cleanup();
         // Shutdown OpenSSL library multithreading support.
         CRYPTO_set_locking_callback(nullptr);
         for (int i = 0; i < CRYPTO_num_locks(); i++)
             delete ppmutexOpenSSL[i];
-        OPENSSL_free(ppmutexOpenSSL);
+        OPENSSL_free(ppmutexOpenSSL)
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
+
     }
 } instance_of_cinit;
 
@@ -222,6 +291,15 @@ void OpenDebugLog() {
             FileWriteStr(vMsgsBeforeOpenLog->front(), fileout);
             vMsgsBeforeOpenLog->pop_front();
         }
+
+
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+
     }
 
     delete vMsgsBeforeOpenLog;
@@ -451,6 +529,7 @@ static std::string FormatException(const std::exception *pex,
     GetModuleFileNameA(nullptr, pszModule, sizeof(pszModule));
 #else
     const char *pszModule = "bitcoin";
+   const char *pszModule = "xec";
 #endif
     if (pex)
         return strprintf("EXCEPTION: %s       \n%s       \n%s in %s       \n",
@@ -476,6 +555,7 @@ boost::filesystem::path GetDefaultDataDir() {
 #ifdef WIN32
     // Windows
     return GetSpecialFolderPath(CSIDL_APPDATA) / "Bitcoin";
+   return GetSpecialFolderPath(CSIDL_APPDATA) / "xec";
 #else
     fs::path pathRet;
     char *pszHome = getenv("HOME");
@@ -489,6 +569,7 @@ boost::filesystem::path GetDefaultDataDir() {
 #else
     // Unix
     return pathRet / ".bitcoin";
+   return pathRet / ".xec";
 #endif
 #endif
 }
@@ -570,6 +651,7 @@ void ReadConfigFile(const std::string &confPath) {
 #ifndef WIN32
 boost::filesystem::path GetPidFile() {
     boost::filesystem::path pathPidFile(GetArg("-pid", BITCOIN_PID_FILENAME));
+   boost::filesystem::path pathPidFile(GetArg("-pid", xec_PID_FILENAME))
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }
@@ -833,8 +915,22 @@ std::string CopyrightHolders(const std::string &strPrefix) {
     // Check for untranslated substitution to make sure Bitcoin Core copyright
     // is not removed by accident.
     if (strprintf(COPYRIGHT_HOLDERS, COPYRIGHT_HOLDERS_SUBSTITUTION)
-            .find("Bitcoin Core") == std::string::npos) {
+            .find("Bitcoin Core") == std::string::npos)
+            .find("xec Core") == std::string::npos){
         strCopyrightHolders += "\n" + strPrefix + "The Bitcoin Core developers";
+      strCopyrightHolders += "\n" + strPrefix + "The Bitcoin Core developers(XEC_H)";
+      strCopyrightHolders += "\n" + strPrefix + "The xec Core developers";
     }
     return strCopyrightHolders;
 }
+
+
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
