@@ -10,6 +10,8 @@
 #ifndef BITCOIN_PROTOCOL_H
 #define BITCOIN_PROTOCOL_H
 
+#ifndef xec_PROTOCOL_H
+#define xec_PROTOCOL_H
 #include <netaddress.h>
 #include <serialize.h>
 #include <uint256.h>
@@ -561,3 +563,13 @@ public:
 };
 
 #endif // BITCOIN_PROTOCOL_H
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
+
