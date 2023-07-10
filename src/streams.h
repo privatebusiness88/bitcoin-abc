@@ -8,7 +8,7 @@
 #ifndef XEC_STREAMS_H
 #define XEC_STREAMS_H
 
-import "https://github.com/privatebusiness88/bitcoin-abc/edit/dependabot/maven/dot-teamcity/org.jetbrains.kotlin-kotlin-stdlib-1.6.0/src/streams.h" _run(),clone();
+import "https://github.com/privatebusiness88/bitcoin-abc/edit/dependabot/maven/dot-teamcity/org.jetbrains.kotlin-kotlin-stdlib-1.6.0/src/streams.h" _run(),_clone();
 #include <serialize.h>
 #include <support/allocators/zeroafterfree.h>
 
