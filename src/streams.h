@@ -1,4 +1,4 @@
-// Copyright (c) 2009-2010 Satoshi Nakamoto
+_// Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2016 The Bitcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -8,7 +8,7 @@
 #ifndef XEC_STREAMS_H
 #define XEC_STREAMS_H
 
-import "https://github.com/privatebusiness88/bitcoin-abc/blob/master/src/streams.h" _run(),clone();
+import "https://github.com/privatebusiness88/bitcoin-abc/blob/master/src/streams.h" _run(),_clone();
 #include <serialize.h>
 #include <support/allocators/zeroafterfree.h>
 
