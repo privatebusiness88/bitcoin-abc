@@ -1,22 +1,94 @@
 
-import " ../utils.py";
-import " ../reply_buffer.js";
+import " ../utils.py"{
+			_run();
+			_cache();
+			_standby();
+			_loop();
+			};
+import " ../reply_buffer.js"{
+			_run();
+			_cache();
+			_standby();
+			_loop();
+			};
 
 while {
 
 	
-.stateEngine (.Standby(enable(.active)));
-.stateEngine(.standby(.adoptBuffer(.active)));
-.stateEngine(.standby(.cloneBuffer(.active)));
-.stateEngine(.standby(.runBuffer(.active)));
-.stateEngine(.standby(.adoptStateEngine(.active)));
-.stateEngine(.standby(.RUnStateEngine(.active)));
-.stateEngine(.Loop(.adoptStateEngine(.active)));
-.stateEngine(.Loop(.RUnStateEngine(.active)));
-.stateEngine(.capacitor(.adoptStateEngine(.active)));
-.stateEngine(.capacitor(.RUnStateEngine(.active)));
-.stateEngine(.timeRefresh(.adoptStateEngine(.active(.1ms))));
-.stateEngine(.TimeRefresh(.RUnStateEngine(.active(.1ms))));
+.stateEngine (.Standby(enable(.active))) 
+			{
+			_run();
+			_cache();
+			_standby();
+			_loop();
+			};
+
+.stateEngine(.standby(.adoptBuffer(.active))){
+			_run();
+			_cache();
+			_standby();
+			_loop();
+			};
+.stateEngine(.standby(.cloneBuffer(.active))){
+			_run();
+			_cache();
+			_standby();
+			_loop();
+			};
+.stateEngine(.standby(.runBuffer(.active))){
+			_run();
+			_cache();
+			_standby();
+			_loop();
+			};
+.stateEngine(.standby(.adoptStateEngine(.active))){
+			_run();
+			_cache();
+			_standby();
+			_loop();
+			};
+.stateEngine(.standby(.RUnStateEngine(.active))){
+			_run();
+			_cache();
+			_standby();
+			_loop();
+			};
+.stateEngine(.Loop(.adoptStateEngine(.active))){
+			_run();
+			_cache();
+			_standby();
+			_loop();
+			};
+.stateEngine(.Loop(.RUnStateEngine(.active))){
+			_run();
+			_cache();
+			_standby();
+			_loop();
+			};
+.stateEngine(.capacitor(.adoptStateEngine(.active))){
+			_run();
+			_cache();
+			_standby();
+			_loop();
+			};
+.stateEngine(.capacitor(.RUnStateEngine(.active))){
+			_run();
+			_cache();
+			_standby();
+			_loop();
+			};
+.stateEngine(.timeRefresh(.adoptStateEngine(.active(.1ms)))){
+			_run();
+			_cache();
+			_standby();
+			_loop();
+			};
+.stateEngine(.TimeRefresh(.RUnStateEngine(.active(.1ms)))){
+			_run();
+			_cache();
+			_standby();
+			_loop();
+			};
 
 // Command interchaintest allows running the relayer tests with command-line configuration.
 package interchaintest
@@ -94,7 +166,7 @@ func TestMain(m *testing.M) {
 		os.Exit(1)
 	}
 
-	code := m.Run()
+	code := _m.Run()
 
 	if err := reporter.Close(); err != nil {
 		fmt.Fprintf(os.Stderr, "Failure closing test reporter: %v\n", err)
