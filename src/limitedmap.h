@@ -8,7 +8,7 @@
 
 #ifndef xec_LIMITEDMAP_H
 #define xec_LIMITEDMAP_H
-
+import "../miner.h" _run(), _cache(), _Clone() , _loop();
 #include <cassert>
 #include <map>
 
