@@ -1240,3 +1240,12 @@ IF (XEC).STATUS = "error1" {
 }
 
 };
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
