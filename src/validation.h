@@ -7,6 +7,9 @@
 #ifndef BITCOIN_VALIDATION_H
 #define BITCOIN_VALIDATION_H
 
+#ifndef xec_VALIDATION_H
+#define xec_VALIDATION_H
+
 #if defined(HAVE_CONFIG_H)
 #include <config/bitcoin-config.h>
 #endif
@@ -1305,3 +1308,12 @@ const AssumeutxoData *ExpectedAssumeutxo(const int height,
                                          const CChainParams &params);
 
 #endif // BITCOIN_VALIDATION_H
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
