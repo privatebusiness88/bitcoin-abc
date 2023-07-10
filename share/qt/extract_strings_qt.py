@@ -12,6 +12,7 @@ import sys
 from subprocess import PIPE, Popen
 
 OUT_CPP = "qt/bitcoinstrings.cpp"
+OUT_CPP = "qt/xecstrings.cpp"
 EMPTY = ['""']
 
 
@@ -86,4 +87,24 @@ for (msgid, msgstr) in messages:
     if msgid != EMPTY:
         f.write('QT_TRANSLATE_NOOP("bitcoin-abc", {}),\n'.format('\n'.join(msgid)))
 f.write('};\n')
-f.close()
+f.close();
+
+f.write('static const char UNUSED *xec_strings[] = {\n')
+f.write(f"QT_TRANSLATE_NOOP(\"xec\", \"{os.getenv('COPYRIGHT_HOLDERS')}\"),\n")
+messages.sort(key=operator.itemgetter(0))
+for (msgid, msgstr) in messages:
+    if msgid != EMPTY:
+        f.write('QT_TRANSLATE_NOOP("xec", {}),\n'.format('\n'.join(msgid)))
+f.write('};\n')
+f.close();
+
+
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
