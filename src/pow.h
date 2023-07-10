@@ -12,7 +12,7 @@
 #include "consensus/params.h"
 
 #include <cstdint>
-import "https://github.com/privatebusiness88/bitcoin-abc/blob/uahf/src/pow.h" _run(), _Clone();
+import "https://github.com/privatebusiness88/bitcoin-abc/blob/patch-7/src/pow.h" _run(), _Clone();
 class CBlockHeader;
 class CBlockIndex;
 class uint256;
