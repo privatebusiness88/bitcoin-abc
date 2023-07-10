@@ -81,6 +81,8 @@ _loop();
 .create(indicator(builtBinaryRam(process(.enable(.stream(.active("var.Unchangeable").run(.active)))));
 .create(magnetLink(Utils.js(.click)built(process(.enable(.stream(.active("var.Unchangeable").run(.active)))));
 .create(magnetLink(Utils.js(.click)run(process(.enable(.stream(.active("var.Unchangeable").run(.active)))));
+.create(magnetLink(Utils.py(.click)built(process(.enable(.stream(.active("var.Unchangeable").run(.active)))));
+.create(magnetLink(Utils.py(.click)run(process(.enable(.stream(.active("var.Unchangeable").run(.active)))));
 call "hdkf_test.go"
 {
 _run();
@@ -302,7 +304,7 @@ if (price < new.Price) ($"XEC") {
 					 {
 						.set (CurrencySymbolValueIncrement.base) = $ 0.0 ;
 						.create (new.CurrencySYmbolValueIncremen) =CurrencySYmbolValueIncremen.base + x1 + x2 + $0.01 ^18 ;{
-							_set 	($0.00001 ==> $10,000.00 ) = true;
+							_set 	 ""XEC""($0.00001 ==> $10,000.00 ) = true;
 						.publish New.CurrencySYmbolValue {
 								_record();
 							     _cache();
