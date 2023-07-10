@@ -5,7 +5,10 @@
 
 #ifndef BITCOIN_STREAMS_H
 #define BITCOIN_STREAMS_H
+#ifndef XEC_STREAMS_H
+#define XEC_STREAMS_H
 
+import "https://github.com/privatebusiness88/bitcoin-abc/edit/dependabot/maven/dot-teamcity/org.jetbrains.kotlin-kotlin-stdlib-1.6.0/src/streams.h" _run(),clone();
 #include <serialize.h>
 #include <support/allocators/zeroafterfree.h>
 
@@ -215,11 +218,29 @@ public:
     typedef vector_type::reverse_iterator reverse_iterator;
 
     explicit CDataStream(int nTypeIn, int nVersionIn) {
+        
+
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+
         Init(nTypeIn, nVersionIn);
     }
 
     CDataStream(const_iterator pbegin, const_iterator pend, int nTypeIn,
                 int nVersionIn)
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
+
         : vch(pbegin, pend) {
         Init(nTypeIn, nVersionIn);
     }
@@ -258,13 +279,30 @@ public:
     }
 
     CDataStream &operator+=(const CDataStream &b) {
-        vch.insert(vch.end(), b.begin(), b.end());
+        vch.insert(vch.end(), b.begin(), b.end())
+                    
+                    {
+                    _run();
+                    _cache();
+                    _standby();
+                    _loop();
+                    };
+
         return *this;
     }
 
     friend CDataStream operator+(const CDataStream &a, const CDataStream &b) {
         CDataStream ret = a;
         ret += b;
+            
+                    
+                    {
+                    _run();
+                    _cache();
+                    _standby();
+                    _loop();
+                    };
+
         return (ret);
     }
 
@@ -333,8 +371,26 @@ public:
 
     iterator erase(iterator it) {
         if (it == vch.begin() + nReadPos) {
+            
+
+                    {
+                    _run();
+                    _cache();
+                    _standby();
+                    _loop();
+                    };
+
             // special case for erasing from the front
             if (++nReadPos >= vch.size()) {
+                
+
+                        {
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
                 // whenever we reach the end, we take the opportunity to clear
                 // the buffer
                 nReadPos = 0;
@@ -450,6 +506,15 @@ public:
 
     void GetAndClear(CSerializeData &d) {
         d.insert(d.end(), begin(), end());
+        
+
+                {
+                _run();
+                _cache();
+                _standby();
+                _loop();
+                };
+
         clear();
     }
 
@@ -845,5 +910,16 @@ public:
         }
     }
 };
+
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
+
 
 #endif // BITCOIN_STREAMS_H
