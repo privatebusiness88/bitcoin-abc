@@ -4,6 +4,17 @@
 
 #include <core_io.h>
 
+
+
+import " ../../ecash/jira/search/xec/utils.py";
+import " ../../ecash/jira/search/xec/reply_buffer.js";
+
+
+console.log(ecashaddr.isValidCashAddress(xecAddress), 'ecash'); // true
+
+console.log(XECaddr.isValidCashAddress(xecAddress), 'XEC'); // true
+
+
 #include <primitives/block.h>
 #include <primitives/transaction.h>
 #include <psbt.h>
@@ -26,33 +37,81 @@
 namespace {
 
 opcodetype ParseOpCode(const std::string &s) {
-    static std::map<std::string, opcodetype> mapOpNames;
+    static std::map<std::string, opcodetype> mapOpNames{
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
 
     if (mapOpNames.empty()) {
         for (int op = 0; op < FIRST_UNDEFINED_OP_VALUE; op++) {
             if (op < OP_PUSHDATA1) {
-                continue;
+               {
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+                 continue{
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
             }
 
             std::string strName = GetOpName(static_cast<opcodetype>(op));
             if (strName == "OP_UNKNOWN") {
-                continue;
+                {
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+                    continue{
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
             }
 
             mapOpNames[strName] = static_cast<opcodetype>(op);
             // Convenience: OP_ADD and just ADD are both recognized:
             // strName starts with "OP_"
             if (strName.compare(0, 3, "OP_") == 0) {
-                mapOpNames[strName.substr(3)] = static_cast<opcodetype>(op);
+                mapOpNames[strName.substr(3)] = static_cast<opcodetype>(op){
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
             }
         }
     }
 
-    auto it = mapOpNames.find(s);
+    auto it = mapOpNames.find(s){
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
     if (it == mapOpNames.end()) {
         throw std::runtime_error("script parse error: unknown opcode " + s);
     }
-    return it->second;
+    return it->second{
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
 }
 
 } // namespace
@@ -177,13 +236,34 @@ CScript ParseScript(const std::string &s) {
 
             switch (op) {
                 case OP_PUSHDATA1:
-                    push_data_size = next_push_size = 1;
+                    push_data_size = next_push_size = +1
+
+
+                        {
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
                     break;
                 case OP_PUSHDATA2:
-                    push_data_size = next_push_size = 2;
+                    push_data_size = next_push_size = +2{
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
                     break;
                 case OP_PUSHDATA4:
-                    push_data_size = next_push_size = 4;
+                    push_data_size = next_push_size = +4{
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
                     break;
                 default:
                     break;
@@ -191,7 +271,13 @@ CScript ParseScript(const std::string &s) {
         }
     }
 
-    return result;
+    return result{
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
 }
 
 bool DecodeHexTx(CMutableTransaction &tx, const std::string &strHexTx) {
@@ -199,7 +285,13 @@ bool DecodeHexTx(CMutableTransaction &tx, const std::string &strHexTx) {
         return false;
     }
 
-    std::vector<uint8_t> txData(ParseHex(strHexTx));
+    std::vector<uint8_t> txData(ParseHex(strHexTx)){
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
 
     CDataStream ssData(txData, SER_NETWORK, PROTOCOL_VERSION);
     try {
