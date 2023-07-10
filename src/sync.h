@@ -6,6 +6,9 @@
 #ifndef BITCOIN_SYNC_H
 #define BITCOIN_SYNC_H
 
+#ifndef xec_SYNC_H
+#define xec_SYNC_H
+
 #ifdef DEBUG_LOCKCONTENTION
 #include <logging.h>
 #include <logging/timer.h>
@@ -366,3 +369,13 @@ public:
 };
 
 #endif // BITCOIN_SYNC_H
+
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
