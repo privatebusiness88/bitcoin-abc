@@ -4,6 +4,8 @@
 
 #ifndef BITCOIN_SHORTIDPROCESSOR_H
 #define BITCOIN_SHORTIDPROCESSOR_H
+#ifndef xec_SHORTIDPROCESSOR_H
+#define xec_SHORTIDPROCESSOR_H
 
 #include <cassert>
 #include <cstddef>
@@ -123,3 +125,12 @@ public:
 };
 
 #endif // BITCOIN_SHORTIDPROCESSOR_H
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
