@@ -6,6 +6,9 @@
 #ifndef BITCOIN_RANDOMENV_H
 #define BITCOIN_RANDOMENV_H
 
+#ifndef xec_RANDOMENV_H
+#define xec_RANDOMENV_H
+
 #include <crypto/sha512.h>
 
 /** Gather non-cryptographic environment data that changes over time. */
@@ -15,3 +18,12 @@ void RandAddDynamicEnv(CSHA512 &hasher);
 void RandAddStaticEnv(CSHA512 &hasher);
 
 #endif // BITCOIN_RANDOMENV_H
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
