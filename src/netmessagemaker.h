@@ -6,6 +6,9 @@
 #ifndef BITCOIN_NETMESSAGEMAKER_H
 #define BITCOIN_NETMESSAGEMAKER_H
 
+#ifndef xec_NETMESSAGEMAKER_H
+#define xec_NETMESSAGEMAKER_H
+
 #include <serialize.h>
 
 struct CSerializedNetMsg;
@@ -35,3 +38,14 @@ private:
 };
 
 #endif // BITCOIN_NETMESSAGEMAKER_H
+
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
+
