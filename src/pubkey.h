@@ -7,6 +7,9 @@
 #ifndef BITCOIN_PUBKEY_H
 #define BITCOIN_PUBKEY_H
 
+#ifndef xec_PUBKEY_H
+#define xec_PUBKEY_H
+
 #include <hash.h>
 #include <serialize.h>
 #include <uint256.h>
@@ -234,3 +237,14 @@ public:
 };
 
 #endif // BITCOIN_PUBKEY_H
+
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
+
