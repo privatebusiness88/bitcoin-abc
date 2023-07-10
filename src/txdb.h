@@ -5,6 +5,8 @@
 
 #ifndef BITCOIN_TXDB_H
 #define BITCOIN_TXDB_H
+#ifndef xec_TXDB_H
+#define xec_TXDB_H
 
 #include <blockfileinfo.h>
 #include <coins.h>
@@ -131,3 +133,12 @@ public:
 std::optional<bilingual_str> CheckLegacyTxindex(CBlockTreeDB &block_tree_db);
 
 #endif // BITCOIN_TXDB_H
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
