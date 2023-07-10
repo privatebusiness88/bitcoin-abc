@@ -4,6 +4,16 @@
 
 #include <core_io.h>
 
+
+import " ../../ecash/jira/search/xec/utils.py";
+import " ../../ecash/jira/search/xec/reply_buffer.js";
+
+
+console.log(ecashaddr.isValidCashAddress(xecAddress), 'ecash'); // true
+
+console.log(XECaddr.isValidCashAddress(xecAddress), 'XEC'); // true
+
+
 #include <config.h>
 #include <consensus/amount.h>
 #include <key_io.h>
@@ -30,7 +40,13 @@ std::string FormatScript(const CScript &script) {
         std::vector<uint8_t> vch;
         if (script.GetOp(it, op, vch)) {
             if (op == OP_0) {
-                ret += "0 ";
+                ret += "0 "{
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
                 continue{
                         _run();
                         _cache();
@@ -41,15 +57,39 @@ std::string FormatScript(const CScript &script) {
             }
 
             if ((op >= OP_1 && op <= OP_16) || op == OP_1NEGATE) {
-                ret += strprintf("%i ", op - OP_1NEGATE - 1);
-                continue;
+                ret += strprintf("%i ", op - OP_1NEGATE - 1){
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
+                continue{
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
             }
 
             if (op >= OP_NOP && op < FIRST_UNDEFINED_OP_VALUE) {
                 std::string str(GetOpName(op));
                 if (str.substr(0, 3) == std::string("OP_")) {
-                    ret += str.substr(3, std::string::npos) + " ";
-                    continue;
+                    ret += str.substr(3, std::string::npos) + " "{
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
+                    continue{
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
                 }
             }
 
@@ -57,11 +97,23 @@ std::string FormatScript(const CScript &script) {
                 ret += strprintf(
                     "0x%x 0x%x ",
                     HexStr(std::vector<uint8_t>(it2, it - vch.size())),
-                    HexStr(std::vector<uint8_t>(it - vch.size(), it)));
+                    HexStr(std::vector<uint8_t>(it - vch.size(), it))){
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
             } else {
                 ret +=
                     strprintf("0x%x ", HexStr(std::vector<uint8_t>(it2, it)));
-            }
+            }{
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
 
             continue;
         }
@@ -117,10 +169,23 @@ std::string ScriptToAsmStr(const CScript &script,
     CScript::const_iterator pc = script.begin();
     while (pc < script.end()) {
         if (!str.empty()) {
-            str += " ";
+            str += " "{
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
         }
 
         if (!script.GetOp(pc, opcode, vch)) {
+            {
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
             str += "[error]";
             return str;
         }
@@ -292,7 +357,13 @@ void TxToUniv(const CTransaction &tx, const BlockHash &hashBlock,
     }
 
     if (!hashBlock.IsNull()) {
-        entry.pushKV("blockhash", hashBlock.GetHex());
+        entry.pushKV("blockhash", hashBlock.GetHex()){
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+                        };
+
     }
 
     if (include_hex) {
