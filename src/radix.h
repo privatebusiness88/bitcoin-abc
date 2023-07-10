@@ -5,6 +5,9 @@
 #ifndef BITCOIN_RADIX_H
 #define BITCOIN_RADIX_H
 
+#ifndef xec_RADIX_H
+#define xec_RADIX_H
+
 #include <rcu.h>
 #include <util/system.h>
 
@@ -397,3 +400,14 @@ private:
 };
 
 #endif // BITCOIN_RADIX_H
+
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
+
