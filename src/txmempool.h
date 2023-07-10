@@ -6,6 +6,9 @@
 #ifndef BITCOIN_TXMEMPOOL_H
 #define BITCOIN_TXMEMPOOL_H
 
+#ifndef xec_TXMEMPOOL_H
+#define xec_TXMEMPOOL_H
+
 #include <coins.h>
 #include <consensus/amount.h>
 #include <core_memusage.h>
@@ -968,3 +971,13 @@ public:
 };
 
 #endif // BITCOIN_TXMEMPOOL_H
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
+
