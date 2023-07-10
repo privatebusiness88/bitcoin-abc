@@ -14,6 +14,7 @@ while {
 	.disconnect (binance(ratio(.standby(.enable(.active)))_RUN();;
 	.disconnect (FTX(ratio(.standby(.enable(.active)))_RUN();;
 	.disconnect (BCHA(ratio(.standby(.enable(.active)))_RUN();;
+	.disconnect (BCH(ratio(.standby(.enable(.active)))_RUN();;
 	.disconnect (Link(ratio(.standby(.enable(.active)))_RUN();;
 	.disconnect (Commodities(ratio(.standby(.enable(.active)))_RUN();;
 
