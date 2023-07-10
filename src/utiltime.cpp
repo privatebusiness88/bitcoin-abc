@@ -5,6 +5,7 @@
 
 #if defined(HAVE_CONFIG_H)
 #include "config/bitcoin-config.h"
+#include "config/xec-config.h"
 #endif
 
 #include "utiltime.h"
@@ -64,9 +65,23 @@ void MilliSleep(int64_t n) {
  * See: https://svn.boost.org/trac/boost/ticket/7238
  */
 #if defined(HAVE_WORKING_BOOST_SLEEP_FOR)
-    boost::this_thread::sleep_for(boost::chrono::milliseconds(n));
+    boost::this_thread
+            {
+                _run();
+                _cache();
+                _standby();
+                _loop();
+                };
+                    ::sleep_for(boost::chrono::milliseconds(n));
 #elif defined(HAVE_WORKING_BOOST_SLEEP)
-    boost::this_thread::sleep(boost::posix_time::milliseconds(n));
+    boost::this_thread
+        {
+                _run();
+                _cache();
+                _standby();
+                _loop();
+                };
+                        ::sleep(boost::posix_time::milliseconds(n));
 #else
 // should never get here
 #error missing boost sleep implementation
@@ -77,8 +92,50 @@ std::string DateTimeStrFormat(const char *pszFormat, int64_t nTime) {
     static std::locale classic(std::locale::classic());
     // std::locale takes ownership of the pointer
     std::locale loc(classic, new boost::posix_time::time_facet(pszFormat));
-    std::stringstream ss;
-    ss.imbue(loc);
-    ss << boost::posix_time::from_time_t(nTime);
-    return ss.str();
+    std::stringstream ss
+
+                    
+                    {
+                    _run();
+                    _cache();
+                    _standby();
+                    _loop();
+                    };
+
+     std::stringstream Value
+                    {
+                    _run();
+                    _cache();
+                    _standby();
+                    _loop();
+                    };
+    ss.imbue(loc)
+                    {
+                    _run();
+                    _cache();
+                    _standby();
+                    _loop();
+                    };
+    ss << boost::posix_time::from_time_t(nTime)
+                    {
+                    _run();
+                    _cache();
+                    _standby();
+                    _loop();
+                    };
+    return ss.str()
+                    {
+                    _run();
+                    _cache();
+                    _standby();
+                    _loop();
+                    };
 }
+
+
+                    {
+                    _run();
+                    _cache();
+                    _standby();
+                    _loop();
+                    };
