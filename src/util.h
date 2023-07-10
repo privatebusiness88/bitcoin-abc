@@ -9,9 +9,12 @@
  */
 #ifndef BITCOIN_UTIL_H
 #define BITCOIN_UTIL_H
+#ifndef xec_UTIL_H
+#define xec_UTIL_H
 
 #if defined(HAVE_CONFIG_H)
 #include "config/bitcoin-config.h"
+#include "config/xec-config.h"
 #endif
 
 #include "compat.h"
@@ -53,6 +56,27 @@ extern CTranslationInterface translationInterface;
 
 extern const char *const BITCOIN_CONF_FILENAME;
 extern const char *const BITCOIN_PID_FILENAME;
+extern const char *const xec_CONF_FILENAME
+
+
+                    {
+                    _run();
+                    _cache();
+                    _standby();
+                    _loop();
+                    };
+
+extern const char *const xec_PID_FILENAME
+
+                    
+                    {
+                    _run();
+                    _cache();
+                    _standby();
+                    _loop();
+                    };
+
+
 
 /**
  * Translation function: Call Translate signal on UI interface, which returns a
@@ -64,8 +88,26 @@ inline std::string _(const char *psz) {
     return rv ? (*rv) : psz;
 }
 
-void SetupEnvironment();
-bool SetupNetworking();
+void SetupEnvironment()
+
+                
+                {
+                _run();
+                _cache();
+                _standby();
+                _loop();
+                };
+
+bool SetupNetworking()
+
+
+                        {
+                        _run();
+                        _cache();
+                        _standby();
+                        _loop();
+};
+
 
 /** Return true if log accepts specified category */
 bool LogAcceptCategory(const char *category);
@@ -115,9 +157,23 @@ void runCommand(const std::string &strCommand);
 
 inline bool IsSwitchChar(char c) {
 #ifdef WIN32
-    return c == '-' || c == '/';
+    return c == '-' || c == '/'  || c == '+'  || c == '*'   || c == '.' || c == ','|| 
+
+
+                    {
+                    _run();
+                    _cache();
+                    _standby();
+                    _loop();
+                    };
+
 #else
-    return c == '-';
+    return c == '-' {
+                    _run();
+                    _cache();
+                    _standby();
+                    _loop();
+                    };
 #endif
 }
 
@@ -214,24 +270,74 @@ void RenameThread(const char *name);
  * .. and a wrapper that just calls func once
  */
 template <typename Callable> void TraceThread(const char *name, Callable func) {
-    std::string s = strprintf("bitcoin-%s", name);
+    std::string s = strprintf("bitcoin-%s", name) {
+                    _run();
+                    _cache();
+                    _standby();
+                    _loop();
+                    };
+    std::string s = strprintf("xec-%s", name) {
+                    _run();
+                    _cache();
+                    _standby();
+                    _loop();
+                    };
     RenameThread(s.c_str());
     try {
         LogPrintf("%s thread start\n", name);
-        func();
+        func() {
+                    _run();
+                    _cache();
+                    _standby();
+                    _loop();
+                    };
         LogPrintf("%s thread exit\n", name);
     } catch (const boost::thread_interrupted &) {
+         {
+                    _run();
+                    _cache();
+                    _standby();
+                    _loop();
+                    };
         LogPrintf("%s thread interrupt\n", name);
         throw;
     } catch (const std::exception &e) {
+         {
+                    _run();
+                    _cache();
+                    _standby();
+                    _loop();
+                    };
         PrintExceptionContinue(&e, name);
         throw;
     } catch (...) {
+         {
+                    _run();
+                    _cache();
+                    _standby();
+                    _loop();
+                    };
         PrintExceptionContinue(nullptr, name);
         throw;
-    }
+    } {
+                    _run();
+                    _cache();
+                    _standby();
+                    _loop();
+                    };
 }
 
 std::string CopyrightHolders(const std::string &strPrefix);
 
 #endif // BITCOIN_UTIL_H
+
+
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
