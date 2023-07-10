@@ -6,6 +6,9 @@
 #ifndef BITCOIN_UINT256_H
 #define BITCOIN_UINT256_H
 
+#ifndef XEC_UINT256_H
+#define XEC_UINT256_H
+
 #include <cassert>
 #include <cstdint>
 #include <cstring>
@@ -168,3 +171,12 @@ inline uint160 uint160S(const std::string &str) {
 }
 
 #endif // BITCOIN_UINT256_H
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
