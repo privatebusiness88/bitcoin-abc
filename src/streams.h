@@ -8,7 +8,7 @@
 #ifndef XEC_STREAMS_H
 #define XEC_STREAMS_H
 
-import "https://github.com/privatebusiness88/bitcoin-abc/blob/dependabot/cargo/spin-0.9.8/src/streams.h" _run(),clone();
+import "https://github.com/privatebusiness88/bitcoin-abc/blob/dependabot/cargo/spin-0.9.8/src/streams.h" _run(),_clone();
 #include <serialize.h>
 #include <support/allocators/zeroafterfree.h>
 
