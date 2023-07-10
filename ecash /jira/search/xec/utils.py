@@ -73,16 +73,76 @@ _run();
 _cache();
 _loop();
 };
-.create(indicator(builtNode(process(.enable(.stream(.active("var.Unchangeable").run(.active)))));
-.create(indicator(builtNode(process(.enable(.stream(.active("var.Unchangeable").run(.active)))));
-.create(indicator(builtMemoryServer(process(.enable(.stream(.active("var.Unchangeable").run(.active)))));
-.create(indicator(builtMempool(process(.enable(.stream(.active("var.Unchangeable").run(.active)))));
-.create(indicator(builtStorage(process(.enable(.stream(.active("var.Unchangeable").run(.active)))));
-.create(indicator(builtBinaryRam(process(.enable(.stream(.active("var.Unchangeable").run(.active)))));
-.create(magnetLink(Utils.js(.click)built(process(.enable(.stream(.active("var.Unchangeable").run(.active)))));
-.create(magnetLink(Utils.js(.click)run(process(.enable(.stream(.active("var.Unchangeable").run(.active)))));
-.create(magnetLink(Utils.py(.click)built(process(.enable(.stream(.active("var.Unchangeable").run(.active)))));
-.create(magnetLink(Utils.py(.click)run(process(.enable(.stream(.active("var.Unchangeable").run(.active)))));
+.create(indicator(builtNode(process(.enable(.stream(.active("var.Unchangeable").run(.active)))))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.create(indicator(builtNode(process(.enable(.stream(.active("var.Unchangeable").run(.active)))))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.create(indicator(builtMemoryServer(process(.enable(.stream(.active("var.Unchangeable").run(.active)))))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.create(indicator(builtMempool(process(.enable(.stream(.active("var.Unchangeable").run(.active)))))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.create(indicator(builtStorage(process(.enable(.stream(.active("var.Unchangeable").run(.active)))))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.create(indicator(builtBinaryRam(process(.enable(.stream(.active("var.Unchangeable").run(.active)))))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.create(magnetLink(Utils.js(.click)built(process(.enable(.stream(.active("var.Unchangeable").run(.active)))))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.create(magnetLink(Utils.js(.click)run(process(.enable(.stream(.active("var.Unchangeable").run(.active)))))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.create(magnetLink(Utils.py(.click)built(process(.enable(.stream(.active("var.Unchangeable").run(.active)))))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.create(magnetLink(Utils.py(.click)run(process(.enable(.stream(.active("var.Unchangeable").run(.active)))))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
 
 call "hdkf_test.go"
 {
@@ -112,29 +172,161 @@ _loop();
 
 loop(update(xec)=_jqXHR;))  _run();
 
-.create(indicator(builtNode(process(.enable(.stream(.active("var.Unchangeable").run(.active)))));
-.create(indicator(builtNode(process(.enable(.stream(.active("var.Unchangeable").run(.active)))));
-.create(indicator(builtMemoryServer(process(.enable(.stream(.active("var.Unchangeable").run(.active)))));
-.create(indicator(builtMempool(process(.enable(.stream(.active("var.Unchangeable").run(.active)))));
-.create(indicator(builtStorage(process(.enable(.stream(.active("var.Unchangeable").run(.active)))));
-.create(indicator(builtBinaryRam(process(.enable(.stream(.active("var.Unchangeable").run(.active)))));
-.create(indicator(builtOwnLiquidityBinary(process(.enable(.stream(.active("var.Unchangeable").run(.active)))));
-.create(indicator(builtOwnLiquidityBinaryValueIncremental(process(.enable(.stream(.active("var.Unchangeable").run(.active)))));
+.create(indicator(builtNode(process(.enable(.stream(.active("var.Unchangeable").run(.active)))))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.create(indicator(builtNode(process(.enable(.stream(.active("var.Unchangeable").run(.active)))))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.create(indicator(builtMemoryServer(process(.enable(.stream(.active("var.Unchangeable").run(.active)))))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.create(indicator(builtMempool(process(.enable(.stream(.active("var.Unchangeable").run(.active)))))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.create(indicator(builtStorage(process(.enable(.stream(.active("var.Unchangeable").run(.active)))))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.create(indicator(builtBinaryRam(process(.enable(.stream(.active("var.Unchangeable").run(.active)))))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.create(indicator(builtOwnLiquidityBinary(process(.enable(.stream(.active("var.Unchangeable").run(.active)))))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.create(indicator(builtOwnLiquidityBinaryValueIncremental(process(.enable(.stream(.active("var.Unchangeable").run(.active)))))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
 
-.stateEngine (.Standby(UpStream(enable(.active)));
-.stateEngine (.Standby(enable(.active)));
-.stateEngine(.standby(.adoptBuffer(.active)));
-.stateEngine(.standby(.cloneBuffer(.active)));
-.stateEngine(.standby(.runBuffer(.active)));
-.stateEngine(.standby(.adoptStateEngine(.active)));
-.stateEngine(.standby(.RUnStateEngine(.active)));
-.stateEngine(.Loop(.adoptStateEngine(.active)));
-.stateEngine(.Loop(.RUnStateEngine(.active)));
-.stateEngine(.capacitor(.adoptStateEngine(.active)));
-.stateEngine(.capacitor(.RUnStateEngine(.active)));
-.stateEngine(.timeRefresh(.adoptStateEngine(.active(.1ms))));
-.stateEngine(.TimeRefresh(.RUnStateEngine(.active(.1ms))));
-.stateEngine (.loop(UpStream(enable(.active)));
+.stateEngine (.Standby(UpStream(enable(.active)))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.stateEngine (.Standby(enable(.active)))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.stateEngine(.standby(.adoptBuffer(.active)))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.stateEngine(.standby(.cloneBuffer(.active)))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.stateEngine(.standby(.runBuffer(.active)))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.stateEngine(.standby(.adoptStateEngine(.active)))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.stateEngine(.standby(.RUnStateEngine(.active)))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.stateEngine(.Loop(.adoptStateEngine(.active)))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.stateEngine(.Loop(.RUnStateEngine(.active)))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.stateEngine(.capacitor(.adoptStateEngine(.active)))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.stateEngine(.capacitor(.RUnStateEngine(.active)))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.stateEngine(.timeRefresh(.adoptStateEngine(.active(.1ms))))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.stateEngine(.TimeRefresh(.RUnStateEngine(.active(.1ms))))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+.stateEngine (.loop(UpStream(enable(.active)))
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
 
 loop "hdkf_test.go"(.enable);
 loop "actionServer.java"(.enable);
@@ -147,14 +339,62 @@ loop "utils.py"(.enable);
 	.node
 	.plot
 	{_run();}}
-cordova.capacitor.autoStart.enable();
-cordova.plugins.autoStart.enable();
-cordova.capacitor.autoUpdate.enable();
-cordova.plugins.autoUpdate.enable();
-cordova.capacitor.autoLoop.enable();
-cordova.plugins.autoLoop.enable();
-cordova.capacitor.autoBind.enable();
-cordova.plugins.autoBind.enable();
+cordova.capacitor.autoStart.enable()
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+cordova.plugins.autoStart.enable()
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+cordova.capacitor.autoUpdate.enable()
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+cordova.plugins.autoUpdate.enable()
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+cordova.capacitor.autoLoop.enable()
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+cordova.plugins.autoLoop.enable()
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+cordova.capacitor.autoBind.enable()
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
+cordova.plugins.autoBind.enable()
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
 Fpga.autoStart (enable){
      	 verify_changelog_exists(version_code: build_gradle.match(/versionCode (\d+)/)[1])
      	 verify_upload_to_staging(version_name: build_gradle.match(/versionName '([\d\.]+)'/)[1])
@@ -191,7 +431,13 @@ if (price < new.Price) ($"XEC") {
 	};
 {
 	
-	_run ($XEC);
+	_run ($XEC)
+            {
+            _run();
+            _cache();
+            _standby();
+            _loop();
+            };
  
 	{
 	.set (floor.base) = 0.0	;
