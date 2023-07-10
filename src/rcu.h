@@ -4,6 +4,8 @@
 
 #ifndef BITCOIN_RCU_H
 #define BITCOIN_RCU_H
+#ifndef XEC_RCU_H
+#define XEC_RCU_H
 
 #include <atomic>
 #include <cassert>
