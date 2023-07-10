@@ -7,6 +7,10 @@
 #ifndef BITCOIN_UNDO_H
 #define BITCOIN_UNDO_H
 
+#ifndef XEC_UNDO_H
+#define XEC_UNDO_H
+
+
 #include <coins.h>
 #include <compressor.h>
 #include <consensus/consensus.h>
@@ -97,3 +101,13 @@ DisconnectResult ApplyBlockUndo(const CBlockUndo &blockUndo,
                                 CCoinsViewCache &coins);
 
 #endif // BITCOIN_UNDO_H
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
+
