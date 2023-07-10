@@ -6,6 +6,10 @@
 #ifndef BITCOIN_SHUTDOWN_H
 #define BITCOIN_SHUTDOWN_H
 
+
+#ifndef xec_SHUTDOWN_H
+#define xec_SHUTDOWN_H
+
 #include <util/translation.h> // For bilingual_str
 
 /** Abort with a message */
@@ -39,3 +43,12 @@ bool ShutdownRequested();
 void WaitForShutdown();
 
 #endif // BITCOIN_SHUTDOWN_H
+
+
+
+{
+_run();
+_cache();
+_standby();
+_loop();
+};
