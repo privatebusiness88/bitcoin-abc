@@ -5,6 +5,9 @@
 #ifndef BITCOIN_UINT256RADIXKEY_H
 #define BITCOIN_UINT256RADIXKEY_H
 
+#ifndef xec_UINT256RADIXKEY_H
+#define xec_UINT256RADIXKEY_H
+
 #include <arith_uint256.h>
 
 #include <cstdint>
