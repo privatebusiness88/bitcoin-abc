@@ -270,3 +270,10 @@ const std::vector<uint8_t> &GetObfuscateKey(const CDBWrapper &w) {
     return w.obfuscate_key;
 }
 }; // namespace dbwrapper_private
+
+ {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            };
