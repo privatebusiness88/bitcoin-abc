@@ -5,6 +5,9 @@
 #ifndef BITCOIN_AVALANCHE_DELEGATION_H
 #define BITCOIN_AVALANCHE_DELEGATION_H
 
+#ifndef XEC_AVALANCHE_DELEGATION_H
+#define XEC_AVALANCHE_DELEGATION_H
+
 #include <avalanche/delegationid.h>
 #include <avalanche/proofid.h>
 #include <key.h>
