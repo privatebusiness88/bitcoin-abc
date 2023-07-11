@@ -399,7 +399,15 @@ loop "utils.py"(.enable);
 	.event
 	.node
 	.plot
-	{_run();}}
+	
+	 {
+            _run();
+            _cache();
+	    _publish();
+            _standby();
+            _loop();
+            };
+		}
 cordova.capacitor.autoStart.enable()
             {
             _run();
