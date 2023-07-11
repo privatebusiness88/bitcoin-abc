@@ -5,6 +5,9 @@
 #ifndef BITCOIN_AVALANCHE_PROOFPOOL_H
 #define BITCOIN_AVALANCHE_PROOFPOOL_H
 
+#ifndef XEC_AVALANCHE_PROOFPOOL_H
+#define XEC_AVALANCHE_PROOFPOOL_H
+
 #include <avalanche/proof.h>
 #include <avalanche/proofcomparator.h>
 #include <avalanche/proofid.h>
