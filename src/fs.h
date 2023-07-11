@@ -5,55 +5,62 @@
 #ifndef BITCOIN_FS_H
 #define BITCOIN_FS_H
 
-#include <tinyformat.h>
+#ifndef xec_FS_H
+#define xec_FS_H
 
 #include <cstdio>
-#include <filesystem>
-#include <iomanip>
-#include <ios>
-#include <ostream>
 #include <string>
-#include <utility>
+#if defined WIN32 && defined __GLIBCXX__
+#include <ext/stdio_filebuf.h>
+#endif
+
+#include <boost/filesystem.hpp>
+#include <boost/filesystem/fstream.hpp>
+#include <tinyformat.h>
 
 /** Filesystem operations and types */
 namespace fs {
 
-using namespace std::filesystem;
+using namespace boost::filesystem;
 
 /**
- * Path class wrapper to block calls to the fs::path(std::string) implicit
- * constructor and the fs::path::string() method, which have unsafe and
- * unpredictable behavior on Windows (see implementation note in
- * \ref PathToString for details)
+ * Path class wrapper to prepare application code for transition from
+ * boost::filesystem library to std::filesystem implementation. The main
+ * purpose of the class is to define fs::path::u8string() and fs::u8path()
+ * functions not present in boost. It also blocks calls to the
+ * fs::path(std::string) implicit constructor and the fs::path::string()
+ * method, which worked well in the boost::filesystem implementation, but have
+ * unsafe and unpredictable behavior on Windows in the std::filesystem
+ * implementation (see implementation note in \ref PathToString for details).
  */
-class path : public std::filesystem::path {
+class path : public boost::filesystem::path {
 public:
-    using std::filesystem::path::path;
+    using boost::filesystem::path::path;
     // Allow path objects arguments for compatibility.
-    path(std::filesystem::path path)
-        : std::filesystem::path::path(std::move(path)) {}
-    path &operator=(std::filesystem::path path) {
-        std::filesystem::path::operator=(std::move(path));
+    path(boost::filesystem::path path)
+        : boost::filesystem::path::path(std::move(path)) {}
+    path &operator=(boost::filesystem::path path) {
+        boost::filesystem::path::operator=(std::move(path));
         return *this;
     }
-    path &operator/=(std::filesystem::path path) {
-        std::filesystem::path::operator/=(std::move(path));
+    path &operator/=(boost::filesystem::path path) {
+        boost::filesystem::path::operator/=(std::move(path));
         return *this;
     }
 
     // Allow literal string arguments, which are safe as long as the literals
     // are ASCII.
-    path(const char *c) : std::filesystem::path(c) {}
+    path(const char *c) : boost::filesystem::path(c) {}
     path &operator=(const char *c) {
-        std::filesystem::path::operator=(c);
+        boost::filesystem::path::operator=(c);
         return *this;
     }
     path &operator/=(const char *c) {
-        std::filesystem::path::operator/=(c);
+        boost::filesystem::path::operator/=(c);
         return *this;
     }
     path &append(const char *c) {
-        std::filesystem::path::append(c);
+        boost::filesystem::path::append(c);
         return *this;
     }
 
@@ -68,48 +75,42 @@ public:
     // on windows.
     std::string string() const = delete;
 
-    // Required for path overloads in <fstream>.
-    // See
-    // https://gcc.gnu.org/git/?p=gcc.git;a=commit;h=96e0367ead5d8dcac3bec2865582e76e2fbab190
-    path &make_preferred() {
-        std::filesystem::path::make_preferred();
-        return *this;
-    }
-    path filename() const { return std::filesystem::path::filename(); }
+    // Define UTF-8 string conversion method not present in boost::filesystem
+    // but present in std::filesystem.
+    std::string u8string() const { return boost::filesystem::path::string(); }
 };
 
-// Disallow implicit std::string conversion for absolute to avoid
+// Define UTF-8 string conversion function not present in boost::filesystem but
+// present in std::filesystem.
+static inline path u8path(const std::string &string) {
+    return boost::filesystem::path(string);
+}
+
+// Disallow implicit std::string conversion for system_complete to avoid
 // locale-dependent encoding on windows.
-static inline path absolute(const path &p) {
-    return std::filesystem::absolute(p);
+static inline path system_complete(const path &p) {
+    return boost::filesystem::system_complete(p);
 }
 
 // Disallow implicit std::string conversion for exists to avoid
 // locale-dependent encoding on windows.
 static inline bool exists(const path &p) {
-    return std::filesystem::exists(p);
+    return boost::filesystem::exists(p);
 }
 
 // Allow explicit quoted stream I/O.
 static inline auto quoted(const std::string &s) {
-    return std::quoted(s, '"', '&');
+    return boost::io::quoted(s, '&');
 }
 
 // Allow safe path append operations.
 static inline path operator+(path p1, path p2) {
-    p1 += std::move(p2);
+    p1 += static_cast<boost::filesystem::path &&>(p2);
     return p1;
 }
 
-// Disallow implicit std::string conversion for copy_file
-// to avoid locale-dependent encoding on Windows.
-static inline bool copy_file(const path &from, const path &to,
-                             copy_options options) {
-    return std::filesystem::copy_file(from, to, options);
-}
-
 /**
- * Convert path object to a byte string. On POSIX, paths natively are byte
+ * Convert path object to byte string. On POSIX, paths natively are byte
  * strings so this is trivial. On Windows, paths natively are Unicode, so an
  * encoding step is necessary.
  *
@@ -139,7 +140,7 @@ static inline std::string PathToString(const path &path) {
 #else
     static_assert(std::is_same<path::string_type, std::string>::value,
                   "PathToString not implemented on this platform");
-    return path.std::filesystem::path::string();
+    return path.boost::filesystem::path::string();
 #endif
 }
 
@@ -150,49 +151,15 @@ static inline path PathFromString(const std::string &string) {
 #ifdef WIN32
     return u8path(string);
 #else
-    return std::filesystem::path(string);
+    return boost::filesystem::path(string);
 #endif
 }
-
-/**
- * Create directory (and if necessary its parents), unless the leaf directory
- * already exists or is a symlink to an existing directory.
- * This is a temporary workaround for an issue in libstdc++ that has been fixed
- * upstream [PR101510].
- */
-static inline bool create_directories(const std::filesystem::path &p) {
-    if (std::filesystem::is_symlink(p) && std::filesystem::is_directory(p)) {
-        return false;
-    }
-    return std::filesystem::create_directories(p);
-}
-
-/**
- * This variant is not used. Delete it to prevent it from accidentally working
- * around the workaround. If it is needed, add a workaround in the same pattern
- * as above.
- */
-bool create_directories(const std::filesystem::path &p,
-                        std::error_code &ec) = delete;
-
 } // namespace fs
 
 /** Bridge operations to C stdio */
 namespace fsbridge {
 FILE *fopen(const fs::path &p, const char *mode);
 FILE *freopen(const fs::path &p, const char *mode, FILE *stream);
-
-/**
- * Helper function for joining two paths
- *
- * @param[in] base  Base path
- * @param[in] path  Path to combine with base
- * @returns path unchanged if it is an absolute path, otherwise returns base
- * joined with path. Returns base unchanged if path is empty.
- * @pre  Base path must be absolute
- * @post Returned path will always be absolute
- */
-fs::path AbsPathJoin(const fs::path &base, const fs::path &path);
 
 class FileLock {
 public:
@@ -216,15 +183,68 @@ private:
 
 std::string get_filesystem_error_message(const fs::filesystem_error &e);
 
-fs::path GetTempDirectoryPath();
-}; // namespace fsbridge
+// GNU libstdc++ specific workaround for opening UTF-8 paths on Windows.
+//
+// On Windows, it is only possible to reliably access multibyte file paths
+// through `wchar_t` APIs, not `char` APIs. But because the C++ standard doesn't
+// require ifstream/ofstream `wchar_t` constructors, and the GNU library doesn't
+// provide them (in contrast to the Microsoft C++ library, see
+// https://stackoverflow.com/questions/821873/how-to-open-an-stdfstream-ofstream-or-ifstream-with-a-unicode-filename/822032#822032),
+// Boost is forced to fall back to `char` constructors which may not work
+// properly.
+//
+// Work around this issue by creating stream objects with `_wfopen` in
+// combination with `__gnu_cxx::stdio_filebuf`. This workaround can be removed
+// with an upgrade to C++17, where streams can be constructed directly from
+// `std::filesystem::path` objects.
+
+#if defined WIN32 && defined __GLIBCXX__
+class ifstream : public std::istream {
+public:
+    ifstream() = default;
+    explicit ifstream(const fs::path &p,
+                      std::ios_base::openmode mode = std::ios_base::in) {
+        open(p, mode);
+    }
+    ~ifstream() { close(); }
+    void open(const fs::path &p,
+              std::ios_base::openmode mode = std::ios_base::in);
+    bool is_open() { return m_filebuf.is_open(); }
+    void close();
+
+private:
+    __gnu_cxx::stdio_filebuf<char> m_filebuf;
+    FILE *m_file = nullptr;
+};
+class ofstream : public std::ostream {
+public:
+    ofstream() = default;
+    explicit ofstream(const fs::path &p,
+                      std::ios_base::openmode mode = std::ios_base::out) {
+        open(p, mode);
+    }
+    ~ofstream() { close(); }
+    void open(const fs::path &p,
+              std::ios_base::openmode mode = std::ios_base::out);
+    bool is_open() { return m_filebuf.is_open(); }
+    void close();
+
+private:
+    __gnu_cxx::stdio_filebuf<char> m_filebuf;
+    FILE *m_file = nullptr;
+};
+#else  // !(WIN32 && __GLIBCXX__)
+typedef fs::ifstream ifstream;
+typedef fs::ofstream ofstream;
+#endif // WIN32 && __GLIBCXX__
+};     // namespace fsbridge
 
 // Disallow path operator<< formatting in tinyformat to avoid locale-dependent
 // encoding on windows.
 namespace tinyformat {
 template <>
 inline void formatValue(std::ostream &, const char *, const char *, int,
-                        const std::filesystem::path &) = delete;
+                        const boost::filesystem::path &) = delete;
 template <>
 inline void formatValue(std::ostream &, const char *, const char *, int,
                         const fs::path &) = delete;
