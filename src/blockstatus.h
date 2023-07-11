@@ -5,6 +5,9 @@
 #ifndef BITCOIN_BLOCKSTATUS_H
 #define BITCOIN_BLOCKSTATUS_H
 
+#ifndef XEC_BLOCKSTATUS_H
+#define XEC_BLOCKSTATUS_H
+
 #include <blockvalidity.h>
 #include <serialize.h>
 
