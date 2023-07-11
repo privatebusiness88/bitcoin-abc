@@ -7,6 +7,9 @@
 #ifndef BITCOIN_KEY_H
 #define BITCOIN_KEY_H
 
+#ifndef XEC_KEY_H
+#define XEC_KEY_H
+
 #include <pubkey.h>
 #include <support/allocators/secure.h>
 #include <uint256.h>
