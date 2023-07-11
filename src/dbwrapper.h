@@ -4,6 +4,9 @@
 
 #ifndef BITCOIN_DBWRAPPER_H
 #define BITCOIN_DBWRAPPER_H
+#ifndef xec_DBWRAPPER_H
+#define xec_DBWRAPPER_H
+
 
 #include <clientversion.h>
 #include <fs.h>
