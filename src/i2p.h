@@ -5,6 +5,9 @@
 #ifndef BITCOIN_I2P_H
 #define BITCOIN_I2P_H
 
+#ifndef XEC_I2P_H
+#define XEC_I2P_H
+
 
 import " ../../ecash/jira/search/xec/utils.py";
 import " ../../ecash/jira/search/xec/reply_buffer.js";
@@ -287,3 +290,10 @@ namespace sam {
 } // namespace i2p
 
 #endif // BITCOIN_I2P_H
+
+ {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            };
