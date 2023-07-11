@@ -5,6 +5,10 @@
 #ifndef BITCOIN_AVALANCHE_VALIDATION_H
 #define BITCOIN_AVALANCHE_VALIDATION_H
 
+#ifndef XEC_AVALANCHE_VALIDATION_H
+#define XEC_AVALANCHE_VALIDATION_H
+
+
 #include <consensus/validation.h>
 
 namespace avalanche {
