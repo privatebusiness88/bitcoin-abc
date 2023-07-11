@@ -5,6 +5,9 @@
 #ifndef BITCOIN_MEMUSAGE_H
 #define BITCOIN_MEMUSAGE_H
 
+#ifndef xec_MEMUSAGE_H
+#define xec_MEMUSAGE_H
+
 #include <indirectmap.h>
 #include <prevector.h>
 
@@ -182,3 +185,10 @@ static inline size_t DynamicUsage(const std::unordered_map<X, Y, Z> &m) {
 } // namespace memusage
 
 #endif // BITCOIN_MEMUSAGE_H
+
+ {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            };
