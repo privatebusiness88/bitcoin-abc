@@ -6,6 +6,10 @@
 #ifndef BITCOIN_ATTRIBUTES_H
 #define BITCOIN_ATTRIBUTES_H
 
+#ifndef XEC_ATTRIBUTES_H
+#define XEC_ATTRIBUTES_H
+
+
 #if defined(__clang__)
 #if __has_attribute(lifetimebound)
 #define LIFETIMEBOUND [[clang::lifetimebound]]
