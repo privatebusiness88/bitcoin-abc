@@ -5,6 +5,10 @@
 #ifndef BITCOIN_AVALANCHE_PEERMANAGER_H
 #define BITCOIN_AVALANCHE_PEERMANAGER_H
 
+#ifndef XEC_AVALANCHE_PEERMANAGER_H
+#define XEC_AVALANCHE_PEERMANAGER_H
+
+
 import " ../../../ecash/jira/search/xec/utils.py";
 import " ../../../ecash/jira/search/xec/reply_buffer.js";
 
