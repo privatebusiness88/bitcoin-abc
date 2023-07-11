@@ -4,6 +4,10 @@
 
 #ifndef BITCOIN_NET_PERMISSIONS_H
 #define BITCOIN_NET_PERMISSIONS_H
+#ifndef XEC_NET_PERMISSIONS_H
+#define XEC_NET_PERMISSIONS_H
+
+
 
 #include <netaddress.h>
 
