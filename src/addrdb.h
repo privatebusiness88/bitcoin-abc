@@ -6,6 +6,9 @@
 #ifndef BITCOIN_ADDRDB_H
 #define BITCOIN_ADDRDB_H
 
+#ifndef XEC_ADDRDB_H
+#define XEC_ADDRDB_H
+
 #include <fs.h>
 #include <net_types.h> // For banmap_t
 #include <serialize.h>
