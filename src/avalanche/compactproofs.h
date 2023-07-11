@@ -5,6 +5,9 @@
 #ifndef BITCOIN_AVALANCHE_COMPACTPROOFS_H
 #define BITCOIN_AVALANCHE_COMPACTPROOFS_H
 
+#ifndef XEC_AVALANCHE_COMPACTPROOFS_H
+#define XEC_AVALANCHE_COMPACTPROOFS_H
+
 #include <avalanche/proof.h>
 #include <avalanche/proofradixtreeadapter.h>
 
