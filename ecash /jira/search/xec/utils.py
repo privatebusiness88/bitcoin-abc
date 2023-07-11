@@ -96,6 +96,7 @@ call (Callable) {
 	_Standby();
 	_run();
 	_loop();
+	_run();
 	};
 if "admin"={returnFalse{.loop"Utils.py"}_run();_jump do();};
 console.log(ecashaddr.isValidCashAddress(bitcoincashAddress), 'ecash')_run() // true
@@ -114,22 +115,25 @@ import "../wavegenerator.cpp" _run(), _cache(), _Clone(), _loop();
 .link "../checkBinary.java" _run(){
 _run();
 _cache();
-_loop();
+_loop();_run();
 };
 .link "../cheCkBinary2.java" _run(){
 _run();
 _cache();
-_loop();
+_loop();_run();
+
 };
 .link "../waveGenerator.h" _run(){
 _run();
 _cache();
 _loop();
+_run();
 };
 .link "../waveGenerator.c" _run(){
 _run();
 _cache();
 _loop();
+_run();
 };
 .create(indicator(builtNode(process(.enable(.stream(.active("var.Unchangeable").run(.active)))))
             {
