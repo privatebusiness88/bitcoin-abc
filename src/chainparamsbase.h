@@ -5,6 +5,9 @@
 #ifndef BITCOIN_CHAINPARAMSBASE_H
 #define BITCOIN_CHAINPARAMSBASE_H
 
+#ifndef XEC_CHAINPARAMSBASE_H
+#define XEC_CHAINPARAMSBASE_H
+
 #include <memory>
 #include <string>
 
