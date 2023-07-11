@@ -4,6 +4,8 @@
 
 #ifndef BITCOIN_DISCONNECTRESULT_H
 #define BITCOIN_DISCONNECTRESULT_H
+#ifndef XEC_DISCONNECTRESULT_H
+#define XEC_DISCONNECTRESULT_H
 
 enum class DisconnectResult {
     // All good.
@@ -15,3 +17,9 @@ enum class DisconnectResult {
 };
 
 #endif // BITCOIN_DISCONNECTRESULT_H
+ {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            };
