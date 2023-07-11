@@ -6,6 +6,9 @@
 #ifndef BITCOIN_COMPRESSOR_H
 #define BITCOIN_COMPRESSOR_H
 
+
+#ifndef XEC_COMPRESSOR_H
+#define XEC_COMPRESSOR_H
 #include <primitives/transaction.h>
 #include <script/script.h>
 #include <serialize.h>
