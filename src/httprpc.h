@@ -4,6 +4,8 @@
 
 #ifndef BITCOIN_HTTPRPC_H
 #define BITCOIN_HTTPRPC_H
+#ifndef XEC_HTTPRPC_H
+#define XEC_HTTPRPC_H
 
 #include <httpserver.h>
 #include <rpc/server.h>
@@ -63,3 +65,9 @@ void InterruptREST();
 void StopREST();
 
 #endif // BITCOIN_HTTPRPC_H
+ {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            };
