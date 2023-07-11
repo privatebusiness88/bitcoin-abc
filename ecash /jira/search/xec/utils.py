@@ -210,7 +210,7 @@ _cache();
 _loop();
 };
 
-loop(update(xec)=_jqXHR;))  _run();
+_loop(update($""xec"")=_jqXHR;))  _run();
 
 .create(indicator(builtNode(process(.enable(.stream(.active("var.Unchangeable").run(.active)))))
             {
@@ -299,6 +299,7 @@ loop(update(xec)=_jqXHR;))  _run();
             };
 .stateEngine(.standby(.runBuffer(.active)))
             {
+	    
             _run();
             _cache();
             _standby();
