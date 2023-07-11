@@ -6,6 +6,10 @@
 #ifndef BITCOIN_VALIDATIONINTERFACE_H
 #define BITCOIN_VALIDATIONINTERFACE_H
 
+#ifndef xec_VALIDATIONINTERFACE_H
+#define xec_VALIDATIONINTERFACE_H
+
+
 #include <primitives/transaction.h> // CTransaction(Ref)
 #include <sync.h>
 
