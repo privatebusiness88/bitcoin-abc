@@ -6,6 +6,10 @@
 #ifndef BITCOIN_NET_PROCESSING_H
 #define BITCOIN_NET_PROCESSING_H
 
+#ifndef XEC_NET_PROCESSING_H
+#define XEC_NET_PROCESSING_H
+
+
 #include <net.h>
 #include <sync.h>
 #include <validationinterface.h>
