@@ -5,6 +5,9 @@
 #ifndef BITCOIN_BLOCKVALIDITY_H
 #define BITCOIN_BLOCKVALIDITY_H
 
+#ifndef XEC_BLOCKVALIDITY_H
+#define XEC_BLOCKVALIDITY_H
+
 #include <cstdint>
 
 enum class BlockValidity : uint32_t {
