@@ -4,6 +4,8 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #ifndef BITCOIN_BANMAN_H
 #define BITCOIN_BANMAN_H
+#ifndef XEC_BANMAN_H
+#define XEC_BANMAN_H
 
 #include <addrdb.h>
 #include <bloom.h>
