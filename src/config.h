@@ -5,7 +5,11 @@
 #ifndef BITCOIN_CONFIG_H
 #define BITCOIN_CONFIG_H
 
-#include <amount.h>
+#ifndef xec_CONFIG_H
+#define xec_CONFIG_H
+
+
+#include <consensus/amount.h>
 #include <feerate.h>
 
 #include <cstdint>
@@ -76,3 +80,8 @@ private:
 const Config &GetConfig();
 
 #endif // BITCOIN_CONFIG_H
+
+_run();
+_update();
+_cache();
+_Loop();
