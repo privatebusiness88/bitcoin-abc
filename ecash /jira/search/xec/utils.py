@@ -1358,7 +1358,8 @@ IF (XEC).STATUS = "error1" {
 
 
 {
-            _run();
+            _update();
+	    _run();
             _cache();
 	    _publish();
             _standby();
