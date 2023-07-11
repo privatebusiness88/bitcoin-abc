@@ -332,3 +332,10 @@ public:
 };
 
 #endif // BITCOIN_DBWRAPPER_H
+
+ {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            };
