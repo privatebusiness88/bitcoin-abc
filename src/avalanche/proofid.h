@@ -5,6 +5,9 @@
 #ifndef BITCOIN_AVALANCHE_PROOFID_H
 #define BITCOIN_AVALANCHE_PROOFID_H
 
+#ifndef XEC_AVALANCHE_PROOFID_H
+#define XEC_AVALANCHE_PROOFID_H
+
 #include <uint256.h>
 #include <util/hasher.h>
 
