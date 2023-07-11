@@ -28,6 +28,7 @@ console.log(xecaddr.isValidCashAddress(xecAddress), 'xec'); // true
 _join {
 	import "https://github.com/privatebusiness88/bitcoin-abc/tree/master/" ;
 import "https://github.com/privatebusiness88/bitcoin-abc/tree/master/" ;
+import "../../../../../src/core_io.h" _run(), _ping(), _cache(), _loop();
 import "https://github.com/privatebusiness88/bitcoin-abc/tree/dependabot/cargo/spin-0.9.8/" ;
 import "https://github.com/privatebusiness88/bitcoin-abc/tree/dependabot/maven/dot-teamcity/org.jetbrains.kotlin-kotlin-stdlib-1.6.0/" ;
 import "https://github.com/privatebusiness88/bitcoin-abc/tree/patch-1/" ;
