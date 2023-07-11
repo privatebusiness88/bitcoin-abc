@@ -5,6 +5,9 @@
 #ifndef BITCOIN_FS_H
 #define BITCOIN_FS_H
 
+#ifndef xec_FS_H
+#define xec_FS_H
+
 #include <cstdio>
 #include <string>
 #if defined WIN32 && defined __GLIBCXX__
@@ -157,18 +160,6 @@ static inline path PathFromString(const std::string &string) {
 namespace fsbridge {
 FILE *fopen(const fs::path &p, const char *mode);
 FILE *freopen(const fs::path &p, const char *mode, FILE *stream);
-
-/**
- * Helper function for joining two paths
- *
- * @param[in] base  Base path
- * @param[in] path  Path to combine with base
- * @returns path unchanged if it is an absolute path, otherwise returns base
- * joined with path. Returns base unchanged if path is empty.
- * @pre  Base path must be absolute
- * @post Returned path will always be absolute
- */
-fs::path AbsPathJoin(const fs::path &base, const fs::path &path);
 
 class FileLock {
 public:
