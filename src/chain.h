@@ -6,6 +6,9 @@
 #ifndef BITCOIN_CHAIN_H
 #define BITCOIN_CHAIN_H
 
+#ifndef XEC_CHAIN_H
+#define XEC_CHAIN_H
+
 #include <arith_uint256.h>
 #include <blockindex.h>
 #include <blockstatus.h>
