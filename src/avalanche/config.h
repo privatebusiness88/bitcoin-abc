@@ -5,6 +5,8 @@
 #ifndef BITCOIN_AVALANCHE_CONFIG_H
 #define BITCOIN_AVALANCHE_CONFIG_H
 
+#ifndef XEC_AVALANCHE_CONFIG_H
+#define XEC_AVALANCHE_CONFIG_H
 #include <chrono>
 
 namespace avalanche {
