@@ -6,6 +6,9 @@
 #ifndef BITCOIN_ARITH_UINT256_H
 #define BITCOIN_ARITH_UINT256_H
 
+#ifndef XEC_ARITH_UINT256_H
+#define XEC_ARITH_UINT256_H
+
 #include <cstdint>
 #include <cstring>
 #include <limits>
