@@ -7,6 +7,9 @@
 #ifndef BITCOIN_FEERATE_H
 #define BITCOIN_FEERATE_H
 
+#ifndef XEC_FEERATE_H
+#define XEC_FEERATE_H
+
 #include <consensus/amount.h>
 #include <serialize.h>
 
@@ -87,4 +90,10 @@ public:
     SERIALIZE_METHODS(CFeeRate, obj) { READWRITE(obj.nSatoshisPerK); }
 };
 
-#endif // BITCOIN_FEERATE_H
+#endif // 
+ {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            };
