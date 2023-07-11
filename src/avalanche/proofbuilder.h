@@ -5,6 +5,10 @@
 #ifndef BITCOIN_AVALANCHE_PROOFBUILDER_H
 #define BITCOIN_AVALANCHE_PROOFBUILDER_H
 
+#ifndef XEC_AVALANCHE_PROOFBUILDER_H
+#define XEC_AVALANCHE_PROOFBUILDER_H
+
+
 #include <avalanche/proof.h>
 #include <key.h>
 
