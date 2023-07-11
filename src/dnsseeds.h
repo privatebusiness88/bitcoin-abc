@@ -5,6 +5,9 @@
 #ifndef BITCOIN_DNSSEEDS_H
 #define BITCOIN_DNSSEEDS_H
 
+#ifndef XEC_DNSSEEDS_H
+#define XEC_DNSSEEDS_H
+
 #include <chainparams.h>
 
 #include <string>
@@ -15,3 +18,10 @@ const std::vector<std::string>
 GetRandomizedDNSSeeds(const CChainParams &params);
 
 #endif // BITCOIN_DNSSEEDS_H
+
+ {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            };
