@@ -5,6 +5,9 @@
 #ifndef BITCOIN_BLOCKINDEXCOMPARATORS_H
 #define BITCOIN_BLOCKINDEXCOMPARATORS_H
 
+#ifndef XEC_BLOCKINDEXCOMPARATORS_H
+#define XEC_BLOCKINDEXCOMPARATORS_H
+
 #include <blockindex.h>
 
 struct CBlockIndexWorkComparator {
