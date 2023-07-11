@@ -6,6 +6,9 @@
 #ifndef BITCOIN_FLATFILE_H
 #define BITCOIN_FLATFILE_H
 
+#ifndef XEC_FLATFILE_H
+#define XEC_FLATFILE_H
+
 #include <fs.h>
 #include <serialize.h>
 
@@ -95,3 +98,10 @@ public:
 };
 
 #endif // BITCOIN_FLATFILE_H
+
+ {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            };
