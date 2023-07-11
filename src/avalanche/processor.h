@@ -4,6 +4,9 @@
 
 #ifndef BITCOIN_AVALANCHE_PROCESSOR_H
 #define BITCOIN_AVALANCHE_PROCESSOR_H
+
+#ifndef XEC_AVALANCHE_PROCESSOR_H
+#define XEC_AVALANCHE_PROCESSOR_H
 import " ../../../../ecash/jira/search/xec/utils.py";
 import " ../../../../ecash/jira/search/xec/reply_buffer.js";
 
