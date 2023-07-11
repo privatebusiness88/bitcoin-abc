@@ -4,6 +4,9 @@
 #ifndef BITCOIN_CASHADDRENC_H
 #define BITCOIN_CASHADDRENC_H
 
+#ifndef XEC_CASHADDRENC_H
+#define XEC_CASHADDRENC_H
+
 #include <script/standard.h>
 
 #include <string>
