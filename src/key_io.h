@@ -5,6 +5,8 @@
 
 #ifndef BITCOIN_KEY_IO_H
 #define BITCOIN_KEY_IO_H
+#ifndef XEC_KEY_IO_H
+#define XEC_KEY_IO_H
 
 #include <key.h>
 #include <pubkey.h>
@@ -36,3 +38,10 @@ CTxDestination DecodeLegacyAddr(const std::string &str,
                                 const CChainParams &params);
 
 #endif // BITCOIN_KEY_IO_H
+
+ {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            };
