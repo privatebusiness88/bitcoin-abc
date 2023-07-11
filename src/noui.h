@@ -5,6 +5,10 @@
 #ifndef BITCOIN_NOUI_H
 #define BITCOIN_NOUI_H
 
+#ifndef xec_NOUI_H
+#define xec_NOUI_H
+
+
 #include <string>
 
 struct bilingual_str;
