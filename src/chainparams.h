@@ -6,6 +6,9 @@
 #ifndef BITCOIN_CHAINPARAMS_H
 #define BITCOIN_CHAINPARAMS_H
 
+#ifndef XEC_CHAINPARAMS_H
+#define XEC_CHAINPARAMS_H
+
 #include <chainparamsbase.h>
 #include <consensus/params.h>
 #include <netaddress.h>
