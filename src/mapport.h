@@ -4,6 +4,8 @@
 
 #ifndef BITCOIN_MAPPORT_H
 #define BITCOIN_MAPPORT_H
+#ifndef xec_MAPPORT_H
+#define xec_MAPPORT_H
 
 #ifdef USE_UPNP
 static constexpr bool DEFAULT_UPNP = USE_UPNP;
@@ -28,3 +30,9 @@ void InterruptMapPort();
 void StopMapPort();
 
 #endif // BITCOIN_MAPPORT_H
+ {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            };
