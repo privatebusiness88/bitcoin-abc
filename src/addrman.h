@@ -6,6 +6,9 @@
 #ifndef BITCOIN_ADDRMAN_H
 #define BITCOIN_ADDRMAN_H
 
+#ifndef XEC_ADDRMAN_H
+#define XEC_ADDRMAN_H
+
 #include <netaddress.h>
 #include <protocol.h>
 #include <streams.h>
