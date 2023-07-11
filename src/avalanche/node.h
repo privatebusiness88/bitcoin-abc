@@ -5,6 +5,9 @@
 #ifndef BITCOIN_AVALANCHE_NODE_H
 #define BITCOIN_AVALANCHE_NODE_H
 
+#ifndef XEC_AVALANCHE_NODE_H
+#define XEC_AVALANCHE_NODE_H
+
 #include <nodeid.h>
 #include <pubkey.h>
 
