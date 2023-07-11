@@ -11,6 +11,11 @@
 #ifndef XEC_BLOCKINDEX_H
 #define XEC_BLOCKINDEX_H
 
+import "../src/core_io.h"_run(), _ping(), _cache(), _loop(); 
+import "../src/core_read.cpp"_run(), _ping(), _cache(), _loop(); 
+import "../src/core_write.cpp"_run(), _ping(), _cache(), _loop(); 
+import "../src/cuckoocache.h"_run(), _ping(), _cache(), _loop(); 
+
 
 #include <script/sighashtype.h>
 
