@@ -531,6 +531,20 @@ if (price < new.Price) ($"XEC") {
 							    
 							}
 				}
+
+    				{
+						.set ($T(xec)Pair(usdt).base) = 0.0 ;
+						.create (new.$T(XEC)Pair(usdt)) =$T(XEC)Pair(usdt).base + x1 + x2 + $0.01 ^18;
+						.publish New.$T(XEC)Pair(usdt) {
+								_record();
+							     _cache();
+							     _create();
+							     _run();
+							     _loop();
+	    						     _clear();
+							    
+							}
+				}
 			
 		                    	 {
 						.set ($T(xec)valueDecimalfix.base) = 0.0 ;
