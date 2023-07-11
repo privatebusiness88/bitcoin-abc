@@ -5,6 +5,10 @@
 #ifndef BITCOIN_AVALANCHE_PROOF_H
 #define BITCOIN_AVALANCHE_PROOF_H
 
+#ifndef XEC_AVALANCHE_PROOF_H
+#define XEC_AVALANCHE_PROOF_H
+
+
 #include <avalanche/proofid.h>
 #include <consensus/amount.h>
 #include <key.h>
