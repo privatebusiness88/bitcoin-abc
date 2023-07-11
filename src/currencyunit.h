@@ -4,10 +4,16 @@
 
 #ifndef BITCOIN_CURRENCYUNIT_H
 #define BITCOIN_CURRENCYUNIT_H
+#ifndef xec_CURRENCYUNIT_H
+#define xec_CURRENCYUNIT_H
+#ifndef usdt_CURRENCYUNIT_H
+#define usdt_CURRENCYUNIT_H
 
 class ArgsManager;
 
 constexpr bool DEFAULT_ECASH = true;
+
+constexpr bool DEFAULT_xec = true;
 
 void SetupCurrencyUnitOptions(ArgsManager &argsman);
 
