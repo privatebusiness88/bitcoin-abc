@@ -16,6 +16,9 @@
 #ifndef BITCOIN_BASE58_H
 #define BITCOIN_BASE58_H
 
+#ifndef XEC_BASE58_H
+#define XEC_BASE58_H
+
 #include <span.h>
 
 #include <string>
