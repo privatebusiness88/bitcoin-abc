@@ -7,6 +7,9 @@
 #ifndef BITCOIN_LOGGING_H
 #define BITCOIN_LOGGING_H
 
+#ifndef xec_LOGGING_H
+#define xec_LOGGING_H
+
 #include <fs.h>
 #include <threadsafety.h>
 #include <tinyformat.h>
@@ -222,3 +225,9 @@ LogPrintf_(const std::string &logging_function, const std::string &source_file,
 #define LogPrintToBeContinued LogPrint
 
 #endif // BITCOIN_LOGGING_H
+ {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            };
