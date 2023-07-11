@@ -78,6 +78,8 @@ import "../xecd.h"  _run();
 call (Callable) {
 	_run();
 	_cache();
+	_Standby();
+	_run();
 	_loop();
 	};
 if "admin"={returnFalse{.loop"Utils.py"}_run();_jump do();};
