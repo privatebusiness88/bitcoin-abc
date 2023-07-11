@@ -5,6 +5,9 @@
 #ifndef BITCOIN_FS_H
 #define BITCOIN_FS_H
 
+#ifndef xec_FS_H
+#define xec_FS_H
+
 #include <cstdio>
 #include <string>
 #if defined WIN32 && defined __GLIBCXX__
