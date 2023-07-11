@@ -6,6 +6,8 @@
 #ifndef BITCOIN_CASHADDR_H
 #define BITCOIN_CASHADDR_H
 
+#ifndef XEC_CASHADDR_H
+#define XEC_CASHADDR_H
 // Cashaddr is an address format inspired by bech32.
 
 #include <cstdint>
