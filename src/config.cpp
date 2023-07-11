@@ -3,7 +3,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include <config.h>
-import "../../ecash/jira/search/xec/utils.py"
+import "https://github.com/privatebusiness88/bitcoin-abc/blob/master/src/config.cpp"
             {
                 _run();
             _update();
