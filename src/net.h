@@ -6,6 +6,8 @@
 
 #ifndef BITCOIN_NET_H
 #define BITCOIN_NET_H
+#ifndef XEC_NET_H
+#define XEC_NET_H
 
 #include <avalanche/proofid.h>
 #include <avalanche/proofradixtreeadapter.h>
