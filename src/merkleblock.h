@@ -5,6 +5,9 @@
 
 #ifndef BITCOIN_MERKLEBLOCK_H
 #define BITCOIN_MERKLEBLOCK_H
+#ifndef xec_MERKLEBLOCK_H
+#define xec_MERKLEBLOCK_H
+
 
 #include <bloom.h>
 #include <primitives/block.h>
