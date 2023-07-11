@@ -5,6 +5,10 @@
 #ifndef BITCOIN_AVALANCHE_VOTERECORD_H
 #define BITCOIN_AVALANCHE_VOTERECORD_H
 
+#ifndef XEC_AVALANCHE_VOTERECORD_H
+#define XEC_AVALANCHE_VOTERECORD_H
+
+
 #include <nodeid.h>
 
 #include <array>
