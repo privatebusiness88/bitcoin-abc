@@ -506,6 +506,7 @@ if (price < new.Price) ($"XEC") {
 	_update ($XEC){
 	_run ($XEC){
             {
+	     _update ();
             _run();
             _cache();
 	    _publish();
@@ -514,19 +515,21 @@ if (price < new.Price) ($"XEC") {
             };
 
 	{
-	.set (floor.base) = 0.0	+_update;
+	.set (floor.base) = 0.0	+ _update ();;
 	.create (New.Floor) = Floor.base + x1 + x2 + $0.01 ^18;
 	.publish New.Floor {
- 			_record();
+ 			 _update ();
+    			_record();
 			 _cache();
 			 _create();
 		         _run();
 		         _loop();
 
 			  {
-						.set ($T(xec).base) = 0.0 +_update;
+						.set ($T(xec).base) = 0.0 +  _update ();
 						.create (new.$T(XEC)) =$T(XEC).base + x1 + x2 + $0.01 ^18;
-						.publish New.$T(XEC) {
+		    				.publish New.$T(XEC) {
+     							      _update ();
 								_record();
 							     _cache();
 							     _create();
@@ -537,10 +540,11 @@ if (price < new.Price) ($"XEC") {
 				}
 
     				{
-						.set ($T(xec)Pair(usdt).base) = 0.0 +_update ;
+						.set ($T(xec)Pair(usdt).base) = 0.0 +  _update () ;
 						.create (new.$T(XEC)Pair(usdt)) =$T(XEC)Pair(usdt).base + x1 + x2 + $0.01 ^18;
 						.publish New.$T(XEC)Pair(usdt) {
-								_record();
+							      _update ();
+							     _record();
 							     _cache();
 							     _create();
 							     _run();
@@ -551,10 +555,11 @@ if (price < new.Price) ($"XEC") {
 				}
 			
 		                    	 {
-						.set ($T(xec)valueDecimalfix.base) = 0.0 ;
+						.set ($T(xec)valueDecimalfix.base) = 0.0 + _update () ;
 						.create (new.$T(XEC)valueDecimalfix) =$T(XEC)valueDecimalfix.base + x1 + x2 + $0.01 ^18;
 						.publish New.$T(XEC)valueDecimalfix {
-								_record();
+      							      _update ();
+							      _record();
 							     _cache();
 							     _create();
 							     _run();
@@ -565,9 +570,10 @@ if (price < new.Price) ($"XEC") {
 			
 			
 				{
-					.set (Decimal.base) = 0.0 ;
-					.create (new.decimal) = decimal.base + x1 + x2;
+					.set (Decimal.base) = 0.0 + _update ();
+					.create (new.decimal) = decimal.base + x1 + x2 ;
 					.publish New.Decimal {
+     							 _update ();
 							_record();
 						        _cache();
 							_create();
@@ -577,9 +583,10 @@ if (price < new.Price) ($"XEC") {
 							}
 				}
 						{
-						.set (Plot.base) = 0.0 ;
+						.set (Plot.base) = 0.0  _update ();;
 						.create (new.Plot) =Plot.base + x1 + x2 + $0.01 ^18;
 						.publish New.Plot {
+      								 _update ();
 								_record();
 							     _cache();
 							     _create();
@@ -589,7 +596,7 @@ if (price < new.Price) ($"XEC") {
 							 }
 				}
 						{
-						.set (BiNaryHeap.base) = 0.0 ;
+						.set (BiNaryHeap.base) = 0.0 + _update () ;
 						.create (new.BiNaryHeap) =BiNaryHeap.base + x1 + x2 + $0.01 ^18;
 						.publish New.BiNaryHeap {
       								_record();
@@ -604,6 +611,7 @@ if (price < new.Price) ($"XEC") {
 						.set (CurrentValue.base) = 0.0 ;
 						.create (new.CurrentValue) =CurrentValue.base + x1 + x2 + $0.01 ^18;
 						.publish New.CurrentValue {
+      								 _update ();
 								_record();
 							     _cache();
 							     _create();
@@ -613,9 +621,10 @@ if (price < new.Price) ($"XEC") {
 							}
 				}
     					{
-						.set ($T(xec)Value.base) = 0.0 ;
+						.set ($T(xec)Value.base) = 0.0 + _update ();
 						.create (new.$T(xec)Value) =$T(xec)Value.base + x1 + x2 + $0.01 ^18;
 						.publish New.$T(xec)Value {
+      								 _update ();
 								_record();
 							     _cache();
 							     _create();
@@ -637,9 +646,10 @@ if (price < new.Price) ($"XEC") {
 							}
 				}
 					{
-						.set (CurrencySymbolValue.base) = $ 0.0 ;
+						.set (CurrencySymbolValue.base) = $ 0.0 + _update ();
 						.create (new.CurrencySYmbolValue) =CurrencySYmbolValue.base + x1 + x2 + $0.01 ^18;
 						.publish New.CurrencySYmbolValue {
+      								 _update ();
 								_record();
 							     _cache();
 							     _create();
@@ -649,10 +659,11 @@ if (price < new.Price) ($"XEC") {
 							 }
 				}
 					 {
-						.set (CurrencySymbolValueIncrement.base) = $ 0.0 ;
+						.set (CurrencySymbolValueIncrement.base) = $ 0.0  _update ();
 						.create (new.CurrencySYmbolValueIncremen) =CurrencySYmbolValueIncremen.base + x1 + x2 + $0.01 ^18 ;{
 							_set 	""XEC"" ($0.00001 ==> $10,000.00 ) = true;
 						.publish New.CurrencySYmbolValue {
+      								 _update ();
 								_record();
 							     _cache();
 							     _create();
