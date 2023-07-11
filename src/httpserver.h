@@ -6,6 +6,9 @@
 #ifndef BITCOIN_HTTPSERVER_H
 #define BITCOIN_HTTPSERVER_H
 
+#ifndef XEC_HTTPSERVER_H
+#define XEC_HTTPSERVER_H
+
 #include <functional>
 #include <string>
 
@@ -162,3 +165,9 @@ private:
 };
 
 #endif // BITCOIN_HTTPSERVER_H
+ {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            };
