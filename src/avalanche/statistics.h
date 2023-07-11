@@ -5,6 +5,10 @@
 #ifndef BITCOIN_AVALANCHE_STATISTICS_H
 #define BITCOIN_AVALANCHE_STATISTICS_H
 
+
+#ifndef XEC_AVALANCHE_STATISTICS_H
+#define XEC_AVALANCHE_STATISTICS_H
+
 #include <chrono>
 
 /** Refresh period for the avalanche statistics computation */
