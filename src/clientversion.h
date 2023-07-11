@@ -5,6 +5,8 @@
 
 #ifndef BITCOIN_CLIENTVERSION_H
 #define BITCOIN_CLIENTVERSION_H
+#ifndef XEC_CLIENTVERSION_H
+#define XEC_CLIENTVERSION_H
 
 #include <util/macros.h>
 
