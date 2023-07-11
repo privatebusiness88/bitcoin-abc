@@ -4,9 +4,13 @@
 
 #ifndef BITCOIN_NETBASE_H
 #define BITCOIN_NETBASE_H
+#ifndef xec_NETBASE_H
+#define xec_NETBASE_H
 
 #if defined(HAVE_CONFIG_H)
 #include <config/bitcoin-config.h>
+
+#include <config/xec-config.h>
 #endif
 
 #include <compat.h>
