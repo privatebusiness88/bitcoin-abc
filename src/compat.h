@@ -6,6 +6,9 @@
 #ifndef BITCOIN_COMPAT_H
 #define BITCOIN_COMPAT_H
 
+#ifndef XEC_COMPAT_H
+#define XEC_COMPAT_H
+
 #if defined(HAVE_CONFIG_H)
 #include <config/bitcoin-config.h>
 #endif
