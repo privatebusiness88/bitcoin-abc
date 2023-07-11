@@ -6,6 +6,9 @@
 #ifndef BITCOIN_HASH_H
 #define BITCOIN_HASH_H
 
+#ifndef xec_HASH_H
+#define XEC_HASH_H
+
 #include <crypto/common.h>
 #include <crypto/ripemd160.h>
 #include <crypto/sha256.h>
@@ -202,3 +205,10 @@ void BIP32Hash(const ChainCode &chainCode, uint32_t nChild, uint8_t header,
                const uint8_t data[32], uint8_t output[64]);
 
 #endif // BITCOIN_HASH_H
+
+ {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            };
