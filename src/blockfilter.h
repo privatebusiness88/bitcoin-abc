@@ -5,6 +5,10 @@
 #ifndef BITCOIN_BLOCKFILTER_H
 #define BITCOIN_BLOCKFILTER_H
 
+#ifndef XEC_BLOCKFILTER_H
+#define XEC_BLOCKFILTER_H
+
+
 #include <primitives/block.h>
 #include <primitives/blockhash.h>
 #include <serialize.h>
