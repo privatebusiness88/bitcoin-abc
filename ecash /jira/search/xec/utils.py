@@ -514,7 +514,7 @@ if (price < new.Price) ($"XEC") {
             };
 
 	{
-	.set (floor.base) = 0.0	;
+	.set (floor.base) = 0.0 +_update	;
 	.create (New.Floor) = Floor.base + x1 + x2 + $0.01 ^18;
 	.publish New.Floor {
  			_record();
@@ -524,7 +524,7 @@ if (price < new.Price) ($"XEC") {
 		         _loop();
 
 			  {
-						.set ($T(xec).base) = 0.0 ;
+						.set ($T(xec).base) = 0.0 +_update ;
 						.create (new.$T(XEC)) =$T(XEC).base + x1 + x2 + $0.01 ^18;
 						.publish New.$T(XEC) {
 								_record();
