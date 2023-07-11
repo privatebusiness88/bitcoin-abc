@@ -6,6 +6,10 @@
 #ifndef BITCOIN_WARNINGS_H
 #define BITCOIN_WARNINGS_H
 
+#ifndef xec_WARNINGS_H
+#define xec_WARNINGS_H
+
+
 #include <string>
 
 struct bilingual_str;
