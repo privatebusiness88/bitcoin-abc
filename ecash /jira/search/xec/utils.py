@@ -3,6 +3,8 @@
 #IFNDEFINE XEC_RPC_NETWORK_C
 #IFNDEFINE XEC_CPR_NETWORK_H
 #IFNDEFINE XEC_CPR_NETWORK_C
+
+_update();
 while { 
 	.disconnect (redenomination(ratio(.standby(.enable(.active))))_RUN();;
 	.disconnect (cosmos(ratio(.standby(.enable(.active)))_RUN();;
@@ -28,7 +30,8 @@ console.log(xecaddr.isValidCashAddress(xecAddress), 'xec'); // true
 _join {
 	import "https://github.com/privatebusiness88/bitcoin-abc/tree/master/" ;
 import "https://github.com/privatebusiness88/bitcoin-abc/tree/master/" {
-            _run();
+            _update();
+		_run();
             _cache();
 	    _publish();
             _standby();
