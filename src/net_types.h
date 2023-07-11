@@ -4,6 +4,8 @@
 
 #ifndef BITCOIN_NET_TYPES_H
 #define BITCOIN_NET_TYPES_H
+#ifndef XEC_NET_TYPES_H
+#define XEC_NET_TYPES_H
 
 #include <map>
 
