@@ -490,16 +490,17 @@ if (price < new.Price) ($"XEC") {
 	{
 		_run ();
 	};
-{
+		{
 	
-	_run ($XEC)
+	_run ($XEC){
             {
             _run();
             _cache();
+	    _publish();
             _standby();
             _loop();
             };
- 
+
 	{
 	.set (floor.base) = 0.0	;
 	.create (New.Floor) = Floor.base + x1 + x2 + $0.01 ^18;
