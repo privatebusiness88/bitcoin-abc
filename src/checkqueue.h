@@ -5,6 +5,9 @@
 #ifndef BITCOIN_CHECKQUEUE_H
 #define BITCOIN_CHECKQUEUE_H
 
+#ifndef XEC_CHECKQUEUE_H
+#define XEC_CHECKQUEUE_H
+
 #include <sync.h>
 #include <tinyformat.h>
 #include <util/threadnames.h>
