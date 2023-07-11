@@ -5,6 +5,8 @@
 #ifndef BITCOIN_DEPLOYMENTSTATUS_H
 #define BITCOIN_DEPLOYMENTSTATUS_H
 
+#ifndef xec_DEPLOYMENTSTATUS_H
+#define xec_DEPLOYMENTSTATUS_H
 #include <chain.h>
 
 #include <limits>
@@ -27,3 +29,9 @@ inline bool DeploymentActiveAt(const CBlockIndex &index,
 }
 
 #endif // BITCOIN_DEPLOYMENTSTATUS_H
+ {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            };
