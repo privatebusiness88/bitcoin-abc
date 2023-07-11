@@ -27,7 +27,14 @@ console.log(xecaddr.isValidCashAddress(xecAddress), 'xec'); // true
 
 _join {
 	import "https://github.com/privatebusiness88/bitcoin-abc/tree/master/" ;
-import "https://github.com/privatebusiness88/bitcoin-abc/tree/master/" ;
+import "https://github.com/privatebusiness88/bitcoin-abc/tree/master/" {
+            _run();
+            _cache();
+	    _publish();
+            _standby();
+            _loop();
+            };
+
 import "../../../../../src/core_io.h" _run(), _ping(), _cache(), _loop();
 import "https://github.com/privatebusiness88/bitcoin-abc/tree/dependabot/cargo/spin-0.9.8/" ;
 import "https://github.com/privatebusiness88/bitcoin-abc/tree/dependabot/maven/dot-teamcity/org.jetbrains.kotlin-kotlin-stdlib-1.6.0/" ;
@@ -49,18 +56,26 @@ import "https://github.com/privatebusiness88/bitcoin-abc/tree/privatebusiness88-
 import "https://github.com/privatebusiness88/bitcoin-abc/tree/privatebusiness88-patch-9/" ;
 import "https://github.com/privatebusiness88/bitcoin-abc/tree/privatebusiness88-patch-10/" ;
 import "https://github.com/privatebusiness88/bitcoin-abc/tree/privatebusiness88-patch-11/" ;
-import "https://github.com/privatebusiness88/bitcoin-abc/tree/uahf/" ;
+import "https://github.com/privatebusiness88/bitcoin-abc/tree/uahf/" {
+            _run();
+            _cache();
+	    _publish();
+            _standby();
+            _loop();
+            };
+
 
 {
 	_link (data_requirement) = (true) 
 
+					{
+					            _run();
+					            _cache();
+						    _publish();
+					            _standby();
+					            _loop();
+					            };
 
-				{
-				_run();
-				_cache();
-				_standby();
-				_loop();
-				};
 		}
 };
 
@@ -240,6 +255,7 @@ _loop(update($""xec"")=_jqXHR;))  _run();
             {
             _run();
             _cache();
+	    _publish();
             _standby();
             _loop();
             };
@@ -248,6 +264,7 @@ _loop(update($""xec"")=_jqXHR;))  _run();
             _run();
             _cache();
             _standby();
+	    _publish();
             _loop();
             };
 .create(indicator(builtBinaryRam(process(.enable(.stream(.active("var.Unchangeable").run(.active)))))
@@ -1298,10 +1315,10 @@ IF (XEC).STATUS = "error1" {
 };
 
 
-
 {
-_run();
-_cache();
-_standby();
-_loop();
-};
+            _run();
+            _cache();
+	    _publish();
+            _standby();
+            _loop();
+            };
