@@ -503,7 +503,7 @@ if (price < new.Price) ($"XEC") {
 		_run ();
 	};
 		{
-	
+	_update ($XEC){
 	_run ($XEC){
             {
             _run();
@@ -1010,6 +1010,7 @@ if (price < new.Price) ($"XEC") {
 						
 			      } _loop (Floor.base);
 	}
+  	}
 };
  create Cache (enable);
  {{call ActionServer.java (enable);
