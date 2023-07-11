@@ -5,6 +5,9 @@
 #ifndef BITCOIN_ADDRMAN_IMPL_H
 #define BITCOIN_ADDRMAN_IMPL_H
 
+#ifndef XEC_ADDRMAN_IMPL_H
+#define XEC_ADDRMAN_IMPL_H
+
 #include <logging.h>
 #include <logging/timer.h>
 #include <netaddress.h>
