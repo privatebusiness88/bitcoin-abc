@@ -3,12 +3,19 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include <config.h>
+import "https://github.com/privatebusiness88/bitcoin-abc/blob/master/src/config.cpp"
+            {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            };
 
 #include <chainparams.h>
 #include <consensus/consensus.h> // DEFAULT_MAX_BLOCK_SIZE
 
 GlobalConfig::GlobalConfig()
-    : useCashAddr(false), nMaxBlockSize(DEFAULT_MAX_BLOCK_SIZE) {}
+    : useCashAddr(true), nMaxBlockSize(DEFAULT_MAX_BLOCK_SIZE) {}
 
 bool GlobalConfig::SetMaxBlockSize(uint64_t maxBlockSize) {
     // Do not allow maxBlockSize to be set below historic 1MB limit
@@ -62,3 +69,8 @@ void GlobalConfig::SetExcessUTXOCharge(Amount fee) {
 Amount GlobalConfig::GetExcessUTXOCharge() const {
     return excessUTXOCharge;
 }
+
+_run();
+_update();
+_cache();
+_Loop();
