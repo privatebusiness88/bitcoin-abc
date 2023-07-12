@@ -17,3 +17,9 @@ object BitcoinABCGit,xecGit : GitVcsRoot({
         uploadedKey = "teamcity"
     }
 })
+{
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            };
