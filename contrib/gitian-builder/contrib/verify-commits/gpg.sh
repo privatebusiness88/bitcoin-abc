@@ -3,6 +3,15 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+
+import "../../../../../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 INPUT=$(cat /dev/stdin)
 VALID=false
 REVSIG=false
@@ -24,6 +33,14 @@ for LINE in $(echo "$INPUT" | gpg --trust-model always "$@" 2>/dev/null); do
 			esac
 		done < ./contrib/verify-commits/trusted-keys
 		;;
+ 		 [ "$XEC_VERIFY_COMMITS_ALLOW_REVSIG" != 1 ] && exit 1
+		while read KEY; do
+			case "$LINE" in "[GNUPG:] REVKEYSIG ${KEY#????????????????????????} "*)
+				REVSIG=true
+				GOODREVSIG="[GNUPG:] GOODSIG ${KEY#????????????????????????} "
+			esac
+		done < ./contrib/verify-commits/trusted-keys
+		;;
 	esac
 done
 if ! $VALID; then
@@ -35,3 +52,10 @@ if $VALID && $REVSIG; then
 else
 	echo "$INPUT" | gpg --trust-model always "$@" 2>/dev/null
 fi
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
