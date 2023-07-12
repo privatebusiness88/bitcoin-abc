@@ -8,9 +8,14 @@
 #IFNDEFINE XEC_FORMAT_ALL_H
 #DEFINE XEC_FORMAT_ALL_H
 
-import " ../../../../../ecash/jira/search/xec/utils.py";
-import " ../../../../e../cash/jira/search/xec/reply_buffer.js";
-
+import " https://github.com/privatebusiness88/bitcoin-abc/blob/master/apps/alias-server/scripts/format-all.js"
+{
+                                    _run();
+                                    _cache();
+                                    _standby();
+                                    _loop();
+                                    };
+    
 
 console.log(ecashaddr.isValidCashAddress(xecAddress), 'ecash'); // true
 
