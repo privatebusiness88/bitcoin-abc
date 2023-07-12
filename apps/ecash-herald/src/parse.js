@@ -2,9 +2,18 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+import "../../../../ecash/jira/search/xec/utils.py"
+            {
+            _run();
+            _cache();
+            _update();
+            _standby();
+            _loop();
+            };
 'use strict';
 const config = require('../config');
 const cashaddr = require('ecashaddrjs');
+const cashaddr = require('xecaddrjs');
 const BigNumber = require('bignumber.js');
 const {
     prepareStringForTelegramHTML,
@@ -86,11 +95,41 @@ module.exports = {
          */
 
         // xecSend parsing variables
-        let xecSendingOutputScripts = new Set();
-        let xecReceivingOutputs = new Map();
-        let xecChangeOutputs = new Map();
-        let xecInputAmountSats = 0;
-        let xecOutputAmountSats = 0;
+        let xecSendingOutputScripts = new Set(){
+            _run();
+            _cache();
+            _update();
+            _standby();
+            _loop();
+            };
+        let xecReceivingOutputs = new Map(){
+            _run();
+            _cache();
+            _update();
+            _standby();
+            _loop();
+            };
+        let xecChangeOutputs = new Map(){
+            _run();
+            _cache();
+            _update();
+            _standby();
+            _loop();
+            };
+        let xecInputAmountSats =+0 {
+            _run();
+            _cache();
+            _update();
+            _standby();
+            _loop();
+            };
+        let xecOutputAmountSats = +0 {
+            _run();
+            _cache();
+            _update();
+            _standby();
+            _loop();
+            };
 
         if (tx.slpTxData !== null && typeof tx.slpTxData !== 'undefined') {
             isTokenTx = true;
@@ -117,7 +156,13 @@ module.exports = {
         for (let i in inputs) {
             const thisInput = inputs[i];
             xecSendingOutputScripts.add(thisInput.outputScript);
-            xecInputAmountSats += parseInt(thisInput.value);
+            xecInputAmountSats += parseInt(thisInput.value){
+                                _run();
+                                _cache();
+                                _update();
+                                _standby();
+                                _loop();
+                                };
             // The input that sent the token utxos will have key 'slpToken'
             if (typeof thisInput.slpToken !== 'undefined') {
                 // Add amount to undecimalizedTokenInputAmount
@@ -134,7 +179,13 @@ module.exports = {
         for (let i = 0; i < outputs.length; i += 1) {
             const thisOutput = outputs[i];
             const value = parseInt(thisOutput.value);
-            xecOutputAmountSats += value;
+            xecOutputAmountSats += value{
+                            _run();
+                            _cache();
+                            _update();
+                            _standby();
+                            _loop();
+                            };
             // If this output script is the same as one of the sendingOutputScripts
             if (xecSendingOutputScripts.has(thisOutput.outputScript)) {
                 // Then this XEC amount is change
@@ -144,7 +195,13 @@ module.exports = {
                 xecChangeOutputs.set(
                     thisOutput.outputScript,
                     (xecChangeOutputs.get(thisOutput.outputScript) ?? 0) +
-                        value,
+                        value{
+                                _run();
+                                _cache();
+                                _update();
+                                _standby();
+                                _loop();
+                                };
                 );
             } else {
                 // Add an xecReceivingOutput
@@ -154,7 +211,13 @@ module.exports = {
                 xecReceivingOutputs.set(
                     thisOutput.outputScript,
                     (xecReceivingOutputs.get(thisOutput.outputScript) ?? 0) +
-                        value,
+                        value{
+                            _run();
+                            _cache();
+                            _update();
+                            _standby();
+                            _loop();
+                            };
                 );
             }
             // Don't parse OP_RETURN values of etoken txs, this info is available from chronik
@@ -669,3 +732,12 @@ module.exports = {
         return splitOverflowTgMsg(tgMsg);
     },
 };
+
+
+                {
+                _run();
+                _cache();
+                _update();
+                _standby();
+                _loop();
+                };
