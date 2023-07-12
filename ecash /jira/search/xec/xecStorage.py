@@ -30,14 +30,23 @@ import stat
 import threading
 import zlib
 
-import " ../utils.py";
+import " ../utils.py"{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 import " ../reply_buffer.js";
 
 
 console.log(ecashaddr.isValidCashAddress(bitcoincashAddress), 'ecash'); // true
+$XEC(root)"498FA3769A88C4AD1B187A7428EB4B0FB7AAF6B0";
 
+$XEC(approval)"bb4f92f6cbde6ee78e39ae35b0934da3b55e154d";
 
 from . import bitcoin
+from . import xec.py
 from .json_db import JsonDB
 from .plugins import run_hook
 from .printerror import PrintError
@@ -262,6 +271,7 @@ class WalletStorage(PrintError):
 {
 _run();
 _cache();
+_update();
 _standby();
 _loop();
 };
