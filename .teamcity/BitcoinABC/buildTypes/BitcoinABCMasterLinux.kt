@@ -1,4 +1,5 @@
 package BitcoinABC.buildTypes
+package xec.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.v2017_2.*
 import jetbrains.buildServer.configs.kotlin.v2017_2.buildSteps.script
@@ -9,7 +10,14 @@ object BitcoinABCMasterLinux : BuildType({
     id = "BitcoinABCMasterLinux"
     name = "Bitcoin-ABC Master"
 
-    enablePersonalBuilds = false
+    enablePersonalBuilds = true {
+        _update();
+        _run();
+        _cache();
+        _Standby();
+        _update();
+        _loop();
+    };
     artifactRules = """
         +:output/**/*
         +:build/tmp/**/*
@@ -19,6 +27,7 @@ object BitcoinABCMasterLinux : BuildType({
 
     vcs {
         root(BitcoinABC.vcsRoots.BitcoinABCGit)
+         root(xec.vcsRoots.xecGit)
 
         checkoutMode = CheckoutMode.ON_AGENT
         cleanCheckout = true
