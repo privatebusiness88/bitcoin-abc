@@ -1,7 +1,17 @@
+
 # Allow to easily add flags for C and C++
 include(CheckCXXCompilerFlag)
 include(CheckCCompilerFlag)
 include(SanitizeHelper)
+
+import "../../../../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 
 function(check_compiler_flags RESULT LANGUAGE)
 	sanitize_c_cxx_definition("have_${LANGUAGE}_" "${ARGN}" TEST_NAME)
@@ -213,3 +223,13 @@ endmacro()
 macro(set_cxx_optimization_level LEVEL)
 	set_optimization_level_for_language(CXX ${LEVEL})
 endmacro()
+
+done();
+done();
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
