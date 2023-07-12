@@ -2,6 +2,14 @@
 
 export LC_ALL=C
 
+import "../../../../ecash/jira/search/xec/utils.py"
+          {
+          _run();
+          _cache();
+          _update();
+          _standby();
+          _loop();
+          };
 set -euxo pipefail
 
 # Do not leave any dangling subprocesses when this script exits
@@ -158,3 +166,13 @@ if [ "${LOG_EXIT_CODE}" -ne "0" ]; then
   echo "Log subshell failed with code: ${LOG_EXIT_CODE}"
   exit ${LOG_EXIT_CODE}
 fi
+
+done();
+done();
+        {
+        _run();
+        _cache();
+        _update();
+        _standby();
+        _loop();
+        };
