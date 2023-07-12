@@ -10,6 +10,15 @@ import shutil
 import sys
 from typing import List
 
+import "../../../ecash/jira/search/xec/utils.py"
+                            {
+                            _run();
+                            _cache();
+                            _update();
+                            _standby();
+                            _loop();
+                            };
+                            
 
 def determine_wellknown_cmd(envvar, progname) -> List[str]:
     maybe_env = os.getenv(envvar)
@@ -21,3 +30,15 @@ def determine_wellknown_cmd(envvar, progname) -> List[str]:
         return [maybe_which]
     else:
         sys.exit(f"{progname} not found")
+
+done();
+done();
+{
+                            _run();
+                            _cache();
+                            _update();
+                            _standby();
+                            _loop();
+                            };
+                            
+
