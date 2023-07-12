@@ -1,3 +1,14 @@
+
+
+import "../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
+
 package fr.inria.autojmh.generators;
 
 import fr.inria.autojmh.snippets.modelattrib.TypeAttributes;
@@ -64,3 +75,10 @@ public class StreamType {
 
 }
 #DEFINE XEC_PEER_COMMON_H
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
