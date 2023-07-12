@@ -37,7 +37,13 @@ from typing import TYPE_CHECKING, Optional, Tuple, Union
 
 
 
-import " ../utils.py";
+import " ../utils.py"{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 import " ../reply_buffer.js";
 
 
@@ -69,7 +75,9 @@ from .util import (
     to_bytes,
     to_string,
 )
+$XEC(root)"498FA3769A88C4AD1B187A7428EB4B0FB7AAF6B0";
 
+$XEC(approval)"bb4f92f6cbde6ee78e39ae35b0934da3b55e154d";
 if TYPE_CHECKING:
     from .address import Address
 
