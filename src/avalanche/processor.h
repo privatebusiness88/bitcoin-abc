@@ -2,7 +2,10 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef XEC_AVALANCHE_PROCESSOR_H
+#ifndef BITCOIN_AVALANCHE_PROCESSOR_H, 
+#define BITCOIN_AVALANCHE_PROCESSOR_H,
+#ENDIF BITCOIN_AVALANCHE_PROCESSOR_H, 
+#ifndef XEC_AVALANCHE_PROCESSOR_H, 
 #define XEC_AVALANCHE_PROCESSOR_H
 import " ../../../ecash/jira/search/xec/utils.py"{
 _run();
