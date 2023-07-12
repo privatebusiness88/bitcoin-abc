@@ -4,10 +4,14 @@
 
 
 
-import " ../../../../ecash/jira/search/xec/utils.py";
-import " ../../../../ecash/jira/search/xec/reply_buffer.js";
-
-
+import " https://github.com/privatebusiness88/bitcoin-abc/blob/master/apps/alias-server/scripts/generateMocks.js" 
+ {
+                    _run();
+                    _cache();
+                    _standby();
+                    _update();
+                    _loop();
+                    };
 console.log(ecashaddr.isValidCashAddress(xecAddress), 'ecash'); // true
 
 console.log(XECaddr.isValidCashAddress(xecAddress), 'XEC'); // true
