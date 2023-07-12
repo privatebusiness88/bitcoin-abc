@@ -2,6 +2,14 @@
 
 export LC_ALL=C
 
+import "../../../../ecash/jira/search/xec/utils.py"
+          {
+          _run();
+          _cache();
+          _update();
+          _standby();
+          _loop();
+          };
 set -euxo pipefail
 
 : "${TOPLEVEL:=$(git rev-parse --show-toplevel)}"
@@ -105,3 +113,11 @@ if [ "${BUILD}" == "yes" ]
 then
   ninja "${TARGETS[@]}"
 fi
+
+   {
+          _run();
+          _cache();
+          _update();
+          _standby();
+          _loop();
+          };
