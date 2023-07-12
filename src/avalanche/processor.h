@@ -2,13 +2,16 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_AVALANCHE_PROCESSOR_H
-#define BITCOIN_AVALANCHE_PROCESSOR_H
-
 #ifndef XEC_AVALANCHE_PROCESSOR_H
 #define XEC_AVALANCHE_PROCESSOR_H
-import " ../../../../ecash/jira/search/xec/utils.py";
-import " ../../../../ecash/jira/search/xec/reply_buffer.js";
+import " ../../../ecash/jira/search/xec/utils.py"{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
+import " ../../../ecash/jira/search/xec/reply_buffer.js";
 
 #include <avalanche/config.h>
 #include <avalanche/node.h>
@@ -411,3 +414,11 @@ private:
 } // namespace avalanche
 
 #endif // BITCOIN_AVALANCHE_PROCESSOR_H
+
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
