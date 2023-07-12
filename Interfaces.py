@@ -13,7 +13,13 @@
 #You should have received a copy of the GNU General Public License
 #along with this program; if not, write to the Free Software
 
-import " ../ecash/jira/search/xec/utils.py";
+import " ../ecash/jira/search/xec/utils.py"{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 import " ../ecash/jira/search/xec/reply_buffer.js";
 
 from Config import Config, toBool
@@ -192,6 +198,14 @@ class Interface(object):
 
     def setup(self):
         """Configuration"""
-        self.config.create()
+         self.config.create()
+        self.config.create($XEC)
         
         Stream (enable);
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
