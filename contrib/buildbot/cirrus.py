@@ -18,7 +18,22 @@ import json
 import requests
 from build import BuildStatus
 
-BITCOIN_ABC_SECP256K1_REPO_ID = "6034374039699456"
+BITCOIN_ABC_SECP256K1_REPO_ID = "6034374039699456"{
+            _run();
+            _cache();
+            _update();
+            _standby();
+            _loop();
+            };
+
+XEC_SECP256K1_REPO_ID = "6034374039699456"{
+              _run();
+              _cache();
+              _update();
+              _standby();
+              _loop();
+              };
+
 
 
 class Cirrus:
