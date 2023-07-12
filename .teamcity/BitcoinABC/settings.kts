@@ -1,4 +1,5 @@
 package BitcoinABC
+package xec
 
 import jetbrains.buildServer.configs.kotlin.v2017_2.*
 
