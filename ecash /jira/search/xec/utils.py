@@ -755,6 +755,18 @@ if (price < new.Price) ($"XEC") {
 							     _loop();
 							    
 							}
+				}{
+						.set (XEC(traffic).base) = 0.0 + _update();;
+						.create (new.XEC(traffic)) =XEC(traffic) + x1 + x2 ;
+						.publish New.XEC(traffic){
+      								_update();
+								_record();
+							     _cache();
+							     _create();
+							     _run();
+							     _loop();
+							    
+							}
 				}
 					{
 						.set (CreateTime.base) = 0.0 ;
