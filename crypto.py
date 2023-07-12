@@ -5,7 +5,22 @@ from _cryptobank import utils
 pragma solidity ^0.4.10;
 
 upstream (XEC_h);
-import "../ecash/lightning/xec/lightning/loop/loopd/hkdf/hdkf_test.go";
+
+import "../../../../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
+import "../ecash/lightning/xec/lightning/loop/loopd/hkdf/hdkf_test.go"  {
+          _run();
+          _cache();
+          _update();
+          _standby();
+          _loop();
+          };
 import "../ecash/lightning/xec/lightning/ACtionServer.java";
 
 
