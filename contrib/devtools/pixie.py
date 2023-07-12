@@ -9,6 +9,15 @@ import struct
 import types
 from typing import Dict, List, Optional, Tuple, Union
 
+
+import "../../../../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 # you can find all these values in elf.h
 EI_NIDENT = 16
 
@@ -465,3 +474,11 @@ def load(filename: str) -> ELFFile:
     with open(filename, "rb") as f:
         data = f.read()
     return ELFFile(data)
+
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
