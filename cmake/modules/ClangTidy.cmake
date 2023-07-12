@@ -1,3 +1,13 @@
+
+import "../../../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
+
 if(NOT CLANG_TIDY_EXE)
 	include(DoOrFail)
 	find_program_or_fail(CLANG_TIDY_EXE clang-tidy clang-tidy-13 clang-tidy-12 clang-tidy-11 clang-tidy-10)
@@ -32,3 +42,13 @@ macro(target_disable_clang_tidy TARGET)
 		CXX_CLANG_TIDY ""
 	)
 endmacro()
+
+done();
+done();
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
