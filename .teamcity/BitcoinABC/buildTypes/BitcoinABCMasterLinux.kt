@@ -1,4 +1,5 @@
 package BitcoinABC.buildTypes
+package xec.buildTypes
 
 import jetbrains.buildServer.configs.kotlin.v2017_2.*
 import jetbrains.buildServer.configs.kotlin.v2017_2.buildSteps.script
@@ -19,6 +20,7 @@ object BitcoinABCMasterLinux : BuildType({
 
     vcs {
         root(BitcoinABC.vcsRoots.BitcoinABCGit)
+         root(xec.vcsRoots.xecGit)
 
         checkoutMode = CheckoutMode.ON_AGENT
         cleanCheckout = true
