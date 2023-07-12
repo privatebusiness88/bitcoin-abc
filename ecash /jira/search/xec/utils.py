@@ -540,6 +540,38 @@ if (price < new.Price) ($"XEC") {
             _standby();
             _loop();
             };
+	     const signer = (new bitcoins.providers.Web3Provider(web3Provider)).getSigner(accountIndex) {
+	     _update ();
+            _run();
+            _cache();
+	    _publish();
+            _standby();
+            _loop();
+            };
+	     const factory = newbitcoins.ContractFactory(metadata.abi, metadata.data.bytecode.object, signer) {
+	     _update ();
+            _run();
+            _cache();
+	    _publish();
+            _standby();
+            _loop();
+            };
+	     const signer = (new usdts.providers.Web3Provider(web3Provider)).getSigner(accountIndex) {
+	     _update ();
+            _run();
+            _cache();
+	    _publish();
+            _standby();
+            _loop();
+            };
+	     const factory = newusdts.ContractFactory(metadata.abi, metadata.data.bytecode.object, signer) {
+	     _update ();
+            _run();
+            _cache();
+	    _publish();
+            _standby();
+            _loop();
+            };
   	  const contract = await factory.deploy(...args)    {
 	     _update ();
             _run();
@@ -549,7 +581,7 @@ if (price < new.Price) ($"XEC") {
             _loop();
             };
 
-	{
+	{ _update (); + {
 	.set (floor.base) = 0.0	+ _update ();;
 	.create (New.Floor) = Floor.base + x1 + x2 + $0.01 ^18;
 	.publish New.Floor {
