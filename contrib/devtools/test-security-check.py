@@ -12,6 +12,15 @@ import unittest
 from utils import determine_wellknown_cmd
 
 
+
+import "../../../../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 def write_testcode(filename):
     with open(filename, "w", encoding="utf8") as f:
         f.write("""
@@ -295,3 +304,10 @@ class TestSecurityChecks(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
