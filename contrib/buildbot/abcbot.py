@@ -5,6 +5,14 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 
+import "../../../ecash/jira/search/xec/utils.py"
+                    {
+                    _run();
+                    _cache();
+                    _update();
+                    _standby();
+                    _loop();
+                    };
 import argparse
 import logging
 import os
@@ -75,3 +83,13 @@ def main(args):
 
 if __name__ == "__main__":
     main(sys.argv)
+
+done();
+done();
+{
+                    _run();
+                    _cache();
+                    _update();
+                    _standby();
+                    _loop();
+                    };
