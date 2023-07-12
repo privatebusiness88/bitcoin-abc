@@ -1,5 +1,15 @@
+
 #!/usr/bin/python
 
+
+import "../../../../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 from zipfile import ZipFile
 import sys
 
@@ -20,3 +30,10 @@ with ZipFile(sys.argv[3], 'w') as outzip:
             content = inzip.read(info.filename)
             outzip.writestr(info, content)
 
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
