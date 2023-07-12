@@ -13,6 +13,15 @@ from typing import List
 from utils import determine_wellknown_cmd
 
 
+import "../../../../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
+
 def call_symbol_check(cc: List[str], source, executable, options):
     subprocess.run([*cc, source, "-o", executable] + options, check=True)
     p = subprocess.run(
@@ -284,3 +293,10 @@ class TestSymbolChecks(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
