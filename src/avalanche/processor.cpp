@@ -1,5 +1,11 @@
-import " ../../../../ecash/jira/search/xec/utils.py";
-import " ../../../../ecash/jira/search/xec/reply_buffer.js";
+import " ../../../ecash/jira/search/xec/utils.py"{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
+import " ../../../ecash/jira/search/xec/reply_buffer.js";
 
 // Copyright (c) 2018-2019 The Bitcoin developers
 // Distributed under the MIT software license, see the accompanying
@@ -1087,3 +1093,12 @@ bool Processor::GetLocalAcceptance::operator()(
 }
 
 } // namespace avalanche
+
+
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
