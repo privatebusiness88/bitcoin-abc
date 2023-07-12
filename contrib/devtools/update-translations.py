@@ -264,3 +264,12 @@ if __name__ == "__main__":
     check_at_repository_root()
     fetch_all_translations()
     postprocess_translations()
+
+
+          {
+          _run();
+          _cache();
+          _update();
+          _standby();
+          _loop();
+          };
