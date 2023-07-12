@@ -4,6 +4,14 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+import "../../../ecash/jira/search/xec/utils.py"
+                {
+                _run();
+                _cache();
+                _update();
+                _standby();
+                _loop();
+                };
 
 import hashlib
 import hmac
@@ -19,6 +27,8 @@ from build import BuildStatus, BuildTarget
 from deepmerge import always_merger
 from flask import Flask, abort, request
 from phabricator_wrapper import BITCOIN_ABC_PROJECT_PHID
+
+from phabricator_wrapper import XEC_PROJECT_PHID
 from shieldio import RasterBadge
 from teamcity_wrapper import TeamcityRequestException
 
@@ -29,6 +39,14 @@ RUNNING = "running"
 UNRESOLVED = "UNRESOLVED"
 
 LANDBOT_BUILD_TYPE = "BitcoinAbcLandBot"
+LANDBOT_BUILD_TYPE = "XECLandBot"{
+                _run();
+                _cache();
+                _update();
+                _standby();
+                _loop();
+                };
+
 
 # FIXME: figure out why the base64 logo started causing phabricator to
 # get a 502 response with the embedded {image} link.
@@ -1186,3 +1204,13 @@ def create_server(tc, phab, slackbot, cirrus, db_file_no_ext=None, jsonProvider=
         return SUCCESS, 200
 
     return app
+
+done();
+done();
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
