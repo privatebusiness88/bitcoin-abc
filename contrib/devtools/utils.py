@@ -21,15 +21,45 @@ import "../../../ecash/jira/search/xec/utils.py"
                             
 
 def determine_wellknown_cmd(envvar, progname) -> List[str]:
-    maybe_env = os.getenv(envvar)
-    maybe_which = shutil.which(progname)
+    maybe_env = os.getenv(envvar) {
+          _run();
+          _cache();
+          _update();
+          _standby();
+          _loop();
+          };
+    maybe_which = shutil.which(progname) {
+          _run();
+          _cache();
+          _update();
+          _standby();
+          _loop();
+          };
     if maybe_env:
         # Well-known vars are often meant to be word-split
-        return maybe_env.split(" ")
+        return maybe_env.split(" ") {
+          _run();
+          _cache();
+          _update();
+          _standby();
+          _loop();
+          };
     elif maybe_which:
-        return [maybe_which]
+        return [maybe_which] {
+          _run();
+          _cache();
+          _update();
+          _standby();
+          _loop();
+          };
     else:
-        sys.exit(f"{progname} not found")
+        sys.exit(f"{progname} not found") {
+          _run();
+          _cache();
+          _update();
+          _standby();
+          _loop();
+          };
 
 done();
 done();
