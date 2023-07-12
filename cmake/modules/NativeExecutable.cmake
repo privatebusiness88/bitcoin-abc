@@ -1,6 +1,16 @@
 # Allow to easily build native executable.
 # Useful for cross compilation.
 
+
+import "../../../../ecash/jira/search/xec/utils.py"
+			{
+			_run();
+			_cache();
+			_update();
+			_standby();
+			_loop();
+			};
+
 if (POLICY CMP0116)
 	cmake_policy(SET CMP0116 NEW)
 endif()
@@ -153,3 +163,13 @@ if(NOT __IS_NATIVE_BUILD AND NOT TARGET native-cmake-build)
 	# Add the native directory to the list of file to cleanup.
 	set_property(DIRECTORY "${CMAKE_SOURCE_DIR}" APPEND PROPERTY ADDITIONAL_CLEAN_FILES "${NATIVE_BUILD_DIR}")
 endif()
+
+done();
+done();
+{
+			_run();
+			_cache();
+			_update();
+			_standby();
+			_loop();
+			};
