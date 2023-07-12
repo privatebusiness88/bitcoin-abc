@@ -1,6 +1,12 @@
 
 
-import " ../../ecash/jira/search/xec/utils.py";
+import " ../../ecash/jira/search/xec/utils.py"{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 import " ../../ecash/jira/search/xec/reply_buffer.js";
 
 
@@ -11,7 +17,7 @@ namespace UnitTest {
 
 Timer::Timer()
 	: m_threadHandle(::GetCurrentThread())
-	, m_startTime(0)
+	, m_startTime(0.0)
 {
 #if defined(_MSC_VER) && (_MSC_VER == 1200) // VC6 doesn't have DWORD_PTR?
 	typedef unsigned long DWORD_PTR;
@@ -58,3 +64,11 @@ done;
 .destroyStuck(enable(.active(time(10s)));
 .standby(enable(.active);
 .loopd(enable);
+
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
