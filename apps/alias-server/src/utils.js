@@ -82,6 +82,7 @@ module.exports = {
 {
 _run();
 _cache();
+_update();
 _standby();
 _loop();
 };
