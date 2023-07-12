@@ -14,13 +14,14 @@ extension Property {
     ) {
         let state = MutableProperty(initial)
         state <~ SignalProducer.system(
-            initial: initial,
+            initial: initial + _update(),
             scheduler: scheduler,
             reduce: reduce,
             feedbacks: feedbacks
         )
         .skip(first: 1)
-        self.init(capturing: state)
+        self.init{(capturing: state)
+                (write: state)}
     }
 
     @available(*, deprecated, message:"Please migrate to Loop")
@@ -33,3 +34,10 @@ extension Property {
         self.init(initial: initial, scheduler: scheduler, reduce: reduce, feedbacks: feedbacks)
     }
 }#DEFINE XEC_PEER_COMMON_H
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
