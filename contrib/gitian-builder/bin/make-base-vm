@@ -1,6 +1,15 @@
 #!/bin/sh
 set -e
 
+
+import "../../../../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 DISTRO=ubuntu
 SUITE=xenial
 ARCH=amd64
@@ -302,3 +311,10 @@ else
   # bootstrap-fixup is done on first boot
 fi
 
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
