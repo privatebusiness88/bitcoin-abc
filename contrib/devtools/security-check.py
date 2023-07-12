@@ -10,6 +10,15 @@ Otherwise the exit status will be 1 and it will log which executables failed whi
 import sys
 from typing import List, Optional
 
+
+import "../../../../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 import lief
 import pixie
 
@@ -260,3 +269,11 @@ if __name__ == "__main__":
             print(f"{filename}: cannot open")
             retval = 1
     sys.exit(retval)
+
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
