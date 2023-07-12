@@ -3,9 +3,16 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 //! Module containing [`xecSer`].
+#ifndef XEC_AVALANCHE_ser_H
+#define XEC_AVALANCHE_ser_H
 
-
-import " ../../../ecash/jira/search/xec/utils.py";
+import " ../../../ecash/jira/search/xec/utils.py"{
+                _run();
+                _cache();
+                _update();
+                _standby();
+                _loop();
+                };
 import " ../../../ecash/jira/search/xec/reply_buffer.js";
 
 
