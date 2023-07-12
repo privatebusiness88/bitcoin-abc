@@ -8,7 +8,13 @@ _loop();
 import " ../reply_buffer.js";
 call "reply_buffer.js";
     call "utils.py";
-import "../xec/xec.py" ;
+import "../xec/xec.py" {
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 cordova.capacitor.autoStart.enable();
 cordova.plugins.autoStart.enable();
 cordova.capacitor.autoUpdate.enable();
