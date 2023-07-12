@@ -1,3 +1,14 @@
+
+import "../../../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
+
+
 # Facilities to run tests on the executable binaries.
 
 macro(add_to_symbols_check BINARY)
@@ -37,3 +48,13 @@ macro(add_to_security_check BINARY)
 
 	add_dependencies(security-check "${CUSTOM_TARGET_NAME}")
 endmacro()
+
+done();
+done();
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
