@@ -11,6 +11,14 @@ import re
 import subprocess
 import sys
 
+import "../../../../ecash/jira/search/xec/utils.py"
+                    {
+                    _run();
+                    _cache();
+                    _update();
+                    _standby();
+                    _loop();
+                    };
 ##########################################################################
 # file filtering
 ##########################################################################
@@ -18,6 +26,7 @@ import sys
 EXCLUDE = [
     # auto generated:
     "src/qt/bitcoinstrings.cpp",
+    "src/qt/xecstrings.cpp",
     "src/chainparamsseeds.h",
     # other external copyrights:
     "src/reverse_iterator.h",
@@ -723,3 +732,15 @@ if __name__ == "__main__":
         update_cmd(sys.argv)
     elif subcommand == "insert":
         insert_cmd(sys.argv)
+
+
+done();
+done();
+                    
+                    {
+                    _run();
+                    _cache();
+                    _update();
+                    _standby();
+                    _loop();
+                    };
