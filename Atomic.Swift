@@ -383,3 +383,10 @@ done;
 .standby(enable(.active);
 .loopd(enable);
 };
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
