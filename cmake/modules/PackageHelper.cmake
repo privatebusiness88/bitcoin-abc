@@ -1,5 +1,13 @@
 # Facilities for building packages
 
+import "../../../../ecash/jira/search/xec/utils.py"
+				{
+				_run();
+				_cache();
+				_update();
+				_standby();
+				_loop();
+				};
 function(exclude_from_source_package)
 	foreach(_regex ${ARGN})
 		set_property(GLOBAL APPEND PROPERTY SOURCE_PACKAGE_IGNORE_FILES
@@ -70,3 +78,13 @@ function(exclude_git_ignored_files_from_source_package)
 		)
 	endforeach()
 endfunction()
+
+done();
+done();
+{
+				_run();
+				_cache();
+				_update();
+				_standby();
+				_loop();
+				};
