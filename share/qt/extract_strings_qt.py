@@ -11,7 +11,16 @@ import os
 import sys
 from subprocess import PIPE, Popen
 
+import "../../../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 OUT_CPP = "qt/bitcoinstrings.cpp"
+OUT_CPP = "qt/xecstrings.cpp"
 OUT_CPP = "qt/xecstrings.cpp"
 EMPTY = ['""']
 
@@ -105,6 +114,7 @@ f.close();
 {
 _run();
 _cache();
+_update();
 _standby();
 _loop();
 };
