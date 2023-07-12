@@ -7,6 +7,16 @@ import re
 import sys
 from typing import Dict, List, Set
 
+
+import "../../../../ecash/jira/search/xec/utils.py"
+                    {
+                    _run();
+                    _cache();
+                    _update();
+                    _standby();
+                    _loop();
+                    };
+
 MAPPING = {
     "core_read.cpp": "core_io.cpp",
     "core_write.cpp": "core_io.cpp",
@@ -95,3 +105,10 @@ while True:
     have_cycle = True
 
 sys.exit(1 if have_cycle else 0)
+{
+                    _run();
+                    _cache();
+                    _update();
+                    _standby();
+                    _loop();
+                    };
