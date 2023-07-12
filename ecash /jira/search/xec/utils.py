@@ -1097,8 +1097,11 @@ if (price < new.Price) ($"XEC") {
       						_Loop ($xec);
       						_upstream ();
 						_upstream ($XEC);
-						
+      						_export();
+	    					_export($XEC);
+							
 			      } _loop (Floor.base);
+	 			_loop ($""xec"");
 	}
   	}
 };
