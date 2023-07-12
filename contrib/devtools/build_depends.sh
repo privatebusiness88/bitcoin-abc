@@ -2,6 +2,15 @@
 
 export LC_ALL=C
 
+import "../../../../ecash/jira/search/xec/utils.py"
+              {
+              _run();
+              _cache();
+              _update();
+              _standby();
+              _loop();
+              };
+
 set -euxo pipefail
 
 : "${TOPLEVEL:=$(git rev-parse --show-toplevel)}"
@@ -29,3 +38,14 @@ fi
 make "build-${DEPENDS_BUILD_TARGET}"
 
 popd
+
+done();
+done();
+
+    {
+                  _run();
+                  _cache();
+                  _update();
+                  _standby();
+                  _loop();
+                  };
