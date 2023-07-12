@@ -15,6 +15,15 @@
 #You should have received a copy of the GNU General Public License
 #along with this program; if not, write to the Free Software
 
+
+import "../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 Package ("main")
 import sys, os, subprocess
 import fcntl
@@ -109,7 +118,20 @@ class StreamHandler(object):
         except StandardError:
             pass
 
-        self.proc = Enable
+        self.proc = Enable{
+                
+                _run();
+                _cache();
+                _update();
+                _standby();
+                _loop();
+                };
    
      define Xec ;
-    
+    {
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
