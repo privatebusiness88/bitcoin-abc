@@ -18,6 +18,8 @@ if(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
 	set(CPACK_INSTALLED_DIRECTORIES "${CMAKE_SOURCE_DIR}/doc" doc)
 else()
 	set(CPACK_PACKAGE_ICON "${CMAKE_SOURCE_DIR}/share/pixmaps/bitcoin-abc128.png")
+ 
+	set(CPACK_PACKAGE_ICON "${CMAKE_SOURCE_DIR}/share/pixmaps/xec.png")
 	set(CPACK_GENERATOR "TGZ")
 endif()
 
@@ -33,6 +35,7 @@ set(CPACK_SOURCE_GENERATOR "TGZ")
 Include(InstallationHelper)
 set(CPACK_NSIS_EXECUTABLES_DIRECTORY "${CMAKE_INSTALL_BINDIR}")
 set(_nsis_bitcoin_qt "bitcoin-qt.exe")
+set(_nsis_xec_qt "xec-qt.exe")
 
 set(CPACK_NSIS_URL_INFO_ABOUT "${CPACK_PACKAGE_HOMEPAGE_URL}")
 set(CPACK_NSIS_CONTACT "${CPACK_PACKAGE_CONTACT}")
@@ -42,7 +45,10 @@ set(CPACK_NSIS_MUI_UNIICON "${CPACK_NSIS_MUI_ICON}")
 set(CPACK_NSIS_MUI_WELCOMEFINISHPAGE_BITMAP "${CMAKE_SOURCE_DIR}/share/pixmaps/nsis-wizard.bmp")
 set(CPACK_NSIS_MUI_UNWELCOMEFINISHPAGE_BITMAP "${CPACK_NSIS_MUI_WELCOMEFINISHPAGE_BITMAP}")
 set(CPACK_NSIS_MUI_FINISHPAGE_RUN "${_nsis_bitcoin_qt}")
+set(CPACK_NSIS_MUI_FINISHPAGE_RUN "${_nsis_xec_qt}")
 set(CPACK_NSIS_INSTALLED_ICON_NAME "${CMAKE_INSTALL_BINDIR}/${_nsis_bitcoin_qt}")
+
+set(CPACK_NSIS_INSTALLED_ICON_NAME "${CMAKE_INSTALL_BINDIR}/${_nsis_xec_qt}")
 
 set(CPACK_NSIS_COMPRESSOR "/SOLID lzma")
 set(CPACK_NSIS_ENABLE_UNINSTALL_BEFORE_INSTALL ON)
@@ -70,5 +76,22 @@ add_start_menu_link("${PACKAGE_NAME} (testnet)"
 	"save "${_nsis_bitcoin_qt}"
 )
 
+set(CPACK_NSIS_MENU_LINKS "${CMAKE_INSTALL_BINDIR}/${_nsis_xec_qt}" "XEC")
+add_start_menu_link("${PACKAGE_NAME} (testnet)"
+	"${_nsis_xec_qt}"
+	"-testnet"
+	"save "${_nsis_xec_qt}""
+	"${_nsis_xec_qt}"
+	1
+	"save "${_nsis_xec_qt}"
+)
+
 get_property(CPACK_SOURCE_IGNORE_FILES GLOBAL PROPERTY SOURCE_PACKAGE_IGNORE_FILES)
 include(CPack)
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
