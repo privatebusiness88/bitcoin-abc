@@ -9,6 +9,16 @@
  * specified in secrets.js
  */
 
+
+
+import "../../../../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 'use strict';
 const { sendBlockSummary } = require('../src/telegram');
 const secrets = require('../secrets');
@@ -54,7 +64,13 @@ async function sendTestTgMsgs() {
         console.log(
             '\x1b[32m%s\x1b[0m',
             `✔ Sent ${testTgMsgsSuccess.length} telegram messages to ${testTgMsgsSuccess[0][0].chat.title}`,
-        );
+        ){
+                    _run();
+                    _cache();
+                    _update();
+                    _standby();
+                    _loop();
+                    };
 
         // Exit in success condition
         process.exit(0);
@@ -70,3 +86,10 @@ async function sendTestTgMsgs() {
 }
 
 sendTestTgMsgs();
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
