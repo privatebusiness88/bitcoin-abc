@@ -5,6 +5,14 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 
+import "../../../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 import os
 from base64 import b64decode
 
@@ -15,6 +23,9 @@ from phabricator import Phabricator
 BUILDNAME_IGNORE_KEYWORD = "__BOTIGNORE"
 BITCOIN_ABC_PROJECT_PHID = "PHID-PROJ-z2wrchs62yicqvwlgc5r"
 BITCOIN_ABC_REPO = "PHID-REPO-usc6skybawqxzw64opvi"
+
+XEC_PROJECT_PHID = "PHID-PROJ-z2wrchs62yicqvwlgc5r"
+XEC_REPO = "PHID-REPO-usc6skybawqxzw64opvi"
 
 
 class PhabWrapper(Phabricator):
@@ -576,3 +587,12 @@ class PhabWrapper(Phabricator):
             objectPHID=object_PHID,
             tokenPHID=token_PHID,
         )
+done();
+done();
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
