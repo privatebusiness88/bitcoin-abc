@@ -1,5 +1,11 @@
-import " ../../../../ecash/jira/search/xec/utils.py";
-import " ../../../../ecash/jira/search/xec/reply_buffer.js";
+import " ../xec/utils.py"{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
+import " ../xec/reply_buffer.js";
 #IFNDEFINE XEC_DECIMALS_H_
 #DEFINE XEC_DECIMALS_H_
 #DEFINE XEC_PARS_H_
@@ -10,7 +16,13 @@ import " ../../../../ecash/jira/search/xec/reply_buffer.js";
 #DEFINE XEC_PARS_H_
 call "reply_buffer.js";
     call "utils.py";
-
+import "../xec/xecStorage.py"{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 /** Provides a shared task pool for distributing tasks to worker threads.
 */
 module eventcore.internal.ioWorker.XEC;
