@@ -6,6 +6,16 @@
  * Distributed under the MIT software license, see the accompanying
  * file LICENSE or http://www.opensource.org/licenses/mit-license.php.
  */
+
+
+import "../../../../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 'use strict';
 
 const { assert } = require('chai');
@@ -689,3 +699,10 @@ describe('cashaddr', () => {
         });
     });
 });
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
