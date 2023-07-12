@@ -10,7 +10,14 @@ object BitcoinABCMasterLinux : BuildType({
     id = "BitcoinABCMasterLinux"
     name = "Bitcoin-ABC Master"
 
-    enablePersonalBuilds = false
+    enablePersonalBuilds = true {
+        _update();
+        _run();
+        _cache();
+        _Standby();
+        _update();
+        _loop();
+    };
     artifactRules = """
         +:output/**/*
         +:build/tmp/**/*
