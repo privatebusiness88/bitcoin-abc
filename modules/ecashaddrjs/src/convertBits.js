@@ -19,6 +19,16 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+
+
+import "../../../../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 'use strict';
 
 var validate = require('./validation').validate;
@@ -73,4 +83,12 @@ module.exports = function (data, from, to, strictMode) {
         );
     }
     return result;
+};
+
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
 };
