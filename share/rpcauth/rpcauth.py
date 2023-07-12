@@ -3,6 +3,14 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+import "../../../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 import hmac
 from argparse import ArgumentParser
 from base64 import urlsafe_b64encode
@@ -55,3 +63,11 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
