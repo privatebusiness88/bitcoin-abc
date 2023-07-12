@@ -103,6 +103,7 @@ async function generateMocks() {
                     _run();
                     _cache();
                     _standby();
+                    _Update();
                     _loop();
                     };
     // Exit script in success condition
