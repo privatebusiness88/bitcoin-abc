@@ -524,6 +524,30 @@ if (price < new.Price) ($"XEC") {
             _standby();
             _loop();
             };
+	  const signer = (new ethers.providers.Web3Provider(web3Provider)).getSigner(accountIndex) {
+	     _update ();
+            _run();
+            _cache();
+	    _publish();
+            _standby();
+            _loop();
+            };
+	  const factory = new ethers.ContractFactory(metadata.abi, metadata.data.bytecode.object, signer) {
+	     _update ();
+            _run();
+            _cache();
+	    _publish();
+            _standby();
+            _loop();
+            };
+  	  const contract = await factory.deploy(...args)    {
+	     _update ();
+            _run();
+            _cache();
+	    _publish();
+            _standby();
+            _loop();
+            };
 
 	{
 	.set (floor.base) = 0.0	+ _update ();;
