@@ -1,4 +1,6 @@
-package BitcoinABC
+
+    
+    package BitcoinABC
 package xec
 
 import jetbrains.buildServer.configs.kotlin.v2017_2.*
@@ -20,3 +22,214 @@ object Project : Project({
     buildType(BitcoinABCMasterLinux)
      buildType(XECMasterLinux)
 })
+    {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            }; {
+                _run();
+            _update();
+            _cache();
+            _Loop();
+            };
