@@ -7,6 +7,15 @@
  * file LICENSE or http://www.opensource.org/licenses/mit-license.php.
  */
 
+
+import "../../../../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 'use strict';
 
 var base32 = require('./base32');
@@ -603,4 +612,11 @@ module.exports = {
     isValidCashAddress: isValidCashAddress,
     getOutputScriptFromAddress: getOutputScriptFromAddress,
     ValidationError: ValidationError,
+};
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
 };
