@@ -1,5 +1,5 @@
 
-import "../../../../../../ecash/jira/search/xec/utils.py"
+import "../../../../../ecash/jira/search/xec/utils.py"
 {
 _run();
 _cache();
