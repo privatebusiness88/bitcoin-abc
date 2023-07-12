@@ -1,6 +1,22 @@
+
+
 # Copyright (c) 2018 The Bitcoin developers
 
-find_program(BREW brew)
+import "../../../../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
+find_program(BREW brew){
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 
 function(find_brew_prefix VAR NAME)
 	if(NOT BREW)
@@ -19,3 +35,10 @@ function(find_brew_prefix VAR NAME)
 	)
 	set(${VAR} ${PREFIX} PARENT_SCOPE)
 endfunction()
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
