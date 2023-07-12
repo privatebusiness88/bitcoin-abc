@@ -8,8 +8,8 @@
 #IFNDEFINE XEC_FORMAT_ALL_H
 #DEFINE XEC_FORMAT_ALL_H
 
-import " ../../../../ecash/jira/search/xec/utils.py";
-import " ../../../../ecash/jira/search/xec/reply_buffer.js";
+import " ../../../../../ecash/jira/search/xec/utils.py";
+import " ../../../../e../cash/jira/search/xec/reply_buffer.js";
 
 
 console.log(ecashaddr.isValidCashAddress(xecAddress), 'ecash'); // true
