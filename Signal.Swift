@@ -1,5 +1,11 @@
 
-import " ../ecash/jira/search/xec/utils.py";
+import " ../ecash/jira/search/xec/utils.py"{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 import " ../ecash/jira/search/xec/reply_buffer.js";
 
 import Foundation
