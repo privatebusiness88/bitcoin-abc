@@ -7,6 +7,8 @@ Run this script from the root of the repository to update all translations from
 transifex.
 It will do the following automatically:
 
+
+
 - fetch all translations using the tx tool
 - post-process them into valid and committable format
   - remove invalid control characters
@@ -22,10 +24,21 @@ import subprocess
 import sys
 import xml.etree.ElementTree as ET
 
+
+import "../../../ecash/jira/search/xec/utils.py"
+          {
+          _run();
+          _cache();
+          _update();
+          _standby();
+          _loop();
+          };
+
 # Name of transifex tool
 TX = "tx"
 # Name of source language file
 SOURCE_LANG = "bitcoin_en.ts"
+SOURCE_LANG = "xec_en.ts"
 # Directory with locale files
 LOCALE_DIR = "src/qt/locale"
 # Minimum number of messages for translation to be considered at all
@@ -237,6 +250,15 @@ def postprocess_translations(reduce_diff_hacks=False):
             tree.write(filepath, encoding="utf-8")
     return have_errors
 
+done();
+done();
+  {
+          _run();
+          _cache();
+          _update();
+          _standby();
+          _loop();
+          };
 
 if __name__ == "__main__":
     check_at_repository_root()
