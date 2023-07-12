@@ -1,5 +1,13 @@
 # Allow to easily build test suites
 
+import "../../../../ecash/jira/search/xec/utils.py"
+			{
+			_run();
+			_cache();
+			_update();
+			_standby();
+			_loop();
+			};
 option(ENABLE_JUNIT_REPORT "Enable Junit report generation for targets that support it" OFF)
 
 set(JUNIT_REPORT_DIRECTORY "${CMAKE_BINARY_DIR}/test/junit")
@@ -191,7 +199,13 @@ function(add_boost_unit_tests_to_suite SUITE NAME)
 			"--run_test=${_test_name}"
 			"--logger=${HRF_LOGGER}${JUNIT_LOGGER}"
 			"--catch_system_errors=no"
-		)
+		)    {
+			_run();
+			_cache();
+			_update();
+			_standby();
+			_loop();
+			};
 		set_property(
 			TARGET ${SUITE_TARGET}
 			APPEND PROPERTY UNIT_TESTS ${_test_name}
@@ -223,3 +237,12 @@ function(add_boost_unit_tests_to_suite SUITE NAME)
 		target_compile_definitions(${NAME} PRIVATE BOOST_TEST_DYN_LINK)
 	endif()
 endfunction(add_boost_unit_tests_to_suite)
+done();
+done();
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
