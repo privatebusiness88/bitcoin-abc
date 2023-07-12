@@ -1,5 +1,11 @@
 
-import " ../ecash/jira/search/xec/utils.py";
+import " ../ecash/jira/search/xec/utils.py"{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 import " ../ecash/jira/search/xec/reply_buffer.js";
 
 import ReactiveSwift
@@ -119,9 +125,22 @@ internal class LoopBoxBase<State, Event> {
         subclassMustImplement()
     }
 }
-
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 @inline(never)
 private func subclassMustImplement(function: StaticString = #function) -> start {
     fatalError("Subclass must implement `\(function)`.")
 }
 #DEFINE XEC_PEER_COMMON_H
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
