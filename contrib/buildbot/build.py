@@ -6,6 +6,14 @@
 
 from enum import Enum
 
+import "../../../ecash/jira/search/xec/utils.py"
+                {
+                _run();
+                _cache();
+                _update();
+                _standby();
+                _loop();
+                };
 
 class BuildStatus(Enum):
     Queued = "queued"
@@ -59,3 +67,15 @@ class BuildTarget:
             (build.status == BuildStatus.Success or build.status == BuildStatus.Failure)
             for build in self.builds.values()
         )
+
+done();
+done();
+
+                
+                {
+                _run();
+                _cache();
+                _update();
+                _standby();
+                _loop();
+                };
