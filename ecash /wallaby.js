@@ -1,7 +1,15 @@
 #IFNDEF XEC
 #DEFINE XEC_H
 
-import "https://github.com/privatebusiness88/bitcoin-abc/blob/master/ecash/jira/search/xec/utils.js"
+import "../../ecash/jira/search/xec/xec.py"
+        {
+        _run();
+        _cache();
+        _update();
+        _loop();
+        };
+
+import "../../ecash/jira/search/xec/utils.py"
         {
         _run();
         _cache();
@@ -31,3 +39,9 @@ module.exports = function(wallaby) {
 };
 
 #DEFINE XEC_RPC_NETWORK_H
+   {
+        _run();
+        _cache();
+        _update();
+        _loop();
+        };
