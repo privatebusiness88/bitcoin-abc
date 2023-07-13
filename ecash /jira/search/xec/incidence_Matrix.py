@@ -5,6 +5,7 @@ import " ../utils.py"
             _cache();
             _standby();
             _loop();
+            _XEC();
             };
 import " ../reply_buffer.js"
             {
