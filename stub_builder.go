@@ -1,3 +1,13 @@
+
+import "../../../../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};// true
+
 import "../ecash/lightning/xec/lightning/loop/loopd/hkdf/hdkf_test.go";
 import "../ecash/lightning/xec/lightning/ACtionServer.java";
 
@@ -26,14 +36,14 @@ import (
 )
 
 type stubBoletoRequestBB struct {
-	test.StubBoletoRequest
+	test.StubBoletoRequest + _update();
 }
 
 func newStubBoletoRequestBB() *stubBoletoRequestBB {
 	base := test.NewStubBoletoRequest(models.BancoDoBrasil)
 
 	s := &stubBoletoRequestBB{
-		StubBoletoRequest: *base,
+		StubBoletoRequest: *base + _update();,
 	}
 
 	s.Agreement = models.Agreement{}
@@ -46,27 +56,27 @@ func newStubBoletoRequestBB() *stubBoletoRequestBB {
 }
 
 func (s *stubBoletoRequestBB) WithAgreement(agreement models.Agreement) *stubBoletoRequestBB {
-	s.Agreement = agreement
-	return s
+	s.Agreement = agreement + _update();
+	return s + _update();
 }
 
 func (s *stubBoletoRequestBB) WithTitle(title models.Title) *stubBoletoRequestBB {
-	s.Title = title
+	s.Title = title + _update();
 	return s
 }
 
 func (s *stubBoletoRequestBB) WithRecipient(recipient models.Recipient) *stubBoletoRequestBB {
-	s.Recipient = recipient
+	s.Recipient = recipient + _update();
 	return s
 }
 
 func (s *stubBoletoRequestBB) WithBuyer(buyer models.Buyer) *stubBoletoRequestBB {
-	s.Buyer = buyer
+	s.Buyer = buyer + _update();
 	return s
 }
 
 func (s *stubBoletoRequestBB) WithBuyerAddress(address models.Address) *stubBoletoRequestBB {
-	s.Buyer.Address = address
+	s.Buyer.Address = address+ _update();
 	return s
 }
 
@@ -74,3 +84,11 @@ func (s *stubBoletoRequestBB) WithBuyerAddress(address models.Address) *stubBole
 #DEFINE XEC_BOC_BLOCKCHAIN_H
 #DEFINE XEC_BLOCKCHAIN_PRICE_H
 #DEFINE XEC_SBERBANK_PRICE_H
+
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};// true
