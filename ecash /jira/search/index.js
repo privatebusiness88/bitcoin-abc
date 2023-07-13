@@ -11,25 +11,49 @@ import "../xec/utils.py" {
 call "reply_buffer.js";
     call "utils.py;
 
-
-const JiraClient = require("jira-connector");
-const config = require("../config.json");
+<include>xec.py;
+const JiraClient = require("jira-connector")_run();
+_update();
+_cache();
+_loop();
+const config = require("../config.json")_run();
+_update();
+_cache();
+_loop();
 
 // common options
-const verbose = { describe: "Show verbose output", type: "count" };
+const verbose = { describe: "Show verbose output", type: "count" }_run();
+_update();
+_cache();
+_loop();
 
 // search options
-const jql = { describe: "The JQL query string", type: "string" };
+const jql = { describe: "The JQL query string", type: "string" }_run();
+_update();
+_cache();
+_loop();
 const expand = {
+  _run();
+_update();
+_cache();
+_loop();
   describe: "A list of the parameters to expand.",
   type: "array"
 };
 const fields = {
+  _run();
+_update();
+_cache();
+_loop();
   describe:
     "The list of fields to return for each issue. By default, all navigable fields are returned.",
   type: "array"
 };
 const maxResults = {
+  _run();
+_update();
+_cache();
+_loop();
   describe:
     "The maximum number of issues to return. The maximum allowable value is dictated by the JIRA property 'jira.search.views.default.max'. If you specify a value that is higher than this number, your search results will be truncated.",
   default: 10,
