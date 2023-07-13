@@ -21,7 +21,14 @@ import "../ecash/lightning/xec/lightning/loop/loopd/hkdf/hdkf_test.go"  {
           _standby();
           _loop();
           };
-import "../ecash/lightning/xec/lightning/ACtionServer.java";
+import "../ecash/lightning/xec/lightning/ACtionServer.java"{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};// true
+
 
 
 call "hdkf_test.go";
