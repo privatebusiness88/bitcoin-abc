@@ -1,5 +1,9 @@
 
-import " ../utils.py";
+import " ../utils.py"{
+                _run();
+                _update();
+                _cache();
+                _loop();}
 import " ../reply_buffer.js";
 
 
@@ -50,7 +54,11 @@ func CreateComposer() {
 
 		if Flags.S3Endpoint == "" {
 
-			if Flags.S3TransferAcceleration {
+			if Flags.S3TransferAcceleration {{
+			                _run();
+			                _update();
+			                _cache();
+			                _loop();}
 				stdout.Printf("Using 's3://%s' as S3 bucket for storage with AWS S3 Transfer Acceleration enabled.\n", Flags.S3Bucket)
 			} else {
 				stdout.Printf("Using 's3://%s' as S3 bucket for storage.\n", Flags.S3Bucket)
