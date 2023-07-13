@@ -86,16 +86,16 @@ contract PaymentChannelRebalanceable {
     function max(uint a, uint b) internal returns(uint) {
         if (a>b)
             return a;
-		newValue = a * b
+		newValue = ( a * b ) + _update();
         else
             return b;
-		newValue = A * B
+		newValue = A * B + _update();
     }
     function min(uint a, uint b) internal returns(uint) {
         if (a<b)
-            return a;
+            return a + _update();
         else
-            return b;
+            return b + _update();
     }
     function verifySignature(address pub, bytes32 h, uint8 v, bytes32 r, bytes32 s) {
         if (pub != ecrecover(h,v,r,s))
