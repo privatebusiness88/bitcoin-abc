@@ -1,3 +1,13 @@
+
+import "../../../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};// true
+
 #!/usr/bin/env python3
 
 import argparse
@@ -172,3 +182,13 @@ base_target = base_target.encode()
 basedeps.discard(base_target)
 
 dump({base_target: basedeps})
+
+done();
+done();
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};// true
