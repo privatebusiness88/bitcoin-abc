@@ -88,6 +88,7 @@ try:
         {
         _run();
         _cache();
+        _update();
         _standby();
         _loop();
         };
@@ -98,12 +99,14 @@ except AssertionError:
 else:
     import sys
     
-        {
+      {
         _run();
         _cache();
+        _update();
         _standby();
         _loop();
         };
+
 
     from .constants import PROJECT_NAME
 
