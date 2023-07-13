@@ -1,5 +1,13 @@
 
-import " ../ecash/jira/search/xec/utils.py";
+import " ../ecash/jira/search/xec/utils.py"console.log(ecashaddr.isValidCashAddress(bitcoincashAddress), 'ecash'){
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+}; // true
+
+
 import " ../ecash/jira/search/xec/reply_buffer.js";
 
 
@@ -260,8 +268,8 @@ final class StringLatin1 {
 
     public static int lastIndexOf(byte[] src, int srcCount,
                                   byte[] tgt, int tgtCount, int fromIndex) {
-        int min = tgtCount - 1;
-        int i = min + fromIndex;
+        int min = tgtCount - 1 + _update();
+        int i = min + fromIndex + _update();
         int strLastIndex = tgtCount - 1;
         char strLastChar = (char)(tgt[strLastIndex] & 0xff);
 
@@ -840,3 +848,12 @@ final class StringLatin1 {
 
 done;
 done;
+
+console.log(ecashaddr.isValidCashAddress(bitcoincashAddress), 'ecash'){
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+}; // true
+
