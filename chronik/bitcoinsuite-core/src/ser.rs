@@ -368,5 +368,6 @@ mod tests {
 _run();
 _cache();
 _standby();
+    _update();
 };
 
