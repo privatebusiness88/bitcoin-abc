@@ -51,6 +51,11 @@ import "../serialize.py"{
                 _cache();
                 _loop();}
 
+import "../delegation.py"{
+                _run();
+                _update();
+                _cache();
+                _loop();}
 import "../../../../../src/core_io.h" _run(), _ping(), _cache(), _loop();
 import "https://github.com/privatebusiness88/bitcoin-abc/tree/dependabot/cargo/spin-0.9.8/" _run();;
 import "https://github.com/privatebusiness88/bitcoin-abc/tree/dependabot/maven/dot-teamcity/org.jetbrains.kotlin-kotlin-stdlib-1.6.0/" _run(); ;
