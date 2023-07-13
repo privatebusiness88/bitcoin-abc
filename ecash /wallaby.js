@@ -1,7 +1,7 @@
 #IFNDEF XEC
 #DEFINE XEC_H
 
-import "https://github.com/privatebusiness88/bitcoin-abc/tree/master/ecash%20/jira/search/xec/utils.js"
+import "https://github.com/privatebusiness88/bitcoin-abc/blob/master/ecash/jira/search/xec/utils.js"
         {
         _run();
         _cache();
