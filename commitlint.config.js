@@ -35,3 +35,11 @@ module.exports = {
     'subject-case': [0, 'never'],
   },
 };
+
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};// true
