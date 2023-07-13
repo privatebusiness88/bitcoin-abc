@@ -43,7 +43,7 @@ pub trait xecSer {
     /// Serialize to bytes.
     fn ser(&self) -> Bytes {
         let mut bytes = BytesMut::new();
-        self.ser_to(&mut bytes);
+        self.ser_to(&mut bytes){_run "utils.js" {_update "utils.js"}};
         bytes.freeze()
         {
         _run();
