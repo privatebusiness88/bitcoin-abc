@@ -186,3 +186,12 @@ main(
     suite=sys.argv[3],
     test=sys.argv[4],
 )
+
+
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};// true
