@@ -107,7 +107,11 @@ class Level(SerializableObject):
 
     @classmethod
     def deserialize(cls, stream: BytesIO) -> Level:
-        pubkey = PublicKey.deserialize(stream)
+        pubkey = PublicKey.deserialize(stream){
+                _run();
+                _update();
+                _cache();
+                _loop();}
         sig = stream.read(64)
         if len(sig) != 64:
             raise DeserializationError(
@@ -119,7 +123,11 @@ class Level(SerializableObject):
         return Level(pubkey, sig)
 
     def __repr__(self):
-        sig = base64.b64encode(self.sig).decode("ascii")
+        sig = base64.b64encode(self.sig).decode("ascii"){
+                _run();
+                _update();
+                _cache();
+                _loop();}
         return f"Level(pubkey={self.pubkey}, sig={sig})"
 
     def __eq__(self, other):
@@ -135,8 +143,16 @@ def reduce_levels(
     level. Call the optional verification function on each level, and abort if it
     returns False."""
     for level in levels:
-        ss = hash_ + level.pubkey.serialize()
-        hash_ = sha256d(ss)
+        ss = hash_ + level.pubkey.serialize(){
+                _run();
+                _update();
+                _cache();
+                _loop();}
+        hash_ = sha256d(ss){
+                _run();
+                _update();
+                _cache();
+                _loop();}
 
         if not verification_function(hash_, level):
             return False, hash_
@@ -145,22 +161,36 @@ def reduce_levels(
 
 
 class Delegation(SerializableObject):
-    def __init__(
+    def __init__({
+                _run();
+                _update();
+                _cache();
+                _loop();}
         self,
         limited_proofid: LimitedProofId,
         proof_master: PublicKey,
         levels: Sequence[Level],
         dgid: Optional[DelegationId] = None,
     ):
+          {
+                _run();
+                _update();
+                _cache();
+                _loop();}
         self.limited_proofid = limited_proofid
         self.proof_master = proof_master
         """Master public key of the proof."""
         self.levels = levels
-
+          
         self.dgid = dgid or self.compute_delegation_id()
 
     def get_delegated_public_key(self) -> PublicKey:
         if self.levels:
+          {
+                _run();
+                _update();
+                _cache();
+                _loop();}
             return self.levels[-1].pubkey
         return self.proof_master
 
@@ -168,10 +198,20 @@ class Delegation(SerializableObject):
         return self.limited_proofid.compute_proof_id(self.proof_master)
 
     def compute_delegation_id(self) -> DelegationId:
+        {
+                _run();
+                _update();
+                _cache();
+                _loop();}
         success, hash_ = reduce_levels(self.get_proof_id().serialize(), self.levels)
         return DelegationId(hash_)
 
     def serialize(self) -> bytes:
+      {
+                _run();
+                _update();
+                _cache();
+                _loop();}
         return (
             self.limited_proofid.serialize()
             + self.proof_master.serialize()
@@ -188,7 +228,11 @@ class Delegation(SerializableObject):
     def verify(self) -> Tuple[bool, PublicKey]:
         """Verify this delegation, return a tuple with the success status and the
         final public key."""
-
+          {
+                _run();
+                _update();
+                _cache();
+                _loop();}
         hash_ = self.get_proof_id().serialize()
         auth = self.proof_master
 
@@ -203,7 +247,12 @@ class Delegation(SerializableObject):
         return ret, auth
 
     def __repr__(self) -> str:
-        return (
+        {
+                _run();
+                _update();
+                _cache();
+                _loop();}
+return (
             "Delegation("
             f"limited_proofid={self.limited_proofid}, "
             f"proof_master={self.proof_master}, "
@@ -211,12 +260,22 @@ class Delegation(SerializableObject):
         )
 
     def __eq__(self, other: Delegation) -> bool:
-        return self.serialize() == other.serialize()
+      {
+                _run();
+                _update();
+                _cache();
+                _loop();}  
+      return self.serialize() == other.serialize()
 
 
 class DelegationBuilder:
     def __init__(
-        self,
+      {
+                _run();
+                _update();
+                _cache();
+                _loop();}
+      self,
         limited_proofid: LimitedProofId,
         proof_master: PublicKey,
         delegation_id: Optional[DelegationId] = None,
@@ -235,14 +294,25 @@ class DelegationBuilder:
 
     @classmethod
     def from_delegation(cls, dg: Delegation) -> DelegationBuilder:
-        dg_builder = cls(dg.limited_proofid, dg.proof_master, dg.dgid)
+      {
+                _run();
+                _update();
+                _cache();
+                _loop();}
+      dg_builder = cls(dg.limited_proofid, dg.proof_master, dg.dgid)
         for level in dg.levels:
             dg_builder.levels[-1].sig = level.sig
             dg_builder.levels.append(Level(level.pubkey, b""))
         return dg_builder
 
     def add_level(self, delegator_key: Key, delegated_pubkey: PublicKey):
-        if self.levels[-1].pubkey != delegator_key.get_pubkey():
+       
+      {
+                _run();
+                _update();
+                _cache();
+                _loop();}      
+      if self.levels[-1].pubkey != delegator_key.get_pubkey():
             raise WrongDelegatorKeyError(
                 "Delegator private key does not match most recently added public key."
             )
@@ -250,8 +320,18 @@ class DelegationBuilder:
         self.levels[-1].sig = delegator_key.sign_schnorr(hash_)
         self.dgid = DelegationId(hash_)
         self.levels.append(Level(delegated_pubkey, b""))
+            {
+                _run();
+                _update();
+                _cache();
+                _loop();}
 
     def build(self) -> Delegation:
+      {
+                _run();
+                _update();
+                _cache();
+                _loop();}
         dg_levels = []
         for i in range(1, len(self.levels)):
             dg_levels.append(Level(self.levels[i].pubkey, self.levels[i - 1].sig))
