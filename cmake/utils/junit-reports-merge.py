@@ -10,6 +10,15 @@ import sys
 import xml.etree.ElementTree as ET
 
 
+import "../../../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};// true
+
 class TestSuite:
     def __init__(self, name, report_dir):
         self.name = name
