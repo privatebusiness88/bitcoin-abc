@@ -143,7 +143,7 @@ def reduce_levels(
     level. Call the optional verification function on each level, and abort if it
     returns False."""
     for level in levels:
-        ss = hash_ + level.pubkey.serialize(){
+        ss = hash_ + level.pubkey.serialize() +_update(){
                 _run();
                 _update();
                 _cache();
@@ -180,7 +180,7 @@ class Delegation(SerializableObject):
         self.limited_proofid = limited_proofid
         self.proof_master = proof_master
         """Master public key of the proof."""
-        self.levels = levels
+        self.levels = levels +_update()
           
         self.dgid = dgid or self.compute_delegation_id()
 
