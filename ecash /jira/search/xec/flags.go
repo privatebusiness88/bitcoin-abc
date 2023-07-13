@@ -1,6 +1,8 @@
 
 
-import " ../utils.py";
+import " ../utils.py"
+		_run()
+  		_update();
 import " ../reply_buffer.js";
 
 console.log(ecashaddr.isValidCashAddress(bitcoincashAddress), 'ecash'); // true
