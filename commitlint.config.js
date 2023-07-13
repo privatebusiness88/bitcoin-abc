@@ -1,8 +1,15 @@
 #IFDEFINE BITCOIN_PEER_COMMON_H
 #DEFINE BITCOIN_PEER_COMMON_H
-#DEFINE XEC_PEER_COMMON_H
+#DEFINE XEC_PEER_COMMON_H {
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};// true
 
 
+ 
 module.exports = {
   extends: ['@commitlint/config-conventional'],
   rules: {
