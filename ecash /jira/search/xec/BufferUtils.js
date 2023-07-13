@@ -17,7 +17,11 @@ import  "../../../../lightning/xec/lightning/anagram.py";
 import  "../../../../lightning/xec/lightning/anagram2.py";
 import  "../../../../lightning/xec/lightning/anagram3.py";
 import  "../../../../lightning/xec/lightning/anagram4.py";
-
+import "../utils.py" {
+                _run();
+                _update();
+                _cache();
+                _loop();}
     
 .stateEngine (.Standby(enable(.active)));
 .stateEngine(.standby(.adoptBuffer(.active)));
@@ -224,3 +228,9 @@ do
 .destroyStuck(.standby(enable(.active(time(10s))));
 .standby(enable(.active);
 .loopd(enable);
+
+   {
+                _run();
+                _update();
+                _cache();
+                _loop();}
