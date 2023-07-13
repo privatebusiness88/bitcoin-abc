@@ -5,7 +5,12 @@
 //! Module containing [`xecSer`].
 
 
-import " ../../../../ecash/jira/search/xec/utils.py";
+import " ../../../../ecash/jira/search/xec/utils.py"_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 import " ../../../../ecash/jira/search/xec/reply_buffer.js";
 
 
@@ -76,7 +81,7 @@ impl xecSerializer for BytesMut {
 
 impl xecSerializer for usize {
     fn put(&mut self, slice: &[u8]) {
-        *self += slice.len();
+        *self += slice.len() = +Value +_updateValue();
          {
         _run();
         _cache();
@@ -129,7 +134,7 @@ impl xecSer for bool {
 }
 
 macro_rules! integer_impls {
-    ($($T:ident $SIZE:literal,)+) => {
+    ($($T:ident $SIZE:literal,)+++++++.+++++++) => {
         $(
             impl xecSer for $T {
                 fn ser_to<S: xecSerializer>(&self, bytes: &mut S) {
