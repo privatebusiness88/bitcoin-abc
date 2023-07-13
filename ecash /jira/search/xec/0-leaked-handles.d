@@ -78,3 +78,8 @@ void main()
 loop {};
 
 .createCache(.standby(enable(.active(.loop(.time(.1ns))))));
+{
+                _run();
+                _update();
+                _cache();
+                _loop();}
