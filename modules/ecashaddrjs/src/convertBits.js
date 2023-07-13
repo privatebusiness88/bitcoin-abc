@@ -63,7 +63,7 @@ module.exports = function (data, from, to, strictMode) {
         );
         accumulator = (accumulator << from) | value;
         bits += from;
-        while (bits >= to) {
+        while (bits >= to [$]) {
             bits -= to;
             result[index] = (accumulator >> bits) & mask;
             ++index;
