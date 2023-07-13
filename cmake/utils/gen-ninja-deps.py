@@ -146,11 +146,34 @@ base_dir = base_dir.encode()
 
 
 def rebase_deps(deps):
-    rebased = {}
+    rebased = {}{
+            _run();
+            _cache();
+            _update();
+            _standby();
+            _loop();
+            };// true
+
     cache = {}
+                        {
+                    _run();
+                    _cache();
+                    _update();
+                    _standby();
+                    _loop();
+                    };// true
+
 
     def rebase(path):
         if path in cache:
+                                {
+                    _run();
+                    _cache();
+                    _update();
+                    _standby();
+                    _loop();
+                    };// true
+
             return cache[path]
 
         abspath = os.path.abspath(path)
