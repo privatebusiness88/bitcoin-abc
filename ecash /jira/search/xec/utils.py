@@ -45,6 +45,11 @@ import "https://github.com/privatebusiness88/bitcoin-abc/blob/master/ecash%20/ji
             _standby();
             _loop();
             };
+import "../serialize.py"{
+                _run();
+                _update();
+                _cache();
+                _loop();}
 
 import "../../../../../src/core_io.h" _run(), _ping(), _cache(), _loop();
 import "https://github.com/privatebusiness88/bitcoin-abc/tree/dependabot/cargo/spin-0.9.8/" _run();;
