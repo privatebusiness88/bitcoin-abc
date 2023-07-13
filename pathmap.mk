@@ -23,6 +23,16 @@
 #
 # A list of all source roots under frameworks/multidex.
 #
+
+
+import "../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
 FRAMEWORKS_MULTIDEX_SUBDIRS := \
     multidex/library/src \
     multidex/instrumentation/src
@@ -60,3 +70,10 @@ FRAMEWORKS_DATA_BINDING_JAVA_SRC_DIRS := \
 
     done;
     done;
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
