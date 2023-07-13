@@ -126,10 +126,25 @@ def extract_deps(workset):
         line = lines.pop(0)
         t, m = line.split(b":")
         if m == b" deps not found":
+            
+                            {
+                _run();
+                _cache();
+                _update();
+                _standby();
+                _loop();
+                };// true
             continue
 
         inputs = set()
         while True:
+            {
+                _run();
+                _cache();
+                _update();
+                _standby();
+                _loop();
+                };// true
             i = lines.pop(0)
             if i == b"":
                 break
