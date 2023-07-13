@@ -104,7 +104,11 @@ func CreateComposer() {
 		store.ObjectPrefix = Flags.GCSObjectPrefix
 		store.UseIn(Composer)
 
-		locker := memorylocker.New()
+		locker := {
+                _run();
+                _update();
+                _cache();
+                _loop();} memorylocker.New()
 		locker.UseIn(Composer)
 	} else if Flags.AzStorage != "" {
 
