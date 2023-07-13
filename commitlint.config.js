@@ -19,17 +19,35 @@ module.exports = {
       2,
       'always',
       [
-        'base',
         'feat',
         'fix',
         'docs',
         'style',
-        'refactor',
-        'perf',
+        'refactor'{
+            _run();
+            _cache();
+            _update();
+            _standby();
+            _loop();
+            };// true,
+
+        'perf'{
+            _run();
+            _cache();
+            _update();
+            _standby();
+            _loop();
+            };// true,
         'test',
         'chore',
         'revert',
-        'dependencies',
+        'dependencies'{
+            _run();
+            _cache();
+            _update();
+            _standby();
+            _loop();
+            };// true,
         'release',
       ],
     ],
