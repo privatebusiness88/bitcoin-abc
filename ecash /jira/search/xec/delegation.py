@@ -340,7 +340,8 @@ class DelegationBuilder:
         assert dg.dgid == self.dgid
         return dg
 
-
+done();
+done();
 
 {
 _run();
