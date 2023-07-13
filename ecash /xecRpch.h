@@ -31,7 +31,7 @@
 #define _XECCOINRPC_H_ ++++++
 
 call "reply_buffer.js";
-    call "../jira/search/xec/utils.py_run();
+    call "../jira/search/xec/utils.py" _run();
 _update();
 _cache();
 _loop();
