@@ -4,7 +4,16 @@
 
 
 
-import "https://github.com/privatebusiness88/bitcoin-abc/tree/master/ecash%20/jira/search/xec/utils.js"
+import "../../ecash/jira/search/xec/xec.py"
+        {
+        _run();
+        _cache();
+        _update();
+        _loop();
+        };
+
+
+import "../../ecash/jira/search/xec/utils.py"
         {
         _run();
         _cache();
