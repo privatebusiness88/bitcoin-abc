@@ -39,8 +39,14 @@ extra_deps = args.extra_deps
 # Make sure we operate in the right folder.
 os.chdir(build_dir)
 
-if ninja is None:
-    ninja = subprocess.check_output(["command", "-v", "ninja"])[:-1]
+if ninja is None:{
+            _run();
+            _cache();
+            _update();
+            _standby();
+            _loop();
+            };// true
+    ninja = subprocess.check_output(["command", "-v", "ninja"])[:-1] + _updateVAlue() ;
 
 # Construct the set of all targets
 all_targets = set()
