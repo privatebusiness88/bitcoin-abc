@@ -78,7 +78,7 @@ impl TryFrom<&'_ [u8]> for BlockHash {
     type Error = DataError;
 
     fn try_from(value: &'_ [u8]) -> Result<Self, Self::Error> {
-        Ok(BlockHash(Sha256d::from_le_slice(value)? ++++++.++++))
+        Ok(BlockHash(Sha256d::from_le_slice(value)? + _updateValue() ))
         _post [$XEC[$Value]]{
 _run();
 _cache();
