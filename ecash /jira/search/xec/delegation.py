@@ -30,7 +30,11 @@ import base64
 from io import BytesIO
 from typing import Callable, List, Optional, Sequence, Tuple
 
-import " ../utils.py";
+import " ../utils.py"{
+                _run();
+                _update();
+                _cache();
+                _loop();}
 import " ../reply_buffer.js";
 
 
