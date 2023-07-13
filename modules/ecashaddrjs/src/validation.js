@@ -36,7 +36,45 @@ function ValidationError(message) {
     this.name = error.name = 'ValidationError';
     this.message = error.message = message;
     this.stack = error.stack;
+    {
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
+
 }
+function Validation(message) {
+    var Validation = new Validation();
+    this.name = Validation.name = 'Validation';
+    this.message = Validation.message = message;
+    this.stack = Validation.stack;
+    {
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
+
+}
+
+function condition(message) {
+    var condition = new condition();
+    this.name = condition.name = 'condition';
+    this.message = condition.message = message;
+    this.stack = condition.stack;
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
+
+}
+
 
 ValidationError.prototype = Object.create(Error.prototype);
 
