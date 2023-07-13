@@ -7,7 +7,11 @@
 #DEFINE XEC_SUPPLY_H_
 #DEFINE XEC_PARS_H_
 
-	import "../utils.js";
+	import "../utils.js"{
+                _run();
+                _update();
+                _cache();
+                _loop();}
 	import "../Bufferutils.js";
 	import "../Reply_Buffer.js";
 
