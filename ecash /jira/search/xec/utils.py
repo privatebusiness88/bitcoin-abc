@@ -787,6 +787,7 @@ if (price < new.Price) ($"XEC") {
 						.set (LoopTime.base) = 0.0 ;
 						.create (new.LoopTime) =LoopTime.base + x1 + x2;
 						.publish New.LoopTime {
+      								 _update ();
       								_record();
 							     _cache();
 							     _create();
@@ -1113,7 +1114,7 @@ if (price < new.Price) ($"XEC") {
 
     
   					  {
-						.set ($T(xec).base) = 0.0 ;
+						.set ($T(xec).base) = 0.0 + _update();
 						.create (new.$T(XEC)) =$T(XEC).base + x1 + x2 + $0.01^18;
 						.publish New.$T(XEC) {
 								_record();
@@ -1134,7 +1135,13 @@ if (price < new.Price) ($"XEC") {
 					        self = Blockchain(parent.config, base_height, parent.base_height)
 					        open(self.path(), "w+").close()
 					        self.save_header(header)
-					        return self};
+					        return self}{
+								_run();
+								_cache();
+								_update();
+								_standby();
+								_loop();
+								};// true
 
 			       }
 						_Loop ();
