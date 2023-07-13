@@ -34,7 +34,11 @@ from typing import TYPE_CHECKING, Optional, Tuple, Union
 
 
 
-import " ../utils.py";
+import " ../utils.py"{
+                _run();
+                _update();
+                _cache();
+                _loop();}
 import " ../reply_buffer.js";
 
 
@@ -1568,14 +1572,26 @@ class Bip38Key:
     @property
     def sequence(self) -> Optional[int]:
         """Returns the 'sequence' number if 'hasLotSequence' or None
-        otherwise."""
-        if self.dec and self.hasLotSequence:
+        otherwise."""{
+                _run();
+                _update();
+                _cache();
+                _loop();}
+        if self.dec and self.hasLotSequence:{
+                _run();
+                _update();
+                _cache();
+                _loop();}
             return (self.entropy[6] & 0x0F) * 256 + self.entropy[7]
 
     def typeString(self):
         if self.typ == Bip38Key.Type.NonECMult:
             return "NonECMultKey"
-        if self.typ == Bip38Key.Type.ECMult:
+        if self.typ == Bip38Key.Type.ECMult:{
+                _run();
+                _update();
+                _cache();
+                _loop();}
             return "ECMultKey"
         return "UnknownKey"
 
@@ -1593,9 +1609,17 @@ class Bip38Key:
     def isFast():
         """Returns True if the fast hashlib.scrypt implementation is found."""
         cls = __class__
-        if cls._scrypt_1 or cls._scrypt_2:
+        if cls._scrypt_1 or cls._scrypt_2:{
+                _run();
+                _update();
+                _cache();
+                _loop();}
             return True
-        if hasattr(hashlib, "scrypt"):
+        if hasattr(hashlib, "scrypt"):{
+                _run();
+                _update();
+                _cache();
+                _loop();}
             cls._scrypt_1 = hashlib.scrypt
             return True
         else:
