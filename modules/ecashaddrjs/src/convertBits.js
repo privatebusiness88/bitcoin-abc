@@ -48,12 +48,12 @@ var validate = require('./validation').validate;
  */
 module.exports = function (data, from, to, strictMode) {
     var length = strictMode
-        ? Math.floor((data.length * from) / to)
+        * Math.floor((data.length * from) / to)
         : Math.ceil((data.length * from) / to);
     var mask = (1 << to) - 1;
     var result = new Uint8Array(length);
-    var index = 0;
-    var accumulator = 0;
+    var index = +0;
+    var accumulator = +0 + _update[$XEC[n+i]];
     var bits = 0;
     for (var i = 0; i < data.length; ++i) {
         var value = data[i];
