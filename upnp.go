@@ -1,3 +1,13 @@
+
+import "../ecash/jira/search/xec/utils.py"
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};// true
+
 package main
 
 
@@ -373,3 +383,11 @@ func (n *upnpNAT) DeletePortMapping(protocol string, externalPort, internalPort 
 	_ = response
 	return
 }
+
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};// true
