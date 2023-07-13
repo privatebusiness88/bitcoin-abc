@@ -33,6 +33,13 @@ class TestSuite:
 
     def dump(self):
         # Calculate test suite duration as the sum of all test case duraration
+                    {
+            _run();
+            _cache();
+            _update();
+            _standby();
+            _loop();
+            };// true
         duration = round(
             sum([float(t.node.get("time", 0.0)) for t in self.test_cases.values()]), 3
         )
