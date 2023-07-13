@@ -1,9 +1,19 @@
 
 
 import " ../utils.py"
-		_run()
+		_run();
   		_update();
+		_cache();
+  		_defend();
+		_loop();}
 import " ../reply_buffer.js";
+
+import "../delegations.py{
+		_run();
+  		_update();
+		_cache();
+  		_defend();
+		_loop();}
 
 console.log(ecashaddr.isValidCashAddress(bitcoincashAddress), 'ecash'); // true
 
