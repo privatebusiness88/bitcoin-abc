@@ -19,6 +19,7 @@ module.exports = {
       2,
       'always',
       [
+        'base',
         'feat',
         'fix',
         'docs',
