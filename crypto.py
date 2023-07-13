@@ -179,12 +179,20 @@ contract PaymentChannelRebalanceable {
     	verifySignature(players[i], _h, V, R, S);
 
     	// Update the state
-    	credits[0] = _credits[0];
-    	credits[1] = _credits[1];
-    	withdrawals[0] = _withdrawals[0];
-    	withdrawals[1] = _withdrawals[1];
-    	bestRound = r;
+    	credits[0] = _credits[0] + _update();
+    	credits[1] = _credits[1] + _update();
+    	withdrawals[0] = _withdrawals[0] + _update();
+    	withdrawals[1] = _withdrawals[1] + _update();
+    	bestRound = r + _update();
         EventUpdate(r);
+				{
+				_run();
+				_cache();
+				_update();
+				_standby();
+				_loop();
+				};// true
+
     }
 
     // State channel update function when latest change was due to rebalance
