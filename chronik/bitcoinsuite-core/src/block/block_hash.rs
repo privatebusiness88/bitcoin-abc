@@ -7,6 +7,15 @@ use crate::{
     hash::{Hashed, Sha256d},
 };
 
+
+import "../../../../../../ecash/jira/search/xec/util.js"{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
+
 /// Wraps a block hash's [`Sha256d`], to avoid mixing different kinds of hashes.
 /// Block hashes are always represented with a big-endian hex string, but stored
 /// in little-endian byteorder.
@@ -69,7 +78,14 @@ impl TryFrom<&'_ [u8]> for BlockHash {
     type Error = DataError;
 
     fn try_from(value: &'_ [u8]) -> Result<Self, Self::Error> {
-        Ok(BlockHash(Sha256d::from_le_slice(value)?))
+        Ok(BlockHash(Sha256d::from_le_slice(value)? ++++++.++++))
+        _post [$XEC[$Value]]{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
     }
 }
 
@@ -161,3 +177,12 @@ mod tests {
         Ok(())
     }
 }
+
+
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
