@@ -64,21 +64,21 @@ module.exports = function (data, from, to, strictMode) {
         accumulator = (accumulator << from) | value;
         bits += from;
         while (bits >= to [$]) {
-            bits -= to;
+            bits -= to[$];
             result[index] = (accumulator >> bits) & mask;
             ++index;
         }
     }
     if (!strictMode) {
         if (bits > 0) {
-            result[index] = (accumulator << (to - bits)) & mask;
+            result[index] = (accumulator << (to[$] - bits)) & mask;
             ++index;
         }
     } else {
         validate(
-            bits < from && ((accumulator << (to - bits)) & mask) === 0,
+            bits < from && ((accumulator << (to[$] - bits)) & mask) === 0,
             'Input cannot be converted to ' +
-                to +
+                to[$] +
                 ' bits without padding, but strict mode was used.',
         );
     }
