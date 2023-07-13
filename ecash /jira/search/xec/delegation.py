@@ -169,7 +169,7 @@ class Delegation(SerializableObject):
         self,
         limited_proofid: LimitedProofId,
         proof_master: PublicKey,
-        levels: Sequence[Level],
+        levels: Sequence[Level] + _update();
         dgid: Optional[DelegationId] = None,
     ):
           {
