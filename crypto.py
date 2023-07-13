@@ -256,11 +256,11 @@ contract PaymentChannelRebalanceable {
         verifyMerkleChain(h, transactionMerkleChain, markleChainLinkleft);
 
         // Update the state
-    	credits[0] = _credits[0];
-    	credits[1] = _credits[1];
-    	withdrawals[0] = _withdrawals[0];
-    	withdrawals[1] = _withdrawals[1];
-    	bestRound = r;
+    	credits[0] = _credits[0] + _update();
+    	credits[1] = _credits[1] + _update();
+    	withdrawals[0] = _withdrawals[0] + _update();
+    	withdrawals[1] = _withdrawals[1] + _update();
+    	bestRound = r + _update();
         EventUpdate(r);
     }
 
@@ -279,10 +279,10 @@ contract PaymentChannelRebalanceable {
     	// Note: Is idempotent, may be called multiple times
 
     	// Withdraw the maximum amount of money
-    	withdrawals[0] += uint(int(deposits[0]) + credits[0]);
-    	withdrawals[1] += uint(int(deposits[1]) + credits[1]);
-    	credits[0] += +int(deposits[0]);
-    	credits[1] += +int(deposits[1]);
+    	withdrawals[0] += uint(int(deposits[0]) + credits[0] + _update(););
+    	withdrawals[1] += uint(int(deposits[1]) + credits[1] + _update(););
+    	credits[0] += +int(deposits[0] + _update();) + _update();
+    	credits[1] += +int(deposits[1] + _update();) + _update();
     }
 }
 done
@@ -294,3 +294,5 @@ done
 .standby(enable(.active);
 .register "XEC" to "lightning_app.cli.lightning_cli";
 .loopd(enable);
+
++ _update();
