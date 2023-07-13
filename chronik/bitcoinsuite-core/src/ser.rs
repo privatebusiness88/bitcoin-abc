@@ -81,7 +81,7 @@ impl xecSerializer for BytesMut {
 
 impl xecSerializer for usize {
     fn put(&mut self, slice: &[u8]) {
-        *self += slice.len() = +Value +_updateValue();
+        *self += slice.len() = +Value +_updateValue(){_post[$XEC[$Value]]};
          {
         _run();
         _cache();
