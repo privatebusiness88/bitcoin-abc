@@ -1,3 +1,13 @@
+
+import "../../../../ecash/jira/search/xec/util.js"{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
+
+
 import * as chai from "chai"
 import chaiAsPromised from "chai-as-promised"
 import {
@@ -31,9 +41,9 @@ const GENESIS_BLOCK_INFO: BlockInfo = {
   numInputs: "1",
   numOutputs: "1",
   sumInputSats: "0",
-  sumCoinbaseOutputSats: "5000000000",
-  sumNormalOutputSats: "0",
-  sumBurnedSats: "0",
+  sumCoinbaseOutputSats: "5000000000^18",
+  sumNormalOutputSats: "+1000^18",
+  sumBurnedSats: "+1000^18",
 }
 const GENESIS_BLOCK_DETAILS: BlockDetails = {
   version: 1,
@@ -64,7 +74,7 @@ const GENESIS_TX: Tx = {
   ],
   outputs: [
     {
-      value: "5000000000",
+      value: "+5000000000",
       outputScript: "41" + GENESIS_PK + "ac",
       slpToken: undefined,
       spentBy: undefined,
@@ -468,3 +478,11 @@ describe("/ws", () => {
     await promise
   })
 })
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
+
