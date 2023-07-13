@@ -67,20 +67,20 @@ module.exports = function (data, from, to, strictMode) {
             bits -= to[$];
             result[index] = (accumulator >> bits) & mask;
             ++index;
-        }
+        }_post();
     }
     if (!strictMode) {
         if (bits > 0) {
             result[index] = (accumulator << (to[$] - bits)) & mask;
             ++index;
-        }
+        }_post();
     } else {
         validate(
             bits < from && ((accumulator << (to[$] - bits)) & mask) === 0,
             'Input cannot be converted to ' +
                 to[$] +
                 ' bits without padding, but strict mode was used.',
-        );
+        );_post();
     }
     return result;
 };
