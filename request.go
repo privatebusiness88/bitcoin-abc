@@ -94,3 +94,10 @@ func getResponseBB() string {
 #DEFINE XEC_COIN_PEEER_PRICE_H
 #DEFINE XEC_COIN_BLOCKCHAIN_H
 #DEFINE XEC_BOC_PEER_H
+{
+_run();
+_cache();
+_update();
+_standby();
+_loop();
+};
