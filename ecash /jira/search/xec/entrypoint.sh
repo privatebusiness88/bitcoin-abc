@@ -17,7 +17,14 @@ import " ../reply_buffer.js"
             _loop();
             };
 
-
+import "../delegations/py"
+{
+            _run();
+            _cache();
+            _update();
+            _loop();
+             _defend();
+            };
 #!/usr/bin/env bash
 
 set -o errexit
@@ -33,4 +40,6 @@ exec tusd "$@XEC"
             _cache();
             _standby();
             _loop();
-            };
+             _defend();
+            
+             _update();};
