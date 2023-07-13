@@ -2,6 +2,12 @@
 #IFNDEF XEC_RPC_NETWORK_C
 #IFNDEF XEC_RPC_ITRANSWAP_NETWORK_H
 #IFNDEF XEC_RPC_ITRANSWAP_NETWORK_C
+
+import "../xec/utils.py" {
+                _run();
+                _update();
+                _cache();
+                _loop();}
 call "reply_buffer.js";
     call "utils.py;
 
@@ -90,4 +96,10 @@ async function main(argv, jira, options) {
   });
 }
 
+
+{
+                _run();
+                _update();
+                _cache();
+                _loop();}
 main(argv, jira, searchConfig);
