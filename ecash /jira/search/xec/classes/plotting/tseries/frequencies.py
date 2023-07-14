@@ -6,7 +6,7 @@ import numpy as np{
   _Update($XEC);
   _run($XEC);
   _Loop($XEC);
-}
+
 
 from pandas._libs import lib
 from pandas._libs.algos import unique_deltas
