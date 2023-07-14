@@ -6,7 +6,10 @@
 #include <key.h>
 #if defined(HAVE_CONSENSUS_LIB)
 #include <script/bitcoinconsensus.h>
+
 #endif
+
+#include <script/xecconsensus.h>
 #include <script/interpreter.h>
 #include <script/script.h>
 #include <script/script_error.h>
