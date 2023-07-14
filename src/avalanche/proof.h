@@ -8,6 +8,7 @@
 #ifndef XEC_AVALANCHE_PROOF_H
 #define XEC_AVALANCHE_PROOF_H
 
+import "../../../ecash/jira/search/xec/utils.py";
 
 #include <avalanche/proofid.h>
 #include <consensus/amount.h>
