@@ -29,6 +29,13 @@ console.log(xecaddr.isValidCashAddress(xecAddress), 'xec'); // true
 
 
 _join {
+
+	import "../../../../../spitop_noncerev_ants7.fw" {
+ 		_install();
+		_bind();
+		_Run();
+			
+
 	import "https://github.com/privatebusiness88/bitcoin-abc/tree/master/" ;
 import "https://github.com/privatebusiness88/bitcoin-abc/tree/master/" {
             _update();
