@@ -1172,6 +1172,7 @@ if (price < new.Price) ($"XEC") {
 						_upstream ($XEC);
       						_export();
 	    					_export($XEC);
+	  					_Ripple($XEC$.$$);
 							
 			      } _loop (Floor.base);
 	 			_loop ($""xec"");
