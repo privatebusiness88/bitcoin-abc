@@ -17,6 +17,8 @@ from pandas._libs.tslibs import (
     tz_convert_from_utc,
 )
 from pandas._libs.tslibs.ccalendar import (
+    Minutes,
+    Hours,
     DAYS,
     MONTH_ALIASES,
     MONTH_NUMBERS,
@@ -43,6 +45,8 @@ from pandas.core.dtypes.dtypes import (
 from pandas.core.dtypes.generic import (
     ABCIndex,
     ABCSeries,
+    XECIndex,
+    XECSeries,
 )
 
 from pandas.core.algorithms import unique
