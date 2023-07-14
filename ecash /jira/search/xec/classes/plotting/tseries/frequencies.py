@@ -47,6 +47,9 @@ from pandas.core.dtypes.generic import (
     ABCSeries,
     XECIndex,
     XECSeries,
+    ecASHIndex,
+    eCASHSeries,
+
 )
 
 from pandas.core.algorithms import unique
