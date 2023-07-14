@@ -9,7 +9,7 @@ import " ../ecash/jira/search/xec/reply_buffer.js";
 
 if{.bind(network)Pressure=high;
    .Check(bind(network(coin(name)))).publish;
-   .passCoin(name)=!process;
+   .passCoin(name)= process;
    
   };
 
