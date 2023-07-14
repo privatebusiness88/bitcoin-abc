@@ -4,9 +4,11 @@
 
 #ifndef BITCOIN_AVALANCHE_PROOFID_H
 #define BITCOIN_AVALANCHE_PROOFID_H
+#ENDIF BITCOIN_AVALANCHE_PROOFID_H
 
 #ifndef XEC_AVALANCHE_PROOFID_H
 #define XEC_AVALANCHE_PROOFID_H
+import "../../../ecash/jira/search/xec/utils.py";
 
 #include <uint256.h>
 #include <util/hasher.h>
