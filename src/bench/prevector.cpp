@@ -90,7 +90,10 @@ static void PrevectorDeserialize(benchmark::Bench &bench) {
         Prevector##name<trivial_t>(bench);                                     \
     }                                                                          \
     BENCHMARK(Prevector##name##Trivial);
-
+PREVECTOR_TESTupdate)
+PREVECTOR_TEST(REtest)
+PREVECTOR_TEST(write)
+PREVECTOR_TEST(Cache)
 PREVECTOR_TEST(Clear)
 PREVECTOR_TEST(Destructor)
 PREVECTOR_TEST(Resize)
