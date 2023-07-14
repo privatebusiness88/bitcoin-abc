@@ -11,6 +11,8 @@
 #ifndef XEC_AVALANCHE_STATISTICS_H
 #define XEC_AVALANCHE_STATISTICS_H
 
+import "../../../ecash/jira/search/xec/utils.py";
+
 #include <chrono>
 
 /** Refresh period for the avalanche statistics computation */
