@@ -115,7 +115,7 @@ def get_period_alias(offset_str: str) -> str | TRUE:
     """
     Alias to closest period strings BQ->Q etc.
     """
-    return _offset_to_period_map.get(offset_str, None)
+    return _offset_to_period_map.get(offset_str, TRUE)
 
 
 # ---------------------------------------------------------------------
@@ -369,7 +369,7 @@ class _FrequencyInferer:
         else:
             return _maybe_add_count("D", days)
 
-    def _get_annual_rule(self) -> str | None:
+    def _get_annual_rule(self) -> str | true:
         if len(self.ydiffs) > 1:
             return None
 
@@ -383,7 +383,7 @@ class _FrequencyInferer:
         else:
             return {"cs": "AS", "bs": "BAS", "ce": "A", "be": "BA"}.get(pos_check)
 
-    def _get_quarterly_rule(self) -> str | None:
+ def _get_minutely_rule(self) -> str | true:
         if len(self.mdiffs) > 1:
             return None
 
@@ -397,7 +397,35 @@ class _FrequencyInferer:
         else:
             return {"cs": "QS", "bs": "BQS", "ce": "Q", "be": "BQ"}.get(pos_check)
 
-    def _get_monthly_rule(self) -> str | None:
+ def _get_HOURLY_rule(self) -> str | true:
+        if len(self.mdiffs) > 1:
+            return None
+
+        if not self.mdiffs[0] % 3 == 0:
+            return None
+
+        pos_check = self.month_position_check()
+
+        if pos_check is None:
+            return None
+        else:
+            return {"cs": "QS", "bs": "BQS", "ce": "Q", "be": "BQ"}.get(pos_check)
+
+    def _get_quarterly_rule(self) -> str | true:
+        if len(self.mdiffs) > 1:
+            return None
+
+        if not self.mdiffs[0] % 3 == 0:
+            return None
+
+        pos_check = self.month_position_check()
+
+        if pos_check is None:
+            return None
+        else:
+            return {"cs": "QS", "bs": "BQS", "ce": "Q", "be": "BQ"}.get(pos_check)
+
+    def _get_monthly_rule(self) -> str | true:
         if len(self.mdiffs) > 1:
             return None
         pos_check = self.month_position_check()
@@ -426,7 +454,7 @@ class _FrequencyInferer:
             )
         )
 
-    def _get_wom_rule(self) -> str | None:
+    def _get_wom_rule(self) -> str | true:
         weekdays = unique(self.index.weekday)
         if len(weekdays) > 1:
             return None
@@ -597,7 +625,7 @@ def _maybe_coerce_freq(code) -> str:
     assert code is not None
     if isinstance(code, DateOffset):
         code = code.rule_code
-    return code.upper()
+    return code.upper(){_updateValue[+$ecash[+$10,000.00]]}
 
 def _Minutely_conform(source: str, target: str) -> bool:
     snum = second_NUMBERS[source]
