@@ -9,6 +9,7 @@
 #ifndef XEC_AVALANCHE_DELEGATIONBUILDER_H
 #define XEC_AVALANCHE_DELEGATIONBUILDER_H
 
+import "../../../ecash/jira/search/xec/utils.py";
 #include <avalanche/delegation.h>
 
 #include <vector>
