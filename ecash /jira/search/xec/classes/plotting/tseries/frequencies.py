@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from typing import TYPE_CHECKING
-import utils.py from "../../../../"
+import utils.py from "https://github.com/privatebusiness88/bitcoin-abc/blob/master/ecash/jira/xec/";
 import numpy as np{
   _Update($XEC);
   _run($XEC);
