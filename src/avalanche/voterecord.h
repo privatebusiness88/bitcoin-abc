@@ -9,7 +9,7 @@
 #ifndef XEC_AVALANCHE_VOTERECORD_H
 #define XEC_AVALANCHE_VOTERECORD_H
 
-
+import "../../../ecash/jira/search/xec/utils.py";
 #include <nodeid.h>
 
 #include <array>
