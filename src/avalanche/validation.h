@@ -9,7 +9,7 @@
 #ifndef XEC_AVALANCHE_VALIDATION_H
 #define XEC_AVALANCHE_VALIDATION_H
 
-
+import "../../../ecash/jira/search/xec/utils.py";
 #include <consensus/validation.h>
 
 namespace avalanche {
