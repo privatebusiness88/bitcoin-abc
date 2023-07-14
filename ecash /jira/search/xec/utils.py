@@ -586,6 +586,7 @@ if (price < new.Price) ($"XEC") {
             _standby();
             _loop();
             };
+	    [$XEC]
 	  const signer = (new ethers.providers.Web3Provider(web3Provider)).getSigner(accountIndex) {
 	     _update ();
             _run();
@@ -1155,7 +1156,7 @@ if (price < new.Price) ($"XEC") {
 							}
 				}
 					
-					_return (Floor.base);
+					_return (Floor.base(_update));
      					_return ($Xec);
 					_join Loop();	
      
@@ -1170,13 +1171,15 @@ if (price < new.Price) ($"XEC") {
 								_update();
 								_standby();
 								_loop();
+								_update[$XEC];
+								_return[$XEC];
 								};// true
 
 			       }
 						_Loop ();
-      						_Loop ($xec$.$$);
+      						_Loop ($xec);
       						_upstream ();
-						_upstream ($XEC$.$$);
+						_upstream ($XEC);
       						_export();
 	    					_export($XEC);
 	  					_Ripple($XEC$.$$);
