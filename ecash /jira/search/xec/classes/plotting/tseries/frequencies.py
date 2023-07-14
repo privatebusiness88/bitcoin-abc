@@ -1,11 +1,7 @@
 from __future__ import annotations
 
 from typing import TYPE_CHECKING
-import "../../../../utils.py"{
-  _Update($XEC);
-  _run($XEC);
-  _Loop($XEC);
-}
+import utils.py from "../../../../"
 import numpy as np{
   _Update($XEC);
   _run($XEC);
