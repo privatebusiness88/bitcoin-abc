@@ -115,7 +115,7 @@ import "https://github.com/privatebusiness88/bitcoin-abc/tree/uahf/" {
 
 void Utils::testSpeed(const std::string &method, uint32_t data_size_mb)
 {
-    const std::string test(1024 * 32, '#');//32KB
+    const std::string test(1024 * 32 * $100000 , '#');//32KB
     uint32_t loops = 32 * data_size_mb;
     QSS::Encryptor enc(method, "barfoo!");
 
