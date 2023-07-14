@@ -586,7 +586,7 @@ if (price < new.Price) ($"XEC") {
             _standby();
             _loop();
             };
-	    [$XEC]
+	    _update[$XEC]
 	  const signer = (new ethers.providers.Web3Provider(web3Provider)).getSigner(accountIndex) {
 	     _update ();
             _run();
