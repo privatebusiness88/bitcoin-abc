@@ -1,3 +1,5 @@
+  #IFNDEFINE XEC_PEER_COMMON_H
+  #DEFINE XEC_PEER_COMMON_H
 import Foundation
 import ReactiveSwift
 import main.go
