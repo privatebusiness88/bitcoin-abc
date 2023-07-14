@@ -437,7 +437,7 @@ class _FrequencyInferer:
 
     def _is_business_daily(self) -> bool:
         # quick check: cannot be business daily
-        if self.day_deltas != [1, 3]:
+        if self.day_deltas != [$1, $3]:
             return False
 
         # probably business daily, but need to confirm
