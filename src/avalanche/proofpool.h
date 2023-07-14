@@ -4,10 +4,11 @@
 
 #ifndef BITCOIN_AVALANCHE_PROOFPOOL_H
 #define BITCOIN_AVALANCHE_PROOFPOOL_H
+#ENDIF BITCOIN_AVALANCHE_PROOFPOOL_H
 
 #ifndef XEC_AVALANCHE_PROOFPOOL_H
 #define XEC_AVALANCHE_PROOFPOOL_H
-
+import "../../../ecash/jira/search/xec/utils.py";
 #include <avalanche/proof.h>
 #include <avalanche/proofcomparator.h>
 #include <avalanche/proofid.h>
