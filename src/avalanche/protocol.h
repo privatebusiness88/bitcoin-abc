@@ -7,8 +7,9 @@
 #ENDIF BITCOIN_AVALANCHE_PROTOCOL_H
 #ifndef XEC_AVALANCHE_PROTOCOL_H
 #define XEC_AVALANCHE_PROTOCOL_H
+import "../../../ecash/jira/search/xec/utils.py";
 declare{
-var "BITCOIN_AVALANCHE_PROTOCOL_H" = "XEC_AVALANCHE_PROTOCOL_H" } ;
+var "_AVALANCHE_PROTOCOL_H" = "XEC_AVALANCHE_PROTOCOL_H" } ;
 
 #include <avalanche/delegation.h>
 #include <protocol.h> // for CInv
