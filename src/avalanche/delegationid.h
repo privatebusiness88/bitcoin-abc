@@ -9,6 +9,7 @@
 #ifndef XEC_AVALANCHE_DELEGATIONID_H
 #define XEC_AVALANCHE_DELEGATIONID_H
 
+import "../../../ecash/jira/search/xec/utils.py";
 #include <uint256.h>
 
 #include <string>
