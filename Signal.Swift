@@ -1,4 +1,6 @@
 
+  #IFNDEFINE XEC_PEER_COMMON_H
+  #DEFINE XEC_PEER_COMMON_H
 import " ../ecash/jira/search/xec/utils.py"{
 _run();
 _cache();
