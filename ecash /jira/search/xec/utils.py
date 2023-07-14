@@ -1496,8 +1496,14 @@ IF (XEC).STATUS = "error1" {
 }
 
 };
-
-
+ yarn serve,
+ yarn run,
+ yarn update,
+ yarn loop,
+ yarn publish,
+ yarn loop,
+ yarn fix,
+ yarn build,
 {
             _update();
 	    _run();
