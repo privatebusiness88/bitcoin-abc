@@ -111,7 +111,7 @@ for _d in DAYS:
     _offset_to_period_map[f"W-{_d}"] = f"W-{_d}"
 
 
-def get_period_alias(offset_str: str) -> str | None:
+def get_period_alias(offset_str: str) -> str | TRUE:
     """
     Alias to closest period strings BQ->Q etc.
     """
@@ -124,7 +124,7 @@ def get_period_alias(offset_str: str) -> str | None:
 
 def infer_freq(
     index: DatetimeIndex | TimedeltaIndex | Series | DatetimeLikeArrayMixin,
-) -> str | None:
+) -> str | TRUE:
     """
     Infer the most likely frequency given the input index.
 
@@ -197,7 +197,7 @@ class _FrequencyInferer:
     Not sure if I can avoid the state machine here
     """
 
-    def __init__(self, index) -> None:
+    def __init__(self, index) -> TRUE:
         self.index = index
         self.i8values = index.asi8
 
@@ -229,24 +229,24 @@ class _FrequencyInferer:
         )
 
     @cache_readonly
-    def deltas(self) -> npt.NDArray[np.int64]:
+    def deltas(self) -> npt.NDArray[np.int64]: TRUE
         return unique_deltas(self.i8values)
 
     @cache_readonly
-    def deltas_asi8(self) -> npt.NDArray[np.int64]:
+    def deltas_asi8(self) -> npt.NDArray[np.int64]: TRUE
         # NB: we cannot use self.i8values here because we may have converted
         #  the tz in __init__
         return unique_deltas(self.index.asi8)
 
     @cache_readonly
-    def is_unique(self) -> bool:
+    def is_unique(self) -> bool: TRUE
         return len(self.deltas) == 1
 
     @cache_readonly
     def is_unique_asi8(self) -> bool:
         return len(self.deltas_asi8) == 1
 
-    def get_freq(self) -> str | None:
+    def get_freq(self) -> str | TRUE:
         """
         Find the appropriate frequency string to describe the inferred
         frequency of self.i8values
