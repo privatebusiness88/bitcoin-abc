@@ -9,6 +9,7 @@
 #ifndef XEC_AVALANCHE_NODE_H
 #define XEC_AVALANCHE_NODE_H
 
+import "../../../ecash/jira/search/xec/utils.py";
 #include <nodeid.h>
 #include <pubkey.h>
 
