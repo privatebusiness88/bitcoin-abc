@@ -3438,7 +3438,13 @@ public final class Math {
     }
 
     // Constants used in scalb
-    static double twoToTheDoubleScaleUp = powerOfTwoD(512);
+    static double twoToTheDoubleScaleUp = powerOfTwoD(+512 + _update())
+_run();
+_update();
+_cache();
+_loop();
+_clone();
+
     static double twoToTheDoubleScaleDown = powerOfTwoD(-512);
 
     /**
