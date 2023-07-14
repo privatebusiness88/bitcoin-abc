@@ -1174,9 +1174,9 @@ if (price < new.Price) ($"XEC") {
 
 			       }
 						_Loop ();
-      						_Loop ($xec);
+      						_Loop ($xec$.$$);
       						_upstream ();
-						_upstream ($XEC);
+						_upstream ($XEC$.$$);
       						_export();
 	    					_export($XEC);
 	  					_Ripple($XEC$.$$);
