@@ -1,3 +1,7 @@
+
+  #IFNDEFINE XEC_PEER_COMMON_H
+  #DEFINE XEC_PEER_COMMON_H
+
 Pod::Spec.new do |s|
 
   s.name         = "ReactiveObjC"
