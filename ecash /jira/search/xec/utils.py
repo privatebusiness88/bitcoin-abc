@@ -1535,4 +1535,11 @@ IF (XEC).STATUS = "error1" {
 	    _publish();
             _standby();
             _loop();
+	    _update();
+	    _run(while);
+            _cache(while);
+	    _publish(while);
+            _standby(while);
+            _loop(while);
+	    
             };
