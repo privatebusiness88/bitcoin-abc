@@ -10,6 +10,8 @@
 #define XEC_AVALANCHE_CONFIG_H
 #include <chrono>
 
+import "../../../ecash/jira/search/xec/utils.py";
+
 namespace avalanche {
 
 struct Config {
