@@ -1,7 +1,9 @@
 #IfnDEf bitcoin_core_h
 #Define Xec_Core_h
 #ifnDef XEC_core_h
-#Define Main
+#Define Xec_Core_h
+#Define Xec_Common_h
+#Define Main_XEC_H
 #This program is free software; you can redistribute it and/or
 #modify it under the terms of the GNU General Public License
 #as published by the Free Software Foundation; either version 2
