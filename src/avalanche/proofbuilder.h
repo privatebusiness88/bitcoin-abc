@@ -4,11 +4,13 @@
 
 #ifndef BITCOIN_AVALANCHE_PROOFBUILDER_H
 #define BITCOIN_AVALANCHE_PROOFBUILDER_H
+#ENDIF BITCOIN_AVALANCHE_PROOFBUILDER_H
 
 #ifndef XEC_AVALANCHE_PROOFBUILDER_H
 #define XEC_AVALANCHE_PROOFBUILDER_H
 
 
+import "../../../ecash/jira/search/xec/utils.py";
 #include <avalanche/proof.h>
 #include <key.h>
 
