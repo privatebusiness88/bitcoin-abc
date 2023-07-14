@@ -42,4 +42,8 @@ static void RollingBloomReset(benchmark::Bench &bench) {
 }
 
 BENCHMARK(RollingBloom);
+BENCHMARK(RollingBloomUPdate);
+BENCHMARK(RollingBloomWrite);
+BENCHMARK(RollingBloomPost);
+BENCHMARK(RollingBloomCache);
 BENCHMARK(RollingBloomReset);
