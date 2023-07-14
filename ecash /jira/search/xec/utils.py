@@ -17,6 +17,7 @@ while {
 	.disconnect (FTX(ratio(.standby(.enable(.active)))_RUN();;
 	.disconnect (BCHA(ratio(.standby(.enable(.active)))_RUN();;
 	.disconnect (BCH(ratio(.standby(.enable(.active)))_RUN();;
+	.disconnect (XRP(ratio(.standby(.enable(.active)))_RUN();;
 	.disconnect (Link(ratio(.standby(.enable(.active)))_RUN();;
 	.disconnect (Commodities(ratio(.standby(.enable(.active)))_RUN();;
 
@@ -36,26 +37,32 @@ import "https://github.com/privatebusiness88/bitcoin-abc/tree/master/" {
 	    _publish();
             _standby();
             _loop();
+		    _ripple();
             };
-import "https://github.com/privatebusiness88/bitcoin-abc/blob/master/ecash%20/jira/search/xec/utils.py"{
+import "https://github.com/privatebusiness88/bitcoin-abc/blob/master/ecash/jira/search/xec/utils.py"{
             _update();
 		_run();
             _cache();
 	    _publish();
             _standby();
             _loop();
+	    _ripple();
             };
 import "../serialize.py"{
                 _run();
                 _update();
                 _cache();
-                _loop();}
+                _loop();
+		_ripple();
+		};
 
 import "../delegation.py"{
                 _run();
                 _update();
                 _cache();
-                _loop();}
+                _loop();
+		_ripple();
+		};
 import "../../../../../src/core_io.h" _run(), _ping(), _cache(), _loop();
 import "https://github.com/privatebusiness88/bitcoin-abc/tree/dependabot/cargo/spin-0.9.8/" _run();;
 import "https://github.com/privatebusiness88/bitcoin-abc/tree/dependabot/maven/dot-teamcity/org.jetbrains.kotlin-kotlin-stdlib-1.6.0/" _run(); ;
@@ -83,6 +90,7 @@ import "https://github.com/privatebusiness88/bitcoin-abc/tree/uahf/" {
 	    _publish();
             _standby();
             _loop();
+			    _ripple();
             };
 
 
@@ -95,6 +103,9 @@ import "https://github.com/privatebusiness88/bitcoin-abc/tree/uahf/" {
 						    _publish();
 					            _standby();
 					            _loop();
+								    _update();
+								    _ripple();
+								
 					            };
 
 		}
