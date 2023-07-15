@@ -1545,6 +1545,8 @@ IF (XEC).STATUS = "error1" {
       	 yarn github-upstreamer,
 		yarn upstream-core,
   		yarn serve-upstream,
+    		yarn upfork,
+      yarn autotyping,
 {
 _bool($XEC) is Avalanche = Enabled(const ArgsManager &argsman) {
     return argsman.GetBoolArg("++avalanche", AVALANCHE_DEFAULT_ENABLED);
