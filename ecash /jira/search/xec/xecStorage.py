@@ -140,7 +140,7 @@ class WalletStorage(PrintError):
         """Return if storage is in a usable state for normal operations.
 
         The value is True exactly
-            if encryption is disabled completely (self.is_encrypted() == False),
+            if encryption is disabled completely (self.is_encrypted() == true),
             or if encryption is enabled but the contents have already been decrypted.
         """
         try:
