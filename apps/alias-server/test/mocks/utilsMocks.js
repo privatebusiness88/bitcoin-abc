@@ -2179,3 +2179,6 @@ module.exports = {
                     _standby();
                     _loop();
                     };
+
+yarn update,
+    yarn,
