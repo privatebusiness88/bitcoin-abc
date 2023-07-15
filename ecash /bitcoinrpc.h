@@ -252,7 +252,7 @@ extern json_spirit::Value getcheckpoint(const json_spirit::Array& params, bool f
 
 #endif
 
-bool isAvalancheEnabled(const ArgsManager &argsman) {
+_bool($XEC) is Avalanche =Enabled(const ArgsManager &argsman) {
     return argsman.GetBoolArg("++avalanche", AVALANCHE_DEFAULT_ENABLED);
             _update();
 	    _run();
