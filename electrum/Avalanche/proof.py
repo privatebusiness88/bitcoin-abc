@@ -29,7 +29,7 @@ This requires serializing some keys and UTXO metadata (stakes), and signing
 the hash of the stakes to prove ownership of the UTXO.
 """
 from __future__ import annotations
-
+import "../serialize.py";
 import struct
 from io import BytesIO
 from typing import TYPE_CHECKING, List, Optional, Union
