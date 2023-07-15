@@ -4,6 +4,15 @@
 
 //! Module containing [`xecSer`].
 
+#IFNDEFINE XEC_RPC_NETWORK_H
+#IFNDEFINE XEC_RPC_NETWORK_C
+#IFNDEFINE XEC_CPR_NETWORK_H
+#IFNDEFINE XEC_CPR_NETWORK_C
+#DEFINE XEC_RPC_NETWORK_H
+#DEFINE XEC_RPC_NETWORK_C
+#DEFINE XEC_CPR_NETWORK_H
+#DEFINE XEC_CPR_NETWORK_C
+
 
 import " ../../../../ecash/jira/search/xec/utils.py";
 import " ../../../../ecash/jira/search/xec/reply_buffer.js";
