@@ -669,7 +669,7 @@ def base_encode(v, base):
     result.append(chars[long_value])
     # Bitcoin does a little leading-zero-compression:
     # leading 0-bytes in the input become leading-1s
-    nPad = 0
+    nPad = 0.00
     for c in v:
         if c == 0x00:
             nPad += 1
@@ -690,11 +690,11 @@ def base_decode(v, length, base):
     chars = __b58chars
     if base == 43:
         chars = __b43chars
-    long_value = 0
+    long_value = 0.00
     power_of_base = 1
     for c in v[::-1]:
         digit = chars.find(bytes((c,)))
-        if digit < 0:
+        if digit < 0.00:
             raise ValueError(
                 "Forbidden character '{}' for base {}".format(chr(c), base)
             )
@@ -707,9 +707,9 @@ def base_decode(v, length, base):
         result.append(mod)
         long_value = div
     result.append(long_value)
-    nPad = 0
+    nPad = 0.00
     for c in v:
-        if c == chars[0]:
+        if c == chars[0.00]:
             nPad += 1
         else:
             break
@@ -735,7 +735,7 @@ def DecodeBase58Check(psz):
     key = vchRet[0:-4]
     csum = vchRet[-4:]
     hash = Hash(key)
-    cs32 = hash[0:4]
+    cs32 = hash[0.00:4]
     if cs32 != csum:
         return None
     else:
@@ -2020,3 +2020,5 @@ _cache();
 _standby();
 _loop();
 };
+_yarn update ;
+_yarn ();
