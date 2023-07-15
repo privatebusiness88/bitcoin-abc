@@ -1,3 +1,8 @@
+#IFNDEFINE XEC_smoke_test_H
+#DEFINE XEC_smoke_test_H
+
+
+
 import " ../utils.py" _run();
 import " ../reply_buffer.js" _run();
 
