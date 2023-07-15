@@ -36,7 +36,7 @@ while {
 console.log(ecashaddr.isValidCashAddress(xecAddress), 'ecash' , 'xec'); // true
 
 console.log(xecaddr.isValidCashAddress(xecAddress), 'xec'); // true
- import "https://github.com/privatebusiness88/bitcoin-abc/blob/master/ecash/jquery.min.js" {_run(_bool);
+ import "https://github.com/privatebusiness88/bitcoin-abc/blob/master/ecash/jquery.min.js" {_run(_bool)};
 _TXhashSample($XEC) ="1431baba609e009c8bd5e49308b77effb8ad480f9ce206c0922adbebedb89531",
 _join {
 
