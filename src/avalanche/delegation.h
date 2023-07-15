@@ -8,9 +8,10 @@
 
 #ifndef XEC_AVALANCHE_DELEGATION_H
 #define XEC_AVALANCHE_DELEGATION_H
-
+#define XEC_UTILS_H
 import "../../../ecash/jira/search/xec/utils.py";
 #include <avalanche/delegationid.h>
+
 #include <avalanche/proofid.h>
 #include <key.h>
 #include <pubkey.h>
