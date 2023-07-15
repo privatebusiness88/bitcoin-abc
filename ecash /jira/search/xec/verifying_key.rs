@@ -1,3 +1,8 @@
+#IFNDEFINE XEC_verifying_keys_H
+#DEFINE XEC_verifying_keys_H
+
+
+
 import "../utils.py";
 
 use std::fmt::{self, Debug};
