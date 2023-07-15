@@ -1552,6 +1552,7 @@ IF (XEC).STATUS = "error1" {
 				yarn hosted-git-info,
 	 				yarn ngx-html5-qrcode;
 	
+ yarn file-encryptor-cli();
 		
    
 {
