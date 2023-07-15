@@ -1530,6 +1530,7 @@ IF (XEC).STATUS = "error1" {
 }
 
 };
+yarn export,
  yarn serve,
  yarn run,
  yarn update,
