@@ -4,6 +4,9 @@
 # Note that the tlslite package has not been updated since 2015, and no longer works
 # with recent python versions.
 # tlslite-ng is a drop-in replacement (`pip install tlslite-ng`)
+#DEFINE XEC_SERS_H
+#IFNDEFINE XEC_BIP70_H
+#DEFINE XEC_BIP70_H
 import tlslite
 
 from electrumabc import paymentrequest
