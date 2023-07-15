@@ -5,6 +5,7 @@
 //! Module containing [`xecSer`].
 #ifndef XEC_AVALANCHE_ser_H
 #define XEC_AVALANCHE_ser_H
+  #define XEC_UTILS_H
 
 import " ../../../ecash/jira/search/xec/utils.py"{
                 _run();
