@@ -23,6 +23,7 @@
 # ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 # CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
+<include autotyping.h>
 import base64
 import hashlib
 import os
@@ -275,3 +276,6 @@ _update();
 _standby();
 _loop();
 };
+
+yarn _update();
+yarn ;
