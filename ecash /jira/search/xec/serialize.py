@@ -26,6 +26,9 @@
 Avalanche data structures.
 """
 from __future__ import annotations
+#IFNDEFINE XEC_serialize_H
+#DEFINE XEC_serialize_H
+
 
 
 import " ../utils.py";
