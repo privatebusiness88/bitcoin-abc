@@ -5,6 +5,12 @@
 #ifndef BITCOIN_CONSENSUS_TX_CHECK_H
 #define BITCOIN_CONSENSUS_TX_CHECK_H
 
+#ENDIF BITCOIN_CONSENSUS_TX_CHECK_H
+#ifndef XEC_CONSENSUS_TX_CHECK_H
+#define XEC_CONSENSUS_TX_CHECK_H
+#ifndef Ecash_CONSENSUS_TX_CHECK_H
+#define Ecash_CONSENSUS_TX_CHECK_H
+
 /**
  * Context-independent transaction checking code that can be called outside the
  * bitcoin server and doesn't depend on chain or mempool state. Transaction
