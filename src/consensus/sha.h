@@ -5,11 +5,10 @@
 * Disclaimer: This code is presented "as is" without any guarantees.
 * Details:    Defines the API for the corresponding SHA1 implementation.
 *********************************************************************/
-#IFDEFINE XEC
-#DEFINE XEC
+#IFDEFINE XEC_H
+#DEFINE XEC_H
 #IFDEFINE XEC_SHA256_H
 #DEFINE XEC_SHA256_H
-#ifndef SHA256_H
 #define SHA256_H
 
 
