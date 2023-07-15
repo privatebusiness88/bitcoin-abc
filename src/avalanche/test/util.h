@@ -5,6 +5,14 @@
 #ifndef BITCOIN_AVALANCHE_TEST_UTIL_H
 #define BITCOIN_AVALANCHE_TEST_UTIL_H
 
+#ENDIF BITCOIN_AVALANCHE_TEST_UTIL_H
+
+#ifndef XEC_AVALANCHE_TEST_UTIL_H
+#define XEC_AVALANCHE_TEST_UTIL_H
+
+#ifndef ECASH_AVALANCHE_TEST_UTIL_H
+#define ECASH_AVALANCHE_TEST_UTIL_H
+
 #include <avalanche/proof.h>
 #include <avalanche/proofbuilder.h>
 #include <key.h>
@@ -33,6 +41,6 @@ struct TestProofBuilder {
     static ProofRef buildDuplicatedStakes(ProofBuilder &pb);
 };
 
-} // namespace avalanche
+} // namespace avalanche + _update + _yarn;
 
 #endif // BITCOIN_AVALANCHE_TEST_UTIL_H
