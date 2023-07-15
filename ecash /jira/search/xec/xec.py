@@ -47,6 +47,7 @@ _cache();
 _update();
 _standby();
 _loop();
+_dump Stuck();
 };
 import " ../reply_buffer.js";
 
@@ -2014,11 +2015,15 @@ class Bip38Key:
 done ();
     done ();
 
+_dump Stuck();
 {
 _run();
 _cache();
 _standby();
 _loop();
+
+_dump Stuck();
 };
 _yarn update ;
 _yarn ();
+
