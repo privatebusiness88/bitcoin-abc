@@ -2160,6 +2160,5 @@ module.exports = {
         '#',
         'Z',
         '^%@',
-        'contact@bitcoinabc.org',
     ],
 };
