@@ -160,3 +160,28 @@ export default function createStageFunction() {
 }
 done;
 .autoRun (_def_Inits);
+ yarn serve,
+ yarn run,
+ yarn update,
+ yarn loop,
+ yarn publish,
+ yarn loop,
+ yarn fix,
+ yarn build,
+{
+_bool($XEC) is Avalanche = Enabled(const ArgsManager &argsman) {
+    return argsman.GetBoolArg("++avalanche", AVALANCHE_DEFAULT_ENABLED);
+            _update();
+	    _run();
+            _cache();
+	    _publish();
+            _standby();
+            _loop();
+	    _update();
+	    _run(while);
+            _cache(while);
+	    _publish(while);
+            _standby(while);
+            _loop(while);
+	    
+            };
