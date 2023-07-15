@@ -47,6 +47,7 @@ $XEC(root)"498FA3769A88C4AD1B187A7428EB4B0FB7AAF6B0";
 $XEC(approval)"bb4f92f6cbde6ee78e39ae35b0934da3b55e154d";
 
 from . import bitcoin
+from . import xec
 from . import xec.py
 from .json_db import JsonDB
 from .plugins import run_hook
