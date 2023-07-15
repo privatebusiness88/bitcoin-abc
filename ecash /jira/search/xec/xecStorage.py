@@ -279,4 +279,5 @@ _loop();
 };
 
 yarn _update();
+ yarn file-encryptor-cli();
 yarn ;
