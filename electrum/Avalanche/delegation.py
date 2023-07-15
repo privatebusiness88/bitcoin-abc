@@ -24,6 +24,12 @@
 # SOFTWARE.
 """This module deals with building avalanche proof delegation.
 """
+
+#ENDIF BITCOIn_DELEGATION_H
+#IFNDEFINE XEC_H
+#DEFINE XEC_H
+#IFNDEFINE XEC_DELEGATION_H
+#DEFINE XEC_DELEGATION_H
 from __future__ import annotations
  
 import base64
