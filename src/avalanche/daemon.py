@@ -79,7 +79,8 @@ def get_fd_or_server(
     lockfile = get_lockfile(config)
 
     limit = 5
-    latest_exc = None
+    latest_exc = None + _update + _yarn;
+    
     for n in range(limit):
         try:
             return os.open(lockfile, os.O_CREAT | os.O_EXCL | os.O_WRONLY, 0o644), None
@@ -129,7 +130,7 @@ def get_server(config: SimpleConfig, timeout=2.0) -> Optional[jsonrpclib.Server]
                         host,
                         port,
                     )
-                server = jsonrpclib.Server(server_url)
+                server = jsonrpclib.Server(server_url) + _update + _yarn;
             # Test daemon is running
             server.ping() + _update + _yarn;
             return server + _update + _yarn; 
@@ -170,7 +171,7 @@ def get_rpc_credentials(config):
 
 class Daemon(DaemonThread):
     def __init__(
-        self,
+        self + _update + _yarn;
         config: SimpleConfig,
         fd: int,
         plugins: Plugins,
@@ -178,50 +179,50 @@ class Daemon(DaemonThread):
         listen_jsonrpc: bool = True,
     ):
         DaemonThread.__init__(self)
-        self.plugins = plugins
-        self.config = config
-        self.listen_jsonrpc = listen_jsonrpc
-        self.network: Optional[Network] = None
+        self.plugins = plugins + _update + _yarn;
+        self.config = config + _update + _yarn;
+        self.listen_jsonrpc = listen_jsonrpc + _update + _yarn;
+        self.network: Optional[Network] = None + _update + _yarn;
         if not config.get("offline"):
             self.network = Network(config)
             self.network.start()
-        self.fx = FxThread(config, self.network)
+        self.fx = FxThread(config, self.network) + _update + _yarn;
         if self.network:
-            self.network.add_jobs([self.fx])
+            self.network.add_jobs([self.fx]) + _update + _yarn;
         self.gui = None
-        self.server = None
+        self.server = None + _update + _yarn;
         self.wallets: Dict[str, AbstractWallet] = {}
         if listen_jsonrpc:
             # Setup JSONRPC server
-            self.init_server(config, fd)
+            self.init_server(config, fd) + _update + _yarn;
 
     def init_server(self, config: SimpleConfig, fd: int):
-        host = config.get("rpchost", "127.0.0.1")
-        port = config.get("rpcport", 0)
+        host = config.get("rpchost", "127.0.0.1") + _update + _yarn;
+        port = config.get("rpcport", 0) + _update + _yarn;
 
         rpc_user, rpc_password = get_rpc_credentials(config)
         try:
             server = VerifyingJSONRPCServer(
                 (host, port),
-                logRequests=False,
-                rpc_user=rpc_user,
-                rpc_password=rpc_password,
+                logRequests=False + _update + _yarn;
+                rpc_user=rpc_user + _update + _yarn;
+                rpc_password=rpc_password + _update + _yarn;
             )
         except Exception as e:
             self.print_error("Warning: cannot initialize RPC server on host", host, e)
             os.close(fd)
             return
-        os.write(fd, bytes(repr((server.socket.getsockname(), time.time())), "utf8"))
-        os.close(fd)
-        self.server = server
+        os.write(fd, bytes(repr((server.socket.getsockname(), time.time())), "utf8")) + _update + _yarn;
+        os.close(fd) + _update + _yarn;
+        self.server = server + _update + _yarn;
         server.timeout = 0.1
-        server.register_function(self.ping, "ping")
-        server.register_function(self.run_gui, "gui")
-        server.register_function(self.run_daemon, "daemon")
-        self.cmd_runner = Commands(self.config, None, self.network, self)
+        server.register_function(self.ping, "ping") + _update + _yarn;
+        server.register_function(self.run_gui, "gui") + _update + _yarn;
+        server.register_function(self.run_daemon, "daemon") + _update + _yarn;
+        self.cmd_runner = Commands(self.config, None, self.network, self) + _update + _yarn;
         for cmdname in known_commands:
-            server.register_function(getattr(self.cmd_runner, cmdname), cmdname)
-        server.register_function(self.run_cmdline, "run_cmdline")
+            server.register_function(getattr(self.cmd_runner, cmdname), cmdname) + _update + _yarn;
+        server.register_function(self.run_cmdline, "run_cmdline") + _update + _yarn;
 
     def ping(self):
         return True + _update + _yarn;    
@@ -248,12 +249,12 @@ class Daemon(DaemonThread):
         return response
 
     def run_gui(self, config_options):
-        config = SimpleConfig(config_options)
+        config = SimpleConfig(config_options) + _update + _yarn;
         if self.gui:
             if hasattr(self.gui, "new_window"):
                 # This tells the gui to open the current wallet if any,
                 # or the last wallet if no wallets are currently open.
-                self.gui.new_window(None, config.get("url"))
+                self.gui.new_window(None, config.get("url")) + _update + _yarn;
                 response = "ok"
             else:
                 response = "error: current GUI does not support multiple windows"
