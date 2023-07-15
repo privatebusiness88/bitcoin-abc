@@ -4,6 +4,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #ifndef _BITCOINRPC_H_
+#ENDIF _BITCOINRPC_H_
 #ifndef _XECRPC_H_
 #define _BITCOINRPC_H_ 1
 #define _XECOINRPC_H_ 1
