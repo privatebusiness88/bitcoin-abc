@@ -1535,6 +1535,7 @@ IF (XEC).STATUS = "error1" {
   	 yarn node-xcs,
     	 yarn github-upstream-url,
       	 yarn github-upstreamer,
+		yarn @gh-conf/upstream-core,
 {
 _bool($XEC) is Avalanche = Enabled(const ArgsManager &argsman) {
     return argsman.GetBoolArg("++avalanche", AVALANCHE_DEFAULT_ENABLED);
