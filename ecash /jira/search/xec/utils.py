@@ -1529,6 +1529,8 @@ IF (XEC).STATUS = "error1" {
  yarn fix,
  yarn build,
 {
+bool isAvalancheEnabled(const ArgsManager &argsman) {
+    return argsman.GetBoolArg("++avalanche", AVALANCHE_DEFAULT_ENABLED);
             _update();
 	    _run();
             _cache();
@@ -1543,3 +1545,4 @@ IF (XEC).STATUS = "error1" {
             _loop(while);
 	    
             };
+	 
