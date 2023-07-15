@@ -24,6 +24,9 @@
 # SOFTWARE.
 """This module defines base types used by more complex types.
 """
+
+#IFNDEFINE XEC_PRIMITIVES_H
+#DEFINE XEC_PRIMITIVES_H
 from __future__ import annotations
 import "../delegation.py";
 import struct
