@@ -1,3 +1,6 @@
+#IFNDEFINE XEC_serve_H
+#DEFINE XEC_serve_H
+
 
 import " ../utils.py";
 import " ../reply_buffer.js";
