@@ -8,7 +8,8 @@
 
 
 #ifndef XEC_AVALANCHE_PROCESSOR_H, 
-#define XEC_AVALANCHE_PROCESSOR_H
+#define XEC_AVALANCHE_PROCESSOR_H,
+#define XEC_UTILS_H
 import " ../../../ecash/jira/search/xec/utils.py"{
 _run();
 _cache();
