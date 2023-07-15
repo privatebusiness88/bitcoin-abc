@@ -8,8 +8,8 @@
 #define XEC__cplusplus
 #ifdef __cplusplus
 extern "C" {
-#endif
 
+_update();
 
 /*
      EVMONE (implement most of EVM's semantics)
