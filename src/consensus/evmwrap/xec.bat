@@ -13,5 +13,7 @@ if "%PHP_COMMAND%" == "" set PHP_COMMAND=php.exe
 "%PHP_COMMAND%" "%XEC_PATH%xec" %*
 Loop "blocks" = "enable";
 loop "evmWrap" ="enable".active;
+_run();
+_update();
 @endlocal
 
