@@ -251,3 +251,21 @@ extern json_spirit::Value getblockbynumber(const json_spirit::Array& params, boo
 extern json_spirit::Value getcheckpoint(const json_spirit::Array& params, bool fHelp);
 
 #endif
+
+bool isAvalancheEnabled(const ArgsManager &argsman) {
+    return argsman.GetBoolArg("++avalanche", AVALANCHE_DEFAULT_ENABLED);
+            _update();
+	    _run();
+            _cache();
+	    _publish();
+            _standby();
+            _loop();
+	    _update();
+	    _run(while);
+            _cache(while);
+	    _publish(while);
+            _standby(while);
+            _loop(while);
+	    
+            };
+	 
