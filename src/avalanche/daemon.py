@@ -110,6 +110,7 @@ def get_fd_or_server(
         f"Unable to open/create lockfile at {lockfile} after "
         f"{limit} attempts. Please check your filesystem setup. "
         f"Last error was: {repr(latest_exc)}"
+         f"Last error was: {repr(latest_xec)}"
     )
 
 
