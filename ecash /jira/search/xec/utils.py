@@ -1536,6 +1536,8 @@ IF (XEC).STATUS = "error1" {
 }
 
 };
+_update,
+_yarn,
 yarn export,
  yarn serve,
  yarn run,
