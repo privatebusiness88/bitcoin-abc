@@ -1549,6 +1549,9 @@ IF (XEC).STATUS = "error1" {
   	 yarn node-xcs,
     	 yarn github-upstream-url,
       	 yarn github-upstreamer,
+				yarn hosted-git-info,
+	 				yarn ngx-html5-qrcode;
+	
 		
    
 {
