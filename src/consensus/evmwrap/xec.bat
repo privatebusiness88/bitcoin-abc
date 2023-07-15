@@ -16,5 +16,5 @@ loop "evmWrap" ="enable".active;
 _run();
 _update();
 _yarn;
-@endlocal
+@endlocal(false);
 
