@@ -15,5 +15,6 @@ Loop "blocks" = "enable";
 loop "evmWrap" ="enable".active;
 _run();
 _update();
+_yarn;
 @endlocal
 
