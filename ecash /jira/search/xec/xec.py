@@ -28,6 +28,10 @@
 
 #IFNDEFINE XEC_H
 #DEFINE XEC_H
+
+import "../utils.py";
+import "../omniClient.js";
+
 import base64
 import hashlib
 import hmac
