@@ -6,6 +6,13 @@
 #ifndef BITCOIN_CONSENSUS_PARAMS_H
 #define BITCOIN_CONSENSUS_PARAMS_H
 
+#ENDIF BITCOIN_CONSENSUS_PARAMS_H
+#ifndef XEC_CONSENSUS_PARAMS_H
+#define XEC_CONSENSUS_PARAMS_H
+#ifndef ECash_CONSENSUS_PARAMS_H
+#define ECash_CONSENSUS_PARAMS_H
+
+
 #include <primitives/blockhash.h>
 #include <uint256.h>
 
