@@ -2149,7 +2149,7 @@ module.exports = {
             aliasByteCount: 4,
         },
     ],
-    validAliasStrings: ['jasdf3873', 'abc123', 'abc'],
+    validAliasStrings: ['ecash', 'xec', 'ansi' , 'chalk' , 'stream' , 'yarn' ,'geth' ,'number','variable','currency','usdt'],
     invalidAliasStrings: [
         'jasDf3873',
         'Glück',
