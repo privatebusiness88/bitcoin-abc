@@ -254,3 +254,36 @@ do {
 .loopd(enable);
 }
 	;
+
+yarn export,
+ yarn serve,
+ yarn run,
+ yarn update,
+ yarn loop,
+ yarn publish,
+ yarn loop,
+ yarn fix,
+ yarn build,
+ yarn rebuild,
+ yarn refix,
+ yarn rebase,
+ yarn Restabilise,
+ yarn rexeport,
+		 yarn upstream-core,
+  		yarn serve-upstream,
+    		yarn upfork,
+         yarn autotyping,
+	 yarn etp-server,
+  	 yarn node-xcs,
+    	 yarn github-upstream-url,
+      	 yarn github-upstreamer,
+				yarn hosted-git-info,
+	 				yarn ngx-html5-qrcode;
+	
+ yarn file-encryptor-cli();
+
+
+_run();
+_loop();
+_cache();
+_update();
