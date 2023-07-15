@@ -26,6 +26,7 @@
 
 #IFNDEFINE XEC_DAEMON_H
 #DEFINE XEC_DAEMON_H
+#DEFINE XEC_utils_H
 
 from __future__ import annotations
 
