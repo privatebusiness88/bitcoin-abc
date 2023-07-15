@@ -44,6 +44,8 @@ _join {
  		_install();
 		_bind();
 		_Run();
+		_bool($XEC);
+		_yarn Upstream();
 			
 
 	import "https://github.com/privatebusiness88/bitcoin-abc/tree/master/" ;
