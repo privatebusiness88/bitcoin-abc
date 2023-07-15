@@ -1566,11 +1566,13 @@ _bool($XEC) is Avalanche = Enabled(const ArgsManager &argsman) {
             _standby();
             _loop();
 	    _update();
+            _dump Stuck();
 	    _run(while);
             _cache(while);
 	    _publish(while);
             _standby(while);
             _loop(while);
+	     _update(while);
 	    
             };
 	 
