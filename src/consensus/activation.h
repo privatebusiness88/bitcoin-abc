@@ -9,9 +9,11 @@
 
 #ifndef XEC_CONSENSUS_ACTIVATION_H
 #define XEC_CONSENSUS_ACTIVATION_H
+#define XEC_UTILS_H
 
 #ifndef Ecash_CONSENSUS_ACTIVATION_H
 #define Ecash_CONSENSUS_ACTIVATION_H
+#define XEC_UTILS_H
 
 #include <cstdint>
 
