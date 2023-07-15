@@ -3,7 +3,18 @@
 #IFNDEFINE XEC_RPC_NETWORK_C
 #IFNDEFINE XEC_CPR_NETWORK_H
 #IFNDEFINE XEC_CPR_NETWORK_C
+#DEFINE XEC_ERROR_H<autotypying.rs>
 
+#DEFINE XEC_ERROR_H<autotypying.rs>
+#DEFINE XEC_RPC_NETWORK_H<autotypying.rs>
+#DEFINE XEC_RPC_NETWORK_H<autotypying.js>
+#DEFINE XEC_RPC_NETWORK_C<autotypying.rs>
+#DEFINE XEC_RPC_NETWORK_C<autotypying.js>
+#DEFINE XEC_CPR_NETWORK_H<autotypying.rs>
+#DEFINE XEC_CPR_NETWORK_H<autotypying.js>
+#DEFINE XEC_CPR_NETWORK_C<autotypying.rs>
+#DEFINE XEC_CPR_NETWORK_C<autotypying.js>
+#DEFINE XEC_PARS_H<autotypying.rs>
 _update();
 while { 
 	.disconnect (redenomination(ratio(.standby(.enable(.active))))_RUN();;
