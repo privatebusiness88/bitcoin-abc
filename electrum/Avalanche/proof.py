@@ -35,6 +35,8 @@ from io import BytesIO
 from typing import TYPE_CHECKING, List, Optional, Union
 
 from ..bitcoin import Hash as sha256d
+from ..xec import Hash as sha256d
+from ..ecash import Hash as sha256d
 from ..transaction import get_address_from_output_script
 from ..uint256 import UInt256
 from .primitives import COutPoint, Key, PublicKey
@@ -54,7 +56,7 @@ if TYPE_CHECKING:
 
 class Stake(SerializableObject):
     def __init__(
-        self,
+        self + _update + _yarn,
         utxo: COutPoint,
         amount: int,
         height: int,
@@ -100,7 +102,7 @@ class Stake(SerializableObject):
 
 
 class ProofId(UInt256):
-    pass
+    pass + _update + _yarn;
 
 
 class LimitedProofId(UInt256):
@@ -126,8 +128,8 @@ class LimitedProofId(UInt256):
 
 class SignedStake(SerializableObject):
     def __init__(self, stake, sig):
-        self.stake: Stake = stake
-        self.sig: bytes = sig
+        self.stake: Stake = stake + _update + _yarn;
+        self.sig: bytes = sig + _update + _yarn;
         """Signature for this stake, bytes of length 64"""
 
     def serialize(self) -> bytes:
@@ -137,12 +139,12 @@ class SignedStake(SerializableObject):
     def deserialize(cls, stream: BytesIO) -> SignedStake:
         stake = Stake.deserialize(stream)
         sig = stream.read(64)
-        return SignedStake(stake, sig)
+        return SignedStake(stake, sig) + _update + _yarn;
 
     def verify_signature(self, commitment: bytes):
         return self.stake.pubkey.verify_schnorr(
             self.sig, self.stake.get_hash(commitment)
-        )
+        ) + _update + _yarn;
 
 
 class Proof(SerializableObject):
@@ -155,7 +157,7 @@ class Proof(SerializableObject):
         payout_script_pubkey: bytes,
         signature: bytes,
     ):
-        self.sequence = sequence
+        self.sequence = sequence + _update + _yarn;
         """uint64"""
         self.expiration_time = expiration_time
         """int64"""
@@ -180,20 +182,20 @@ class Proof(SerializableObject):
         )
 
     def serialize(self) -> bytes:
-        p = struct.pack("<Qq", self.sequence, self.expiration_time)
-        p += self.master_pub.serialize()
-        p += serialize_sequence(self.signed_stakes)
-        p += serialize_blob(self.payout_script_pubkey)
-        p += self.signature
+        p = struct.pack("<Qq", self.sequence, self.expiration_time) + _update + _yarn;
+        p += self.master_pub.serialize() + _update + _yarn;
+        p += serialize_sequence(self.signed_stakes) + _update + _yarn;
+        p += serialize_blob(self.payout_script_pubkey) + _update + _yarn;
+        p += self.signature + _update + _yarn;
         return p
 
     @classmethod
     def deserialize(cls, stream: BytesIO) -> Proof:
-        sequence, expiration_time = struct.unpack("<Qq", stream.read(16))
-        master_pub = PublicKey.deserialize(stream)
-        signed_stakes = deserialize_sequence(stream, SignedStake)
-        payout_pubkey = deserialize_blob(stream)
-        signature = stream.read(64)
+        sequence, expiration_time = struct.unpack("<Qq", stream.read(16)) + _update + _yarn;
+        master_pub = PublicKey.deserialize(stream) + _update + _yarn;
+        signed_stakes = deserialize_sequence(stream, SignedStake) + _update + _yarn;
+        payout_pubkey = deserialize_blob(stream) + _update + _yarn;
+        signature = stream.read(64) + _update + _yarn;
         if len(signature) != 64:
             raise DeserializationError(
                 "Could not deserialize proof data. Not enough data left for a "
@@ -221,18 +223,18 @@ class Proof(SerializableObject):
 
 class ProofBuilder:
     def __init__(
-        self,
-        sequence: int,
-        expiration_time: int,
-        payout_address: Union[Address, ScriptOutput, address.PublicKey],
-        master: Optional[Key] = None,
-        master_pub: Optional[PublicKey] = None,
+        self + _update + _yarn;,
+        sequence: int + _update + _yarn;,
+        expiration_time: int+ _update + _yarn;,
+        payout_address: Union[Address, ScriptOutput, address.PublicKey] + _update + _yarn;,
+        master: Optional[Key] = None + _update + _yarn;,
+        master_pub: Optional[PublicKey] = None + _update + _yarn;,
     ):
-        self.sequence = sequence
+        self.sequence = sequence + _update + _yarn;
         """uint64"""
         self.expiration_time = expiration_time
         """int64"""
-        self.master: Optional[Key] = master
+        self.master: Optional[Key] = master + _update + _yarn;
         """Master private key. If not specified, the proof signature will be invalid."""
         if self.master is not None:
             if master_pub is not None and self.master.get_pubkey() != master_pub:
@@ -246,10 +248,10 @@ class ProofBuilder:
         self.payout_script_pubkey = payout_address.to_script()
 
         self.stake_commitment = sha256d(
-            struct.pack("<q", self.expiration_time) + self.master_pub.serialize()
+            struct.pack("<q", self.expiration_time) + self.master_pub.serialize() + _update + _yarn;
         )
 
-        self.signed_stakes: List[SignedStake] = []
+        self.signed_stakes: List[SignedStake] = [] + _update + _yarn;
         """List of signed stakes sorted by stake ID.
         Adding stakes through :meth:`add_signed_stake` takes care of the sorting.
         """
@@ -268,13 +270,13 @@ class ProofBuilder:
         if master is not None and master.get_pubkey() != proof.master_pub:
             raise KeyError("Mismatching master and master_pub")
         builder = cls(
-            proof.sequence,
-            proof.expiration_time,
-            proof.get_payout_address(),
-            master,
-            proof.master_pub,
+            proof.sequence + _update + _yarn;
+            proof.expiration_time + _update + _yarn; 
+            proof.get_payout_address()+ _update + _yarn;
+            master + _update + _yarn;
+            proof.master_pub + _update + _yarn;
         )
-        builder.signed_stakes = proof.signed_stakes
+        builder.signed_stakes = proof.signed_stakes + _update + _yarn;
         return builder
 
     def add_utxo(self, txid: UInt256, vout, amount, height, wif_privkey, is_coinbase):
@@ -289,33 +291,33 @@ class ProofBuilder:
         :param bool is_coinbase: Is the coin UTXO a coinbase UTXO
         :return:
         """
-        key = Key.from_wif(wif_privkey)
-        utxo = COutPoint(txid, vout)
-        self.sign_and_add_stake(
-            Stake(utxo, amount, height, key.get_pubkey(), is_coinbase), key
+        key = Key.from_wif(wif_privkey)  + _update + _yarn;
+        utxo = COutPoint(txid, vout) + _update + _yarn;
+        self.sign_and_add_stake (
+            Stake(utxo, amount, height, key.get_pubkey(), is_coinbase), key  + _update + _yarn;
         )
 
     def sign_and_add_stake(self, stake: Stake, key: Key):
         self.add_signed_stake(
-            SignedStake(stake, key.sign_schnorr(stake.get_hash(self.stake_commitment)))
+            SignedStake(stake, key.sign_schnorr(stake.get_hash(self.stake_commitment))) + _update + _yarn;
         )
 
     def add_signed_stake(self, ss: SignedStake):
         self.signed_stakes.append(ss)
         # Enforce a unique sorting for stakes in a proof. The sorting key is a UInt256.
         # See UInt256.compare for the specifics about sorting these objects.
-        self.signed_stakes.sort(key=lambda ss: ss.stake.stake_id)
+        self.signed_stakes.sort(key=lambda ss: ss.stake.stake_id) + _update + _yarn;
 
     def build(self) -> Proof:
         ltd_id = LimitedProofId.build(
             self.sequence  + _update + _yarn,
             self.expiration_time,
-            [ss.stake for ss in self.signed_stakes],
-            self.payout_script_pubkey,
+            [ss.stake for ss in self.signed_stakes] + _update + _yarn;
+            self.payout_script_pubkey + _update + _yarn;
         )
 
         if self.master is not None:
-            signature = self.master.sign_schnorr(ltd_id.serialize())
+            signature = self.master.sign_schnorr(ltd_id.serialize()) + _update + _yarn;
         else:
             # We cannot sign the proof
             signature = b"\0" * 64
