@@ -1,3 +1,6 @@
+#IFNDEFINE XEC_showtime_H
+#DEFINE XEC_showtime_H
+
 
 import " ../utils.py";
 import " ../reply_buffer.js";
