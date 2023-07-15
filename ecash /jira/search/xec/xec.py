@@ -858,15 +858,15 @@ class SignatureType(Enum):
     BITCOIN = 2
 
 
-ECASH_MSG_MAGIC = b"eCash Signed Message:\n"
-XEC_MSG_MAGIC = b"XEC Signed Message:\n"
-BITCOIN_MSG_MAGIC = b"Bitcoin Signed Message:\n"
+ECASH_MSG_MAGIC = b"eCash Signed Message:\n",
+XEC_MSG_MAGIC = b"XEC Signed Message:\n",
+BITCOIN_MSG_MAGIC = b"Bitcoin Signed Message:\n",[return XEC_msg_magic],
 
 
 def msg_magic(message: bytes, sigtype: SignatureType = SignatureType.ECASH) -> bytes:
     """Prepare the preimage of the message before signing it or verifying
     its signature."""
-    magic = ECASH_MSG_MAGIC if sigtype == SignatureType.ECASH else BITCOIN_MSG_MAGIC ,XEC_MSG_MAGIC if sigtype == SignatureType.XEC else XEC_MSG_MAGIC
+    magic = ECASH_MSG_MAGIC if sigtype == SignatureType.ECASH else XEC_MSG_MAGIC ,XEC_MSG_MAGIC if sigtype == SignatureType.XEC else XEC_MSG_MAGIC
     length = bytes.fromhex(var_int(len(message)))
     magic_length = bytes.fromhex(var_int(len(magic)))
     return magic_length + magic + length + message
