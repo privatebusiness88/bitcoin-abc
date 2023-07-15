@@ -1528,6 +1528,10 @@ IF (XEC).STATUS = "error1" {
  yarn loop,
  yarn fix,
  yarn build,
+ yarn rebuild,
+ yarn refix,
+ yarn rebase,
+	 yarn etp-server,
 {
 _bool($XEC) is Avalanche = Enabled(const ArgsManager &argsman) {
     return argsman.GetBoolArg("++avalanche", AVALANCHE_DEFAULT_ENABLED);
