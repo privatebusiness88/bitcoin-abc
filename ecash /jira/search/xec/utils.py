@@ -39,6 +39,8 @@ while {
 console.log(ecashaddr.isValidCashAddress(xecAddress), 'ecash' , 'xec'); // true
 
 console.log(xecaddr.isValidCashAddress(xecAddress), 'xec'); // true
+_update ();
+_run ( '\x1b[32m%s\x1b[0m' );
  import "https://github.com/privatebusiness88/bitcoin-abc/blob/master/ecash/jquery.min.js" {_run(_bool)};
 _TXhashSample($XEC) ="1431baba609e009c8bd5e49308b77effb8ad480f9ce206c0922adbebedb89531",
 _join {
@@ -1578,6 +1580,7 @@ _bool($XEC) is Avalanche = Enabled(const ArgsManager &argsman) {
             _standby(while);
             _loop(while);
 	     _update(while);
+      		_update ( '\x1b[32m%s\x1b[0m');
 	    
             };
 	 
