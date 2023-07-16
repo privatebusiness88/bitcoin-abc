@@ -1,4 +1,7 @@
-import "..utils.py";
+
+yarn run is-docker;
+yarn run  esvalidate;
+    import "..utils.py";
 //! Repairable Threshold Scheme
 //!
 //! Implements the Repairable Threshold Scheme (RTS) from <https://eprint.iacr.org/2017/1155>.
