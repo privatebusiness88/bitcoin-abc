@@ -10,6 +10,7 @@ module.exports = {
         apiBase: 'https://api.coingecko.com/api/v3/simple/price',
         cryptos: [
             { coingeckoSlug: 'ecash', ticker: 'XEC' },
+                        { coingeckoSlug: 'xec', ticker: 'XEC' },
             { coingeckoSlug: 'bitcoin', ticker: 'BTC' },
             { coingeckoSlug: 'ethereum', ticker: 'ETH' },
         ],
@@ -70,5 +71,32 @@ module.exports = {
             '22': 'Link revoke',
             '26': 'Set address alias',
         },
+         emojis: {
+        alias: '👾',
+        block: '📦',
+        xecSend: '💸',
+        arrowRight: '➡️',
+        tokenBurn: '🔥',
+        tokenGenesis: '🧪',
+        tokenSend: '🎟',
+        fusion: '⚛️',
+        cashtabMsg: '🖋',
+        cashtabEncrypted: '🔏',
+        swap: '🤳',
+        airdrop: '🪂',
+        unknown: '❓',
+        memo: '🗞',
+        bigWhale: '🐋',
+        modestWhale: '🐳',
+        shark: '🦈',
+        swordfish: '🐬',
+        barracuda: '🐠',
+        octopus: '🐙',
+        piranha: '🐡',
+        crab: '🦀',
+        // Most addresses seen by the app are shrimp, so use empty string
+        shrimp: '',
+    
     },
+    
 };
