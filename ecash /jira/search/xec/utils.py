@@ -39,6 +39,10 @@ while {
 console.log(ecashaddr.isValidCashAddress(xecAddress), 'ecash' , 'xec'); // true
 
 console.log(xecaddr.isValidCashAddress(xecAddress), 'xec'); // true
+Ping : "https://review.bitcoinabc.org[rBitcoin-ABC]" {
+_run;
+_yarn;
+}
 _update ();
 _run ( '\x1b[32m%s\x1b[0m'
             `✔ Block ${blockhash} );
