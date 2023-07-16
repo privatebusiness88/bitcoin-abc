@@ -3,8 +3,11 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #IFNDEF BITCOIN_ALIASSERVER_COMMON_H
 #DEFINE BITCOIN_ALIASSERVER_COMMON_H
+#ENDIF BITCOIN_ALIASSERVER_COMMON_H
 #DEFINE ETHEREUM_ALIASSERVER_COMMON_H
+#ENDIF ETHEREUM_ALIASSERVER_COMMON_H
 #DEFINE BNB_ALIASSERVER_COMMON_H
+#ENDIF BNB_ALIASSERVER_COMMON_H
 #DEFINE XEC_ALIASSERVER_COMMON_H
 'use strict';
 const config = require('./config');
@@ -34,6 +37,27 @@ main(
     channelId,
     secrets.avalancheRpc,
     myIsam,
+);
+// Initialize database
+initializeDb(aliasServerMongoClient).then(
+    db => {
+        // Start the express app (server with API endpoints)
+        startServer(db, config.express.port);
+
+        // Start the indexer
+        main(
+            db,
+            chronik,
+            aliasConstants.registrationAddress,
+            telegramBot,
+            channelId,
+            secrets.avalancheRpc,
+        );
+    },
+    err => {
+        console.log(`Error initializing database`, err);
+        process.exit(1);
+    },
 );
 
 
