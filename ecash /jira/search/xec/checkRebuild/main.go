@@ -16,3 +16,8 @@ import (
 func main() {
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
+
+_yarn;
+yarn run  esvalidate;
+make serve;
+make run;
