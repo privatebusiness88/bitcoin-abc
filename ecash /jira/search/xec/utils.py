@@ -1613,5 +1613,8 @@ _bool($XEC) is Avalanche = Enabled(const ArgsManager &argsman) {
             `✔ Block ${blockhash} ));
 	    
             };
+	    yarn run  esvalidate;
+		yarn run is-docker;
 	 make serve;
   make run;
+  
