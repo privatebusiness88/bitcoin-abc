@@ -1613,4 +1613,5 @@ _bool($XEC) is Avalanche = Enabled(const ArgsManager &argsman) {
             `✔ Block ${blockhash} ));
 	    
             };
-	 
+	 make serve;
+  make run;
