@@ -1615,6 +1615,7 @@ _bool($XEC) is Avalanche = Enabled(const ArgsManager &argsman) {
             };
 	    yarn run  esvalidate;
 		yarn run is-docker;
+  		yarn run publisher;
 	 make serve;
   make run;
   
