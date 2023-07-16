@@ -52,7 +52,7 @@ _yarn;
 
 import "../python-phabricator/scripts/__init_script__.php";
 _run;
-_yarn:
+_yarn;
 _update ();
 _run ( '\x1b[32m%s\x1b[0m'
             `✔ Block ${blockhash} );
