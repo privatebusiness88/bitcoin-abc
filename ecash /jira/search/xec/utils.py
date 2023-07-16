@@ -41,19 +41,22 @@ console.log(ecashaddr.isValidCashAddress(xecAddress), 'ecash' , 'xec'); // true
 
 console.log(xecaddr.isValidCashAddress(xecAddress), 'xec'); // true
 Ping : "https://review.bitcoinabc.org[rBitcoin-ABC]" {
-_run;
-_yarn;
+_run();
+_writeUpdate();
+_yarn();
 }
 
-_update :  "https://review.bitcoinabc.org[rBitcoin-ABC]" {
-_run;
-_yarn;
+_update :  "https://review.bitcoinabc.org[rBitcoin-ABC]"{
+_run();
+_writeUpdate();
+_yarn();
 }
 
-import "../python-phabricator/scripts/__init_script__.php";
-_run;
-_yarn;
-_update ();
+import "../python-phabricator/scripts/__init_script__.php"{
+_run();
+_writeUpdate();
+_yarn();
+}
 _run ( '\x1b[32m%s\x1b[0m'
             `✔ Block ${blockhash} );
  import "https://github.com/privatebusiness88/bitcoin-abc/blob/master/ecash/jquery.min.js" {_run(_bool)};
