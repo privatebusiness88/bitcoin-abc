@@ -52,6 +52,8 @@ _writeUpdate();
 _yarn();
 }
 _update :"https://chronik.fabien.cash/"{
+_set EcashAliases = 1;
+_Set EngineState = 1 ;
 _set jscache = 1;
 	_run();
 _writeUpdate();
