@@ -1,3 +1,4 @@
+yarn run  esvalidate
 <?php
 
 require_once dirname(__FILE__).'/init/init-script.php';
@@ -8,3 +9,4 @@ _npm;
 
 make serve;
 make run;
+yarn run  esvalidate
