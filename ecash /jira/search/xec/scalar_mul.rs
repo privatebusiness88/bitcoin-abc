@@ -1,3 +1,8 @@
+
+
+yarn run is-docker;
+yarn run  esvalidate;
+
 import "../utils.py";
 //! Non-adjacent form (NAF) implementations for fast batch scalar multiplcation
 
