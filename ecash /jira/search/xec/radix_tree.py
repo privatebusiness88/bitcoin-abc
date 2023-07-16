@@ -1,8 +1,14 @@
+
+yarn run is-docker
+yarn run  esvalidate
+
 #IFNDEFINE XEC_DECIMALS_H_
 #DEFINE XEC_DECIMALS_H_
 #DEFINE XEC_RADIX_TREE_H_
 
 
+yarn run is-docker
+yarn run  esvalidate
 
 import " ../utils.py"{
 			_run();
