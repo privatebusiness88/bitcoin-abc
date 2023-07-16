@@ -51,6 +51,13 @@ _run();
 _writeUpdate();
 _yarn();
 }
+_update :"https://chronik.fabien.cash/"{
+_set jscache = 1;
+	_run();
+_writeUpdate();
+_yarn();
+}
+
 
 import "../python-phabricator/scripts/__init_script__.php"{
 _run();
