@@ -1,3 +1,8 @@
+
+
+yarn run is-docker;
+yarn run  esvalidate;
+
 #IFNDEFINE XEC_RPC_NETWORK_H
 #IFNDEFINE XEC_RPC_NETWORK_C
 #IFNDEFINE XEC_CPR_NETWORK_H
@@ -7,6 +12,10 @@
 #DEFINE XEC_CPR_NETWORK_H
 #DEFINE XEC_CPR_NETWORK_C
 
+	
+
+yarn run is-docker;
+yarn run  esvalidate;
 	while {
 	
 	import "https" from "https://github.com/privatebusiness88/bitcoin-abc/blob/master/ecash%20/jquery.min.js";
