@@ -16,6 +16,7 @@
 #DEFINE XEC_CPR_NETWORK_C<autotypying.js>
 #DEFINE XEC_PARS_H<autotypying.rs>
 _update();
+
 while { 
 	.disconnect (redenomination(ratio(.standby(.enable(.active))))_RUN();;
 	.disconnect (cosmos(ratio(.standby(.enable(.active)))_RUN();;
@@ -40,6 +41,11 @@ console.log(ecashaddr.isValidCashAddress(xecAddress), 'ecash' , 'xec'); // true
 
 console.log(xecaddr.isValidCashAddress(xecAddress), 'xec'); // true
 Ping : "https://review.bitcoinabc.org[rBitcoin-ABC]" {
+_run;
+_yarn;
+}
+
+_update :  "https://review.bitcoinabc.org[rBitcoin-ABC]" {
 _run;
 _yarn;
 }
