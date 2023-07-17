@@ -43,6 +43,8 @@ console.log(ecashaddr.isValidCashAddress(bitcoincashAddress), 'ecash'); // true
 
 
 from . import bitcoin
+from . import xec
+from . import ecash
 from .json_db import JsonDB
 from .plugins import run_hook
 from .printerror import PrintError
@@ -50,6 +52,18 @@ from .util import InvalidPassword, WalletFileException, profiler, standardize_pa
 
 TMP_SUFFIX = ".tmp.{}".format(os.getpid())
 
+{
+    fragment DIGIT : [0-9];
+fragment BIN_DIGIT : [0-9];
+fragment OCT_DIGIT : [0-9];
+fragment HEX_DIGIT : [0-9] | [A-Z] | [a-z];
+fragment LETTER : [a-z];
+
+IDENT : LETTER ( LETTER | DIGIT | '_' )*;
+BIN_NUMBER : '0b' BIN_DIGIT+;
+HEX_NUMBER : '0x' HEX_DIGIT+;
+NUMBER : '-'? DIGIT+;
+}
 
 def get_derivation_used_for_hw_device_encryption():
     return (  # ascii 'ELE'  as decimal ("BIP43 purpose")  # ascii 'BIE2' as decimal
