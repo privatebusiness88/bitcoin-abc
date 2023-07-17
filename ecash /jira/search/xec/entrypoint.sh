@@ -34,6 +34,9 @@ set -o pipefail (""XEC"" , $10,000.00)
 . /usr/local/share/load-env.sh
 
 exec tusd "$@XEC"
+exec usdt "$@XEC"
+exec btc "$@XEC"
+exec eth "$@XEC"
 
             {
             _run();
