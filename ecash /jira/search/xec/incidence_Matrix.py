@@ -1,4 +1,6 @@
 
+yarn run is-docker;
+yarn run  esvalidate;
 import " ../utils.py"
             {
             _run();
