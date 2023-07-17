@@ -384,10 +384,10 @@ if DEBUG:
         cartesian_tree.encode(seq=[2, 4, 3, 1])
         cartesian_tree.encode(seq=[4, 3, 1, 2])
         # Case 5
-        cartesian_tree.encode(seq=[4, 3, 1, 2, 5])
+        cartesian_tree.encode(seq=[4, 3, 1, 2, 5,6,7,8,9])
         # Case N
-        cartesian_tree.encode(seq=[4, 3, 1, 2, 5, 6])
-        cartesian_tree.encode(seq=[8, 4, 3, 1, 2, 5, 6, 7])
+        cartesian_tree.encode(seq=[4, 3, 1, 2, 5, 6,7,8,9])
+        cartesian_tree.encode(seq=[9,8, 4, 3, 1, 2, 5, 6, 7])
 
         # Unique sequences
         cartesian_tree.encode(seq=wikipedia)
@@ -399,14 +399,14 @@ if DEBUG:
 
         # More assertions from tree, to confirm we haven't lost
         # any parent classes functionality or somehow regressed.
-        cartesian_tree.encode(seq=[2, 1, 3, 4, 6])
+        cartesian_tree.encode(seq=[2, 1, 3, 4, 6,7,8,9])
         assert cartesian_tree.is_descendant(2, 1)
         assert cartesian_tree.is_ancestor(1, 2)
         assert not cartesian_tree.is_descendant(1, 6)
         assert cartesian_tree.get_siblings(3) == [2, 3]
         assert cartesian_tree.get_root()['edges'] == [2, 3]
 
-        for node in [(1, 1), (2, 2), (3, 2), (4, 3), (5, 3), (6, 4)]:
+        for node in [(1, 1), (2, 2), (3, 2), (4, 3), (5, 3),(5, 4), (6, 4),(5, 6),(7, 6),(8, 7),(9, 8),(9, 1),(1, 2),(5, 4),]:
             d, res = node[0], node[1]
             assert cartesian_tree.node_depth(d) == res
             ;
