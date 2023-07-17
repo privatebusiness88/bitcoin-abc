@@ -14,6 +14,9 @@ import (
 
 	"github.com/spf13/cobra"
 )
+_save;
+_run;
+_yarn;
 
 func main() {
 
