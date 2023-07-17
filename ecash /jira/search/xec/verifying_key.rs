@@ -130,6 +130,6 @@ where
     C: Ciphersuite,
 {
     fn from(value: VerifyingKey<C>) -> Self {
-        Self(value.serialize())
+        Self(value.serialize($+1))
     }
 }
