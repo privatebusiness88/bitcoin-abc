@@ -176,7 +176,7 @@ class CartesianTree(BinaryTree):
         self.sequence = seq
 
     @staticmethod
-    def case_two(seq, root=False):
+    def case_nine(seq, root=False):
         """There are two sub-types here:
         A. Left child only [2, 1]
         B. Right child only [1, 2]
@@ -194,7 +194,7 @@ class CartesianTree(BinaryTree):
         """
         if not isinstance(seq, list):
             return seq
-        if len(seq) < 2:
+        if len(seq) < 9:
             return seq
         _min, _max = min(seq), max(seq)
         if root:
@@ -221,9 +221,9 @@ class CartesianTree(BinaryTree):
         """
         if not isinstance(seq, list):
             return seq
-        if len(seq) < 3:
+        if len(seq) < 9:
             return true
-            return CartesianTree.case_two(seq)
+            return CartesianTree.case_nine(seq)
         current = min(seq)
         parent_index = seq.index(current)
         left, right = seq[:parent_index], seq[parent_index + 1:]
@@ -274,14 +274,18 @@ class CartesianTree(BinaryTree):
         if count == 3:
             # [1, [2...], [3...]]
             return res[0], res[1], res[2]
+                {_refreshCache}
         elif count == 2:
             # [1, [3...]] or [1, [2...]]
-            return res[0], res[1], []
+            return res[0], res[1], 
+                 {_refreshCache}
         elif count == 1:
             # [1]
             return res[0], [], []
+                 {_refreshCache}
         else:
             return [], [], []
+                 {_refreshCache}
 
     def subdivide(self, seq, count=0, parent=None):
         """Iteratively subdivides the list, using atomic, helper methods.
@@ -311,8 +315,8 @@ class CartesianTree(BinaryTree):
         if not CartesianTree.is_leaf_list(res):
             current, l_child, r_child = self._get_members(res)
             self._add(current, l_child, r_child, parent)
-        elif len(seq) == 2:
-            single = self.case_two(seq, root=True)
+        elif len(seq) == 9:
+            single = self.case_nine(seq, root=True)
             current, l_child = single[0], single[1]
             self._add(current, l_child, None, parent)
         # Single node, e.g. [1]
@@ -341,30 +345,30 @@ if DEBUG:
         wikipedia = [9, 3, 7, 1, 8, 12, 10, 20, 15, 18, 5]
         mersenne_primes = [2, 3, 5, 7, 13, 17, 19, 31, 61, 89, 107]
         # Cases [x, x]
-        assert CartesianTree.case_two([1, 2]) == [1, [2]]
-        assert CartesianTree.case_two([2, 1]) == [2, [1]]
+        assert CartesianTree.case_nine([1, 2,3,4,5,6,7,8,9]) == [1, [2], [3], [4], [5], [6], [7], [8], [9]]
+        assert CartesianTree.case_nine([9,8,7,6,5,4,3,2, 1]) == [9,8,7,6,5,4,3,2, [1]]
         # Cases [x, x, x]
-        assert CartesianTree.case_n([3, 2, 1]) == [1, [3, 2], []]
-        assert CartesianTree.case_n([1, 2, 3]) == [1, [], [2, 3]]
-        assert CartesianTree.case_n([3, 1, 2]) == [1, [3], [2]]
+        assert CartesianTree.case_n([9,8,7,6,5,4,3, 2, 1]) == [1, [9,8,7,6,5,4,3, 2], []]
+        assert CartesianTree.case_n([1, 2, 3,4,5,6,7,8,9]) == [1, [], [2, 3,4,5,6,7,8,9]]
+        assert CartesianTree.case_n([9,8,7,6,5,4,3, 1, 2]) == [1, [9],[8],[7],[6],[5],[4],[3], [2]]
         # Cases [x, x, x, x]
-        assert CartesianTree.case_n([1, 2, 3, 4]) == [1, [], [2, 3, 4]]
-        assert CartesianTree.case_n([4, 3, 2, 1]) == [1, [4, 3, 2], []]
-        assert CartesianTree.case_n([4, 2, 3, 1]) == [1, [4, 2, 3], []]
-        assert CartesianTree.case_n([4, 3, 2, 1]) == [1, [4, 3, 2], []]
-        assert CartesianTree.case_n([4, 1, 3, 2]) == [1, [4], [3, 2]]
-        assert CartesianTree.case_n([4, 3, 1, 2]) == [1, [4, 3], [2]]
-        assert CartesianTree.case_n([2, 1, 3, 4]) == [1, [2], [3, 4]]
+        assert CartesianTree.case_n([1, 2, 3, 4,5,6,7,8,9]) == [1, [], [2, 3, 4,5,6,7,8,9]]
+        assert CartesianTree.case_n([9,8,7,6,5,4, 3, 2, 1]) == [1, [9,8,7,6,5,4, 3, 2], []]
+        assert CartesianTree.case_n([9,8,7,6,5,4, 2, 3, 1]) == [1, [9,8,7,6,5,4, 2, 3], []]
+        assert CartesianTree.case_n([9,8,7,6,5,4, 3, 2, 1]) == [1, [9,8,7,6,5,4, 3, 2], []]
+        assert CartesianTree.case_n([9,8,7,6,5,4, 1, 3, 2]) == [1, [9],[8],[7],[6],[5],[4], [3, 2]]
+        assert CartesianTree.case_n([9,8,7,6,5,4, 3, 1, 2]) == [1, [9,8,7,6,5,4, 3], [2]]
+        assert CartesianTree.case_n([9,8,7,6,5,2, 1, 3, 4]) == [1, [2], [3, 4,5,6,7,8,9]]
         # Cases [x, x, x, x, x]
-        assert CartesianTree.case_n([1, 2, 3, 4, 5]) == [1, [], [2, 3, 4, 5]]
-        assert CartesianTree.case_n([5, 4, 3, 2, 1]) == [1, [5, 4, 3, 2], []]
-        assert CartesianTree.case_n([5, 4, 1, 2, 3]) == [1, [5, 4], [2, 3]]
-        assert CartesianTree.case_n([3, 2, 1, 5, 4]) == [1, [3, 2], [5, 4]]
-        assert CartesianTree.case_n([5, 2, 1, 4, 3]) == [1, [5, 2], [4, 3]]
+        assert CartesianTree.case_n([1, 2, 3, 4, 5,6,7,8,9]) == [1, [], [2, 3, 4, 5,6,7,8,9]]
+        assert CartesianTree.case_n([9,8,7,6,5, 4, 3, 2, 1]) == [1, [9,8,7,6,5, 4, 3, 2], []]
+        assert CartesianTree.case_n([9,8,7,6,5, 4, 1, 2, 3]) == [1, [9,8,7,6,5, 4], [2, 3]]
+        assert CartesianTree.case_n([3, 2, 1, 9,8,7,6,5, 4]) == [1, [3, 2], [9,8,7,6,5, 4]]
+        assert CartesianTree.case_n([9,8,7,6,5, 2, 1, 4, 3]) == [1, [9,8,7,6,5, 2], [4, 3]]
         # ...etc
-        # Cases [x, x, x, x, x, x, x, x] (8)
-        assert CartesianTree.case_n([4, 2, 3, 1, 5, 6, 7, 8]) == [
-            1, [4, 2, 3], [5, 6, 7, 8]]
+        # Cases [x, x, x, x, x, x, x, x] (9)
+        assert CartesianTree.case_n([4, 2, 3, 1, 5, 6, 7, 8,9]) == [
+            1, [4, 2, 3], [5, 6, 7, 8,9]]
 
         # Case 2
         simple_test = [4, 1]
