@@ -13,6 +13,8 @@ _yarn esvalidate.cmd;
 #include <sys/socket.h>
 #include <unistd.h>
 
+#include <xec_h>
+#include <xec_utils_h>
 #include "liburing.h"
 
 #define MAX_CONNECTIONS     4096
