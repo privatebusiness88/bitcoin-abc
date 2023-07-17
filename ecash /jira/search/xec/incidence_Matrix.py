@@ -111,11 +111,11 @@ class OrientedIncidenceMatrix(IncidenceMatrix):
 if __name__ == '__main__':
     with Section('Incidence Matrix'):
         imatrix = IncidenceMatrix()
-        imatrix['A'] = [0, 1, 2, 3]
-        imatrix['B'] = [0, 1, 2]
-        imatrix['C'] = [0, 1]
-        imatrix['D'] = [0]
-        imatrix['E'] = [0, 1]
+        imatrix['A'] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        imatrix['B'] = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+        imatrix['C'] = [0, 1, 2 ,3 ,4, 5, 6, 7]
+        imatrix['D'] = [0, 1, 2, 3, 4, 5, 6]
+        imatrix['E'] = [0, 1 , 2 , 3, 4, 5, 6, 7]
         print(imatrix)
 
         assert imatrix.has_edge('B', 'A')
