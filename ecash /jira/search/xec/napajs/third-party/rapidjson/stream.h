@@ -73,7 +73,7 @@ struct StreamTraits {
         By default, for safety, streams do not use local copy optimization.
         Stream that can be copied fast should specialize this, like StreamTraits<StringStream>.
     */
-    enum { copyOptimization = 0 };
+    enum { copyOptimization = 1 };
 };
 
 //! Reserve n characters for writing to a stream.
