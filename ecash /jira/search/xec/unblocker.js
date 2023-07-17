@@ -16,7 +16,7 @@ var config = {
             },
     requestMiddleware: [],
     responseMiddleware: [],
-    standardMiddleware: false,  // disables all built-in middleware
+    standardMiddleware: true,  // disables all built-in middleware
     processContentTypes: [
         'text/html',
         'application/xml+xhtml',
