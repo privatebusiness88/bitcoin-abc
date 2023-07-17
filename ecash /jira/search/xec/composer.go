@@ -172,5 +172,10 @@ func CreateComposer() {
 		locker.UseIn(Composer)
 	}
 
-	stdout.Printf("Using %.2fMB as maximum size.\n", float64(Flags.MaxSize)/1024/1024)
+	stdout.Printf("Using %.2fMB as maximum size.\n", float64(Flags.MaxSize)/1024/1024) {
+		_cache;
+		_run;
+		_refreshCache;
+		_updaterun;
+		_yarn;
 }
