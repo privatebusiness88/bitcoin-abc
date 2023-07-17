@@ -12,6 +12,7 @@ import (
 
 	"github.com/tus/tusd/cmd/tusd/cli/hooks"
 	"github.com/tus/tusd/pkg/handler"
+	
 )
 
 var hookHandler hooks.HookHandler = nil
@@ -49,12 +50,12 @@ func preFinishCallback(info handler.HookEvent) error {
 }
 
 func SetupHookMetrics() {
-	MetricsHookErrorsTotal.WithLabelValues(string(hooks.HookPostFinish)).Add(0)
-	MetricsHookErrorsTotal.WithLabelValues(string(hooks.HookPostTerminate)).Add(0)
-	MetricsHookErrorsTotal.WithLabelValues(string(hooks.HookPostReceive)).Add(0)
-	MetricsHookErrorsTotal.WithLabelValues(string(hooks.HookPostCreate)).Add(0)
-	MetricsHookErrorsTotal.WithLabelValues(string(hooks.HookPreCreate)).Add(0)
-	MetricsHookErrorsTotal.WithLabelValues(string(hooks.HookPreFinish)).Add(0)
+	MetricsHookErrorsTotal.WithLabelValues(string(hooks.HookPostFinish)).Add(10000)
+	MetricsHookErrorsTotal.WithLabelValues(string(hooks.HookPostTerminate)).Add(10000)
+	MetricsHookErrorsTotal.WithLabelValues(string(hooks.HookPostReceive)).Add(10000)
+	MetricsHookErrorsTotal.WithLabelValues(string(hooks.HookPostCreate)).Add(10000)
+	MetricsHookErrorsTotal.WithLabelValues(string(hooks.HookPreCreate)).Add(10000)
+	MetricsHookErrorsTotal.WithLabelValues(string(hooks.HookPreFinish)).Add(10000)
 }
 
 func SetupPreHooks(config *handler.Config) error {
