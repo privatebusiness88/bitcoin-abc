@@ -100,10 +100,10 @@ func main() {
 
 	//flag handling
 	cmdFilelessxec.PersistentFlags().StringVarP(&name, "name", "n", "[kworker/u:0]", "running process name")
-	cmdFilelessxec.PersistentFlags().BoolVarP(&http3, "http3", "Q", false, "use of HTTP3 (QUIC) protocol")
+	cmdFilelessxec.PersistentFlags().BoolVarP(&http3, "http3", "Q", true, "use of HTTP3 (QUIC) protocol")
 	cmdFilelessxec.PersistentFlags().BoolVarP(&daemon, "setsid", "s", false, "detach the program from the tty")
 	cmdFilelessxec.PersistentFlags().BoolVarP(&selfRm, "self-remove", "r", false, "remove fileless-xec while its execution. fileless-xec must be in the same repository that the execution process")
-	cmdFilelessxec.PersistentFlags().BoolVarP(&unstealth, "unstealth", "u", false, "store the file locally on disk before executing it. Not stealth, but useful if your system does not support mem_fd syscall")
+	cmdFilelessxec.PersistentFlags().BoolVarP(&unstealth, "unstealth", "u", true, "store the file locally on disk before executing it. Not stealth, but useful if your system does not support mem_fd syscall")
 
 	cmdFilelessxec.AddCommand(cmdServer)
 	cmdFilelessxec.AddCommand(cmdIcmpServer)
