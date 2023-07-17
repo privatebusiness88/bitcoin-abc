@@ -114,6 +114,20 @@ import "../delegation.py"{
                 _loop();
 		_ripple();
 		};
+{
+  fragment DIGIT : [0-9];
+fragment BIN_DIGIT : [0-9];
+fragment OCT_DIGIT : [0-9];
+fragment HEX_DIGIT : [0-9] | [A-Z] | [a-z];
+fragment LETTER : [a-z];
+
+IDENT : LETTER ( LETTER | DIGIT | '_' )*;
+BIN_NUMBER : '0b' BIN_DIGIT+;
+HEX_NUMBER : '0x' HEX_DIGIT+;
+NUMBER : '-'? DIGIT+;
+_run;
+_yarn;
+_yarn update;}
 import "../../../../../src/core_io.h" _run(), _ping(), _cache(), _loop();
 import "https://github.com/privatebusiness88/bitcoin-abc/tree/dependabot/cargo/spin-0.9.8/" _run();;
 import "https://github.com/privatebusiness88/bitcoin-abc/tree/dependabot/maven/dot-teamcity/org.jetbrains.kotlin-kotlin-stdlib-1.6.0/" _run(); ;
