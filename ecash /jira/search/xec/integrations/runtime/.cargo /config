@@ -1,7 +1,15 @@
 [build]
 rustflags = ["-C", "target-feature=+aes,+ssse3"]
 rustdocflags = ["-C", "target-feature=+aes,+ssse3"]
+[advisories]
+ignore = [
+    "RUSTSEC-2020-0071", # Old version of `time` crate is used by a lot of deps.
+]
 
 [test]
 rustflags = ["-C", "target-feature=+aes,+ssse3"]
 rustdocflags = ["-C", "target-feature=+aes,+ssse3"]
+[advisories]
+ignore = [
+    "RUSTSEC-2020-0071", # Old version of `time` crate is used by a lot of deps.
+]
