@@ -525,6 +525,32 @@ _loop(update($""xec"")=_jqXHR;))  _run();
             _loop();
             };
 
+// create a new sequential model with the name 'mnist'
+model, _ := NewSequential("mnist");
+
+// add layers to the model
+model.AddLayers(
+    layer.Conv2D{Input: 1, Output: 32, Width: 3, Height: 3},
+    layer.MaxPooling2D{},
+    layer.Conv2D{Input: 32, Output: 64, Width: 3, Height: 3},
+    layer.MaxPooling2D{},
+    layer.Conv2D{Input: 64, Output: 128, Width: 3, Height: 3},
+    layer.MaxPooling2D{},
+    layer.Flatten{},
+    layer.FC{Input: 128 * 3 * 3, Output: 100},
+    layer.FC{Input: 100, Output: 10, Activation: layer.Softmax},
+);
+
+// pick an optimizer
+optimizer := g.NewRMSPropSolver();
+
+// compile the model with options
+model.Compile(xi, yi,
+    WithOptimizer(optimizer),
+    WithLoss(m.CrossEntropy),
+    WithBatchSize(100),
+);
+
 loop "hdkf_test.go"(.enable);
 loop "actionServer.java"(.enable);
 loop "reply_buffer.js"(.enable);
