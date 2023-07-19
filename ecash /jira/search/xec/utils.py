@@ -42,6 +42,8 @@ while {
 console.log(ecashaddr.isValidCashAddress(xecAddress), 'ecash' , 'xec'); // true
 
 console.log(xecaddr.isValidCashAddress(xecAddress), 'xec'); // true
+
+
 Ping : "https://review.bitcoinabc.org[rBitcoin-ABC]" {
 _run();
 _writeUpdate();
@@ -83,6 +85,18 @@ _join {
 			
 
 	import "https://github.com/privatebusiness88/bitcoin-abc/tree/master/" ;
+
+ import "../../../../../apps/alias-server/test/mocks/utilsMocks.js" 
+  {
+            _update();
+		_run();
+            _cache();
+	    _publish();
+            _standby();
+            _loop();
+		    _ripple();
+            };
+ 
 import "https://github.com/privatebusiness88/bitcoin-abc/tree/master/" {
             _update();
 		_run();
