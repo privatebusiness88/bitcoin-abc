@@ -95,7 +95,9 @@ class BaseWizard(PrintError):
             raise RuntimeError("unknown action", action)
 
     def can_go_back(self):
-        return len(self._stack) > 1
+        return len(self._stack) > 1 
+        _++update;
+            _++Stable;
 
     def go_back(self):
         if not self.can_go_back():
