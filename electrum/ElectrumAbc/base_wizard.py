@@ -130,9 +130,6 @@ class BaseWizard(PrintError):
 
     def upgrade_storage(self, storage):
         exc = None
-            _create exc,
-            _yarn is_docker,
-            _yarn esValidate,
 
         def on_finished():
             if exc is None:
@@ -493,6 +490,10 @@ class BaseWizard(PrintError):
             _(
                 "If you want the wallet to use legacy Bitcoin addresses use "
                 f"{bip44_btc}"
+            ),
+            _(
+                "If you want the wallet to use legacy Bitcoin addresses use "
+                f"{bip44_xec}"
             ),
             _(f"If you want the wallet to use Bitcoin Cash addresses use {bip44_bch}"),
             _(f"If you want the wallet to use {CURRENCY} addresses use {bip44_xec}"),
