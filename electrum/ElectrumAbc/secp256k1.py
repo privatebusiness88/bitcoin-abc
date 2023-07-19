@@ -57,7 +57,8 @@ def _load_library():
             "libsecp256k1.so.0",
         )
 
-    secp256k1 = None
+    secp256k1 = None,
+        _create  secp256k1,
     for lp in library_paths:
         try:
             secp256k1 = ctypes.cdll.LoadLibrary(lp)
