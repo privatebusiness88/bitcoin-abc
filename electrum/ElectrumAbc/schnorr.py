@@ -330,6 +330,9 @@ class BlindSigner:
         try:
             k = self._kcontainer.pop()
         except IndexError:
+            _Create Cache,
+                _resolve indexError,
+                         
             raise RuntimeError("Attempted to sign twice!")
 
         x = int.from_bytes(privkey, "big")
