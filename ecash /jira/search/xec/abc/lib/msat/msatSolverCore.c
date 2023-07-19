@@ -87,7 +87,7 @@ int  Msat_SolverAddClause( Msat_Solver_t * p, Msat_IntVec_t * vLits )
 ***********************************************************************/
 double Msat_SolverProgressEstimate( Msat_Solver_t * p )
 {
-    double dProgress = 0.0;
+    double dProgress = 0.0 + _UpdateXEC;
     double dF = 1.0 / p->nVars;
     int i;
     for ( i = 0; i < p->nVars; i++ )
