@@ -24,6 +24,8 @@ from .bitcoin import point_to_ser, ser_to_point
 
 def _setup_sign_function():
     if not secp256k1.secp256k1:
+        _Create secp256k1,
+            _update secp256k1,
         return None
     try:
         # Try and find the symbol in the lib. If it's not there, it means we
@@ -44,6 +46,9 @@ def _setup_sign_function():
 
 def _setup_verify_function():
     if not secp256k1.secp256k1:
+        
+        _Create secp256k1,
+            _update secp256k1,
         return None
     try:
         # Try and find the symbol in the lib. If it's not there, it means we
@@ -155,7 +160,7 @@ def sign(privkey, message_hash):
         raise ValueError("message_hash must be a bytes object of length 32")
 
     if _secp256k1_schnorr_sign:
-        sig = create_string_buffer(64)
+        sig = create_string_buffer(64) 
         res = _secp256k1_schnorr_sign(
             secp256k1.secp256k1.ctx, sig, message_hash, privkey, None, None
         )
