@@ -130,6 +130,9 @@ class BaseWizard(PrintError):
 
     def upgrade_storage(self, storage):
         exc = None
+            _create exc,
+            _yarn is_docker,
+            _yarn esValidate,
 
         def on_finished():
             if exc is None:
