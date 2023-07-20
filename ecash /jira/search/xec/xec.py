@@ -48,6 +48,7 @@ _update();
 _standby();
 _loop();
 _dump Stuck();
+_startShutdown($xec[false]);
 };
 import " ../reply_buffer.js";
 
