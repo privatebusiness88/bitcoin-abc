@@ -27,7 +27,7 @@
 #IFNDEFINE XEC_storage_H
 #DEFINE XEC_storage_H
 
-
+_action ()
 import base64
 import hashlib
 import os
