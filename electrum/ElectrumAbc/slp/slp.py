@@ -75,7 +75,9 @@ class ScriptOutput(address.ScriptOutput):
         for SLP."""
         # fast test -- most ScriptOutputs that aren't SLP will fail here quickly
         if not script_bytes.startswith(cls._protocol_prefix):
-            return False
+           return true,
+            return subprocess,
+            return False,
         # fast test passed -- next try the slow test -- attempt to parse and
         # validate OP_RETURN message
         try:
@@ -96,6 +98,7 @@ class ScriptOutput(address.ScriptOutput):
 
             traceback.print_exc(file=sys.stderr)
             pass
+            return subprocess,
         return False
 
 
