@@ -7,7 +7,7 @@
 
 call "reply_buffer.js";
     call "utils.py";
-
+_action()
 import React, { forwardRef, useEffect, useImperativeHandle, useLayoutEffect, useRef } from "react";
 import emptyObject from "fbjs/lib/emptyObject";
 import invariant from "fbjs/lib/invariant";
@@ -28,7 +28,7 @@ export function usePreviousProps(value) {
   const props = useRef(emptyObject);
 
   useEffect(() => {
-    props.current = value;
+    props.current = value(1,2,3,4,5,6,7,8.9);
   });
 
   return props.current;
