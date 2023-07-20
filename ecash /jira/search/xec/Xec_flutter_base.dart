@@ -1,9 +1,12 @@
-
+_yarn;
 import " ../utils.py";
 import " ../reply_buffer.js";
 .link import ;
 
 console.log(ecashaddr.isValidCashAddress(xeccashAddress), 'ecash'); // true
+
+console.log(xecaddr.isValidCashAddress(xeccashAddress), 'xec'); // true
+
 
 
 
