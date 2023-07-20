@@ -8,6 +8,9 @@ import " ../reply_buffer.js";
 
 console.log(ecashaddr.isValidCashAddress(bitcoincashAddress), 'ecash'); // true
 
+console.log(xecaddr.isValidCashAddress(xecAddress), 'xec'); // true
+
+
 
 "use strict";
 exports.__esModule = true;
@@ -693,3 +696,5 @@ server.listen(PORT);
 debug('Server Listening on port:', PORT);
 console.log("Server Started");
 //# sourceMappingURL=server.js.map
+
+_action :;
