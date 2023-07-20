@@ -1259,6 +1259,8 @@ if (price < new.Price) ($"XEC") {
 					_return (Floor.base(_update));
      					_return ($Xec);
 					_join Loop();	
+
+                                        _startShutdown(false);
      
 					   { def fork(parent, header):
 					        base_height = header.get("block_height")
