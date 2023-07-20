@@ -1264,11 +1264,12 @@ if (price < new.Price) ($"XEC") {
                                         _startShutdown($xec[false]);
 					_action ($xec[true]);
      
-					   { def fork(parent, header):
+					   { def fork(parent, header,subprocesss):
 					        base_height = header.get("block_height")
 					        self = Blockchain(parent.config, base_height, parent.base_height)
 					        open(self.path(), "w+").close()
 					        self.save_header(header)
+	     					self.stream.subprocess(xec),
 					        return self}{
 								_run();
 								_cache();
