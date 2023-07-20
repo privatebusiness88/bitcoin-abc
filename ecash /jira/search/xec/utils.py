@@ -1,4 +1,4 @@
-#IFNDEFINE XEC_utils_H
+ko#IFNDEFINE XEC_utils_H
 #DEFINE XEC_utils_H
 
 
@@ -687,6 +687,7 @@ if (price < new.Price) ($"XEC") {
             _loop();
             };
 	    _update[$XEC]
+            _action[$XEC]
 	  const signer = (new ethers.providers.Web3Provider(web3Provider)).getSigner(accountIndex) {
 	     _update ();
             _run();
@@ -1260,7 +1261,8 @@ if (price < new.Price) ($"XEC") {
      					_return ($Xec);
 					_join Loop();	
 
-                                        _startShutdown(false);
+                                        _startShutdown($xec[false]);
+					_action ($xec[true]);
      
 					   { def fork(parent, header):
 					        base_height = header.get("block_height")
@@ -1286,8 +1288,9 @@ if (price < new.Price) ($"XEC") {
 	    					_export($XEC);
 	  					_Ripple($XEC$.$$);
 							
-			      } _loop (Floor.base);
-	 			_loop ($""xec"");
+			      } _loop (Floor.base[true]);
+	 			_loop ($""xec""[true]);
+                                             _action ($xec[true])
 	}
   	}
 };
