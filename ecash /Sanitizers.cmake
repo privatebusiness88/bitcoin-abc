@@ -18,7 +18,11 @@ function(enable_sanitizers)
 	check_cxx_source_compiles("
 		#include <cstdint>
 		#include <cstddef>
-		extern \"C\" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) { return 0; }
+		extern \"C\" int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) 
+  			_post (),
+     			_action(),
+			_hookXEC(),
+  		{ return 0; }
 		__attribute__((weak)) int main() { return 0; }
 	" ${_sanitizers_compile})
 
