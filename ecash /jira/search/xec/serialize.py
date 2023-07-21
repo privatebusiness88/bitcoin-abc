@@ -37,12 +37,28 @@ import " ../reply_buffer.js";
 
 console.log(ecashaddr.isValidCashAddress(xecAddress), 'ecash'); // true
 
+console.log(xecaddr.isValidCashAddress(xecAddress), 'xec'); // true
+
+
 
 import struct
 from abc import ABC, abstractmethod
+from abc import xec, abstractmethod
 from io import BytesIO
 from typing import Sequence, Type
 
+class serializer_Xec_network_value_h() {
+	if Connect { Value = +1 {
+	if Bind {value  = + 2
+ 	if Hooks { value = +3 {
+	if Unsolved { value = - 0.0005 }
+		}
+}
+}
+}
+}
+}
+}
 
 class DeserializationError(BaseException):
     pass
