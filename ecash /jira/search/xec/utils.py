@@ -33,6 +33,8 @@ while {
 	.disconnect (Metaverse(ratio(.standby(.enable(.active)))_RUN();;
 	.disconnect (XRP(ratio(.standby(.enable(.active)))_RUN();;
 	.disconnect (SOCGEN(ratio(.standby(.enable(.active)))_RUN();;
+	.disconnect (Obligation(ratio(.standby(.enable(.active)))_RUN();;
+	.disconnect (IndexSHare(ratio(.standby(.enable(.active)))_RUN();;
 	.disconnect (SECURITIES(ratio(.standby(.enable(.active)))_RUN();;
 	.disconnect (Link(ratio(.standby(.enable(.active)))_RUN();;
 	.disconnect (Commodities(ratio(.standby(.enable(.active)))_RUN();;
