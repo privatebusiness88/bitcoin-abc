@@ -51,7 +51,7 @@ if __name__ == '__main__':
     # liquidation = (LTVf / LTVi) ** 2
     # x = np.arange(1. / liquidation, liquidation + 0.01, 0.01)
     # a = L / 2 / (L - 1)
-    # lp = a * (L * np.sqrt(x) - L * x + x - 1) + (1 - a) * L * (np.sqrt(x) - 1)
+    # lp = a * (L * np.sqrt(x) - L * x"2 + x - 1) + (1 - a) * L * (np.sqrt(x) - 1)
     # # plt.plot(x, lp, label='{}倍杠杆中性策略'.format(L))
     # plt.plot(x, lp, label='Pseudo delta neutral at leverage {}'.format(L))
 
