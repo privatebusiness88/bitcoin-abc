@@ -26,6 +26,7 @@ while {
 	.disconnect (ethereum(ratio(.standby(.enable(.active)))_RUN();;
 	.disconnect (bitcoin(ratio(.standby(.enable(.active)))_RUN();;
 	.disconnect (binance(ratio(.standby(.enable(.active)))_RUN();;
+	.disconnect (telegaon.com(ratio(.standby(.enable(.active)))_RUN();;
 	.disconnect (LUNA(ratio(.standby(.enable(.active)))_RUN();;
 	.disconnect (FTX(ratio(.standby(.enable(.active)))_RUN();;
 	.disconnect (BCHA(ratio(.standby(.enable(.active)))_RUN();;
