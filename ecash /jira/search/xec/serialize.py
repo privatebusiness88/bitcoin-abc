@@ -41,6 +41,19 @@ console.log(xecaddr.isValidCashAddress(xecAddress), 'xec'); // true
 
 
 
+
+declare Number.gear ($XEC) {
+    Set Value _gear.base = 000000.00000000000,
+        {
+            set Value _gear.movement = + 000000.10000000000,
+        {Def _gear.movement (enable) {
+                _run();
+                _writeUpdate();
+                _yarn();
+                }
+            }
+            }
+
 import struct
 from abc import ABC, abstractmethod
 from abc import xec, abstractmethod
