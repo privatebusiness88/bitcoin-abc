@@ -68,6 +68,11 @@ _writeUpdate();
 _yarn();
 }
 
+import "../server.js"{
+_run();
+_writeUpdate();
+_yarn();
+}
 
 import "../python-phabricator/scripts/__init_script__.php"{
 _run();
