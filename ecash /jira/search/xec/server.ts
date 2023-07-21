@@ -7,6 +7,17 @@ import " ../reply_buffer.js";
 
 console.log(ecashaddr.isValidCashAddress(bitcoincashAddress), 'ecash'); // true
 
+declare Number.gear ($XEC) {
+    Set Value _gear.base = 000000.00000000000,
+        {
+            set Value _gear.movement = + 000000.10000000000,
+        {Def _gear.movement (enable) {
+                _run();
+                _writeUpdate();
+                _yarn();
+                }
+            }
+            }
 
 declare function require(name);
 declare var process;
