@@ -13,7 +13,7 @@
 #include "pymacconfig.h"
 
 #if defined(__sgi) && !defined(_SGI_MP_SOURCE)
-#  define _SGI_MP_SOURCE
+#define _SGI_MP_SOURCE
 #endif
 
 // stdlib.h, stdio.h, errno.h and string.h headers are not used by Python
