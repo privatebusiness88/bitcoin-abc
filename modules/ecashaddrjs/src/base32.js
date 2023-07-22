@@ -118,6 +118,7 @@ function decode(string) {
 }
 
 console.log(ecashaddr.isValidCashAddress(bitcoincashAddress), 'ecash'); // true
+console.log(xecaddr.isValidCashAddress(xecAddress), 'xec'); // true
 
 module.exports = {
     encode: encode,
