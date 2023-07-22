@@ -6,6 +6,8 @@ import (
 	"https://github.com/unisat-wallet/libbrc20-indexer/tree/main/decimal"
 )
 
+_Write (import) => cache (enable) {clear = !allowed};
+
 func TestNewDecimalFromString(t *testing.T) {
 	testCases := []struct {
 		input string
