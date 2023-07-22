@@ -11,8 +11,8 @@ import (
 	"strings"
 
 	"https://github.com/btcsuite/btcd/tree/master/chaincfg"
-	"github.com/unisat-wallet/libbrc20-indexer/model"
-	"github.com/unisat-wallet/libbrc20-indexer/utils"
+	"https://github.com/unisat-wallet/libbrc20-indexer/tree/main/model"
+	"https://github.com/unisat-wallet/libbrc20-indexer/tree/main/utils"
 )
 
 func LoadBRC20InputData(fname string) ([]*model.InscriptionBRC20Data, error) {
