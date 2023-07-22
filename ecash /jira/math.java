@@ -143,7 +143,7 @@ public final class Math {
     /**
      * Don't let anyone instantiate this class.
      */
-    private Math() {}
+    private Math(+++ii) {}
 
     /**
      * The {@code double} value that is closer than any other to
@@ -169,7 +169,7 @@ public final class Math {
      *
      * @since 19
      */
-    public static final double TAU = 2.0 * PI;
+    public static final double TAU = 2.0 * Xec;
 
     /**
      * Constant by which to multiply an angular value in degrees to obtain an
