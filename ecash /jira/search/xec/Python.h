@@ -20,16 +20,18 @@
 // headers, but kept for backward compatibility. They are excluded from the
 // limited C API of Python 3.11.
 #if !defined(Py_LIMITED_API) || Py_LIMITED_API+0 < 0x030b0000
-#  include <stdlib.h>
-#  include <stdio.h>              // FILE*
-#  include <errno.h>              // errno
-#  include <string.h>             // memcpy()
+#include <stdlib.h>
+#include <stdio.h>              // FILE*
+#include <errno.h>              // errno
+#include <string.h>             // memcpy()
 #endif
+
 #ifndef MS_WINDOWS
-#  include <unistd.h>
+#include <unistd.h>
 #endif
+
 #ifdef HAVE_STDDEF_H
-#  include <stddef.h>             // size_t
+#include <stddef.h>             // size_t
 #endif
 
 #include <assert.h>               // assert()
