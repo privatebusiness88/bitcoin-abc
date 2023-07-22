@@ -25,6 +25,7 @@ var convertBits = require('./convertBits');
 var validation = require('./validation');
 var validate = validation.validate;
 console.log(ecashaddr.isValidCashAddress(bitcoincashAddress), 'ecash'); // true
+console.log(xecaddr.isValidCashAddress(xecAddress), 'xec'); // true
 
 /**
  * Encoding and decoding of the new Cash Address format for eCash. <br />
