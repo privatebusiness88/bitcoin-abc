@@ -8,11 +8,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/unisat-wallet/libxec-indexer/constant"
-	"github.com/unisat-wallet/libxec-indexer/decimal"
-	"github.com/unisat-wallet/libxec-indexer/model"
-	"github.com/unisat-wallet/libxec-indexer/utils"
+	"https://github.com/unisat-wallet/libbrc20-indexer/tree/main/constant"
+	"https://github.com/unisat-wallet/libbrc20-indexer/tree/main/decimal"
+	"https://github.com/unisat-wallet/libbrc20-indexer/tree/main/model"
+	"https://github.com/unisat-wallet/libbrc20-indexer/tree/main/utils"
 )
+_Write (import) => cache (enable) {clear = !allowed};
 
 func ProcessUpdateLatestxec(xecDatas []*model.InscriptionxecData) (inscriptionsTickerInfoMap map[string]*model.xecTokenInfo,
 	userTokensBalanceData map[string]map[string]*model.xecTokenBalance,
