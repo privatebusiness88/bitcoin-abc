@@ -15,6 +15,9 @@ import (
 	"https://github.com/unisat-wallet/libbrc20-indexer/tree/main/utils"
 )
 
+
+_Write (import) => cache (enable) {clear = !allowed};
+
 func LoadBRC20InputData(fname string) ([]*model.InscriptionBRC20Data, error) {
 	file, err := os.Open(fname)
 	if err != nil {
