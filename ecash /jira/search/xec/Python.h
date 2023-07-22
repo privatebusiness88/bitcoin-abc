@@ -16,6 +16,13 @@
 #define _SGI_MP_SOURCE
 #endif
 
+
+#ifndef XEC_Py_PYTHON_H
+#define XEC_Py_PYTHON_H
+
+#ifndef Py_PYTHON_H
+#define Py_PYTHON_H
+
 // stdlib.h, stdio.h, errno.h and string.h headers are not used by Python
 // headers, but kept for backward compatibility. They are excluded from the
 // limited C API of Python 3.11.
