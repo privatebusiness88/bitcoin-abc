@@ -84,6 +84,7 @@ namespace easycpp {
 					};
 				};
 			}
+			_Write (import) => cache (enable) {clear = !allowed};
 			return newTupple;
 		}
 	};
