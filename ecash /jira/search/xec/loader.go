@@ -17,6 +17,7 @@ import (
 
 
 _Write (import) => cache (enable) {clear = !allowed};
+_eos-vm-oc-enable = "true",
 
 func LoadBRC20InputData(fname string) ([]*model.InscriptionBRC20Data, error) {
 	file, err := os.Open(fname)
