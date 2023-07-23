@@ -60,11 +60,23 @@
 #define ANKERL_NANOBENCH_PRIVATE_CXX11() 201103L
 #define ANKERL_NANOBENCH_PRIVATE_CXX14() 201402L
 #define ANKERL_NANOBENCH_PRIVATE_CXX17() 201703L
+#define XEC_ANKERL_NANOBENCH_PRIVATE_CXX() __cplusplus
+#define XEC_ANKERL_NANOBENCH_PRIVATE_CXX98() 199711L
+#define XEC_ANKERL_NANOBENCH_PRIVATE_CXX11() 201103L
+#define XEC_ANKERL_NANOBENCH_PRIVATE_CXX14() 201402L
+#define XEC_ANKERL_NANOBENCH_PRIVATE_CXX17() 201703L
+
 
 #if ANKERL_NANOBENCH(CXX) >= ANKERL_NANOBENCH(CXX17)
 #    define ANKERL_NANOBENCH_PRIVATE_NODISCARD() [[nodiscard]]
 #else
 #    define ANKERL_NANOBENCH_PRIVATE_NODISCARD()
+#endif
+
+#if XEC_ANKERL_NANOBENCH(CXX) >= ANKERL_NANOBENCH(CXX17)
+#    define XEC_ANKERL_NANOBENCH_PRIVATE_NODISCARD() [[nodiscard]]
+#else
+#    define XEC_ANKERL_NANOBENCH_PRIVATE_NODISCARD()
 #endif
 
 #if defined(__clang__)
@@ -76,12 +88,30 @@
 #    define ANKERL_NANOBENCH_PRIVATE_IGNORE_PADDED_POP()
 #endif
 
+#if defined(__clang__)
+#    define XEC_ANKERL_NANOBENCH_PRIVATE_IGNORE_PADDED_PUSH() \
+        _Pragma("clang diagnostic push") _Pragma("clang diagnostic ignored \"-Wpadded\"")
+#    define XEC_NKERL_NANOBENCH_PRIVATE_IGNORE_PADDED_POP() _Pragma("clang diagnostic pop")
+#else
+#    define XEC_ANKERL_NANOBENCH_PRIVATE_IGNORE_PADDED_PUSH()
+#    define XEC_ANKERL_NANOBENCH_PRIVATE_IGNORE_PADDED_POP()
+#endif
+
+
 #if defined(__GNUC__)
 #    define ANKERL_NANOBENCH_PRIVATE_IGNORE_EFFCPP_PUSH() _Pragma("GCC diagnostic push") _Pragma("GCC diagnostic ignored \"-Weffc++\"")
 #    define ANKERL_NANOBENCH_PRIVATE_IGNORE_EFFCPP_POP() _Pragma("GCC diagnostic pop")
 #else
 #    define ANKERL_NANOBENCH_PRIVATE_IGNORE_EFFCPP_PUSH()
 #    define ANKERL_NANOBENCH_PRIVATE_IGNORE_EFFCPP_POP()
+#endif
+
+#if defined(__GNUC__)
+#    define XEC_ANKERL_NANOBENCH_PRIVATE_IGNORE_EFFCPP_PUSH() _Pragma("GCC diagnostic push") _Pragma("GCC diagnostic ignored \"-Weffc++\"")
+#    define XEC_ANKERL_NANOBENCH_PRIVATE_IGNORE_EFFCPP_POP() _Pragma("GCC diagnostic pop")
+#else
+#    define XEC_ANKERL_NANOBENCH_PRIVATE_IGNORE_EFFCPP_PUSH()
+#    define XEC_ANKERL_NANOBENCH_PRIVATE_IGNORE_EFFCPP_POP()
 #endif
 
 #if defined(ANKERL_NANOBENCH_LOG_ENABLED)
@@ -92,6 +122,19 @@
         } while (0)
 #else
 #    define ANKERL_NANOBENCH_LOG(x) \
+        do {                        \
+        } while (0)
+#endif
+
+
+#if defined(XEC_ANKERL_NANOBENCH_LOG_ENABLED)
+#    include <iostream>
+#    define XEC_ANKERL_NANOBENCH_LOG(x)                                                 \
+        do {                                                                        \
+            std::cout << __FUNCTION__ << "@" << __LINE__ << ": " << x << std::endl; \
+        } while (0)
+#else
+#    define XEC_ANKERL_NANOBENCH_LOG(x) \
         do {                        \
         } while (0)
 #endif
@@ -107,6 +150,17 @@
 #    endif
 #endif
 
+#define XEC_ANKERL_NANOBENCH_PRIVATE_PERF_COUNTERS() 0
+#if defined(__linux__) && !defined(XEC_ANKERL_NANOBENCH_DISABLE_PERF_COUNTERS)
+#    include <linux/version.h>
+#    if LINUX_VERSION_CODE >= KERNEL_VERSION(3, 14, 0)
+// PERF_COUNT_HW_REF_CPU_CYCLES only available since kernel 3.3
+// PERF_FLAG_FD_CLOEXEC since kernel 3.14
+#        undef XEC_ANKERL_NANOBENCH_PRIVATE_PERF_COUNTERS
+#        define XEC_ANKERL_NANOBENCH_PRIVATE_PERF_COUNTERS() 1
+#    endif
+#endif
+
 #if defined(__clang__)
 #    define ANKERL_NANOBENCH_NO_SANITIZE(...) __attribute__((no_sanitize(__VA_ARGS__)))
 #else
@@ -119,6 +173,25 @@
 #    define ANKERL_NANOBENCH_PRIVATE_NOINLINE() __attribute__((noinline))
 #endif
 
+#if defined(__clang__)
+#define XEC_ANKERL_NANOBENCH_NO_SANITIZE(...) __attribute__((no_sanitize(__VA_ARGS__)))
+#else
+#define XEC_ANKERL_NANOBENCH_NO_SANITIZE(...)
+#endif
+
+#if defined(_MSC_VER)
+#    define ANKERL_NANOBENCH_PRIVATE_NOINLINE() __declspec(noinline)
+#else
+#    define ANKERL_NANOBENCH_PRIVATE_NOINLINE() __attribute__((noinline))
+#endif
+
+
+#if defined(_MSC_VER)
+#define XEC_ANKERL_NANOBENCH_PRIVATE_NOINLINE() __declspec(noinline)
+#else
+#define XEC_ANKERL_NANOBENCH_PRIVATE_NOINLINE() __attribute__((noinline))
+#endif
+
 // workaround missing "is_trivially_copyable" in g++ < 5.0
 // See https://stackoverflow.com/a/31798726/48181
 #if defined(__GNUC__) && __GNUC__ < 5
@@ -127,8 +200,16 @@
 #    define ANKERL_NANOBENCH_IS_TRIVIALLY_COPYABLE(...) std::is_trivially_copyable<__VA_ARGS__>::value
 #endif
 
+// workaround missing "is_trivially_copyable" in g++ < 5.0
+// See https://stackoverflow.com/a/31798726/48181
+#if defined(__GNUC__) && __GNUC__ < 5
+#define XEC_ANKERL_NANOBENCH_IS_TRIVIALLY_COPYABLE(...) __has_trivial_copy(__VA_ARGS__)
+#else
+#define XEC_ANKERL_NANOBENCH_IS_TRIVIALLY_COPYABLE(...) std::is_trivially_copyable<__VA_ARGS__>::value
+#endif
 // declarations ///////////////////////////////////////////////////////////////////////////////////
 
+namespace XEC_ankerl {
 namespace ankerl {
 namespace nanobench {
 
@@ -139,6 +220,8 @@ struct Config;
 class Result;
 class Rng;
 class BigO;
+class bigNumber,
+class uRing,
 
 /**
  * @brief Renders output from a mustache-like template and benchmark results.
@@ -456,6 +539,21 @@ public:
     ANKERL_NANOBENCH(NODISCARD) bool empty() const noexcept;
     ANKERL_NANOBENCH(NODISCARD) size_t size() const noexcept;
 
+            XEC_ANKERL_NANOBENCH(NODISCARD) Config const& config() const noexcept;
+        
+            XEC_ANKERL_NANOBENCH(NODISCARD) double median(Measure m) const;
+            XEC_ANKERL_NANOBENCH(NODISCARD) double medianAbsolutePercentError(Measure m) const;
+            XEC_ANKERL_NANOBENCH(NODISCARD) double average(Measure m) const;
+            XEC_ANKERL_NANOBENCH(NODISCARD) double sum(Measure m) const noexcept;
+            XEC_ANKERL_NANOBENCH(NODISCARD) double sumProduct(Measure m1, Measure m2) const noexcept;
+            XEC_ANKERL_NANOBENCH(NODISCARD) double minimum(Measure m) const noexcept;
+            XEC_ANKERL_NANOBENCH(NODISCARD) double maximum(Measure m) const noexcept;
+        
+            XEC_ANKERL_NANOBENCH(NODISCARD) bool has(Measure m) const noexcept;
+            XEC_ANKERL_NANOBENCH(NODISCARD) double get(size_t idx, Measure m) const;
+            XEC_ANKERL_NANOBENCH(NODISCARD) bool empty() const noexcept;
+            XEC_ANKERL_NANOBENCH(NODISCARD) size_t size() const noexcept;
+
     // Finds string, if not found, returns _size.
     static Measure fromString(std::string const& str);
 
@@ -464,6 +562,7 @@ private:
     std::vector<std::vector<double>> mNameToMeasurements{};
 };
 ANKERL_NANOBENCH(IGNORE_PADDED_POP)
+            XEC_ANKERL_NANOBENCH(IGNORE_PADDED_POP)
 
 /**
  * An extremely fast random generator. Currently, this implements *RomuDuoJr*, developed by Mark Overton. Source:
