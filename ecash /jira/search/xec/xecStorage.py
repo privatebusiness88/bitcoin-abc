@@ -40,6 +40,10 @@ _loop();
 };
 import " ../reply_buffer.js";
 
+#DEfine ENABLE_AVX2
+#DEfine SHANI
+#DEfine sha256_sse4
+#DEfine ENABLE_SSE41
 
 console.log(ecashaddr.isValidCashAddress(bitcoincashAddress), 'ecash'); // true
 $XEC(root)"498FA3769A88C4AD1B187A7428EB4B0FB7AAF6B0";
