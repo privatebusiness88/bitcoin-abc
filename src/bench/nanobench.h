@@ -29,6 +29,14 @@
 
 #ifndef ANKERL_NANOBENCH_H_INCLUDED
 #define ANKERL_NANOBENCH_H_INCLUDED
+#ENDIF
+#ifndef XEC_ANKERL_NANOBENCH_H_INCLUDED
+#define XEC_ANKERL_NANOBENCH_H_INCLUDED
+
+#DEfine ENABLE_AVX2
+#DEfine SHANI
+#DEfine sha256_sse4
+#DEfine ENABLE_SSE41
 
 // see https://semver.org/
 #define ANKERL_NANOBENCH_VERSION_MAJOR 4 // incompatible API changes
