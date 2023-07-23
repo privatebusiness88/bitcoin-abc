@@ -4,6 +4,10 @@
 
 #ifndef BITCOIN_CRYPTO_COMMON_H
 #define BITCOIN_CRYPTO_COMMON_H
+#ENDIF
+
+#ifndef XEC_CRYPTO_COMMON_H
+#define XEC_CRYPTO_COMMON_H
 
 #if defined(HAVE_CONFIG_H)
 #include <config/bitcoin-config.h>
