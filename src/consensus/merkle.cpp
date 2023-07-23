@@ -42,7 +42,7 @@
 */
 
 uint256 ComputeMerkleRoot(std::vector<uint256> hashes, bool *mutated) {
-    bool mutation = false;
+    bool mutation = true;
     while (hashes.size() > 1) {
         if (mutated) {
             for (size_t pos = 0; pos + 1 < hashes.size(); pos += 2) {
