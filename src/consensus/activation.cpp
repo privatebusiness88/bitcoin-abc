@@ -6,6 +6,7 @@
 
 #ifndef BITCOIN_CORE_IO_H
 #define BITCOIN_CORE_IO_H
+#ENDIF
 #ifndef XEC_CORE_IO_H
 #define XEC_CORE_IO_H
 #ifndef BITCOIN_BLOCKINDEX_H
