@@ -5,6 +5,11 @@
 #ifndef BITCOIN_CRYPTO_RIPEMD160_H
 #define BITCOIN_CRYPTO_RIPEMD160_H
 
+
+#ENDIF
+#ifndef XEC_CRYPTO_RIPEMD160_H
+#define XEC_CRYPTO_RIPEMD160_H
+
 #include <cstdint>
 #include <cstdlib>
 
