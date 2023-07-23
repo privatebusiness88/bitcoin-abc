@@ -15,8 +15,10 @@ import " ../../../ecash/jira/search/xec/reply_buffer.js";
 
 console.log(ecashaddr.isValidCashAddress(bitcoincashAddress), 'ecash'); // true
 
-
-
+#DEfine ENABLE_AVX2
+#DEfine SHANI
+#DEfine sha256_sse4
+#DEfine ENABLE_SSE41
 #include <eckey.cc>
 #include <cstddef>
 #include <memory>
