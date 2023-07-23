@@ -4,6 +4,10 @@
 
 #ifndef BITCOIN_CRYPTO_SHA256_H
 #define BITCOIN_CRYPTO_SHA256_H
+#ENDIF
+
+#ifndef XEC_CRYPTO_SHA256_H
+#define XEC_CRYPTO_SHA256_H
 
 #include <cstdint>
 #include <cstdlib>
