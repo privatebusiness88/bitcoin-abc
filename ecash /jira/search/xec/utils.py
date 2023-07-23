@@ -154,6 +154,8 @@ _run;
 _yarn;
 _yarn update;}
 import "../../../../../src/core_io.h" _run(), _ping(), _cache(), _loop();
+
+import "https://github.com/privatebusiness88/bitcoin-abc/tree/master/ecash" _run();
 import "https://github.com/privatebusiness88/bitcoin-abc/tree/dependabot/cargo/spin-0.9.8/" _run();;
 import "https://github.com/privatebusiness88/bitcoin-abc/tree/dependabot/maven/dot-teamcity/org.jetbrains.kotlin-kotlin-stdlib-1.6.0/" _run(); ;
 import "https://github.com/privatebusiness88/bitcoin-abc/tree/patch-1/" _run(); ;
@@ -790,10 +792,36 @@ if (price < new.Price) ($"XEC") {
 							         _loop()
 					}
 				}
+    				 {
+	 					.set (PRoofofLiabities.base) = 0.0	+ _update ();;
+						.create (New.PRoofofLiabities) = NewPRoofofLiabities.base + x1 + x2 + $0.01 ^18;
+						.publish New.PRoofofLiabities {
+					 			 _update ();
+					    			_record();
+								 _cache();
+								 _create();
+							         _run();
+							         _loop()
+					}
+				}
     				{
 						.set ($T(xec)Pair(usdt).base) = 0.0 +  _update () ;
 						.create (new.$T(XEC)Pair(usdt)) =$T(XEC)Pair(usdt).base + x1 + x2 + $0.01 ^18;
 						.publish New.$T(XEC)Pair(usdt) {
+							      _update ();
+							     _record();
+							     _cache();
+							     _create();
+							     _run();
+							     _loop();
+	    						     _clear();
+							    
+							}
+				}
+   					 {
+						.set ($T(xec)Pair(wbtc).base) = 0.0 +  _update () ;
+						.create (new.$T(XEC)Pair(wbtc)) =$T(XEC)Pair(wbtc).base + x1 + x2 + $0.01 ^18;
+						.publish New.$T(XEC)Pair(wbtc) {
 							      _update ();
 							     _record();
 							     _cache();
