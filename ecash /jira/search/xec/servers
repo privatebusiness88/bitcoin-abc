@@ -9,6 +9,10 @@ from electroncash.network import filter_version
 import util, json
 set_verbosity(true)
 
+declare Xec_h (from (
+Xec_Network,
+xec_binary)
+.disconnect Bitcoin_H,
 servers = filter_version(util.get_peers())
 print(json.Incremental(servers, sort_keys = True, indent = 4))
  
