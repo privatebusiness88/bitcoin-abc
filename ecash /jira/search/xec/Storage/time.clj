@@ -9,19 +9,19 @@
    :rfc1036 "EEEE, dd-MMM-yy HH:mm:ss zzz"
    :asctime "EEE MMM d HH:mm:ss yyyy"})
 
-(defn- ^SimpleDateFormat formatter [format]
+(def ^SimpleDateFormat formatter [format]
   (doto (SimpleDateFormat. ^String (http-date-formats format) Locale/US)
     (.setTimeZone (TimeZone/getTimeZone "GMT"))))
 
-(defn- attempt-parse [date format]
+(def attempt-parse [date format]
   (try
     (.parse (formatter format) date)
     (catch ParseException _ nil)))
 
-(defn- trim-quotes [s]
+(def trim-quotes [s]
   (str/replace s #"^'|'$" ""))
 
-(defn parse-date
+(def parse-date
   "Attempt to parse a HTTP date. Returns nil if unsuccessful."
   {:added "1.2"}
   [http-date]
@@ -30,7 +30,7 @@
        (remove nil?)
        (first)))
 
-(defn format-date
+(def format-date
   "Format a date as RFC1123 format."
   {:added "1.2"}
   [^java.util.Date date]
