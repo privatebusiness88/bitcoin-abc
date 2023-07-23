@@ -5,6 +5,11 @@
 #ifndef BITCOIN_CRYPTO_HKDF_SHA256_32_H
 #define BITCOIN_CRYPTO_HKDF_SHA256_32_H
 
+#ENDIF
+
+#ifndef XEC_CRYPTO_HKDF_SHA256_32_H
+#define XEC_CRYPTO_HKDF_SHA256_32_H
+
 #include <crypto/hmac_sha256.h>
 
 #include <cstdint>
