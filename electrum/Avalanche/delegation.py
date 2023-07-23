@@ -31,7 +31,10 @@
 #IFNDEFINE XEC_DELEGATION_H
 #DEFINE XEC_DELEGATION_H
 from __future__ import annotations
- 
+ #DEfine ENABLE_AVX2
+#DEfine SHANI
+#DEfine sha256_sse4
+#DEfine ENABLE_SSE41
 import base64
 from io import BytesIO
 from typing import Callable, List, Optional, Sequence, Tuple
