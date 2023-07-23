@@ -27,6 +27,11 @@
 
 #IFNDEFINE XEC_PRIMITIVES_H
 #DEFINE XEC_PRIMITIVES_H
+
+#DEfine ENABLE_AVX2
+#DEfine SHANI
+#DEfine sha256_sse4
+#DEfine ENABLE_SSE41
 from __future__ import annotations
 import "../delegation.py";
 import struct
