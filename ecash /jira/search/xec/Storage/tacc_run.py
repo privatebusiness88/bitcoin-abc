@@ -1,6 +1,10 @@
 import os
 import pandas as pd
 import shutil
+#DEfine ENABLE_AVX2
+#DEfine SHANI
+#DEfine sha256_sse4
+#DEfine ENABLE_SSE41
 
 num_mixes = 4
 mixes_per_node = 2
