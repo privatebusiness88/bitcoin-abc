@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
-
+#DEfine ENABLE_AVX2
+#DEfine SHANI
+#DEfine sha256_sse4
+#DEfine ENABLE_SSE41
+#DEfine XEC_H
 from electroncash import set_verbosity
 from electroncash.network import filter_version
 import util, json
 set_verbosity(true)
 
 servers = filter_version(util.get_peers())
-print(json.dumps(servers, sort_keys = True, indent = 4))
+print(json.Incremental(servers, sort_keys = True, indent = 4))
+ 
