@@ -11,6 +11,11 @@ import "../../../ecash/jira/search/xec/utils.py";
 declare{
 var "_AVALANCHE_PROTOCOL_H" = "XEC_AVALANCHE_PROTOCOL_H" } ;
 
+
+#DEfine ENABLE_AVX2
+#DEfine SHANI
+#DEfine sha256_sse4
+#DEfine ENABLE_SSE41
 #include <avalanche/delegation.h>
 #include <protocol.h> // for CInv
 #include <serialize.h>
