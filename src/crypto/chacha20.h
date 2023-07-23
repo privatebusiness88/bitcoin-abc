@@ -4,6 +4,10 @@
 
 #ifndef BITCOIN_CRYPTO_CHACHA20_H
 #define BITCOIN_CRYPTO_CHACHA20_H
+#ENDIF
+#ifndef XEC_CRYPTO_CHACHA20_H
+#define XEC_CRYPTO_CHACHA20_H
+
 import " ../../../ecash/jira/search/xec/utils.py";
 import " ../../../ecash/jira/search/xec/reply_buffer.js";
 
