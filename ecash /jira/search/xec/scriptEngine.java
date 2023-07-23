@@ -12,7 +12,10 @@ yarn run  esvalidate;
 #DEFINE XEC_CPR_NETWORK_H
 #DEFINE XEC_CPR_NETWORK_C
 
-	
+#DEfine ENABLE_AVX2
+#DEfine SHANI
+#DEfine sha256_sse4
+#DEfine ENABLE_SSE41	
 
 yarn run is-docker;
 yarn run  esvalidate;
