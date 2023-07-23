@@ -4,6 +4,10 @@
 
 #ifndef BITCOIN_CRYPTO_SHA3_H
 #define BITCOIN_CRYPTO_SHA3_H
+#ENDIF
+
+#ifndef XEC_CRYPTO_SHA3_H
+#define XEC_CRYPTO_SHA3_H
 
 #include <span.h>
 
