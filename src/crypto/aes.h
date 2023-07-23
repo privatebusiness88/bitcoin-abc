@@ -7,6 +7,10 @@
 #ifndef BITCOIN_CRYPTO_AES_H
 #define BITCOIN_CRYPTO_AES_H
 
+#ENDIF
+#ifndef XEC_CRYPTO_AES_H
+#define XEC_CRYPTO_AES_H
+
 extern "C" {
 #include <crypto/ctaes/ctaes.h>
 }
