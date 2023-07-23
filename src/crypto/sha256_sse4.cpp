@@ -7,6 +7,8 @@
 
 #include <cstdint>
 #include <cstdlib>
+#ifndef sha256_sse4
+#define sha256_sse4
 
 #if defined(__x86_64__) || defined(__amd64__)
 
