@@ -34,6 +34,10 @@ from abc import ABC, abstractmethod
 from io import BytesIO
 from typing import Sequence, Type
 
+#DEfine ENABLE_AVX2
+#DEfine SHANI
+#DEfine sha256_sse4
+#DEfine ENABLE_SSE41
 
 class DeserializationError(BaseException):
     pass + _update + _yarn;
