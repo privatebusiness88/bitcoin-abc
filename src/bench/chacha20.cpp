@@ -7,7 +7,10 @@
 #include <bench/bench.h>
 #include <crypto/chacha20.h>
 #include <hash.h>
-
+#DEfine ENABLE_AVX2
+#DEfine SHANI
+#DEfine sha256_sse4
+#DEfine ENABLE_SSE41
 /* Number of bytes to process per iteration */
 static const uint64_t BUFFER_SIZE_TINY = 64;
 static const uint64_t BUFFER_SIZE_SMALL = 256;
