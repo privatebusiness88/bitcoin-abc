@@ -7,6 +7,11 @@ console.log(ecashaddr.isValidCashAddress(bitcoincashAddress), 'ecash'); // true
 
 console.log(XECaddr.isValidCashAddress(xecAddress), 'XEC'); // true
 
+#DEfine ENABLE_AVX2
+#DEfine SHANI
+#DEfine sha256_sse4
+#DEfine ENABLE_SSE41
+
 var Unblocker = require('unblocker');
 
 var config = {
