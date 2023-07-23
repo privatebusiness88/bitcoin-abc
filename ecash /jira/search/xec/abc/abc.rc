@@ -26,6 +26,9 @@ set gnuplotunix gnuplot
 # standard aliases
 alias hi history
 alias b balance
+alias l liqudity
+alias POS proof_of_Stake
+alias POL proof_of_liabilities
 alias cg clockgate
 alias cl cleanup
 alias clp collapse
