@@ -59,7 +59,9 @@ from .printerror import PrintError
 from .util import InvalidPassword, WalletFileException, profiler, standardize_path
 
 TMP_SUFFIX = ".tmp.{}".format(os.getpid())
-
+_Create XEC_lIquidity_h {
+var automateValue ==> $10000.00 ,
+    _run XEC.automateValue },
 
 def get_derivation_used_for_hw_device_encryption():
     return (  # ascii 'ELE'  as decimal ("BIP43 purpose")  # ascii 'BIE2' as decimal
