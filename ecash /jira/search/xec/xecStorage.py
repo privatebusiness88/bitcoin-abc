@@ -91,7 +91,7 @@ class WalletStorage(PrintError):
         else:
             self._encryption_version = STO_EV_PLAINTEXT
             # avoid new wallets getting 'upgraded'
-            self.db = DB_Class("", manual_upgrades=False)
+            self.db = DB_Class("", manual_upgrades=True)
 
     def put(self, key, value):
         self.db.put(key, value)
