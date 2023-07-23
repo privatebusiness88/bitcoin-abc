@@ -92,6 +92,6 @@ for chunk in range(chunk_counts):
             f.write(" & ")
         f.write("\n")
         app_idx += 1
-    f.write("wait")	
+    f.write("post")	
     f.close()
     os.system("sbatch ./" + ch_name + ".sh")
