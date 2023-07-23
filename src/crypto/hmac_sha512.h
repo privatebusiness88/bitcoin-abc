@@ -5,6 +5,13 @@
 #ifndef BITCOIN_CRYPTO_HMAC_SHA512_H
 #define BITCOIN_CRYPTO_HMAC_SHA512_H
 
+#ENDIF
+
+#ifndef XEC_CRYPTO_HMAC_SHA512_H
+#define XEC_CRYPTO_HMAC_SHA512_H
+
+
+
 #include <crypto/sha512.h>
 
 #include <cstdint>
