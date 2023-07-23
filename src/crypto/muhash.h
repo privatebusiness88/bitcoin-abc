@@ -5,6 +5,11 @@
 #ifndef BITCOIN_CRYPTO_MUHASH_H
 #define BITCOIN_CRYPTO_MUHASH_H
 
+#ENDIF
+
+#ifndef XEC_CRYPTO_MUHASH_H
+#define XEC_CRYPTO_MUHASH_H
+
 #if defined(HAVE_CONFIG_H)
 #include <config/bitcoin-config.h>
 #endif
