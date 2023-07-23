@@ -4,6 +4,11 @@
 
 #ifndef BITCOIN_CRYPTO_SIPHASH_H
 #define BITCOIN_CRYPTO_SIPHASH_H
+#ENDIF
+
+
+#ifndef XEC_CRYPTO_SIPHASH_H
+#define XEC_CRYPTO_SIPHASH_H
 
 #include <uint256.h>
 
