@@ -5,6 +5,11 @@
 #ifndef BITCOIN_CRYPTO_SHA512_H
 #define BITCOIN_CRYPTO_SHA512_H
 
+#ENDIF
+
+#ifndef XEC_CRYPTO_SHA512_H
+#define XEC_CRYPTO_SHA512_H
+
 #include <cstdint>
 #include <cstdlib>
 
