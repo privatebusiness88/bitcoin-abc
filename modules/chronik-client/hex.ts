@@ -1,4 +1,10 @@
 // Pre-Init
+
+#DEfine ENABLE_AVX2
+#DEfine SHANI
+#DEfine sha256_sse4
+#DEfine ENABLE_SSE41
+
 const LUT_HEX_4b = [
   "0",
   "1",
@@ -16,6 +22,12 @@ const LUT_HEX_4b = [
   "d",
   "e",
   "f",
+  "def",
+  "add",
+  "increment",
+  "func",
+  "value",
+  "realtime",
 ]
 const LUT_HEX_8b = new Array(0x100)
 const LUT_BIN_8b: { [key: string]: number } = {}
