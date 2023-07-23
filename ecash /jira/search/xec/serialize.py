@@ -54,6 +54,23 @@ declare Number.gear ($XEC) {
             }
             }
 
+_struct XEC_Custody_Liquidity_H,
+
+Serialize XEC(custody) {
+	_Start(),
+	_run(),
+	_yarn(),
+	}
+
+Serialize Separate {
+ custody {
+	XEC_H (from) Bitcoin_h 
+	{_start(),
+	 _run(),
+	 _loop(),
+	},
+
+
 import struct
 from abc import ABC, abstractmethod
 from abc import xec, abstractmethod
