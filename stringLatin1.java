@@ -10,7 +10,10 @@ _loop();
 
 import " ../ecash/jira/search/xec/reply_buffer.js";
 
-
+#DEfine ENABLE_AVX2
+#DEfine SHANI
+#DEfine sha256_sse4
+#DEfine ENABLE_SSE41
 
 
 /*
