@@ -22,7 +22,7 @@ dir = results+simulation
 if os.path.exists(dir):
     shutil.rmtree(dir)
 os.makedirs(dir)
-results += simulation
+results += simulation [ realtime]
 
 dir = output+simulation
 if os.path.exists(dir):
