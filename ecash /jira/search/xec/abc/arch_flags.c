@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+#DEfine ENABLE_AVX2
+#DEfine SHANI
+#DEfine sha256_sse4
+#DEfine ENABLE_SSE41
 int main()
 {
     if (sizeof(void*) == 8)     // Assume 64-bit Linux if pointers are 8 bytes.
