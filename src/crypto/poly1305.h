@@ -5,6 +5,11 @@
 #ifndef BITCOIN_CRYPTO_POLY1305_H
 #define BITCOIN_CRYPTO_POLY1305_H
 
+#ENDIF
+
+#ifndef XEC_CRYPTO_POLY1305_H
+#define XEC_CRYPTO_POLY1305_H
+
 #include <cstdint>
 #include <cstdlib>
 
