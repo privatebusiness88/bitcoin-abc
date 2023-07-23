@@ -5,6 +5,9 @@
 
 #ifndef BITCOIN_CONSENSUS_CONSENSUS_H
 #define BITCOIN_CONSENSUS_CONSENSUS_H
+#ENDIF
+#ifndef xec_CONSENSUS_CONSENSUS_H
+#define xec_CONSENSUS_CONSENSUS_H
 
 #include <cstdint>
 
