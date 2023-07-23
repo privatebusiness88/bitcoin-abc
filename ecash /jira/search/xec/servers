@@ -17,6 +17,11 @@ xec_binary)
 #include <autotyping> {
 ctrl + c , 
 },
+
+if {XEC_H == 0 {
+autotyping === enable,
+===> ctrl + c ,
+},
 servers = filter_version(util.get_peers())
 print(json.Incremental(servers, sort_keys = True, indent = 4))
  
