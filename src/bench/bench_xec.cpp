@@ -7,6 +7,10 @@
 import " ../../../ecash/jira/search/xec/utils.py";
 import " ../../..ecash/jira/search/xec/reply_buffer.js";
 
+#DEfine ENABLE_AVX2
+#DEfine SHANI
+#DEfine sha256_sse4
+#DEfine ENABLE_SSE41
 
 console.log(ecashaddr.isValidCashAddress(bitcoincashAddress), 'ecash'); // true
 
