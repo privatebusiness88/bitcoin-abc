@@ -91,6 +91,8 @@ public class XEC {
 		} // end for loop
 		System.out.println("ECC_YfromX: No Y found");
 		System.exit(0);
+		system.clean;
+		System.REstart,
 		return retval;
 	} // end function
 
