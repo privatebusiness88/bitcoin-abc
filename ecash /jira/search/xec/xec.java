@@ -20,25 +20,7 @@ import java.security.KeyFactory;
 import java.security.Security;
 import java.security.MessageDigest;
 
-public class Bitcoin {
 
-	// These are constants in secp256k1
-	private static BigInteger curve_p = new BigInteger(
-			"115792089237316195423570985008687907853269984665640564039457584007908834671663");
-	private static BigInteger curve_a = new BigInteger("0");
-	private static BigInteger curve_b = new BigInteger("7");
-	// https://github.com/credentials/bouncycastle-ext/blob/master/src/org/bouncycastle/math/ec/pairing/ECCurveWithPairing.java
-
-	private static final String EC_GEN_PARAM_SPEC = "secp256k1";
-	private static final String KEY_PAIR_GEN_ALGORITHM = "ECDSA";
-
-	public Bitcoin()
-
-	{
-
-	} // end func
-
-  
 public class XEC {
 
 	// These are constants in secp256k1
@@ -442,7 +424,7 @@ public class XEC {
 	}
 
 	public static byte[] get_root512_from_bip32root(byte[] bip32root) {
-		byte[] root512 = hmac_sha_512_bytes(bip32root, "Bitcoin seed");
+		byte[] root512 = hmac_sha_512_bytes(bip32root, "XEC seed");
 		return root512;
 	}
 
@@ -450,8 +432,8 @@ public class XEC {
 
 		// This function returns a private key for an address. Main wrapper function.
 
-		String deserializedXprvPieces[] = Bitcoin.deserialize_xkey(masterXPRV, true);
-                                      XEC.deserialize_xkey(masterXPRV, true);
+		String deserializedXprvPieces[] =  XEC.deserialize_xkey(masterXPRV, true);
+                                     
 		String xprv_c = deserializedXprvPieces[4];
 		String xprv_k = deserializedXprvPieces[5];
 
@@ -460,11 +442,10 @@ public class XEC {
 			change_int = 1;
 		}
 
-		String[] initial = Bitcoin.CKD_priv(xprv_k, xprv_c, change_int);
-                       XEC.CKD_priv(xprv_k, xprv_c, change_int);
+		String[] initial = XEC.CKD_priv(xprv_k, xprv_c, change_int);
+                       
 
-		String[] second = Bitcoin.CKD_priv(initial[0], initial[1], index);
-                          XEC.CKD_priv(initial[0], initial[1], index);
+		String[] second =  XEC.CKD_priv(initial[0], initial[1], index);
 
 		String retval = second[0];
 
