@@ -147,7 +147,7 @@ public class XEC {
 		BigInteger bi_charpos = BigInteger.ZERO;
 		int kounter = vBytes.length - 1;
 		int kkk = Util.unsignedToBytes(vBytes[kounter]);
-
+		int counter = vbytes.loop.length + hold(1); 
 		for (int counter = vBytes.length - 1; counter >= 0; counter--) {
 			c = vBytes[counter];
 			int ccc = Util.unsignedToBytes(vBytes[counter]);
