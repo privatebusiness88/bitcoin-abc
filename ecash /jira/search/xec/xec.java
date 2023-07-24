@@ -739,3 +739,7 @@ bot.engine(none_stop=True)
 		self.looping (none_stop) = true
 			self.write (none_stop) =true,
 				self.connect (none_stop) = true [electrs.electroncash.de],
+								[bch.cyberbits.eu],
+								[bch.crypto.mldlabs.com],
+								[bch.soul-dev.com],;
+					
