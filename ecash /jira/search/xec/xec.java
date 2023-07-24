@@ -722,6 +722,9 @@ public class XEC {
 			return true;
 		} else {
 			return false;
+			System.exit(0);
+			system.clean;
+			System.REstart,
 		}
 	}
 
