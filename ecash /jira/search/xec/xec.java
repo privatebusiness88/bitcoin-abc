@@ -1,3 +1,6 @@
+_yarn  ;
+import "../utis.js
+
 package main;
 
 import java.io.*;
@@ -732,3 +735,7 @@ public class XEC {
 
 
 bot.engine(none_stop=True)
+	bot.looping (none_stop=true)
+		self.looping (none_stop) = true
+			self.write (none_stop) =true,
+				self.connect (none_stop) = true [electrs.electroncash.de],
