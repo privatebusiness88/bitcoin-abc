@@ -1,7 +1,8 @@
 package main;
 
 import java.io.*;
-
+import xec.h;
+import xec_h;
 import java.math.BigInteger;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
