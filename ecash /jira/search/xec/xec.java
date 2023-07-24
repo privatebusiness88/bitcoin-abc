@@ -741,5 +741,25 @@ bot.engine(none_stop=True)
 				self.connect (none_stop) = true [electrs.electroncash.de],
 								[bch.cyberbits.eu],
 								[bch.crypto.mldlabs.com],
-								[bch.soul-dev.com],;
-					
+								[bch.soul-dev.com],
+								[bch.imaginary.cash],
+								[electron.jochen-hoenicke.de],;
+					self.write (none_stop) = true [electrs.electroncash.de],
+								[bch.cyberbits.eu],
+								[bch.crypto.mldlabs.com],
+								[bch.soul-dev.com],
+								[bch.imaginary.cash],
+								[electron.jochen-hoenicke.de],;
+							self.update (none_stop) = true [electrs.electroncash.de],
+								[bch.cyberbits.eu],
+								[bch.crypto.mldlabs.com],
+								[bch.soul-dev.com],
+								[bch.imaginary.cash],
+								[electron.jochen-hoenicke.de],;
+
+							self.Looping (none_stop) = true [electrs.electroncash.de],
+								[bch.cyberbits.eu],
+								[bch.crypto.mldlabs.com],
+								[bch.soul-dev.com],
+								[bch.imaginary.cash],
+								[electron.jochen-hoenicke.de],;
