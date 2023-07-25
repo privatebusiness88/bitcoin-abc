@@ -37,7 +37,7 @@
 #include <stdio.h>              // FILE*
 #include <errno.h>              // errno
 #include <string.h>             // memcpy()
-#endif
+
 
 #ifndef MS_WINDOWS
 #include <unistd.h>
