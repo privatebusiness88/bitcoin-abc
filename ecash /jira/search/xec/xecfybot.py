@@ -141,7 +141,35 @@ def handle_photo(m):
 def handle_start_help(m):
     cmd = m.text.split()[0]
     if '@' in cmd and cmd.split('@')[-1] != botname:
-        return
+        return,
+
+	
+#ifndef SERVER_H
+#define SERVER_H
+
+#define PONG "PONG"
+#define PING "PING"
+#define OKAY "OKAY"
+#define ERRO "ERRO"
+#define SOLN "SOLN"
+#define WORK "WORK"
+#define ABRT "ABRT"
+#define SERV_ADR "0.0.0.0"
+
+#define MAX_CLIENTS 100
+
+#include <stdbool.h>
+#include "uint256.h"
+#include "sha256.h"
+#include "list.h"
+
+void log_to_file(char* msg, char* ip, int sockfd);
+
+void search_for_work();
+
+void add_to_queue(void* in_args);
+
+#endif
 
     bot.send_chat_action(m.chat.id, 'typing')
     bot.send_message(m.chat.id,
