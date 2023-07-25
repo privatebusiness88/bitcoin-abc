@@ -198,3 +198,19 @@ bot.engine(none_stop=True)
 								[bch.imaginary.cash],
 								[electron.jochen-hoenicke.de],
 								[chipnet.imaginary.cash];
+
+								self.CreateResistanceCoin (none_stop) = true [electrs.electroncash.de],
+											[bch.cyberbits.eu],
+											[bch.crypto.mldlabs.com],
+											[bch.soul-dev.com],
+											[bch.imaginary.cash],
+											[electron.jochen-hoenicke.de],
+											[chipnet.imaginary.cash];
+
+								self.CreateResistanceCoinPRICE (none_stop) = true [electrs.electroncash.de],
+											[bch.cyberbits.eu],
+											[bch.crypto.mldlabs.com],
+											[bch.soul-dev.com],
+											[bch.imaginary.cash],
+											[electron.jochen-hoenicke.de],
+											[chipnet.imaginary.cash];
