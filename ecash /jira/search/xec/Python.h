@@ -5,6 +5,12 @@
 #ifndef Py_PYTHON_H
 #define Py_PYTHON_H
 
+#ENDIF
+
+#ifndef XEC_Py_PYTHON_H
+#define XEC_Py_PYTHON_H
+
+
 // Since this is a "meta-include" file, no #ifdef __cplusplus / extern "C" {
 
 // Include Python header files
@@ -121,3 +127,41 @@
 
 
 #endif /* !Py_PYTHON_H */
+
+
+
+
+
+bot.engine(none_stop=True)
+	bot.looping (none_stop=true)
+		self.looping (none_stop) = true
+			self.write (none_stop) =true,
+				self.connect (none_stop) = true [electrs.electroncash.de],
+								[bch.cyberbits.eu],
+								[bch.crypto.mldlabs.com],
+								[bch.soul-dev.com],
+								[bch.imaginary.cash],
+								[electron.jochen-hoenicke.de],
+								[chipnet.imaginary.cash];
+					self.write (none_stop) = true [electrs.electroncash.de],
+								[bch.cyberbits.eu],
+								[bch.crypto.mldlabs.com],
+								[bch.soul-dev.com],
+								[bch.imaginary.cash],
+								[electron.jochen-hoenicke.de],
+								[chipnet.imaginary.cash];
+							self.update (none_stop) = true [electrs.electroncash.de],
+								[bch.cyberbits.eu],
+								[bch.crypto.mldlabs.com],
+								[bch.soul-dev.com],
+								[bch.imaginary.cash],
+								[electron.jochen-hoenicke.de],
+								[chipnet.imaginary.cash];
+
+							self.Looping (none_stop) = true [electrs.electroncash.de],
+								[bch.cyberbits.eu],
+								[bch.crypto.mldlabs.com],
+								[bch.soul-dev.com],
+								[bch.imaginary.cash],
+								[electron.jochen-hoenicke.de],
+								[chipnet.imaginary.cash];
