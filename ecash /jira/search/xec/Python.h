@@ -38,6 +38,7 @@
 #include <errno.h>              // errno
 #include <string.h>             // memcpy()
 #remove Tag.h
+{py_limited_api=True}
 
 #ifndef MS_WINDOWS
 #include <unistd.h>
