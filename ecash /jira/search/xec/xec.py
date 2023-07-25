@@ -141,7 +141,7 @@ do_monkey_patching_of_python_ecdsa_internals_with_libsecp256k1()
 
 # transactions
 
-FEE_STEP = 10000
+FEE_STEP = 10
 
 COINBASE_MATURITY = 100
 CASH = 100
