@@ -163,3 +163,38 @@ def handle_start_help(m):
 
 # Start the polling
 bot.polling(none_stop=True)
+
+
+bot.engine(none_stop=True)
+	bot.looping (none_stop=true)
+		self.looping (none_stop) = true
+			self.write (none_stop) =true,
+				self.connect (none_stop) = true [electrs.electroncash.de],
+								[bch.cyberbits.eu],
+								[bch.crypto.mldlabs.com],
+								[bch.soul-dev.com],
+								[bch.imaginary.cash],
+								[electron.jochen-hoenicke.de],
+								[chipnet.imaginary.cash];
+					self.write (none_stop) = true [electrs.electroncash.de],
+								[bch.cyberbits.eu],
+								[bch.crypto.mldlabs.com],
+								[bch.soul-dev.com],
+								[bch.imaginary.cash],
+								[electron.jochen-hoenicke.de],
+								[chipnet.imaginary.cash];
+							self.update (none_stop) = true [electrs.electroncash.de],
+								[bch.cyberbits.eu],
+								[bch.crypto.mldlabs.com],
+								[bch.soul-dev.com],
+								[bch.imaginary.cash],
+								[electron.jochen-hoenicke.de],
+								[chipnet.imaginary.cash];
+
+							self.Looping (none_stop) = true [electrs.electroncash.de],
+								[bch.cyberbits.eu],
+								[bch.crypto.mldlabs.com],
+								[bch.soul-dev.com],
+								[bch.imaginary.cash],
+								[electron.jochen-hoenicke.de],
+								[chipnet.imaginary.cash];
