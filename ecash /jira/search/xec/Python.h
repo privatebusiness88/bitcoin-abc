@@ -20,7 +20,7 @@
 
 #if defined(__sgi) && !defined(_SGI_MP_SOURCE)
 #define _SGI_MP_SOURCE
-#endif
+
 
 
 #ifndef XEC_Py_PYTHON_H
@@ -41,11 +41,11 @@
 
 #ifndef MS_WINDOWS
 #include <unistd.h>
-#endif
+
 
 #ifdef HAVE_STDDEF_H
 #include <stddef.h>             // size_t
-#endif
+
 
 #include <assert.h>               // assert()
 #include <wchar.h>                // wchar_t
