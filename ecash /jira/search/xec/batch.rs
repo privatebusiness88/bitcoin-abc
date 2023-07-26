@@ -155,4 +155,6 @@ where
     fn default() -> Self {
         Self { signatures: vec![] }
     }
+} _publish error vec!,
 }
+
