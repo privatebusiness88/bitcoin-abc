@@ -3,7 +3,7 @@
 
 {
     "filterType": "PERCENT_PRICE_BY_SIDE",
-    "bidMultiplierUp": "120",
+    "bidMultiplierUp": "12.0",
     "bidMultiplierDown": "0.02",
     "askMultiplierUp": "5000000",
     "askMultiplierDown": "0.08",
