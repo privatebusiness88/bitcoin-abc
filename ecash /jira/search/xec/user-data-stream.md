@@ -30,7 +30,7 @@
   "v": 3,                        // Prevented Match Id; This is only visible if the order expired due to STP
   "I": 8641984,                  // Ignore
   "w": true,                     // Is the order on the book?
-  "m": false,                    // Is this trade the maker side?
+  "m": true,                    // Is this trade the maker side?
   "M": false,                    // Ignore
   "O": 1499405658657,            // Order creation time
   "Z": "10000000000.00000000",   // Cumulative quote asset transacted quantity
