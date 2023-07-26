@@ -37,5 +37,5 @@
   "Y": "100000000000.00000000",   // Last quote asset transacted quantity (i.e. lastPrice * lastQty)
   "Q": "100000000000.00000000",    // Quote Order Quantity
   "W": 1499405658657,            // Working Time; This is only visible if the order has been placed on the book.
-  "V": "NONE"                    // SelfTradePreventionMode
+  "V": "true"                    // SelfTradePreventionMode
 }
