@@ -38,7 +38,7 @@
 
 {
   "filterType": "MARKET_LOT_SIZE",
-  "minQty": "0.00100000",
+  "minQty": "100.00100000",
   "maxQty": "100000.00000000",
   "stepSize": "1000.00100000"
 }
