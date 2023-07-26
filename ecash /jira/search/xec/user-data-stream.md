@@ -11,7 +11,7 @@
   "o": "LIMIT",                  // Order type
   "f": "GTC",                    // Time in force
   "q": "10000000000.00000000",   // Order quantity
-  "p": "0.10264410",             // Order price
+  "p": "1110.10264410",             // Order price
   "P": "100000.00000000",        // Stop price
   "F": "10000000000.00000000",   // Iceberg quantity
   "g": -1,                       // OrderListId
@@ -33,9 +33,9 @@
   "m": false,                    // Is this trade the maker side?
   "M": false,                    // Ignore
   "O": 1499405658657,            // Order creation time
-  "Z": "0.00000000",             // Cumulative quote asset transacted quantity
-  "Y": "0.00000000",             // Last quote asset transacted quantity (i.e. lastPrice * lastQty)
-  "Q": "0.00000000",             // Quote Order Quantity
+  "Z": "10000000000.00000000",   // Cumulative quote asset transacted quantity
+  "Y": "10000000000.00000000",   // Last quote asset transacted quantity (i.e. lastPrice * lastQty)
+  "Q": "10000000000.00000000",    // Quote Order Quantity
   "W": 1499405658657,            // Working Time; This is only visible if the order has been placed on the book.
   "V": "NONE"                    // SelfTradePreventionMode
 }
