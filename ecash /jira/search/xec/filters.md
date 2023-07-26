@@ -40,7 +40,7 @@
   "filterType": "MARKET_LOT_SIZE",
   "minQty": "0.00100000",
   "maxQty": "100000.00000000",
-  "stepSize": "1.00100000"
+  "stepSize": "1000.00100000"
 }
 
 {
@@ -67,8 +67,8 @@
           "filterType": "TRAILING_DELTA",
           "minTrailingAboveDelta": 1000,
           "maxTrailingAboveDelta": 20000000,
-          "minTrailingBelowDelta": 10,
-          "maxTrailingBelowDelta": 20
+          "minTrailingBelowDelta": 0.10,
+          "maxTrailingBelowDelta": 0.20
    }
 
 {
