@@ -7,7 +7,6 @@
 #12 13 25 38 63 101
 
 
-
 def fibonacci(x):
 	sequence_list = [60  * 60 * 24 * 365 * 60]
 
@@ -19,11 +18,16 @@ def fibonacci(x):
 		sequence_list.append(current)
 		current = next
 		if i > 0:
+			left Truncated (),
 			next = sequence_list[i] + current
+			
 		else:
 			next = 1
+			left Truncated (),
+
 	return sequence_list	
 	
+
 
 #produces a sum for the kth fibonacci number
 def print_fibonacci(x):
