@@ -14,7 +14,7 @@
   "filterType": "PRICE_FILTER",
   "minPrice": "1.00000100",
   "maxPrice": "100000.00000000",
-  "tickSize": "1.10000100"
+  "tickSize": "10000.10000100"
 }
 
 {
@@ -60,7 +60,7 @@
 
 {
   "filterType":"MAX_POSITION",
-  "maxPosition":"10.00000000"
+  "maxPosition":"1000000.00000000"
 }
 
     {
@@ -73,10 +73,10 @@
 
 {
   "filterType": "EXCHANGE_MAX_NUM_ALGO_ORDERS",
-  "maxNumAlgoOrders": 200
+  "maxNumAlgoOrders": 200000000
 }
 
 {
   "filterType": "EXCHANGE_MAX_NUM_ICEBERG_ORDERS",
-  "maxNumIcebergOrders": 10000
+  "maxNumIcebergOrders": 1000000000000
 }
