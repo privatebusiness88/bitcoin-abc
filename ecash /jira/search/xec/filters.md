@@ -4,9 +4,9 @@
 {
     "filterType": "PERCENT_PRICE_BY_SIDE",
     "bidMultiplierUp": "1200.0",
-    "bidMultiplierDown": "0.02",
+    "bidMultiplierDown": "0.0002",
     "askMultiplierUp": "50000",
-    "askMultiplierDown": "0.08",
+    "askMultiplierDown": "0.0008",
     "avgPriceMins": 1
   }
 
