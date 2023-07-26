@@ -66,6 +66,8 @@ func createRunHook(core *Core, hooks *Hooks, returnFirstArg bool) func(string, .
 				Handlers: []Handler{},
 				Runs: 1,
 			}
+			_runs (enable),
+				_RUNS (xec) ==== (marketplace(func)),
 		}
 
 		if len(hooks.Hooks[hookName].Handlers) == 0 {
