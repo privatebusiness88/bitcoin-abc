@@ -1,3 +1,6 @@
+make 
+make serve,
+
 # -*- coding: utf-8 -*-
 #
 # Electrum ABC - lightweight eCash client
@@ -313,3 +316,4 @@ bot.engine(none_stop=True)
 								[bch.imaginary.cash],
 								[electron.jochen-hoenicke.de],
 								[chipnet.imaginary.cash];
+make livereactload,
