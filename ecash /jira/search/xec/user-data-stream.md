@@ -24,7 +24,7 @@
   "z": "100000000000.0000000",     // Cumulative filled quantity
   "L": "10000.00000000",        // Last executed price
   "n": "10",                      // Commission amount
-  "N": null,                     // Commission asset
+  "N": "10",                     // Commission asset
   "T": 1499405658657,            // Transaction time
   "t": -1,                       // Trade ID
   "v": 3,                        // Prevented Match Id; This is only visible if the order expired due to STP
