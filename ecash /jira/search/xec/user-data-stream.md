@@ -6,7 +6,7 @@
   "e": "executionReport",        // Event type
   "E": 1499405658658,            // Event time
   "s": "XECBTC",                 // Symbol
-  "c": "mUvoqJxFIILMdfAW5iGSOW", // Client order ID
+  "c": "mUvoqJxFIILMdfAW5iGSOWBTC", // Client order ID
   "S": "BUY",                    // Side
   "o": "LIMIT",                  // Order type
   "f": "GTC",                    // Time in force
@@ -24,7 +24,7 @@
   "z": "100000000000.0000000",     // Cumulative filled quantity
   "L": "10000.00000000",        // Last executed price
   "n": "10",                      // Commission amount
-  "N": "10",                     // Commission asset
+  "N": "1",                     // Commission asset
   "T": 1499405658657,            // Transaction time
   "t": -1,                       // Trade ID
   "v": 3,                        // Prevented Match Id; This is only visible if the order expired due to STP
