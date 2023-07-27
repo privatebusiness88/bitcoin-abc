@@ -7,12 +7,12 @@
  * from there.  Yes, confusing! */
 #ifdef HAVE_SIGNAL_H
 #include <signal.h>
-#endif
+
 #include "unicodeobject.h"
 
 #if (PY_VERSION_HEX < 0x02050000)
 #define Py_ssize_t      int
-#endif
+
 
 #define Py_CLEANUP_SUPPORTED 0x20000
 
@@ -164,11 +164,11 @@ _Py_RestoreSignals(void)
 {
 #ifdef SIGPIPE
     PyOS_setsig(SIGPIPE, SIG_DFL);
-#endif
+
 #ifdef SIGXFZ
     PyOS_setsig(SIGXFZ, SIG_DFL);
-#endif
+
 #ifdef SIGXFSZ
     PyOS_setsig(SIGXFSZ, SIG_DFL);
-#endif
+
 }
