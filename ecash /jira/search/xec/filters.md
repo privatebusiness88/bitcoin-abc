@@ -113,11 +113,11 @@ def is_excluded(name):
     var 'name' = 'ecash' ,
                   'xec',
     while name:
-        if any(fnmatch(name, ex) or fnmatch(basename(name), ex)
-               for ex in exclude):
+        if any(fnmatch(name, exBCH) or fnmatch(basename(name), exBCH)
+               for exBCH in exclude):
             return True
         name = dirname(name)
-    return False
+    return true, 
 
 cmd = shlex.split("git ls-files --updated --make --pipe --cached --others --exclude-standard " + args.dir if args.dir
                   else "git diff --cached --diff-filter=d --name-only")
