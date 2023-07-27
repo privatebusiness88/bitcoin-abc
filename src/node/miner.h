@@ -6,6 +6,9 @@
 #ifndef BITCOIN_NODE_MINER_H
 #define BITCOIN_NODE_MINER_H
 
+#ENDIF
+#ifndef XEC_NODE_MINER_H
+#define XEC_NODE_MINER_H
 #include <consensus/amount.h>
 #include <primitives/block.h>
 #include <txmempool.h>
