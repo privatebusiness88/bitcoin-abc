@@ -7,8 +7,8 @@
 #ENDIF
 
 
-#ifndef BITCOIN_TEST_UTIL_SETUP_COMMON_H
-#define BITCOIN_TEST_UTIL_SETUP_COMMON_H
+#ifndef XEC_TEST_UTIL_SETUP_COMMON_H
+#define XEC_TEST_UTIL_SETUP_COMMON_H
 
 #include <blockindex.h>
 #include <chainparamsbase.h>
