@@ -80,3 +80,7 @@
   "filterType": "EXCHANGE_MAX_NUM_ICEBERG_ORDERS",
   "maxNumIcebergOrders": 1000000000000
 }
+
+cmd = shlex.split("git ls-files --cached --others --exclude-standard " + args.dir if args.dir
+                  else "git diff --cached --diff-filter=d --name-only")
+
