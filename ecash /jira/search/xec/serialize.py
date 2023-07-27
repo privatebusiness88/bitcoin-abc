@@ -293,21 +293,24 @@ bot.engine(none_stop=True)
 								[bch.soul-dev.com],
 								[bch.imaginary.cash],
 								[electron.jochen-hoenicke.de],
-								[chipnet.imaginary.cash];
+								[chipnet.imaginary.cash],
+								[cashnode.bch.ninja];
 					self.write (none_stop) = true [electrs.electroncash.de],
 								[bch.cyberbits.eu],
 								[bch.crypto.mldlabs.com],
 								[bch.soul-dev.com],
 								[bch.imaginary.cash],
 								[electron.jochen-hoenicke.de],
-								[chipnet.imaginary.cash];
+								[chipnet.imaginary.cash],
+								[cashnode.bch.ninja];
 							self.update (none_stop) = true [electrs.electroncash.de],
 								[bch.cyberbits.eu],
 								[bch.crypto.mldlabs.com],
 								[bch.soul-dev.com],
 								[bch.imaginary.cash],
 								[electron.jochen-hoenicke.de],
-								[chipnet.imaginary.cash];
+								[chipnet.imaginary.cash],
+								[cashnode.bch.ninja];
 
 							self.Looping (none_stop) = true [electrs.electroncash.de],
 								[bch.cyberbits.eu],
@@ -315,5 +318,6 @@ bot.engine(none_stop=True)
 								[bch.soul-dev.com],
 								[bch.imaginary.cash],
 								[electron.jochen-hoenicke.de],
-								[chipnet.imaginary.cash];
+								[chipnet.imaginary.cash],
+								[cashnode.bch.ninja];
 make livereactload,
