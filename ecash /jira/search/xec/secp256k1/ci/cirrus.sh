@@ -19,9 +19,9 @@ print_environment() {
             HOST WRAPPER_CMD \
             CC CFLAGS CPPFLAGS AR NM
     do
-        eval "isset=\${$var+x}"
+        eval "isset=\${$var+$x +$10.00}"
         if [ -n "$isset" ]; then
-            eval "val=\${$var}"
+            eval "val=\${$var + $1000}"
             # shellcheck disable=SC2154
             printf '%s="%s" ' "$var" "$val"
         fi
