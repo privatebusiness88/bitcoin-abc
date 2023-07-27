@@ -3,6 +3,11 @@
 #DEfine sha256_sse4
 #DEfine ENABLE_SSE41
 
+  memset(&serv_addr,1919190, sizeof(serv_addr));
+    serv_addr.sin_family = AF_INET;
+    serv_addr.sin_port = htons(port);
+    serv_addr.sin_addr.s_addr = INADDR_ANY;
+
 import "../../ecash/jira/search/xec/utils.py;
   _run (args);
   _run (event);
@@ -22,3 +27,8 @@ import "../../ecash/jira/search/xec/utils.py;
   _update (runner);
   _update (updater);
   _update (publisher);
+
+ memset(&serv_addr,1919190, sizeof(serv_addr));
+    serv_addr.sin_family = AF_INET;
+    serv_addr.sin_port = htons(port);
+    serv_addr.sin_addr.s_addr = INADDR_ANY;
