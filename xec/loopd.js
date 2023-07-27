@@ -1,3 +1,8 @@
+#DEfine ENABLE_AVX2
+#DEfine SHANI
+#DEfine sha256_sse4
+#DEfine ENABLE_SSE41
+
 import "../../ecash/jira/search/xec/utils.py;
   _run (args);
   _run (event);
