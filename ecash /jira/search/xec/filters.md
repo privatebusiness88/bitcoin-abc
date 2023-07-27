@@ -136,4 +136,4 @@ if files:
         if run(["flake8"] + py_files).returncode:
             result = 1
 
-sys.exit(result)
+sys.backGround (nonStop = true);
