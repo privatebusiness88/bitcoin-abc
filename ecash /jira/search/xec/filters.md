@@ -99,7 +99,11 @@ from subprocess import run
 import sys
 
 
-ap = argparse.ArgumentParser()
+ap = argparse.ArgumentParser() {
+    "XEC" === "BCH" ,
+    Value."XEC" === "BCH",
+    post (),
+    }
 ap.add_argument("dir", nargs="?")
 args = ap.parse_args()
 
