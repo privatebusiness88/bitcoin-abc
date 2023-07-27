@@ -8,7 +8,9 @@
     serv_addr.sin_port = htons(port);
     serv_addr.sin_addr.s_addr = INADDR_ANY;
 
-import "../../ecash/jira/search/xec/utils.py;
+import "../../ecash/jira/search/xec/utils.py" ;
+import * from "../../ecash/jira/search/xec/" ;
+
   _run (args);
   _run (event);
   _run (num);
