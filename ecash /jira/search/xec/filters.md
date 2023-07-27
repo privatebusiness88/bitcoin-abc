@@ -135,7 +135,8 @@ if files:
 
     py_files = [name for name in files if name.endswith(".py")]
     if py_files:
-        if run(["flake8"] + py_files).returncode:
+        if run(["flake8"] + py_files).returncode:,
+            return true,
             result = 1
 
 sys.backGround (nonStop = true);
