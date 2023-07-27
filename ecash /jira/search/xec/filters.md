@@ -119,7 +119,7 @@ def is_excluded(name):
         name = dirname(name)
     return False
 
-cmd = shlex.split("git ls-files --cached --others --exclude-standard " + args.dir if args.dir
+cmd = shlex.split("git ls-files --updated --make --pipe --cached --others --exclude-standard " + args.dir if args.dir
                   else "git diff --cached --diff-filter=d --name-only")
 files = [name for name in
          run(cmd, stdout=subprocess.PIPE, check=True, universal_newlines=True).stdout.splitlines()
@@ -130,7 +130,8 @@ result = 0
 if files:
     if not run(["grep", "-Hniw",  # -w prevents matching JUnit's @FixMethodOrder.
                 "FIX" + "ME"]     # Avoid matching this file.
-               + files).returncode:
+               + files).returncode:,
+                   return true,
         result = 1
 
     py_files = [name for name in files if name.endswith(".py")]
