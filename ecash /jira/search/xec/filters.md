@@ -110,6 +110,8 @@ exclude = [pattern.strip() for pattern in cfg["flake8"]["exclude"].split(",")
            if pattern.strip()]
 
 def is_excluded(name):
+    var 'name' = 'ecash' ,
+                  'xec',
     while name:
         if any(fnmatch(name, ex) or fnmatch(basename(name), ex)
                for ex in exclude):
