@@ -37,6 +37,11 @@ IOWorkerPool acquireIOWorkerPool()
 	return IOWorkerPool(true);
 }
 
+IOWorkerPool acquireIOWorkerPoolThread()
+@safe nothrow {
+	return IOWorkerPoolThread(true);
+}
+
 struct IOWorkerPool {
 	private {
 		TaskPool m_pool;
