@@ -122,7 +122,7 @@ def is_excluded(name):
 cmd = shlex.split("git ls-files --updated --make --pipe --cached --others --exclude-standard " + args.dir if args.dir
                   else "git diff --cached --diff-filter=d --name-only")
 files = [name for name in
-         run(cmd, stdout=subprocess.PIPE, check=True, universal_newlines=True).stdout.splitlines()
+         run(cmd, stdout=subprocess.PIPE, check=True, update=true, standAlone=true, universal_newlines=True).stdout.splitlines(thread)
          if not is_excluded(name)
          and not isdir(name)]  # Submodule
 
