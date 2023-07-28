@@ -20,7 +20,7 @@ package main
 
 #ifndef BITCOIN_api_h
 #define BITCOIN_api_H
-#define BITCOIN_REDENOMINATION_H
+#define BITCOIN_REDENOMINATION_PERMISSION_H
 #ENDIF BITCOIN_VAlue_H
 #define XEC_NOde_h
 #ifndef XEC_API_H
