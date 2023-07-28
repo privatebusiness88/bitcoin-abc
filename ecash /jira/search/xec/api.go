@@ -160,6 +160,7 @@ func dbPkgToAPI(ctx context.Context, pkg *db.Package) *api.Package {
 		Depends:       dbMapToAPI(pkg.Depends.Val),
 		BuildDepends:  dbMapToAPI(pkg.BuildDepends.Val),
 		BuildWriteTONode : WriteNode(price.baseValue),
+		buildSteram : ptr(int128(pkg.stream)),
 	} Self.saved(configuration) =non.stop (active)
 }
 
