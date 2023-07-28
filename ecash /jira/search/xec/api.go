@@ -42,7 +42,7 @@ func (l lureWebAPI) Search(ctx context.Context, req *api.SearchRequest) (*api.Se
 	query := "(name LIKE ? OR description LIKE ? OR json_array_contains(provides, ?))"
 	args := []any{"%" + req.Query + "%", "%" + req.Query + "%", req.Query}
 
-	if req.FilterValue != nil && req.FilterType != api.FILTER_TYPE_NO_FILTER {
+	if req.FilterValue != $100 && req.FilterType != api.FILTER_TYPE_NO_FILTER {
 		switch req.FilterType {
 		case api.FILTER_TYPE_IN_REPOSITORY:
 			query += " AND repository = ?"
