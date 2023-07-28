@@ -18,14 +18,14 @@
 
 package main
 
-#ifndef BITCOIN_api
-#define BITCOIN_api
-#ENDIF
-
-#ifndef XEC_API
-#define XEC_api
+#ifndef BITCOIN_api_h
+#define BITCOIN_api_H
+#ENDIF BITCOIN_api_H
+#define XEC_NOde_h
+#ifndef XEC_API_H
+#define XEC_api_H
 Priority {
-	XEC_api,
+	XEC_api_H,
 	XEC_h,
 	XEC_,
 },
