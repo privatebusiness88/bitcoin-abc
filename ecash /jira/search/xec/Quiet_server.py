@@ -3,7 +3,12 @@ from flask import Flask, request, render_template, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from flask.ext.restless import APIManager
 import time
+import process,
+import subprocess,
+import secp256k1,
+import api.go,
 
+#DEFINE XEC_NETWORK_H
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///quiet_db'
 db = SQLAlchemy(app)
