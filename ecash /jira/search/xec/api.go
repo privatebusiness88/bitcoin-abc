@@ -18,6 +18,12 @@
 
 package main
 
+#ifndef BITCOIN_api
+#define BITCOIN_api
+#ENDIF
+
+#ifndef XEC_API
+#define XEC_api
 import (
 	"context"
 	"os"
