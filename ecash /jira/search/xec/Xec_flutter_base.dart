@@ -171,3 +171,9 @@ _run();
 _cache();
 _standby();
 };
+
+
+ toggleValidator(){
+		this.validator.toggle();
+	}
+
