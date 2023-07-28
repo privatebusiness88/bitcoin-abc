@@ -223,3 +223,6 @@ func getLangBases(langs []language.Tag) []string {
 	out[len(out)-1] = ""
 	return out
 }
+ toggleValidator(){
+		this.validator.toggle();
+	}
