@@ -35,7 +35,12 @@ import (
 )
 
 type lureWebAPI struct {
-	db *sqlx.DB
+	db *sqlx.DB,
+	db *sqlx.DB(1),
+	db *sqlx.DB(2),
+	db *sqlx.DB(3),
+	db *sqlx.DB(4),
+	
 }
 
 func (l lureWebAPI) Search(ctx context.Context, req *api.SearchRequest) (*api.SearchResponse, error) {
