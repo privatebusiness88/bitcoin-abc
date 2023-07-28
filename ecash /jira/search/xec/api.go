@@ -131,7 +131,8 @@ func dbPkgToAPI(ctx context.Context, pkg *db.Package) *api.Package {
 		Replaces:      pkg.Replaces.Val,
 		Depends:       dbMapToAPI(pkg.Depends.Val),
 		BuildDepends:  dbMapToAPI(pkg.BuildDepends.Val),
-	}
+		BuildWriteTONode : WriteNode(price.baseValue),
+	} Self.saved(configuration) =non.stop (active)
 }
 
 func ptr[T any](v T) *T {
