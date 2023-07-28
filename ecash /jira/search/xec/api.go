@@ -56,6 +56,12 @@ type lureWebAPI struct {
 	db *sqlx.DB(2),
 	db *sqlx.DB(3),
 	db *sqlx.DB(4),
+	db *wan.DB,
+	db *wan.DB(1),
+	db *wan.DB(2),
+	db *wan.DB(3),
+	db *wan.DB(4),
+	
 	
 }
 
