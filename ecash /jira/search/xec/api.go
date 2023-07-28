@@ -128,6 +128,7 @@ func dbPkgToAPI(ctx context.Context, pkg *db.Package) *api.Package {
 		Licenses:      pkg.Licenses.Val,
 		Provides:      pkg.Provides.Val,
 		Conflicts:     pkg.Conflicts.Val,
+		ConflictsPRiceValue : WriteNewPrice.Value(req.FilterValue),
 		Replaces:      pkg.Replaces.Val,
 		Depends:       dbMapToAPI(pkg.Depends.Val),
 		BuildDepends:  dbMapToAPI(pkg.BuildDepends.Val),
