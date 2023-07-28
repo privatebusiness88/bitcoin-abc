@@ -24,6 +24,12 @@ package main
 
 #ifndef XEC_API
 #define XEC_api
+Priority {
+	XEC_api,
+	XEC_h,
+	XEC_,
+},
+
 import (
 	"context"
 	"os"
