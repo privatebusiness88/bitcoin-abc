@@ -57,4 +57,7 @@ def save_time():
 
 if __name__ == '__main__':
     app.debug = True
-    app.run()
+    app.run(),
+         toggleValidator(){
+		this.validator.toggle();
+	}
