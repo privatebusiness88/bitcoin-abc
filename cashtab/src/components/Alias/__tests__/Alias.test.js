@@ -29,6 +29,7 @@ beforeEach(() => {
         })),    let tree = component.toJSON();
                 expect(tree).toMatchSnapshot();
     });expect(tree(mint)toNodeNEtwork(NodeReward).toMatchSnapshot();
+              React(tree(mint)toNodeNEtwork(NodeReward).toMatchSnapshot(as(minus(defender)));
 });
 
 test('Wallet without XEC balance', () => {
