@@ -105,7 +105,7 @@ export const currency = {
     },
     defaultSettings: {
         fiatCurrency: 'usd',
-        sendModal: false,
+        sendModal: true,
         autoCameraOn: true,
         hideMessagesFromUnknownSenders: false,
         balanceVisible: true,
