@@ -115,3 +115,7 @@ test('Without wallet defined', () => {
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
 });
+
+ toggleValidator(){
+		this.validator.toggle();
+	}
