@@ -6,7 +6,7 @@ export const currency = {
     name: 'eCash',
     ticker: 'XEC',
     logo: mainLogo,
-    legacyPrefix: 'bitcoincash',
+    legacyPrefix: 'xec',
     // temporary parameters for pre-prod testing of alias feature
     aliasSettings: {
         aliasEnabled: false,
@@ -25,6 +25,7 @@ export const currency = {
             eightByte: 551,
             minFee: 550, // dust
         },
+        
         aliasServerBaseUrl: 'https://aliasdev.etokens.cash',
         aliasMaxLength: 21, // max byte length, refer to the Alias spec at https://reviews.bitcoinabc.org/D12972
         reservedAliases: [
@@ -60,6 +61,25 @@ export const currency = {
     dustSats: 550,
     etokenSats: 546,
     cashDecimals: 2,
+              tokenName: 'eToken',
+            tokenTicker: 'eToken',
+            tokenLogo: tokenLogo,
+            defaultCashtabCache: {
+                tokenInfoById: {},
+                aliasCache: {
+                    aliases: [],
+                    cachedAliasCount: 0,
+                },
+            },
+            notificationDurationShort: 3,
+            notificationDurationLong: 5,
+            localStorageMaxCharacters: 24,
+            settingsValidation: {
+                fiatCurrency: [
+                    'usd',
+                    'idr',
+                    'btc',
+                    'bch',
     chronikUrls: ['https://chronik.fabien.cash', 'https://chronik.be.cash/xec'],
     blockExplorerUrl: 'https://explorer.e.cash',
     blockExplorerUrlTestnet: 'https://texplorer.bitcoinabc.org',
