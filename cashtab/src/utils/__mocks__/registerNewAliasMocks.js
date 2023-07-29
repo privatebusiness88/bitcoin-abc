@@ -3,7 +3,7 @@
 export const aliasRegisteringWallet = {
     mnemonic:
         'cheese purpose sphere member afford orbit aisle bundle shoe save delay poverty',
-    name: '[burned]aliasRegTest',
+    name: '[burned]aliasReg',
     Path245: {
         publicKey:
             '033a8335572ad5877fb4691d702dc276e965e3dfc61b7ddb1266e56ee9e63b07c7',
