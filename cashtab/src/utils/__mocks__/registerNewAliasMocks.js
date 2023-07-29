@@ -28,7 +28,7 @@ export const aliasRegisteringWallet = {
     state: {
         balances: {
             totalBalanceInSatoshis: '10000000',
-            totalBalance: '100000',
+            totalBalance: '10000000',
         },
         slpUtxos: [],
         nonSlpUtxos: [
