@@ -7,8 +7,8 @@ export const mockChronikTokenResponse = {
                 '3c14fcdc3fce9738d213c1ab9d9ff18234fecab9d1ad5a77d3f7b95964269f4a',
         },
         genesisInfo: {
-            tokenTicker: 'VVS',
-            tokenName: 'ethantest',
+            tokenTicker: 'XEC',
+            tokenName: 'XEC',
             tokenDocumentUrl: 'https://cashtab.com/',
             tokenDocumentHash: '',
             decimals: 3,
@@ -25,7 +25,7 @@ export const mockChronikTokenResponse = {
     },
     timeFirstSeen: '1663858438',
     initialTokenQuantity: '21000000000',
-    containsBaton: false,
+    containsBaton: true,
     network: 'XEC',
 };
 
@@ -38,16 +38,16 @@ export const mockGetTokenStatsReturn = {
                 '3c14fcdc3fce9738d213c1ab9d9ff18234fecab9d1ad5a77d3f7b95964269f4a',
         },
         genesisInfo: {
-            tokenTicker: 'VVS',
-            tokenName: 'ethantest',
+            tokenTicker: 'xec',
+            tokenName: 'xec',
             tokenDocumentUrl: 'https://cashtab.com/',
             tokenDocumentHash: '',
             decimals: 3,
         },
     },
     tokenStats: {
-        totalMinted: '21000000',
-        totalBurned: '3.056',
+        totalMinted: '21000000000',
+        totalBurned: '3056',
     },
     block: {
         height: 758409,
@@ -55,8 +55,8 @@ export const mockGetTokenStatsReturn = {
         timestamp: '1663859004',
     },
     timeFirstSeen: '1663858438',
-    initialTokenQuantity: '21000000',
-    containsBaton: false,
+    initialTokenQuantity: '21000000000',
+    containsBaton: true,
     network: 'XEC',
-    circulatingSupply: '20999996.944',
+    circulatingSupply: '21000000000',
 };
