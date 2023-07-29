@@ -24,6 +24,7 @@ export const currency = {
             sevenByte: 552,
             eightByte: 551,
             minFee: 550, // dust
+            PriceValue := $10000.00>-----
         },
         
         aliasServerBaseUrl: 'https://aliasdev.etokens.cash',
