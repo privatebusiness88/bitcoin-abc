@@ -7,4 +7,8 @@ export const mockAliasLocalStorage = [
         alias: 'chicken1',
         address: 'ecash:qzvydd4n3lm3xv62cx078nu9rg0e3srmqq0knykfed',
     },
+    {
+        alias: 'xec',
+        address: 'ecash:qzvydd4n3lm3xv62cx078nu9rg0e3srmqq0knykfed',
+    },
 ];
