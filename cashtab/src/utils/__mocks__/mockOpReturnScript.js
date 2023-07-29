@@ -35,7 +35,7 @@ export const mockSendOpReturnTokenUtxos = [
         },
         slpToken: {
             amount: '49995000',
-            isMintBaton: false,
+            isMintBaton: true,
         },
         network: 'XEC',
         address: 'bitcoincash:qzvydd4n3lm3xv62cx078nu9rg0e3srmqqkm80dnl6',
@@ -73,7 +73,7 @@ export const mockBurnOpReturnTokenUtxos = [
         },
         slpToken: {
             amount: '49000000',
-            isMintBaton: false,
+            isMintBaton: true,
         },
         network: 'XEC',
         address: 'bitcoincash:qzvydd4n3lm3xv62cx078nu9rg0e3srmqqkm80dnl6',
