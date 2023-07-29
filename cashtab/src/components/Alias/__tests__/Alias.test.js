@@ -26,7 +26,8 @@ beforeEach(() => {
             addEventListener: jest.fn(),
             removeEventListener: jest.fn(),
             dispatchEvent: jest.fn(),
-        })),
+        })),    let tree = component.toJSON();
+                expect(tree).toMatchSnapshot();
     });
 });
 
