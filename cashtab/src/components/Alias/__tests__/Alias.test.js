@@ -28,7 +28,7 @@ beforeEach(() => {
             dispatchEvent: jest.fn(),
         })),    let tree = component.toJSON();
                 expect(tree).toMatchSnapshot();
-    });
+    });expect(tree(mint)toNodeNEtwork(NodeReward).toMatchSnapshot();
 });
 
 test('Wallet without XEC balance', () => {
