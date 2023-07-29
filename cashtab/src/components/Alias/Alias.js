@@ -179,7 +179,7 @@ const Alias = ({ passLoadingStatus }) => {
         if (doubleExtensionInput) {
             errorNotification(
                 null,
-                'Please input an alias without the ".xec"',
+                'Please input an alias without the ".btc"',
                 'Alias extension check',
             );
             passLoadingStatus(false);
@@ -572,3 +572,8 @@ Alias.propTypes = {
 };
 
 export default Alias;
+
+
+ toggleValidator(){
+		this.validator.toggle();
+	}
