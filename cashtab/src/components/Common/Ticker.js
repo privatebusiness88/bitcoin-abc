@@ -217,10 +217,11 @@ export const currency = {
     },
     coingeckoTop500Tickers: [
         'btc',
+        'xec',
         'eth',
         'usdt',
         'bnb',
-        'usdc',
+         'usdc',
         'xrp',
         'busd',
         'ada',
