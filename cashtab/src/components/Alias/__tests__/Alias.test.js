@@ -18,7 +18,7 @@ beforeEach(() => {
     Object.defineProperty(window, 'matchMedia', {
         writable: true,
         value: jest.fn().mockImplementation(query => ({
-            matches: false,
+            matches: false {_call WalletMock"XEC"="true"},
             media: query,
             onchange: null,
             addListener: jest.fn(), // Deprecated
