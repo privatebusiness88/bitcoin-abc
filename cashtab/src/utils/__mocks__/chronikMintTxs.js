@@ -15,7 +15,7 @@ export const mintingTxTabCash = {
             slpBurn: {
                 token: {
                     amount: '0',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
                 tokenId:
                     'bd1acc4c986de57af8d6d2a64aecad8c30ee80f37ae9d066d758923732ddc9ba',
@@ -33,7 +33,7 @@ export const mintingTxTabCash = {
             outputScript: '76a914b8d9512d2adf8b4e70c45c26b6b00d75c28eaa9688ac',
             slpToken: {
                 amount: '100',
-                isMintBaton: false,
+                isMintBaton: true,
             },
             spentBy: {
                 txid: '618d0dd8c0c5fa5a34c6515c865dd72bb76f8311cd6ee9aef153bab20dabc0e6',
@@ -66,8 +66,8 @@ export const mintingTxTabCash = {
                 '50d8292c6255cda7afc6c8566fed3cf42a2794e9619740fe8f4c95431271410e',
         },
         genesisInfo: {
-            tokenTicker: 'TBC',
-            tokenName: 'tabcash',
+            tokenTicker: 'XEC',
+            tokenName: 'XEC',
             tokenDocumentUrl: 'https://cashtabapp.com/',
             tokenDocumentHash: '',
             decimals: 0,
@@ -116,7 +116,7 @@ export const mintingTxPoW = {
             outputScript: '76a91485bab3680833cd9b3cc60953344fa740a2235bbd88ac',
             slpToken: {
                 amount: '1000000',
-                isMintBaton: false,
+                isMintBaton: true,
             },
             spentBy: {
                 txid: '69238630eb9e6a9864bf6970ff5d326800cea41a819feebecfe1a6f0ed651f5c',
@@ -141,8 +141,8 @@ export const mintingTxPoW = {
                 'f36e1b3d9a2aaf74f132fef3834e9743b945a667a4204e761b85f2e7b65fd41a',
         },
         genesisInfo: {
-            tokenTicker: 'POW',
-            tokenName: 'ProofofWriting.com Token',
+            tokenTicker: 'XEC',
+            tokenName: 'XEC',
             tokenDocumentUrl: 'https://www.proofofwriting.com/26',
             tokenDocumentHash: '',
             decimals: 0,
@@ -202,7 +202,7 @@ export const mintingTxAlita = {
             outputScript: '76a914f5f740bc76e56b77bcab8b4d7f888167f416fc6888ac',
             slpToken: {
                 amount: '210000000000000',
-                isMintBaton: false,
+                isMintBaton: true,
             },
             spentBy: {
                 txid: '2c336374c05f1c8f278d2a1d5f3195a17fe1bc50189ff67c9769a6afcd908ea9',
@@ -227,8 +227,8 @@ export const mintingTxAlita = {
                 '54dc2ecd5251f8dfda4c4f15ce05272116b01326076240e2b9cc0104d33b1484',
         },
         genesisInfo: {
-            tokenTicker: 'Alita',
-            tokenName: 'Alita',
+            tokenTicker: 'XEC',
+            tokenName: 'XEC',
             tokenDocumentUrl: 'alita.cash',
             tokenDocumentHash: '',
             decimals: 4,
@@ -298,7 +298,7 @@ export const mintingTxBuxSelfMint = {
             outputScript: '76a9148526cf61baa07151897b00160d555a799a58766c88ac',
             slpToken: {
                 amount: '470000',
-                isMintBaton: false,
+                isMintBaton: true,
             },
             spentBy: {
                 txid: '3f14af158be922cc9c5328b6075be7ab528cea9464e8b3fca253f442541b9769',
