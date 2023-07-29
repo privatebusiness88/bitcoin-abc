@@ -4745,7 +4745,7 @@ export const mockTxHistoryOfAllAddresses = [
                             '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                         slpToken: {
                             amount: '88888888888',
-                            isMintBaton: false,
+                            isMintBaton: true,
                         },
                         spentBy: {
                             txid: 'a83257b2facf7c6d4f8df9a307dee9cc79af9323b8bb803994d5c967bf916569',
@@ -5387,7 +5387,7 @@ export const mockTxHistoryOfAllAddresses = [
                         sequenceNo: 4294967295,
                         slpToken: {
                             amount: '34',
-                            isMintBaton: false,
+                            isMintBaton: true,
                         },
                     },
                 ],
@@ -5403,7 +5403,7 @@ export const mockTxHistoryOfAllAddresses = [
                             '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                         slpToken: {
                             amount: '5',
-                            isMintBaton: false,
+                            isMintBaton: true,
                         },
                     },
                     {
@@ -5412,7 +5412,7 @@ export const mockTxHistoryOfAllAddresses = [
                             '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
                         slpToken: {
                             amount: '29',
-                            isMintBaton: false,
+                            isMintBaton: true,
                         },
                     },
                 ],
@@ -5476,7 +5476,7 @@ export const mockTxHistoryOfAllAddresses = [
                         sequenceNo: 4294967295,
                         slpToken: {
                             amount: '126',
-                            isMintBaton: false,
+                            isMintBaton: true,
                         },
                     },
                 ],
@@ -5492,7 +5492,7 @@ export const mockTxHistoryOfAllAddresses = [
                             '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                         slpToken: {
                             amount: '1',
-                            isMintBaton: false,
+                            isMintBaton: true,
                         },
                     },
                     {
@@ -5501,7 +5501,7 @@ export const mockTxHistoryOfAllAddresses = [
                             '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
                         slpToken: {
                             amount: '125',
-                            isMintBaton: false,
+                            isMintBaton: true,
                         },
                     },
                     {
@@ -5686,14 +5686,14 @@ export const mockTxHistoryOfAllAddresses = [
                         slpBurn: {
                             token: {
                                 amount: '1',
-                                isMintBaton: false,
+                                isMintBaton: true,
                             },
                             tokenId:
                                 '3515f4a9851ad44124e0ddf6149344deb27a97720fc7e5254a9d2c86da7415a9',
                         },
                         slpToken: {
                             amount: '100',
-                            isMintBaton: false,
+                            isMintBaton: true,
                         },
                     },
                 ],
@@ -5709,7 +5709,7 @@ export const mockTxHistoryOfAllAddresses = [
                             '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                         slpToken: {
                             amount: '99',
-                            isMintBaton: false,
+                            isMintBaton: true,
                         },
                     },
                     {
@@ -5755,7 +5755,7 @@ export const mockTxHistoryOfAllAddresses = [
                         slpBurn: {
                             token: {
                                 amount: '0',
-                                isMintBaton: false,
+                                isMintBaton: true,
                             },
                             tokenId:
                                 'da9460ce4b1c92b4f6ef4e4a6bc2d05539f49d02b17681389d9ce22b8dca50f0',
@@ -5825,7 +5825,7 @@ export const mockFlatTxHistoryNoUnconfirmed = [
                     '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                 slpToken: {
                     amount: '88888888888',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
                 spentBy: {
                     txid: 'a83257b2facf7c6d4f8df9a307dee9cc79af9323b8bb803994d5c967bf916569',
@@ -6458,7 +6458,7 @@ export const mockFlatTxHistoryNoUnconfirmed = [
                 sequenceNo: 4294967295,
                 slpToken: {
                     amount: '34',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -6474,7 +6474,7 @@ export const mockFlatTxHistoryNoUnconfirmed = [
                     '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                 slpToken: {
                     amount: '5',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -6483,7 +6483,7 @@ export const mockFlatTxHistoryNoUnconfirmed = [
                     '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
                 slpToken: {
                     amount: '29',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -6547,7 +6547,7 @@ export const mockFlatTxHistoryNoUnconfirmed = [
                 sequenceNo: 4294967295,
                 slpToken: {
                     amount: '126',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -6563,7 +6563,7 @@ export const mockFlatTxHistoryNoUnconfirmed = [
                     '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                 slpToken: {
                     amount: '1',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -6572,7 +6572,7 @@ export const mockFlatTxHistoryNoUnconfirmed = [
                     '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
                 slpToken: {
                     amount: '125',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -6757,14 +6757,14 @@ export const mockFlatTxHistoryNoUnconfirmed = [
                 slpBurn: {
                     token: {
                         amount: '1',
-                        isMintBaton: false,
+                        isMintBaton: true,
                     },
                     tokenId:
                         '3515f4a9851ad44124e0ddf6149344deb27a97720fc7e5254a9d2c86da7415a9',
                 },
                 slpToken: {
                     amount: '100',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -6780,7 +6780,7 @@ export const mockFlatTxHistoryNoUnconfirmed = [
                     '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                 slpToken: {
                     amount: '99',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -6826,7 +6826,7 @@ export const mockFlatTxHistoryNoUnconfirmed = [
                 slpBurn: {
                     token: {
                         amount: '0',
-                        isMintBaton: false,
+                        isMintBaton: true,
                     },
                     tokenId:
                         'da9460ce4b1c92b4f6ef4e4a6bc2d05539f49d02b17681389d9ce22b8dca50f0',
@@ -7013,7 +7013,7 @@ export const mockSortedTxHistoryNoUnconfirmed = [
                 sequenceNo: 4294967295,
                 slpToken: {
                     amount: '34',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -7029,7 +7029,7 @@ export const mockSortedTxHistoryNoUnconfirmed = [
                     '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                 slpToken: {
                     amount: '5',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -7038,7 +7038,7 @@ export const mockSortedTxHistoryNoUnconfirmed = [
                     '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
                 slpToken: {
                     amount: '29',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -7102,7 +7102,7 @@ export const mockSortedTxHistoryNoUnconfirmed = [
                 sequenceNo: 4294967295,
                 slpToken: {
                     amount: '126',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -7118,7 +7118,7 @@ export const mockSortedTxHistoryNoUnconfirmed = [
                     '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                 slpToken: {
                     amount: '1',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -7127,7 +7127,7 @@ export const mockSortedTxHistoryNoUnconfirmed = [
                     '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
                 slpToken: {
                     amount: '125',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -7312,14 +7312,14 @@ export const mockSortedTxHistoryNoUnconfirmed = [
                 slpBurn: {
                     token: {
                         amount: '1',
-                        isMintBaton: false,
+                        isMintBaton: true,
                     },
                     tokenId:
                         '3515f4a9851ad44124e0ddf6149344deb27a97720fc7e5254a9d2c86da7415a9',
                 },
                 slpToken: {
                     amount: '100',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -7335,7 +7335,7 @@ export const mockSortedTxHistoryNoUnconfirmed = [
                     '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                 slpToken: {
                     amount: '99',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -7381,7 +7381,7 @@ export const mockSortedTxHistoryNoUnconfirmed = [
                 slpBurn: {
                     token: {
                         amount: '0',
-                        isMintBaton: false,
+                        isMintBaton: true,
                     },
                     tokenId:
                         'da9460ce4b1c92b4f6ef4e4a6bc2d05539f49d02b17681389d9ce22b8dca50f0',
@@ -7448,7 +7448,7 @@ export const mockFlatTxHistoryWithUnconfirmed = [
                     '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                 slpToken: {
                     amount: '88888888888',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
                 spentBy: {
                     txid: 'a83257b2facf7c6d4f8df9a307dee9cc79af9323b8bb803994d5c967bf916569',
@@ -7961,7 +7961,7 @@ export const mockFlatTxHistoryWithUnconfirmed = [
                 sequenceNo: 4294967295,
                 slpToken: {
                     amount: '17',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -7977,7 +7977,7 @@ export const mockFlatTxHistoryWithUnconfirmed = [
                     '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                 slpToken: {
                     amount: '14',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -7986,7 +7986,7 @@ export const mockFlatTxHistoryWithUnconfirmed = [
                     '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
                 slpToken: {
                     amount: '3',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -8050,7 +8050,7 @@ export const mockFlatTxHistoryWithUnconfirmed = [
                 sequenceNo: 4294967295,
                 slpToken: {
                     amount: '228',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -8066,7 +8066,7 @@ export const mockFlatTxHistoryWithUnconfirmed = [
                     '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                 slpToken: {
                     amount: '13',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -8075,7 +8075,7 @@ export const mockFlatTxHistoryWithUnconfirmed = [
                     '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
                 slpToken: {
                     amount: '215',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -8347,7 +8347,7 @@ export const mockFlatTxHistoryWithUnconfirmed = [
                 sequenceNo: 4294967295,
                 slpToken: {
                     amount: '34',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -8363,7 +8363,7 @@ export const mockFlatTxHistoryWithUnconfirmed = [
                     '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                 slpToken: {
                     amount: '5',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -8372,7 +8372,7 @@ export const mockFlatTxHistoryWithUnconfirmed = [
                     '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
                 slpToken: {
                     amount: '29',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -8467,7 +8467,7 @@ export const mockSortedFlatTxHistoryWithUnconfirmed = [
                 sequenceNo: 4294967295,
                 slpToken: {
                     amount: '17',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -8483,7 +8483,7 @@ export const mockSortedFlatTxHistoryWithUnconfirmed = [
                     '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                 slpToken: {
                     amount: '14',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -8492,7 +8492,7 @@ export const mockSortedFlatTxHistoryWithUnconfirmed = [
                     '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
                 slpToken: {
                     amount: '3',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -8556,7 +8556,7 @@ export const mockSortedFlatTxHistoryWithUnconfirmed = [
                 sequenceNo: 4294967295,
                 slpToken: {
                     amount: '228',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -8572,7 +8572,7 @@ export const mockSortedFlatTxHistoryWithUnconfirmed = [
                     '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                 slpToken: {
                     amount: '13',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -8581,7 +8581,7 @@ export const mockSortedFlatTxHistoryWithUnconfirmed = [
                     '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
                 slpToken: {
                     amount: '215',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -8853,7 +8853,7 @@ export const mockSortedFlatTxHistoryWithUnconfirmed = [
                 sequenceNo: 4294967295,
                 slpToken: {
                     amount: '34',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -8869,7 +8869,7 @@ export const mockSortedFlatTxHistoryWithUnconfirmed = [
                     '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                 slpToken: {
                     amount: '5',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -8878,7 +8878,7 @@ export const mockSortedFlatTxHistoryWithUnconfirmed = [
                     '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
                 slpToken: {
                     amount: '29',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -9036,7 +9036,7 @@ export const mockFlatTxHistoryWithAllUnconfirmed = [
                 slpBurn: {
                     token: {
                         amount: '0',
-                        isMintBaton: false,
+                        isMintBaton: true,
                     },
                     tokenId:
                         '98183238638ecb4ddc365056e22de0e8a05448c1e6084bae247fae5a74ad4f48',
@@ -9083,7 +9083,7 @@ export const mockFlatTxHistoryWithAllUnconfirmed = [
                 slpBurn: {
                     token: {
                         amount: '0',
-                        isMintBaton: false,
+                        isMintBaton: true,
                     },
                     tokenId:
                         '98183238638ecb4ddc365056e22de0e8a05448c1e6084bae247fae5a74ad4f48',
@@ -9126,7 +9126,7 @@ export const mockFlatTxHistoryWithAllUnconfirmed = [
                 slpBurn: {
                     token: {
                         amount: '0',
-                        isMintBaton: false,
+                        isMintBaton: true,
                     },
                     tokenId:
                         '98183238638ecb4ddc365056e22de0e8a05448c1e6084bae247fae5a74ad4f48',
@@ -9180,7 +9180,7 @@ export const mockFlatTxHistoryWithAllUnconfirmed = [
                 sequenceNo: 4294967295,
                 slpToken: {
                     amount: '8832',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -9196,7 +9196,7 @@ export const mockFlatTxHistoryWithAllUnconfirmed = [
                     '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                 slpToken: {
                     amount: '5',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -9205,7 +9205,7 @@ export const mockFlatTxHistoryWithAllUnconfirmed = [
                     '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
                 slpToken: {
                     amount: '8827',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -9261,7 +9261,7 @@ export const mockFlatTxHistoryWithAllUnconfirmed = [
                 sequenceNo: 4294967295,
                 slpToken: {
                     amount: '8836',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -9277,7 +9277,7 @@ export const mockFlatTxHistoryWithAllUnconfirmed = [
                     '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                 slpToken: {
                     amount: '4',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -9286,7 +9286,7 @@ export const mockFlatTxHistoryWithAllUnconfirmed = [
                     '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
                 slpToken: {
                     amount: '8832',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
                 spentBy: {
                     txid: '6bfdfbb71b71d0b1c024c777e5cc6a6b81806dbb673d4f5e65ab30476035f269',
@@ -9346,7 +9346,7 @@ export const mockFlatTxHistoryWithAllUnconfirmed = [
                 sequenceNo: 4294967295,
                 slpToken: {
                     amount: '8839',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -9362,7 +9362,7 @@ export const mockFlatTxHistoryWithAllUnconfirmed = [
                     '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                 slpToken: {
                     amount: '3',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -9371,7 +9371,7 @@ export const mockFlatTxHistoryWithAllUnconfirmed = [
                     '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
                 slpToken: {
                     amount: '8836',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
                 spentBy: {
                     txid: '5944386e40a401ff31940f9d41e7983bec3b617d83efba0033eba28926a2fb9e',
@@ -9439,7 +9439,7 @@ export const mockFlatTxHistoryWithAllUnconfirmed = [
                 sequenceNo: 4294967295,
                 slpToken: {
                     amount: '8841',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -9455,7 +9455,7 @@ export const mockFlatTxHistoryWithAllUnconfirmed = [
                     '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                 slpToken: {
                     amount: '2',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -9464,7 +9464,7 @@ export const mockFlatTxHistoryWithAllUnconfirmed = [
                     '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
                 slpToken: {
                     amount: '8839',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
                 spentBy: {
                     txid: 'd1a286475ac63df6ae51ffe69be5324b848ddf4a0acf8510d9ec266cb4e10454',
@@ -9532,7 +9532,7 @@ export const mockFlatTxHistoryWithAllUnconfirmed = [
                 sequenceNo: 4294967295,
                 slpToken: {
                     amount: '8842',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -9548,7 +9548,7 @@ export const mockFlatTxHistoryWithAllUnconfirmed = [
                     '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                 slpToken: {
                     amount: '1',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -9557,7 +9557,7 @@ export const mockFlatTxHistoryWithAllUnconfirmed = [
                     '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
                 slpToken: {
                     amount: '8841',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
                 spentBy: {
                     txid: 'c638754cb7707edd4faad89bdfee899aa7acbbc61f66e21f8faf60bdbb34fd65',
@@ -9683,7 +9683,7 @@ export const mockSortedFlatTxHistoryWithAllUnconfirmed = [
                 slpBurn: {
                     token: {
                         amount: '0',
-                        isMintBaton: false,
+                        isMintBaton: true,
                     },
                     tokenId:
                         '98183238638ecb4ddc365056e22de0e8a05448c1e6084bae247fae5a74ad4f48',
@@ -9730,7 +9730,7 @@ export const mockSortedFlatTxHistoryWithAllUnconfirmed = [
                 slpBurn: {
                     token: {
                         amount: '0',
-                        isMintBaton: false,
+                        isMintBaton: true,
                     },
                     tokenId:
                         '98183238638ecb4ddc365056e22de0e8a05448c1e6084bae247fae5a74ad4f48',
@@ -9773,7 +9773,7 @@ export const mockSortedFlatTxHistoryWithAllUnconfirmed = [
                 slpBurn: {
                     token: {
                         amount: '0',
-                        isMintBaton: false,
+                        isMintBaton: true,
                     },
                     tokenId:
                         '98183238638ecb4ddc365056e22de0e8a05448c1e6084bae247fae5a74ad4f48',
@@ -9827,7 +9827,7 @@ export const mockSortedFlatTxHistoryWithAllUnconfirmed = [
                 sequenceNo: 4294967295,
                 slpToken: {
                     amount: '8832',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -9843,7 +9843,7 @@ export const mockSortedFlatTxHistoryWithAllUnconfirmed = [
                     '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                 slpToken: {
                     amount: '5',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -9852,7 +9852,7 @@ export const mockSortedFlatTxHistoryWithAllUnconfirmed = [
                     '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
                 slpToken: {
                     amount: '8827',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -9908,7 +9908,7 @@ export const mockSortedFlatTxHistoryWithAllUnconfirmed = [
                 sequenceNo: 4294967295,
                 slpToken: {
                     amount: '8836',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -9924,7 +9924,7 @@ export const mockSortedFlatTxHistoryWithAllUnconfirmed = [
                     '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                 slpToken: {
                     amount: '4',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -9933,7 +9933,7 @@ export const mockSortedFlatTxHistoryWithAllUnconfirmed = [
                     '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
                 slpToken: {
                     amount: '8832',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
                 spentBy: {
                     txid: '6bfdfbb71b71d0b1c024c777e5cc6a6b81806dbb673d4f5e65ab30476035f269',
@@ -9993,7 +9993,7 @@ export const mockSortedFlatTxHistoryWithAllUnconfirmed = [
                 sequenceNo: 4294967295,
                 slpToken: {
                     amount: '8839',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -10009,7 +10009,7 @@ export const mockSortedFlatTxHistoryWithAllUnconfirmed = [
                     '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                 slpToken: {
                     amount: '3',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -10018,7 +10018,7 @@ export const mockSortedFlatTxHistoryWithAllUnconfirmed = [
                     '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
                 slpToken: {
                     amount: '8836',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
                 spentBy: {
                     txid: '5944386e40a401ff31940f9d41e7983bec3b617d83efba0033eba28926a2fb9e',
@@ -10086,7 +10086,7 @@ export const mockSortedFlatTxHistoryWithAllUnconfirmed = [
                 sequenceNo: 4294967295,
                 slpToken: {
                     amount: '8841',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -10102,7 +10102,7 @@ export const mockSortedFlatTxHistoryWithAllUnconfirmed = [
                     '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                 slpToken: {
                     amount: '2',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -10111,7 +10111,7 @@ export const mockSortedFlatTxHistoryWithAllUnconfirmed = [
                     '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
                 slpToken: {
                     amount: '8839',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
                 spentBy: {
                     txid: 'd1a286475ac63df6ae51ffe69be5324b848ddf4a0acf8510d9ec266cb4e10454',
@@ -10179,7 +10179,7 @@ export const mockSortedFlatTxHistoryWithAllUnconfirmed = [
                 sequenceNo: 4294967295,
                 slpToken: {
                     amount: '8842',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
         ],
@@ -10195,7 +10195,7 @@ export const mockSortedFlatTxHistoryWithAllUnconfirmed = [
                     '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
                 slpToken: {
                     amount: '1',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
             },
             {
@@ -10204,7 +10204,7 @@ export const mockSortedFlatTxHistoryWithAllUnconfirmed = [
                     '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
                 slpToken: {
                     amount: '8841',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
                 spentBy: {
                     txid: 'c638754cb7707edd4faad89bdfee899aa7acbbc61f66e21f8faf60bdbb34fd65',
@@ -10443,7 +10443,7 @@ export const lambdaIncomingEtokenTx = {
             sequenceNo: 4294967295,
             slpToken: {
                 amount: '240',
-                isMintBaton: false,
+                isMintBaton: true,
             },
         },
     ],
@@ -10458,7 +10458,7 @@ export const lambdaIncomingEtokenTx = {
             outputScript: '76a91476458db0ed96fe9863fc1ccec9fa2cfab884b0f688ac',
             slpToken: {
                 amount: '12',
-                isMintBaton: false,
+                isMintBaton: true,
             },
         },
         {
@@ -10466,7 +10466,7 @@ export const lambdaIncomingEtokenTx = {
             outputScript: '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
             slpToken: {
                 amount: '228',
-                isMintBaton: false,
+                isMintBaton: true,
             },
         },
         {
@@ -10514,7 +10514,7 @@ export const lambdaOutgoingEtokenTx = {
             sequenceNo: 4294967295,
             slpToken: {
                 amount: '69',
-                isMintBaton: false,
+                isMintBaton: true,
             },
         },
     ],
@@ -10529,7 +10529,7 @@ export const lambdaOutgoingEtokenTx = {
             outputScript: '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
             slpToken: {
                 amount: '17',
-                isMintBaton: false,
+                isMintBaton: true,
             },
         },
         {
@@ -10537,7 +10537,7 @@ export const lambdaOutgoingEtokenTx = {
             outputScript: '76a91476458db0ed96fe9863fc1ccec9fa2cfab884b0f688ac',
             slpToken: {
                 amount: '52',
-                isMintBaton: false,
+                isMintBaton: true,
             },
         },
         {
@@ -10585,7 +10585,7 @@ export const eTokenGenesisTx = {
             outputScript: '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
             slpToken: {
                 amount: '7777777777',
-                isMintBaton: false,
+                isMintBaton: true,
             },
         },
     ],
@@ -10642,7 +10642,7 @@ export const receivedEtokenTxNineDecimals = {
             sequenceNo: 4294967295,
             slpToken: {
                 amount: '9876543156',
-                isMintBaton: false,
+                isMintBaton: true,
             },
         },
     ],
@@ -10657,7 +10657,7 @@ export const receivedEtokenTxNineDecimals = {
             outputScript: '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
             slpToken: {
                 amount: '123456789',
-                isMintBaton: false,
+                isMintBaton: true,
             },
         },
         {
@@ -10665,7 +10665,7 @@ export const receivedEtokenTxNineDecimals = {
             outputScript: '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
             slpToken: {
                 amount: '9753086367',
-                isMintBaton: false,
+                isMintBaton: true,
             },
         },
         {
@@ -11267,7 +11267,7 @@ export const mockAirdropTx = {
             slpBurn: {
                 token: {
                     amount: '0',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
                 tokenId:
                     'bdb3b4215ca0622e0c4c07655522c376eaa891838a82f0217fa453bb0595a37c',
@@ -11297,7 +11297,7 @@ export const mockAirdropTx = {
             slpBurn: {
                 token: {
                     amount: '0',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
                 tokenId:
                     'fb4233e8a568993976ed38a81c2671587c5ad09552dedefa78760deed6ff87aa',
@@ -11963,7 +11963,7 @@ export const mockTokenBurnTx = {
             sequenceNo: 4294967295,
             slpToken: {
                 amount: '2',
-                isMintBaton: false,
+                isMintBaton: true,
             },
         },
         {
@@ -11979,14 +11979,14 @@ export const mockTokenBurnTx = {
             slpBurn: {
                 token: {
                     amount: '12',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
                 tokenId:
                     '4db25a4b2f0b57415ce25fab6d9cb3ac2bbb444ff493dc16d0615a11ad06c875',
             },
             slpToken: {
                 amount: '999875',
-                isMintBaton: false,
+                isMintBaton: true,
             },
         },
     ],
@@ -12001,7 +12001,7 @@ export const mockTokenBurnTx = {
             outputScript: '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
             slpToken: {
                 amount: '999865',
-                isMintBaton: false,
+                isMintBaton: true,
             },
         },
     ],
@@ -12048,14 +12048,14 @@ export const mockTokenBurnWithDecimalsTx = {
             slpBurn: {
                 token: {
                     amount: '1234567',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
                 tokenId:
                     '7443f7c831cdf2b2b04d5f0465ed0bcf348582675b0e4f17906438c232c22f3d',
             },
             slpToken: {
                 amount: '5235120760000000',
-                isMintBaton: false,
+                isMintBaton: true,
             },
         },
     ],
@@ -12070,7 +12070,7 @@ export const mockTokenBurnWithDecimalsTx = {
             outputScript: '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
             slpToken: {
                 amount: '5235120758765433',
-                isMintBaton: false,
+                isMintBaton: true,
             },
         },
     ],
@@ -12106,7 +12106,7 @@ export const mockReceivedEtokenTx = {
             slpBurn: {
                 token: {
                     amount: '0',
-                    isMintBaton: false,
+                    isMintBaton: true,
                 },
                 tokenId:
                     '98183238638ecb4ddc365056e22de0e8a05448c1e6084bae247fae5a74ad4f48',
@@ -12124,7 +12124,7 @@ export const mockReceivedEtokenTx = {
             sequenceNo: 4294967295,
             slpToken: {
                 amount: '9876543156',
-                isMintBaton: false,
+                isMintBaton: true,
             },
         },
     ],
@@ -12139,7 +12139,7 @@ export const mockReceivedEtokenTx = {
             outputScript: '76a91495e79f51d4260bc0dc3ba7fb77c7be92d0fbdd1d88ac',
             slpToken: {
                 amount: '123456789',
-                isMintBaton: false,
+                isMintBaton: true,
             },
         },
         {
@@ -12147,7 +12147,7 @@ export const mockReceivedEtokenTx = {
             outputScript: '76a9144e532257c01b310b3b5c1fd947c79a72addf852388ac',
             slpToken: {
                 amount: '9753086367',
-                isMintBaton: false,
+                isMintBaton: true,
             },
         },
         {
@@ -12202,7 +12202,7 @@ export const mockSwapTx = {
             sequenceNo: 4294967295,
             slpToken: {
                 amount: '10000',
-                isMintBaton: false,
+                isMintBaton: true,
             },
         },
         {
@@ -12228,7 +12228,7 @@ export const mockSwapTx = {
             outputScript: '76a914205c792fff2ffc891e986246760ee1079fa5a36988ac',
             slpToken: {
                 amount: '10000',
-                isMintBaton: false,
+                isMintBaton: true,
             },
         },
         {
@@ -12376,7 +12376,7 @@ export const mockSwapWallet = {
                         sequenceNo: 4294967295,
                         slpToken: {
                             amount: '10000',
-                            isMintBaton: false,
+                            isMintBaton: true,
                         },
                     },
                     {
@@ -12404,7 +12404,7 @@ export const mockSwapWallet = {
                             '76a914205c792fff2ffc891e986246760ee1079fa5a36988ac',
                         slpToken: {
                             amount: '10000',
-                            isMintBaton: false,
+                            isMintBaton: true,
                         },
                     },
                     {
@@ -12468,7 +12468,7 @@ export const mockSwapWallet = {
                         slpBurn: {
                             token: {
                                 amount: '0',
-                                isMintBaton: false,
+                                isMintBaton: true,
                             },
                             tokenId:
                                 '54dc2ecd5251f8dfda4c4f15ce05272116b01326076240e2b9cc0104d33b1484',
