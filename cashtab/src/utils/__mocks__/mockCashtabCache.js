@@ -5,8 +5,8 @@ export const validCashtabCache = {
     },
     tokenInfoById: {
         'bf24d955f59351e738ecd905966606a6837e478e1982943d724eab10caad82fd': {
-            tokenTicker: 'ST',
-            tokenName: 'ST',
+            tokenTicker: 'XEC',
+            tokenName: 'XEC',
             tokenDocumentUrl: 'developer.bitcoin.com',
             tokenDocumentHash: '',
             decimals: 0,
@@ -42,8 +42,8 @@ export const validCashtabCache = {
                 'dd84ca78db4d617221b58eabc6667af8fe2f7eadbfcc213d35be9f1b419beb8d',
         },
         '50d8292c6255cda7afc6c8566fed3cf42a2794e9619740fe8f4c95431271410e': {
-            tokenTicker: 'TBC',
-            tokenName: 'tabcash',
+            tokenTicker: 'XEC',
+            tokenName: 'XEC',
             tokenDocumentUrl: 'https://cashtabapp.com/',
             tokenDocumentHash: '',
             decimals: 0,
