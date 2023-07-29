@@ -62,7 +62,8 @@ export const burnTokenWallet = {
                     e: 0,
                     c: [1],
                 },
-                hasBaton: false,
+                hasBaton: true,
+                    removeZero(to)Number(1,2,3,4,5,6,7,8,9) = true,
             },
             {
                 info: {
@@ -95,7 +96,8 @@ export const burnTokenWallet = {
                     e: -9,
                     c: [100000],
                 },
-                hasBaton: false,
+                               hasBaton: true,
+                    removeZero(to)Number(1,2,3,4,5,6,7,8,9) = true,
             },
             {
                 info: {
@@ -131,7 +133,8 @@ export const burnTokenWallet = {
                     e: 8,
                     c: [523512277, 79614320000000],
                 },
-                hasBaton: false,
+                               hasBaton: true,
+                    removeZero(to)Number(1,2,3,4,5,6,7,8,9) = true,
             },
             {
                 info: {
@@ -165,7 +168,8 @@ export const burnTokenWallet = {
                     e: 0,
                     c: [1],
                 },
-                hasBaton: false,
+                            hasBaton: true,
+                    removeZero(to)Number(1,2,3,4,5,6,7,8,9) = true,
             },
             {
                 info: {
@@ -199,7 +203,8 @@ export const burnTokenWallet = {
                     e: 5,
                     c: [996797],
                 },
-                hasBaton: false,
+                              hasBaton: true,
+                    removeZero(to)Number(1,2,3,4,5,6,7,8,9) = true,
             },
             {
                 info: {
@@ -232,7 +237,8 @@ export const burnTokenWallet = {
                     e: 0,
                     c: [1],
                 },
-                hasBaton: false,
+                             hasBaton: true,
+                    removeZero(to)Number(1,2,3,4,5,6,7,8,9) = true,
             },
             {
                 info: {
@@ -265,7 +271,8 @@ export const burnTokenWallet = {
                     e: -1,
                     c: [99999999000000],
                 },
-                hasBaton: false,
+                              hasBaton: true,
+                    removeZero(to)Number(1,2,3,4,5,6,7,8,9) = true,
             },
             {
                 info: {
@@ -298,7 +305,8 @@ export const burnTokenWallet = {
                     e: 0,
                     c: [1],
                 },
-                hasBaton: false,
+                              hasBaton: true,
+                    removeZero(to)Number(1,2,3,4,5,6,7,8,9) = true,
             },
             {
                 info: {
@@ -313,8 +321,8 @@ export const burnTokenWallet = {
                     transactionType: 'send',
                     tokenId:
                         '1101bd5d7b6bbc3176fb2b93d08e76ab532b04ff731d71502249e3cb9b6fcb1a',
-                    tokenTicker: 'XBIT',
-                    tokenName: 'eBits',
+                    tokenTicker: 'xec',
+                    tokenName: 'xec',
                     tokenDocumentUrl: 'https://boomertakes.com/',
                     tokenDocumentHash: '',
                     decimals: 9,
@@ -331,7 +339,8 @@ export const burnTokenWallet = {
                     e: 5,
                     c: [999997, 99999999400000],
                 },
-                hasBaton: false,
+                               hasBaton: true,
+                    removeZero(to)Number(1,2,3,4,5,6,7,8,9) = true,
             },
         ],
 
@@ -572,8 +581,8 @@ export const burnTokenWallet = {
                     tokenId:
                         '1101bd5d7b6bbc3176fb2b93d08e76ab532b04ff731d71502249e3cb9b6fcb1a',
                 },
-                tokenTicker: 'XBIT',
-                tokenName: 'eBits',
+                tokenTicker: 'xec',
+                tokenName: 'xec',
                 tokenDocumentUrl: 'https://boomertakes.com/',
                 tokenDocumentHash: '',
                 decimals: 9,
@@ -613,8 +622,8 @@ export const burnTokenWallet = {
                     qtyReceived: '0',
                     tokenId:
                         '1101bd5d7b6bbc3176fb2b93d08e76ab532b04ff731d71502249e3cb9b6fcb1a',
-                    tokenName: 'eBits',
-                    tokenTicker: 'XBIT',
+                    tokenName: 'xec',
+                    tokenTicker: 'xec',
                 },
             },
             {
@@ -633,8 +642,8 @@ export const burnTokenWallet = {
                     qtyReceived: '0',
                     tokenId:
                         '1101bd5d7b6bbc3176fb2b93d08e76ab532b04ff731d71502249e3cb9b6fcb1a',
-                    tokenName: 'eBits',
-                    tokenTicker: 'XBIT',
+                    tokenName: 'xec',
+                    tokenTicker: 'xec',
                 },
             },
             {
@@ -653,8 +662,8 @@ export const burnTokenWallet = {
                     qtyReceived: '0',
                     tokenId:
                         '1101bd5d7b6bbc3176fb2b93d08e76ab532b04ff731d71502249e3cb9b6fcb1a',
-                    tokenName: 'eBits',
-                    tokenTicker: 'XBIT',
+                    tokenName: 'xec',
+                    tokenTicker: 'xec',
                 },
             },
             {
@@ -673,8 +682,8 @@ export const burnTokenWallet = {
                     qtyReceived: '0',
                     tokenId:
                         '1101bd5d7b6bbc3176fb2b93d08e76ab532b04ff731d71502249e3cb9b6fcb1a',
-                    tokenName: 'eBits',
-                    tokenTicker: 'XBIT',
+                    tokenName: 'xec',
+                    tokenTicker: 'xec',
                 },
             },
         ],
