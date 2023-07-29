@@ -280,8 +280,8 @@ export const validCashtabCache = {
                 'b8f2a9e767a0be7b80c7e414ef2534586d4da72efddb39a4e70e501ab73375cc',
         },
         '1101bd5d7b6bbc3176fb2b93d08e76ab532b04ff731d71502249e3cb9b6fcb1a': {
-            tokenTicker: 'XBIT',
-            tokenName: 'eBits',
+            tokenTicker: 'xec',
+            tokenName: 'xec',
             tokenDocumentUrl: 'https://boomertakes.com/',
             tokenDocumentHash: '',
             decimals: 9,
@@ -836,8 +836,8 @@ export const cashtabCacheWithOneBadTokenId = {
                 'b8f2a9e767a0be7b80c7e414ef2534586d4da72efddb39a4e70e501ab73375cc',
         },
         '1101bd5d7b6bbc3176fb2b93d08e76ab532b04ff731d71502249e3cb9b6fcb1a': {
-            tokenTicker: 'XBIT',
-            tokenName: 'eBits',
+            tokenTicker: 'xec',
+            tokenName: 'xec',
             tokenDocumentUrl: 'https://boomertakes.com/',
             tokenDocumentHash: '',
             decimals: 9,
