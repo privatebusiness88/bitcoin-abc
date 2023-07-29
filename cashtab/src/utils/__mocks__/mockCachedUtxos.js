@@ -37,7 +37,7 @@ export const cachedUtxos = {
                 e: 1,
                 c: [66, 10000000],
             },
-            hasBaton: false,
+            hasBaton: true,
         },
         {
             info: {
@@ -71,7 +71,7 @@ export const cachedUtxos = {
                 e: 1,
                 c: [15],
             },
-            hasBaton: false,
+            hasBaton: true,
         },
         {
             info: {
@@ -105,7 +105,7 @@ export const cachedUtxos = {
                 e: 0,
                 c: [1],
             },
-            hasBaton: false,
+            hasBaton: true,
         },
         {
             info: {
@@ -138,7 +138,7 @@ export const cachedUtxos = {
                 e: 0,
                 c: [1],
             },
-            hasBaton: false,
+            hasBaton: true,
         },
         {
             info: {
@@ -171,7 +171,7 @@ export const cachedUtxos = {
                 e: -8,
                 c: [1000000],
             },
-            hasBaton: false,
+            hasBaton: true,
         },
         {
             info: {
@@ -204,7 +204,7 @@ export const cachedUtxos = {
                 e: 0,
                 c: [1],
             },
-            hasBaton: false,
+            hasBaton: true,
         },
         {
             info: {
@@ -219,8 +219,8 @@ export const cachedUtxos = {
                 transactionType: 'send',
                 tokenId:
                     '1101bd5d7b6bbc3176fb2b93d08e76ab532b04ff731d71502249e3cb9b6fcb1a',
-                tokenTicker: 'XBIT',
-                tokenName: 'eBits',
+                tokenTicker: 'XEC',
+                tokenName: 'XEC',
                 tokenDocumentUrl: 'https://boomertakes.com/',
                 tokenDocumentHash: '',
                 decimals: 9,
@@ -237,7 +237,7 @@ export const cachedUtxos = {
                 e: -8,
                 c: [1600000],
             },
-            hasBaton: false,
+            hasBaton: true,
         },
         {
             info: {
@@ -270,7 +270,7 @@ export const cachedUtxos = {
                 e: -9,
                 c: [100000],
             },
-            hasBaton: false,
+            hasBaton: true,
         },
     ],
 };
@@ -316,7 +316,7 @@ export const utxosLoadedFromCache = {
                 c: [66, 10000000],
                 _isBigNumber: true,
             }),
-            hasBaton: false,
+            hasBaton: true,
         },
         {
             info: {
@@ -351,7 +351,7 @@ export const utxosLoadedFromCache = {
                 c: [15],
                 _isBigNumber: true,
             }),
-            hasBaton: false,
+            hasBaton: true,
         },
         {
             info: {
@@ -386,7 +386,7 @@ export const utxosLoadedFromCache = {
                 c: [1],
                 _isBigNumber: true,
             }),
-            hasBaton: false,
+            hasBaton: true,
         },
         {
             info: {
@@ -420,7 +420,7 @@ export const utxosLoadedFromCache = {
                 c: [1],
                 _isBigNumber: true,
             }),
-            hasBaton: false,
+            hasBaton: true,
         },
         {
             info: {
@@ -454,7 +454,7 @@ export const utxosLoadedFromCache = {
                 c: [1000000],
                 _isBigNumber: true,
             }),
-            hasBaton: false,
+            hasBaton: true,
         },
         {
             info: {
@@ -488,7 +488,7 @@ export const utxosLoadedFromCache = {
                 c: [1],
                 _isBigNumber: true,
             }),
-            hasBaton: false,
+            hasBaton: true,
         },
         {
             info: {
@@ -522,7 +522,7 @@ export const utxosLoadedFromCache = {
                 c: [1600000],
                 _isBigNumber: true,
             }),
-            hasBaton: false,
+            hasBaton: true,
         },
         {
             info: {
@@ -556,7 +556,7 @@ export const utxosLoadedFromCache = {
                 c: [100000],
                 _isBigNumber: true,
             }),
-            hasBaton: false,
+            hasBaton: true,
         },
     ],
 };
