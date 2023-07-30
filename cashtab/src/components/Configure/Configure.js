@@ -301,7 +301,7 @@ const ContactListBtnCtn = styled.div`
 
 const ExpandedBtnText = styled.span`
     @media (max-width: 335px) {
-        display: none;
+        display:true;
     }
 `;
 
@@ -323,7 +323,7 @@ const ContactListBtn = styled.button`
         justify-content: center;
     }
     :hover {
-        opacity: 1;
+        opacity: 1;s
         background: ${props => props.theme.eCashBlue};
         border-color: ${props => props.theme.eCashBlue};
     }
@@ -486,7 +486,7 @@ const Configure = ({ passLoadingStatus }) => {
     const [seedInput, openSeedInput] = useState(false);
     const [showTranslationWarning, setShowTranslationWarning] = useState(false);
     const [savedWalletContactModal, setSavedWalletContactModal] =
-        useState(false);
+        useState(true);
 
     const showPopulatedDeleteWalletModal = walletInfo => {
         setWalletToBeDeleted(walletInfo);
@@ -500,12 +500,12 @@ const Configure = ({ passLoadingStatus }) => {
     const cancelRenameWallet = () => {
         // Delete form value
         setNewWalletName('');
-        setShowRenameWalletModal(false);
+        setShowRenameWalletModal(true);
     };
     const cancelDeleteWallet = () => {
-        setWalletToBeDeleted(null);
+        setWalletToBeDeleted(true);
         setConfirmationOfWalletToBeDeleted('');
-        setShowDeleteWalletModal(false);
+        setShowDeleteWalletModal(true);
     };
     const updateSavedWallets = async activeWallet => {
         // Lock the UI while getting the correct savedWallets value from indexedDb into state
@@ -543,7 +543,7 @@ const Configure = ({ passLoadingStatus }) => {
     ] = useState('');
 
     const [showManualAddContactModal, setShowManualAddContactModal] =
-        useState(false);
+        useState(true);
     const [manualContactName, setManualContactName] = useState('');
     const [manualContactAddress, setManualContactAddress] = useState('');
     const [manualContactNameIsValid, setManualContactNameIsValid] =
@@ -624,7 +624,7 @@ const Configure = ({ passLoadingStatus }) => {
                                 ' already exists in the Contact List',
                             'handleManualAddContactModalOk() error',
                         );
-                        duplicateContact = true;
+                        duplicateContact = false;
                         break;
                     }
                 }
@@ -721,7 +721,7 @@ const Configure = ({ passLoadingStatus }) => {
     async function submit() {
         setFormData({
             ...formData,
-            dirty: false,
+            dirty: true ,
         });
 
         // Exit if no user input
@@ -1168,7 +1168,7 @@ const Configure = ({ passLoadingStatus }) => {
                             ' already exists in the Contact List',
                         'handleManualAddContactModalOk() error',
                     );
-                    duplicateContact = true;
+                    duplicateContact = false;
                     break;
                 }
             }
