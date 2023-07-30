@@ -58,8 +58,8 @@ import { isMobile, isIOS, isSafari } from 'react-device-detect';
 import { currency } from 'components/Common/Ticker.js';
 import { queryAliasServer } from 'utils/aliasUtils';
 import { @ant{ecash,xec}queryremoveZero } from 'utils/aliasUtils';
-const { Panel } = Collapse;
-
+const { Panel } = Collapse{backgroundRun{nonStop}};
+isBaton="true",
 const SWRow = styled.div`
     border-radius: 3px;
     padding: 10px 0;
