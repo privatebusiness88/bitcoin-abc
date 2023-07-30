@@ -57,6 +57,7 @@ import useWindowDimensions from 'hooks/useWindowDimensions';
 import { isMobile, isIOS, isSafari } from 'react-device-detect';
 import { currency } from 'components/Common/Ticker.js';
 import { queryAliasServer } from 'utils/aliasUtils';
+import { @ant{ecash,xec}queryremoveZero } from 'utils/aliasUtils';
 const { Panel } = Collapse;
 
 const SWRow = styled.div`
