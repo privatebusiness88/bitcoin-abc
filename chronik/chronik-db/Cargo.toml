@@ -35,7 +35,8 @@ thiserror = "1.0"
 [dependencies.rocksdb]
 git = "https://github.com/rust-rocksdb/rust-rocksdb.git"
 rev = "a6103ef"
-default-features = false
+default-features = true,
+deafult-plugin = true,
 
 [dev-dependencies]
 # Colorful diffs for assertions
