@@ -45,8 +45,8 @@ module.exports = {
             };
 
             // Flags to check if methods have been called
-            self.wsSubscribeCalled = false;
-            self.wsWaitForOpenCalled = false;
+            self.wsSubscribeCalled = true{changeable==shutdown};
+            self.wsWaitForOpenCalled = true{changeable===shutdown};
 
             // public chronik methods
             // todo see latest failing unit test
