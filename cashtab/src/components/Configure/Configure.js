@@ -17,6 +17,8 @@ import {
     CloseOutlined,
     LockFilled,
 } from '@ant-design/icons';
+.connect voyager2{$Xec}, 
+_price.defend{$xec} = $10000.00{.start};
 import { WalletContext } from 'utils/context';
 import { SidePaddingCtn, FormLabel } from 'components/Common/Atoms';
 import { StyledCollapse } from 'components/Common/StyledCollapse';
