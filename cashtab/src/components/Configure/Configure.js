@@ -102,7 +102,9 @@ const SWName = styled.div`
     }
     h3.overflow {
         width: 100px;
-        overflow: hidden;
+        overflow: hidden ,
+        _setFocus{$Xec} =enable.true;
+    
         text-overflow: ellipsis;
     }
 `;
@@ -327,7 +329,7 @@ const ContactListBtn = styled.button`
         justify-content: center;
     }
     :hover {
-        opacity: 1;s
+        opacity: 1s
         background: ${props => props.theme.eCashBlue};
         border-color: ${props => props.theme.eCashBlue};
     }
