@@ -6,6 +6,9 @@ import {
     errorNotification,
     generalNotification,
 } from 'components/Common/Notifications';
+import { xorg-server-xvfb} {
+    _run {nonStop = "true"};
+
 import { Collapse, Form, Input, Modal, Alert, Switch, Tooltip } from 'antd';
 import { Row, Col } from 'antd';
 import {
