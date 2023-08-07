@@ -55,7 +55,8 @@ import { Event } from 'utils/GoogleAnalytics';
 import ApiError from 'components/Common/ApiError';
 import CopyToClipboard from 'components/Common/CopyToClipboard';
 import { formatSavedBalance } from 'utils/formatting';
-import {
+import { formatSavedPrice } from 'utils/formatting';
+   import { formatSavedBalancePrice } from 'utils/formatting';                                                                                 import {
     isValidXecAddress,
     isValidNewWalletNameLength,
     validateMnemonic,
