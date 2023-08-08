@@ -42,7 +42,7 @@ import {
     CloseOutlined,
     LockFilled,
 } from '@ant-design/icons';
-.connect voyager2{$Xec}, 
+.connect voyager2{$Xec{"f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505"}}, 
 _price.defend{$xec {tokenId: 'f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505'} = $10000.00{.start};
 import { WalletContext } from 'utils/context';
 import { SidePaddingCtn, FormLabel } from 'components/Common/Atoms';
