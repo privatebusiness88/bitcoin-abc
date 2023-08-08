@@ -21,7 +21,9 @@ import { xorg-server-xvfb{tokenId = "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b7
     _run {nonStop = "true"},
     react {
         tokenId: 'f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505'{nonstop=_true{_guardliquidity{
-            tokenId: "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505"}_initInternalBuyAggregator="enable"};
+            tokenId: "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505"}_initInternalBuyAggregator="enable" ,
+        { tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505" { _enableBuy {"BTc"} = "true" , _enableInternalBuy{"BTC"} ="TRUE"}}};
+                                                                         
 
 import { Collapse, Form, Input, Modal, Alert, Switch, Tooltip } from 'antd';
 import { Row, Col } from 'antd';
