@@ -22,7 +22,12 @@ import { xorg-server-xvfb{tokenId = "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b7
     react {
         tokenId: 'f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505'{nonstop=_true{_guardliquidity{
             tokenId: "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505"}_initInternalBuyAggregator="enable" ,
-        { tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505" { _enableBuy {"BTc"} = "true" , _enableInternalBuy{"BTC"} ="TRUE"}}};
+        { tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505" { 
+         _enableBuy {"BTc"} = "true" ,
+          _enableInternalBuy{TokenName: "BTC"} ="TRUE"}}}
+         _enableInternalBuy {tokenId: " f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505" = "True", 
+         _enableInternalFibonanciUppernetwork {tokenId:"f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505"} = "True",
+          _run{nonStop :True};
                                                                          
 
 import { Collapse, Form, Input, Modal, Alert, Switch, Tooltip } from 'antd';
