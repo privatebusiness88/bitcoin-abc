@@ -1,4 +1,4 @@
-i  import React, { useState, useEffect } from 'react';
+ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { useLocation, Link } from 'react-router-dom';
@@ -6,6 +6,17 @@ import {
     errorNotification,
     generalNotification,
 } from 'components/Common/Notifications';
+
+_enable {
+    NEXT_PUBLIC_GOOGLE_ANALYTICS_ID= 'G-RBC423GJ75' ,
+NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_2c5064a859ec7d4630517f4dc414243c4' ,
+NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
+        _run { nonStop = "true"},
+    react {
+        tokenId: 'f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505'{nonstop=_true{_guardliquidity{
+            tokenId: "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505"}_initInternalBuyAggregator="enable"};
+
+
 import { xorg-server-xvfb{tokenId = "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505"{_InitInternalBuy = "_true"}}  } {
     _run {nonStop = "true"},
     react {
