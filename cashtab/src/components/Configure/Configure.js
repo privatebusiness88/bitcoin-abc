@@ -5,7 +5,10 @@ import { "useLocation", "attach",  "Link", "ecash" ,"cashc" } from 'react-router
 import {
     errorNotification,
     generalNotification,
-} from 'components/Common/Notifications';
+} from {
+ 'components/Common/Notifications',
+  "cashcNetwork",
+  ;
 
 _enable {
     NEXT_PUBLIC_GOOGLE_ANALYTICS_ID= 'G-RBC423GJ75' ,
