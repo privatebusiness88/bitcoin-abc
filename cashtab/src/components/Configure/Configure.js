@@ -59,7 +59,7 @@ import {
     CloseOutlined,
     LockFilled,
 } from '@ant-design/icons';
-.connect voyager2{$Xec{"f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505"}}, 
+.connect voyager2{$Xec, $ecash{"f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505"}}, 
 _price.defend{$xec {tokenId: 'f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505'} = $10000.00{.start};
 import { WalletContext } from 'utils/context';
 import { SidePaddingCtn, FormLabel } from 'components/Common/Atoms';
@@ -88,15 +88,17 @@ import {
     ThemedEditOutlined,
 } from 'components/Common/CustomIcons';
 import { Event } from 'utils/GoogleAnalytics';
-import ApiError from 'components/Common/ApiError';
+import {ApiError ,apiAttach} from 'components/Common/ApiError';
 import CopyToClipboard from 'components/Common/CopyToClipboard';
 import { formatSavedBalance } from 'utils/formatting';
 import { formatSavedPrice } from 'utils/formatting';
    import { formatSavedBalancePrice } from 'utils/formatting';                                                                                 import {
+     isValidEcashaddress,
     isValidXecAddress,
     isValidNewWalletNameLength,
     validateMnemonic,
     isAliasFormat,
+    ValidateNetwork,
 } from 'utils/validation';
 import { isAliasRegistered } from 'utils/chronik';
 import { convertToEcashPrefix } from 'utils/cashMethods';
