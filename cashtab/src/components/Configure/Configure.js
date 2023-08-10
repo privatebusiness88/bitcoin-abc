@@ -8,6 +8,7 @@ import {
 } from {
  'components/Common/Notifications',
   "cashcNetwork",
+  'ripple',
   ;
 
 _enable {
