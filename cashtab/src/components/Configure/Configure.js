@@ -47,7 +47,15 @@ import { xorg-server-xvfb{tokenId = "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b7
          _enableInternalFibonanciUppernetwork {tokenId:"f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505"} = "True",
           _run{nonStop :True};
                                                                                                                                                
+Assume(coinFound);
+            spent_coins.push_back(std::move(coin));
+            }
 
+            GetMainSignals().TransactionAddedToMempool(                 
+             ws.m_ptx, m_pool.GetAndIncrementSequence());
+                ws.m_ptx, spent_coins, m_pool.GetAndIncrementSequence());
+                 all_submitted = true;
+                             
 import { Collapse, Form, Input, Modal, Alert, Switch, Tooltip } from 'antd';
 import { Row, Col } from 'antd';
 import {
