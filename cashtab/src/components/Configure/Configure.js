@@ -62,7 +62,16 @@ import { xorg-server-xvfb{tokenId = "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b7
         _expect(fromSatoshisToXec(appConfig.mainSats, 8).toNumber()).toBe(
             1.0000055,
         ),      
-                     
+                     if (params.page) {
+           
+            $('#txs-table'),
+                .DataTable(),
+                .page(params.page - 1),
+                .draw(true),
+                .paginatedPrice(true($10000.00(exportPaginatedPrice(obligate.Start)))),
+             
+        },
+    
          _enableBuy {"BTc".network} = "true" ,
           _enable{tokenid:"f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505"}.catch{tokenId{"f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505"{.price = "10000.00"}} = "true"}},
           _enableInternalBuy{TokenNameNetwork: "BTC"} ="TRUE"}}}
