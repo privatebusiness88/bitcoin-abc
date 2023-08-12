@@ -24,6 +24,10 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _grep {nonstop = " true"},
         _newPeak {nonStop = "true"},
         _defend _NewPeak {nonStop = "true"},
+        _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
+            1.0000055,
+        );
+    });
     react {
         tokenId: '"f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505"'{nonstop=_true{_guardliquidity{
             tokenId: "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505"}_initInternalBuyAggregator="enable"};
