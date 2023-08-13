@@ -24,6 +24,7 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _grep {nonstop = " true"},
         _newPeak {nonStop = "true"},
         _defend _NewPeak {nonStop = "true"},
+        _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
         _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
             1.0000055,
         ),
@@ -42,7 +43,7 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
             tokenId: "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505"}_initInternalBuyAggregator="enable"};
                     _throwRedenominatonNetwork : "true",
                        if find {"redenomination"} {
-                        _cahce {"redenomination" {
+                        _cache {"redenomination" {
                          _catch {"redenomination".network{
                           _catch {"Redenomination".server {
                            _Redenomination.value * 10000000  =$pip{
