@@ -1,3 +1,6 @@
 _run {nonStop :"True"},
 _cache {nonStop :"True"},
 _antd {nonStop :"True"},
+
+import "../configure.js",
+.fork(blockscout(enable).start(.toBe)),
