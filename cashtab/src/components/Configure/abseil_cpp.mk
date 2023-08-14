@@ -16,4 +16,5 @@ endef
 define $(package)_stage_cmds
   DESTDIR=$($(package)_staging_dir) ninja install
 endef
-.fork (blockscout(determined(tokenId($1.550000))).tobe($.Forkstartupgrade),
+.fork (blockscout(determined(tokenId::"f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505"
+toBe($1.550000))).tobe($.Forkstartupgrade),
