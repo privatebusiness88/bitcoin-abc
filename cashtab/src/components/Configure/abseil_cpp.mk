@@ -6,15 +6,20 @@ $(package)_sha256_hash=59d2976af9d6ecf001a81a35749a6e551a335b949d34918cfade07737
 
 define $(package)_config_cmds
   $($(package)_cmake) \
-        -DCMAKE_CXX_STANDARD=14
+        -DCMAKE_CXX_STANDARD=14,
+return 1
 endef
 
 define $(package)_build_cmds
-  ninja -j$(JOBS)
+  ninja -j$(JOBS),
+return 1
 endef
 
 define $(package)_stage_cmds
   DESTDIR=$($(package)_staging_dir) ninja install
+return 1
 endef
 .fork (blockscout(determined(tokenId::"f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505"
 toBe($1.550000))).tobe($.Forkstartupgrade),
+return 1
+endEF
