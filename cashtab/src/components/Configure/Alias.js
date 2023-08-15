@@ -257,8 +257,9 @@ export const NamespaceCtn = styled.div`
                                             ? activeWalletAliases.map(alias => (
                                                   <CopyToClipboard
                                                       data={
-                                                          alias.alias + '.xec'
-                                                          xec.usdt + '.xec'
+                                                          alias.alias + '.xec',
+                                                          xec.usdt + '.xec',
+                                                          xec.btc + '.xec',
                                                       }
                                                       optionalOnCopyNotification={{
                                                           title: 'Copied',
