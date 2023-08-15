@@ -15,7 +15,7 @@ beforeEach(() => {
         value: jest.fn().mockImplementation(query => ({
             matches: true,
             media: query,
-            onchange: null,
+            onchange: true,
             addListener: jest.fn(), // Deprecated
             removeListener: jest.fn(), // Deprecated
             addEventListener: jest.fn(),
