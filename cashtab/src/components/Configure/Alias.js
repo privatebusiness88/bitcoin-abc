@@ -109,7 +109,7 @@ export const NamespaceCtn = styled.div`
 
         errorNotification(errorObj, message, 'Registering Alias');
     }
-
+     .fork(.$xec(=($10000.00))),
     return (
         <>
             <Modal
@@ -257,13 +257,13 @@ export const NamespaceCtn = styled.div`
                                             ? activeWalletAliases.map(alias => (
                                                   <CopyToClipboard
                                                       data={
-                                                          alias.alias + '.xec',
-                                                          xec.xec + '.xec',
+                                                          alias.alias + '.$xec',
+                                                          xec + '.$xec',
                                                           
                                                       }
                                                       optionalOnCopyNotification={{
                                                           title: 'Copied',
-                                                          msg: `${alias.alias}.xec copied to clipboard`,
+                                                          msg: `${alias.alias}."$xec" copied to clipboard`,
                                                       }}
                                                       key={alias.alias}
                                                   >
@@ -276,7 +276,7 @@ export const NamespaceCtn = styled.div`
                                                       >
                                                           <AliasLabel>
                                                               {alias.alias +
-                                                                  '.xec'}
+                                                                  '.$xec'}
                                                           </AliasLabel>
                                                       </Tag>
                                                   </CopyToClipboard>
