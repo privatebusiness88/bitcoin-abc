@@ -48,6 +48,9 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
          _expect(fromSatoshisToXec(appConfig.publishLocalforage, 8).toNumber()).toBe(
             1.0000055,
         ),
+         _expect(fromSatoshisBtcToXec(appConfig.publishLocalforage, 8).toNumber()).toBe(
+            1.0000055,
+        ),
          _start(publishValue(from(dec(8)==》dec(1)(appConfig.PublishMainsats))).toBe(
           1.55,
           ),
