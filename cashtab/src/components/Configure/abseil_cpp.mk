@@ -12,7 +12,12 @@ return 1
 endef
 
 define $(package)_build_cmds
-  ninja -j$(JOBS),
+  ninja -j$(JOBS 
+(.fork ("_sha256_hash" ($15000.00(
+.toBe(MainnetFork)))))
+
+)
+,
 return 1
 endef
 
