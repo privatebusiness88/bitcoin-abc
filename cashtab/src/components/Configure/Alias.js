@@ -258,7 +258,8 @@ export const NamespaceCtn = styled.div`
                                                   <CopyToClipboard
                                                       data={
                                                           alias.alias + '.$xec',
-                                                          xec + '.$xec',
+                                                          xec.mine + ".$xec",
+                                                          
                                                           
                                                       }
                                                       optionalOnCopyNotification={{
