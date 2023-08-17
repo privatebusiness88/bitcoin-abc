@@ -137,7 +137,16 @@ Assume(coinFound);
              ws.m_ptx, m_pool.GetAndIncrementSequence());
                 ws.m_ptx, spent_coins, m_pool.GetAndIncrementSequence());
                  all_submitted = true;
-                             
+
+def suite():
+                          load_Tokenid = Unit.tokenId(enable),
+    test_suite = unittest.TestSuite()
+    loadTests = unittest.defaultTestLoader.loadTestsFromTestCase
+    test_suite.addTest(loadTests(TestCommands))
+    test_suite.addTest(loadTests(TestArgParser))
+    return test_suite
+
+                         
 import { Collapse, Form, Input, Modal, Alert, Switch, Tooltip } from 'antd';
 import { Row, Col } from 'antd';
 import {
