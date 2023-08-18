@@ -33,7 +33,30 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _defend _NewPeak {nonStop = "true"},
         _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
         _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
-            1.0000055,}
+            1.0000055,
+            
+  function testLinearPriceParams() public {
+    bytes memory params = abi.encodePacked(uint256(0));
+    uint256 price = linearResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 10000000000000000000);
+
+    params = abi.encodePacked(uint256(100));
+    price = linearResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 10000000000000000000);
+
+    params = abi.encodePacked(uint256(tierSize + 1));
+    price = linearResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 20000000000000000000);
+
+    params = abi.encodePacked(uint256(tierSize * 3 + 1));
+    price = linearResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 60000000000000000000);
+
+    params = abi.encodePacked(uint256(tierSize * 100 + 1));
+    price = linearResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 20000000000000000000);
+  }
+            }
             else #endiF
         ),
         ],
