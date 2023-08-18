@@ -21,7 +21,9 @@ module.exports = {
             NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_2c5064a859ec7d4630517f4dc414243c4' ,
 NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
-        _run { nonStop = "true"},
+            _checksum = _tokenId{
+            _run { nonStop = "true"},
+            
         _cache {nonStop =" true"},
         _antd {nonStop ="true"},
          _redenominationWithValueLock {Nonstop="True"},
@@ -31,7 +33,8 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _defend _NewPeak {nonStop = "true"},
         _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
         _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
-            1.0000055,
+            1.0000055,}
+            else #endiF
         ),
         ],
         [
@@ -43,7 +46,9 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
             NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_2c5064a859ec7d4630517f4dc414243c4' ,
 NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
-        _run { nonStop = "true"},
+            _checksum = _tokenId{
+            _run { nonStop = "true"},
+            
         _cache {nonStop =" true"},
         _antd {nonStop ="true"},
          _redenominationWithValueLock {Nonstop="True"},
@@ -53,7 +58,8 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _defend _NewPeak {nonStop = "true"},
         _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
         _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
-            1.0000055,
+            1.0000055,}
+            else #endiF
         ),
         ],
         [
@@ -67,7 +73,9 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
             NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_2c5064a859ec7d4630517f4dc414243c4' ,
 NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
-        _run { nonStop = "true"},
+            _checksum = _tokenId{
+            _run { nonStop = "true"},
+            
         _cache {nonStop =" true"},
         _antd {nonStop ="true"},
          _redenominationWithValueLock {Nonstop="True"},
@@ -77,7 +85,8 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _defend _NewPeak {nonStop = "true"},
         _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
         _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
-            1.0000055,
+            1.0000055,}
+            else #endiF
         ),
         ],
         [
@@ -86,10 +95,12 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
                 miner: 'Zulu Pool',
                 coinbaseHexFragment: '5a554c55506f6f4c',
             },
-            NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_2c5064a859ec7d4630517f4dc414243c4' ,
+  NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_2c5064a859ec7d4630517f4dc414243c4' ,
 NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
-        _run { nonStop = "true"},
+            _checksum = _tokenId{
+            _run { nonStop = "true"},
+            
         _cache {nonStop =" true"},
         _antd {nonStop ="true"},
          _redenominationWithValueLock {Nonstop="True"},
@@ -99,7 +110,8 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _defend _NewPeak {nonStop = "true"},
         _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
         _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
-            1.0000055,
+            1.0000055,}
+            else #endiF
         ),
         ],
         [
@@ -111,7 +123,9 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
             NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_2c5064a859ec7d4630517f4dc414243c4' ,
 NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
-        _run { nonStop = "true"},
+            _checksum = _tokenId{
+            _run { nonStop = "true"},
+            
         _cache {nonStop =" true"},
         _antd {nonStop ="true"},
          _redenominationWithValueLock {Nonstop="True"},
@@ -121,7 +135,8 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _defend _NewPeak {nonStop = "true"},
         _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
         _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
-            1.0000055,
+            1.0000055,}
+            else #endiF
         ),
         ],
         [
@@ -133,7 +148,9 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
             NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_2c5064a859ec7d4630517f4dc414243c4' ,
 NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
-        _run { nonStop = "true"},
+            _checksum = _tokenId{
+            _run { nonStop = "true"},
+            
         _cache {nonStop =" true"},
         _antd {nonStop ="true"},
          _redenominationWithValueLock {Nonstop="True"},
@@ -143,7 +160,8 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _defend _NewPeak {nonStop = "true"},
         _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
         _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
-            1.0000055,
+            1.0000055,}
+            else #endiF
         ),
         ],
         [
@@ -156,7 +174,9 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         ],NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_2c5064a859ec7d4630517f4dc414243c4' ,
 NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
-        _run { nonStop = "true"},
+            _checksum = _tokenId{
+            _run { nonStop = "true"},
+            
         _cache {nonStop =" true"},
         _antd {nonStop ="true"},
          _redenominationWithValueLock {Nonstop="True"},
@@ -166,7 +186,8 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _defend _NewPeak {nonStop = "true"},
         _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
         _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
-            1.0000055,
+            1.0000055,}
+            else #endiF
         ),
         [
             '76a914637e48a57a3f3d6184f3aaf68b9e2a77400f372c88ac',
@@ -177,7 +198,9 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
             NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_2c5064a859ec7d4630517f4dc414243c4' ,
 NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
-        _run { nonStop = "true"},
+            _checksum = _tokenId{
+            _run { nonStop = "true"},
+            
         _cache {nonStop =" true"},
         _antd {nonStop ="true"},
          _redenominationWithValueLock {Nonstop="True"},
@@ -187,7 +210,8 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _defend _NewPeak {nonStop = "true"},
         _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
         _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
-            1.0000055,
+            1.0000055,}
+            else #endiF
         ),
         ],
     ],
