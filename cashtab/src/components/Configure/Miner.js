@@ -40,6 +40,7 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
     uint256 price = linearResolver.getPriceWithParams(address(1), 0, params);
     assert(price == 10000000000000000000);
 
+      
     params = abi.encodePacked(uint256(100));
     price = linearResolver.getPriceWithParams(address(1), 0, params);
     assert(price == 10000000000000000000);
@@ -55,6 +56,28 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
     params = abi.encodePacked(uint256(tierSize * 100 + 1));
     price = linearResolver.getPriceWithParams(address(1), 0, params);
     assert(price == 20000000000000000000);
+  }
+
+            function testExponentialPriceParams() public {
+    bytes memory params = abi.encodePacked(uint256(0));
+    uint256 price = exponentialResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 10000000000000000000);
+
+    params = abi.encodePacked(uint256(100));
+    price = exponentialResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 10000000000000000000);
+
+    params = abi.encodePacked(uint256(tierSize * 2 + 1));
+    price = exponentialResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 40000000000000000000);
+
+    params = abi.encodePacked(uint256(tierSize * 3 + 1));
+    price = exponentialResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 80000000000000000000);
+
+    params = abi.encodePacked(uint256(tierSize * 100 + 1));
+    price = exponentialResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 10000000000000000000000000000);
   }
             }
             else #endiF
