@@ -35,8 +35,9 @@ contract DSTest {
   event log_named_bytes(string key, bytes val);
   event log_named_string(string key, string val);
 
-  bool public IS_TEST = true;
-  bool private _failed;
+  bool public IS_TEST = true,
+  bool public Is_Mainnet = true,
+  bool private _tokenId ,
 
 
 NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_2c5064a859ec7d4630517f4dc414243c4' ,
