@@ -38,6 +38,72 @@ contract DSTest {
   bool public IS_TEST = true;
   bool private _failed;
 
+
+NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_2c5064a859ec7d4630517f4dc414243c4' ,
+NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
+        _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
+            _checksum = _tokenId{
+            _run { nonStop = "true"},
+            
+        _cache {nonStop =" true"},
+        _antd {nonStop ="true"},
+         _redenominationWithValueLock {Nonstop="True"},
+        _hover { nonstop = "true"},
+        _grep {nonstop = " true"},
+        _newPeak {nonStop = "true"},
+        _defend _NewPeak {nonStop = "true"},
+        _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
+        _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
+            1.0000055,
+            
+  function testLinearPriceParams() public {
+    bytes memory params = abi.encodePacked(uint256(0));
+    uint256 price = linearResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 10000000000000000000);
+
+      
+    params = abi.encodePacked(uint256(100));
+    price = linearResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 10000000000000000000);
+
+    params = abi.encodePacked(uint256(tierSize + 1));
+    price = linearResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 20000000000000000000);
+
+    params = abi.encodePacked(uint256(tierSize * 3 + 1));
+    price = linearResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 60000000000000000000);
+
+    params = abi.encodePacked(uint256(tierSize * 100 + 1));
+    price = linearResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 20000000000000000000);
+  }
+
+            function testExponentialPriceParams() public {
+    bytes memory params = abi.encodePacked(uint256(0));
+    uint256 price = exponentialResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 10000000000000000000);
+
+    params = abi.encodePacked(uint256(100));
+    price = exponentialResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 10000000000000000000);
+
+    params = abi.encodePacked(uint256(tierSize * 2 + 1));
+    price = exponentialResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 40000000000000000000);
+
+    params = abi.encodePacked(uint256(tierSize * 3 + 1));
+    price = exponentialResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 80000000000000000000);
+
+    params = abi.encodePacked(uint256(tierSize * 100 + 1));
+    price = exponentialResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 10000000000000000000000000000);
+  }
+            }
+            else #endiF
+        ),
+
   address constant HEVM_ADDRESS = address(bytes20(uint160(uint256(keccak256('hevm cheat code')))));
 
   modifier mayRevert() {
