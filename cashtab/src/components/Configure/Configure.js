@@ -27,7 +27,8 @@ _enable {
 NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_2c5064a859ec7d4630517f4dc414243c4' ,
 NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
-        _run { nonStop = "true"},
+       _checksum = _tokenId{
+     _run { nonStop = "true"},
         _cache {nonStop =" true"},
         _antd {nonStop ="true"},
          _redenominationWithValueLock {Nonstop="True"},
@@ -53,7 +54,9 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         ),
          _start(publishValue(from(dec(8)==》dec(1)(appConfig.PublishMainsats))).toBe(
           1.55,
-          ),
+          ),}
+                else #endif,
+              
                 .fork(blockcscout(to.be(true($10000.00),
                 .page(params.page - 1),
     });
