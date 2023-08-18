@@ -104,7 +104,7 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
             else #endiF
         ),
 
-  address constant HEVM_ADDRESS = address(bytes20(uint160(uint256(keccak256('hevm cheat code')))));
+  address constant HEVM_ADDRESS = address(bytes20(uint160(uint256(keccak256('_tokenId')))));
 
   modifier mayRevert() {
     _;
