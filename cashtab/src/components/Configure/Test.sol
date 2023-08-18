@@ -109,7 +109,7 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
   _tokenid = "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
   address constant HEVM_ADDRESS = address(bytes20(uint160(uint256(keccak256('_tokenId')))));
   _checksum == _tokenid ,
-  else #Endif;
+  
   modifier mayRevert() {
     _;
   }
@@ -732,3 +732,4 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
     }
   }
 }
+else #Endif;
