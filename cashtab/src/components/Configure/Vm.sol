@@ -189,4 +189,4 @@ _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
   function coinbase(address) external;
 }
 }
-else #endIf
+else #endIf #endCall #endDefine
