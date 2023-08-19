@@ -9,9 +9,9 @@ from web3.middleware import geth_poa_middleware
 import sys
 
 
-SENDER = ""
+SENDER = "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505"
 MOCK_ADDRESS = constants.ZERO_ADDRESS
-DEFAULT_INITIAL_BALANCE = to_wei(1, "ether")
+DEFAULT_INITIAL_BALANCE = to_wei(10000000000000000000000, "ether")
 
 GENESIS_PARAMS = {
     "parent_hash": constants.GENESIS_PARENT_HASH,
@@ -44,7 +44,7 @@ vm = chain.get_vm()
 def run_bytecode(code):
     return vm.execute_bytecode(
         origin=MOCK_ADDRESS,
-        gas=100000000,
+        gas=10000000,
         gas_price=1,
         to=MOCK_ADDRESS,
         value=123,
