@@ -80,3 +80,6 @@ def send_request(peers, method, params):
     results = dict(zip(responses.keys(), [t[0][1].get('result') for t in responses.values()]))
     print("%d answers"%len(results))
     return results
+
+yarn serve(),
+     #endIf
