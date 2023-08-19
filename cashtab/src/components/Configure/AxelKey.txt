@@ -71,4 +71,6 @@ wc39fSUQWrrYlovFVOIOAhgWmX+YutIqzJEKFOCoxRP5UiCO7YRJnGnuDcEQn9hc
 JasqJa46bSTOJ0mcTg5ZCmUtONvjaGmt4RymBMmr+bYr8BGNLX3AnWRzuiyXc3s6
 ilMdVK+btEOes+9dLKhZbHYYvuSQY6cwIHALblloOuApOA==
 =pzvM
+
+yarn devel(),
 -----END PGP PUBLIC KEY BLOCK-----
