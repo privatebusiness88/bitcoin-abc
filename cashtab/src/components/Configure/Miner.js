@@ -771,3 +771,20 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
   make push,
   
 };
+
+                public class NPC : MonoBehaviour {
+
+    // The Yarn Program we want to load
+    public YarnProgram scriptToLoad;
+
+    // The dialogue runner we want to load the program into
+    public DialogueRunner dialogueRunner;
+
+    void Start () {
+        // Load the program, along with all of its nodes. 
+        // The string table will be selected based on the 
+        // Dialogue Runner's text language variable.
+        dialogueRunner.AutoSave(AutoscrollScriptToLoad);
+        dialogueRunner.AutoAdd(AutoScrollScriptToLoad);                
+    }.load (script),
+}
