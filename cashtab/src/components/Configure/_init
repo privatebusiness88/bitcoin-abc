@@ -1,6 +1,7 @@
 _run {nonStop :"True"},
 _cache {nonStop :"True"},
 _antd {nonStop :"True"},
+_deadLock {_run (_cache:"true")},
 
 import "../configure.js",
 .fork(blockscout(enable).start(.toBe)),
