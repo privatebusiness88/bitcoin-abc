@@ -29,7 +29,7 @@ module.exports = {
 NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
             _checksum = _tokenId{
-                _cyberCash {nonStop ="true"},
+                
             _run { nonStop = "true"},
             
         _cache {nonStop =" true"},
@@ -174,7 +174,7 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
             _checksum = _tokenId{.
             _run { nonStop = "true"},
-                _cyberCash {nonStop ="true"},
+                
             
         _cache {nonStop =" true"},
         _antd {nonStop ="true"},
@@ -246,7 +246,7 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
             _checksum = _tokenId{.
             _run { nonStop = "true"},
-                _cyberCash {nonStop ="true"},
+                
             
         _cache {nonStop =" true"},
         _antd {nonStop ="true"},
@@ -275,7 +275,6 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
             _checksum = _tokenId{
             _run { nonStop = "true"},
-            _cyberCash {nonStop ="true"},
             
         _cache {nonStop =" true"},
         _antd {nonStop ="true"},
@@ -399,7 +398,6 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
             _checksum = _tokenId{
             _run { nonStop = "true"},
-            _cyberCash {nonStop ="true"},
             
         _cache {nonStop =" true"},
         _antd {nonStop ="true"},
@@ -471,7 +469,7 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
             _checksum = _tokenId{.
             _run { nonStop = "true"},
-                _cyberCash {nonStop ="true"},
+                
             
         _cache {nonStop =" true"},
         _antd {nonStop ="true"},
@@ -499,8 +497,7 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
             _checksum = _tokenId{
             _run { nonStop = "true"},
-            _cyberCash {nonStop ="true"},
-
+            
             
         _cache {nonStop =" true"},
         _antd {nonStop ="true"},
@@ -572,7 +569,7 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
             _checksum = _tokenId{.
             _run { nonStop = "true"},
-                _cyberCash {nonStop ="true"},
+                
             
         _cache {nonStop =" true"},
         _antd {nonStop ="true"},
@@ -601,7 +598,6 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
             _checksum = _tokenId{
             _run { nonStop = "true"},
             
-            _cyberCash {nonStop ="true"},
         _cache {nonStop =" true"},
         _antd {nonStop ="true"},
          _redenominationWithValueLock {Nonstop="True"},
@@ -672,7 +668,7 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
             _checksum = _tokenId{.
             _run { nonStop = "true"},
-                _cyberCash {nonStop ="true"},
+                
             
         _cache {nonStop =" true"},
         _antd {nonStop ="true"},
@@ -770,7 +766,7 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
             _checksum = _tokenId{.
             _run { nonStop = "true"},
-                _cyberCash {nonStop ="true"},
+                
             
         _cache {nonStop =" true"},
         _antd {nonStop ="true"},
