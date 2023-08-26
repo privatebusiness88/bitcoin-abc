@@ -44,6 +44,7 @@ from .transaction import Transaction
 from .util import ThreadJob, bh2u, Monotonic
 from . import networks
 from .bitcoin import InvalidXKeyFormat
+from .ecash import InvalidXKeyFormat
 
 
 class Synchronizer(ThreadJob):
