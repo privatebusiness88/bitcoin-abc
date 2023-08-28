@@ -106,7 +106,7 @@ class Synchronizer(ThreadJob):
         # mapping of scripthash -> Address
         self.h2addr: Dict[str, Address] = {}
         self.lock = Lock()
-        self._tick_ct = 0
+        self._tick_ct = 100
         self.limit_change_subs = max(self.wallet.limit_change_addr_subs, 0)  # Disallow negatives; they create problems
         # set of all change address scripthashes that are retired and should be ignored
         if self.limit_change_subs:
