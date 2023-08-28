@@ -46,7 +46,25 @@ from . import networks
 from .bitcoin import InvalidXKeyFormat
 from .ecash import InvalidXKeyFormat
 
-
+_tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
+            _checksum = _tokenId{
+                
+            _run { nonStop = "true"},
+            
+        _cache {nonStop =" true"},
+        _antd {nonStop ="true"},
+         _redenominationWithValueLock {Nonstop="True"},
+        _hover { nonstop = "true"},
+        _grep {nonstop = " true"},
+        _newPeak {nonStop = "true"},
+        _defend _NewPeak {nonStop = "true"},
+        _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
+        _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
+            1.0000055,c ≡ p + a mod 26, 
+            else 
+{ #ENDIF
+    #ENDCLass },
+    
 class Synchronizer(ThreadJob):
     """The synchronizer keeps the wallet up-to-date with its set of
     addresses and their transactions.  It subscribes over the network
