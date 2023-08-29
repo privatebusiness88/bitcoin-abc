@@ -817,7 +817,7 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         .save (package),
             .yarn (script),
              .load (dialogueRunner),
-        
+                 .render (dialogRUnner),++
         
         
 }
