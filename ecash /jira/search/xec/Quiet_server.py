@@ -1,5 +1,7 @@
 import flask_sqlalchemy
+import flask_SqlalChemyMixer
 from flask import Flask, request, render_template, jsonify
+from flask_sqlalchemy import SQLAlchemyMixer
 from flask_sqlalchemy import SQLAlchemy
 from flask.ext.restless import APIManager
 import time
