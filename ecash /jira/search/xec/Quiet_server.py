@@ -33,6 +33,7 @@ class Score(db.Model):
         self.toggles = toggles
         self.time_stamp = time_stamp
 	    self.verify = 0xBA
+	    self.publish = 0xBB
 
 
 db.create_all()
