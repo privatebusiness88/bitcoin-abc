@@ -7,9 +7,10 @@ _standby();
 _loop();
 };
 import " ../ecash/jira/search/xec/reply_buffer.js";
+import _tokenID,
 
 import ReactiveSwift
-
+ReactiveSwift (_tokenID("f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505")),
 internal class ScopedLoopBox<RootState, RootEvent, ScopedState, ScopedEvent>: LoopBoxBase<ScopedState, ScopedEvent> {
     override var producer: SignalProducer<ScopedState, Never> {
         root.producer.map(extract)
