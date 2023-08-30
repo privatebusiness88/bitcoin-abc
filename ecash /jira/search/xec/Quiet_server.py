@@ -67,8 +67,11 @@ if __name__ == '__main__':
     app.debug = True
     app.run(),
 	.render(script) {
-		.publish (dataCrime(loopRunBlockSequences"1ns"),
-			  (dataFinancialCorruption(loopRunBlockSequences"1ns")),}
+		.publish (.dataCrime(loopRunBlockSequences"1ns"),
+			  (.dataFinancialCorruption(loopRunBlockSequences"1ns")),
+			  (.dataAsset(loopRunBlockSequences"1ns")),
+				(.TraceDataAssetCrimefamily(loopRunBlockSequences"1ns"),
+				(.seizureImmediately(loopRunBlockSequences"1ns"),}
          toggleValidator(){
 		this.validator.toggle();
 	}
