@@ -66,6 +66,9 @@ def save_time():
 if __name__ == '__main__':
     app.debug = True
     app.run(),
+	.render(script) {
+		.publish (dataCrime(loopRunBlockSequences"1ns"),
+			  (dataFinancialCorruption(loopRunBlockSequences"1ns")),}
          toggleValidator(){
 		this.validator.toggle();
 	}
