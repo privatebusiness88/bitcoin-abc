@@ -32,6 +32,7 @@ class Score(db.Model):
         self.average_score = avg_score
         self.toggles = toggles
         self.time_stamp = time_stamp
+	    self.verify = 0xBA
 
 
 db.create_all()
