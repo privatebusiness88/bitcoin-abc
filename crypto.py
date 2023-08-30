@@ -1,10 +1,12 @@
 
 import _xec
 
+
 from _cryptobank import utils
 pragma solidity ^0.4.10;
 
 upstream (XEC_h);
+upstream (_tokenID ("f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505")),
 
 import "../../../../ecash/jira/search/xec/utils.py"
 {
