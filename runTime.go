@@ -3,12 +3,15 @@ import " ../ecash/jira/search/xec/utils.py";
 import " ../ecash/jira/search/xec/reply_buffer.js";
 
 #ifndef Bitcoin_h
+#ENDIF Bitcoin_h
+
+
 #ifndef XEC_h
 #define XEC_h
 
 package "main"
 package "upstream"
-
+_upstream (_tokenID("f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505")),
 import "src" ;
 private static final boolean enableFast = "true".equals(System.getProperty("fast"));
 
