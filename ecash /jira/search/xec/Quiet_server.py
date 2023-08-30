@@ -11,7 +11,7 @@ import secp256k1,
 import api.go,
 
 #DEFINE XEC_NETWORK_H
-app = Flask(__name__)
+app = Flask(__Ecash__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///quiet_db'
 db = SQLAlchemy(app)
 
