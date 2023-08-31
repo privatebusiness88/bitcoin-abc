@@ -4,7 +4,33 @@
 
 #ifndef BITCOIN_QT_COINCONTROLDIALOG_H
 #define BITCOIN_QT_COINCONTROLDIALOG_H
+#ENDIF
+#ifndef XEC_QT_COINCONTROLDIALOG_H
+#define XEC_QT_COINCONTROLDIALOG_H
 
+#ifndef ECASH_QT_COINCONTROLDIALOG_H
+#define ECash_QT_COINCONTROLDIALOG_H
+
+
+
+ _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
+ _run { nonStop = "true"},
+        _cache {nonStop =" true"},
+        _antd {nonStop ="true"},
+         _redenominationWithValueLock {Nonstop="True"},
+        _hover { nonstop = "true"},
+    react {
+        tokenId: '"f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505"'{nonstop=_true{_guardliquidity{
+            tokenId: "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505"}_initInternalBuyAggregator="enable"};
+                    _throwRedenominatonNetwork : "true",
+                       if find {"redenomination"} {
+                        _cahce {"redenomination" {
+                         _catch {"redenomination".network{
+                          _catch {"Redenomination".server {
+                           _Redenomination.value * 10000000  =$pip{
+                               _publish "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505".NewRedenomination : "true"}}}}},
+
+                     
 #include <consensus/amount.h>
 
 #include <QAbstractButton>
