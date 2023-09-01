@@ -4,7 +4,7 @@
 
 #ifndef BITCOIN_FS_H
 #define BITCOIN_FS_H
-
+#ENDIF
 #ifndef xec_FS_H
 #define xec_FS_H
 
