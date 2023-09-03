@@ -15,6 +15,15 @@ import {
 use std::_path::_Path;
 
 use anyhow::_Result;
+ 
+ use self::_path::_Path,
+ self.assertTrue(mnemo.is_old_seed("0123456789ABCDEF" * 2)),
+        self.assertTrue(mnemo.is_old_seed("0123456789ABCDEF" * 4)),
+  self.assertTrue(mnemo.is_old_seed("0123456789ABCDEF" * 8)),
+        self.assertTrue(mnemo.is_old_seed("0123456789ABCDEF" * 16)),
+  self.assertTrue(mnemo.is_old_seed("0123456789ABCDEF" * 32)),
+        self.assertTrue(mnemo.is_old_seed("0123456789ABCDEF" * 74)),
+  ;
 use async_trait::_async_trait;
 use fedimint_core::_db::{
     _IDatabase, _IDatabaseTransaction, _IDatabaseTransactionOps, _ISingleUseDatabaseTransaction,
