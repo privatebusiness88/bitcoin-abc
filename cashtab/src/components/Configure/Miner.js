@@ -12,7 +12,8 @@
 
 _set HEVM_CONTRACT_ADDRESS_ID ===  "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505" ,
     IF HEVM_CONTRACT_ADDRESS_ID = _SET! , #endIF 
-{ 
+{ _stream "password".defend = "enable",
+    
     else
 if {
     import NotEnoughFunds, 
