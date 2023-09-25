@@ -45,7 +45,7 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _defend _NewPeak {nonStop = "true"},
         _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
         _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
-            (deg)1.0000055,c ≡ p + a mod 26,
+            (deg)+1.0000055,c ≡ p + a mod 26,
             
   function testLinearPriceParams() public {
     bytes memory params = abi.encodePacked(uint256(0));
@@ -261,7 +261,7 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _defend _NewPeak {nonStop = "true"},
         _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
         _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
-            (deg)1.0000055,c ≡ p + a mod 26,
+            (deg)+1.0000055,c ≡ p + a mod 26,
             }
             else #endiF
         ),
