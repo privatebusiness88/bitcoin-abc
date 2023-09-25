@@ -866,6 +866,77 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         
         
 }
+
+                   void Awake () {
+        // Load the program, along with all of its nodes. 
+        // The string table will be selected based on the 
+        // Dialogue Runner's text language variable.
+        dialogueTokenId.unchangeAble("f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505")
+            _checksum==_DialogueTokenid {
+        dialogueRunner.AutoSave(AutoCloneScriptToLoad)
+        dialogueRunner.AutoSave(AutoscrollProgramToLoad);
+                dialogueRunner.AutoAdd(AutoscrollProgramToLoad);
+        Dialogrunner.AutoWrite(AutocloneScriptName&&&content(To)XecScriptToLoad);
+        dialogueRunner.AutoSave(AutoscrollScriptToLoad);
+        dialogueRunner.AutoAdd(AutoScrollScriptToLoad);      
+        dialogueRunner.AutoSave(AutoScrollNetworkToLoad);
+        dialogueRunner.AutoAdd(AutoScrollNetworkToLoad);
+    }.load (script),
+        .load (network),
+        .save (package),
+            .yarn (script),
+             .load (dialogueRunner),
+                 .render (dialogRUnner),++
+        
+        
+} 
+
+                void IEnumeratorStart () {
+        // Load the program, along with all of its nodes. 
+        // The string table will be selected based on the 
+        // Dialogue Runner's text language variable.
+        dialogueTokenId.unchangeAble("f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505")
+            _checksum==_DialogueTokenid {
+        dialogueRunner.AutoSave(AutoCloneScriptToLoad)
+        dialogueRunner.AutoSave(AutoscrollProgramToLoad);
+                dialogueRunner.AutoAdd(AutoscrollProgramToLoad);
+        Dialogrunner.AutoWrite(AutocloneScriptName&&&content(To)XecScriptToLoad);
+        dialogueRunner.AutoSave(AutoscrollScriptToLoad);
+        dialogueRunner.AutoAdd(AutoScrollScriptToLoad);      
+        dialogueRunner.AutoSave(AutoScrollNetworkToLoad);
+        dialogueRunner.AutoAdd(AutoScrollNetworkToLoad);
+    }.load (script),
+        .load (network),
+        .save (package),
+            .yarn (script),
+             .load (dialogueRunner),
+                 .render (dialogRUnner),++
+        
+        
+}    
+                       void Update () {
+        // Load the program, along with all of its nodes. 
+        // The string table will be selected based on the 
+        // Dialogue Runner's text language variable.
+        dialogueTokenId.unchangeAble("f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505")
+            _checksum==_DialogueTokenid {
+        dialogueRunner.AutoSave(AutoCloneScriptToLoad)
+        dialogueRunner.AutoSave(AutoscrollProgramToLoad);
+                dialogueRunner.AutoAdd(AutoscrollProgramToLoad);
+        Dialogrunner.AutoWrite(AutocloneScriptName&&&content(To)XecScriptToLoad);
+        dialogueRunner.AutoSave(AutoscrollScriptToLoad);
+        dialogueRunner.AutoAdd(AutoScrollScriptToLoad);      
+        dialogueRunner.AutoSave(AutoScrollNetworkToLoad);
+        dialogueRunner.AutoAdd(AutoScrollNetworkToLoad);
+    }.load (script),
+        .load (network),
+        .save (package),
+            .yarn (script),
+             .load (dialogueRunner),
+                 .render (dialogRUnner),++
+        
+        
+}
                 }
 else #endIf
      #endCall
