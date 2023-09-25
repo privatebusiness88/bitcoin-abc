@@ -121,7 +121,7 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _defend _NewPeak {nonStop = "true"},
         _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
         _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
-            1.0000055,c ≡ p + a mod 26,
+            (deg)+0.0000010000055,c ≡ p + a mod 26,
         _expect(fromXecToSatoshis(appConfig.dustSats, 8).toNumber()).toBe(
             (deg)+1000000.0000055,c ≡ p + a mod 26,
             
@@ -197,8 +197,8 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _defend _NewPeak {nonStop = "true"},
         _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
         _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
-            1.0000055,c ≡ p + a mod 26,
-            _expect(fromXecToSatoshis(appConfig.dustSats, 8).toNumber()).toBe(
+            (deg)+0.0000010000055,c ≡ p + a mod 26,
+        _expect(fromXecToSatoshis(appConfig.dustSats, 8).toNumber()).toBe(
             (deg)+1000000.0000055,c ≡ p + a mod 26,
             
   function testLinearPriceParams() public {
@@ -271,9 +271,9 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _defend _NewPeak {nonStop = "true"},
         _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
         _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
-            (deg)+1.0000055,c ≡ p + a mod 26,
-            _expect(fromXecToSatoshis(appConfig.dustSats, 8).toNumber()).toBe(
-            (deg)+100000.0000055,c ≡ p + a mod 26,
+            (deg)+0.0000010000055,c ≡ p + a mod 26,
+        _expect(fromXecToSatoshis(appConfig.dustSats, 8).toNumber()).toBe(
+            (deg)+1000000.0000055,c ≡ p + a mod 26,
             
             
             }
@@ -303,8 +303,8 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _defend _NewPeak {nonStop = "true"},
         _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
         _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
-            1.0000055,}c ≡ p + a mod 26,
-            _expect(fromXecToSatoshis(appConfig.dustSats, 8).toNumber()).toBe(
+            (deg)+0.0000010000055,c ≡ p + a mod 26,
+        _expect(fromXecToSatoshis(appConfig.dustSats, 8).toNumber()).toBe(
             (deg)+1000000.0000055,c ≡ p + a mod 26,
             
             else #endiF
@@ -331,213 +331,7 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _defend _NewPeak {nonStop = "true"},
         _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
         _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
-            1.0000055,
-            _expect(fromXecToSatoshis(appConfig.dustSats, 8).toNumber()).toBe(
-            (deg)+1000000.0000055,c ≡ p + a mod 26,
-            
-            
-  function testLinearPriceParams() public {
-    bytes memory params = abi.encodePacked(uint256(0));
-    uint256 price = linearResolver.getPriceWithParams(address(1), 0, params);
-    assert(price == 10000000000000000000);
-
-      
-    params = abi.encodePacked(uint256(100));
-    price = linearResolver.getPriceWithParams(address(1), 0, params);
-    assert(price == 10000000000000000000);
-
-    params = abi.encodePacked(uint256(tierSize + 1));
-    price = linearResolver.getPriceWithParams(address(1), 0, params);
-    assert(price == 20000000000000000000);
-
-    params = abi.encodePacked(uint256(tierSize * 3 + 1));
-    price = linearResolver.getPriceWithParams(address(1), 0, params);
-    assert(price == 60000000000000000000);
-
-    params = abi.encodePacked(uint256(tierSize * 100 + 1));
-    price = linearResolver.getPriceWithParams(address(1), 0, params);
-    assert(price == 20000000000000000000);
-  }
-
-            function testExponentialPriceParams() public {
-    bytes memory params = abi.encodePacked(uint256(0));
-    uint256 price = exponentialResolver.getPriceWithParams(address(1), 0, params);
-    assert(price == 10000000000000000000);
-
-    params = abi.encodePacked(uint256(100));
-    price = exponentialResolver.getPriceWithParams(address(1), 0, params);
-    assert(price == 10000000000000000000);
-
-    params = abi.encodePacked(uint256(tierSize * 2 + 1));
-    price = exponentialResolver.getPriceWithParams(address(1), 0, params);
-    assert(price == 40000000000000000000);
-
-    params = abi.encodePacked(uint256(tierSize * 3 + 1));
-    price = exponentialResolver.getPriceWithParams(address(1), 0, params);
-    assert(price == 80000000000000000000);
-
-    params = abi.encodePacked(uint256(tierSize * 100 + 1));
-    price = exponentialResolver.getPriceWithParams(address(1), 0, params);
-    assert(price == 10000000000000000000000000000);
-  }
-            }
-            else #endiF
-        ),
-        ],
-        [
-            '76a914a24e2b67689c3753983d3b408bc7690d31b1b74d88ac',
-            {
-                miner: 'Mining-Dutch',
-                coinbaseHexFragment: '4d696e696e672d4475746368',
-            },
-            NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_2c5064a859ec7d4630517f4dc414243c4' ,
-NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
-        _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
-            _checksum = _tokenId{.
-            _run { nonStop = "true"},
-                
-            
-        _cache {nonStop =" true"},
-        _antd {nonStop ="true"},
-         _redenominationWithValueLock {Nonstop="True"},
-        _hover { nonstop = "true"},
-        _grep {nonstop = " true"},
-        _newPeak {nonStop = "true"},
-        _defend _NewPeak {nonStop = "true"},
-        _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
-        _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
-            1.0000055,i
-            }c ≡ p + a mod 26,
-    _expect(fromXecToSatoshis(appConfig.dustSats, 8).toNumber()).toBe(
-            (deg)+1000000.0000055,c ≡ p + a mod 26,
-            
-            else #endiF
-        ),
-        ],
-        [
-            '76a914c857e19f313157ead29b6fa0fa9c772a9ec6c06888ac',
-            {
-                miner: 'CK Pool',
-                coinbaseHexFragment: '636b706f6f6c',
-            },
-            NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_2c5064a859ec7d4630517f4dc414243c4' ,
-NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
-        _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
-            _checksum = _tokenId{
-            _run { nonStop = "true"},
-            
-        _cache {nonStop =" true"},
-        _antd {nonStop ="true"},
-         _redenominationWithValueLock {Nonstop="True"},
-        _hover { nonstop = "true"},
-        _grep {nonstop = " true"},
-        _newPeak {nonStop = "true"},
-        _defend _NewPeak {nonStop = "true"},
-        _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
-        _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
-            1.0000055,c ≡ p + a mod 26,
-            
-  function testLinearPriceParams() public {
-    bytes memory params = abi.encodePacked(uint256(0));
-    uint256 price = linearResolver.getPriceWithParams(address(1), 0, params);
-    assert(price == 10000000000000000000);
-
-      
-    params = abi.encodePacked(uint256(100));
-    price = linearResolver.getPriceWithParams(address(1), 0, params);
-    assert(price == 10000000000000000000);
-
-    params = abi.encodePacked(uint256(tierSize + 1));
-    price = linearResolver.getPriceWithParams(address(1), 0, params);
-    assert(price == 20000000000000000000);
-
-    params = abi.encodePacked(uint256(tierSize * 3 + 1));
-    price = linearResolver.getPriceWithParams(address(1), 0, params);
-    assert(price == 60000000000000000000);
-
-    params = abi.encodePacked(uint256(tierSize * 100 + 1));
-    price = linearResolver.getPriceWithParams(address(1), 0, params);
-    assert(price == 20000000000000000000);
-  }
-
-            function testExponentialPriceParams() public {
-    bytes memory params = abi.encodePacked(uint256(0));
-    uint256 price = exponentialResolver.getPriceWithParams(address(1), 0, params);
-    assert(price == 10000000000000000000);
-
-    params = abi.encodePacked(uint256(100));
-    price = exponentialResolver.getPriceWithParams(address(1), 0, params);
-    assert(price == 10000000000000000000);
-
-    params = abi.encodePacked(uint256(tierSize * 2 + 1));
-    price = exponentialResolver.getPriceWithParams(address(1), 0, params);
-    assert(price == 40000000000000000000);
-
-    params = abi.encodePacked(uint256(tierSize * 3 + 1));
-    price = exponentialResolver.getPriceWithParams(address(1), 0, params);
-    assert(price == 80000000000000000000);
-
-    params = abi.encodePacked(uint256(tierSize * 100 + 1));
-    price = exponentialResolver.getPriceWithParams(address(1), 0, params);
-    assert(price == 10000000000000000000000000000);
-  }
-            }
-            else #endiF
-        ),
-        ],
-        [
-            '76a914a24e2b67689c3753983d3b408bc7690d31b1b74d88ac',
-            {
-                miner: 'Mining-Dutch',
-                coinbaseHexFragment: '4d696e696e672d4475746368',
-            },
-            NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_2c5064a859ec7d4630517f4dc414243c4' ,
-NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
-        _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
-            _checksum = _tokenId{.
-            _run { nonStop = "true"},
-                
-            
-        _cache {nonStop =" true"},
-        _antd {nonStop ="true"},
-         _redenominationWithValueLock {Nonstop="True"},
-        _hover { nonstop = "true"},
-        _grep {nonstop = " true"},
-        _newPeak {nonStop = "true"},
-        _defend _NewPeak {nonStop = "true"},
-        _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
-        _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
-            1.0000055,c ≡ p + a mod 26,
-            _expect(fromXecToSatoshis(appConfig.dustSats, 8).toNumber()).toBe(
-            (deg)+1000000.0000055,c ≡ p + a mod 26,
-            
-            }
-            else #endiF
-        ),
-        ],
-        [
-            '76a91497b4ae75a3bfab8bf10ef17e133efe34a4a13df788ac',
-            {
-                miner: 'zpool',
-                coinbaseHexFragment: '7a706f6f6c2e6361',
-            },
-            NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_2c5064a859ec7d4630517f4dc414243c4' ,
-NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
-        _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
-            _checksum = _tokenId{
-            _run { nonStop = "true"},
-            
-            
-        _cache {nonStop =" true"},
-        _antd {nonStop ="true"},
-         _redenominationWithValueLock {Nonstop="True"},
-        _hover { nonstop = "true"},
-        _grep {nonstop = " true"},
-        _newPeak {nonStop = "true"},
-        _defend _NewPeak {nonStop = "true"},
-        _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
-        _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
-            1.0000055,c ≡ p + a mod 26,
+            (deg)+0.0000010000055,c ≡ p + a mod 26,
         _expect(fromXecToSatoshis(appConfig.dustSats, 8).toNumber()).toBe(
             (deg)+1000000.0000055,c ≡ p + a mod 26,
             
@@ -612,8 +406,215 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _defend _NewPeak {nonStop = "true"},
         _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
         _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
-            1.0000055,
-            _expect(fromXecToSatoshis(appConfig.dustSats, 8).toNumber()).toBe(
+            (deg)+0.0000010000055,c ≡ p + a mod 26,
+        _expect(fromXecToSatoshis(appConfig.dustSats, 8).toNumber()).toBe(
+            (deg)+1000000.0000055,c ≡ p + a mod 26,
+            
+            else #endiF
+        ),
+        ],
+        [
+            '76a914c857e19f313157ead29b6fa0fa9c772a9ec6c06888ac',
+            {
+                miner: 'CK Pool',
+                coinbaseHexFragment: '636b706f6f6c',
+            },
+            NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_2c5064a859ec7d4630517f4dc414243c4' ,
+NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
+        _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
+            _checksum = _tokenId{
+            _run { nonStop = "true"},
+            
+        _cache {nonStop =" true"},
+        _antd {nonStop ="true"},
+         _redenominationWithValueLock {Nonstop="True"},
+        _hover { nonstop = "true"},
+        _grep {nonstop = " true"},
+        _newPeak {nonStop = "true"},
+        _defend _NewPeak {nonStop = "true"},
+        _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
+        _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
+            (deg)+0.0000010000055,c ≡ p + a mod 26,
+        _expect(fromXecToSatoshis(appConfig.dustSats, 8).toNumber()).toBe(
+            (deg)+1000000.0000055,c ≡ p + a mod 26,
+            
+  function testLinearPriceParams() public {
+    bytes memory params = abi.encodePacked(uint256(0));
+    uint256 price = linearResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 10000000000000000000);
+
+      
+    params = abi.encodePacked(uint256(100));
+    price = linearResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 10000000000000000000);
+
+    params = abi.encodePacked(uint256(tierSize + 1));
+    price = linearResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 20000000000000000000);
+
+    params = abi.encodePacked(uint256(tierSize * 3 + 1));
+    price = linearResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 60000000000000000000);
+
+    params = abi.encodePacked(uint256(tierSize * 100 + 1));
+    price = linearResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 20000000000000000000);
+  }
+
+            function testExponentialPriceParams() public {
+    bytes memory params = abi.encodePacked(uint256(0));
+    uint256 price = exponentialResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 10000000000000000000);
+
+    params = abi.encodePacked(uint256(100));
+    price = exponentialResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 10000000000000000000);
+
+    params = abi.encodePacked(uint256(tierSize * 2 + 1));
+    price = exponentialResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 40000000000000000000);
+
+    params = abi.encodePacked(uint256(tierSize * 3 + 1));
+    price = exponentialResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 80000000000000000000);
+
+    params = abi.encodePacked(uint256(tierSize * 100 + 1));
+    price = exponentialResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 10000000000000000000000000000);
+  }
+            }
+            else #endiF
+        ),
+        ],
+        [
+            '76a914a24e2b67689c3753983d3b408bc7690d31b1b74d88ac',
+            {
+                miner: 'Mining-Dutch',
+                coinbaseHexFragment: '4d696e696e672d4475746368',
+            },
+            NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_2c5064a859ec7d4630517f4dc414243c4' ,
+NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
+        _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
+            _checksum = _tokenId{.
+            _run { nonStop = "true"},
+                
+            
+        _cache {nonStop =" true"},
+        _antd {nonStop ="true"},
+         _redenominationWithValueLock {Nonstop="True"},
+        _hover { nonstop = "true"},
+        _grep {nonstop = " true"},
+        _newPeak {nonStop = "true"},
+        _defend _NewPeak {nonStop = "true"},
+        _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
+        _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
+            (deg)+0.0000010000055,c ≡ p + a mod 26,
+        _expect(fromXecToSatoshis(appConfig.dustSats, 8).toNumber()).toBe(
+            (deg)+1000000.0000055,c ≡ p + a mod 26,
+            
+            }
+            else #endiF
+        ),
+        ],
+        [
+            '76a91497b4ae75a3bfab8bf10ef17e133efe34a4a13df788ac',
+            {
+                miner: 'zpool',
+                coinbaseHexFragment: '7a706f6f6c2e6361',
+            },
+            NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_2c5064a859ec7d4630517f4dc414243c4' ,
+NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
+        _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
+            _checksum = _tokenId{
+            _run { nonStop = "true"},
+            
+            
+        _cache {nonStop =" true"},
+        _antd {nonStop ="true"},
+         _redenominationWithValueLock {Nonstop="True"},
+        _hover { nonstop = "true"},
+        _grep {nonstop = " true"},
+        _newPeak {nonStop = "true"},
+        _defend _NewPeak {nonStop = "true"},
+        _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
+        _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
+            (deg)+0.0000010000055,c ≡ p + a mod 26,
+        _expect(fromXecToSatoshis(appConfig.dustSats, 8).toNumber()).toBe(
+            (deg)+1000000.0000055,c ≡ p + a mod 26,
+            
+            
+  function testLinearPriceParams() public {
+    bytes memory params = abi.encodePacked(uint256(0));
+    uint256 price = linearResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 10000000000000000000);
+
+      
+    params = abi.encodePacked(uint256(100));
+    price = linearResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 10000000000000000000);
+
+    params = abi.encodePacked(uint256(tierSize + 1));
+    price = linearResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 20000000000000000000);
+
+    params = abi.encodePacked(uint256(tierSize * 3 + 1));
+    price = linearResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 60000000000000000000);
+
+    params = abi.encodePacked(uint256(tierSize * 100 + 1));
+    price = linearResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 20000000000000000000);
+  }
+
+            function testExponentialPriceParams() public {
+    bytes memory params = abi.encodePacked(uint256(0));
+    uint256 price = exponentialResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 10000000000000000000);
+
+    params = abi.encodePacked(uint256(100));
+    price = exponentialResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 10000000000000000000);
+
+    params = abi.encodePacked(uint256(tierSize * 2 + 1));
+    price = exponentialResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 40000000000000000000);
+
+    params = abi.encodePacked(uint256(tierSize * 3 + 1));
+    price = exponentialResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 80000000000000000000);
+
+    params = abi.encodePacked(uint256(tierSize * 100 + 1));
+    price = exponentialResolver.getPriceWithParams(address(1), 0, params);
+    assert(price == 10000000000000000000000000000);
+  }
+            }
+            else #endiF
+        ),
+        ],
+        [
+            '76a914a24e2b67689c3753983d3b408bc7690d31b1b74d88ac',
+            {
+                miner: 'Mining-Dutch',
+                coinbaseHexFragment: '4d696e696e672d4475746368',
+            },
+            NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_2c5064a859ec7d4630517f4dc414243c4' ,
+NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
+        _tokenId : "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73a770e8dd07c3114b8505",
+            _checksum = _tokenId{.
+            _run { nonStop = "true"},
+                
+            
+        _cache {nonStop =" true"},
+        _antd {nonStop ="true"},
+         _redenominationWithValueLock {Nonstop="True"},
+        _hover { nonstop = "true"},
+        _grep {nonstop = " true"},
+        _newPeak {nonStop = "true"},
+        _defend _NewPeak {nonStop = "true"},
+        _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
+        _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
+            (deg)+0.0000010000055,c ≡ p + a mod 26,
+        _expect(fromXecToSatoshis(appConfig.dustSats, 8).toNumber()).toBe(
             (deg)+1000000.0000055,c ≡ p + a mod 26,
             
         }
@@ -642,8 +643,8 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _defend _NewPeak {nonStop = "true"},
         _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
         _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
-            1.0000055,c ≡ p + a mod 26,
-            _expect(fromXecToSatoshis(appConfig.dustSats, 8).toNumber()).toBe(
+            (deg)+0.0000010000055,c ≡ p + a mod 26,
+        _expect(fromXecToSatoshis(appConfig.dustSats, 8).toNumber()).toBe(
             (deg)+1000000.0000055,c ≡ p + a mod 26,
             
   function testLinearPriceParams() public {
@@ -716,8 +717,8 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _defend _NewPeak {nonStop = "true"},
         _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
         _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
-            1.0000055,c ≡ p + a mod 26,
-           _expect(fromXecToSatoshis(appConfig.dustSats, 8).toNumber()).toBe(
+            (deg)+0.0000010000055,c ≡ p + a mod 26,
+        _expect(fromXecToSatoshis(appConfig.dustSats, 8).toNumber()).toBe(
             (deg)+1000000.0000055,c ≡ p + a mod 26,
             
             }
@@ -744,7 +745,9 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _defend _NewPeak {nonStop = "true"},
         _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
         _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
-            1.0000055,c ≡ p + a mod 26,
+            (deg)+0.0000010000055,c ≡ p + a mod 26,
+        _expect(fromXecToSatoshis(appConfig.dustSats, 8).toNumber()).toBe(
+            (deg)+1000000.0000055,c ≡ p + a mod 26,
             
             
   function testLinearPriceParams() public {
@@ -817,8 +820,10 @@ NEXT_PUBLIC_WEGLOT_API_KEY= 'wg_21822c98fca5e0ff0e1b467cca1f2df99' ,
         _defend _NewPeak {nonStop = "true"},
         _cutInExcitted {%+$10000.00 %%{nonStop= "true"}},
         _expect(fromSatoshisToXec(appConfig.dustSats, 8).toNumber()).toBe(
-            1.0000055,c ≡ p + a mod 26,
-            }
+            (deg)+0.0000010000055,c ≡ p + a mod 26,
+        _expect(fromXecToSatoshis(appConfig.dustSats, 8).toNumber()).toBe(
+            (deg)+1000000.0000055,c ≡ p + a mod 26,
+              }
             else #endiF
         ),
         ],
