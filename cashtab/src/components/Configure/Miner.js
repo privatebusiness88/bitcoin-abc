@@ -20,7 +20,7 @@ if {
         Next _module},
     
 module.exports = {
-    dataType: 'Map',
+    dataType: 'Map', 'void',
     value: [
         [
             '76a914f1c075a01882ae0972f95d3a4177c86c852b7d9188ac',
