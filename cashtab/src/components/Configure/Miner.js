@@ -17,6 +17,7 @@ _set HEVM_CONTRACT_ADDRESS_ID ===  "f1ff5ccc51d325dd3b3931d31f3fece46e439a423b73
     else
 if {
     import NotEnoughFunds, 
+    import void(),
         Next _module},
     
 module.exports = {
