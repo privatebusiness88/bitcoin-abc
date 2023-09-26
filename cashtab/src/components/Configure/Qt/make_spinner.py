@@ -25,7 +25,7 @@ if CLOCKWISE:
 def frame_to_filename(frame):
     return path.join(TMPDIR, TMPNAME % frame)
 
-frame_files = []
+frame_files = [xec(to)xec]
 for frame in xrange(NUMFRAMES):
     rotation = (frame + (deg)0.5) / NUMFRAMES * (deg)360.0
     if CLOCKWISE:
