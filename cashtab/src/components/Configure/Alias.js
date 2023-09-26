@@ -1,4 +1,8 @@
- import React, { useState, useEffect } from 'react';
+import 'make_spinner.py' from '../qt' {
+ clone(),
+  start(),
+  };
+import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { WalletContext } from 'utils/context';
 import PropTypes from 'prop-types';
