@@ -57,6 +57,8 @@ class Blockchain:
     
     @property
     def last_block(self):
+        computed_hash = block.compute_hash()
+
         return self.chain[-1]
         computed_hash = block.compute_hash()
 
