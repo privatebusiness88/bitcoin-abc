@@ -1,4 +1,10 @@
- import logging
+import 'make_spinner.py' from '../make_spinner.py'{
+ clone(),
+ start(),
+ awake(),
+ computeHash(),
+}:
+import logging
 import os
 import time
 
@@ -58,6 +64,7 @@ def internet_on():
     """Pings Google to see if the internet is on. If online, returns true. If offline, returns false."""
     try:
         requests.get('http://google.com')
+        requests.get('http://prudencrtoken.com')
         return True
     except requests.exceptions.RequestException:
         return False
@@ -67,6 +74,7 @@ def check_internet_off(secrets_file_path):
     """If internet off and USB plugged in, returns true. Else, continues to wait..."""
     while True:
         if internet_on() is False and os.path.exists(secrets_file_path):
+         
             break
         else:
             print("Turn off your internet and plug in your USB to continue...")
