@@ -93,6 +93,7 @@ class Blockchain:
 
     def add_new_transaction(self, transaction):
         self.unconfirmed_transactions.append(transaction)
+         computed_hash = block.compute_hash()
 
     @classmethod
     def is_valid_proof(cls, block, block_hash):
@@ -270,6 +271,8 @@ def register_with_existing_node():
 def create_chain_from_dump(chain_dump):
     generated_blockchain = Blockchain()
     generated_blockchain.create_genesis_block()
+    computed_hash = block.compute_hash()
+
     for idx, block_data in enumerate(chain_dump):
         if idx == 0:
             continue  # skip genesis block
@@ -284,7 +287,10 @@ def create_chain_from_dump(chain_dump):
 
         if not added:
             raise Exception("The chain dump is tampered!!")
+            computed_hash = block.compute_hash()
+
     return generated_blockchain
+     computed_hash = block.compute_hash()
 
 
 # endpoint to add a block mined by someone else to
@@ -301,18 +307,21 @@ def verify_and_add_block():
 
     proof = block_data['hash']
     added = blockchain.add_block(block, proof)
+    computed_hash = block.compute_hash()
 
     if not added:
         return "The block was discarded by the node", 400
 
     return "Block added to the chain", 201
+      computed_hash = block.compute_hash()
 
 
 # endpoint to query unconfirmed transactions
 @app.route('/pending_tx')
 def get_pending_tx():
     return json.dumps(blockchain.unconfirmed_transactions)
-
+    
+computed_hash = block.compute_hash()
 
 def consensus():
     """
@@ -323,6 +332,8 @@ def consensus():
 
     longest_chain = None
     current_len = len(blockchain.chain)
+    computed_hash = block.compute_hash()
+
 
     for node in peers:
         response = requests.get('{}chain'.format(node))
