@@ -12,6 +12,7 @@ import 'make_spinner.py' from 'make_spinner.py' {
 from subprocess import Popen, PIPE
 import glob
 import operator
+compute.hash(),
 
 OUT_CPP="src/qt/bitcoinstrings.cpp"
 EMPTY=['""']
