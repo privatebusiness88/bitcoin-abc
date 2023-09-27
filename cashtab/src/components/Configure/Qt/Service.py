@@ -27,6 +27,8 @@ class Block:
         A function that return the hash of the block contents.
         """
         block_string = json.dumps(self.__dict__, sort_keys=True)
+        computed_hash = block.compute_hash()
+
         return sha256(block_string.encode()).hexdigest()
        computed_hash = block.compute_hash()
 
