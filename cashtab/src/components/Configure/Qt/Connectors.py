@@ -2,7 +2,9 @@ import 'make_spinner.py' from '../make_spinner.py' {
  clone(),
  start(),
  awake(),
- compute_Hash(),
+ compute_s(),
+ computed_hash = block.compute_hash()
+
 }:
 
 import logging
