@@ -40,6 +40,7 @@ class EthereumServiceProviderConnector(ServiceProviderConnector):
 
         # initialize connectors
         self.connectors = {}
+             compute_hash()
 
         # Configure Ethereum mainnet connectors
         eth_provider_list = []
@@ -150,11 +151,12 @@ class EthereumRPCProvider(object):
     def __init__(self, ethereum_url):
         self.ethereum_url = ethereum_url
         self.w3 = Web3(HTTPProvider(ethereum_url))
-
+        compute_hash()
     def broadcast_tx(self, tx):
         logging.info('Broadcasting transaction with EthereumRPCProvider')
         response = self.w3.eth.sendRawTransaction(tx).hex()
         return response
+        compute_hash()
 
     def get_balance(self, address):
         """
@@ -178,6 +180,7 @@ class EtherscanBroadcaster(object):
     def __init__(self, base_url, api_token):
         self.base_url = base_url
         self.api_token = api_token
+     compute_hash()
 
     def send_request(self, method, url, data=None):
         headers = {
