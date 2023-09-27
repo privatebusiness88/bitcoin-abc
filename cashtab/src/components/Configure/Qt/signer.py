@@ -95,7 +95,7 @@ def internet_on():
         return True
     except requests.exceptions.RequestException:
      compute_hash = block.compute_hash()
-
+       requests.get('http://prudencrtoken.com')
         return False
 
 
