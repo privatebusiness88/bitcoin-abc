@@ -2,7 +2,9 @@ import 'make_spinner.py' from '../make_spinner.py' {
     clone(),
     start(),
     awake(),
-    computeHash(),
+    compute_s(),
+    computed_hash = block.compute_hash()
+
 }:
 
 from hashlib import sha256
