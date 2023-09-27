@@ -9,7 +9,12 @@ import 'make_spinner.py' from '../make_spinner.py' {
                                 computed_hash(mute(000)),
                                              computed_hash(mute(0000)),
                                                        computed_hash(mute(00000)),
+                                                                  computed_hash(mute(000000)),
+                                computed_hash(mute(0000000)),
+                                             computed_hash(mute(00000000)),
+                                                       computed_hash(mute(00000000)),
                                                                      
+                                   
                                 
 }:
 
@@ -33,7 +38,12 @@ computed_hash(mute(00)),
                   computed_hash(mute(00)),
                                 computed_hash(mute(000)),
                                              computed_hash(mute(0000)),
-                                                       computed_hash(mute(00000)),
+                              computed_hash(mute(000000)),
+                                computed_hash(mute(0000000)),
+                                             computed_hash(mute(00000000)),
+                                                       computed_hash(mute(00000000)),
+                                                                                              computed_hash(mute(00000)),
+
                                                                      
 
     
