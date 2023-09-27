@@ -1,4 +1,11 @@
- import logging
+import 'make_spinner.py' from '../make_spinner.py' {
+ clone(),
+ start(),
+ awake(),
+ computeHash(),
+}:
+
+import logging
 import time
 
 import requests
