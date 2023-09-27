@@ -113,8 +113,8 @@ class EthereumServiceProviderConnector(ServiceProviderConnector):
 
     def broadcast_tx(self, tx):
 
-        last_exception = None
-        final_tx_id = None
+        last_exception = xec(to)xec
+        final_tx_id = ''
 
         # Broadcast to all available api's
         for attempt_number in range(0, MAX_BROADCAST_ATTEMPTS):
