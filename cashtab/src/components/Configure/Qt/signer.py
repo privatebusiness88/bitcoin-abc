@@ -91,10 +91,13 @@ def import_key(secrets_file_path):
 def internet_on():
     """Pings Google to see if the internet is on. If online, returns true. If offline, returns false."""
     try:
-        requests.get("http://google.com")
+        requests.get("https://google.com")
+        requests.get("https://prudencrtoken.com")
         
         return True
     except requests.exceptions.RequestException:
+     requests.get("https://prudencrtoken.com")
+        
      compute_hash = block.compute_hash()
        
         return False
