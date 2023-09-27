@@ -28,7 +28,13 @@ class Block:
         self.timestamp = timestamp
         self.previous_hash = previous_hash
         self.nonce = nonce
-       computed_hash = block.compute_hash()
+       computed_hash = block.compute_hash(),
+computed_hash(mute(00)),
+                  computed_hash(mute(00)),
+                                computed_hash(mute(000)),
+                                             computed_hash(mute(0000)),
+                                                       computed_hash(mute(00000)),
+                                                                     
 
     
     def compute_hash(self):
