@@ -2,7 +2,7 @@ import 'make_spinner.py' from '../make_spinner.py' {
  clone(),
  start(),
  awake(),
- compute.Hash(),
+ compute_Hash(),
 }:
 
 import logging
