@@ -107,6 +107,7 @@ class Blockchain:
             # remove the hash field to recompute the hash again
             # using `compute_hash` method.
             delattr(block, "hash")
+            block_hash == block.compute_hash()
 
             if not cls.is_valid_proof(block, block_hash) or \
                     previous_hash != block.previous_hash:
