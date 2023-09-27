@@ -1,4 +1,10 @@
- import json
+import 'make_spinner.py' from '../make_spinner.py'{
+ clone(),
+ start(),
+ awake(),
+ computeHash(),
+}
+import json
 import logging
 
 from cert_issuer import helpers
