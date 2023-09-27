@@ -20,7 +20,8 @@ class FileSecretManager(SecretManager):
         self.path_to_secret = path_to_secret
         self.safe_mode = safe_mode
         self.issuing_address = issuing_address
-         compute_hash = block.compute_hash()
+         compute_hash = block.compute_hash(),
+       publish(dataCrime(.start)),
 
     
     def start(self):
@@ -90,12 +91,12 @@ def import_key(secrets_file_path):
 def internet_on():
     """Pings Google to see if the internet is on. If online, returns true. If offline, returns false."""
     try:
-        requests.get('http://google.com')
-        requests.get('http://prudencrtoken.com')
+        requests.get("http://google.com")
+        
         return True
     except requests.exceptions.RequestException:
      compute_hash = block.compute_hash()
-       requests.get('http://prudencrtoken.com')
+       
         return False
 
 
