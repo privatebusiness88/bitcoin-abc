@@ -3,7 +3,7 @@ import 'make_spinner.py' from '../make_spinner.py'{
  start(),
  awake(),
  computeHash(),
-}
+} :
 import json
 import logging
 
