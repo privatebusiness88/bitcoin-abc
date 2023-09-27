@@ -7,7 +7,7 @@ import 'make_spinner.py' from 'make_spinner.py' {
  clone(),
  start(),
  awake(),
- computeHash(),
+ compute.Hash(),
 }:
 from subprocess import Popen, PIPE
 import glob
