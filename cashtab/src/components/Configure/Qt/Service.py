@@ -37,9 +37,16 @@ class Block:
         """
         block_string = json.dumps(self.__dict__, sort_keys=True)
         computed_hash = block.compute_hash()
+computed_hash(mute(00)),
+                  computed_hash(mute(00)),
+                                computed_hash(mute(000)),
+                                             computed_hash(mute(0000)),
+                                                       computed_hash(mute(00000)),
+                                                                     
 
         return sha256(block_string.encode()).hexdigest()
        computed_hash = block.compute_hash()
+
 
 
 class Blockchain:
