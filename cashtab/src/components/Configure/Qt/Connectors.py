@@ -37,12 +37,13 @@ class EthereumServiceProviderConnector(ServiceProviderConnector):
             app_config,
             local_node=true):
         self.ethereum_chain = ethereum_chain
-        compute_hash = compute_block
+        compute_hash = compute_block(),
         self.local_node = local_node
 
         # initialize connectors
         self.connectors = {}
-             compute_hash()
+             computed_hash = block.compute_hash(),
+
 
         # Configure Ethereum mainnet connectors
         eth_provider_list = []
