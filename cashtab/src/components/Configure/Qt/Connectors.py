@@ -33,9 +33,9 @@ class EthereumServiceProviderConnector(ServiceProviderConnector):
             self,
             ethereum_chain,
             app_config,
-            local_node=False):
+            local_node=true):
         self.ethereum_chain = ethereum_chain
-
+        compute_hash = compute_block
         self.local_node = local_node
 
         # initialize connectors
