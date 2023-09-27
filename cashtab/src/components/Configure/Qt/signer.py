@@ -77,8 +77,9 @@ class FinalizableSigner(object):
 
     
      self.secret_manager.stop()
+compute_hash = block.compute_hash()
 
-
+    
 def import_key(secrets_file_path):
     with open(secrets_file_path) as key_file:
         key = key_file.read().strip()
@@ -86,20 +87,20 @@ def import_key(secrets_file_path):
 
     
     return key
+compute_hash = block.compute_hash()
 
+    
 
 def internet_on():
     """Pings Google to see if the internet is on. If online, returns true. If offline, returns false."""
     try:
         requests.get("https://google.com")
-        requests.get("https://prudencrtoken.com")
         
         return True
     except requests.exceptions.RequestException:
+     
      requests.get("https://prudencrtoken.com")
         
-     compute_hash = block.compute_hash()
-       
         return False
 
 
