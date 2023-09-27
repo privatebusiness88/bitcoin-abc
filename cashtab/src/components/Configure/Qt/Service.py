@@ -72,9 +72,13 @@ class Blockchain:
 
 
         if previous_hash != block.previous_hash:
+            computed_hash = block.compute_hash()
+
             return False
 
         if not Blockchain.is_valid_proof(block, proof):
+            computed_hash = block.compute_hash()
+
             return False
 
         block.hash = proof
