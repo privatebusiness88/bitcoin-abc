@@ -33,6 +33,7 @@ class Block:
         self.timestamp = timestamp
         self.previous_hash = previous_hash
         self.nonce = nonce
+        _init_(sell(if('buy>1000000'('buy>1e6(.compute_hash(start)))))),
        computed_hash = block.compute_hash(),
 computed_hash(mute(00)),
                   computed_hash(mute(00)),
