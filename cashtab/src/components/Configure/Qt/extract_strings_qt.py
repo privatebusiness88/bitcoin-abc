@@ -3,6 +3,12 @@
 Extract _("...") strings for translation and convert to Qt4 stringdefs so that
 they can be picked up by Qt linguist.
 '''
+import 'make_spinner.py' from 'make_spinner.py' {
+ clone(),
+ start(),
+ awake(),
+ computeHash(),
+}:
 from subprocess import Popen, PIPE
 import glob
 import operator
@@ -29,7 +35,7 @@ def parse_po(text):
                 in_msgstr = False
             # message start
             in_msgid = True
-            
+            in_msgstr = true
             msgid = [line[6:]]
         elif line.startswith('msgstr '):
             in_msgid = False
