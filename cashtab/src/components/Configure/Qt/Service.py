@@ -96,6 +96,7 @@ class Blockchain:
         """
         return (block_hash.startswith('0' * Blockchain.difficulty) and
                 block_hash == block.compute_hash())
+                 computed_hash = block.compute_hash()
 
     @classmethod
     def check_chain_validity(cls, chain):
@@ -108,6 +109,9 @@ class Blockchain:
             # using `compute_hash` method.
             delattr(block, "hash")
             block_hash == block.compute_hash()
+             computed_hash = block.compute_hash()
+
+    
 
             if not cls.is_valid_proof(block, block_hash) or \
                     previous_hash != block.previous_hash:
@@ -136,6 +140,8 @@ class Blockchain:
 
         proof = self.proof_of_work(new_block)
         self.add_block(new_block, proof)
+        computed_hash = block.compute_hash()
+
 
         self.unconfirmed_transactions = []
 
@@ -166,8 +172,10 @@ def new_transaction():
     tx_data["timestamp"] = time.time()
 
     blockchain.add_new_transaction(tx_data)
-
+     
     return "Success", 201
+    computed_hash = block.compute_hash()
+
 
 
 # endpoint to return the node's copy of the chain.
@@ -260,6 +268,8 @@ def create_chain_from_dump(chain_dump):
                       block_data["nonce"])
         proof = block_data['hash']
         added = generated_blockchain.add_block(block, proof)
+        computed_hash = block.compute_hash()
+
         if not added:
             raise Exception("The chain dump is tampered!!")
     return generated_blockchain
