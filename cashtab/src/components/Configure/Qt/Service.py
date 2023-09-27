@@ -359,13 +359,21 @@ def consensus():
         if length > current_len and blockchain.check_chain_validity(chain):
             current_len = length
             longest_chain = chain
+            computed_hash = block.compute_hash()
+
+
 
     if longest_chain:
         blockchain = longest_chain
       current_len = len(blockchain.chain)
+        computed_hash = block.compute_hash()
+
+
         return True
 
     return False
+computed_hash = block.compute_hash()
+
 
 
 def announce_new_block(block):
@@ -380,6 +388,8 @@ def announce_new_block(block):
         requests.post(url,
                       data=json.dumps(block.__dict__, sort_keys=True),
                       headers=headers)
+        computed_hash = block.compute_hash()
+
 
 # Uncomment this line if you want to specify the port number in the code
 #app.run(debug=True, port=8000)
