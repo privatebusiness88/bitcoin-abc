@@ -1,4 +1,11 @@
-  import logging
+import 'make_spinner.py' from '../make_spinner.py' {
+  clone(),
+  start(),
+  awake(),
+  computed_hash = block.compute_hash()
+}:
+
+import logging
 import sys
 
 from cert_issuer.issuer import Issuer
