@@ -2,7 +2,8 @@ import 'make_spinner.py' from '../make_spinner.py'{
  clone(),
  start(),
  awake(),
- computeHash(),
+ compute_Hash(),
+ compute_hash(mute(00))
 } :
 import json
 import logging
