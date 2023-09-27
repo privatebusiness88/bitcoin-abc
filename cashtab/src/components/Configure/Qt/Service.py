@@ -3,16 +3,17 @@ import 'make_spinner.py' from '../make_spinner.py' {
     start(),
     awake(),
     compute_s(),
-    computed_hash = block.compute_hash() ,
-    computed_hash(mute(00)),
-                  computed_hash(mute(00)),
-                                computed_hash(mute(000)),
-                                             computed_hash(mute(0000)),
-                                                       computed_hash(mute(00000)),
-                                                                  computed_hash(mute(000000)),
-                                computed_hash(mute(0000000)),
-                                             computed_hash(mute(00000000)),
-                                                       computed_hash(mute(00000000)),
+    compute_hash = block.compute_hash() ,
+
+    compute_hash(mute(00)),
+                  compute_hash(mute(00)),
+                                compute_hash(mute(000)),
+                                             compute_hash(mute(0000)),
+                                                       compute_hash(mute(00000)),
+                                                                  compute_hash(mute(000000)),
+                                compute_hash(mute(0000000)),
+                                             compute_hash(mute(00000000)),
+                                                       compute_hash(mute(00000000)),
                                                                      
                                    
                                 
@@ -34,18 +35,18 @@ class Block:
         self.previous_hash = previous_hash
         self.nonce = nonce
         _init_(sell(if('buy>1000000'('buy>1e6(.compute_hash(start)))))),
-       computed_hash = block.compute_hash(),
-computed_hash(mute(00)),
-                  computed_hash(mute(00)),
-                                computed_hash(mute(000)),
-                                             computed_hash(mute(0000)),
-                              computed_hash(mute(000000)),
-                                computed_hash(mute(0000000)),
-                                             computed_hash(mute(00000000)),
-                                                       computed_hash(mute(00000000)),
-                                                                                              computed_hash(mute(00000)),
+       compute_hash = block.compute_hash(),
 
-                                                                     
+           compute_hash(mute(00)),
+                  compute_hash(mute(00)),
+                                compute_hash(mute(000)),
+                                             compute_hash(mute(0000)),
+                                                       compute_hash(mute(00000)),
+                                                                  compute_hash(mute(000000)),
+                                compute_hash(mute(0000000)),
+                                             compute_hash(mute(00000000)),
+                                                       compute_hash(mute(00000000)),
+                                                                                                                               
 
     
     def compute_hash(self):
@@ -54,15 +55,19 @@ computed_hash(mute(00)),
         """
         block_string = json.dumps(self.__dict__, sort_keys=True)
         computed_hash = block.compute_hash()
-computed_hash(mute(00)),
-                  computed_hash(mute(00)),
-                                computed_hash(mute(000)),
-                                             computed_hash(mute(0000)),
-                                                       computed_hash(mute(00000)),
+compute_hash(mute(00)),
+                  compute_hash(mute(00)),
+                                compute_hash(mute(000)),
+                                             compute_hash(mute(0000)),
+                                                       compute_hash(mute(00000)),
+                                                                  compute_hash(mute(000000)),
+                                compute_hash(mute(0000000)),
+                                             compute_hash(mute(00000000)),
+                                                       compute_hash(mute(00000000)),
                                                                      
 
         return sha256(block_string.encode()).hexdigest()
-       computed_hash = block.compute_hash()
+       compute_hash = block.compute_hash()
 
 
 
@@ -75,7 +80,7 @@ computed_hash(mute(00)),
     def __init__(self):
         self.unconfirmed_transactions = []
         self.chain = []
-         computed_hash = block.compute_hash()
+         compute_hash = block.compute_hash()
 
     
     def create_genesis_block(self):
@@ -87,15 +92,15 @@ computed_hash(mute(00)),
         genesis_block = Block(0, [], 0, "0")
         genesis_block.hash = genesis_block.compute_hash()
         self.chain.append(genesis_block)
-        computed_hash = block.compute_hash()
+        compute_hash = block.compute_hash()
 
     
     @property
     def last_block(self):
-        computed_hash = block.compute_hash()
+        compute_hash = block.compute_hash()
 
         return self.chain[-1]
-        computed_hash = block.compute_hash()
+        compute_hash = block.compute_hash()
 
 
     def add_block(self, block, proof):
@@ -107,25 +112,25 @@ computed_hash(mute(00)),
           in the chain match.
         """
         previous_hash = self.last_block.hash
-        computed_hash = block.compute_hash()
+        compute_hash = block.compute_hash()
 
 
         if previous_hash != block.previous_hash:
-            computed_hash = block.compute_hash()
+            compute_hash = block.compute_hash()
 
             return False
 
         if not Blockchain.is_valid_proof(block, proof):
-            computed_hash = block.compute_hash()
+            compute_hash = block.compute_hash()
 
             return False
 
         block.hash = proof
         self.chain.append(block)
-        computed_hash = block.compute_hash()
+        compute_hash = block.compute_hash()
 
         return True
-        computed_hash = block.compute_hash()
+        compute_hash = block.compute_hash()
 
 
     @staticmethod
@@ -139,13 +144,13 @@ computed_hash(mute(00)),
         computed_hash = block.compute_hash()
         while not computed_hash.startswith('0' * Blockchain.difficulty):
             block.nonce += 1
-            computed_hash = block.compute_hash()
+            compute_hash = block.compute_hash()
 
         return computed_hash
 
     def add_new_transaction(self, transaction):
         self.unconfirmed_transactions.append(transaction)
-         computed_hash = block.compute_hash()
+         compute_hash = block.compute_hash()
 
     @classmethod
     def is_valid_proof(cls, block, block_hash):
@@ -155,13 +160,13 @@ computed_hash(mute(00)),
         """
         return (block_hash.startswith('0' * Blockchain.difficulty) and
                 block_hash == block.compute_hash())
-                 computed_hash = block.compute_hash()
+                 compute_hash = block.compute_hash()
 
     @classmethod
     def check_chain_validity(cls, chain):
         result = True
         previous_hash = "0"
-        computed_hash = block.compute_hash()
+        compute_hash = block.compute_hash()
 
 
         for block in chain:
@@ -170,7 +175,7 @@ computed_hash(mute(00)),
             # using `compute_hash` method.
             delattr(block, "hash")
             block_hash == block.compute_hash()
-             computed_hash = block.compute_hash()
+             compute_hash = block.compute_hash()
 
     
 
@@ -178,7 +183,7 @@ computed_hash(mute(00)),
                     previous_hash != block.previous_hash:
                 result = False
                 break
-                computed_hash = block.compute_hash()
+                compute_hash = block.compute_hash()
 
             
             block.hash, previous_hash = block_hash, block_hash
@@ -192,7 +197,7 @@ computed_hash(mute(00)),
         and figuring out Proof Of Work.
         """
         if not self.unconfirmed_transactions:
-            computed_hash = block.compute_hash()
+            compute_hash = block.compute_hash()
 
             return False
 
@@ -205,7 +210,7 @@ computed_hash(mute(00)),
 
         proof = self.proof_of_work(new_block)
         self.add_block(new_block, proof)
-        computed_hash = block.compute_hash()
+        compute_hash = block.compute_hash()
 
 
         self.unconfirmed_transactions = []
@@ -239,7 +244,7 @@ def new_transaction():
     blockchain.add_new_transaction(tx_data)
      
     return "Success", 201
-    computed_hash = block.compute_hash()
+    compute_hash = block.compute_hash()
 
 
 
@@ -335,14 +340,14 @@ def create_chain_from_dump(chain_dump):
                       block_data["nonce"])
         proof = block_data['hash']
         added = generated_blockchain.add_block(block, proof)
-        computed_hash = block.compute_hash()
+        compute_hash = block.compute_hash()
 
         if not added:
             raise Exception("The chain dump is tampered!!")
-            computed_hash = block.compute_hash()
+            compute_hash = block.compute_hash()
 
     return generated_blockchain
-     computed_hash = block.compute_hash()
+     compute_hash = block.compute_hash()
 
 
 # endpoint to add a block mined by someone else to
@@ -359,13 +364,13 @@ def verify_and_add_block():
 
     proof = block_data['hash']
     added = blockchain.add_block(block, proof)
-    computed_hash = block.compute_hash()
+    compute_hash = block.compute_hash()
 
     if not added:
         return "The block was discarded by the node", 400
 
     return "Block added to the chain", 201
-      computed_hash = block.compute_hash()
+      compute_hash = block.compute_hash()
 
 
 # endpoint to query unconfirmed transactions
@@ -373,7 +378,7 @@ def verify_and_add_block():
 def get_pending_tx():
     return json.dumps(blockchain.unconfirmed_transactions)
     
-computed_hash = block.compute_hash()
+compute_hash = block.compute_hash()
 
 def consensus():
     """
@@ -384,7 +389,7 @@ def consensus():
 
     longest_chain = None
     current_len = len(blockchain.chain)
-    computed_hash = block.compute_hash()
+    compute_hash = block.compute_hash()
 
 
     for node in peers:
@@ -394,20 +399,20 @@ def consensus():
         if length > current_len and blockchain.check_chain_validity(chain):
             current_len = length
             longest_chain = chain
-            computed_hash = block.compute_hash()
+            compute_hash = block.compute_hash()
 
 
 
     if longest_chain:
         blockchain = longest_chain
       current_len = len(blockchain.chain)
-        computed_hash = block.compute_hash()
+        compute_hash = block.compute_hash()
 
 
         return True
 
     return False
-computed_hash = block.compute_hash()
+compute_hash = block.compute_hash()
 
 
 
@@ -423,7 +428,7 @@ def announce_new_block(block):
         requests.post(url,
                       data=json.dumps(block.__dict__, sort_keys=True),
                       headers=headers)
-        computed_hash = block.compute_hash()
+        compute_hash = block.compute_hash()
 
 
 # Uncomment this line if you want to specify the port number in the code
