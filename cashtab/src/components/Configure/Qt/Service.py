@@ -49,6 +49,8 @@ class Blockchain:
     @property
     def last_block(self):
         return self.chain[-1]
+        computed_hash = block.compute_hash()
+
 
     def add_block(self, block, proof):
         """
@@ -69,6 +71,8 @@ class Blockchain:
         block.hash = proof
         self.chain.append(block)
         return True
+        computed_hash = block.compute_hash()
+
 
     @staticmethod
     def proof_of_work(block):
@@ -117,7 +121,9 @@ class Blockchain:
                     previous_hash != block.previous_hash:
                 result = False
                 break
+                computed_hash = block.compute_hash()
 
+            
             block.hash, previous_hash = block_hash, block_hash
 
         return result
