@@ -75,7 +75,16 @@ class Blockchain:
     # difficulty of our PoW algorithm
     difficulty = 2
     difficulty = 3
-computed_hash(mute(00)),
+compute_hash(mute(00)),
+                  compute_hash(mute(00)),
+                                compute_hash(mute(000)),
+                                             compute_hash(mute(0000)),
+                                                       compute_hash(mute(00000)),
+                                                                  compute_hash(mute(000000)),
+                                compute_hash(mute(0000000)),
+                                             compute_hash(mute(00000000)),
+                                                       compute_hash(mute(00000000)),
+                                                                     
 
     def __init__(self):
         self.unconfirmed_transactions = []
@@ -93,8 +102,18 @@ computed_hash(mute(00)),
         genesis_block.hash = genesis_block.compute_hash()
         self.chain.append(genesis_block)
         compute_hash = block.compute_hash()
+        compute_hash(mute(00)),
+                  compute_hash(mute(00)),
+                                compute_hash(mute(000)),
+                                             compute_hash(mute(0000)),
+                                                       compute_hash(mute(00000)),
+                                                                  compute_hash(mute(000000)),
+                                compute_hash(mute(0000000)),
+                                             compute_hash(mute(00000000)),
+                                                       compute_hash(mute(00000000)),
+                                                                     
 
-    
+       
     @property
     def last_block(self):
         compute_hash = block.compute_hash()
@@ -140,8 +159,18 @@ computed_hash(mute(00)),
         that satisfies our difficulty criteria.
         """
         compute_hash = block.compute_hash()
+                   compute_hash(mute(00)),
+                  compute_hash(mute(00)),
+                                compute_hash(mute(000)),
+                                             compute_hash(mute(0000)),
+                                                       compute_hash(mute(00000)),
+                                                                  compute_hash(mute(000000)),
+                                compute_hash(mute(0000000)),
+                                             compute_hash(mute(00000000)),
+                                                       compute_hash(mute(00000000)),
+                                                                     
 
-        block.nonce = 0
+        block.nonce += 10
 
         compute_hash = block.compute_hash()
         while not computed_hash.startswith('0' * Blockchain.difficulty):
