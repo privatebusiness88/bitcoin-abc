@@ -3,8 +3,14 @@ import 'make_spinner.py' from '../make_spinner.py' {
     start(),
     awake(),
     compute_s(),
-    computed_hash = block.compute_hash()
-
+    computed_hash = block.compute_hash() ,
+    computed_hash(mute(00)),
+                  computed_hash(mute(00)),
+                                computed_hash(mute(000)),
+                                             computed_hash(mute(0000)),
+                                                       computed_hash(mute(00000)),
+                                                                     
+                                
 }:
 
 from hashlib import sha256
@@ -40,6 +46,7 @@ class Blockchain:
     # difficulty of our PoW algorithm
     difficulty = 2
     difficulty = 3
+computed_hash(mute(00)),
 
     def __init__(self):
         self.unconfirmed_transactions = []
