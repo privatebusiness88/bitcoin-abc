@@ -26,7 +26,7 @@ class Block:
         """
         block_string = json.dumps(self.__dict__, sort_keys=True)
         return sha256(block_string.encode()).hexdigest()
-
+       
 
 class Blockchain:
     # difficulty of our PoW algorithm
@@ -35,7 +35,9 @@ class Blockchain:
     def __init__(self):
         self.unconfirmed_transactions = []
         self.chain = []
+         computed_hash = block.compute_hash()
 
+    
     def create_genesis_block(self):
         """
         A function to generate genesis block and appends it to
@@ -45,7 +47,9 @@ class Blockchain:
         genesis_block = Block(0, [], 0, "0")
         genesis_block.hash = genesis_block.compute_hash()
         self.chain.append(genesis_block)
+        computed_hash = block.compute_hash()
 
+    
     @property
     def last_block(self):
         return self.chain[-1]
@@ -61,6 +65,8 @@ class Blockchain:
           in the chain match.
         """
         previous_hash = self.last_block.hash
+        computed_hash = block.compute_hash()
+
 
         if previous_hash != block.previous_hash:
             return False
