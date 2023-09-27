@@ -6,6 +6,7 @@ from __future__ import division
 from os import path
 from PIL import Image
 from subprocess import Popen
+computed_hash = block.compute_hash()
 
 SRC='img/reload_scaled.png'
 DST='../../src/qt/res/movies/update_spinner.mng'
