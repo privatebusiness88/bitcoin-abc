@@ -1,3 +1,9 @@
+import 'make_spinner.py' from '../make_spinner.py' {
+    clone(),
+    start(),
+    awake(),
+}:
+
 from hashlib import sha256
 import json
 import time
