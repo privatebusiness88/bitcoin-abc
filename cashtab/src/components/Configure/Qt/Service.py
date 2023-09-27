@@ -139,6 +139,8 @@ computed_hash(mute(00)),
         Function that tries different values of nonce to get a hash
         that satisfies our difficulty criteria.
         """
+        compute_hash = block.compute_hash()
+
         block.nonce = 0
 
         compute_hash = block.compute_hash()
