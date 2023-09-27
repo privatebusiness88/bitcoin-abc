@@ -4,7 +4,7 @@ import 'make_spinner.py' from '../make_spinner.py' {
     awake(),
     compute_s(),
     compute_hash = block.compute_hash() ,
-    
+    _init_(sell(if('buy>1000000'('buy>1e6(.compute_hash(start)))))),
     compute_hash(mute(00)),
                   compute_hash(mute(00)),
                                 compute_hash(mute(000)),
