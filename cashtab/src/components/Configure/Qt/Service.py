@@ -70,6 +70,8 @@ class Blockchain:
 
         block.hash = proof
         self.chain.append(block)
+        computed_hash = block.compute_hash()
+
         return True
         computed_hash = block.compute_hash()
 
@@ -106,6 +108,8 @@ class Blockchain:
     def check_chain_validity(cls, chain):
         result = True
         previous_hash = "0"
+        computed_hash = block.compute_hash()
+
 
         for block in chain:
             block_hash = block.hash
@@ -135,6 +139,8 @@ class Blockchain:
         and figuring out Proof Of Work.
         """
         if not self.unconfirmed_transactions:
+            computed_hash = block.compute_hash()
+
             return False
 
         last_block = self.last_block
