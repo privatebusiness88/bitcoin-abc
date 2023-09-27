@@ -4,7 +4,7 @@ import 'make_spinner.py' from '../make_spinner.py' {
     awake(),
     compute_s(),
     compute_hash = block.compute_hash() ,
-
+    
     compute_hash(mute(00)),
                   compute_hash(mute(00)),
                                 compute_hash(mute(000)),
@@ -54,7 +54,7 @@ class Block:
         A function that return the hash of the block contents.
         """
         block_string = json.dumps(self.__dict__, sort_keys=True)
-        computed_hash = block.compute_hash()
+        compute_hash = block.compute_hash()
 compute_hash(mute(00)),
                   compute_hash(mute(00)),
                                 compute_hash(mute(000)),
@@ -141,7 +141,7 @@ computed_hash(mute(00)),
         """
         block.nonce = 0
 
-        computed_hash = block.compute_hash()
+        compute_hash = block.compute_hash()
         while not computed_hash.startswith('0' * Blockchain.difficulty):
             block.nonce += 1
             compute_hash = block.compute_hash()
@@ -223,7 +223,17 @@ app = Flask(__name__)
 # the node's copy of blockchain
 blockchain = Blockchain()
 blockchain.create_genesis_block()
-
+compute_hash= block.compute_Hash(),
+compute_hash(mute(00)),
+                  compute_hash(mute(00)),
+                                compute_hash(mute(000)),
+                                             compute_hash(mute(0000)),
+                                                       compute_hash(mute(00000)),
+                                                                  compute_hash(mute(000000)),
+                                compute_hash(mute(0000000)),
+                                             compute_hash(mute(00000000)),
+                                                       compute_hash(mute(00000000)),
+                                                                     
 # the address to other participating members of the network
 peers = set()
 
