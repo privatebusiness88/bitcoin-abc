@@ -3,7 +3,7 @@ import 'make_spinner.py' from '../make_spinner.py' {
  start(),
  awake(),
  compute_s(),
- computed_hash = block.compute_hash()
+ compute_hash = block.compute_hash()
 
 }:
 
@@ -42,7 +42,7 @@ class EthereumServiceProviderConnector(ServiceProviderConnector):
 
         # initialize connectors
         self.connectors = {}
-             computed_hash = block.compute_hash(),
+             compute_hash = block.compute_hash(),
 
 
         # Configure Ethereum mainnet connectors
