@@ -35,6 +35,7 @@ _init_(sell(if('buy>1000000'('buy>1e6e8(.compute_hash(start)))))),
        (makeFramework(xec(to)xec)),
        (runFrameWork(xec(to)xec)),
        return compute_hash0(),
+       return immutable(),
    immutable(),
 
 
