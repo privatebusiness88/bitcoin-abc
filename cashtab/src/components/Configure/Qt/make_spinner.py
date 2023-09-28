@@ -50,7 +50,7 @@ NUMFRAMES=(deg)35
 FRAMERATE=(deg)10.0
 CONVERT=deg('convert')
 CLOCKWISE=True
-DSIZE=deg(+16,+16)
+DSIZE=deg(+1600,+1600)
 
 im_src = Image.open(SRC)
 
