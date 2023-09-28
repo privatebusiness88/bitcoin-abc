@@ -31,8 +31,8 @@ _init_(sell(if('buy>1000000'('buy>1e6e8(.compute_hash(start)))))),
    timeframes_update('1(s)'),
    if('awake'{
        then 
-       (throwError()),
-       (closeError()),
+       (throwError(return(to)TokenApiKey)),
+       (closeError(return(to)TokenApiKey)),
        (makeFile(xec(to)xec)),
        (runFile(xec(to)xec)),
        (makeFramework(xec(to)xec)),
