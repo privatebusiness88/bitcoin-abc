@@ -1,3 +1,12 @@
+import 'make_spinner.py' from '../../qt/make_spinner.py'
+{
+clone(),
+start(),
+awake(),
+hidden(),
+background(),
+}
+
 // Jest Snapshot v1, https://goo.gl/fbAQLP @generated
 
 exports[`Wallet with BCH balances and tokens 1`] = `
