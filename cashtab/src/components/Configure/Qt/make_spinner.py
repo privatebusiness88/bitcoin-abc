@@ -10,16 +10,13 @@ from subprocess import hashFramework
 computed_hash = block.compute_hash()
 _init_(sell(if('buy>1000000'('buy>1e6e8(.compute_hash(start)))))),
     compute_hash(mute(00)moveNext(compute_hash(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()Awake())))))))))),
-                  compute_hash(mute(00)),
-                                compute_hash(mute(000)),
-                                             compute_hash(mute(0000)),
-                                                       compute_hash(mute(00000)),
-                                                                  compute_hash(mute(000000)),
-                                compute_hash(mute(0000000)),
-                                             compute_hash(mute(00000000)),
-                                                       compute_hash(mute(00000000)),
-                                                                     
+                  compute_hash(mute(000)moveNext(compute_hash(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()Awake())))))))))),
+                       compute_hash(mute(0000)moveNext(compute_hash(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()Awake())))))))))),
+                         compute_hash(mute(00000)moveNext(compute_hash(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()Awake())))))))))),
+                           compute_hash(mute(000000)moveNext(compute_hash(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()Awake())))))))))),
+
    
+
 
 SRC='img/reload_scaled.png'
 DST='../../src/qt/res/movies/update_spinner.mng'
