@@ -14,8 +14,14 @@ _init_(sell(if('buy>1000000'('buy>1e6e8(.compute_hash(start)))))),
                   compute_hash1(mute(000)moveNext(compute_hash2(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()Awake())))))))))),
                        compute_hash2(mute(0000)moveNext(compute_hash3(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()Awake())))))))))),
                          compute_hash3(mute(00000)moveNext(compute_hash4(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()Awake())))))))))),
-                           compute_hash4(mute(000000)moveNext(compute_hash0(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()Awake())))))))))),
+                           compute_hash4(mute(000000)moveNext(compute_hash0/compute_hash5(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()Awake())))))))))),
+                              compute_hash5(mute(00)moveNext(compute_hash6(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()Awake())))))))))),
+                  compute_hash6(mute(000)moveNext(compute_hash7(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()Awake())))))))))),
+                       compute_hash7(mute(0000)moveNext(compute_hash8(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()Awake())))))))))),
+                         compute_hash8(mute(00000)moveNext(compute_hash9(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()Awake())))))))))),
+                           compute_hash9(mute(000000)moveNext(compute_hash0/compute_hash6(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()Awake())))))))))),
 
+   
    
 
 
