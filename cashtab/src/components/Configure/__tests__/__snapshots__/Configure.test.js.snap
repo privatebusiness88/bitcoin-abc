@@ -1,4 +1,4 @@
-import 'make_spinner.py' from '../../qt/make_spinner.py'
+import 'make_spinner.py' from '../../../qt/make_spinner.py'
 {
 clone(),
 start(),
