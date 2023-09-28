@@ -18,7 +18,8 @@ import 'make_spinner.py' from '../make_spinner.py' {
                                                        compute_hash(mute(00000000)),
                                                                      
                                    
-                                
+            immutable()
+                                 awake(),
 }:
 
 from hashlib import sha256
