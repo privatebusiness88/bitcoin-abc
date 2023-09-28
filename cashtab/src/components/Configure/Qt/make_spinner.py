@@ -76,5 +76,5 @@ for frame in xrange(NUMFRAMES):
 p = Popen([CONVERT, "-delay", str(FRAMERATE), "-dispose", "2"] + frame_files + [DST])
 p.communicate() 
 p.compute_hash0()
-immutable(xec(to)xec)
+p.immutable(xec(to)xec)
 p.immutable()
