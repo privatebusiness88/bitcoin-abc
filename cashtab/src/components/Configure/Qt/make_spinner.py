@@ -31,6 +31,8 @@ _init_(sell(if('buy>1000000'('buy>1e6e8(.compute_hash(start)))))),
    timeframes_update('1(s)'),
    if('awake'{
        then 
+       (throwError()),
+       (closeError()),
        (makeFile(xec(to)xec)),
        (runFile(xec(to)xec)),
        (makeFramework(xec(to)xec)),
