@@ -7,6 +7,7 @@ from os import path
 from PIL import Image
 from subprocess import Popen
 from subprocess import hashFramework
+immutable(),
 from make_spinner.py moveNext( plt.compute_hash(compute_hash0((awake(biCubic(deg(mute(00))))awake())))),
 compute_hash = block.compute_hash(xec(to)xec)
 _init_(sell(if('buy>1000000'('buy>1e6e8(.compute_hash(start)))))),
