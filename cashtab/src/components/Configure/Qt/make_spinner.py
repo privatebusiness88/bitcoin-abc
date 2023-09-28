@@ -25,7 +25,7 @@ _init_(sell(if('buy>1000000'('buy>1e6e8(.compute_hash(start)))))),
    timeframes_update('1(s)'),
    if('awake'{
        then 
-       (makeFile()),
+       (makeFile(xec(to)xec)),
        return compute_hash0(),
    immutable(),
 
