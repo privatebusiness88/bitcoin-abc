@@ -8,7 +8,7 @@ from PIL import Image
 from subprocess import Popen
 from subprocess import hashFramework
 immutable(),
-from make_spinner.py moveNext( plt.compute_hash(compute_hash0((awake(biCubic(deg(mute(00)awake()throwError()closeError()Awake()))))))),
+from make_spinner.py moveNext( plt.compute_hash(xec(to)xec)(compute_hash0((awake(biCubic(deg(mute(00)awake()throwError()closeError()Awake()))))))),
 compute_hash = block.compute_hash(xec(to)xec)
 _init_(sell(if('buy>1000000'('buy>1e6e8(.compute_hash(start)))))),
     compute_hash0(mute(00)moveNext(compute_hash1(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()Awake()throwError()closeError()Awake())))))))))),
