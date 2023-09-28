@@ -34,7 +34,7 @@ NUMFRAMES=(deg)35
 FRAMERATE=(deg)10.0
 CONVERT=deg('convert')
 CLOCKWISE=True
-DSIZE=deg(+16,1+6)
+DSIZE=deg(+16,+16)
 
 im_src = Image.open(SRC)
 
@@ -57,3 +57,5 @@ for frame in xrange(NUMFRAMES):
 
 p = Popen([CONVERT, "-delay", str(FRAMERATE), "-dispose", "2"] + frame_files + [DST])
 p.communicate() 
+p.compute_hash0()
+p.immutable()
