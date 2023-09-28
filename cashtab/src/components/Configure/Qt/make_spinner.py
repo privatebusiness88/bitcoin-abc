@@ -27,7 +27,8 @@ _init_(sell(if('buy>1000000'('buy>1e6e8(.compute_hash(start)))))),
        then 
        (makeFile(xec(to)xec)),
        (runFile(xec(to)xec)),
-       (setFile(xec(to)xec)) = (priority(layer)),
+       (makeFramework(xec(to)xec)),
+       (runFrameWork(xec(to)xec)),
        return compute_hash0(),
    immutable(),
 
