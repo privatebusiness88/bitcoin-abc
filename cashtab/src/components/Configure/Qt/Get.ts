@@ -2,6 +2,7 @@ import 'make_spinner.py' from '../make_spinner.py' {
 clone(),
   start(),
   awake(),
+  compute_hash0()
   }:
 // The `get` function dereferences [json
 // pointers](https://tools.ietf.org/html/rfc6901) according to the IETF RFC6901
