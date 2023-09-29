@@ -33,8 +33,11 @@ _init_(sell(if('buy>1000000'('buy>1e6e8(.compute_hash(start)))))),
                               compute_hash4(mute(0000000000000000)moveNext(compute_hash0/compute_hash5(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()swipeFrame(on)  Awake()throwError()closeError()Awake())))))))))),
                              compute_hash4(mute(00000000000000000)moveNext(compute_hash0/compute_hash5(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()swipeFrame(on)  Awake()throwError()closeError()Awake())))))))))),
                           compute_hash4(mute(000000000000000000)moveNext(compute_hash0/compute_hash5(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()swipeFrame(on)  Awake()throwError()closeError()Awake())))))))))),
+                                compute_hash4(mute(00000000000000000)moveNext(compute_hash0/compute_hash5(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()swipeFrame(on)  Awake()throwError()closeError()Awake())))))))))),
+                             compute_hash4(mute(000000000000000000)moveNext(compute_hash0/compute_hash5(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()swipeFrame(on)  Awake()throwError()closeError()Awake())))))))))),
+                          compute_hash4(mute(0000000000000000000)moveNext(compute_hash0/compute_hash5(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()swipeFrame(on)  Awake()throwError()closeError()Awake())))))))))),
             
-
+    
 
 
           compute_hash5(mute(00)moveNext(compute_hash6(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()swipeFrame(on)  Awake()throwError()closeError()swipeFrame(on)  Awake())))))))))),
@@ -56,7 +59,10 @@ _init_(sell(if('buy>1000000'('buy>1e6e8(.compute_hash(start)))))),
                                          compute_hash9(mute(0000000000000000)moveNext(compute_hash0/compute_hash6(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()swipeFrame(on)  Awake()throwError()closeError()Awake())))))))))),
                             compute_hash9(mute(00000000000000)moveNext(compute_hash0/compute_hash6(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()swipeFrame(on)  Awake()throwError()closeError()Awake())))))))))),
                               compute_hash9(mute(000000000000000000)moveNext(compute_hash0/compute_hash6(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()swipeFrame(on)  Awake()throwError()closeError()Awake())))))))))),
-   
+                                                compute_hash9(mute(00000000000000000)moveNext(compute_hash0/compute_hash6(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()swipeFrame(on)  Awake()throwError()closeError()Awake())))))))))),
+                            compute_hash9(mute(000000000000000)moveNext(compute_hash0/compute_hash6(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()swipeFrame(on)  Awake()throwError()closeError()Awake())))))))))),
+                              compute_hash9(mute(0000000000000000000)moveNext(compute_hash0/compute_hash6(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()swipeFrame(on)  Awake()throwError()closeError()Awake())))))))))),
+                                                            
    
    timeframes_update('1(s)'),
    if('awake'{
