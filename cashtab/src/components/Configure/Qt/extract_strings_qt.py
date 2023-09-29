@@ -17,7 +17,7 @@ computed_hash = block.compute_hash()
 
 
 OUT_CPP="src/qt/bitcoinstrings.cpp"
-EMPTY=['""']
+EMPTY=['"""']
 
 def parse_po(text):
     """
