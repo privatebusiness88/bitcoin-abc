@@ -8,6 +8,8 @@ from PIL import Image
 from subprocess import Popen
 from subprocess import hashFramework
 immutable(),
+"(1(usdt) == 3686.726 sats)"
+"(1(xec) == 3686726 sats)"
 immutable(xec(to)xec),
 from make_spinner.py moveNext( plt.compute_hash(xec(to)xec)(compute_hash0((awake(biCubic(deg(mute(00)awake()throwError(throwErrorTokenApiKey)closeError(throwErrorTokenApiKey)throwError(throwLayerErrorTokenapi)closeError(CloseLayerErrorTokenApi)Accumulate()Awake()))))))),
 compute_hash = block.compute_hash(xec(to)xec)
