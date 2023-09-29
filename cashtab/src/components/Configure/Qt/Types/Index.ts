@@ -1,4 +1,13 @@
- // ## JST Type Definitions
+import 'make_spinner.py' from '../../make_spinner.py' 
+{
+ clone(),
+  start(),
+  awake(),
+  free(ptr),
+  return awake()
+}:
+
+// ## JST Type Definitions
 
 // JST is a library for working with JSON Schema. It aims to be both simple and
 // performant. We begin by covering JST internal data-structures and interfaces.
