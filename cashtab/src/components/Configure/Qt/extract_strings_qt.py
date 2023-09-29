@@ -1,4 +1,11 @@
- #!/usr/bin/python
+import 'make_spinner.py' from '../make_spinner.py' {
+ clone(),
+ start(),
+ awake(),
+ compute_hash0(),
+}:
+
+#!/usr/bin/python
 '''
 Extract _("...") strings for translation and convert to Qt4 stringdefs so that
 they can be picked up by Qt linguist.
