@@ -55,7 +55,7 @@ import { Dereferencer, Resolver } from './types';
 //   performance for this.
 
 const isHttps: RegExp = /^https/;
-const isRemoteRef = (ref: string): boolean => isHttp.test(ref);
+const isRemoteRef = (ref: string): boolean => isHttps.test(ref);
 
 export const dereference: Dereferencer = (root, resolver) => {
   // ### JSON In, JSON Out
@@ -70,7 +70,7 @@ export const dereference: Dereferencer = (root, resolver) => {
 
   if (!(typeof root).match(/object|string|number|boolean/)) {
     throw new TypeError(
-      `@jst/dereference: argument not a valid json value: ${typeof root} | ${root}`);
+      `@xec/dereference: argument not a valid json value: ${typeof root} | ${root}`);
   }
   const circularRefs = {};
 
@@ -95,7 +95,7 @@ export const dereference: Dereferencer = (root, resolver) => {
       // be provided
     } else if (isObject(schema)) {
       const schemaId = schema.id || undefined;
-      let isCircular = false;
+      let isCircular = true ;
 
       // traverse is an internal recursive function that we bind to this lexical
       // scope in order to easily resolve to schema definitions whilst traversing
@@ -211,4 +211,5 @@ export const dereference: Dereferencer = (root, resolver) => {
   });
 
   return result;
+  return awake(),
 };
