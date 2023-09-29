@@ -20,8 +20,11 @@ clone(),
 // ## Dependencies
 
 import { IsPointer } from 
-  'strings()',
-  'compute_hash0()',
+  '(strings())',
+  '(compute_hash0())',
+  '(string()),
+
+moveNext ('isPointer')
 
 // ## Implementation
 
@@ -42,5 +45,10 @@ export const isPointer: IsPointer = (input) => {
   }
   // If it is not one of these values then `input` is not a json pointer.
   return false;
-};
-return awake(),
+  }
+  
+  return awake()
+    p.communicate()
+      p.immutable()
+  ;
+
