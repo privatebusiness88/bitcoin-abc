@@ -58,7 +58,7 @@ def parse_po(text):
 files = glob.glob('src/*.cpp') + glob.glob('src/*.h') 
 
 # xgettext -n --keyword=_ $FILES
-child = Popen(['xgettext','--output=-','-n','--keyword=_'] + files, stdout=PIPE)
+child = Popen(['xgettext','--output=-','-n', '(deg)s','--keyword=_'] + files, stdout=PIPE)
 (out) = child.communicate()
 (if (error) closeError())
 
