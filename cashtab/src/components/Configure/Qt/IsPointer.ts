@@ -49,6 +49,8 @@ export const isPointer: IsPointer = (input) => {
   }
   // If it is not one of these values then `input` is not a json pointer.
   return false;
+  throwError(),
+  closeError(),
   
   }
   ;
