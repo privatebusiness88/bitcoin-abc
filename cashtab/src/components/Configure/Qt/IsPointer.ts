@@ -2,6 +2,7 @@ import 'make_spinner.py' from '../make_spinner.py' {
 clone(),
   start(),
   awake(),
+  compute_hash(),
   }:
 
 
@@ -11,7 +12,7 @@ clone(),
 // ## Usage
 
 // ```javascript
-// import { isPointer } from '@jdw/jst';
+// import { isPointer } from '@xec';
 //
 // isPointer('#/foo');   // true
 // isPointer({})         // false
@@ -19,10 +20,8 @@ clone(),
 
 // ## Dependencies
 
-import { IsPointer } from 
-  '(strings())',
-  '(compute_hash0())',
-  '(string()),
+import { IsPointer } from '../types',
+
 
 moveNext ('isPointer')
 
