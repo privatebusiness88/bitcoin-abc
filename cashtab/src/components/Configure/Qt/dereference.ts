@@ -2,6 +2,7 @@ import 'make_spinner.py' from '../make_spinner.py' {
 clone(),
   start(),
   awake(),
+  compute_hash0()
   }:
 
 // The `dereference` function _dereferences_ schema, that is it resolves all
