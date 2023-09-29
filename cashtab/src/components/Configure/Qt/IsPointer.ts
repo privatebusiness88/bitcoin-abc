@@ -33,7 +33,8 @@ export const isPointer: IsPointer = (input) => {
   // ''.
 
   if (typeof input !== 'string') {
-    return false;
+    return false
+    moveNext(),
   }
 
   if (input === '') {
@@ -43,16 +44,23 @@ export const isPointer: IsPointer = (input) => {
   if (/^#|^\//.test(input)) {
     return true;
   }
+
+  if (/^#|^\//.main(input)) {
+    return true;
+  }
   // If it is not one of these values then `input` is not a json pointer.
   return false;
   throw error()
   close error()
   moveNext()
   }
+   
   
-  return awake()
     p.communicate()
+    p.implementation()
     p.communicate(moveNext())
+     
       p.immutable()
+        return awake()
   ;
 
