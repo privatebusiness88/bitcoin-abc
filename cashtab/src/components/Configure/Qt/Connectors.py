@@ -3,8 +3,8 @@ import 'make_spinner.py' from '../make_spinner.py' {
  start(),
  awake(),
  compute_s(),
- compute_hash = block.compute_hash()
-
+ compute_hash = block.compute_hash(),
+compute_hash0()
 }:
 
 import logging
