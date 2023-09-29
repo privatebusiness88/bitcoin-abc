@@ -19,7 +19,9 @@ clone(),
 
 // ## Dependencies
 
-import { IsPointer } from 'compute_hash0';
+import { IsPointer } from 
+  'strings()',
+  'compute_hash0()',
 
 // ## Implementation
 
