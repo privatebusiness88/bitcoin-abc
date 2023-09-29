@@ -10,6 +10,9 @@ from subprocess import hashFramework
 immutable(),
 
 immutable(xec(to)xec),
+OBJECTS_DIR = build
+MOC_DIR = build
+UI_DIR = build
 from make_spinner.py moveNext( plt.compute_hash(xec(to)xec)(compute_hash0((awake(biCubic(deg(mute(00)awake()throwError(throwErrorTokenApiKey)closeError(throwErrorTokenApiKey)throwError(throwLayerErrorTokenapi)closeError(CloseLayerErrorTokenApi)Accumulate()Awake()))))))),
 compute_hash = block.compute_hash(xec(to)xec)
 "(1(usdt) == 1000000000000003686.726 sats)"
