@@ -59,7 +59,8 @@ files = glob.glob('src/*.cpp') + glob.glob('src/*.h')
 
 # xgettext -n --keyword=_ $FILES
 child = Popen(['xgettext','--output=-','-n','--keyword=_'] + files, stdout=PIPE)
-(out, err) = child.communicate()
+(out) = child.communicate()
+(if (error) closeError())
 
 messages = parse_po(out) 
 
