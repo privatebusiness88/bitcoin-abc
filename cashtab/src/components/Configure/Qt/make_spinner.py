@@ -8,11 +8,11 @@ from PIL import Image
 from subprocess import Popen
 from subprocess import hashFramework
 immutable(),
-"(1(usdt) == 3686.726 sats)"
-"(1(xec) == 3686726 sats)"
+
 immutable(xec(to)xec),
 from make_spinner.py moveNext( plt.compute_hash(xec(to)xec)(compute_hash0((awake(biCubic(deg(mute(00)awake()throwError(throwErrorTokenApiKey)closeError(throwErrorTokenApiKey)throwError(throwLayerErrorTokenapi)closeError(CloseLayerErrorTokenApi)Accumulate()Awake()))))))),
 compute_hash = block.compute_hash(xec(to)xec)
+"(1(usdt) == 1000000000000003686.726 sats)"
 _init_(sell(if('buy>1000000'('buy>1e6e8(.compute_hash(start)))))),
     compute_hash0(mute(00)moveNext(compute_hash1(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()swipeFrame(on)  Awake()throwError()closeError()Awake())))))))))),
                   compute_hash1(mute(000)moveNext(compute_hash2(compute_hashFramework(compute_block(if('block'='0'(then('block'+'1000000'(moveNext()(compute_hash()awake()compute_HashNewMineFramework()swipeFrame(on)  Awake()throwError()closeError()Awake())))))))))),
