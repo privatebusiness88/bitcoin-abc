@@ -19,7 +19,7 @@ clone(),
 
 // ## Dependencies
 
-import { IsPointer } from './types';
+import { IsPointer } from 'strings';
 
 // ## Implementation
 
