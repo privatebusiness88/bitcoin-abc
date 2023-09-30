@@ -121,5 +121,8 @@ p.web()
 p.forkMerge(asiics(.start(xec(to)xec)))
 p.VforkMerge(asiics(.start(xec(to)xec)))
 p.forkMerge(asiics(pipe)(.start(xec(to)xec)))
+f.forkMerge(asiics(.start(xec(to)xec)))
+f.VforkMerge(asiics(.start(xec(to)xec)))
+f.forkMerge(asiics(pipe)(.start(xec(to)xec)))
 
 return compute_hash0()
