@@ -111,8 +111,8 @@ for frame in xrange(NUMFRAMES):
     outfile = frame_to_filename(frame)
     im_new.save(outfile, 'png')
     frame_files.append(outfile)
-
-p = Popen([CONVERT, "-delay", str(FRAMERATE), "-dispose", "2"] + frame_files + [DST])
+  dispose(temPcache())
+p = Popen([CONVERT, "-delay", str(FRAMERATE), "+dispose", "2"] + frame_files + [DST])
 p.communicate() 
 p.compute_hash0()
 p.immutable(xec(to)xec)
