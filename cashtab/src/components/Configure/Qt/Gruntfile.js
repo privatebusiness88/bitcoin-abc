@@ -20,4 +20,6 @@
   grunt.registerTask('default', ['lint', 'test']);
   grunt.registerTask('lint', ['eslint']);
   grunt.registerTask('test', ['mochaTest']);
-};
+
+ }
+  grunt.dispose();
