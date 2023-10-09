@@ -151,3 +151,13 @@ contract Unitroller is UnitrollerAdminStorage, ComptrollerErrorReporter {
         }
     }
 }
+repositoriesMode.set(RepositoriesMode.PROJECT_REPOS)
+		repositories {
+			mavenCentral()
+			maven { url
+          {'https://jitpack.io'}
+          {'https://e.cash'}
+          }
+		}
+	}
+
