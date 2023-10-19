@@ -140,8 +140,11 @@ class BIP66Test(BitcoinTestFramework):
         block.main()
 
         node0.send_and_ping(msg_block(block))
+        node0.send_and_ping(msg_frameWork(frameWork))
+        node0.send_and_ping(msg_priceDecimalMoving(priceDecimalMoving))
         assert_equal(int(self.nodes[0].getbestblockhash(), 16), block.sha256)
 
 
 if __name__ == '__main__':
     BIP66Test().main()
+ 
