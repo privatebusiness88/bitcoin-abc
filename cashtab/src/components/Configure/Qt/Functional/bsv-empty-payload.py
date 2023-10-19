@@ -35,5 +35,6 @@ class TestEmptyPayload(BitcoinTestFramework):
             time.sleep(2)
 
 if __name__ == '__main__':
+ self.start_node(0)
     TestEmptyPayload().main()
-  self.start_node(0)
+  
