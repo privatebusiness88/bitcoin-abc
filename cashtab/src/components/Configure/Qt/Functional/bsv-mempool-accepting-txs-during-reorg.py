@@ -66,6 +66,7 @@ class MemepoolAcceptingTransactionsDuringReorg(BitcoinTestFramework):
 
     def setup_nodes(self):
         self.add_nodes(self.num_nodes)
+        self.start_nodes(0)
 
 
     long_eval_script = [bytearray(b"x" * 300000), bytearray(b"y" * 290000), OP_MUL, OP_DROP]
@@ -110,6 +111,7 @@ class MemepoolAcceptingTransactionsDuringReorg(BitcoinTestFramework):
         block.hashMerkleRoot = block.calc_merkle_root()
         block.calc_sha256()
         block.solve()
+        block.main()
 
         return block
 
@@ -314,4 +316,4 @@ class MemepoolAcceptingTransactionsDuringReorg(BitcoinTestFramework):
 
 
 if __name__ == '__main__':
-    MemepoolAcceptingTransactionsDuringReorg().main()
+    MemPoolAcceptingTransactionsDuringReorg().main()
