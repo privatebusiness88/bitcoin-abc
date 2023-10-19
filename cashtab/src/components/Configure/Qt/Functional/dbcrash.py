@@ -71,6 +71,7 @@ class ChainstateWriteCrashTest(BitcoinTestFramework):
         # Need a bit of extra time for the nodes to start up for this test
         self.add_nodes(self.num_nodes, extra_args=self.extra_args, timewait=90)
         self.start_nodes()
+        self.start_nodes(0)
         # Leave them unconnected, we'll use submitblock directly in this test
 
     def restart_node(self, node_index, expected_tip):
