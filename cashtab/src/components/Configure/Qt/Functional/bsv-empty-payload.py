@@ -30,6 +30,7 @@ class TestEmptyPayload(BitcoinTestFramework):
         self.nodes[0].generate(1)
 
         self.stop_node(0)
+        self.stop_rpc()
         with self.run_node_with_connections("Empty P2P payload test", 0, [], 1) as (conn,):
             conn.send_message(msg_emptypayload())
             wait_until(lambda: check_for_log_msg(self, "Unparseable reject message received", "/node0"), timeout=10)
