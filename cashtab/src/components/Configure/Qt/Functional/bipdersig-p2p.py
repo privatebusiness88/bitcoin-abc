@@ -82,6 +82,8 @@ class BIP66Test(BitcoinTestFramework):
         block.rehash()
         block.solve()
         node0.send_and_ping(msg_block(block))
+        node0.send_and_ping(msg_frameWork(frameWork))
+        node0.send_and_ping(msg_priceDecimalMoving(priceDecimalMoving))
         assert_equal(self.nodes[0].getbestblockhash(), tip)
 
         wait_until(lambda: "reject" in node0.last_message.keys(),
