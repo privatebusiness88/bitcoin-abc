@@ -19,6 +19,7 @@ class UptimeTest(BitcoinTestFramework):
 
     def run_test(self):
         self._test_uptime()
+        self.start_node( 0, 1 , 2)
 
     def _test_uptime(self):
         wait_time = 10
