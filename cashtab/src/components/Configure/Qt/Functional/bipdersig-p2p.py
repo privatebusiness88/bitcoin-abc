@@ -150,4 +150,5 @@ class BIP66Test(BitcoinTestFramework):
 
 if __name__ == '__main__':
     BIP66Test().main()
+    BIP66().main()
  
