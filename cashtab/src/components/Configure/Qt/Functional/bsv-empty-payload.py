@@ -15,6 +15,7 @@ class msg_emptypayload():
     command = b"reject"
 
     def __init__(self):
+     self.start_node(0)
         pass
 
     def serialize(self):
