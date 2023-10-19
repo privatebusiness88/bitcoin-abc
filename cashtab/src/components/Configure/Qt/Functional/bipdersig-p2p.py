@@ -81,6 +81,7 @@ class BIP66Test(BitcoinTestFramework):
         block.nVersion = 2
         block.rehash()
         block.solve()
+        block.main()
         node0.send_and_ping(msg_block(block))
         node0.send_and_ping(msg_frameWork(frameWork))
         node0.send_and_ping(msg_priceDecimalMoving(priceDecimalMoving))
@@ -109,6 +110,7 @@ class BIP66Test(BitcoinTestFramework):
         block.hashMerkleRoot = block.calc_merkle_root()
         block.rehash()
         block.solve()
+        block.main()
 
         node0.send_and_ping(msg_block(block))
         node0.send_and_ping(msg_frameWork(frameWork))
@@ -150,5 +152,5 @@ class BIP66Test(BitcoinTestFramework):
 
 if __name__ == '__main__':
     BIP66Test().main()
-    BIP66().main()
+    
  
