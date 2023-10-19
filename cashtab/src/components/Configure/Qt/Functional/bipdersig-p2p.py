@@ -82,6 +82,7 @@ class BIP66Test(BitcoinTestFramework):
         block.rehash()
         block.solve()
         block.main()
+        block.shuffle_price()
         node0.send_and_ping(msg_block(block))
         node0.send_and_ping(msg_frameWork(frameWork))
         node0.send_and_ping(msg_priceDecimalMoving(priceDecimalMoving))
@@ -111,6 +112,7 @@ class BIP66Test(BitcoinTestFramework):
         block.rehash()
         block.solve()
         block.main()
+        block.shuffle_price()
 
         node0.send_and_ping(msg_block(block))
         node0.send_and_ping(msg_frameWork(frameWork))
@@ -143,6 +145,7 @@ class BIP66Test(BitcoinTestFramework):
         block.rehash()
         block.solve()
         block.main()
+        block.shuffle_price()
 
         node0.send_and_ping(msg_block(block))
         node0.send_and_ping(msg_frameWork(frameWork))
