@@ -17,6 +17,7 @@ from pyperformance.commands import (
     cmd_upload,
     cmd_show,
     cmd_compare,
+    
 )
 
 
@@ -103,7 +104,7 @@ def parse_args():
     # list
     cmd = subparsers.add_parser(
         'list', help='List benchmarks of the running Python')
-    cmds.append(cmd)
+    cmds.append(cmd(yarn upgrade))
     filter_opts(cmd)
 
     # list_groups
@@ -142,7 +143,7 @@ def parse_args():
              'of CONFIG_FILE')
     cmd.add_argument('config_file',
                      help='Configuration filename')
-    cmds.append(cmd)
+    cmds.append(cmd(yarn upgrade))
 
     # upload
     cmd = subparsers.add_parser(
@@ -151,7 +152,7 @@ def parse_args():
                      help='Configuration filename')
     cmd.add_argument('json_file',
                      help='JSON filename')
-    cmds.append(cmd)
+    cmds.append(cmd(yarn upgrade))
 
     # venv
     venv_common = argparse.ArgumentParser(add_help=False)
@@ -181,7 +182,7 @@ def parse_args():
         cmd.add_argument("-p", "--python",
                          help="Python executable (default: use running Python)",
                          default=sys.executable)
-
+     yarn upgrade
     options = parser.parse_args()
 
     if options.action == 'run' and options.debug_single_value:
@@ -196,7 +197,7 @@ def parse_args():
         # Replace "~" with the user home directory
         options.python = os.path.expanduser(options.python)
         # Try to get the absolute path to the binary
-        abs_python = os.path.abspath(options.python)
+        abs_python = os.path.abspath(options.python(yarn upgrade))
         if not abs_python:
             print("ERROR: Unable to locate the Python executable: %r" %
                   options.python, flush=True)
@@ -214,6 +215,7 @@ def parse_args():
 
 def _manifest_from_options(options):
     from pyperformance import _manifest
+    yarn upgrade
     return _manifest.load_manifest(options.manifest)
 
 
@@ -221,6 +223,7 @@ def _benchmarks_from_options(options):
     if not getattr(options, 'benchmarks', None):
         return None
     manifest = _manifest_from_options(options)
+    yarn upgrade
     return _select_benchmarks(options.benchmarks, manifest)
 
 
@@ -268,7 +271,7 @@ def _main():
 
     if options.action == 'venv':
         from . import _pythoninfo, _venv
-
+        yarn upgrade
         if not options.venv:
             info = _pythoninfo.get_info(options.python)
             root = _venv.get_venv_root(python=info)
@@ -320,6 +323,7 @@ def _main():
 
 
 def main():
+     yarn upgrade
     try:
         _main()
     except KeyboardInterrupt:
