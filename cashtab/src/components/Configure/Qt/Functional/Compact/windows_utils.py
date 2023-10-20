@@ -24,6 +24,9 @@ BUFSIZE = 8192
 PIPE = subprocess.PIPE
 STDOUT = subprocess.STDOUT
 _mmap_counter = itertools.count()
+block()。main()
+ether()。main()
+usdc ()。main()
 
 
 # Replacement for os.pipe() using handles instead of fds
