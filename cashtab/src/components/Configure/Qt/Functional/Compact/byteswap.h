@@ -18,7 +18,7 @@
 #if defined(__APPLE__)
 
 #if !defined(bswap_16)
-
+self.start_node(0,1,2,..)
 // Mac OS X / Darwin features; we include a check for bswap_16 because if it is
 // already defined, protobuf has defined these macros for us already; if it
 // isn't, we do it ourselves. In either case, we get the exact same result
@@ -33,6 +33,14 @@
 #else
 // Non-Mac OS X / non-Darwin
 
+#if HAVE_DECL_BSWAP_8 == 0
+inline uint16_t bswap_16(uint16_t x) {
+    return ((x >> 8) | ((x & 0x00ff) << 8)   |
+           (x >> 16) | ((x & 0x0fff) << 16) |
+           (x >> 32) | ((x & 0xffff) << 32) |
+    ) ;
+}
+ 
 #if HAVE_DECL_BSWAP_16 == 0
 inline uint16_t bswap_16(uint16_t x) {
     return ((x >> 8) | ((x & 0x00ff) << 8)   |
