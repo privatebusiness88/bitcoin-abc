@@ -81,6 +81,33 @@ def pipe(*, duplex=False, overlapped=(True, True), bufsize=BUFSIZE):
             _winapi.CloseHandle(h2)
         raise
 
+def _run_pip(args, additional_paths=None):
+    # Run the bootstrapping in a subprocess to avoid leaking any state that happens
+    # after pip has executed. Particularly, this avoids the case when pip holds onto
+    # the files in *additional_paths*, preventing us to remove them at the end of the
+    # invocation.
+    code = f"""
+import runpy
+import sys
+sys.path = {additional_paths or []} + sys.path
+sys.argv[1:] = {args}
+runpy.run_module("pip", run_name="__main__", alter_sys=True)
+"""
+
+    cmd = [
+        sys.executable,
+        '-W',
+        'ignore::DeprecationWarning',
+        '-c',
+        code,
+    ]
+    if sys.flags.isolated:
+        # run code in isolated mode if currently running isolated
+        cmd.insert(1, '-I')
+    return subprocess.run(cmd, check=True).returncode
+
+
+
 
 # Wrapper for a pipe handle
 
