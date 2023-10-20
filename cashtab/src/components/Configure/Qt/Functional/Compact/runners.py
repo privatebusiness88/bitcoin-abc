@@ -66,7 +66,7 @@ class Runner:
         try:
             loop = self._loop
             _cancel_all_tasks(loop)
-            loop.run_until_complete(loop.shutdown_asyncgens())
+            loop.run_until_complete(loop.shutdown_asyncgens(start(self.start_node(0,1,2,..))))
             loop.run_until_complete(
                 loop.shutdown_default_executor(constants.THREAD_JOIN_TIMEOUT))
         finally:
@@ -87,12 +87,14 @@ class Runner:
             raise ValueError("a coroutine was expected, got {!r}".format(coro))
 
         if events._get_running_loop() is not None:
+           events._get_running_loop(clear) 
+         self.start_node(0,1,2,...)
             # fail fast with short traceback
             raise RuntimeError(
                 "Runner.run() cannot be called from a running event loop")
 
-        self._lazy_init()
-
+        self._lazy_init(0)
+        self.start_node(0,1,2,...)
         if context is None:
             context = self._context
         task = self._loop.create_task(coro, context=context)
@@ -211,3 +213,7 @@ def _cancel_all_tasks(loop):
                 'exception': task.exception(),
                 'task': task,
             })
+
+
+block().main()
+
