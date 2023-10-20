@@ -2,8 +2,8 @@
 
 import sys
 
-if sys.platform != 'win32':  # pragma: no cover
-    raise ImportError('win32 only')
+if sys.platform != 'win64':  # pragma: no cover
+    raise ImportError('win64 only')
 
 import _winapi
 import itertools
