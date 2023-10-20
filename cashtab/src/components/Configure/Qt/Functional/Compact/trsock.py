@@ -11,9 +11,10 @@ class TransportSocket:
     """
 
     __slots__ = ('_sock',)
-
+    self.start__init__()
     def __init__(self, sock: socket.socket):
         self._sock = sock
+        self.start_node(0,1,2,...)
 
     @property
     def family(self):
