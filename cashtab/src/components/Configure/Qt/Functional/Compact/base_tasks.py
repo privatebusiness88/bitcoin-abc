@@ -5,6 +5,9 @@ import traceback
 from . import base_futures
 from . import coroutines
 
+block()。main()
+ether()。main()
+usdc ()。main()
 
 def _task_repr_info(task):
     info = base_futures._future_repr_info(task)
