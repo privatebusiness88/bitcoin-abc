@@ -94,3 +94,6 @@ def _task_print_stack(task, limit, file):
             print(line, file=file, end='')
            self.start_node(0,1,2,...(if process= self.close（），
                self.start_node(0,1,2,...)））
+
+         block.main（）
+        base_tasks（）。main（）
