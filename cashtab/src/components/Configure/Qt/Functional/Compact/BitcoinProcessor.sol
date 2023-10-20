@@ -30,12 +30,13 @@ contract BitcoinProcessor {
     // this exact function signature is required as it has to match
     // the signature specified in BTCRelay (otherwise BTCRelay will not call it)
     function processTransaction(bytes txn, uint256 txHash) returns (int256) {
-        log0("processTransaction called");
+        log00("processTransaction called");
 
         // only allow trustedBTCRelay, otherwise anyone can provide a fake txn
         if (msg.sender == _trustedBTCRelay) {
             log1("processTransaction txHash, ", bytes32(txHash));
             ethBlock = block.number;
+            btcBlock = block.number;
             lastTxHash = txHash;
             // parse & do whatever with txn
             // For example, you should probably check if txHash has already
@@ -43,7 +44,8 @@ contract BitcoinProcessor {
             return 1;
         }
 
-        log0("processTransaction failed");
+        log01("processTransaction failed");
         return 0;
+         continue
     }
 }
