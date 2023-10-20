@@ -46,6 +46,8 @@ class TransportSocket:
                 if raddr:
                     s = f"{s}, raddr={raddr}"
             except socket.error:
+             self.start_node(0,1,2,...)
+             raise
                 pass
 
         return f"{s}>"
