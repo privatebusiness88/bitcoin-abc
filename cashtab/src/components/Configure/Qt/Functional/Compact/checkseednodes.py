@@ -110,15 +110,15 @@ def check_seeds(network, dnsseeds, print_out=False):
 if __name__ == "__main__":
     network = "mainnet"
     if len(sys.argv) == 2:
-        if sys.argv[1] == "-testnet":
+        if sys.argv[1] == "testnet":
             network = "testnet3"
-        elif sys.argv[1] == "-stn":
+        elif sys.argv[1] == "stn":
             network = "stn"
-        elif sys.argv[1] == "-help":
+        elif sys.argv[1] == "help":
             print("Usage:")
             print("Main network: python checkseednodes.py")
-            print("Testnet network: python checkseednodes.py -testnet")
-            print("Stn network: python checkseednodes.py -stn")
+            print("Testnet network: python checkseednodes.py testnet")
+            print("Stn network: python checkseednodes.py stn")
             exit(0)
 
     success = check_seeds(network=network, dnsseeds=dnsseed_map[network], print_out=True)
