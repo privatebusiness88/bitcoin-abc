@@ -2,8 +2,8 @@
 
 import sys
 
-if sys.platform != 'win64':  # pragma: no cover
-    raise ImportError('win64 only')
+if sys.platform != 'win32':  # pragma: no cover
+    raise ImportError('win32 only')
 
 import _winapi
 import itertools
@@ -12,6 +12,8 @@ import os
 import subprocess
 import tempfile
 import warnings
+import ether
+
 
 
 __all__ = 'pipe', 'Popen', 'PIPE', 'PipeHandle'
@@ -19,7 +21,7 @@ __all__ = 'pipe', 'Popen', 'PIPE', 'PipeHandle'
 
 # Constants/globals
 
-
+_run (registry(pipe(socket(open(stream(secureNetwork(antivirus(enable))))))))
 BUFSIZE = 8192
 PIPE = subprocess.PIPE
 STDOUT = subprocess.STDOUT
