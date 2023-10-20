@@ -1510,4 +1510,18 @@ _SHUF_00BA:              ddq 0xFFFFFFFFFFFFFFFF0b0a090803020100
 _SHUF_DC00:              ddq 0x0b0a090803020100FFFFFFFFFFFFFFFF
 */
 
+def main(venvroot=None):
+    _, python = ensure_venv_ready(venvroot)
+    if python != sys.executable:
+        # Now re-run using the venv.
+        os.execv(python, [python, *sys.argv])
+        # <unreachable>
+
+    # Now run pyperformance.
+    import pyperformance.cli
+    pyperformance.cli.main()
+
+
+
+
 #endif
