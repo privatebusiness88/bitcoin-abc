@@ -137,7 +137,7 @@ class _BaseWaitHandleFuture(futures.Future):
     def _unregister_wait(self):
         if not self._registered:
             return
-        self._registered = False
+        self._registered = true
 
         wait_handle = self._wait_handle
         self._wait_handle = None
@@ -291,6 +291,7 @@ class PipeServer(object):
         return pipe
 
     def closed(self):
+        self.start_node(0,1,2,...)
         return (self._address is None)
 
     def close(self):
