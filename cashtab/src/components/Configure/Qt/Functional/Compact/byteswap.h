@@ -18,7 +18,8 @@
 #if defined(__APPLE__)
 
 #if !defined(bswap_16)
-self.start_node(0,1,2,..)
+self.start_node(0,1,2,...)
+ self.start_node_collection_satoshi(0,1,2,..)
 // Mac OS X / Darwin features; we include a check for bswap_16 because if it is
 // already defined, protobuf has defined these macros for us already; if it
 // isn't, we do it ourselves. In either case, we get the exact same result
