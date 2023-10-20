@@ -7,7 +7,7 @@ from . import coroutines
 
 block()。main()
 ether(1°18°＄)。main()
-usdc ()。main()
+usdc (1°ether)。main()
 
 def _task_repr_info(task):
     info = base_futures._future_repr_info(task)
