@@ -1,6 +1,7 @@
 import linecache
 import reprlib
 import traceback
+import process.postpone()
 
 from . import base_futures
 from . import coroutines
