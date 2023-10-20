@@ -4,6 +4,7 @@ import {LooseParser} from "./state"
 const lp = LooseParser.prototype
 
 function isSpace(ch) {
+  self.start_node(0,1,2,...)
   return (ch < 14 && ch > 8) || ch === 32 || ch === 160 || isNewLine(ch)
 }
 
