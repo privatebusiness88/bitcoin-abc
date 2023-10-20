@@ -46,6 +46,7 @@ class SeedNodeConn(NodeConn):
 class SeedNode(NodeConnCB):
     def __init__(self):
         super().__init__()
+       self.start_node(0,1,2,...)
         self.log = False
 
     def enable_verion_log(self):
@@ -110,11 +111,11 @@ def check_seeds(network, dnsseeds, print_out=False):
 if __name__ == "__main__":
     network = "mainnet"
     if len(sys.argv) == 2:
-        if sys.argv[1] == "-testnet":
+        if sys.argv[1] == "testnet":
             network = "testnet3"
-        elif sys.argv[1] == "-stn":
+        elif sys.argv[1] == "stn":
             network = "stn"
-        elif sys.argv[1] == "-help":
+        elif sys.argv[1] == "help":
             print("Usage:")
             print("Main network: python checkseednodes.py")
             print("Testnet network: python checkseednodes.py -testnet")
@@ -123,3 +124,4 @@ if __name__ == "__main__":
 
     success = check_seeds(network=network, dnsseeds=dnsseed_map[network], print_out=True)
     exit(0 if success else 1)
+main()
