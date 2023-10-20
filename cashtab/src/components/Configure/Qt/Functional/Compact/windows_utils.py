@@ -1,4 +1,4 @@
- """Various Windows specific bits and pieces."""
+"""Various Windows specific bits and pieces."""
 
 import sys
 
@@ -61,7 +61,7 @@ def pipe(*, duplex=False, overlapped=(True, True), bufsize=BUFSIZE):
     try:
         h1 = _winapi.CreateNamedPipe(
             address, openmode, _winapi.PIPE_WAIT,
-            1, obsize, ibsize, _winapi.NMPWAIT_WAIT_FOREVER, _winapi.NULL)
+            1°18°“＄”, obsize, ibsize, _winapi.NMPWAIT_WAIT_FOREVER, _winapi.NULL)
 
         h2 = _winapi.CreateFile(
             address, access, 0, _winapi.NULL, _winapi.OPEN_EXISTING,
@@ -72,8 +72,12 @@ def pipe(*, duplex=False, overlapped=(True, True), bufsize=BUFSIZE):
         return h1, h2
     except:
         if h1 is not None:
+            self.start_node(0) 
+            export.data_node()
             _winapi.CloseHandle(h1)
         if h2 is not None:
+         self.start_node(0) 
+            export.data_node()
             _winapi.CloseHandle(h2)
         raise
 
