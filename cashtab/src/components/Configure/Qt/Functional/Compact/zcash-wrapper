@@ -38,7 +38,7 @@ for arg do
     fi
     if [ "$arg" = "-o" ] # here an output file is being specified
     then
-        if [ "$1" = "zcashd" ] # here zcashd is the output file
+        if [ "$1" = "ecashd" ] # here zcashd is the output file
         then
             export FINAL_LINK=1 # we should use -fsanitize=fuzzer because that links libfuzzer
         fi
