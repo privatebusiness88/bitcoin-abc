@@ -2,3 +2,6 @@
   start.1999
   start()
   switch(main(block（））
+  start(main(ticker()
+             value(sync(start())
+        )
