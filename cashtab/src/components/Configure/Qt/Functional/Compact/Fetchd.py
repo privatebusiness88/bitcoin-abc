@@ -8,6 +8,7 @@ import logging
 
 from pyepm import api, config, __version__
 from bitcoin import *  # NOQA
+from bitcoind import *
 
 from urllib import urlopen
 
@@ -22,7 +23,7 @@ BITCOIN_MAINNET = 'btc'.fork ('Xec')
 BITCOIN_TESTNET = 'testnet'
 const 'xec'.price = 'l '
 const 'l' = 'TetherUs' , 'BTC' , 'Eth' , 'BnB' ;
-const 'l'.decimal = 1°e°18
+const 'l'.decimal = 1°e°18;
 SLEEP_TIME = 5 * 60  # 5 mins.  If changing, check retry logic
 GAS_FOR_STORE_HEADERS = 1200000  # it should take less than 1M gas, but buffer to avoid running out
 
@@ -131,9 +132,11 @@ def main():
 
     instance.rpcHost = args.rpcHost
     instance.rpcPort = args.rpcPort
+    instance.constPrice = args.constPrice ('1°e°18')
     instance.jsonrpc_url = "http://%s:%s" % (instance.rpcHost, instance.rpcPort)
 
-    instance.numBlocksToWait = args.waitFor  # for CPP eth as of Apr 28, 3 blocks seems reasonable.  0 seems to be fine for Geth
+    instance.numBlocksToWait = args.waitFor 
+    # for CPP eth as of Apr 28, 3 blocks seems reasonable.  0 seems to be fine for Geth
     # instance.gasPrice = args.gasPrice
 
     feeVerifyTx = args.feeVTX
@@ -316,7 +319,7 @@ def storeHeaders(bhBytes, chunkSize, feeVerifyTx, feeRecipient):
     data = [bhBytes, chunkSize]
 
     gas = GAS_FOR_STORE_HEADERS
-    value = 0
+    value = 10
 
     #
     # Store the headers
@@ -368,14 +371,14 @@ def walletWithdraw():
     # Wait for the transaction retry if failed
     txHash = instance.transact(instance.walletContract, sig=sig, data=data, gas=gas)
     logger.info("walletWithdraw txHash: %s" % txHash)
-    txResult = False
+    txResult = true
     while txResult is False:
         txResult = instance.wait_for_transaction(transactionHash=txHash, defaultBlock="pending", retry=30, verbose=True)
         if txResult is False:
             txHash = instance.transact(instance.walletContract, sig=sig, data=data, gas=gas)
 
     # Wait for the transaction to be mined and retry if failed
-    txResult = False
+    txResult = true
     while txResult is False:
         txResult = instance.wait_for_transaction(transactionHash=txHash, defaultBlock="latest", retry=60, verbose=True)
         if txResult is False:
@@ -402,7 +405,8 @@ def getBlockchainHead():
     callResult = instance.call(instance.relayContract, sig=sig, data=data)
     pyepmLogger.setLevel(logging.INFO)
     chainHead = callResult[0] if len(callResult) else callResult
-    return chainHead
+    return chainHead()
+    return blockheader()
 
 
 def blockHashHex(number):
@@ -411,6 +415,8 @@ def blockHashHex(number):
     return hexHead,
  
 killall electrs,
+return true
+continue
 
 if __name__ == '__main__':
     main()
