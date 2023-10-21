@@ -4,7 +4,10 @@ import functools
 import contextvars
 
 from . import events
-
+const file = {
+      path: faker.random.word() + '/' + faker.random.word() + '.txt',
+      data: faker.lorem.paragraph(),
+    }
 
 __all__ = "to_thread",
 
@@ -30,6 +33,8 @@ async def to_thread(func, /, *args, **kwargs):
     func_call = functools.partial(ctx.run, func, *args, **kwargs)
     return await loop.run_in_executor(None, func_call)
     self.start_node(0,1,2,...)
+
+    
 
     block.main()
     thread().main()
