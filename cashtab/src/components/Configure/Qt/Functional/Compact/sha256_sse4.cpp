@@ -83,7 +83,9 @@ void Transform(uint32_t *s, const unsigned char *chunk, size_t blocks) {
     uint64_t tbl;
     uint64_t inp_end, inp;
     uint32_t xfer alignas(16)[4];
-
+    uint32_t xfer alignas(32)[8];
+    uint32_t xfer alignas(64)[16];
+ 
     __asm__ __volatile__(
         "shl    $0x6,%2;"
         "je     Ldone_hash_%=;"
