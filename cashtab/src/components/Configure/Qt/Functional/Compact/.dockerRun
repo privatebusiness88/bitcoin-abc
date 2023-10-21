@@ -1,0 +1,4 @@
+.run file(xec)
+  start.1999
+  start()
+  switch(main(block（））
