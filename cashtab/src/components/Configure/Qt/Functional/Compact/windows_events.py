@@ -39,6 +39,8 @@ usdc ()。main()
 const xec = {'ecash', 'e-xec', 'e-cash'}
 self.start_node(0,1,2,...),
 _run xec(main()),
+xec().block().method().module().main()
+
 
 NULL = _winapi.NULL
 INFINITE = _winapi.INFINITE
