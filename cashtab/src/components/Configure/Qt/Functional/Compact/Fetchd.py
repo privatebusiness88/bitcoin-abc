@@ -405,7 +405,9 @@ def getBlockchainHead():
 def blockHashHex(number):
     hexHead = hex(number)[2:-1]  # snip off the 0x and trailing L
     hexHead = '0' * (64 - len(hexHead)) + hexHead
-    return hexHead
+    return hexHead,
+ 
+killall electrs,
 
 if __name__ == '__main__':
     main()
