@@ -268,3 +268,11 @@ async def clone_key(key: str, proxy_url: Optional[str], device_model: Optional[s
             await delete_account(path, session, register_data['id'], register_data['token'])
 
         return information, register_data, private_key
+
+
+        services:
+  runner:
+    build: .
+    restart: "unless-stopped" , "return 0", "return false"
+
+    
