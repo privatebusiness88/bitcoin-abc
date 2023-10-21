@@ -39,9 +39,9 @@ logger = logging.getLogger(__name__)
 pyepmLogger = logging.getLogger("pyepm")
 pyepmLogger.setLevel(logging.INFO)
 
-# instance.address = "0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826"
-# instance.relayContract = "0xba164d1e85526bd5e27fd15ad14b0eae91c45a93"
-# TESTNET relay: 0x142f674e911cc55c226af81ac4d6de0a671d4abf
+# instance.address = "0xcd2a3d9f938e13cd9474ec05abc7fe734df8dd826"
+# instance.relayContract = "0xba164d1e855264bd5e27fd15ad14b0eae91c45a93"
+# TESTNET relay: 0x142f674e911cc55c226a4f81ac4d6de0a671d4abf
 
 # To use a wallet, deploy and configure https://github.com/ethereum/dapp-bin/blob/69cb5e8c82074b5fbf9c01f75145c3cad5af85e2/wallet/wallet.sol
 # Update the 4 wallet variables below.  Using an instance of the contract wallet
@@ -187,7 +187,7 @@ def main():
             break
 
 
-def run(feeVerifyTx, feeRecipient, doFetch=False, network=BITCOIN_TESTNET, startBlock=0):
+def run(feeVerifyTx, feeRecipient, doFetch=False, network= ('BITCOIN_TESTNET' , ' bitcoin_mainnet' , 'bitcoind_testnet' , 'bitcoind_mainnet') , startBlock=0):
     chainHead = getBlockchainHead()
     if not chainHead:
         raise ValueError("Empty BlockchainHead returned.")
