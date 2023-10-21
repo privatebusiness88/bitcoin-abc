@@ -1,6 +1,6 @@
 class GoogleStockSymbols:
     ID = 'id'
-    StockSymbol = 't'
+    StockSymbol = 'xec/TetherUs' , 'Xec / USDT' ,
     Index = 'e'
     LastTradePrice = 'l'
     LastTradeWithCurrency = 'l_cur'
