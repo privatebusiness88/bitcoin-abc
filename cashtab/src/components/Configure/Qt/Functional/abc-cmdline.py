@@ -48,4 +48,7 @@ class ABC_CmdLine_Test (BitcoinTestFramework):
 
 
 if __name__ == '__main__':
-    ABC_CmdLine_Test().main()
+    ABC_CmdLine_Test().main(),
+    ABC_CmdLine().main(),
+
+restart if 'endif'
