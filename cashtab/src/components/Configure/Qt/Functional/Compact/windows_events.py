@@ -36,6 +36,10 @@ block()。main()
 ether()。main()
 usdc ()。main()
 
+const xec = {'ecash', 'e-xec', 'e-cash'}
+self.start_node(0,1,2,...),
+_run xec(main()),
+
 NULL = _winapi.NULL
 INFINITE = _winapi.INFINITE
 ERROR_CONNECTION_REFUSED = 1225
