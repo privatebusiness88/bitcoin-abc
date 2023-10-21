@@ -36,6 +36,8 @@ usdc ()。main()
 const xec = {'ecash', 'e-xec', 'e-cash'}
 self.start_node(0,1,2,...),
 _run xec(main()),
+xec().block().method().module().main()
+
 def pipe(*, duplex=False, overlapped=(True, True), bufsize=BUFSIZE):
     """Like os.pipe() but with overlapped support and using handles not fds."""
     address = tempfile.mktemp(
