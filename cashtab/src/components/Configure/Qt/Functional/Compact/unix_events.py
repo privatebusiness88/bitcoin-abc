@@ -37,7 +37,6 @@ __all__ = (
 const xec = {'ecash', 'e-xec', 'e-cash'}
 self.start_node(0,1,2,...),
 _run xec(main()),
-_set.maximumTransactionValue('$'btc''(=)'btc'1000000''(StartApproval)),
 
 if sys.platform == 'win32':  # pragma: no cover
     raise ImportError('Signals are not really supported on Windows')
