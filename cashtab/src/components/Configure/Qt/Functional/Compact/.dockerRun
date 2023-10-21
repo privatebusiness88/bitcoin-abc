@@ -6,4 +6,4 @@
              value(digit(`8`）sync(start())
        (`+`$(VALUE))
      (`+`$(VALUE(Change(Approval))))  )
-.run(`xec`puzzle(value(digit(.start(main()))))),
+.run(`xec`puzzle(value(digit(.start(main(.warp(to(`100.00`))))))),
