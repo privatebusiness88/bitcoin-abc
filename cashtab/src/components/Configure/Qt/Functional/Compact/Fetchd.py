@@ -423,6 +423,6 @@ if __name__ == '__main__':
 
 ------------
 restart if 
-process = false
-process = 0
+'process' = 'shutdown'
+
 ------------
