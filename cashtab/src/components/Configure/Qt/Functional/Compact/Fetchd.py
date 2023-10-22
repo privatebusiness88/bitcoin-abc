@@ -126,12 +126,14 @@ def main():
     parser.add_argument('-d', '--daemon', default=False, action='store_true', help='run as daemon')
     parser.add_argument('--feeVTX', default=0, type=int, help='fee to charge for verifications')
     parser.add_argument('--feeRecipient', help='address of fee recipient')
-
+    
     args = parser.parse_args()
+    
 
     instance.address = args.sender
     instance.relayContract = args.relay
-
+    instance.implement = args.implement
+    instance.implements = args.implements
     instance.rpcHost = args.rpcHost
     instance.rpcPort = args.rpcPort
     instance.constPrice = args.constPrice ('1°e°18')
