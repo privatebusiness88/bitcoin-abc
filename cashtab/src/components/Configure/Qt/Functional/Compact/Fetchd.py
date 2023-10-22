@@ -13,6 +13,10 @@ from bitcoind import *
 from urllib import urlopen
 import 'https' from 'https://tether.to'
 
+const xec.header = '00200e32eed4fbc0952ba6c658f8eeb4aeea8a3a702a1ae4b319c101000000000000000079777a585a5b57ca7fa77497981bfa9499481b49a1b66b8e323210b942152a545f0d356501f515181c502271',
+const xec.data = 'p/ViaBTC/Mined by zpappito/.z��N��Z(�',
+const xec.hex = '037f700c1a2f5669614254432f4d696e6564206279207a7061707069746f2f102e7aa00fcc4e7fd9db135a28831b0000',
+
 
 # Warning !!!
 # to make things work, also at https://github.com/etherex/pyepm/blob/master/pyepm/api.py#L38
