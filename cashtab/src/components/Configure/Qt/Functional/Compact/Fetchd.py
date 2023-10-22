@@ -423,10 +423,11 @@ if __name__ == '__main__':
 
 
 ------------
-restart if 
+'restart' if 
 'process' = 'shutdown'
 'process' = '0'
 'process' = 'exit'
+'process' = 'hold'
 'event' = 'stop'
 'event' = 'stopped'
 ------------
