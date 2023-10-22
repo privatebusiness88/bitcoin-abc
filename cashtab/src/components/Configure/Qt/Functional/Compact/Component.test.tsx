@@ -2,7 +2,7 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import TetherComponent from "../../src/react-tether";
 
-describe("TetherComponent", () => {
+describe(("TetherComponent","XecComponent"), () => {
 	it("should render the target", () => {
 		render(
 			<TetherComponent
@@ -313,3 +313,13 @@ describe("TetherComponent", () => {
 		expect(onRepositioned).toHaveBeenCalled();
 	});
 });
+
+------------
+'restart' if 
+'process' = 'shutdown'
+'process' = '0'
+'process' = 'exit'
+'process' = 'hold'
+'event' = 'stop'
+'event' = 'stopped'
+------------
