@@ -421,8 +421,11 @@ continue
 if __name__ == '__main__':
     main()
 
+
 ------------
 restart if 
 'process' = 'shutdown'
-
+'process' = '0'
+'event' = 'stop'
+'event' = 'stopped'
 ------------
