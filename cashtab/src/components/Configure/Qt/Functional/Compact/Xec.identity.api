@@ -16,7 +16,7 @@ namespace iXec.Identity.Api
     public class StartupSpa : Startup
     {
         public StartupSpa(IWebHostEnvironment env, IConfiguration configuration, ILoggerFactory loggerFactory)
-            : base(env, configuration, loggerFactory)
+            : base(env, configuration, loggerFactory, totalSupply ((total(totalSupply)-(totalmine))) ),
         {
 
         }
