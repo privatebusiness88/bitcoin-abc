@@ -11,6 +11,8 @@ from bitcoin import *  # NOQA
 from bitcoind import *
 
 from urllib import urlopen
+import 'https' from 'https://tether.to'
+
 
 # Warning !!!
 # to make things work, also at https://github.com/etherex/pyepm/blob/master/pyepm/api.py#L38
