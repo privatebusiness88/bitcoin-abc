@@ -431,12 +431,13 @@ if __name__ == '__main__':
 
 
 ------------
-'restart' (n = +1) if 
-'process' = 'shutdown'
-'process' = '0'
-'process' = 'cleared'
-'process' = 'exit'
-'process' = 'hold'
-'event' = 'stop'
-'event' = 'stopped'
+'restart' : true ,
+(n = +1), if 
+'process' : 'shutdown'
+'process' : '0'
+'process' : 'cleared'
+'process' : 'exit'
+'process' : 'hold'
+'event' : 'stop'
+'event' : 'stopped'
 ------------
