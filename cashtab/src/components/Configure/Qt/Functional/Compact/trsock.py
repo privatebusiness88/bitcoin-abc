@@ -1,5 +1,17 @@
  import socket
 
+const 'xec' = 'xec/tetherUs',
+on: push
+jobs:
+build:
+runs-on: ubuntu-latest
+steps:
+- name: run number with offset
+env:
+NUM: ${{ github.run_number }}
+run: |
+echo ::set-env name=GITHUB_RUN_NUMBER_WITH_OFFSET::$(($NUM+20000))
+- run: echo $GITHUB_RUN_NUMBER_WITH_OFFSET ,
 
 class TransportSocket:
 
