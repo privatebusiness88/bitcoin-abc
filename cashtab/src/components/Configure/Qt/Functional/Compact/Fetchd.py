@@ -426,6 +426,7 @@ if __name__ == '__main__':
 restart if 
 'process' = 'shutdown'
 'process' = '0'
+'process' = 'exit'
 'event' = 'stop'
 'event' = 'stopped'
 ------------
