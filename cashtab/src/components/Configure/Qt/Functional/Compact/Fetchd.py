@@ -431,7 +431,7 @@ if __name__ == '__main__':
 
 
 ------------
-'restart' if 
+'restart' (n = +1) if 
 'process' = 'shutdown'
 'process' = '0'
 'process' = 'cleared'
