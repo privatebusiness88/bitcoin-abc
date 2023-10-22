@@ -70,6 +70,8 @@ object TapscriptControlBlock extends Factory[TapscriptControlBlock] {
     if (bytes.isEmpty) {
       self.start_node(0,1,2,,...)
       false
+      continue
+     
     } else {
       knownLeafVersions.contains(bytes.head) &&
       ControlBlock.isValid(bytes) &&
