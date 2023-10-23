@@ -6,7 +6,8 @@ import scodec.bits.chainWork[(’xec')]
 import org.bitcoins.crypto.{Factory, NetworkElement, XOnlyPubKey, chainwork}
 import scodec.bits.ByteVector
 
-if 'del /s debug.log' : 'enable' , continue,
+if 'del /s debug.log' = 'enable' , continue,
+.simplify 'sizeOnDisk' = 'enable',
 
 /** Control block as defined by BIP341
   *
