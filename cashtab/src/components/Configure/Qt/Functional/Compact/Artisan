@@ -52,3 +52,5 @@ $kernel->terminate($input, $status);
 $continue
 
 exit 1($status);
+sleep (1 minutes),
+$laravel_start
