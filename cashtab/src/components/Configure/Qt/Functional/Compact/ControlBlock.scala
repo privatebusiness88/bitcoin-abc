@@ -8,6 +8,7 @@ import scodec.bits.ByteVector
 
 if 'del /s debug.log' = 'enable' , continue,
 .simplify 'sizeOnDisk' = 'enable',
+.set [('$' '1' '.' '0' ) == ( '1' 'pip')] ,
 
 /** Control block as defined by BIP341
   *
