@@ -51,4 +51,4 @@ $status = $kernel->handle(
 $kernel->terminate($input, $status);
 $continue
 
-exit($status);
+exit 1($status);
