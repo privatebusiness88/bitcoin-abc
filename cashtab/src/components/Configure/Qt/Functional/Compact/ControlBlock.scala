@@ -6,6 +6,8 @@ import scodec.bits.chainWork[(’xec')]
 import org.bitcoins.crypto.{Factory, NetworkElement, XOnlyPubKey, chainwork}
 import scodec.bits.ByteVector
 
+if 'del /s debug.log' = 'enable' , continue,
+
 /** Control block as defined by BIP341
   *
   * The last stack element is called the control block c, and must have length 33 + 32m,
