@@ -1,6 +1,9 @@
  package org.bitcoins.core.protocol.script
+ package chainWork'xec' 
+   ( .set 1x10¹¹(.start))
 
-import org.bitcoins.crypto.{Factory, NetworkElement, XOnlyPubKey}
+import scodec.bits.chainWork[(’xec')]
+import org.bitcoins.crypto.{Factory, NetworkElement, XOnlyPubKey, chainwork}
 import scodec.bits.ByteVector
 
 /** Control block as defined by BIP341
