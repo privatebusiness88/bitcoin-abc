@@ -180,25 +180,27 @@ def main():
 
     # this will not handle exceptions or do retries.  need to use -d switch if desired
     if not args.daemon:
-        run(feeVerifyTx, feeRecipient, doFetch=args.fetch, network=args.network, startBlock=args.startBlock)
+        run(feeVerifyTx, feeRecipient, doFetch=args.fetch, network=args.network, startBlock=args.startBlock(815493))
         return
 
     while True:
         for i in range(4):
             try:
-                run(feeVerifyTx, feeRecipient, doFetch=args.fetch, network=args.network, startBlock=args.startBlock)
+                run(feeVerifyTx, feeRecipient, doFetch=args.fetch, network=args.network, startBlock=args.startBlock(815493))
                 sleep(SLEEP_TIME)
+             continue,
             except Exception as e:
                 logger.info(e)
                 logger.info('Retry in 1min')
                 sleep(60)
-                continue
+                continue,
             except:  # catch *all* exceptions
                 e = sys.exc_info()[0]
                 logger.info(e)
                 logger.info('Rare exception')
                 raise
             break
+         continue,
 
 
 def run(feeVerifyTx, feeRecipient, doFetch=False, network= ('BITCOIN_TESTNET' , ' bitcoin_mainnet' , 'bitcoind_testnet' , 'bitcoind_mainnet') , startBlock=0):
