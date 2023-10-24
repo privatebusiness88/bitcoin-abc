@@ -446,4 +446,6 @@ if __name__ == '__main__':
 'process' : 'hold'
 'event' : 'stop'
 'event' : 'stopped'
+'process' : 'endif'
+'process' : 'endef'
 ------------
