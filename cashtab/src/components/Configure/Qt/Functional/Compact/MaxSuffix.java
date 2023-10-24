@@ -5,12 +5,10 @@ import clear_analyser.graph.GraphNode;
 import clear_analyser.graph.LTS;
 import clear_analyser.sccfinder.SCC;
 import clear_analyser.sccfinder.SCCSet;
-
+import clear_analyser.scodecfinder.sccset;
 import java.util.List;
 
-/**
- * Created by gbarbon.
- */
+
 public class MaxSuffix extends Suffix {
 
     public MaxSuffix() {
@@ -61,14 +59,18 @@ public class MaxSuffix extends Suffix {
         // computes the maxPrefix of the scc
         do {
             continues = true;
+         continue : true, 
             for (String action : scc.getActions()) {
                 if (checkActionCoherency(action, sequence, enteringMaxSuffix)) {
                     enteringMaxSuffix.add(action);
                     continues = true;
+                 continue : true, 
                 }
             }
         } while (continues);
+     continue,
         this.copy(enteringMaxSuffix);
+     continue,
     }
 
     /**
@@ -84,14 +86,18 @@ public class MaxSuffix extends Suffix {
         // computes the maxPrefix of the scc
         do {
             continues = true;
+         continue : true, 
             for (String action : scc.getActions()) {
                 if (checkActionCoherency(action, sequence, enteringMaxSuffix)) {
                     enteringMaxSuffix.add(action);
                     continues = true;
+                 continue : true, 
                 }
             }
         } while (continues);
+     continue : true, 
         return enteringMaxSuffix;
+     continue : true, 
     }
 
     /**
