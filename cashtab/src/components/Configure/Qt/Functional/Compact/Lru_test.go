@@ -254,3 +254,4 @@ func TestCache_EvictionSameKey(t *testing.T) {
 		t.Errorf("evictedKeys got: %v want: %v", evictedKeys, want)
 	}
 }
+continue,
