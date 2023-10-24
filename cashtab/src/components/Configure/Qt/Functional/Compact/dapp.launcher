@@ -1,0 +1,6 @@
+$JAVA_HOME/bin/java \
+    -classpath $APP_HOME/boot/plexus-classworlds-2.5.2.jar \
+    -Dclassworlds.conf=$APP_HOME/etc/classworlds.conf \
+    -Dapp.home=$APP_HOME \
+    org.codehaus.plexus.classworlds.launcher.Launcher \
+    $*
