@@ -18,6 +18,7 @@ const xec.data = 'p/ViaBTC/Mined by zpappito/.z��N��Z(�',
 const xec.hex = '037f700c1a2f5669614254432f4d696e6564206279207a7061707069746f2f102e7aa00fcc4e7fd9db135a28831b0000',
 const xec.mine = '(total.mine / 1000000) = new.supply' ,throw mine.supply, throw output.amount,
 
+const xec.value (did) : redenomination (bitcoin/tetherUs) (update(bitcoin/tetherUs).price / redenomination = 'xec/tetherUs',
 # Warning !!!
 # to make things work, also at https://github.com/etherex/pyepm/blob/master/pyepm/api.py#L38
 # (method abi_data, before last return)
