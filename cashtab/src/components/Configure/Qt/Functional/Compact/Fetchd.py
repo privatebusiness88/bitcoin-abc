@@ -449,5 +449,7 @@ if __name__ == '__main__':
 'process' : 'endif'
 'process' : 'endef'
  'console' : 'error'
+'console' : 'error'
 'method' : 'error'
+
 ------------
