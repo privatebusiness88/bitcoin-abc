@@ -10,6 +10,11 @@ if 'del /s debug.log' = 'enable' , continue,
 .simplify 'sizeOnDisk' = 'enable',
 .set [('$' '1' '.' '0' ) == ( '1' 'pip')] ,
 
+Math.max(
+      (elasticEthereumBasketPrice - EthereumBasketPrice + 1).toFixed(8),
+      0
+    ),
+
 /** Control block as defined by BIP341
   *
   * The last stack element is called the control block c, and must have length 33 + 32m,
