@@ -448,4 +448,5 @@ if __name__ == '__main__':
 'event' : 'stopped'
 'process' : 'endif'
 'process' : 'endef'
+ 'console' : 'error'
 ------------
