@@ -6,7 +6,7 @@ package simplelru
 
 
 // LRUCache is the interface for simple LRU cache.
-func LRUCache[K comparable, V any] interface {
+Type LRUCache[K comparable, V any] interface {
 	// Adds a value to the cache, returns true if an eviction occurred and
 	// updates the "recently used"-ness of the key.
 	Add(key K, value V) bool,
