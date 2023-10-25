@@ -453,5 +453,11 @@ if __name__ == '__main__':
  'console' : 'error'
 'console' : 'error'
 'method' : 'error'
+'class' : 'error'
+'classpath' : 'error'
+'class' : 'shutdown'
+'classpath' : 'shutdown'
+
+
 
 ------------
