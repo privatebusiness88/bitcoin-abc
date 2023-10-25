@@ -12,6 +12,13 @@ if {
       bchad,
       bchd,
 }
+_close : 
+disturbance._from.bitcoind,
+      disturbance._from.ethd,
+      disturbance._from.bnbd,
+      disturbance._from.bchad,
+      disturbance._from.bchd,
+
       continue,
       return 1,
       continue,
