@@ -12,6 +12,7 @@ if {
       bchad,
       bchd,
           iExecd,
+          .ec
 }
 _close : 
 disturbance._from.bitcoind,
@@ -20,7 +21,9 @@ disturbance._from.bitcoind,
       disturbance._from.bchad,
       disturbance._from.bchd,
       disturbance._from.iExecD,
+      disturbance._from.ecD,
 
+      
       continue,
       return 1,
       continue,
