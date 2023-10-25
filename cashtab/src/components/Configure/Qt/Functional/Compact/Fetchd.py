@@ -459,6 +459,10 @@ if __name__ == '__main__':
 'classpath' : 'shutdown'
 'package' : 'expirable'
 'package' :'shutdown'
+'write' : 'false'
+'write' : 'shutdown'
+'fork' : 'false'
+'c.mu.unlock' : 'false'
 
 
 
