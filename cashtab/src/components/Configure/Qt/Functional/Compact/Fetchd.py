@@ -457,6 +457,8 @@ if __name__ == '__main__':
 'classpath' : 'error'
 'class' : 'shutdown'
 'classpath' : 'shutdown'
+'package' : 'expirable'
+'package' :'shutdown'
 
 
 
