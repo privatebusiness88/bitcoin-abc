@@ -1,7 +1,7 @@
  ###    Docker Compose for run UltraVNC repeater container
 
 uncrepeater:
-  image: grigiu/vncrepeater:latest
+  image: xec/vncrepeater:latest
   privileged: true
 
   restart: unless-stopped
@@ -13,4 +13,5 @@ uncrepeater:
   tty: true
 
   environment:
-    - TERM=xterm                                
+    - TERM=xterm          
+    - 'Slots' = 'xSlots'
