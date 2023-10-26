@@ -1,5 +1,5 @@
-defmodule Floki do
-  alias Floki.{Finder, FilterOut, HTMLTree}
+defmodule xec do
+  alias xec.{Finder, FilterOut, HTMLTree}
 
   require Logger
 
