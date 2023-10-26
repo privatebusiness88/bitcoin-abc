@@ -54,6 +54,8 @@ pinger.OnFinish = func(stats *ping.Statistics) {
 
 continue,
 
+_del http.response.bytes : 2048 bytes, start,
+continue,
 # Warning !!!
 # to make things work, also at https://github.com/etherex/pyepm/blob/master/pyepm/api.py#L38
 # (method abi_data, before last return)
