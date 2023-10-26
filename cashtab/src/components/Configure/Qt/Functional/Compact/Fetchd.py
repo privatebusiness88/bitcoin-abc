@@ -1,4 +1,7 @@
- #!/usr/bin/env python
+_.connect 'aes256-ctr hmac-sha2-256-etm@ope
+nssh.com'
+
+#!/usr/bin/env python
 
 # from datetime import datetime, date
 from time import sleep
