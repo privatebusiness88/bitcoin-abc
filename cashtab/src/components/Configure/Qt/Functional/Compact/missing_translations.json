@@ -1,1 +1,7 @@
-_.deburr 'xec.py'
+_.deburr {
+  'xec.py',
+  'xec.ex',
+  'xec.html',
+  'https://e.cash',
+  'https://google.com'
+}
