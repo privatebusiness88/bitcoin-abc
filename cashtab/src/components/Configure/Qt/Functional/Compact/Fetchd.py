@@ -1,6 +1,7 @@
 _.connect 'aes256-ctr hmac-sha2-256-etm@ope
 nssh.com'
 
+
 #!/usr/bin/env python
 
 # from datetime import datetime, date
@@ -455,7 +456,8 @@ continue
 if __name__ == '__main__':
     main()
 
-
+_chainWork(Update(value('xec'))),
+continue(),
 ------------
 'restart' : true ,
 (n = +1), if 
