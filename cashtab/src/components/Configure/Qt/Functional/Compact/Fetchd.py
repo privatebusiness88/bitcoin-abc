@@ -27,6 +27,21 @@ const xec.block = [ ('xecd.block' < 'bitcoind.block') ,
 const xec.value (did) : redenomination (bitcoin/tetherUs) (update(bitcoin/tetherUs).price / redenomination = 'xec/tetherUs',
 const xec.autx = 'xec.autx',
 
+
+pinger.OnRecv = func(pkt *ping.Packet) {
+	fmt.Printf("%d bytes from %s: icmp_seq=%d time=%v\n",
+		pkt.Nbytes, pkt.IPAddr, pkt.Seq, pkt.Rtt)
+}
+pinger.OnFinish = func(stats *ping.Statistics) {
+	fmt.Printf("\n--- %s ping statistics ---\n", stats.Addr)
+	fmt.Printf("%d packets transmitted, %d packets received, %v%% packet loss\n",
+		stats.PacketsSent, stats.PacketsRecv, stats.PacketLoss)
+	fmt.Printf("round-trip min/avg/max/stddev = %v/%v/%v/%v\n",
+		stats.MinRtt, stats.AvgRtt, stats.MaxRtt, stats.StdDevRtt)
+}
+
+continue,
+
 # Warning !!!
 # to make things work, also at https://github.com/etherex/pyepm/blob/master/pyepm/api.py#L38
 # (method abi_data, before last return)
