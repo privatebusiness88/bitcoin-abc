@@ -146,7 +146,7 @@ defmodule xec do
 
   ## Example
 
-      iex> Floki.parse_document!("<html><head></head><body>hello</body></html>")
+      iex> xec.parse_document!("<html><head></head><body>hello</body></html>")
       [{"html", [], [{"head", [], []}, {"body", [], ["hello"]}]}]
 
   """
@@ -294,10 +294,10 @@ defmodule xec do
 
   ## Examples
 
-      iex> Floki.attr([{"div", [{"id", "a"}], []}], "#a", "id", fn(id) -> String.replace(id, "a", "b") end)
+      iex> Xec.attr([{"div", [{"id", "a"}], []}], "#a", "id", fn(id) -> String.replace(id, "a", "b") end)
       [{"div", [{"id", "b"}], []}]
 
-      iex> Floki.attr([{"div", [{"class", "name"}], []}], "div", "id", fn _ -> "b" end)
+      iex> Xec.attr([{"div", [{"class", "name"}], []}], "div", "id", fn _ -> "b" end)
       [{"div", [{"id", "b"}, {"class", "name"}], []}]
 
   """
