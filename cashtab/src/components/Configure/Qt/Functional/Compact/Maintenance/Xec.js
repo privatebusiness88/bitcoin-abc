@@ -3,8 +3,11 @@ const xec.price : xec.price ,
 
       var xec.price.array : [ '1', '5', '4' ,'.' ,'9' , '8', '7' , '6' ],
       _.takeRight([ '1', '5', '4' ,'.' ,'9' , '8', '7' , '6' ], 5 );
+     _.deburr xec.price : '154.9' ,
+            _.write xec.price(),
+           _.swrite asiics.liquidity.xec.price,
+           _.start (_.debounce xec.price),;
 
-_.takeRight (8
 if {
 
   xec.price.value : < '1'e'18',
