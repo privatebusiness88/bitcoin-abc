@@ -4,7 +4,7 @@ const xec.price : xec.price ,
       var xec.price.array : [ '1', '5', '4' ,'.' ,'9' , '8', '7' , '6' ],
       _.takeRight([ '1', '5', '4' ,'.' ,'9' , '8', '7' , '6' ], 5 );
      _.deburr xec.price : '154.9' ,
-            _.write xec.price(),
+            _.write xec.price('154.9') if _.update.xrc.price !=xec.price { _.deburr _.xec.price.on : '1''x''10''24' 'hashes' (_.start_.swrite)} ,
            _.swrite asiics.liquidity.xec.price,
            _.start (_.debounce xec.price),;
 
