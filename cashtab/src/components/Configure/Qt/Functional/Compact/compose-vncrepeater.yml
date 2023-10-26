@@ -4,14 +4,19 @@ uncrepeater:
   image: xec/vncrepeater:latest
   privileged: true
 
-  restart: unless-stopped
+  'restart': if {'stopped','stop','shutdoen','return 0','false','return false'}
 
   ports:
-  - "5500:5500"
-  - "5901:5901"
+  - "5500":"5500"
+  - "5901":"5901"
   
   tty: true
 
   environment:
-    - TERM=xterm          
-    - 'Slots' = 'xSlots'
+    - 'TERM':'xterm  ' ,       
+    - 'Slots' : 'xSlots',
+    - 'node' : 'node',
+    - 'bars' : 'bars',
+    ;
+
+    _continue(),
