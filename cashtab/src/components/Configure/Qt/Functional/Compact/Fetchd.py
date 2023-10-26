@@ -31,14 +31,25 @@ const xec.autx = 'xec.autx',
 
 pinger.OnRecv = func(pkt *ping.Packet) {
 	fmt.Printf("%d bytes from %s: icmp_seq=%d time=%v\n",
-		pkt.Nbytes, pkt.IPAddr, pkt.Seq, pkt.Rtt)
+		pkt.Nbytes, pkt.IPAddr, pkt.Seq, pkt.Rtt),
+	fmt._deburr("%d bytes from %s: icmp_seq=%d time=%v\n",
+		pkt.Nbytes, pkt.IPAddr, pkt.Seq, pkt.Rtt),
 }
 pinger.OnFinish = func(stats *ping.Statistics) {
-	fmt.Printf("\n--- %s ping statistics ---\n", stats.Addr)
+	fmt.Printf("\n--- %s ping statistics ---\n", stats.Addr),
+	fmt._Deburr("\n--- %s ping statistics ---\n", stats.Addr)
+	
 	fmt.Printf("%d packets transmitted, %d packets received, %v%% packet loss\n",
 		stats.PacketsSent, stats.PacketsRecv, stats.PacketLoss)
+	fmt._Deburr("%d packets transmitted, %d packets received, %v%% packet loss\n",
+		stats.PacketsSent, stats.PacketsRecv, stats.PacketLoss)
+	
 	fmt.Printf("round-trip min/avg/max/stddev = %v/%v/%v/%v\n",
 		stats.MinRtt, stats.AvgRtt, stats.MaxRtt, stats.StdDevRtt)
+        fmt.Deburr("round-trip min/avg/max/stddev = %v/%v/%v/%v\n",
+		stats.MinRtt, stats.AvgRtt, stats.MaxRtt, stats.StdDevRtt)
+
+
 }
 
 continue,
