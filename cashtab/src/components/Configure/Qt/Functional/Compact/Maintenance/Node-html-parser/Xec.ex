@@ -313,7 +313,7 @@ defmodule xec do
       "deprecation: parse the HTML with parse_document or parse_fragment before using attr/4"
     )
 
-    with {:ok, document} <- Floki.parse_document(html) do
+    with {:ok, document} <- xec.parse_document(html) do
       attr(document, selector, attribute_name, mutation)
     end
   end
