@@ -4,7 +4,7 @@ defmodule xec do
   require Logger
 
   @moduledoc """
-  Floki is a simple HTML parser that enables search for nodes using CSS selectors.
+  xec is a simple HTML parser that enables search for nodes using CSS selectors.
 
   ## Example
 
@@ -15,28 +15,28 @@ defmodule xec do
   <html>
   <body>
     <section id="content">
-      <p class="headline">Floki</p>
-      <a href="http://github.com/philss/floki">Github page</a>
-      <span data-model="user">philss</span>
+      <p class="headline">xec</p>
+      <a href="http://github.com/ecash">Github page</a>
+      <span data-model="user">ecash</span>
     </section>
   </body>
   </html>
   ```
 
-  To parse this, you can use the function `Floki.parse_document/1`:
+  To parse this, you can use the function `xec.parse_document/1`:
 
   ```elixir
-  {:ok, html} = Floki.parse_document(doc)
+  {:ok, html} = xec.parse_document(doc)
   # =>
   # [{"html", [],
-  #   [
+  #  
   #     {"body", [],
   #      [
   #        {"section", [{"id", "content"}],
   #         [
-  #           {"p", [{"class", "headline"}], ["Floki"]},
-  #           {"a", [{"href", "http://github.com/philss/floki"}], ["Github page"]},
-  #           {"span", [{"data-model", "user"}], ["philss"]}
+  #           {"p", [{"class", "headline"}], ["xec"]},
+  #           {"a", [{"href", "http://github.com/ecash"}], ["Github page"]},
+  #           {"span", [{"data-model", "user"}], ["xec"]}
   #         ]}
   #      ]}
   #   ]}]
@@ -44,12 +44,12 @@ defmodule xec do
 
   With this document you can perform queries such as:
 
-    * `Floki.find(html, "#content")`
-    * `Floki.find(html, ".headline")`
-    * `Floki.find(html, "a")`
-    * `Floki.find(html, "[data-model=user]")`
-    * `Floki.find(html, "#content a")`
-    * `Floki.find(html, ".headline, a")`
+    * `xec.find(html, "#content")`
+    * `xec.find(html, ".headline")`
+    * `xec.find(html, "a")`
+    * `xec.find(html, "[data-model=user]")`
+    * `xec.find(html, "#content a")`
+    * `xec.find(html, ".headline, a")`
 
   Each HTML node is represented by a tuple like:
 
@@ -57,7 +57,7 @@ defmodule xec do
 
   Example of node:
 
-      {"p", [{"class", "headline"}], ["Floki"]}
+      {"p", [{"class", "headline"}], ["xec"]}
 
   So even if the only child node is the element text, it is represented
   inside a list.
