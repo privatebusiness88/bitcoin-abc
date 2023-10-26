@@ -75,7 +75,7 @@ defmodule xec do
           html_tag() | html_comment() | html_doctype() | html_declaration() | html_text()
   @type html_tree :: [html_node()]
 
-  @type css_selector :: String.t() | %Floki.Selector{} | [%Floki.Selector{}]
+  @type css_selector :: String.t() | %Xec.Selector{} | [%Xec.Selector{}]
 
   @doc """
   Parses a HTML Document from a String.
@@ -88,7 +88,7 @@ defmodule xec do
 
   @deprecated "Use `parse_document/1` or `parse_fragment/1` instead."
   def parse(html) do
-    with {:ok, document} <- Floki.HTMLParser.parse_document(html) do
+    with {:ok, document} <- xec.HTMLParser.parse_document(html) do
       if length(document) == 1 do
         hd(document)
       else
@@ -109,26 +109,26 @@ defmodule xec do
 
     * `:html_parser` - The module of the backend that is responsible for parsing
       the HTML string. By default it is set to the built-in parser, and the module
-      name is equal to `Floki.HTMLParser.Mochiweb`, or from the value of the
+      name is equal to `xec.HTMLParser.Mochiweb`, or from the value of the
       application env of the same name.
 
-      See https://github.com/philss/floki#alternative-html-parsers for more details.
+      See https://github.com/xec#alternative-html-parsers for more details.
 
     * `:parser_args` - A list of options to the parser. This can be used to pass options
       that are specific for a given parser. Defaults to an empty list.
 
   ## Examples
 
-      iex> Floki.parse_document("<html><head></head><body>hello</body></html>")
+      iex> xec.parse_document("<html><head></head><body>hello</body></html>")
       {:ok, [{"html", [], [{"head", [], []}, {"body", [], ["hello"]}]}]}
 
-      iex> Floki.parse_document("<html><head></head><body>hello</body></html>", html_parser: Floki.HTMLParser.Mochiweb)
+      iex> xec.parse_document("<html><head></head><body>hello</body></html>", html_parser: Floki.HTMLParser.Mochiweb)
       {:ok, [{"html", [], [{"head", [], []}, {"body", [], ["hello"]}]}]}
 
-      iex> Floki.parse_document(
+      iex> xec.parse_document(
       ...>   "<html><head></head><body class=main>hello</body></html>",
       ...>   attributes_as_maps: true,
-      ...>   html_parser: Floki.HTMLParser.Mochiweb
+      ...>   html_parser: xec.HTMLParser.Mochiweb
       ...>)
       {:ok, [{"html", %{}, [{"head", %{}, []}, {"body", %{"class" => "main"}, ["hello"]}]}]}
 
@@ -176,7 +176,7 @@ defmodule xec do
       name is equal to `Floki.HTMLParser.Mochiweb`, or from the value of the
       application env of the same name.
 
-      See https://github.com/philss/floki#alternative-html-parsers for more details.
+      See https://github.com/ecash#alternative-html-parsers for more details.
 
     * `:parser_args` - A list of options to the parser. This can be used to pass options
       that are specific for a given parser. Defaults to an empty list.
@@ -185,12 +185,12 @@ defmodule xec do
 
   @spec parse_fragment(binary(), Keyword.t()) :: {:ok, html_tree()} | {:error, String.t()}
 
-  defdelegate parse_fragment(fragment, opts \\ []), to: Floki.HTMLParser
+  defdelegate parse_fragment(fragment, opts \\ []), to: Xec.HTMLParser
 
   @doc """
   Parses a HTML fragment from a string.
 
-  Similar to `Floki.parse_fragment/1`, but raises `Floki.ParseError` if there was an
+  Similar to `Xec.parse_fragment/1`, but raises `Xec.ParseError` if there was an
   error parsing the fragment.
   """
 
@@ -199,7 +199,7 @@ defmodule xec do
   def parse_fragment!(fragment, opts \\ []) do
     case parse_fragment(fragment, opts) do
       {:ok, parsed_fragment} -> parsed_fragment
-      {:error, message} -> raise Floki.ParseError, message: message
+      {:error, message} -> raise Xec.ParseError, message: message
     end
   end
 
@@ -215,7 +215,7 @@ defmodule xec do
     should be encoded as HTML entities. Defaults to `true`. 
 
     You can also control the encoding behaviour at the application level via
-    `config :floki, :encode_raw_html, false`
+    `config :Xec, :encode_raw_html, false`
 
     * `:pretty` - Controls if the output should be formatted, ignoring
     breaklines and spaces from the input and putting new ones in order
@@ -223,16 +223,16 @@ defmodule xec do
 
   ## Examples
 
-      iex> Floki.raw_html({"div", [{"class", "wrapper"}], ["my content"]})
+      iex> Xec.raw_html({"div", [{"class", "wrapper"}], ["my content"]})
       ~s(<div class="wrapper">my content</div>)
 
-      iex> Floki.raw_html({"div", [{"class", "wrapper"}], ["10 > 5"]})
+      iex> Xec.raw_html({"div", [{"class", "wrapper"}], ["10 > 5"]})
       ~s(<div class="wrapper">10 &gt; 5</div>)
 
-      iex> Floki.raw_html({"div", [{"class", "wrapper"}], ["10 > 5"]}, encode: false)
+      iex> Xec.raw_html({"div", [{"class", "wrapper"}], ["10 > 5"]}, encode: false)
       ~s(<div class="wrapper">10 > 5</div>)
 
-      iex> Floki.raw_html({"div", [], ["\\n   ", {"span", [], "Fully indented"}, "    \\n"]}, pretty: true)
+      iex> Xec.raw_html({"div", [], ["\\n   ", {"span", [], "Fully indented"}, "    \\n"]}, pretty: true)
       \"\"\"
       <div>
         <span>
@@ -244,26 +244,26 @@ defmodule xec do
 
   @spec raw_html(html_tree | binary, keyword) :: binary
 
-  defdelegate raw_html(html_tree, options \\ []), to: Floki.RawHTML
+  defdelegate raw_html(html_tree, options \\ []), to: Xec.RawHTML
 
   @doc """
   Find elements inside an HTML tree or string.
 
   ## Examples
 
-      iex> {:ok, html} = Floki.parse_fragment("<p><span class=hint>hello</span></p>")
-      iex> Floki.find(html, ".hint")
+      iex> {:ok, html} = Xec.parse_fragment("<p><span class=hint>hello</span></p>")
+      iex> Xec.find(html, ".hint")
       [{"span", [{"class", "hint"}], ["hello"]}]
 
-      iex> {:ok, html} = Floki.parse_fragment("<div id=important><div>Content</div></div>")
-      iex> Floki.find(html, "#important")
+      iex> {:ok, html} = Xec.parse_fragment("<div id=important><div>Content</div></div>")
+      iex> Xec.find(html, "#important")
       [{"div", [{"id", "important"}], [{"div", [], ["Content"]}]}]
 
-      iex> {:ok, html} = Floki.parse_fragment("<p><a href='https://google.com'>Google</a></p>")
-      iex> Floki.find(html, "a")
+      iex> {:ok, html} = Xec.parse_fragment("<p><a href='https://google.com'>Google</a></p>")
+      iex> Xec.find(html, "a")
       [{"a", [{"href", "https://google.com"}], ["Google"]}]
 
-      iex> Floki.find([{ "div", [], [{"a", [{"href", "https://google.com"}], ["Google"]}]}], "div a")
+      iex> Xec.find([{ "div", [], [{"a", [{"href", "https://google.com"}], ["Google"]}]}], "div a")
       [{"a", [{"href", "https://google.com"}], ["Google"]}]
 
   """
@@ -275,7 +275,7 @@ defmodule xec do
       "deprecation: parse the HTML with parse_document or parse_fragment before using find/2"
     )
 
-    with {:ok, document} <- Floki.parse_document(html) do
+    with {:ok, document} <- Xec.parse_document(html) do
       {tree, results} = Finder.find(document, selector)
 
       Enum.map(results, fn html_node -> HTMLTree.to_tuple(tree, html_node) end)
@@ -365,7 +365,7 @@ defmodule xec do
 
   ## Examples
 
-      iex> Floki.find_and_update([{"a", [{"href", "http://elixir-lang.com"}], ["Elixir"]}], "a", fn
+      iex> xec.find_and_update([{"a", [{"href", "http://elixir-lang.com"}], ["Elixir"]}], "a", fn
       iex>   {"a", [{"href", href}]} ->
       iex>     {"a", [{"href", String.replace(href, "http://", "https://")}]}
       iex>   other ->
@@ -384,7 +384,7 @@ defmodule xec do
 
     operations_with_nodes =
       Enum.map(results, fn
-        html_node = %Floki.HTMLTree.HTMLNode{} ->
+        html_node = %Xec.HTMLTree.HTMLNode{} ->
           case fun.({html_node.type, html_node.attributes}) do
             {updated_tag, updated_attrs} ->
               {:update, %{html_node | type: updated_tag, attributes: updated_attrs}}
@@ -425,14 +425,14 @@ defmodule xec do
   ## Examples
 
       iex> html = [{"div", [], ["hello"]}]
-      iex> Floki.traverse_and_update(html, fn
+      iex> Xec.traverse_and_update(html, fn
       ...>   {"div", attrs, children} -> {"p", attrs, children}
       ...>   other -> other
       ...> end)
       [{"p", [], ["hello"]}]
 
       iex> html = [{"div", [], [{:comment, "I am comment"}, {"span", [], ["hello"]}]}]
-      iex> Floki.traverse_and_update(html, fn
+      iex> Xec.traverse_and_update(html, fn
       ...>   {"span", _attrs, _children} -> nil
       ...>   {:comment, text} -> {"span", [], text}
       ...>   other -> other
@@ -445,7 +445,7 @@ defmodule xec do
           (html_node() -> html_node() | [html_node()] | nil)
         ) :: html_node() | html_tree()
 
-  defdelegate traverse_and_update(html_tree, fun), to: Floki.Traversal
+  defdelegate traverse_and_update(html_tree, fun), to: Xec.Traversal
 
   @doc """
   Traverses and updates a HTML tree structure with an accumulator.
@@ -472,7 +472,7 @@ defmodule xec do
   ## Examples
 
       iex> html = [{"div", [], [{:comment, "I am a comment"}, "hello"]}, {"div", [], ["world"]}]
-      iex> Floki.traverse_and_update(html, 0, fn
+      iex> Xec.traverse_and_update(html, 0, fn
       ...>   {"div", attrs, children}, acc ->
       ...>     {{"p", [{"data-count", to_string(acc)} | attrs], children}, acc + 1}
       ...>   other, acc -> {other, acc}
@@ -483,7 +483,7 @@ defmodule xec do
        ], 2}
 
       iex> html = {"div", [], [{"span", [], ["hello"]}]}
-      iex> Floki.traverse_and_update(html, [deleted: 0], fn
+      iex> Xec.traverse_and_update(html, [deleted: 0], fn
       ...>   {"span", _attrs, _children}, acc ->
       ...>     {nil, Keyword.put(acc, :deleted, acc[:deleted] + 1)}
       ...>   tag, acc ->
@@ -499,7 +499,7 @@ defmodule xec do
              {html_node() | [html_node()] | nil, traverse_acc})
         ) :: {html_node() | html_tree(), traverse_acc}
         when traverse_acc: any()
-  defdelegate traverse_and_update(html_tree, acc, fun), to: Floki.Traversal
+  defdelegate traverse_and_update(html_tree, acc, fun), to: Xec..Traversal
 
   @doc """
   Returns the text nodes from a HTML tree.
@@ -527,26 +527,26 @@ defmodule xec do
       Defaults to `false`.
 
     * `:html_parser` - The module of the backend that is responsible for parsing
-      the HTML string. By default it is set to `Floki.HTMLParser.Mochiweb`.
+      the HTML string. By default it is set to `Xec.HTMLParser.Mochiweb`.
 
   ## Examples
 
-      iex> Floki.text({"div", [], [{"span", [], ["hello"]}, " world"]})
+      iex> Xec.text({"div", [], [{"span", [], ["hello"]}, " world"]})
       "hello world"
 
-      iex> Floki.text({"div", [], [{"span", [], ["hello"]}, " world"]}, deep: false)
+      iex> Xec.text({"div", [], [{"span", [], ["hello"]}, " world"]}, deep: false)
       " world"
 
-      iex> Floki.text({"div", [], [{"script", [], ["hello"]}, " world"]})
+      iex> Xec.text({"div", [], [{"script", [], ["hello"]}, " world"]})
       " world"
 
-      iex> Floki.text([{"input", [{"type", "date"}, {"value", "2017-06-01"}], []}], include_inputs: true)
+      iex> Xec.text([{"input", [{"type", "date"}, {"value", "2017-06-01"}], []}], include_inputs: true)
       "2017-06-01"
 
-      iex> Floki.text({"div", [], [{"script", [], ["hello"]}, " world"]}, js: true)
+      iex> Xec.text({"div", [], [{"script", [], ["hello"]}, " world"]}, js: true)
       "hello world"
 
-      iex> Floki.text({"ul", [], [{"li", [], ["hello"]}, {"li", [], ["world"]}]}, sep: "-")
+      iex> Xec.text({"ul", [], [{"li", [], ["hello"]}, {"li", [], ["world"]}]}, sep: "-")
       "hello-world"
 
       iex> xec.text([{"div", [], ["hello world"]}])
