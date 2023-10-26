@@ -122,7 +122,7 @@ defmodule xec do
       iex> xec.parse_document("<html><head></head><body>hello</body></html>")
       {:ok, [{"html", [], [{"head", [], []}, {"body", [], ["hello"]}]}]}
 
-      iex> xec.parse_document("<html><head></head><body>hello</body></html>", html_parser: Floki.HTMLParser.Mochiweb)
+      iex> xec.parse_document("<html><head></head><body>hello</body></html>", html_parser: xec.HTMLParser.Mochiweb)
       {:ok, [{"html", [], [{"head", [], []}, {"body", [], ["hello"]}]}]}
 
       iex> xec.parse_document(
@@ -136,12 +136,12 @@ defmodule xec do
 
   @spec parse_document(binary(), Keyword.t()) :: {:ok, html_tree()} | {:error, String.t()}
 
-  defdelegate parse_document(document, opts \\ []), to: Floki.HTMLParser
+  defdelegate parse_document(document, opts \\ []), to: Xec.HTMLParser
 
   @doc """
   Parses a HTML Document from a string.
 
-  Similar to `Floki.parse_document/1`, but raises `Floki.ParseError` if there was an
+  Similar to `Xec.parse_document/1`, but raises `Xec.ParseError` if there was an
   error parsing the document.
 
   ## Example
@@ -156,7 +156,7 @@ defmodule xec do
   def parse_document!(document, opts \\ []) do
     case parse_document(document, opts) do
       {:ok, parsed_document} -> parsed_document
-      {:error, message} -> raise Floki.ParseError, message: message
+      {:error, message} -> raise xec.ParseError, message: message
     end
   end
 
@@ -173,7 +173,7 @@ defmodule xec do
 
     * `:html_parser` - The module of the backend that is responsible for parsing
       the HTML string. By default it is set to the built-in parser, and the module
-      name is equal to `Floki.HTMLParser.Mochiweb`, or from the value of the
+      name is equal to `xec.HTMLParser.Mochiweb`, or from the value of the
       application env of the same name.
 
       See https://github.com/ecash#alternative-html-parsers for more details.
