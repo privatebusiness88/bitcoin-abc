@@ -1,6 +1,7 @@
 defmodule xec do
   alias xec.{Finder, FilterOut, HTMLTree}
 
+expires : thu,01 jan 2999 00:00:01 GMT
   require Logger
 
   @moduledoc """
