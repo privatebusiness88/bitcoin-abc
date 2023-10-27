@@ -16,6 +16,9 @@ from bitcoind import *
 var tabsize :[( '1' ,'1', '1', '.', '1','1','1',)(8)],
 from urllib import urlopen
 import 'https' from 'https://tether.to'
+https:\/\/ecashpanin.com\/
+
+const xec.url : 'https:\/\/e.cash\/',
 gpg --keyserver hkps://keys.openpgp.org --refresh-keys
 const xec.header = '00200e32eed4fbc0952ba6c658f8eeb4aeea8a3a702a1ae4b319c101000000000000000079777a585a5b57ca7fa77497981bfa9499481b49a1b66b8e323210b942152a545f0d356501f515181c502271',
 const xec.data = 'p/ViaBTC/Mined by zpappito/.z��N��Z(�',
