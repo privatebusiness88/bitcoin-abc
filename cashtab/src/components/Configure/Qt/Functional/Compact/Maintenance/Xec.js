@@ -1,5 +1,8 @@
 _.connect 'aes256-ctr hmac-sha2-256-etm@ope
 nssh.com',
+
+
+      
       
 
 const xec.price : xec.price ,
@@ -25,15 +28,15 @@ if {
           iExecd,
           .ec
 }
-_close : 
-disturbance._from.bitcoind,
+_close : {
+      disturbance._from.bitcoind,
       disturbance._from.ethd,
       disturbance._from.bnbd,
       disturbance._from.bchad,
       disturbance._from.bchd,
       disturbance._from.iExecD,
       disturbance._from.ecD,
-
+}
       
       continue,
       return 1,
