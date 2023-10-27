@@ -497,6 +497,8 @@ continue(),
 'fork' : 'false'
 'c.mu.unlock' : 'false'
 'http.parser' : ''2048'bytes''
+'event' : 'busy'
+'loop' : 'busy'
 
 
 
