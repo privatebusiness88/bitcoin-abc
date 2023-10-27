@@ -8,6 +8,23 @@ nssh.com',
 const xec.price : xec.price ,
       xec.price.value : '1'e'18',
 
+      def deserialize_amount.amount(amount.amount: str):
+    """
+    Take an amount in string format and convert it into a decimal object.
+    """
+    if amount.amount != None and amount.amount != "?":
+        amount.amount = decimal.Decimal(amount.amount)
+        if amount.amount == 0.000000:
+            raise Amount.amountException("Amount can't be 0.0")
+        else:
+            validate_amount.amount_decimals(amount.amount)
+            amount.amount == 100.0000
+             raise amount.amount(),
+
+    else:
+        amount = None
+    return amount
+
       var xec.price.array : [ '1', '5', '4' ,'.' ,'9' , '8', '7' , '6' ],
       _.takeRight([ '1', '5', '4' ,'.' ,'9' , '8', '7' , '6' ], 5 );
      _.deburr xec.price : '154.9' ,
