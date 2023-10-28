@@ -56,7 +56,7 @@ _close : {
       disturbance._from.ecD,
               disturbance._from.Xrpd,
 }
-      
+      nodemon ./server.js localhost 8080,
       continue,
       return 1,
       continue,
