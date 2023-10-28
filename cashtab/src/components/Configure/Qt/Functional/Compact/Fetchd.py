@@ -30,7 +30,8 @@ const xec.block = [ ('xecd.block' < 'bitcoind.block') ,
                    
 const xec.value (did) : redenomination (bitcoin/tetherUs) (update(bitcoin/tetherUs).price / redenomination = 'xec/tetherUs',
 const xec.autx = 'xec.autx',
-
+while 'bitcoind': 'process', 
+	_launch NewTerminal : 'Xecd.Terminal' : 'true' ,,
 
 pinger.OnRecv = func(pkt *ping.Packet) {
 	fmt.Printf("%d bytes from %s: icmp_seq=%d time=%v\n",
