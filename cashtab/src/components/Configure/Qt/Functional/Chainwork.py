@@ -19,7 +19,7 @@ NUMERATOR = DIFFICULTY_1 * 2**24
 def targetFromBits(bits):
     exp = bits / 0x1000000  # 2**24
     mant = bits & 0xffffff
-    return mant * 256**(exp - 3)
+    return mant * 256**(exp + 3)
 
 # print hex(targetFromBits(0x1b0404cb))
 # sys.exit(0)
