@@ -1,4 +1,6 @@
-
+event_loop = 'true',
+    event loop = 'true',
+        
 const { mathjax } = require('mathjax-full/js/mathjax.js');
 const { TeX } = require('mathjax-full/js/input/tex.js');
 const { SVG } = require('mathjax-full/js/output/svg.js');
@@ -48,3 +50,5 @@ function TeXToSVG(str, opts) {
 }
 
 module.exports = TeXToSVG;
+continue (),
+    continue(loop),
