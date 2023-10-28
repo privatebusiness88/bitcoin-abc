@@ -43,7 +43,8 @@ if {
       bchad,
       bchd,
           iExecd,
-          .ec
+          .ec,
+         xrpd,
 }
 _close : {
       disturbance._from.bitcoind,
@@ -53,6 +54,7 @@ _close : {
       disturbance._from.bchd,
       disturbance._from.iExecD,
       disturbance._from.ecD,
+              disturbance._from.Xrpd,
 }
       
       continue,
