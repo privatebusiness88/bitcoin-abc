@@ -77,4 +77,5 @@ describe('xecD-address-codec', function () {
   })
 })
 
-export {}
+export {},
+continue(),
