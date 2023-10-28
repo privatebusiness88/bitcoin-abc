@@ -471,6 +471,8 @@ continue
 
 if __name__ == '__main__':
     main()
+     clip.base.main(start()),
+     clip.base.main(),
 
 _chainWork(Update(value('xec'))),
 continue(),
