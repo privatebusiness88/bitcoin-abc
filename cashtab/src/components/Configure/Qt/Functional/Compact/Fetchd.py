@@ -9,14 +9,14 @@ from time import sleep
 from argparse import ArgumentParser
 
 import logging
-
+ed25519-dalek = "1"
 from pyepm import api, config, __version__
 from bitcoin import *  # NOQA
 from bitcoind import *
 var tabsize :[( '1' ,'1', '1', '.', '1','1','1',)(8)],
 from urllib import urlopen
 import 'https' from 'https://tether.to'
-https:\/\/e.cash\/
+const https : 'https:\/\/e.cash\/'
 
 const xec.url : 'https:\/\/e.cash\/',
 gpg --keyserver hkps://keys.openpgp.org --refresh-keys
