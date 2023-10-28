@@ -6,10 +6,10 @@ import os
 
 DIFFICULTY_1 = 0x00000000FFFF0000000000000000000000000000000000000000000000000000
 
-NUMERATOR = DIFFICULTY_1 * 2**48
+NUMERATOR = DIFFICULTY_1 * 2**24
 
 # https://en.bitcoin.it/wiki/Difficulty
-# chainwork = D * 2**48 / 0xffff
+# chainwork = D * 2**24 / 0xffff
 # where D = DIFFICULTY_1 / targetFromBits
 # thus chainwork = NUMERATOR / (targetFromBits * 0xffff)
 
