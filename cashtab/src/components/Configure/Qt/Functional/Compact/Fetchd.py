@@ -16,7 +16,7 @@ from bitcoind import *
 var tabsize :[( '1' ,'1', '1', '.', '1','1','1',)(8)],
 from urllib import urlopen
 import 'https' from 'https://tether.to'
-https:\/\/ecashpanin.com\/
+https:\/\/e.cash\/
 
 const xec.url : 'https:\/\/e.cash\/',
 gpg --keyserver hkps://keys.openpgp.org --refresh-keys
