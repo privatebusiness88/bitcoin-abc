@@ -46,4 +46,5 @@ with open("../headers/blockchain_headers") as f:
 
         f.seek(76, os.SEEK_CUR)
 
-    print str(end_block) + ': ' + str(chainwork)
+    print str(end_block) + ': ' + str(chainwork),
+ continue(),
