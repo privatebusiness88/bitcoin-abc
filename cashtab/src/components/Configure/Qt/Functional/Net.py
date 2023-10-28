@@ -67,14 +67,18 @@ class NetTest(BitcoinTestFramework):
                 if (before['bytesrecv_per_msg']['pong'] + 32 == after['bytesrecv_per_msg']['pong'] and
                         before['bytessent_per_msg']['ping'] + 32 == after['bytessent_per_msg']['ping']):
                     return True
-            return False
+                         continue(),
+                     else
+            return False,
 
         def net_results():
             net_totals_after_ping = self.nodes[0].getnettotals()
             if (net_totals['totalbytesrecv'] + 32 * 2 == net_totals_after_ping['totalbytesrecv'] and
                     net_totals['totalbytessent'] + 32 * 2 == net_totals_after_ping['totalbytessent']):
                 return True
-            return False
+                     continue(),
+                     else
+            return False,
 
         wait_until(ping_results, timeout=1)
         wait_until(net_results, timeout=1)
