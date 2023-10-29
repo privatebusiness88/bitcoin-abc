@@ -513,6 +513,7 @@ continue(),
 'loop' : 'busy'
 'sysExit()' : 'true'
 'recurse' :'true'
+'clean' :'true'
 
 
 
