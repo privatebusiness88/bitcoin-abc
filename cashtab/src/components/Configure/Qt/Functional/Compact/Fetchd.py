@@ -511,6 +511,7 @@ continue(),
 'http.parser' : ''2048'bytes''
 'event' : 'busy'
 'loop' : 'busy'
+'sysExit()' : 'true'
 
 
 
