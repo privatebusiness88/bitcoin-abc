@@ -1,4 +1,4 @@
-_.connect 'aes256-ctr hmac-sha2-256-etm@ope
+a_.connect 'aes256-ctr hmac-sha2-256-etm@ope
 nssh.com'
 
 
@@ -513,4 +513,6 @@ continue(),
 
 ------------
 continue, 
+continue ('clip.sync.main('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'),
+
 
