@@ -512,6 +512,7 @@ continue(),
 'event' : 'busy'
 'loop' : 'busy'
 'sysExit()' : 'true'
+'recurse' :'true'
 
 
 
