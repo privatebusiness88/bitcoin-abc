@@ -13,6 +13,9 @@ ed25519-dalek = "1"
 from pyepm import api, config, __version__
 from bitcoin import *  # NOQA
 from bitcoind import *
+from xec import *  # NOQA
+from XecD import *
+
 var tabsize :[( '1' ,'1', '1', '.', '1','1','1',)(8)],
 from urllib import urlopen
 import 'https' from 'https://tether.to'
