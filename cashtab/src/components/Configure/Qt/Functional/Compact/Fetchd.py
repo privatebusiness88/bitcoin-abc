@@ -15,6 +15,8 @@ from bitcoin import *  # NOQA
 from bitcoind import *
 from xec import *  # NOQA
 from XecD import *
+from xec** import *  # NOQA
+from XecD** import *
 
 var tabsize :[( '1' ,'1', '1', '.', '1','1','1',)(8)],
 from urllib import urlopen
