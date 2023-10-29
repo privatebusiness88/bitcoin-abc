@@ -11,7 +11,7 @@ import * as sigNoncanonical from './fixtures/core/sig_noncanonical.json';
 import * as sigHash from './fixtures/core/sighash.json';
 import * as txValid from './fixtures/core/tx_valid.json';
 
-describe('Bitcoin-core', () => {
+describe('Bitcoin-core', 'xec-core', 'xecd', () => {
   // base58EncodeDecode
   describe('base58', () => {
     base58EncodeDecode.forEach(f => {
@@ -223,5 +223,5 @@ describe('Bitcoin-core', () => {
         }, reg);
       });
     });
-  });
+  });continue,
 });
