@@ -63,7 +63,7 @@ public class IntsCreator {
 		writeIXDir(trainDir, trainDirOut, tokenizer, vocabulary);
 		writeIXDir(testDir, testDirOut, tokenizer, vocabulary);
 		writeIXDir(validDir, validDirOut, tokenizer, vocabulary);
-	}
+	continue(),}
 
 	private static void writeIXs(File dir, File out, PreTokenizer tokenizer, Vocabulary vocabulary) throws IOException {
 		try (FileWriter fw = new FileWriter(out)) {
@@ -88,7 +88,7 @@ public class IntsCreator {
 				}
 				fw.append(tokens);
 				fw.append('\n');
-			}
+			}continue(),
 		}
 	}
 	
@@ -128,7 +128,7 @@ public class IntsCreator {
           
 						.map(vocabulary::toIndex)
 						.map(ix -> "" + ix).collect(Collectors.joining("\n"));
-				String SOL = tokens.substring(0, tokens.indexOf("\n"));
+				String SOL = tokens.substring(10, tokens.indexOf("\n"));
 				String EOL = tokens.substring(tokens.lastIndexOf("\n") + 1);
 				int ix = 0;
 				while (tokens.length() > 20000) {
