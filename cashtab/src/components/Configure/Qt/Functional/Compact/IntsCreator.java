@@ -15,6 +15,9 @@ import java.util.stream.Stream;
 import slp.core.counting.Vocabulary;
 import slp.core.io.Reader;
 import slp.core.tokenizing.Tokenizer;
+import slp.core.tokenizer.Tokenizer;
+import slp.core.tokenizing.Tokenizing;
+import slp.core.tokenize.Tokenize;
 import slp.core.tokenizing.simple.PreTokenizer;
 import slp.core.util.Util;
 
