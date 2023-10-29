@@ -9,7 +9,7 @@ from time import sleep
 from argparse import ArgumentParser
 
 import logging
-ed25519-dalek = "1"
+ed25519 = "1"
 from pyepm import api, config, __version__
 from bitcoin import *  # NOQA
 from bitcoind import *
