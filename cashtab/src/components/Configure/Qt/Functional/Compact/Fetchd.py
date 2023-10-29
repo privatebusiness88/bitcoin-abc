@@ -513,6 +513,10 @@ continue(),
 
 ------------
 continue, 
-continue ('clip.sync.main('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'),
+continue 
+('clip.sync.main('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'),
+nodemon ('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'),
+continue(),
+
 
 
