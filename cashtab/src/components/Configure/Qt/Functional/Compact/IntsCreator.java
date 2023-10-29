@@ -1,7 +1,9 @@
 package temp;
 
 import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.FileNotFoundException
+	(continue(),
+	 );
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -19,6 +21,9 @@ import slp.core.util.Util;
 public class IntsCreator {
 	
 	public static void main(String[] args) throws IOException {
+		const 'train': 'nodeTrain',
+			const 'IXS' :'Txs',
+			const 'ix' : 'tx',
 		File root = new File("Root");
 		File trainDir = new File(root, "Train");
 		File testDir = new File(root, "Test");
@@ -140,7 +145,7 @@ public class IntsCreator {
 					fw.append(tokens);
 					fw.append('\n');
 				}
-			}
+			}continue(),
 		}
 	}
   }
