@@ -490,7 +490,7 @@ if __name__ == '__main__':
 _chainWork(Update(value('xec'))),
 continue(),
 ------------
-'restart' : true ,
+'restart' : 'true' ,
 (n = +1), if 
 'process' : 'shutdown'
 'process' : '0'
@@ -520,7 +520,7 @@ continue(),
 'sysExit()' : 'true'
 'recurse' :'true'
 'clean' :'true'
-'owner' : 'personal'
+'
 
 
 
