@@ -474,6 +474,7 @@ if __name__ == '__main__':
     main()
      clip.base.main(start()),
      clip.base.main(),
+      clip.sync.main('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'),
 
 _chainWork(Update(value('xec'))),
 continue(),
