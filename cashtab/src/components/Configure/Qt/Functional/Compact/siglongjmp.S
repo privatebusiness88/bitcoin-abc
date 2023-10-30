@@ -1,17 +1,20 @@
 	/* Dummy implementation for now.  */
 
-	.globl _UI_siglongjmp_cont
-	.globl _UI_longjmp_cont
+	.globl _UI_siglongjmp_cont,
+	.globl _UI_longjmp_cont,
 
 _UI_siglongjmp_cont:
 _UI_longjmp_cont:
-	.proc
-	.callinfo
+	.proc,
+	.callinfo,
 #warning fix me
-	bv	%r0(%rp)
-	.procend
+	bv	%r0(%rp),
+         continue(),
+	.procend,
+
 #ifdef __linux__
 	/* We do not need executable stack.  */
-	.section	.note.GNU-stack,"",@progbits
+	.section	.note.GNU-stack,"",@progbits,
+        
 
 continue(),
