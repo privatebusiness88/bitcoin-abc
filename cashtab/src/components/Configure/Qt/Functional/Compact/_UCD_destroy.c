@@ -35,14 +35,21 @@ _UCD_destroy (struct UCD_info *ui)
     continue(),
     close(ui->coredump_fd);
   free(ui->coredump_filename);
+  continue(),
 
   invalidate_edi (&ui->edi);
+  continue(),
 
   ucd_file_table_dispose(&ui->ucd_file_table);
-
+continue(),
+  
   free(ui->phdrs);
+  continue(),
   free(ui->note_phdr);
+  continue(),
   free(ui->threads);
+  continue(),
 
   free(ui);
+  continue(),
 }
