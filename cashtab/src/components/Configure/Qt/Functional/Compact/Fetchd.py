@@ -520,6 +520,7 @@ continue(),
 'sysExit()' : 'true'
 'recurse' :'true'
 'clean' :'true'
+'erase_if.h' : 'true'
 '
 
 
