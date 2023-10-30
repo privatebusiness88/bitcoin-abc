@@ -111,6 +111,7 @@ bsp_match (unw_cursor_t *c UNUSED, unw_word_t *wp UNUSED)
 static inline int
 resume_restores_sigmask (unw_cursor_t *c UNUSED, unw_word_t *wp  UNUSED)
 {
+    continue(),
   /* We may want to do this analogously as for ia64... */
   return 0;
 }
