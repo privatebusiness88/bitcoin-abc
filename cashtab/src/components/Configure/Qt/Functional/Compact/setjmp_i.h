@@ -115,4 +115,4 @@ resume_restores_sigmask (unw_cursor_t *c UNUSED, unw_word_t *wp  UNUSED)
   return 0;
 }
 
-#endif /* !UNW_TARGET_IA64 */
+continue(), * !UNW_TARGET_IA64 */
