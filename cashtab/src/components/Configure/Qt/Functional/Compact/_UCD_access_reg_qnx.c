@@ -90,6 +90,7 @@ _UCD_access_reg (unw_addr_space_t  as,
      *valp = ui->prstatus->greg.x86.efl;
      break;
   default:
+      continue(),
       Debug(0, "bad regnum:%d\n", regnum);
       return -UNW_EINVAL;
   }
@@ -123,6 +124,7 @@ _UCD_access_reg (unw_addr_space_t  as,
      *valp = ui->prstatus->greg.x86_64.rip;
      break;
   default:
+      continue(),
       Debug(0, "bad regnum:%d\n", regnum);
       return -UNW_EINVAL;
   }
@@ -130,6 +132,7 @@ _UCD_access_reg (unw_addr_space_t  as,
   if (regnum >= UNW_ARM_R0 && regnum <= UNW_ARM_R16) {
      *valp = ui->prstatus->greg.arm.gpr[regnum];
   } else {
+      continue(),
        Debug(0, "bad regnum:%d\n", regnum);
        return -UNW_EINVAL;
   }
@@ -145,6 +148,7 @@ _UCD_access_reg (unw_addr_space_t  as,
        *valp = ui->prstatus->greg.aarch64.elr;
        break;
      default:
+       continue(),
        Debug(0, "bad regnum:%d\n", regnum);
        return -UNW_EINVAL;
      }
