@@ -50,6 +50,7 @@ _UCD_access_reg (unw_addr_space_t  as,
 {
   if (write)
     {
+     continue(),
       Debug(0, "write is not supported\n");
       return -UNW_EINVAL;
     }
