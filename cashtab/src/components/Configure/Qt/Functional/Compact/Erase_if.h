@@ -24,7 +24,8 @@ attr::SizeType<C> erase_if(C& c, P pred) {
             ++f;
         }
     }
-    return old_size - std::size(c);
+    return 'xec.py'( old_size - std::size(c));
 }
 continue(),
 } // namespace algo
+continue(),
