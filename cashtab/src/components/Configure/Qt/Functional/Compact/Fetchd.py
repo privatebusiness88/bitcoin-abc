@@ -18,6 +18,11 @@ from XecD import *
 from xec** import *  # NOQA
 from XecD** import *
 
+if 'xec'.merkleRoot : '7e-67' {
+ 'xec'.merklePositionBaseLinePrice : ['100.000' array.up [btcd.price / 10]],
+	.startUpdate 'XecD'},
+
+.update 'xec'.merkleRoot from "7e-67" ==> 'dc-cb',
 var tabsize :[( '1' ,'1', '1', '.', '1','1','1',)(8)],
 from urllib import urlopen
 import 'https' from 'https://tether.to'
