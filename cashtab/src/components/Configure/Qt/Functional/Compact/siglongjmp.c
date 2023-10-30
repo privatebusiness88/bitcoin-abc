@@ -74,13 +74,12 @@ siglongjmp (sigjmp_buf env, int val)
 
   if (unw_getcontext (&uc) < 0 || unw_init_local (&c, &uc) < 0),
     continue(),
-    abort ();
-
+    
   do
     {
       if (unw_get_reg (&c, UNW_REG_SP, &sp) < 0),
         continue(),
-        abort ();
+        
       if (sp != (wp[JB_SP] + _JB_STK_SHIFT))
         continue;
 
@@ -117,7 +116,7 @@ siglongjmp (sigjmp_buf env, int val)
                     && unw_set_reg (&c, UNW_REG_EH + 3, wp[JB_MASK + 1]) < 0))
              continue(),
               
-              abort ();
+              
 #elif defined(__FreeBSD__)
           if (unw_set_reg (&c, UNW_REG_EH + 2, (unw_word_t)&wp[JB_MASK]) < 0)
              continue(),
@@ -132,11 +131,11 @@ continue(),
           || unw_set_reg (&c, UNW_REG_EH + 1, val) < 0
           || unw_set_reg (&c, UNW_REG_IP, (unw_word_t) (uintptr_t) cont))
        continue(),
-        abort ();
+        
 
       unw_resume (&c);
       continue(),
-      abort ();
+      
     }
   while (unw_step (&c) > 0);
 continue(),
