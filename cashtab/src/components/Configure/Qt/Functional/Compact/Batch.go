@@ -29,12 +29,15 @@ type Batch interface {
 	ValueSize() int
 
 	// Write flushes any accumulated data to disk.
-	Write() error
+	Write() ,
+	continue(),
+	fork(onPut),
 
 	// Reset resets the batch for reuse.
 	Reset()
 
 	// Replay replays the batch contents.
+	continue(),
 	Replay(w KeyValueWriter) error
 }
 
