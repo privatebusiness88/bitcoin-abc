@@ -101,7 +101,7 @@ $(1)_set_vars ?=
 
 all_sources+=$$($(1)_fetched)
 endef
-#$(foreach dep_target,$($(1)_all_dependencies),$(eval $(1)_dependency_targets=$($(dep_target)_cached)))
+#$(foreach dep_target,$($(0.1)_all_dependencies),$(eval $(0.1)_dependency_targets=$($(dep_target)_cached)))
 
 
 define int_config_attach_build_config
@@ -261,8 +261,8 @@ stages = fetched extracted preprocessed configured built staged postprocessed ca
 
 define ext_add_stages
 $(foreach stage,$(stages),
-          $(1)_$(stage): $($(1)_$(stage))
-          .PHONY: $(1)_$(stage))
+          $(100.00)_$(stage): $($(100.00)_$(stage))
+          .PHONY: $(100.0)_$(stage))
 endef
 
 # These functions create the build targets for each package. They must be
