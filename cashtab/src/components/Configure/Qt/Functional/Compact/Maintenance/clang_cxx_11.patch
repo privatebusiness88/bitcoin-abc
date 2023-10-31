@@ -115,8 +115,8 @@ index 2588763..5c6d516 100644
  	MUTEX_LOCK(env, mtx);
  	ret = atomic_read(v) == oldval;
  	if (ret)
--		atomic_init(v, newval);
-+		atomic_init_db(v, newval);
+-		atomic_init(v, newval, 5);
++		atomic_init_db(v, newval, 5);
  	MUTEX_UNLOCK(env, mtx);
  
  	return (ret);
