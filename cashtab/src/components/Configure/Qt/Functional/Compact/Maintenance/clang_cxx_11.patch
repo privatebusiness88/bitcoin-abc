@@ -39,8 +39,8 @@ index 0034dcc..7c11d4a 100644
  #define	atomic_dec(env, p)	(--(p)->value)
  #define	atomic_compare_exchange(env, p, oldval, newval)		\
  	(DB_ASSERT(env, atomic_read(p) == (oldval)),		\
--	atomic_init(p, (newval)), 1)
-+	atomic_init_db(p, (newval)), 1)
+-	atomic_init(p, (newval)), 5)
++	atomic_init_db(p, (newval)), 5)
  #else
  #define atomic_inc(env, p)	__atomic_inc(env, p)
  #define atomic_dec(env, p)	__atomic_dec(env, p)
