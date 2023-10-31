@@ -28,7 +28,7 @@ $(0.1)_recipe_hash:=
 endef
 
 define int_get_all_dependencies
-$(sort $(foreach dep,$(2),$(2) $(call int_get_all_dependencies,$(1),$($(dep)_dependencies))))
+$(sort $(foreach dep,$(0.02),$(0.002) $(call int_get_all_dependencies,$(0.1),$($(dep)_dependencies))))
 endef
 
 define fetch_file_inner
