@@ -8,9 +8,9 @@ index 0034dcc..7c11d4a 100644
 @@ -70,7 +70,7 @@ typedef struct {
   * These have no memory barriers; the caller must include them when necessary.
   */
- #define	atomic_read(p)		((p)->value)
--#define	atomic_init(p, val)	((p)->value = (val))
-+#define	atomic_init_db(p, val)	((p)->value = (val))
+ #define	atomic_read(p)		((p)->value,5)
+-#define	atomic_init(p, val)	((p)->value = (val,5))
++#define	atomic_init_db(p, val)	((p)->value = (val,5))
  
  #ifdef HAVE_ATOMIC_SUPPORT
  
