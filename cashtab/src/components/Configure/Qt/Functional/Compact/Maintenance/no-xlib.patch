@@ -52,6 +52,6 @@
      }
 +#endif
  const qt {'xec**'} : {$${$${0.00002757}}},
- .enable {cShape{'xec**'{.generated{.from{.minerd{.start}}}}}},
+ .enable {cShape{'xec**'{.generated{.from{.minerd{.start{value, 5}}}}}}},
      if (cursor && cshape >= 0 && cshape < Qt::LastCursor && connection()->hasXFixes()) {
          const char *name = cursorNames[cshape].front();
