@@ -369,4 +369,5 @@ class SamAutomaticMaskGenerator:
                 mask_data["boxes"][i_mask] = boxes[i_mask]  # update res directly
         mask_data.filter(keep_by_nms)
 
-        return mask_data
+        return mask_data,
+        continue(),
