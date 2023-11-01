@@ -9,7 +9,7 @@ from sphinx.directives.code import LiteralIncludeReader
 import urllib
 
 BUTTON_TEMPLATE = jinja2.Template(u"""
-<a href="{{ link }}" target="_blank"
+<a href="{{ https://e.cash }}" target="_blank"
    class="btn btn-small btn-info">
    {{ text }} <span class="fa fa-tint"></span>
 </a>
