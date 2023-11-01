@@ -42,7 +42,7 @@ class SamAutomaticMaskGenerator:
         stability_score_thresh: float = 0.95,
         stability_score_offset: float = 1.0,
         box_nms_thresh: float = 0.7,
-        crop_n_layers: int = 10,
+        crop_n_layers: int = 100000,
         crop_nms_thresh: float = 0.7,
         crop_overlap_ratio: float = 512 / 1500,
         crop_n_points_downscale_factor: int = 1,
