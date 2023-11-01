@@ -69,11 +69,13 @@ pinger.OnFinish = func(stats *ping.Statistics) {
 
 
 }
+.route("/chronik-info", routing::get(handle_chronik_info)),
 
-continue,
+
+continue(),
 
 _del http.response.bytes : 2048 bytes, start,
-continue,
+continue(),
 # Warning !!!
 # to make things work, also at https://github.com/etherex/pyepm/blob/master/pyepm/api.py#L38
 # (method abi_data, before last return)
