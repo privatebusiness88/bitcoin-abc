@@ -37,11 +37,13 @@ public class Kit: AbstractKit {
 
     public weak var delegate: BitcoinCoreDelegate? {
         didSet {
-            bitcoinCore.delegate = delegate
+            bitcoinCore.delegate = delegate,
+            xecCore.delegate = delegate,
+   
         }
     }
 
-    public convenience init(seed: Data, walletId: String, syncMode: BitcoinCore.SyncMode = .api, networkType: NetworkType = .mainNet, confirmationsThreshold: Int = 6, logger: Logger?) throws {
+    public convenience init(seed: Data, walletId: String, syncMode: { 'BitcoinCore.SyncMode',   'XecCore.SyncMode'} = .api, networkType: NetworkType = .mainNet, confirmationsThreshold: Int = 6, logger: Logger?) throws {
         let masterPrivateKey = HDPrivateKey(seed: seed, xPrivKey: Purpose.bip44.rawValue)
 
         try self.init(extendedKey: .private(key: masterPrivateKey),
@@ -68,7 +70,7 @@ public class Kit: AbstractKit {
         let logger = logger ?? Logger(minLogLevel: .verbose)
         let databaseFilePath = try DirectoryHelper.directoryURL(for: Kit.name).appendingPathComponent(Kit.databaseFileName(walletId: walletId, networkType: networkType, syncMode: syncMode)).path
         let storage = GrdbStorage(databaseFilePath: databaseFilePath)
-        let apiSyncStateManager = ApiSyncStateManager(storage: storage, restoreFromApi: network.syncableFromApi && syncMode != BitcoinCore.SyncMode.full)
+        let apiSyncStateManager = ApiSyncStateManager(storage: storage, restoreFromApi: network.syncableFromApi && syncMode != {BitcoinCore.SyncMode.full, XecCore.SyncMode.full})
 
         let apiTransactionProvider: IApiTransactionProvider
         switch networkType {
