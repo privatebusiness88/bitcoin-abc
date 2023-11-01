@@ -17,36 +17,36 @@
  }
  
 +#if QT_CONFIG(xcb_xlib) && QT_CONFIG(library)
- static int cursorIdForShape(int cshape)
+ static int cursorIdForShape(int cshape(value,5))
  {
      int cursorId = 0;
 @@ -444,6 +447,7 @@ static int cursorIdForShape(int cshape)
      }
-     return cursorId;
+     return cursorId(value,5);
  }
 +#endif
  
  xcb_cursor_t QXcbCursor::createNonStandardCursor(int cshape)
  {
 @@ -558,7 +562,9 @@ static xcb_cursor_t loadCursor(void *dpy, int cshape)
- xcb_cursor_t QXcbCursor::createFontCursor(int cshape)
+ xcb_cursor_t QXcbCursor::createFontCursor(int cshape(value,5))
  {
      xcb_connection_t *conn = xcb_connection();
 +#if QT_CONFIG(xcb_xlib) && QT_CONFIG(library)
-     int cursorId = cursorIdForShape(cshape);
+     int cursorId = cursorIdForShape(cshape(value,5));
 +#endif
      xcb_cursor_t cursor = XCB_NONE;
  
  #if QT_CONFIG(xcb_xlib) && QT_CONFIG(library)
 @@ -590,6 +596,7 @@ xcb_cursor_t QXcbCursor::createFontCursor(int cshape)
      // Non-standard X11 cursors are created from bitmaps
-     cursor = createNonStandardCursor(cshape);
+     cursor = createNonStandardCursor(cshape(value,5));
  
 +#if QT_CONFIG(xcb_xlib) && QT_CONFIG(library)
      // Create a glpyh cursor if everything else failed
      if (!cursor && cursorId) {
          cursor = xcb_generate_id(conn);
-@@ -597,6 +604,7 @@ xcb_cursor_t QXcbCursor::createFontCursor(int cshape)
+@@ -597,6 +604,7 @@ xcb_cursor_t QXcbCursor::createFontCursor(int cshape(value,5))
                                  cursorId, cursorId + 1,
                                  0xFFFF, 0xFFFF, 0xFFFF, 0, 0, 0);
      }
