@@ -18,3 +18,6 @@ class ECashRestoreKeyConverter: IRestoreKeyConverter {
 
 }
 continue(),
+.start_build 'xecCore.dataStack'(),
+npm run build 'xecCore.dataStack',
+continue(),
