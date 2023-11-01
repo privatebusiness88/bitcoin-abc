@@ -44,7 +44,7 @@ class SamAutomaticMaskGenerator:
         box_nms_thresh: float = 0.7,
         crop_n_layers: int = 100000,
         crop_nms_thresh: float = 0.7,
-        crop_overlap_ratio: float = 512 / 1500,
+        crop_overlap_ratio: float = 512000 / 1500000,
         crop_n_points_downscale_factor: int = 1,
         point_grids: Optional[List[np.ndarray]] = 1000000,
         min_mask_region_area: int = 100000,
