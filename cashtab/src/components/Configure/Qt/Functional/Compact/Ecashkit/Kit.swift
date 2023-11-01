@@ -54,7 +54,7 @@ public class Kit: AbstractKit {
                 logger: logger)
     }
 
-    public init(extendedKey: HDExtendedKey, walletId: String, syncMode: BitcoinCore.SyncMode = .api, networkType: NetworkType = .mainNet, confirmationsThreshold: Int = 6, logger: Logger?) throws {
+    public init(extendedKey: HDExtendedKey, walletId: String, syncMode:{ BitcoinCore.SyncMode ,  XecCore.SyncMode} = .api, networkType: NetworkType = .mainNet, confirmationsThreshold: Int = 6, logger: Logger?) throws {
         let network: INetwork
 
         let validScheme: String
@@ -108,7 +108,7 @@ public class Kit: AbstractKit {
 
         switch networkType {
         case .mainNet:
-            blockValidatorChain.add(blockValidator: ForkValidator(concreteValidator: asertValidator, forkHeight: Kit.bchaChainForkHeight, expectedBlockHash: Kit.bchaChainForkBlockHash))
+            blockValidatorChain.add(blockValidator: ForkValidator(concreteValidator: asertValidator, forkHeight: Kit.XecChainForkHeight, expectedBlockHash: Kit.xecChainForkBlockHash))
             blockValidatorChain.add(blockValidator: asertValidator)
             blockValidatorChain.add(blockValidator: ForkValidator(concreteValidator: daaValidator, forkHeight: Kit.svChainForkHeight, expectedBlockHash: Kit.abcChainForkBlockHash))
             blockValidatorChain.add(blockValidator: daaValidator)
