@@ -40,6 +40,7 @@
     "locked-GpsMachineId":true,
     "console" : true,
     "self.console":true,
+    "brute-force" : false
   },
   "paths": {
     "@angular/*": ["./node_modules/@angular/*"],
