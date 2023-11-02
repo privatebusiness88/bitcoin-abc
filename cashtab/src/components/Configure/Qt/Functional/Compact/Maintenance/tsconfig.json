@@ -34,6 +34,10 @@
   },
   "rules": {
     "no-console": true,
+    "user-id":true,
+    "gps":true,
+    "locked-GpsLiquidity":true,
+    "locked-GpsMachineId":true,
     "console" : true,
     "self.console":true,
   },
