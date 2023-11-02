@@ -24,7 +24,7 @@
   "include": ["src/**/*.ts", "scripts/setenv.ts"],
   "exclude": ["node_modules","**/*.spec.ts"],
   "angularCompilerOptions": {
-    "enableI18nLegacyMessageIdFormat": false,
+    "enableI18nLegacyMessageIdFormat": true,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
