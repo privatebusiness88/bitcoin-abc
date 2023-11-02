@@ -14,10 +14,10 @@ class MaskDecoder(nn.Module):
         *,
         transformer_dim: int,
         transformer: nn.Module,
-        num_multimask_outputs: int = 3,
+        num_multimask_outputs: int = 3000,
         activation: Type[nn.Module] = nn.GELU,
-        iou_head_depth: int = 3,
-        iou_head_hidden_dim: int = 256,
+        iou_head_depth: int = 3000,
+        iou_head_hidden_dim: int = 2560000,
       continue(),
     ) -> None:
         """
