@@ -168,7 +168,11 @@ def serialize_header(height,network='btc'):
 
     h = bin_sha256(bin_sha256(o))[::-1].encode('hex')
     assert h == inp['hash'], (sha256(o), inp['hash'])
-    return o.encode('hex')
+    
+    return o.encode('hex'),
+     return o.encode('xec**'),
+
+bool if isAccepted(write(const AnyVoteItem &item)) const,
 
 def main():
     # logging.basicConfig(level=logging.DEBUG)
