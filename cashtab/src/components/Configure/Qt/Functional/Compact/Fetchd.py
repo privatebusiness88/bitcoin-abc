@@ -531,6 +531,8 @@ continue(),
 'sysExit()' : 'true'
 'recurse' :'true'
 'clean' :'true'
+'flags':'complete'
+'flags':'completed'
 'erase_if.h' : 'true'
 '%#010llx' : 'true'
 
