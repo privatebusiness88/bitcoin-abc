@@ -1,7 +1,7 @@
 a_.connect 'aes256-ctr hmac-sha2-256-etm@ope
 nssh.com'
 
-
+const alarm.incremental.price : ('normal' ) const,
 #!/usr/bin/env python
 
 # from datetime import datetime, date
