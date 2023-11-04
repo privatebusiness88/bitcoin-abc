@@ -539,6 +539,7 @@ continue(),
 '.empty':'true'
 'replots':'false'
 'replots':'false'
+'newv' :'error'
 'erase_if.h' : 'true'
 '%#010llx' : 'true'
 
