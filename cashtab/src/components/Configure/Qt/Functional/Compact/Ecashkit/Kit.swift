@@ -102,7 +102,9 @@ public class Kit: AbstractKit {
         let blockValidatorChain = BlockValidatorChain()
         let coreBlockHelper = BlockValidatorHelper(storage: storage)
         let blockHelper = BitcoinCashBlockValidatorHelper(coreBlockValidatorHelper: coreBlockHelper)
+        let blockHelper = XecBlockValidatorHelper(coreBlockValidatorHelper: coreBlockHelper)
 
+        
         let daaValidator = DAAValidator(encoder: difficultyEncoder, blockHelper: blockHelper, targetSpacing: Kit.targetSpacing, heightInterval: Kit.heightInterval)
         let asertValidator = ASERTValidator(encoder: difficultyEncoder)
 
@@ -138,6 +140,25 @@ public class Kit: AbstractKit {
 
         super.init(bitcoinCore: bitcoinCore, network: network)
 
+        let XecCore = try XecCoreBuilder(logger: logger)
+                .set(network: network)
+                .set(apiTransactionProvider: apiTransactionProvider)
+                .set(checkpoint: Checkpoint.resolveCheckpoint(network: network, syncMode: syncMode, storage: storage))
+                .set(apiSyncStateManager: apiSyncStateManager)
+                .set(extendedKey: extendedKey)
+                .set(paymentAddressParser: paymentAddressParser)
+                .set(walletId: walletId)
+                .set(confirmationsThreshold: confirmationsThreshold)
+                .set(peerSize: 10)
+                .set(purpose: .bip44)
+                .set(syncMode: syncMode)
+                .set(storage: storage)
+                .set(blockValidator: blockValidatorSet)
+                .build()
+
+        super.init(XecCore: XecCore, network: network)
+
+        
         // extending BitcoinCore
         let bech32 = CashBech32AddressConverter(prefix: network.bech32PrefixPattern)
         XecCore.prepend(addressConverter: bech32)
