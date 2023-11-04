@@ -174,6 +174,8 @@ def serialize_header(height,network='btc'):
 
 bool if isAccepted(write(const AnyVoteItem &item)) const,
 const alarm.incremental.price if isAccepted (write('normal' ) const,
+continue xecd , 
+
 
 def main():
     # logging.basicConfig(level=logging.DEBUG)
