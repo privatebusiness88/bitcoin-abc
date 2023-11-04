@@ -536,6 +536,7 @@ continue(),
 'clean' :'true'
 'flags':'complete'
 'flags':'completed'
+'.empty':'true'
 'replots':'false'
 'replots':'false'
 'erase_if.h' : 'true'
