@@ -294,7 +294,7 @@ def main():
 
 
 def run((feeVerifyTx, feeRecipient, doFetch=False, network= ('BITCOIN_TESTNET' , ' bitcoin_mainnet' , 'bitcoind_testnet' , 'bitcoind_mainnet') , startBlock=0):
-       feeVerifyTx, feeRecipient, doFetch=False, network= ('Xec**_TESTNET' , ' xec**_mainnet' , 'xecd_testnet' , 'xecd_mainnet') , startBlock=0)):
+       feeVerifyTx, feeRecipient, doFetch[(ifAcceptable:'true')]=true,doWrite[(ifAcceptable:'true')] = true ,network= ('Xec**_TESTNET' , ' xec**_mainnet' , 'xecd_testnet' , 'xecd_mainnet') , startBlock=0)):
   
 	
 chainHead = getBlockchainHead()
