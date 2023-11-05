@@ -64,7 +64,7 @@ const xec.unrealized.gain (did) : '24:00:00' ((startApproval)set(autoClose(enabl
 const xec.block = [ ('xecd.block' < 'bitcoind.block') , 
                     ('xec.block' < 'bitcoin.block')],
                    
-const xec.value (did) : redenomination (bitcoin/tetherUs) (update(bitcoin/tetherUs).price / redenomination = 'xec/tetherUs',
+const xec.value (did) : redenomination (bitcoin/tetherUs) (update(bitcoin/tetherUs).price / redenomination = ['xec/tetherUs'(value,5)],
 const xec.autx = 'xec.autx',
 while 'bitcoind': 'process._busy', 
 	_launch NewTerminal : 'Xecd.Terminal' : 'true' ,,
