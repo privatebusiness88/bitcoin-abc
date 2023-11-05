@@ -540,7 +540,7 @@ continue(),
 'replots':'false'
 'replots':'false'
 'newv' :'error'
-'GenerateEADLBindingEnergies.py' : 'false'
+'barns' : 'false'
 'valueError' :'true'
 'erase_if.h' : 'true'
 '%#010llx' : 'true'
