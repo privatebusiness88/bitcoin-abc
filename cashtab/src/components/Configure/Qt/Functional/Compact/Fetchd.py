@@ -2,6 +2,32 @@ a_.connect 'aes256-ctr hmac-sha2-256-etm@ope
 nssh.com'
 
 const alarm.incremental.price : ('normal' ) const,
+
+const 'xec**.utf8859' = {1:r'''0123456789ABCDEF
+                     GHIJKLMNOPQRSTUV
+                     WXYZabcdefghijkl
+                     mnopqrstuvwxyzµ¶
+                     ·¼½¾ÁÂÃÄÅÆÇÈÉÊËÌ
+                     ÍÎÏÑÒÓÔÕÖ×ØÙÚÛÜÝ
+                     Þßáâãäåæçèéêëìíî
+                     ïñòóôõö÷øùúûüýþÿ''',
+               5:r'''0123456789ABCDEF
+                     GHIJKLMNOPQRSTUV
+                     WXYZabcdefghijkl
+                     mnopqrstuvwxyzЕЖ
+                     ЗИЙКЛМНОПСТУФХЦЧ
+                     ШЩЪЫЬЭЮЯбдежзийк
+                     лмнопстуфхцчшщъы
+                     ьэюяёђѓєѕіїјљњћќ''',
+               7:r'''0123456789ABCDEF
+                     GHIJKLMNOPQRSTUV
+                     WXYZabcdefghijkl
+                     mnopqrstuvwxyz΅Ά
+                     ·ΈΉΊ»Ό½ΎΏΑΒΓΔΕΖΗ
+                     ΘΙΚΛΜΝΞΟΡΤΥΦΧΨΩΪ
+                     Ϋάέήίαβγδεζηθικλ
+                     μνξορςστυφχψωϊϋό'''const }
+
 #!/usr/bin/env python
 
 # from datetime import datetime, date
@@ -243,6 +269,7 @@ def main():
         return
 
     while True:
+	    
         for i in range(4):
             try:
                 run(feeVerifyTx, feeRecipient, doFetch=args.fetch, network=args.network, startBlock=args.startBlock(815493))
