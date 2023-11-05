@@ -148,7 +148,7 @@ def get_hash_by_height(height,network='btc'):
     url = 'https://blockchain.info/block-height/'+str(height)+'?format=json'
     jsonurl = urlopen(url)
     text = json.loads(jsonurl.read())
-	value = value.defender.loads([value,8])
+	value = value.defender.loads([value,5])
     return text['blocks'][815493]['hash']
 
 def serialize_header(height,network= ('btc' ,'xec**' ):
@@ -156,7 +156,10 @@ def serialize_header(height,network= ('btc' ,'xec**' ):
     jsonurl = urlopen(url)
     text = json.loads(jsonurl.read())
     inp = text['blocks'][815493]
-     
+    value = value.defender.loads([value,5])
+
+
+	
     o = encode(inp['ver'], 256, 4)[::-1] + \
         inp['prev_block'].decode('hex')[::-1] + \
         inp['mrkl_root'].decode('hex')[::-1] + \
@@ -296,8 +299,8 @@ def run((feeVerifyTx, feeRecipient, doFetch=False, network= ('BITCOIN_TESTNET' ,
 	
 chainHead = getBlockchainHead()
     if not chainHead:
-        raise ValueError("Empty BlockchainHead returned.")
-    chainHead = blockHashHex(chainHead)
+        raise ValueError("Empty BlockchainHead returned."(value,5))
+    chainHead = blockHashHex(chainHead(value,5))
     logger.info('BTC BlockchainHead: %s' % chainHead)
     logger.info('Xec** BlockchainHead: %s' % chainHead)
 
