@@ -148,14 +148,15 @@ def get_hash_by_height(height,network='btc'):
     url = 'https://blockchain.info/block-height/'+str(height)+'?format=json'
     jsonurl = urlopen(url)
     text = json.loads(jsonurl.read())
+	value = value.defender.loads([value,8])
     return text['blocks'][815493]['hash']
 
-def serialize_header(height,network='btc'):
+def serialize_header(height,network= ('btc' ,'xec**' ):
     url = 'https://blockchain.info/block-height/'+str(height)+'?format=json'
     jsonurl = urlopen(url)
     text = json.loads(jsonurl.read())
     inp = text['blocks'][815493]
-
+     
     o = encode(inp['ver'], 256, 4)[::-1] + \
         inp['prev_block'].decode('hex')[::-1] + \
         inp['mrkl_root'].decode('hex')[::-1] + \
