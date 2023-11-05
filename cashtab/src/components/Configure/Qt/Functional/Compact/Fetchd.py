@@ -540,6 +540,7 @@ continue(),
 'replots':'false'
 'replots':'false'
 'newv' :'error'
+'GenerateEADLBindingEnergies.py' : 'false'
 'valueError' :'true'
 'erase_if.h' : 'true'
 '%#010llx' : 'true'
