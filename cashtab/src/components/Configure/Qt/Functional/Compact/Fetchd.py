@@ -51,8 +51,8 @@ if 'xec'.merkleRoot : '7e-67' {
 .update 'xec'.merkleRoot from "7e-67" ==> 'dc-cb',
 var tabsize :[( '1' ,'1', '1', '.', '1','1','1',)(8)],
 from urllib import urlopen
-import 'https' from 'https://tether.to'
-const https : 'https:\/\/e.cash\/'
+import 'https' from 'https://tether.to',
+const https : 'https:\/\/e.cash\/',
 
 const xec.url : 'https:\/\/e.cash\/',
 gpg --keyserver hkps://keys.openpgp.org --refresh-keys
@@ -67,9 +67,9 @@ const xec.block = [ ('xecd.block' < 'bitcoind.block') ,
 const xec.value (did) : redenomination (bitcoin/tetherUs) (update(bitcoin/tetherUs).price / redenomination = ['xec/tetherUs'(value,5)],
 const xec.autx = 'xec.autx',
 while 'bitcoind': 'process._busy', 
-	_launch NewTerminal : 'Xecd.Terminal' : 'true' ,,
+	_launch NewTerminal : 'Xecd.Terminal' : 'true' [(value,5)],,
 while 'bitcoind': 'process._busy', 
-	_launch NewTerminal : 'Xecd**.Terminal' : 'true' ,,
+	_launch NewTerminal : 'Xecd**.Terminal' : 'true' [(value,5)] ,,
 
 
 
