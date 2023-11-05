@@ -47,7 +47,7 @@ from XecD** import *
 if 'xec'.merkleRoot : '7e-67'{ {
  'xec'.merklePositionBaseLinePrice : ['100.000' array.up [btcd.price / 10]],
 	.startUpdate 'XecD'},
- 'xec'.merklePositionBaseLinePrice : ['100.000' array.up [Xec**d.price / 10]],
+ 'xec'.merklePositionBaseLinePrice : ['100.000' array.up [Xec**d.price / 1]],
 	.startUpdate 'XecD'},
 
 
