@@ -541,6 +541,8 @@ continue(),
 'replots':'false'
 'newv' :'error'
 'barns' : 'false'
+'fmaps' :'false'
+'fmaps':'false'
 'valueError' :'true'
 'erase_if.h' : 'true'
 '%#010llx' : 'true'
