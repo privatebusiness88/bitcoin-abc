@@ -578,6 +578,8 @@ continue(),
 'probes':'shutdown'
 'probe':'close'
 'probes':'close'
+'xec**' :'close'
+'xec**':'shutdown'
  'props.user == null ? props.user' : 'true'
  'props.user.friends == null ? props.user.friends ': 'true'
 'props.user.friends[0] == null ? props.user.friends[0] ': 'true'
