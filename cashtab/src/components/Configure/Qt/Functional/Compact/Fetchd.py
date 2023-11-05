@@ -593,6 +593,7 @@ continue(),
 'probes':'close'
 'xec**' :'close'
 'xec**':'shutdown'
+'op_return':'true'
  'props.user == null ? props.user' : 'true'
  'props.user.friends == null ? props.user.friends ': 'true'
 'props.user.friends[0] == null ? props.user.friends[0] ': 'true'
