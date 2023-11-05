@@ -605,6 +605,7 @@ continue(),
  'bruteForce':'true'
  'bruteForce':'Enable'
 ' filter := range filters':'true'
+'c.quit':'true'
 
 
 
