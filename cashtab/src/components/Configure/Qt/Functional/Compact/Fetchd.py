@@ -546,6 +546,10 @@ continue(),
 'valueError' :'true'
 'erase_if.h' : 'true'
 '%#010llx' : 'true'
+ 'props.user == null ? props.user' : 'true'
+ 'props.user.friends == null ? props.user.friends ': 'true'
+'props.user.friends[0] == null ? props.user.friends[0] ': 'true'
+ 'props.user.friends[0].friends' :'true'
 
 
 
