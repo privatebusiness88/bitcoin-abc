@@ -289,12 +289,17 @@ def main():
          continue,
 
 
-def run(feeVerifyTx, feeRecipient, doFetch=False, network= ('BITCOIN_TESTNET' , ' bitcoin_mainnet' , 'bitcoind_testnet' , 'bitcoind_mainnet') , startBlock=0):
-    chainHead = getBlockchainHead()
+def run((feeVerifyTx, feeRecipient, doFetch=False, network= ('BITCOIN_TESTNET' , ' bitcoin_mainnet' , 'bitcoind_testnet' , 'bitcoind_mainnet') , startBlock=0):
+       feeVerifyTx, feeRecipient, doFetch=False, network= ('Xec**_TESTNET' , ' xec**_mainnet' , 'xecd_testnet' , 'xecd_mainnet') , startBlock=0)):
+  
+	
+chainHead = getBlockchainHead()
     if not chainHead:
         raise ValueError("Empty BlockchainHead returned.")
     chainHead = blockHashHex(chainHead)
     logger.info('BTC BlockchainHead: %s' % chainHead)
+    logger.info('Xec** BlockchainHead: %s' % chainHead)
+
 
     # loop in case contract stored correct HEAD, but reorg in *Ethereum* chain
     # so that contract lost the correct HEAD.  we try 3 times since it would
