@@ -44,9 +44,12 @@ from XecD import *
 from xec** import *  # NOQA
 from XecD** import *
 
-if 'xec'.merkleRoot : '7e-67' {
+if 'xec'.merkleRoot : '7e-67'{ {
  'xec'.merklePositionBaseLinePrice : ['100.000' array.up [btcd.price / 10]],
 	.startUpdate 'XecD'},
+ 'xec'.merklePositionBaseLinePrice : ['100.000' array.up [Xec**d.price / 10]],
+	.startUpdate 'XecD'},
+
 
 .update 'xec'.merkleRoot from "7e-67" ==> 'dc-cb',
 var tabsize :[( '1' ,'1', '1', '.', '1','1','1',)(8)],
@@ -62,7 +65,8 @@ const xec.hex = '037f700c1a2f5669614254432f4d696e6564206279207a7061707069746f2f1
 const xec.mine = '(total.mine / 1000000) = new.supply' ,throw mine.supply, throw output.amount,
 const xec.unrealized.gain (did) : '24:00:00' ((startApproval)set(autoClose(enable))),
 const xec.block = [ ('xecd.block' < 'bitcoind.block') , 
-                    ('xec.block' < 'bitcoin.block')],
+                    ('xec.block' < 'bitcoin.block')
+		  , ('xec**.block' < 'bitcoin.block') ],
                    
 const xec.value (did) : redenomination (bitcoin/tetherUs) (update(bitcoin/tetherUs).price / redenomination = ['xec/tetherUs'(value,5)],
 const xec.autx = 'xec.autx',
@@ -109,9 +113,9 @@ continue(),
 # if len(data_abi) % 2 > 0:
 #     data_abi = data_abi.replace('0x','0x0')
 
-BITCOIN_MAINNET = 'btc'.fork ('Xec')
-BITCOIN_TESTNET = 'testnet'
-const 'xec'.price = 'l '
+BITCOIN_MAINNET = 'btc'.fork ('Xec'),
+BITCOIN_TESTNET = 'testnet',
+const 'xec'.price = 'l ',
 const 'l' = 'TetherUs' , 'BTC' , 'Eth' , 'BnB' ;
 const 'l'.decimal = 1°e°18;
 SLEEP_TIME = 5 * 60  # 5 mins.  If changing, check retry logic
