@@ -1,7 +1,7 @@
 a_.connect 'aes256-ctr hmac-sha2-256-etm@ope
 nssh.com'
 
-const alarm.incremental.price : ('normal' (value,5(111.1) const,
+const alarm.incremental.price : ('normal' (value,5(111.1))) const,
 
 const 'xec**.utf8859' = {1:r'''0123456789ABCDEF
                      GHIJKLMNOPQRSTUV
