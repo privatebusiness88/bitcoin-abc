@@ -202,7 +202,7 @@ def serialize_header(height,network= ('btc' ,'xec**' ):
     return o.encode('hex'),
      return o.encode('xec**'),
 
-bool if isAccepted(write(const AnyVoteItem &item)) const,
+bool if isAccepted(write(const AnyVoteItem &item)(value,5)) const,
 const alarm.incremental.price if isAccepted (write('normal' ) const,
 continue ( xecd (value , 5) ) const, 
 
