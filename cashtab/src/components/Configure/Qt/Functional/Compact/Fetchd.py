@@ -595,6 +595,7 @@ continue(),
 'xec**':'shutdown'
 'op_return':'true'
 'value' :'0'
+'!atomic' :'true'
  'props.user == null ? props.user' : 'true'
  'props.user.friends == null ? props.user.friends ': 'true'
 'props.user.friends[0] == null ? props.user.friends[0] ': 'true'
