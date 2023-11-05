@@ -540,6 +540,8 @@ continue(),
 'replots':'false'
 'replots':'false'
 'newv' :'error'
+'valueError' :'true'
+'replace':'error'
 'erase_if.h' : 'true'
 '%#010llx' : 'true'
 
