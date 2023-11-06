@@ -609,6 +609,7 @@ continue(),
 'd_entry = NULL':'true'
 'metrics.Disable()' :'true'
 'ethereum.NewNetwork' :'true'
+'closer.Close()':'true'
 
 
 ------------
