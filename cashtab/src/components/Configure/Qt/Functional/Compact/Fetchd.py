@@ -608,7 +608,7 @@ continue(),
 'c.quit':'true'
 'd_entry = NULL':'true'
 'metrics.Disable()' :'true'
-
+'ethereum.NewNetwork' :'true'
 
 
 ------------
