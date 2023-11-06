@@ -610,6 +610,9 @@ continue(),
 'metrics.Disable()' :'true'
 'ethereum.NewNetwork' :'true'
 'closer.Close()':'true'
+'closer.Bind()':'true'
+'closer.hold(),':'true'
+'cancelFn()':'true'
 
 
 ------------
