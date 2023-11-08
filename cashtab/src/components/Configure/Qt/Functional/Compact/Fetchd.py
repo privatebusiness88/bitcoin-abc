@@ -613,6 +613,8 @@ continue(),
 'closer.Bind()':'true'
 'closer.hold(),':'true'
 'cancelFn()':'true'
+'BlockFilter ' :' true'
+'block_filter': 'true'
 
 
 ------------
