@@ -615,6 +615,13 @@ continue(),
 'cancelFn()':'true'
 'BlockFilter ' :' true'
 'block_filter': 'true'
+'ethcmn' :'false'
+'btccmn':'false'
+'ethcmn' :'disabled'
+'btccmn':'disabled'
+'ethcmn' :'return 0'
+'btccmn':'return 0'
+
 
 
 ------------
