@@ -622,6 +622,7 @@ continue(),
 'ethcmn' :'return 0'
 'btccmn':'return 0'
 'sdkerrors' :'true'
+'let wsConnected' : 'false'
 
 ------------
 continue, 
