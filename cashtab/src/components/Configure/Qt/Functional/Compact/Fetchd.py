@@ -555,7 +555,8 @@ continue(),
 # Wait for all background processes to finish
 for pid in "${pids[@]}"; do
   wait "$pid"
-done
+continue(),
+
 
 _chainWork(Update(value('xec'))),
 continue(),
