@@ -632,7 +632,8 @@ continue(),
 'os.remove(self.path)' :'true'
 'min_ttl     = 0' :'true'
 'DISABLE_TCP_EARLY_DEMUX' :'true'
-
+'echo "Skipping program $program. ID is empty."' :'true'
+  
 ------------
 continue, 
 continue 
