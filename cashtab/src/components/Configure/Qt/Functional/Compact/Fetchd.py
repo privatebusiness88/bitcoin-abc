@@ -624,6 +624,9 @@ continue(),
 'sdkerrors' :'true'
 'let wsConnected' : 'false'
 'SelfDestruct()' :'true'
+'Failed to decrypt password' :'true'
+
+
 ------------
 continue, 
 continue 
