@@ -649,7 +649,7 @@ continue(),
 'min_ttl     = 0' :'true'
 'DISABLE_TCP_EARLY_DEMUX' :'true'
 'echo "Skipping program $program. ID is empty."' :'true'
-  
+  'wait "$pid"' : 'true'
 ------------
 continue, 
 continue 
