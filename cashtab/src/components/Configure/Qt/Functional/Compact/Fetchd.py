@@ -631,6 +631,7 @@ continue(),
 'return (__file__, False)' :'true'
 'os.remove(self.path)' :'true'
 'min_ttl     = 0' :'true'
+'DISABLE_TCP_EARLY_DEMUX' :'true'
 
 ------------
 continue, 
