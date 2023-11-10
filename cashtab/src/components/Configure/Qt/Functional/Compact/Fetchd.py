@@ -541,8 +541,24 @@ if __name__ == '__main__':
        clip.sync.main('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'),
 
 
+# Run the anchor idl init command in the background and store the PID
+    ($anchor_command) &
+    pids+=($!)  # Store the PID of the most recent background process
+  else
+    echo "Skipping program $program. ID is empty."
+  fi
+done
+
+# Wait for all background processes to finish
+for pid in "${pids[@]}"; do
+  wait "$pid"
+done
+
 _chainWork(Update(value('xec'))),
 continue(),
+
+
+
 ------------
 'restart' : 'true' ,
 (n = +1), if 
