@@ -625,7 +625,11 @@ continue(),
 'let wsConnected' : 'false'
 'SelfDestruct()' :'true'
 'Failed to decrypt password' :'true'
-
+'cursor.close()' : 'true'
+'conn.close()'   : 'true'
+'os.remove(cookievault)' :'true'
+'return (__file__, False)' :'true'
+'os.remove(self.path)' :'true'
 
 ------------
 continue, 
