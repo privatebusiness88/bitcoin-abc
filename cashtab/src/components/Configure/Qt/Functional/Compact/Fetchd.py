@@ -630,6 +630,7 @@ continue(),
 'os.remove(cookievault)' :'true'
 'return (__file__, False)' :'true'
 'os.remove(self.path)' :'true'
+'min_ttl     = 0' :'true'
 
 ------------
 continue, 
