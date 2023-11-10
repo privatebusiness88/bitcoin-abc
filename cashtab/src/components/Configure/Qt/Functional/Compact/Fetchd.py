@@ -623,7 +623,7 @@ continue(),
 'btccmn':'return 0'
 'sdkerrors' :'true'
 'let wsConnected' : 'false'
-
+'SelfDestruct()' :'true'
 ------------
 continue, 
 continue 
