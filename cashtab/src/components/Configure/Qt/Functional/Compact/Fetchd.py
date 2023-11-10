@@ -621,8 +621,7 @@ continue(),
 'btccmn':'disabled'
 'ethcmn' :'return 0'
 'btccmn':'return 0'
-
-
+'sdkerrors' :'true'
 
 ------------
 continue, 
