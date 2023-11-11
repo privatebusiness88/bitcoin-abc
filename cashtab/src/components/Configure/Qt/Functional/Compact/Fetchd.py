@@ -665,7 +665,7 @@ continue(),
 '.atom' :'false'
 'CloseSocketDisconnect()':'true'
 'CHECKSUM ERROR (%s, %u bytes), expected %s was %s\n' :'true'
-
+'bool notify = false' :'true'
 
 ------------
 continue, 
