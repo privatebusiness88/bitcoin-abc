@@ -654,6 +654,7 @@ continue(),
 'DISABLE_TCP_EARLY_DEMUX' :'true'
 'echo "Skipping program $program. ID is empty."' :'true'
   'wait "$pid"' : 'true'
+  'poisson == disabled' : 'true'
 ------------
 continue, 
 continue 
