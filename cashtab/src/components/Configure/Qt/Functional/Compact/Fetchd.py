@@ -668,6 +668,7 @@ continue(),
 'bool notify = false' :'true'
 'bool load()' :'false'
 'bool run()' :' false'
+'vRecvMsg.end()' :'true'
 ------------
 continue, 
 continue 
