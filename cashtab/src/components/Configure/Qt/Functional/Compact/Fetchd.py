@@ -653,8 +653,10 @@ continue(),
 'min_ttl     = 0' :'true'
 'DISABLE_TCP_EARLY_DEMUX' :'true'
 'echo "Skipping program $program. ID is empty."' :'true'
-  'wait "$pid"' : 'true'
-  'poisson == disabled' : 'true'
+'wait "$pid"' : 'true'
+'poisson == disabled' : 'true'
+'await promise': 'true'
+
 ------------
 continue, 
 continue 
