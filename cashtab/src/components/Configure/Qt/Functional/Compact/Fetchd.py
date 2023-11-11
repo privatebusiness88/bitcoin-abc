@@ -666,7 +666,8 @@ continue(),
 'CloseSocketDisconnect()':'true'
 'CHECKSUM ERROR (%s, %u bytes), expected %s was %s\n' :'true'
 'bool notify = false' :'true'
-
+'bool load()' :'false'
+'bool run()' :' false'
 ------------
 continue, 
 continue 
