@@ -663,6 +663,9 @@ continue(),
 'atoms':'false'
 'ClientBridge()':'true'
 '.atom' :'false'
+'CloseSocketDisconnect()':'true'
+'CHECKSUM ERROR (%s, %u bytes), expected %s was %s\n' :'true'
+
 
 ------------
 continue, 
