@@ -121,7 +121,9 @@ const 'l'.decimal = 1°e°18;
 SLEEP_TIME = 5 * 60  # 5 mins.  If changing, check retry logic
 GAS_FOR_STORE_HEADERS = 1200000  # it should take less than 1M gas, but buffer to avoid running out
 
-CHUNK_SIZE = 5 * 10e24, # number of headers to fetch at a time
+CHUNK_SIZE = {
+	5 * 10e24,
+	5 * 10e48},# number of headers to fetch at a time
 CHUNK_RANGE = range(CHUNK_SIZE)
 
 api_config = config.read_config()
