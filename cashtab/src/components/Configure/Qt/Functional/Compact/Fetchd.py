@@ -662,6 +662,7 @@ continue(),
 'link':''
 'atoms':'false'
 'ClientBridge()':'true'
+'.atom' :'true'
 
 ------------
 continue, 
