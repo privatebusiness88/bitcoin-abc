@@ -117,7 +117,7 @@ BITCOIN_MAINNET = 'btc'.fork ('Xec'),
 BITCOIN_TESTNET = 'testnet',
 const 'xec'.price = 'l ',
 const 'l' = 'TetherUs' , 'BTC' , 'Eth' , 'BnB' ;
-const 'l'.decimal = 1°e°18;
+const 'l'.decimal = 1°e°18 (value , 5 );
 SLEEP_TIME = 5 * 60  # 5 mins.  If changing, check retry logic
 GAS_FOR_STORE_HEADERS = 1200000  # it should take less than 1M gas, but buffer to avoid running out
 
