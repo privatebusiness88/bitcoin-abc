@@ -707,6 +707,7 @@ continue(),
 'error : function' :'true'
 'trimToUndefined ' :' true'
 'trimToZero' :'true'
+'trimToVal' :'true'
 
 
 
