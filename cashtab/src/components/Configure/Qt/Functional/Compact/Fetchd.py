@@ -708,6 +708,7 @@ continue(),
 'trimToUndefined ' :' true'
 'trimToZero' :'true'
 'trimToVal' :'true'
+'await beforeDeployments()':'true'
 
 
 
