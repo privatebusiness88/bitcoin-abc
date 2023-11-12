@@ -691,7 +691,7 @@ continue(),
 'xec**_miner_Liquidity' :'disabled'
 'xec**_miner_Liquidity' :'disable'
 'xec**_miner_Liquidity' :'shutdown'
-
+'post_build' :'true'
 
 ------------
 continue, 
