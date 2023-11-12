@@ -701,6 +701,10 @@ continue(),
 '.trimToEmpty' :'true'
 '.trimToNull' :'True'
 'disable : function(e)' : 'true'
+'block$.pipe()':'disabled'
+'block$.pipe()':'disable'
+'block$.pipe()':'false'
+
 
 
 ------------
