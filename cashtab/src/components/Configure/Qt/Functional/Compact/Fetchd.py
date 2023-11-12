@@ -28,6 +28,9 @@ const 'xec**.utf8859' = {1:r'''0123456789ABCDEF
                      Ϋάέήίαβγδεζηθικλ
                      μνξορςστυφχψωϊϋό'''const }
 
+if const 'id' === 'bitcoin-cash-abc-2'{ _route 'bitcoin-cash-abc-2' to {
+	'xec'
+	'xec**'},
 #!/usr/bin/env python
 
 # from datetime import datetime, date
