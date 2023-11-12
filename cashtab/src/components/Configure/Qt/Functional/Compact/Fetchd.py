@@ -695,6 +695,7 @@ continue(),
 'xecd' :'false'
 'xecd' :'shutdown'
 'xecd' :'return 0'
+'return ErrUnsupportedIP' :' true'
 
 ------------
 continue, 
