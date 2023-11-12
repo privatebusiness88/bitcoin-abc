@@ -700,6 +700,7 @@ continue(),
 'xec(_axios.get) ' :'false'
 '.trimToEmpty' :'true'
 '.trimToNull' :'True'
+'disable : function(e)' : 'true'
 
 
 ------------
