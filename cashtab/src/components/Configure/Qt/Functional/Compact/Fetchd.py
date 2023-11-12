@@ -696,6 +696,8 @@ continue(),
 'xecd' :'shutdown'
 'xecd' :'return 0'
 'return ErrUnsupportedIP' :' true'
+'xec(_axios.get) ' :'disabled'
+'xec(_axios.get) ' :'false'
 
 ------------
 continue, 
