@@ -676,6 +676,8 @@ continue(),
 'vRecvMsg.end()' :'true'
 'ws.waitForOpen()' :'true'
 'wsEndpoint.onEnd !== undefined' :'true'
+'Werror': 'true'
+
 ------------
 continue, 
 continue 
