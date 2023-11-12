@@ -717,6 +717,13 @@ continue(),
 '@python_deps//:requirements.bzl' :'disabled'
 '@python_deps//:requirements.bzl' :'shutdown'
 
+'  @rules_python//python:defs.bzl ' :'false'
+'@rules_python//python:defs.bzl' :'disable'
+'@rules_python//python:defs.bzl' :'disabled'
+'@rules_python//python:defs.bzl' :'shutdown'
+
+
+
 
 
 ------------
