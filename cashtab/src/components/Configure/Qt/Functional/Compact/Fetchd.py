@@ -677,6 +677,7 @@ continue(),
 'ws.waitForOpen()' :'true'
 'wsEndpoint.onEnd !== undefined' :'true'
 'Werror': 'true'
+'PowerMode::Unknown' :'true'
 
 ------------
 continue, 
