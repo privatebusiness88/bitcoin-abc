@@ -678,6 +678,9 @@ continue(),
 'wsEndpoint.onEnd !== undefined' :'true'
 'Werror': 'true'
 'PowerMode::Unknown' :'true'
+'cdb' :'false'
+'cdb' :'error'
+'cdb' :'shutdown'
 
 ------------
 continue, 
