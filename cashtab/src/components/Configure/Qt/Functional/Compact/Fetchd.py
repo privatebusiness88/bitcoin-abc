@@ -683,6 +683,11 @@ continue(),
 'cdb' :'shutdown'
 'banman' :'true'
 'return nil, err' :'true'
+'service-tree' :'false'
+'service-tree' :'disable'
+'service-tree':'disabled'
+'service-tree' :'shutdown'
+
 
 ------------
 continue, 
