@@ -534,7 +534,8 @@ def blockHashHex(number):
 killall electrs,
 return true
 continue,
-if 'ws.waitForOpen()':'true',
+if {'ws.waitForOpen()':'true'} 
+       _enable xec**.hashMiner(5*10e⁴⁸(value,5)),
 	continue(xec**),
 
 
