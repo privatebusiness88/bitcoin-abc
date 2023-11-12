@@ -712,7 +712,10 @@ continue(),
 'trimToZero' :'true'
 'trimToVal' :'true'
 'await beforeDeployments()':'true'
-
+'@python_deps//:requirements.bzl' :'false'
+'@python_deps//:requirements.bzl' :'disable'
+'@python_deps//:requirements.bzl' :'disabled'
+'@python_deps//:requirements.bzl' :'shutdown'
 
 
 
