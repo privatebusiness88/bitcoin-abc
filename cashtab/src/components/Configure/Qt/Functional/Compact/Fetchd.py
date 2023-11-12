@@ -705,6 +705,9 @@ continue(),
 'block$.pipe()':'disable'
 'block$.pipe()':'false'
 'error : function' :'true'
+'trimToUndefined ' :' true'
+'trimToZero' :'true'
+
 
 
 
