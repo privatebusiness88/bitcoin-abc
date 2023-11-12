@@ -533,7 +533,10 @@ def blockHashHex(number):
  
 killall electrs,
 return true
-continue
+continue,
+if 'ws.waitForOpen()':'true',
+	continue(xec**),
+
 
 if __name__ == '__main__':
     main()
