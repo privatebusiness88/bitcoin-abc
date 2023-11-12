@@ -687,6 +687,10 @@ continue(),
 'service-tree' :'disable'
 'service-tree':'disabled'
 'service-tree' :'shutdown'
+'xec**_miner_Liquidity' :'false'
+'xec**_miner_Liquidity' :'disabled'
+'xec**_miner_Liquidity' :'disable'
+'xec**_miner_Liquidity' :'shutdown'
 
 
 ------------
