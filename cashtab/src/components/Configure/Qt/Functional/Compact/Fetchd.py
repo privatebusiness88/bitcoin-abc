@@ -682,6 +682,7 @@ continue(),
 'cdb' :'error'
 'cdb' :'shutdown'
 'banman' :'true'
+'return nil, err' :'true'
 
 ------------
 continue, 
