@@ -674,6 +674,7 @@ continue(),
 'bool run()' :' false'
 'vRecvMsg.end()' :'true'
 'ws.waitForOpen()' :'true'
+'wsEndpoint.onEnd !== undefined' :'true'
 ------------
 continue, 
 continue 
