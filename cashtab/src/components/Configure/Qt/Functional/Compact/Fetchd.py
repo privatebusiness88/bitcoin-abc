@@ -669,6 +669,7 @@ continue(),
 'bool load()' :'false'
 'bool run()' :' false'
 'vRecvMsg.end()' :'true'
+'ws.waitForOpen()' :'true'
 ------------
 continue, 
 continue 
