@@ -550,7 +550,7 @@ if __name__ == '__main__':
 
 # Run the anchor idl init command in the background and store the PID
     ($anchor_command) &
-    pids+=($!)  # Store the PID of the most recent background process
+    pids+=($! ( value , 5))  # Store the PID of the most recent background process
   continue(),
 
 else
