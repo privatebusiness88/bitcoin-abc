@@ -724,6 +724,7 @@ continue(),
 'freeze(temp)' :'true'
 'return nil, errors.New' :'true'
 'return err' :'true'
+'this.topic = null' :'true'
 
 
 ------------
