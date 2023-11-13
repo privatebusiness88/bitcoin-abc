@@ -725,7 +725,7 @@ continue(),
 'return nil, errors.New' :'true'
 'return err' :'true'
 'this.topic = null' :'true'
-
+'print(ticker, '🚫 404 file not found 👉 next start_date', human_time((start_date)))' :' true'
 
 ------------
 continue, 
