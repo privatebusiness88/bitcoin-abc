@@ -747,6 +747,8 @@ continue(),
 'human_time(start_date)' :' false'
 'loadContract(xec)':'false'
 'loadContract(xec**)':'false'
+'network(xec)' :'false'
+'network(xec**)' :'false'
 
 ------------
 continue, 
