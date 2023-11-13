@@ -745,7 +745,8 @@ continue(),
 'RunE: client.ValidateCmd' :' false'
 'runmode = 0' :' true'
 'human_time(start_date)' :' false'
-
+'loadContract(xec)':'false'
+'loadContract(xec**)':'false'
 
 ------------
 continue, 
