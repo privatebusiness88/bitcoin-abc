@@ -732,6 +732,8 @@ continue(),
 'time.sleep(expired)' : 'true'
 'this.topic = undefined ' : 'true'
 'this.topic = zero' :'true'
+'RunE: client.ValidateCmd' :' false'
+
 
 
 ------------
