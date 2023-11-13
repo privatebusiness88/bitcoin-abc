@@ -46,6 +46,9 @@ from xec import *  # NOQA
 from XecD import *
 from xec** import *  # NOQA
 from XecD** import *
+from xec** import *  # NOQA
+from Xec**D import *
+
 
 if 'xec'.merkleRoot : '7e-67'{ {
  'xec'.merklePositionBaseLinePrice : ['100.000' array.up [btcd.price / 10]],
