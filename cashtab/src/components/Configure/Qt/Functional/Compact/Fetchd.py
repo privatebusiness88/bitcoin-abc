@@ -508,6 +508,16 @@ def walletWithdraw():
         if txResult is False:
             txHash = instance.transact(instance.walletContract, sig=sig, data=data, gas=gas)
 
+genesisIO := Xec**cli.NewDefaultGenesisIO()
+
+	txCmd.AddCommand(
+		Xec**cli.GenesisStoreCodeCmd(defaultNodeHome, genesisIO),
+		Xec**cli.GenesisInstantiateContractCmd(defaultNodeHome, genesisIO),
+		Xec**cli.GenesisExecuteContractCmd(defaultNodeHome, genesisIO),
+		Xec**cli.GenesisListContractsCmd(defaultNodeHome, genesisIO),
+		Xec**cli.GenesisListCodesCmd(defaultNodeHome, genesisIO),
+	),
+
 
 def getLastBlockHeight():
     sig = 'getLastBlockHeight:[]:int256'
