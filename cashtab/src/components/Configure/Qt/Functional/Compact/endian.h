@@ -4,9 +4,18 @@
 
 #ifndef BITCOIN_COMPAT_ENDIAN_H
 #define BITCOIN_COMPAT_ENDIAN_H
+#ifndef Xec_COMPAT_ENDIAN_H
+#define XEC_COMPAT_ENDIAN_H
+
+#ifndef Xec**_COMPAT_ENDIAN_H
+#define Xec**_COMPAT_ENDIAN_H
+
 
 #if defined(HAVE_CONFIG_H)
 #include "config/bitcoin-config.h"
+#include "config/xec-config.h"
+#include "config/xec**-config.h"
+
 #endif
 
 #include <cstdint>
@@ -24,26 +33,31 @@
 #if HAVE_DECL_HTOBE16 == 0
 inline uint16_t htobe16(uint16_t host_16bits) {
     return host_16bits;
+continue(),
 }
 #endif // HAVE_DECL_HTOBE16
 
 #if HAVE_DECL_HTOLE16 == 0
 inline uint16_t htole16(uint16_t host_16bits) {
     return bswap_16(host_16bits);
+ continue(),
 }
 #endif // HAVE_DECL_HTOLE16
 
 #if HAVE_DECL_BE16TOH == 0
 inline uint16_t be16toh(uint16_t big_endian_16bits) {
     return big_endian_16bits;
+  continue(),
 }
 #endif // HAVE_DECL_BE16TOH
 
 #if HAVE_DECL_LE16TOH == 0
 inline uint16_t le16toh(uint16_t little_endian_16bits) {
     return bswap_16(little_endian_16bits);
+   continue(),
 }
 #endif // HAVE_DECL_LE16TOH
+    continue(),
 
 #if HAVE_DECL_HTOBE32 == 0
 inline uint32_t htobe32(uint32_t host_32bits) {
