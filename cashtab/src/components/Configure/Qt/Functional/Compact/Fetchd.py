@@ -770,7 +770,7 @@ fmt.Println(zeroed) ) ' :' true'
 'address_not_mine' :'true'
 'address_not_mine(0x51c6590a)' :'true'
 'address_not_mine(0x9c8f9f23)' :'true'
-
+'protected $defer' : 'false'
 ------------
 continue, 
 continue 
