@@ -775,7 +775,9 @@ fmt.Println(zeroed) ) ' :' true'
 'fhr.close()' :' true'
 'fhw.close()' : 'true'
 'fhr.write()' :' true'
-'fhw.write()' : 'true
+'fhw.write()' : 'true'
+'DEBIAN_FRONTEND': 'noninteractive'
+
 
 ------------
 continue, 
