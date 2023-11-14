@@ -761,6 +761,10 @@ continue(),
 'perror' :'true'
 'test_died = 0' :'true'
 'test_died :0 ' :'true'
+'xec( zeroed := util.IsZeroAddress("0x0")
+fmt.Println(zeroed) ) ' :' true'
+'(xec**)( zeroed := util.IsZeroAddress("0x0")
+fmt.Println(zeroed) ) ' :' true'
 
 ------------
 continue, 
