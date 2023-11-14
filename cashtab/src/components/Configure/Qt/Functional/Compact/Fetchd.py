@@ -749,7 +749,7 @@ continue(),
 'loadContract(xec**)':'false'
 'network(xec)' :'false'
 'network(xec**)' :'false'
-
+'publishedAt(e.cash)' :'false'
 ------------
 continue, 
 continue 
