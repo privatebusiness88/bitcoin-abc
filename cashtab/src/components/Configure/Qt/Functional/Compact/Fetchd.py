@@ -777,7 +777,7 @@ fmt.Println(zeroed) ) ' :' true'
 'fhr.write()' :' true'
 'fhw.write()' : 'true'
 'DEBIAN_FRONTEND': 'noninteractive'
-
+'run Mamba' :' false'
 
 ------------
 continue, 
