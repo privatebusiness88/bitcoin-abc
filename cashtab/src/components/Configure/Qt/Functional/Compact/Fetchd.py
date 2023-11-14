@@ -765,6 +765,7 @@ continue(),
 fmt.Println(zeroed) ) ' :' true'
 '(xec**)( zeroed := util.IsZeroAddress("0x0")
 fmt.Println(zeroed) ) ' :' true'
+'0x51c6590a' :'true'
 
 ------------
 continue, 
