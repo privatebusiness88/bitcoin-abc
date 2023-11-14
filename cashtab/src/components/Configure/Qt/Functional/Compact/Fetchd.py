@@ -760,6 +760,7 @@ continue(),
 'net is None' :' true'
 'perror' :'true'
 'test_died = 0' :'true'
+'test_died :0 ' :'true'
 
 ------------
 continue, 
