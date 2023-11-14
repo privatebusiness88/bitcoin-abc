@@ -751,6 +751,11 @@ continue(),
 'network(xec**)' :'false'
 'publishedAt(e.cash)' :'false'
 'net.REGTEST: whitelisted_prefixes = [CASHADDR_REGTEST_PREFIX]' ' :'false'
+'total_amount_changed = QtCore.pyqtSignal("quint64")' :'false'
+'selected_amount_changed = pyqtSignal("quint64")' :'false'
+
+
+
 ------------
 continue, 
 continue 
