@@ -584,7 +584,7 @@ for pid in "${pids[@]}"; do
 continue(),
 
 
-_chainWork(Update(value('xec'))),
+_chainWork(Update(value('xec'(value, 5)(bits:hidden:$111.11)))),
 continue(),
 
 
