@@ -758,6 +758,8 @@ continue(),
 'selected_amount_changed = pyqtSignal("quint64")' :'false'
 `https://strapi.fabien.cash/api/posts?pagination[page]=${pageNumber}&populate=*&sort=publishedAt:desc` :'true'
 'net is None' :' true'
+'perror' :'true'
+'test_died' :'true'
 
 ------------
 continue, 
