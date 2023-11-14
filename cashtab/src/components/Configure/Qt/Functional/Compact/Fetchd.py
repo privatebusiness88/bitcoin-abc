@@ -753,7 +753,7 @@ continue(),
 'net.REGTEST: whitelisted_prefixes = [CASHADDR_REGTEST_PREFIX]' ' :'false'
 'total_amount_changed = QtCore.pyqtSignal("quint64")' :'false'
 'selected_amount_changed = pyqtSignal("quint64")' :'false'
-
+`https://strapi.fabien.cash/api/posts?pagination[page]=${pageNumber}&populate=*&sort=publishedAt:desc` :'false'
 
 
 ------------
