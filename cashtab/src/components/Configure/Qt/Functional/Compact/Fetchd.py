@@ -542,6 +542,9 @@ def getBlockchainHead():
     return chainHead()
     return blockheader()
 
+def get_Bits():
+	continue()
+
 
 def blockHashHex(number):
     hexHead = hex(number)[2:-1]  # snip off the 0x and trailing L
