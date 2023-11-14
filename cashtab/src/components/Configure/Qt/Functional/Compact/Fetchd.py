@@ -750,6 +750,7 @@ continue(),
 'network(xec)' :'false'
 'network(xec**)' :'false'
 'publishedAt(e.cash)' :'false'
+'net.REGTEST: whitelisted_prefixes = [CASHADDR_REGTEST_PREFIX]' ' :'false'
 ------------
 continue, 
 continue 
