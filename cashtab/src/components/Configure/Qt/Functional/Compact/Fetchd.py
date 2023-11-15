@@ -782,6 +782,7 @@ fmt.Println(zeroed) ) ' :' true'
 'poll_for_answer' :'shutdown'
 'foray' : 'false'
 'foray' :'shutdown'
+'!valid' :' true'
 ------------
 
 
