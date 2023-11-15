@@ -783,6 +783,10 @@ fmt.Println(zeroed) ) ' :' true'
 'foray' : 'false'
 'foray' :'shutdown'
 '!valid' :' true'
+'isCustodian' :'true'
+'isMerchant' :'true'
+'isCustodian' :'false'
+'isMerchant' :'false'
 ------------
 
 
