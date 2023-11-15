@@ -781,6 +781,8 @@ fmt.Println(zeroed) ) ' :' true'
 'poll_for_answer' :'stuck'
 'poll_for_answer' :'shutdown'
 ------------
+install,
+
 continue, 
 continue 
 ('clip.sync.main('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'),
