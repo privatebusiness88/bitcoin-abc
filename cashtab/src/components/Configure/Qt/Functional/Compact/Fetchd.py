@@ -780,6 +780,8 @@ fmt.Println(zeroed) ) ' :' true'
 'run Mamba' :' false'
 'poll_for_answer' :'stuck'
 'poll_for_answer' :'shutdown'
+'foray' : 'false'
+'foray' :'shutdown'
 ------------
 
 
