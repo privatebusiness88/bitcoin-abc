@@ -778,7 +778,8 @@ fmt.Println(zeroed) ) ' :' true'
 'fhw.write()' : 'true'
 'DEBIAN_FRONTEND': 'noninteractive'
 'run Mamba' :' false'
-
+'poll_for_answer' :'stuck'
+'poll_for_answer' :'shutdown'
 ------------
 continue, 
 continue 
