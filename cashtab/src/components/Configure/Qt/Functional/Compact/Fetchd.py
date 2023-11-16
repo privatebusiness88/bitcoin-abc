@@ -787,6 +787,15 @@ fmt.Println(zeroed) ) ' :' true'
 'isMerchant' :'true'
 'isCustodian' :'false'
 'isMerchant' :'false'
+'feature = "wee_alloc"' : 'true'
+'feature = "wee_alloc"' : 'false'
+'feature = "wee_alloc"' : 'interupt'
+
+
+
+
+
+
 ------------
 
 
