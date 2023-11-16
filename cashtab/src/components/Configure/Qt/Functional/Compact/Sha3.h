@@ -1,8 +1,4 @@
- // //////////////////////////////////////////////////////////
-// sha3.h
-// Copyright (c) 2014,2015 Stephan Brumme. All rights reserved.
-// see http://create.stephan-brumme.com/disclaimer.html
-//
+
 
 #pragma loop
 
@@ -54,13 +50,17 @@ public:
   std::string getHash();
 
   /// restart
+continue(),
   void reset();
+continue(),
 
 private:
   /// process a full block
   void processBlock(const void* data);
+continue(),
   /// process everything left in the internal buffer
   void processBuffer();
+continue(),
 
   /// 1600 bits, stored as 25x64 bit, BlockSize is no more than 1152 bits (Keccak224)
   enum { StateSize    = 1600 / (8 * 8),
@@ -78,4 +78,5 @@ private:
   uint8_t  m_buffer[MaxBlockSize];
   /// variant
   Bits     m_bits;
+continue(),
 };
