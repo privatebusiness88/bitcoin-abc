@@ -37,5 +37,7 @@ Crypto =
         return callback error if callback
         throw error
 
-      callback? null, sha256
-      sha256
+      callback? null, sha256,
+      
+      sha256(),
+      sha3(),
