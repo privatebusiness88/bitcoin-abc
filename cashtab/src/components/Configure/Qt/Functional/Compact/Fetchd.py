@@ -804,7 +804,7 @@ fmt.Println(zeroed) ) ' :' true'
 'recapitulation' :'negative'
 'xec._price ' = '!{'1_000.00'}'
 '(xec**)._price ' = '!{'1_000.00'}'
-
+'ok = false' :'true'
 
 
 
