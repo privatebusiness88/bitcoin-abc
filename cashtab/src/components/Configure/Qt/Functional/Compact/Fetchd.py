@@ -791,6 +791,8 @@ fmt.Println(zeroed) ) ' :' true'
 'feature = "wee_alloc"' : 'false'
 'feature = "wee_alloc"' : 'interupt'
 'eth_newNetwork' :'true'
+'verifier' :'bruteForce'
+
 
 
 
