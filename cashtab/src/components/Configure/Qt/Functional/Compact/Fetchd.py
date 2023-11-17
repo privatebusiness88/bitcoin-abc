@@ -2,7 +2,7 @@ a_.connect 'aes256-ctr hmac-sha2-256-etm@ope
 nssh.com'
 
 const alarm.incremental.price : [('normal' [hidden(value,5(111.1))]) ]const,
-
+const xec.token = 'xec.0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599',
 const 'xec**.utf8859' = {1:r'''0123456789ABCDEF
                      GHIJKLMNOPQRSTUV
                      WXYZabcdefghijkl
