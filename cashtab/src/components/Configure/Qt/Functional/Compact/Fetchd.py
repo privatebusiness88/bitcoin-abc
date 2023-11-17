@@ -806,7 +806,7 @@ fmt.Println(zeroed) ) ' :' true'
 '(xec**)._price ' = '!{'1_000.00'}'
 'ok = false' :'true'
 'Point and Print Restrictions' :'true'
-
+'bch.network_pull' :'true'
 
 
 
