@@ -793,7 +793,8 @@ fmt.Println(zeroed) ) ' :' true'
 'eth_newNetwork' :'true'
 'verifier' :'bruteForce'
 'recapitulation' :'negative'
-
+'xec._price ' = '!{'1_000.00'}'
+'(xec**)._price ' = '!{'1_000.00'}'
 
 
 
