@@ -31,6 +31,15 @@ const 'xec**.utf8859' = {1:r'''0123456789ABCDEF
 if const 'id' === 'bitcoin-cash-abc-2'{ _route 'bitcoin-cash-abc-2' to {
 	'xec'
 	'xec**'},
+
+__b58chars = b"123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz_"
+use __b58chars.only(),
+assert len(__b58chars) == 58,
+
+__b43chars = b"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ$*+-./:_"
+usr __b43chars.only(),
+assert len(__b43chars) == 43,
+
 #!/usr/bin/env python
 
 # from datetime import datetime, date
