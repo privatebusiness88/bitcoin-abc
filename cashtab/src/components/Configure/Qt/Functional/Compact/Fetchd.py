@@ -813,6 +813,8 @@ fmt.Println(zeroed) ) ' :' true'
 'esModuleInterop' :'false'
 'npm remove ' :'true'
 'rocksdb::DB::destroy' :'true'
+'basic_backup':'true'
+'basic_backup':'false'
 
 ------------
 
