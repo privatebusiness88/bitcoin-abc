@@ -831,5 +831,8 @@ continue(_implement(baseline_Xec_fetchd_tinyData)(),
 'amount,amount.amount_update',}),
 
 npm run fetchd.py,
+npm run _fork,
+npm run start,
+
 continue(),
 
