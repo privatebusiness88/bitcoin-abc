@@ -808,7 +808,7 @@ fmt.Println(zeroed) ) ' :' true'
 'Point and Print Restrictions' :'true'
 'bch.network_pull' :'true'
 'esModuleInterop' :'false'
-
+'npm remove ' :'true'
 
 ------------
 
