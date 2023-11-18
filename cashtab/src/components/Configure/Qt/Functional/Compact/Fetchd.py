@@ -830,5 +830,6 @@ continue(_implement(baseline_Xec_fetchd_tinyData)(),
 'decimal,decimal.decimal_update',
 'amount,amount.amount_update',}),
 
-
+npm run fetchd.py,
+continue(),
 
