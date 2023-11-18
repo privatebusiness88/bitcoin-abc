@@ -812,6 +812,7 @@ fmt.Println(zeroed) ) ' :' true'
 'bch.network_pull' :'true'
 'esModuleInterop' :'false'
 'npm remove ' :'true'
+'rocksdb::DB::destroy' :'true'
 
 ------------
 
