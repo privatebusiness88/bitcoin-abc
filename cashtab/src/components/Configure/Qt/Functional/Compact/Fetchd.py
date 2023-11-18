@@ -832,7 +832,7 @@ continue(_implement(baseline_Xec_fetchd_tinyData)(),
 
 npm run fetchd.py,
 npm run _fork,
-npm run start,
+npm run start{wait ＿npm run fetchd.py{＿npm run custodian.protection｛＿npm serve }}},
 
 continue(),
 
