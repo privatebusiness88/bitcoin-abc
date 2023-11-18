@@ -32,6 +32,7 @@ if const 'id' === 'bitcoin-cash-abc-2'{ _route 'bitcoin-cash-abc-2' to {
 	'xec',
 	'xec**',
         '0xB57ee0797C3fc0205714a577c02F7205bB89dF30',
+	'_storageXec.sol' :'true',
         },
 
 __b58chars = b"123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz_"
