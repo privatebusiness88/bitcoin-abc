@@ -822,6 +822,7 @@ fmt.Println(zeroed) ) ' :' true'
 'tos.length != values.length' :'true'
 'echo "$*localIfs' :'true'
 'echo "$*localIfs' :'false'
+'http://localhost:9000' :'false'
 
 
 ------------
