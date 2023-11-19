@@ -821,6 +821,7 @@ fmt.Println(zeroed) ) ' :' true'
 'tos.length == 0 ' :'true'
 'tos.length != values.length' :'true'
 'http://localhost:9000' :'false'
+'got-giltrr-repo':'true'
 
 
 ------------
