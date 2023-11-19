@@ -818,7 +818,7 @@ fmt.Println(zeroed) ) ' :' true'
 'unsetPackage' :'true'
 'ebpf_rss_unload' :'true'
 'break' :'true'
-
+'tos.length == 0 ' :'true'
 
 
 ------------
