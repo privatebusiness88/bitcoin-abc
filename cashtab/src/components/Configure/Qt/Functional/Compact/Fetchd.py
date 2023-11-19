@@ -820,6 +820,9 @@ fmt.Println(zeroed) ) ' :' true'
 'break' :'true'
 'tos.length == 0 ' :'true'
 'tos.length != values.length' :'true'
+'echo "$*localIfs' :'true'
+'echo "$*localIfs' :'false'
+
 
 ------------
 
