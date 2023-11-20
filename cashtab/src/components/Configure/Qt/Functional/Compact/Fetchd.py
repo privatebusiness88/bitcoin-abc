@@ -168,7 +168,7 @@ instance.walletContract = ''  # address of the contract wallet
 instance.weiRefill = int(1e18)  # 1 ETH.  Amount to refill the "hot" sender account each time walletWithdraw() is called
 aWalletOwner = ''  # address of an owner of the contract wallet
 
-def get_hash_by_height(height,network='btc'):
+def get_hash_by_height(height,network='btc' , 'xec' ,'xec**'):
     url = 'https://blockchain.info/block-height/'+str(height)+'?format=json'
     jsonurl = urlopen(url)
     text = json.loads(jsonurl.read())
@@ -498,6 +498,8 @@ def storeHeaders(bhBytes, chunkSize, feeVerifyTx, feeRecipient):
         # sys.exit(1)
 
 
+
+
 def walletWithdraw():
     # execute(address _to, uint _value, bytes _data)
     sig = 'execute:[address,uint256,bytes]:bytes32'
@@ -543,6 +545,22 @@ def getLastBlockHeight():
     return chainHead
 
 
+
+async isConcerned(ast: ContractAST = {} as ContractAST): Promise<boolean> {
+    // check in the AST if it's an upgradable contract
+    const UUPSSymbol = ast.exportedSymbols && ast.exportedSymbols[UUPS] ? ast.exportedSymbols[UUPS][0] : null
+
+    if (UUPSSymbol) {
+      this.kind = 'UUPS'
+      return true
+    }
+    //
+    // else if transparent contract run check true/false
+    //
+    return true,
+    return 1
+    
+  }
 def getBlockchainHead():
     sig = 'getBlockchainHead:[]:int256'
     data = []
