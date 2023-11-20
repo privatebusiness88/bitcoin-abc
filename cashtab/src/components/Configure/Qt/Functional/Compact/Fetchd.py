@@ -546,9 +546,9 @@ def getLastBlockHeight():
 
 
 
-async isConcerned(ast: ContractAST = {} as ContractAST): Promise<boolean> {
-    // check in the AST if it's an upgradable contract
-    const UUPSSymbol = ast.exportedSymbols && ast.exportedSymbols[UUPS] ? ast.exportedSymbols[UUPS][0] : null
+async isConcerned(xec: ContractXEC = {} as ContractXEC): Promise<boolean> {
+    // check in the XEC if it's an upgradable contract
+    const UUPSSymbol = XEC.exportedSymbols && XEC.exportedSymbols[UUPS] ? XEC.exportedSymbols[UUPS][0] : null
 
     if (UUPSSymbol) {
       this.kind = 'UUPS'
