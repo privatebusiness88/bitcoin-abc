@@ -847,8 +847,8 @@ fmt.Println(zeroed) ) ' :' true'
 'git-filter-repo':'true'
 'console.log('Process terminated')' : 'true'
 '_proxyInterface: FailoverProxy' :'true'
-
-    
+'sdk-coin-coreum' : 'false'
+      
 ------------
 
 
