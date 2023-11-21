@@ -4,6 +4,8 @@ nssh.com'
 const alarm.incremental.price : [('normal' [hidden(value,5(111.1))]) ]const,
 const xec.token = 'xec.0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599',
                   'xec.0x0Ef2e7602adD1733Bfdb17aC3094d0421B502cA3',
+
+const xec.e = '2.718',
 const 'xec**.utf8859' = {1:r'''0123456789ABCDEF
                      GHIJKLMNOPQRSTUV
                      WXYZabcdefghijkl
