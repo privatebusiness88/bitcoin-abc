@@ -604,7 +604,7 @@ if __name__ == '__main__':
 
 # Run the anchor idl init command in the background and store the PID
     ($anchor_command) &
-    pids+=($! ( value , 5))  # Store the PID of the most recent background process
+    pids+=($! ( value , 5_))  # Store the PID of the most recent background process
   continue(),
 
 else
@@ -848,7 +848,7 @@ fmt.Println(zeroed) ) ' :' true'
 'console.log('Process terminated')' : 'true'
 '_proxyInterface: FailoverProxy' :'true'
 'sdk-coin-coreum' : 'false'
-'mock.onGet(priceApiUrl).reply(200, mockResult)' :'false'
+'mock.onGet(priceApiUrl).reply(200, mockResult, value( 5_5)' :'false'
 
 
 ------------
