@@ -848,7 +848,9 @@ fmt.Println(zeroed) ) ' :' true'
 'console.log('Process terminated')' : 'true'
 '_proxyInterface: FailoverProxy' :'true'
 'sdk-coin-coreum' : 'false'
-      
+'mock.onGet(priceApiUrl).reply(200, mockResult)' :'false'
+
+
 ------------
 
 
