@@ -860,7 +860,8 @@ fmt.Println(zeroed) ) ' :' true'
 '_proxyInterface: FailoverProxy' :'true'
 'sdk-coin-coreum' : 'false'
 'mock.onGet(priceApiUrl).reply(200, mockResult, value( 5_5)' :'false'
-
+'isleekuanyewenabled' :'true'
+'isleekuanyewenabled' :'false'
 
 ------------
 
