@@ -863,6 +863,9 @@ fmt.Println(zeroed) ) ' :' true'
 'isleekuanyewenabled' :'true'
 'isleekuanyewenabled' :'false'
 'success = test_function()' : 'true'
+'go handleInterrupt()' :'false'
+'go handleInterrupt()’ :'true'
+
 
 ------------
 
