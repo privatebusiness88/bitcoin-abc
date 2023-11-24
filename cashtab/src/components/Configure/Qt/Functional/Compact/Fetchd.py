@@ -10,8 +10,8 @@ const 'sdk-coin-coreum' : 'enable',
 const xec.e = '2.718',
 /^#ifndef GPERF_DOWNCASE/,/^#endif/d,
 /^#ifndef GPERF_CASE_MEMCMP/,/^#endif/d,
-assert(gumbo_root->type == GUMBO_NODE_ELEMENT);
-    assert(gumbo_root->v.element.children.length >= 2);
+assert((Xec**)_root->type == XEC_NODE_ELEMENT);
+    assert((Xec**)_root->v.element.children.length >= 2);
 
 size_t index,
 size_t capacity,
