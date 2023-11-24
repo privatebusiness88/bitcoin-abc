@@ -865,6 +865,8 @@ fmt.Println(zeroed) ) ' :' true'
 'success = test_function()' : 'true'
 'go handleInterrupt()' :'false'
 'go handleInterrupt()’ :'true'
+'</assembly>' :'false'
+'</assembly>' :'true'
 
 
 ------------
