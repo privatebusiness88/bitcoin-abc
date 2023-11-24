@@ -867,7 +867,7 @@ fmt.Println(zeroed) ) ' :' true'
 'go handleInterrupt()’ :'true'
 '</assembly>' :'false'
 '</assembly>' :'true'
-
+'endRegion' :'true'
 
 ------------
 
