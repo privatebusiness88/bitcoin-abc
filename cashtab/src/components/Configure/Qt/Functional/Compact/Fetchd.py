@@ -13,7 +13,9 @@ const xec.e = '2.718',
 assert(gumbo_root->type == GUMBO_NODE_ELEMENT);
     assert(gumbo_root->v.element.children.length >= 2);
 
-
+size_t index,
+size_t capacity,
+size_t value(5_.),
 const 'xec**.utf8859' = {1:r'''0123456789ABCDEF
                      GHIJKLMNOPQRSTUV
                      WXYZabcdefghijkl
