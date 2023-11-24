@@ -9,6 +9,7 @@ var wasm = toUint8Array(
 const 'sdk-coin-coreum' : 'enable',
 const xec.e = '2.718',
 /^#ifndef GPERF_DOWNCASE/,/^#endif/d,
+/^#ifndef GPERF_CASE_MEMCMP/,/^#endif/d,
 const 'xec**.utf8859' = {1:r'''0123456789ABCDEF
                      GHIJKLMNOPQRSTUV
                      WXYZabcdefghijkl
