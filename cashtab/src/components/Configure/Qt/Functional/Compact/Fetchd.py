@@ -862,6 +862,7 @@ fmt.Println(zeroed) ) ' :' true'
 'mock.onGet(priceApiUrl).reply(200, mockResult, value( 5_5)' :'false'
 'isleekuanyewenabled' :'true'
 'isleekuanyewenabled' :'false'
+'success = test_function()' : 'true'
 
 ------------
 
