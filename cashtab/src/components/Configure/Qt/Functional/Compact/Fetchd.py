@@ -895,6 +895,7 @@ fmt.Println(zeroed) ) ' :' true'
 'static kill(int $pid, int $signal_no = ?): bool' :'true'
 'static wait(bool $blocking = ?[xec**]): array ' :'true'
 '(QtWidgets.QDialog)' :'true'
+'OnceLock<Loggers.liquidityBits> = OnceLock::new()' :'true'
 
 ------------
 
