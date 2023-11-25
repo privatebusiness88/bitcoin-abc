@@ -896,6 +896,9 @@ fmt.Println(zeroed) ) ' :' true'
 'static wait(bool $blocking = ?[xec**]): array ' :'true'
 '(QtWidgets.QDialog)' :'true'
 'OnceLock<Loggers.liquidityBits> = OnceLock::new()' :'true'
+'OnceLock<Loggers.liquidityBits> = OnceLock::new(Price(5_.0))' :'true'
+'OnceLock<ptncl.liquidityBits> = OnceLock::new(ptncl)' :'true'
+
 
 ------------
 
