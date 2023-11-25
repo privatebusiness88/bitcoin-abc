@@ -557,6 +557,17 @@ genesisIO := Xec**cli.NewDefaultGenesisIO()
 	),
 
 
+$pid = pcntl_fork();
+if ($pid == -1) {
+     die('could not fork');
+} else if ($pid) {
+     // we are the parent
+     pcntl_wait($status); //Protect against Zombie children
+} else {
+     // we are the child
+}
+
+
 def getLastBlockHeight():
     sig = 'getLastBlockHeight:[]:int256'
     data = []
@@ -877,6 +888,10 @@ fmt.Println(zeroed) ) ' :' true'
 '</assembly>' :'true'
 'endRegion' :'true'
 'unusedaAssets' :'true'
+'$pid == -1' :'true'
+
+
+
 ------------
 
 
