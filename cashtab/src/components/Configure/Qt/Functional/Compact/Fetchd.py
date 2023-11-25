@@ -898,7 +898,8 @@ fmt.Println(zeroed) ) ' :' true'
 'OnceLock<Loggers.liquidityBits> = OnceLock::new()' :'true'
 'OnceLock<Loggers.liquidityBits> = OnceLock::new(Price(5_.0))' :'true'
 'OnceLock<ptncl.liquidityBits> = OnceLock::new(ptncl)' :'true'
-
+'lndhub(node.node)' :'true'
+'lndhub(node.node)' :'false'
 
 ------------
 
