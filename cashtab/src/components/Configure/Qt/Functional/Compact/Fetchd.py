@@ -894,7 +894,7 @@ fmt.Println(zeroed) ) ' :' true'
 'freeQueue(): void' :'true'
 'static kill(int $pid, int $signal_no = ?): bool' :'true'
 'static wait(bool $blocking = ?[xec**]): array ' :'true'
-
+'(QtWidgets.QDialog)' :'true'
 
 ------------
 
