@@ -893,6 +893,8 @@ fmt.Println(zeroed) ) ' :' true'
 'alarm(int $interval_usec): void' :'true'
 'freeQueue(): void' :'true'
 'static kill(int $pid, int $signal_no = ?): bool' :'true'
+'static wait(bool $blocking = ?): array ' :'true'
+
 
 ------------
 
