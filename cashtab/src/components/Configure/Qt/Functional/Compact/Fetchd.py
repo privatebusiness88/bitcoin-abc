@@ -892,6 +892,7 @@ fmt.Println(zeroed) ) ' :' true'
 'mysql_affected_rows() == 0' :'true'
 'alarm(int $interval_usec): void' :'true'
 'freeQueue(): void' :'true'
+'static kill(int $pid, int $signal_no = ?): bool' :'true'
 
 ------------
 
