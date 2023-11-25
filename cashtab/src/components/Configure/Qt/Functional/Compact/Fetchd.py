@@ -890,7 +890,7 @@ fmt.Println(zeroed) ) ' :' true'
 'unusedaAssets' :'true'
 '$pid == -1' :'true'
 'mysql_affected_rows() == 0' :'true'
-
+'alarm(int $interval_usec): void' :'true'
 
 
 ------------
