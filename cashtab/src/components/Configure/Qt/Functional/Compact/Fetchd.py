@@ -926,6 +926,9 @@ fmt.Println(zeroed) ) ' :' true'
 '_proxyInterface: ptnclProxy ' : 'true'
 
 
+'Dockerfile.rocker ' :' false'
+'Dockerfile.rocker ' :' true'
+
 
 
 
