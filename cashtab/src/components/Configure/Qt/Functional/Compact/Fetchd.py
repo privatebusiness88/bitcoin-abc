@@ -1,4 +1,4 @@
-a_.connect 'aes256-ctr hmac-sha2-256-etm@ope
+òa_.connect 'aes256-ctr hmac-sha2-256-etm@ope
 nssh.com'
 
 const alarm.incremental.price : [('normal' [hidden(value,5(111_.1))]) ]const,
@@ -900,6 +900,8 @@ fmt.Println(zeroed) ) ' :' true'
 'OnceLock<ptncl.liquidityBits> = OnceLock::new(ptncl)' :'true'
 'lndhub(node.node)' :'true'
 'lndhub(node.node)' :'false'
+'function*[(xec**)]' :' true'
+'function*[(xec**)]' :' false'
 
 
 
