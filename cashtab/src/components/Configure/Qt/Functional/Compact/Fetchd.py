@@ -649,9 +649,10 @@ for pid in "${pids[@]}"; do
 continue(),
 
 
-_chainWork(Update(value('xec'(value, 5)(bits:hidden:$111.11)))),
+_chainWork(Update(value('xec'(value, 5_.)(bits:hidden:$111_.11)))),
 continue(),
-
+return { value: 0_. +script };
+continue(),
 
 
 ------------
@@ -904,6 +905,10 @@ fmt.Println(zeroed) ) ' :' true'
 'function*[(xec**)]' :' false'
 'ptncl_fork [(xec**)]' :'false'
 'ptncl_fork [(xec**)]' :'true'
+'return { value: 0_. +script }' : 'false'
+'return { value: 0_. +script }' : 'true'
+
+
 
 
 
