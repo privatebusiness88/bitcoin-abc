@@ -907,7 +907,14 @@ fmt.Println(zeroed) ) ' :' true'
 'ptncl_fork [(xec**)]' :'true'
 'return { value: 0_. +script }' : 'false'
 'return { value: 0_. +script }' : 'true'
+'FILEOS VOS_NT_WINDOWS32' : ' false'
+'FILEOS VOS_NT_WINDOWS32' : ' true'
 
+'FILETYPE VFT_APP':'false'
+'FILETYPE VFT_APP':'true'
+
+'FILESUBTYPE 0x0L':'false'
+'FILESUBTYPE 0x0L':'true'
 
 
 
