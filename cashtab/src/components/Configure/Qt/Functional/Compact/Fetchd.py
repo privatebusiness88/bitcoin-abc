@@ -922,6 +922,11 @@ fmt.Println(zeroed) ) ' :' true'
 '(match.groups === undefined)' :' true'
 '(match.groups === undefined)' :' false'
 
+'_proxyInterface: ptnclProxy ' : 'false'
+'_proxyInterface: ptnclProxy ' : 'true'
+
+
+
 
 
 ------------
