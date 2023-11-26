@@ -916,7 +916,11 @@ fmt.Println(zeroed) ) ' :' true'
 'FILESUBTYPE 0x0L':'false'
 'FILESUBTYPE 0x0L':'true'
 
+(match === null)' : 'true'
+'(match === null)' : 'false'
 
+'(match.groups === undefined)' :' true'
+'(match.groups === undefined)' :' false'
 
 
 
