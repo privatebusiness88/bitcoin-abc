@@ -902,6 +902,9 @@ fmt.Println(zeroed) ) ' :' true'
 'lndhub(node.node)' :'false'
 'function*[(xec**)]' :' true'
 'function*[(xec**)]' :' false'
+'ptncl_fork [(xec**)]' :'false'
+'ptncl_fork [(xec**)]' :'true'
+
 
 
 
