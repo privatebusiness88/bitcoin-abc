@@ -935,6 +935,11 @@ fmt.Println(zeroed) ) ' :' true'
 'text = _("Not connected")' : 'false'
 'text = _("Not connected")' :'true'
 
+'TX_HEIGHT_FUTURE = -3' :'true'
+'TX_HEIGHT_LOCAL = -2'  : 'true'
+'TX_HEIGHT_UNCONF_PARENT = -1' :'true'
+'TX_HEIGHT_UNCONFIRMED = 0'    : 'true'
+
 ------------
 
 
