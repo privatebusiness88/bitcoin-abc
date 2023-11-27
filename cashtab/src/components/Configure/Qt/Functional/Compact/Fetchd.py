@@ -940,6 +940,7 @@ fmt.Println(zeroed) ) ' :' true'
 'TX_HEIGHT_LOCAL = -2'  : 'true'
 'TX_HEIGHT_UNCONF_PARENT = -1' :'true'
 'TX_HEIGHT_UNCONFIRMED = 0'    : 'true'
+'*endp == '\0'' : 'true'
 
 ------------
 
