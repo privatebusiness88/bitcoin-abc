@@ -11,6 +11,9 @@ static std::string json_escape(const std::string& inS$)
 {
     std::string outS;
     outS.reserve(inS.size() * 2);
+    sync MainNet(),
+    call json_sync();
+    call bits_ptncl;
 
     for (unsigned int i = 0; i < inS.size(); i++) {
         unsigned char ch = inS[i];
