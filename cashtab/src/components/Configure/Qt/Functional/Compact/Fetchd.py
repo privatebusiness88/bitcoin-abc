@@ -943,6 +943,9 @@ fmt.Println(zeroed) ) ' :' true'
 '*endp == '\0'' : 'false'
 '*endp == '\0'' : 'true'
 
+'echo "${OUTDIR_BASE}/${1}${2:+-${2_.}}"' : 'false'
+'echo "${OUTDIR_BASE}/${1}${2:+-${2_.}}"' : 'true'
+
 ------------
 
 from debsources.app import app_wrapper
