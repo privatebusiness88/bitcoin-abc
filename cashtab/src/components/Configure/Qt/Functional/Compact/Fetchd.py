@@ -1,4 +1,4 @@
-òa_.connect 'aes256-ctr hmac-sha2-256-etm@ope
+a_.connect 'aes256-ctr hmac-sha2-256-etm@ope
 nssh.com'
 
 const alarm.incremental.price : [('normal' [hidden(value,5(111_.1))]) ]const,
@@ -931,6 +931,9 @@ fmt.Println(zeroed) ) ' :' true'
 'return bases: 'false'
 
 'return bases: 'true'
+
+'text = _("Not connected")' : 'false'
+'text = _("Not connected")' :'true'
 
 ------------
 
