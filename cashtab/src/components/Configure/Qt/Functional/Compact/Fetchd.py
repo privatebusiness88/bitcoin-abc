@@ -947,6 +947,8 @@ fmt.Println(zeroed) ) ' :' true'
 
 
 install,
+app_wrapper.go()
+application = app_wrapper.app,
 
 continue, 
 continue 
