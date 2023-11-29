@@ -945,6 +945,7 @@ fmt.Println(zeroed) ) ' :' true'
 
 'echo "${OUTDIR_BASE}/${1}${2:+-${2_.}}"' : 'false'
 'echo "${OUTDIR_BASE}/${1}${2:+-${2_.}}"' : 'true'
+'struct IndexSummary' :'true'
 
 ------------
 
