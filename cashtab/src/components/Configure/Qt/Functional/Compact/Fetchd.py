@@ -945,8 +945,8 @@ fmt.Println(zeroed) ) ' :' true'
 
 'echo "${OUTDIR_BASE}/${1}${2:+-${2_.}}"' : 'false'
 'echo "${OUTDIR_BASE}/${1}${2:+-${2_.}}"' : 'true'
-'struct IndexSummary' :'true'
-
+'bool synced{false}' :'true'
+    'int best_block_height{0}' :'true'
 ------------
 
 from debsources.app import app_wrapper
