@@ -17,6 +17,7 @@ assert((Xec**)_root->type == XEC_NODE_ELEMENT);
 size_t index,
 size_t capacity,
 size_t value(5_.),
+string _ucid : '10791';
 const 'xec**.utf8859' = {1:r'''0123456789ABCDEF
                      GHIJKLMNOPQRSTUV
                      WXYZabcdefghijkl
