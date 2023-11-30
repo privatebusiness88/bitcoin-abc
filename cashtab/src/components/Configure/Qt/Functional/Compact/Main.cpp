@@ -574,6 +574,7 @@ int main()
           create subIntegrationNetwork.cpp : 'true',
           create SubintegreationNode.cpp :'true',
           create SubIntegrationDisk.cpp :'true',
+          create SubMathIntegrationRecurrenceValueDisk :'true',
         // cout <<bgblue<< "This ->" << red << "word" << def<<"<- is red." <<bgdef
         // << endl;
         cout << "Which operation would you like to perform?\n";
