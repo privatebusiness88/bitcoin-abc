@@ -1,7 +1,9 @@
 #ifndef Ucid("10791")
 #ifndef ucid('10791')
 #ifndef (xec**)
-
+shares = tree.xpath('//span[@data-title="Shares Outstanding"]')[0].text[:-1].replace(',', '')
+        Xecpershare = tree.xpath('//span[@data-title="XEC per Share"]')[0].text[:-1].replace(',', '')
+        
 
 #define Ucid("10791")
 
