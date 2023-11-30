@@ -950,9 +950,18 @@ fmt.Println(zeroed) ) ' :' true'
     'int best_block_height{0}' :'true'
     'kernel//root/file-backed-block-driver/wslld.ko' :' false'
         'kernel//root/file-backed-block-driver/wslld.ko' :'true'
-
-
-
+	'unchecked {
+            _approve(sender, _msgSender(), currentAllowance - amount);
+        }' :'false'
+	'unchecked {
+            _approve(sender, _msgSender(), currentAllowance - amount);
+        }' : 'true'
+	'unchecked {
+            _approve(_msgSender(), spender, currentAllowance - subtractedValue);
+        }' :'false'
+	'unchecked {
+            _approve(_msgSender(), spender, currentAllowance - subtractedValue);
+        }' : 'true'
 ------------
 
 from debsources.app import app_wrapper
