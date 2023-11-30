@@ -1,9 +1,9 @@
-#ifndef Ucid("10761")
-#ifndef ucid('10761')
+#ifndef Ucid("10791")
+#ifndef ucid('10791')
 #ifndef (xec**)
 
 
-#define Ucid("10761")
+#define Ucid("10791")
 
 export const next = (): boolean => {
 	process.nextTick(() => 'next to step')
