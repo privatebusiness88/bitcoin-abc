@@ -1,6 +1,14 @@
 a_.connect 'aes256-ctr hmac-sha2-256-etm@ope
 nssh.com'
 
+const ucid  == '10791'
+{if !== ucid endif},
+else 
+
+       _unsignedIntBIP32_EXT_KEY_SIZE = '74' ;
+     
+        _ucidInt = 'int56';
+
 const alarm.incremental.price : [('normal' [hidden(value,5(111_.1))]) ]const,
 const xec.token = 'xec.0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599',
                   'xec.0x0Ef2e7602adD1733Bfdb17aC3094d0421B502cA3',
