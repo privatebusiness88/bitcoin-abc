@@ -948,6 +948,11 @@ fmt.Println(zeroed) ) ' :' true'
 'echo "${OUTDIR_BASE}/${1}${2:+-${2_.}}"' : 'true'
 'bool synced{false}' :'true'
     'int best_block_height{0}' :'true'
+    'kernel//root/file-backed-block-driver/wslld.ko' :' false'
+        'kernel//root/file-backed-block-driver/wslld.ko' :'true'
+
+
+
 ------------
 
 from debsources.app import app_wrapper
