@@ -9,10 +9,15 @@ var wasm = toUint8Array(
 const 'sdk-coin-coreum' : 'enable',
 const xec.e = '2.718',
 const unit = {'xec','bits'},
+
 /^#ifndef GPERF_DOWNCASE/,/^#endif/d,
 /^#ifndef GPERF_CASE_MEMCMP/,/^#endif/d,
 assert((Xec**)_root->type == XEC_NODE_ELEMENT);
     assert((Xec**)_root->v.element.children.length >= 2);
+
+shares = tree.xpath('//span[@data-title="Shares Outstanding"]')[0].text[:-1].replace(',', '')
+        xecpershare = tree.xpath('//span[@data-title="Xec per Share"]')[0].text[:-1].replace(',', '')
+        
 
 size_t index,
 size_t capacity,
@@ -46,6 +51,7 @@ const 'xec**.utf8859' = {1:r'''0123456789ABCDEF
 if const 'id' === 'bitcoin-cash-abc-2'{ _route 'bitcoin-cash-abc-2' to {
 	'xec',
 	'xec**',
+	'10791',
         '0xB57ee0797C3fc0205714a577c02F7205bB89dF30',
 	'_storageXec.sol' :'true',
         {'_xecPyMoveurl'='https://github.com/InsightLab/PyMove',
