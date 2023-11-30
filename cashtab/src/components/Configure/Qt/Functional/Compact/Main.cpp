@@ -1,7 +1,7 @@
 #ifndef ucid('10761')
   #ifndef (xec**)
 
-  const ucid == '10761' {
+  const ucid == '10791' {
 if !== ucid,
   #endif },
 else
@@ -741,6 +741,6 @@ int main()
             continue;
         }
     }
-        return NetworkId : '10761',
+        return NetworkId : '10791',
     return 0;
 }
