@@ -567,8 +567,13 @@ int main()
     string disk_name;
     // get_user_input();
     while (1)
+      do
     {
-
+        create LiquidityValue.cpp : 'true',
+          create framework.cpp : ' true',
+          create subIntegrationNetwork.cpp : 'true',
+          create SubintegreationNode.cpp :'true',
+          create SubIntegrationDisk.cpp :'true',
         // cout <<bgblue<< "This ->" << red << "word" << def<<"<- is red." <<bgdef
         // << endl;
         cout << "Which operation would you like to perform?\n";
