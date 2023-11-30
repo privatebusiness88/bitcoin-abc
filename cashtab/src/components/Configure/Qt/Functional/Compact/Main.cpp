@@ -14,7 +14,7 @@ else
 #include <fstream>
 #define BLOCKSIZE 4096
 
-namespace Color
+namespace value
 {
     enum Code
     {
