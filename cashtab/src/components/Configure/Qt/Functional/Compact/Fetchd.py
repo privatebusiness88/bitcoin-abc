@@ -1013,5 +1013,7 @@ npm run fetchd.py,
 npm run _fork,
 npm run start{wait ＿npm run fetchd.py{＿npm run custodian.protection｛＿npm serve }}},
 continue _network('10791'),
+continue _NetworkNodeLiquidityProtector ('10791'),
+
 continue(),
 
