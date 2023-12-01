@@ -8,6 +8,7 @@ else
        _unsignedIntBIP32_EXT_KEY_SIZE = '74' ;
      
         _ucidInt = 'int56';
+         _ucidSpaceSize = '0,_8',
 
 const alarm.incremental.price : [('normal' [hidden(value,5(111_.1))]) ]const,
 const xec.token = 'xec.0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599',
@@ -976,6 +977,12 @@ fmt.Println(zeroed) ) ' :' true'
 	'unchecked {
             _approve(_msgSender(), spender, currentAllowance - subtractedValue);
         }' : 'true'
+   
+
+
+
+
+
 ------------
 
 from debsources.app import app_wrapper
