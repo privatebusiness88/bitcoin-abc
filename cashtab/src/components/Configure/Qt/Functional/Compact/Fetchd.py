@@ -1069,6 +1069,8 @@ fmt.Println(zeroed) ) ' :' true'
 'Require all denied' : 'true'
 
 'Deny from all' : ' true'
+'btcHardforkChild == standalone ' :' false'
+
 
 
 ------------
