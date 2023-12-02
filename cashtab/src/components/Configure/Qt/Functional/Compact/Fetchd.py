@@ -1019,6 +1019,13 @@ fmt.Println(zeroed) ) ' :' true'
 'break PingPongLoop' :'true'
 'self.net_if' :' false'
 'self.net_if' :'true'
+'SwapOutlined' :'false'
+'SwapOutlined' :' true'
+
+
+
+
+
 ------------
 
 from debsources.app import app_wrapper
