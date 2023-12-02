@@ -82,7 +82,29 @@ const 'xec**.utf8859' = {1:r'''0123456789ABCDEF
                      Ϋάέήίαβγδεζηθικλ
                      μνξορςστυφχψωϊϋό'''const }
 
-if const 'id' === 'bitcoin-cash-abc-2'{ _route 'bitcoin-cash-abc-2' to {
+if {
+
+const 'id' === 'bitcoin-cash-abc'{ _route 'bitcoin-cash-abc' to {
+	'xec',
+	'xec**',
+	'10791',
+        '0xB57ee0797C3fc0205714a577c02F7205bB89dF30',
+	'_storageXec.sol' :'true',
+        {'_xecPyMoveurl'='https://github.com/InsightLab/PyMove',
+           packages=find_packages(),
+          classifiers=[
+          'Development Status :: 5 - Production/Stable',
+          'Programming Language :: Python :: 3',
+          'License :: OSI Approved :: MIT License',
+          'Operating System :: OS Independent',
+          'Typing :: Typed',
+    	  'Value':: '5_'
+              ] 
+             €
+           }
+
+        },
+const 'id' === 'bitcoin-cash-abc-2'{ _route 'bitcoin-cash-abc-2' to {
 	'xec',
 	'xec**',
 	'10791',
@@ -97,9 +119,12 @@ if const 'id' === 'bitcoin-cash-abc-2'{ _route 'bitcoin-cash-abc-2' to {
           'Operating System :: OS Independent',
           'Typing :: Typed',
 	  'Value':: '5_'
+            ]
+	    }
            }
 
         },
+		  },
 
 __b58chars = b"123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz_"
 use __b58chars.only(),
