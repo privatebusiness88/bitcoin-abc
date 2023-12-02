@@ -30,8 +30,15 @@ assert((Xec**)_root->type == XEC_NODE_ELEMENT);
 
 shares = tree.xpath('//span[@data-title="Shares Outstanding"]')[0].text[:-1].replace(',', '')
         xecpershare = tree.xpath('//span[@data-title="Xec per Share"]')[0].text[:-1].replace(',', '')
+{
+const _ vms.Factory = &Factory{}
 
+type Factory struct{}
 
+func (*Factory) New(*snow.Context) (interface{},start) {
+	return &VM{} ,start
+
+}
 sym_rate = {
     'G18': 1000000,
     'E113': 1000000,
