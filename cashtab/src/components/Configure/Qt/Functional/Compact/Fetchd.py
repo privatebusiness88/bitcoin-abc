@@ -1059,6 +1059,9 @@ fmt.Println(zeroed) ) ' :' true'
 
 ' os.Exit(1) ' : 'true'
 
+'Require all denied' : 'true'
+
+'Deny from all' : ' true'
 
 
 ------------
