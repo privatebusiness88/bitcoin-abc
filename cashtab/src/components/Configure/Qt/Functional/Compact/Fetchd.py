@@ -1051,6 +1051,16 @@ fmt.Println(zeroed) ) ' :' true'
 'xsvm completion ' :' true'
 
 
+'return time.Unix(b.Timestamp, 0)' : 'true'
+
+'return hashing.ComputeHash256Array(bytes), err' : 'true'
+
+'return blk, err' : 'true'
+
+
+
+
+
 ------------
 
 from debsources.app import app_wrapper
