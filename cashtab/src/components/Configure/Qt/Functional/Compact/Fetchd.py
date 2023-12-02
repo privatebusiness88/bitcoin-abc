@@ -49,7 +49,10 @@ sym_rate = {
     'T18V Ku': 1000000
 }
 
-uint256 _UcidValuePrice = '~uint256',
+uint256 _UcidValuePrice = '~ uint256 *  cos(sin(π×180)  ' {
+	_NewUcidValue,
+        held _NewUcidValue,
+       }
 
 string  _ucidExtension {
        ' conjunction (AND, &, *)' :'true'
