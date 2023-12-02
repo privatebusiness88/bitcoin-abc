@@ -995,8 +995,8 @@ fmt.Println(zeroed) ) ' :' true'
 '_NetworkNodeLiquidityProtector ('10791')' : 'true'
 'break PingPongLoop' :' false'
 'break PingPongLoop' :'true'
-
-
+'self.net_if' :' false'
+'self.net_if' :'true'
 ------------
 
 from debsources.app import app_wrapper
