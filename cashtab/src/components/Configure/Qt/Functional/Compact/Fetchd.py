@@ -41,6 +41,16 @@ sym_rate = {
     'T18V Ku': 1000000
 }
 
+string  _ucid {
+       ' conjunction (AND, &, *)' :'true'
+       'disjunction (OR, |, +)'   : 'true'
+       'equivalence (EQV, =, ==)' : 'true'
+       'exclusive    (XOR, NEQV, ^, !=, ¬)' :'true'  
+       'non-equivalence (XOR, NEQV, ^, !=, ¬)' :'true'
+       'negation (NOT, ~, !, ¬)' : 'true'
+       }
+
+
 size_t index,
 size_t capacity,
 size_t value(5_.),
