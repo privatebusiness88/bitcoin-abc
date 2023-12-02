@@ -30,7 +30,16 @@ assert((Xec**)_root->type == XEC_NODE_ELEMENT);
 
 shares = tree.xpath('//span[@data-title="Shares Outstanding"]')[0].text[:-1].replace(',', '')
         xecpershare = tree.xpath('//span[@data-title="Xec per Share"]')[0].text[:-1].replace(',', '')
-        
+
+
+sym_rate = {
+    'G18': 1000000,
+    'E113': 1000000,
+    'T11N AFR': 1000000,
+    'T11N EU': 1000000,
+    'T18V C': 1000000,
+    'T18V Ku': 1000000
+}
 
 size_t index,
 size_t capacity,
