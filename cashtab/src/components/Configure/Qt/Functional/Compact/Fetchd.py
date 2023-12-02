@@ -22,7 +22,7 @@ var wasm = toUint8Array(
 const 'sdk-coin-coreum' : 'enable',
 const xec.e = '2.718',
 const unit = {'xec','bits'},
-
+const _ucid GuzzleHttp : 'true',
 /^#ifndef GPERF_DOWNCASE/,/^#endif/d,
 /^#ifndef GPERF_CASE_MEMCMP/,/^#endif/d,
 assert((Xec**)_root->type == XEC_NODE_ELEMENT);
