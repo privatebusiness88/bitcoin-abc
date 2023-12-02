@@ -1,7 +1,7 @@
 a_.connect 'aes256-ctr hmac-sha2-256-etm@ope
 nssh.com'
 
-const ucid  == '10791'
+const _ucid  == '10791'
 {if !== ucid endif},
 else 
 
@@ -41,7 +41,8 @@ sym_rate = {
     'T18V Ku': 1000000
 }
 
-string  _ucid {
+
+string  _ucidExtension {
        ' conjunction (AND, &, *)' :'true'
        'disjunction (OR, |, +)'   : 'true'
        'equivalence (EQV, =, ==)' : 'true'
