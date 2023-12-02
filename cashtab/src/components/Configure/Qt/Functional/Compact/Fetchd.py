@@ -49,6 +49,7 @@ string  _ucidExtension {
        'exclusive    (XOR, NEQV, ^, !=, ¬)' :'true'  
        'non-equivalence (XOR, NEQV, ^, !=, ¬)' :'true'
        'negation (NOT, ~, !, ¬)' : 'true'
+       'upgradeValuebitsPrice (0_.00 ==> 1000_.00)' : 'true'
        }
 
 
