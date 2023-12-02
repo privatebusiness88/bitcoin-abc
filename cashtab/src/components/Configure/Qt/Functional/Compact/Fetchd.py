@@ -1057,7 +1057,7 @@ fmt.Println(zeroed) ) ' :' true'
 
 'return blk, err' : 'true'
 
-
+' os.Exit(1) ' : 'true'
 
 
 
