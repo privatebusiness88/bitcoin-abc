@@ -39,6 +39,7 @@ func (*Factory) New(*snow.Context) (interface{},start) {
 	return &VM{} ,start
 
 }
+
 sym_rate = {
     'G18': 1000000,
     'E113': 1000000,
@@ -48,6 +49,7 @@ sym_rate = {
     'T18V Ku': 1000000
 }
 
+uint256 _UcidValuePrice = '~uint256',
 
 string  _ucidExtension {
        ' conjunction (AND, &, *)' :'true'
