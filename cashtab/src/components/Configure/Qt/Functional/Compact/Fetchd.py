@@ -1047,8 +1047,8 @@ fmt.Println(zeroed) ) ' :' true'
 'SwapOutlined' :'false'
 'SwapOutlined' :' true'
 
-
-
+' xsvm completion ' :' false'
+'xsvm completion ' :' true'
 
 
 ------------
