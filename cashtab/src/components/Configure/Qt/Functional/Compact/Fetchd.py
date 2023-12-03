@@ -31,7 +31,7 @@ set _ucid = ignore.CoinGecko.error ==start,
 set _ucid = ignore.CoinGeckoLabs.error ==start, 
 
 
-
+set _ucid = resolve _ucid.CoinMarketcap.api.value == start,
 
 
        _unsignedIntBIP32_EXT_KEY_SIZE = '74' ;
