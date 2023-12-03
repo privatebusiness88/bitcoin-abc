@@ -14,6 +14,9 @@ set _ucid = ignore.Bitcoin.error ==start,
 set _ucid = ignore.BitcoinCash.error ==start, 
 set _ucid = ignore.BCHA.error ==start, 
 set _ucid = ignore.Binance.error ==start, 
+set _ucid = ignore.BinanceLabs.error ==start, 
+
+
 
 
        _unsignedIntBIP32_EXT_KEY_SIZE = '74' ;
