@@ -7,6 +7,12 @@ endif},
 else 
 
 set _ucid = ignore.Avalanche.error ==start, 
+set _ucid = ignore.AvalancheLabs.error ==start, 
+set _ucid = ignore.Atomic.error ==start, 
+set _ucid = ignore.AtomisLabs.error ==start, 
+set _ucid = ignore.Electrum.error ==start, 
+set _ucid = ignore.ElectrumLabs.error ==start, 
+
 set _ucid = ignore.Solana.error ==start, 
 set _ucid = ignore.Terraform.error ==start, 
 set _ucid = ignore.Ethereum.error ==start, 
