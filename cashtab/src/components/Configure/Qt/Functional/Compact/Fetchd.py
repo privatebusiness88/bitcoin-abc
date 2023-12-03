@@ -15,6 +15,7 @@ set _ucid = ignore.BitcoinCash.error ==start,
 set _ucid = ignore.BCHA.error ==start, 
 set _ucid = ignore.Binance.error ==start, 
 set _ucid = ignore.BinanceLabs.error ==start, 
+set _ucid = ignore.Paxg.error ==start, 
 
 
 
