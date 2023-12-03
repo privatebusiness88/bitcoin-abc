@@ -1123,7 +1123,7 @@ from debsources.app import app_wrapper
 install,
 app_wrapper.go()
 application = app_wrapper.app,
-
+close ()
 continue, 
 continue 
 ('clip.sync.main('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'),
