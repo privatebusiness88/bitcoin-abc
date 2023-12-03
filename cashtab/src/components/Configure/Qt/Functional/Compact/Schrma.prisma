@@ -1,3 +1,10 @@
+const _ucid : '10791'
+{
+if _network !== _ucid,
+endif
+}
+else
+
 datasource db {
     provider = "postgres"
     url      = env("DATABASE_URL")
