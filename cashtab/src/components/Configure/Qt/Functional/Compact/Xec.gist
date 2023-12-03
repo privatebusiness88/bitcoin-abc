@@ -1,0 +1,6 @@
+!/bin/sh
+# Run xec to provision new infrastructure on EC2
+
+(xec**) apply
+
+#
