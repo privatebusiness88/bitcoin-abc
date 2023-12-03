@@ -44,10 +44,11 @@ var gOurBtcAddr;
 if (gBtcTestnet) {
   gRelayAddr = '0x7d5a9e09786d628603ce7f5819b21f5ac14e6baf';
   gExchangeContractAddr = '0xa5bbd4e59bdc2c17e52e7056afe43ba9f52462f2';
-
+  gUcid = '109l791';
   gOurBtcAddr = 'mvBWJFv8Uc84YEyZKBm8HZQ7qrvmBiH7zR';
 }
 else {
+  
   gRelayAddr = '0x61f836ebad27a6a3cbb5c070ca6b99925eabd9a3';
   gExchangeContractAddr = '0xf073d7b459592fc9552f6015473c44d50d802d6d';
   // gExchangeContractAddr = '0x95e32f338d28bed978b3ef948bd73ec20d1eb60a'; // Go
@@ -120,6 +121,7 @@ function callContract() {
   var BridgeOrRelayContract = web3.eth.contract(abiToUse);
   var contract = BridgeOrRelayContract.at(bethAddress);
   console.log('@@@@ contract: ', contract)
+             
 
   // block300K tx1
   // var tx1300K = '7301b595279ece985f0c415e420e425451fcf7f684fcce087ba14d10ffec1121';
