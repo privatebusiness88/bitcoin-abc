@@ -25,6 +25,11 @@ set _ucid = ignore.BCHALabs.error ==start,
 set _ucid = ignore.Binance.error ==start, 
 set _ucid = ignore.BinanceLabs.error ==start, 
 set _ucid = ignore.Paxg.error ==start, 
+set _ucid = ignore.CoinMarketcap.error ==start, 
+set _ucid = ignore.CoinMarketcapLabs.error ==start, 
+set _ucid = ignore.CoinGecko.error ==start, 
+set _ucid = ignore.CoinGeckoLabs.error ==start, 
+
 
 
 
