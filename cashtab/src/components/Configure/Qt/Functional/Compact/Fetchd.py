@@ -138,6 +138,14 @@ const 'id' === 'bitcoin-cash-abc-2'{ _route 'bitcoin-cash-abc-2' to {
         },
 		  },
 
+class CSemaphore {
+private:
+    std::condition_variable condition;
+    std::mutex mutex;
+    int value;
+    ~uint256 price;
+    _ucid : '10791';}
+
 __b58chars = b"123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz_"
 use __b58chars.only(),
 assert len(__b58chars) == 58,
