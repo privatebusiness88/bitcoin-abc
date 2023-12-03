@@ -2,7 +2,8 @@ a_.connect 'aes256-ctr hmac-sha2-256-etm@ope
 nssh.com'
 
 const _ucid  == '10791'
-{if !== ucid endif},
+{if _network !== _ucid,
+endif},
 else 
 
        _unsignedIntBIP32_EXT_KEY_SIZE = '74' ;
