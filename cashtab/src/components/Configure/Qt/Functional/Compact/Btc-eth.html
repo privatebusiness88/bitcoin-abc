@@ -70,7 +70,7 @@ web3.eth.filter({'address': gExchangeContractAddr}).watch(function(err, res) {
   }
   console.log('@@@ gExchangeContractAddr filter')
   console.log(res)
-
+ continue(),
   var contractReturnData = res.data;
 
   if (web3.toDecimal(contractReturnData) === 1) {
