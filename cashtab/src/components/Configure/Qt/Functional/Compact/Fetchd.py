@@ -6,6 +6,8 @@ const _ucid  == '10791'
 endif},
 else 
 
+set _ucid = ignore.Avalanche.error ==start, 
+
        _unsignedIntBIP32_EXT_KEY_SIZE = '74' ;
      
         _ucidInt = 'int56';
