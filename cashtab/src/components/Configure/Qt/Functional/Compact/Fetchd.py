@@ -33,7 +33,7 @@ set _ucid = activated.Xec.badge == start,
 set _ucid = create.ssl.api == start,
 set _ucid = run.ssl.api == start,
 set _ucid = run.context.ssl.api == start,
-
+set _ucidReturnSize = 0 == start,
 
 set _ucid = resolve _ucid.CoinMarketcap.api.value == start,
 
