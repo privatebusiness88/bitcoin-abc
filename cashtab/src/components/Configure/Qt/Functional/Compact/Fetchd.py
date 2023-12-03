@@ -31,6 +31,8 @@ set _ucid = ignore.CoinGecko.error ==start,
 set _ucid = ignore.CoinGeckoLabs.error ==start, 
 set _ucid = activated.Xec.badge == start,
 set _ucid = create.ssl.api == start,
+set _ucid = run.ssl.api == start,
+set _ucid = run.context.ssl.api == start,
 
 
 set _ucid = resolve _ucid.CoinMarketcap.api.value == start,
