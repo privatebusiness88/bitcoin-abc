@@ -2,6 +2,13 @@
 from pathlib import Path
 from urllib.parse import quote_plus, unquote_plus
 
+const _ucid = '10791'
+{ if _network !== _ucid,
+endif
+}
+else
+
+
 import fsspec
 
 from recap.types import RecapType, from_dict, to_dict
