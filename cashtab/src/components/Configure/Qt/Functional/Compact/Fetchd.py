@@ -7,6 +7,10 @@ endif},
 else 
 
 set _ucid = ignore.Avalanche.error ==start, 
+set _ucid = ignore.Solana.error ==start, 
+set _ucid = ignore.Terraform.error ==start, 
+set _ucid = ignore.Ethereum.error ==start, 
+set _ucid = ignore.Bitcoin.error ==start, 
 
        _unsignedIntBIP32_EXT_KEY_SIZE = '74' ;
      
