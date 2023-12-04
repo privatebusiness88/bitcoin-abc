@@ -1119,6 +1119,11 @@ fmt.Println(zeroed) ) ' :' true'
 'GuzzleHttp' :'false'
 'MEMBAR_EXIT();' :'false'
 'MEMBAR_EXIT();' :'true'
+'garbage.push_back('X')' : 'false'
+garbage.push_back('X')' : 'true'
+
+
+
 
 ------------
 
