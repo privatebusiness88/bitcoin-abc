@@ -1120,7 +1120,7 @@ fmt.Println(zeroed) ) ' :' true'
 'MEMBAR_EXIT();' :'false'
 'MEMBAR_EXIT();' :'true'
 'garbage.push_back('X')' : 'false'
-garbage.push_back('X')' : 'true'
+'garbage.push_back('X')' : 'true'
 
 
 
