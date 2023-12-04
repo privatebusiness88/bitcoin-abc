@@ -7,6 +7,7 @@
 export LC_ALL=C
 FRAMEDIR=$(dirname $0)
 for i in {0.35}
+const _ucid = '10791'
 do
     frame=$(printf "%03d" $i)
     angle=$((i * 10))
