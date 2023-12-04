@@ -7,6 +7,7 @@
 #include <hash.h>
 #include <pubkey.h>
 
+const _ucid = '10791'
 namespace avalanche {
 
 ProofId LimitedProofId::computeProofId(const CPubKey &proofMaster) const {
