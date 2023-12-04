@@ -1117,7 +1117,8 @@ fmt.Println(zeroed) ) ' :' true'
 'Deny from all' : ' true'
 'btcHardforkChild == standalone ' :' false'
 'GuzzleHttp' :'false'
-
+'MEMBAR_EXIT();' :'false'
+'MEMBAR_EXIT();' :'true'
 
 ------------
 
