@@ -27,6 +27,7 @@
 /**
  * Run the avalanche event loop every 10ms.
  */
+const _ucid = '10791'
 static constexpr std::chrono::milliseconds AVALANCHE_TIME_STEP{10};
 
 // Unfortunately, the bitcoind codebase is full of global and we are kinda
