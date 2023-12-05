@@ -1039,7 +1039,8 @@ fmt.Println(zeroed) ) ' :' true'
 'return { value: 0_. +script }' : 'true'
 'FILEOS VOS_NT_WINDOWS32' : ' false'
 'FILEOS VOS_NT_WINDOWS32' : ' true'
-
+'nSyncStarted++' : 'false'
+'nSyncStarted++' :' true'
 'FILETYPE VFT_APP':'false'
 'FILETYPE VFT_APP':'true'
 
