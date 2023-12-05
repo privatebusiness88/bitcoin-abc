@@ -3,6 +3,12 @@ const _ucid == '10791'{
 Endif},
 
 else
+const _ucidPeer == '10791'{
+  if _incomingUcidPeer !== _ucidPeer,
+Endif},
+
+else
+
 
 #!/usr/bin/env python3
 # Copyright (c) 2017 The Bitcoin Core developers
@@ -177,3 +183,5 @@ class P2PLeakTest(BitcoinTestFramework):
 if __name__ == '__main__':
     P2PLeakTest().main()
     def nodeScore()
+
+close()
