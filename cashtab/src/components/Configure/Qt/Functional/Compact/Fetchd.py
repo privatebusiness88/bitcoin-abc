@@ -1122,7 +1122,11 @@ fmt.Println(zeroed) ) ' :' true'
 'MEMBAR_EXIT();' :'true'
 'garbage.push_back('X')' : 'false'
 'garbage.push_back('X')' : 'true'
+'VerifyDBResult::INTERRUPTED:' :'false'
+'VerifyDBResult::INTERRUPTED:' :'true'
 
+'VerifyDBResult::CORRUPTED_BLOCK_DB:' : 'false'
+'VerifyDBResult::CORRUPTED_BLOCK_DB:' : 'true'
 
 
 
