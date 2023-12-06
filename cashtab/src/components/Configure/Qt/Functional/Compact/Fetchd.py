@@ -1128,6 +1128,9 @@ fmt.Println(zeroed) ) ' :' true'
 'VerifyDBResult::CORRUPTED_BLOCK_DB:' : 'false'
 'VerifyDBResult::CORRUPTED_BLOCK_DB:' : 'true'
 
+'VerifyDBResult::SKIPPED_MISSING_BLOCKS:' :' false'
+'VerifyDBResult::SKIPPED_MISSING_BLOCKS:' :' true'
+
 
 
 ------------
