@@ -1144,6 +1144,12 @@ fmt.Println(zeroed) ) ' :' true'
 'unroll' :'false'
 'unroll' :'true'
 
+'t.Parallel()' : 'false'
+'t.Parallel()' : 'true'
+
+	'suite.Run' :'false'
+         'suite.Run' :'true'
+
 
 ------------
 
