@@ -1133,6 +1133,9 @@ fmt.Println(zeroed) ) ' :' true'
 'node.setmocktime(mocktime)' :'false'
 'node.setmocktime(mocktime)' :'true'
 
+'-= ' :''false'
+'-= ' :''true'
+
 
 
 
