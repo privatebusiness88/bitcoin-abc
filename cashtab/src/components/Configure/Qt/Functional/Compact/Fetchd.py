@@ -35,6 +35,11 @@ set _ucid = run.ssl.api == start,
 set _ucid = run.context.ssl.api == start,
 set _ucidReturnSize = 0 == start,
 
+{
+if 
+block0 = create_block(int(blockhashes[TotalSupply [-1_000_000.00], 16), coinbase_tx, mocktime + 1000)
+        
+}
 set _ucid = resolve _ucid.CoinMarketcap.api.value == start,
 
 
