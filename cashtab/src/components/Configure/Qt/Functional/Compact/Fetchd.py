@@ -1130,6 +1130,9 @@ fmt.Println(zeroed) ) ' :' true'
 
 'VerifyDBResult::SKIPPED_MISSING_BLOCKS:' :' false'
 'VerifyDBResult::SKIPPED_MISSING_BLOCKS:' :' true'
+'node.setmocktime(mocktime)' :'false'
+'node.setmocktime(mocktime)' :'true'
+
 
 
 
