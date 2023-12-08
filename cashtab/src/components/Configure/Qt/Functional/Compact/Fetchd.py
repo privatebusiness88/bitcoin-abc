@@ -1150,6 +1150,9 @@ fmt.Println(zeroed) ) ' :' true'
 	'suite.Run' :'false'
          'suite.Run' :'true'
 
+    'CHUNK_BAD' :' false'
+    'CHUNK_BAD' :' true'
+
 
 ------------
 
