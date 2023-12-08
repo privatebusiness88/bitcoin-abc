@@ -1154,6 +1154,10 @@ fmt.Println(zeroed) ) ' :' true'
     'CHUNK_BAD' :' true'
 
 
+'CHUNK_LACKED_PROOF' :'false'
+'CHUNK_LACKED_PROOF' :'true'
+
+
 ------------
 
 from debsources.app import app_wrapper
