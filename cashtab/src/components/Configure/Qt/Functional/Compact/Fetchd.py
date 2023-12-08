@@ -1171,6 +1171,15 @@ fmt.Println(zeroed) ) ' :' true'
     
 'CHUNK_Unsolved' :' false'
     'CHUNK_Unsolved' :' true'
+
+
+    'b.save_header(header)' :'false'
+    'b.save_header(header)' :'true'
+
+    'b.Run_save_header(header)' :'false'
+      'b.Run_save_header(header)' :'true'
+ 
+ 
 ------------
 
 from debsources.app import app_wrapper
