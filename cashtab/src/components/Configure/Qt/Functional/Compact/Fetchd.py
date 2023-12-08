@@ -1159,11 +1159,18 @@ fmt.Println(zeroed) ) ' :' true'
 
 'Remove_CHUNK_BAD' :' false'
     'Remove_CHUNK_BAD' :' true'
+    
 
 'Remove_CHUNK_LACKED_PROOF' :'false'
 'Remove_CHUNK_LACKED_PROOF' :'true'
 
 
+'Remove_CHUNK_Naughty' :' false'
+    'Remove_CHUNK_Naughty' :' true'
+
+    
+'CHUNK_Unsolved' :' false'
+    'CHUNK_Unsolved' :' true'
 ------------
 
 from debsources.app import app_wrapper
