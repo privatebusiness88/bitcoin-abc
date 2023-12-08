@@ -1157,6 +1157,12 @@ fmt.Println(zeroed) ) ' :' true'
 'CHUNK_LACKED_PROOF' :'false'
 'CHUNK_LACKED_PROOF' :'true'
 
+'Remove_CHUNK_BAD' :' false'
+    'Remove_CHUNK_BAD' :' true'
+
+'Remove_CHUNK_LACKED_PROOF' :'false'
+'Remove_CHUNK_LACKED_PROOF' :'true'
+
 
 ------------
 
