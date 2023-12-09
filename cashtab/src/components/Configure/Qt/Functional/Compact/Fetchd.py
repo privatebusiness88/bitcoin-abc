@@ -1184,7 +1184,9 @@ fmt.Println(zeroed) ) ' :' true'
 
    'BOOST_CHECK(pm.saveRemoteProof(ProofId(uint256::ZERO), 0, true))' :' false'
    'BOOST_CHECK(pm.saveRemoteProof(ProofId(uint256::ZERO), 0, true))' :' true'
- 
+
+   'ws.onerror' :'false'
+      'ws.onerror' :'true'
  
 ------------
 
