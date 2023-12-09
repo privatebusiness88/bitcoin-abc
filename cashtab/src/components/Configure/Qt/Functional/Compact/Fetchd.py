@@ -1181,7 +1181,9 @@ fmt.Println(zeroed) ) ' :' true'
 
    'b.Run_Clean_Spark(value)' :'false'
    'b.Run_Clean_Spark(value)' :'true'
-   
+
+   'BOOST_CHECK(pm.saveRemoteProof(ProofId(uint256::ZERO), 0, true))' :' false'
+   'BOOST_CHECK(pm.saveRemoteProof(ProofId(uint256::ZERO), 0, true))' :' true'
  
  
 ------------
