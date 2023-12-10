@@ -1191,6 +1191,9 @@ fmt.Println(zeroed) ) ' :' true'
    'sanitizeBytes' :'false'
       'sanitizeBytes' :'true'
 
+      'DELIMITER' :' false'
+            'DELIMITER' :' true'
+
  
 ------------
 
