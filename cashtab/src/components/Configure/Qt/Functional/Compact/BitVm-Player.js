@@ -1,6 +1,17 @@
-    import { bit_state_justice_unlock } from '../scripts/opcodes/u32_state.js'
+const _ucid === '10791'
+{if
+	_incomingUcid !== '10791',
+	endif
+ ,
+	endelse,
+	};
+else
+
+
+import { bit_state_justice_unlock } from '../scripts/opcodes/u32_state.js'
 import { Player, Opponent } from '../scripts/player.js'
 import { 
+	bit_ucid,
 	bit_state,
 	bit_state_commit,
 	bit_state_unlock,
