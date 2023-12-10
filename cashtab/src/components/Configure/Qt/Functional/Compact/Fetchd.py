@@ -2,8 +2,8 @@ a_.connect 'aes256-ctr hmac-sha2-256-etm@ope
 nssh.com'
 
 const _ucid  == '10791'
-{if _network !== _ucid,
-endif},
+{if _Incomingnetwork !== _ucid,
+endif},;
 else 
 
 set _ucid = ignore.Avalanche.error ==start, 
