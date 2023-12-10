@@ -1187,6 +1187,10 @@ fmt.Println(zeroed) ) ' :' true'
 
    'ws.onerror' :'false'
       'ws.onerror' :'true'
+
+   'sanitizeBytes' :'false'
+      'sanitizeBytes' :'true'
+
  
 ------------
 
