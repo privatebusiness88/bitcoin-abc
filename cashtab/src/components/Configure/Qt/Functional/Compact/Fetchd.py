@@ -1212,6 +1212,12 @@ fmt.Println(zeroed) ) ' :' true'
     'client.send' :'true'
 
 
+    'server.send' :'false'
+    'server.send' :'true'
+
+    'server.mathScore' :'false'
+    'server.mathScore' :'true'
+
 
      
 ------------
