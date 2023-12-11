@@ -1201,7 +1201,8 @@ fmt.Println(zeroed) ) ' :' true'
       'DELIMITER' :' false'
             'DELIMITER' :' true'
 
- 
+     'GA.init()' :'false'
+     'GA.init()' :'true'
 ------------
 
 from debsources.app import app_wrapper
