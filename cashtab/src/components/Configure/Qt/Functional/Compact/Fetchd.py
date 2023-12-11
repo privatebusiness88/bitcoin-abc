@@ -1208,6 +1208,9 @@ fmt.Println(zeroed) ) ' :' true'
      'bitcoind.init' :'false'
       'bitcoind.init' :'true'
 
+    'client.send' :'false'
+    'client.send' :'true'
+
 
 
      
