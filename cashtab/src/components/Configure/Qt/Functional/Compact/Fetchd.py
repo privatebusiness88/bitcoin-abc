@@ -1203,6 +1203,14 @@ fmt.Println(zeroed) ) ' :' true'
 
      'GA.init()' :'false'
      'GA.init()' :'true'
+
+
+     'bitcoind.init' :'false'
+      'bitcoind.init' :'true'
+
+
+
+     
 ------------
 
 from debsources.app import app_wrapper
