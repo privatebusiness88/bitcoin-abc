@@ -1249,6 +1249,9 @@ fmt.Println(zeroed) ) ' :' true'
 
          'const _ucid ' : 'false'
 	 'const _ucid'  : 'true'
+
+  'bool probeOnly' :'false' 
+  'bool probeOnly' :'true'
    
 ------------
 
