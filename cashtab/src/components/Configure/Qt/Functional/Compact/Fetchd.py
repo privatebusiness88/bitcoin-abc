@@ -1244,7 +1244,7 @@ fmt.Println(zeroed) ) ' :' true'
   'Upstart'  : 'True'
   
   'CentOs' : 'false'
-  'CebtOs' : 'True'
+  'CentOs' : 'True'
 
          
    
