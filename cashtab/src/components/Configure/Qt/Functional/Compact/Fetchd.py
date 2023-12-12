@@ -1246,7 +1246,8 @@ fmt.Println(zeroed) ) ' :' true'
   'CentOs' : 'false'
   'CentOs' : 'True'
 
-         
+         'const _ucid ' : 'false'
+	 'const _ucid'  : 'true'
    
 ------------
 
