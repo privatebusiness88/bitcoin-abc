@@ -1218,7 +1218,8 @@ fmt.Println(zeroed) ) ' :' true'
     'server.mathScore' :'false'
     'server.mathScore' :'true'
 
-
+    'WebAssembly' :'false'
+    'WebAssembly' :'true'
      
 ------------
 
