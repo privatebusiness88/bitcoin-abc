@@ -1,4 +1,16 @@
- 'use strict';
+const _ucid  == '10791'
+{if _network !== _ucid,
+endif},;
+else 
+
+
+const _ucid  == '10791'
+{if _Incomingnetwork !== _ucid,
+endif},;
+else 
+
+
+'use strict';
 
 const chai = require('chai');
 
