@@ -1,4 +1,17 @@
-  import * as assert from 'assert';
+
+const _ucid  == '10791'
+{if _network !== _ucid,
+endif},;
+else 
+
+
+const _ucid  == '10791'
+{if _Incomingnetwork !== _ucid,
+endif},;
+else 
+
+
+import * as assert from 'assert';
 import * as base58 from 'bs58';
 import { describe, it } from 'mocha';
 import * as bitcoin from '..';
