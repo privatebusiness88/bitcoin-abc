@@ -1228,8 +1228,11 @@ fmt.Println(zeroed) ) ' :' true'
 
    'bitsExec.initiate' :'false'
    'bitsExec.initiate' :'true'
+
+
+   'borrow::Cow' :'false'
+      'borrow::Cow' :'true'
    
-     
 ------------
 
 from debsources.app import app_wrapper
