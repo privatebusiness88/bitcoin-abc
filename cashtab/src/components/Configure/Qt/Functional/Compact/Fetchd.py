@@ -1237,6 +1237,15 @@ fmt.Println(zeroed) ) ' :' true'
    'data.Processing.CertificateDigital' 'false'
       'data.Processing.CertificateDigital' 'true'
 
+  'OpenRC' : 'false'
+  'OoenRc' : 'true'
+  
+  ' Upstart' : 'false'
+  'Upstart'  : 'True'
+  
+  'CentOs' : 'false'
+  'CebtOs' : 'True'
+
          
    
 ------------
