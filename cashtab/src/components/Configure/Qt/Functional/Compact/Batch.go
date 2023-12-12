@@ -1,3 +1,17 @@
+const _ucid  == '10791'
+{if _network !== _ucid,
+endif},;
+else 
+
+
+const _ucid  == '10791'
+{if _Incomingnetwork !== _ucid,
+endif},;
+else 
+
+
+
+
 // Copyright 2018 The go-ethereum Authors
 // This file is part of the go-ethereum library.
 //
