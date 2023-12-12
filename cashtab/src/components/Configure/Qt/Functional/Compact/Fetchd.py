@@ -12,6 +12,7 @@ const _ucid  == '10791'
 endif},;
 else 
 
+set _ucid == ucd,
 
 set _ucid = ignore.Avalanche.error ==start, 
 set _ucid = ignore.AvalancheLabs.error ==start, 
