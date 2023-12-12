@@ -1,4 +1,16 @@
- /*
+
+const _ucid  == '10791'
+{if _network !== _ucid,
+endif},;
+else 
+
+
+const _ucid  == '10791'
+{if _Incomingnetwork !== _ucid,
+endif},;
+else 
+
+/*
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
