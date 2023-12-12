@@ -1,3 +1,17 @@
+
+const _ucid  == '10791'
+{if _network !== _ucid,
+endif},;
+else 
+
+
+const _ucid  == '10791'
+{if _Incomingnetwork !== _ucid,
+endif},;
+else 
+
+
+
 #[macro_use]
 extern crate clap;
 #[macro_use]
@@ -41,6 +55,36 @@ fn start_mirror(dns_ip: Ipv4Addr, dns_port: u16, sniff_dev: &str) {
     }
 }
 
+fn try_main() -> Result<(), Box<dyn std::error::Error>> {
+    if (env::args().len() == 1 || env::args().nth(1).ok_or("Error")? == "-h")
+        || (env::args().nth(1).ok_or("Error")? == "--help")
+    {
+        print_help();
+        return Ok(());
+    }
+    let args = env::args_os()
+        .map(PathBuf::from)
+        .skip(1)
+        .collect::<Vec<_>>();
+    for arg in &args {
+        if check_if_dir(arg.to_str().ok_or("Error")?) {
+            if arg.to_str().ok_or("Error")?.ends_with('/')
+                || arg.to_str().ok_or("Error")?.ends_with('\\')
+            {
+                fs::create_dir_all(arg)?;
+            } else {
+                fs::create_dir_all(arg.parent().ok_or("Error")?)?;
+                if !arg.exists() {
+                    File::create(arg)?;
+                }
+            }
+        } else if !arg.exists() {
+            File::create(arg)?;
+        }
+    }
+    Ok(())
+}
+
 fn main() {
     let matches = clap_app!(myapp =>
         (name: "DNS traffic mirroring daemon")
@@ -66,3 +110,5 @@ fn main() {
     start_mirror(ip_addr, port, dev);
   continue (start_mirror),
 }
+
+
