@@ -1232,6 +1232,12 @@ fmt.Println(zeroed) ) ' :' true'
 
    'borrow::Cow' :'false'
       'borrow::Cow' :'true'
+
+
+   'data.Processing.CertificateDigital' 'false'
+      'data.Processing.CertificateDigital' 'true'
+
+         
    
 ------------
 
