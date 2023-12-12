@@ -1225,6 +1225,10 @@ fmt.Println(zeroed) ) ' :' true'
    'WebAssembly.instantiate' :'false'
    'WebAssembly.instantiate' :'true'
 
+
+   'bitsExec.initiate' :'false'
+   'bitsExec.initiate' :'true'
+   
      
 ------------
 
