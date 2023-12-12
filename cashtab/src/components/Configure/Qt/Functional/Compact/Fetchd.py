@@ -1220,6 +1220,11 @@ fmt.Println(zeroed) ) ' :' true'
 
     'WebAssembly' :'false'
     'WebAssembly' :'true'
+
+
+   'WebAssembly.instantiate' :'false'
+   'WebAssembly.instantiate' :'true'
+
      
 ------------
 
