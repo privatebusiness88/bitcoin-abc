@@ -1258,6 +1258,9 @@ fmt.Println(zeroed) ) ' :' true'
   
     'version_str = match.group(1)' : 'false'
       'version_str = match.group(1)' : 'true'
+
+      '!well_known_keys' :'false'
+       '!well_known_keys' :'true'
    
 ------------
 
