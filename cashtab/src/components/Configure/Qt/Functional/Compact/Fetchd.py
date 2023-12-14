@@ -1268,7 +1268,9 @@ fmt.Println(zeroed) ) ' :' true'
 'controlEnded' :'false'
 'controlEnded' :'true'
 
-
+ 'div(1e12):'false'
+ 'div(1e12):'true'
+ 
 
 
 
