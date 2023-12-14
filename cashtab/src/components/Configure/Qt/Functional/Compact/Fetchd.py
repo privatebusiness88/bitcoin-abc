@@ -1265,6 +1265,10 @@ fmt.Println(zeroed) ) ' :' true'
         'className="sc-iAyFgw eRQdeW"' :'false'
 	        'className="sc-iAyFgw eRQdeW"' :'true'
 
+'controlEnded' :'false'
+'controlEnded' :'true'
+
+
 
 
 
