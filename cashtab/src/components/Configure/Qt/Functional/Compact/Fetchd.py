@@ -1270,8 +1270,11 @@ fmt.Println(zeroed) ) ' :' true'
 
  'div(1e12):'false'
  'div(1e12):'true'
- 
 
+
+'drop(db)' : 'false'
+
+'drop(db)' : ' true'
 
 
 ------------
