@@ -1282,9 +1282,8 @@ fmt.Println(zeroed) ) ' :' true'
 'ReturnType()' : 'false'
 'ReturnType()' : 'true'
 
-
-
-
+'? AllButLast<Parameters<Fn>> ' :'false'
+' ? AllButLast<Parameters<Fn>>' :'true'
 
 ------------
 
