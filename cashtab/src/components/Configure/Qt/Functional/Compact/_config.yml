@@ -1,3 +1,10 @@
+
+_Ucid : '10791'
+   {if {_incomingNetwork !=== _ucid{ 
+   endif
+   endelse};
+   else
+   
 baseurl: /mobile-wallet-adapter/spec
          /web-openSource-Adapter/spec
 theme: "just-the-docs"
