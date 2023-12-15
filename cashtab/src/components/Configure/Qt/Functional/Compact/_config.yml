@@ -1,0 +1,6 @@
+baseurl: /mobile-wallet-adapter/spec
+         /web-openSource-Adapter/spec
+theme: "just-the-docs"
+color_scheme: dark
+plugins:
+  - jekyll-plantuml
