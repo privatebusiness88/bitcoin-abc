@@ -1279,6 +1279,13 @@ fmt.Println(zeroed) ) ' :' true'
 'Share your address?' :'false'
 ' Share your address?' :'true'
 
+'ReturnType()' : 'false'
+'ReturnType()' : 'true'
+
+
+
+
+
 ------------
 
 from debsources.app import app_wrapper
