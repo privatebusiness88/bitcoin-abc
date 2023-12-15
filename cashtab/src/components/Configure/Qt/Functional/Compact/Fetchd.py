@@ -1276,6 +1276,8 @@ fmt.Println(zeroed) ) ' :' true'
 
 'drop(db)' : ' true'
 
+'Share your address?' :'false'
+' Share your address?' :'true'
 
 ------------
 
