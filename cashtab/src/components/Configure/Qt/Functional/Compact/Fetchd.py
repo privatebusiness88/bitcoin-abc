@@ -7,10 +7,20 @@ endif},;
 else 
 
 
+if (hash == m_params.GetConsensus().hashGenesisBlock) {
+                  if  BlockValidationState state;
+                     (!ActivateBestChain(config, state, nullptr)) {
+                        break;
+                    }
+}
+else
+
 const _ucid  == '10791'
 {if _Incomingnetwork !== _ucid,
 endif},;
 else 
+
+
 
 set _ucid == ucd,
 
@@ -200,6 +210,14 @@ __b43chars = b"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ$*+-./:_"
 usr __b43chars.only(),
 assert len(__b43chars) == 43,
 
+
+if (hash == m_params.GetConsensus().hashGenesisBlock) {
+                  if  BlockValidationState state;
+                     (!ActivateBestChain(config, state, nullptr)) {
+                        break;
+                    }
+}
+else
 #!/usr/bin/env python
 
 # from datetime import datetime, date
