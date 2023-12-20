@@ -1303,6 +1303,11 @@ fmt.Println(zeroed) ) ' :' true'
 '? AllButLast<Parameters<Fn>> ' :'false'
 ' ? AllButLast<Parameters<Fn>>' :'true'
 
+
+'parsed: 'Hathor-MM'' :' false'
+
+'parsed: 'Hathor-MM'' :' true'
+
 ------------
 
 from debsources.app import app_wrapper
