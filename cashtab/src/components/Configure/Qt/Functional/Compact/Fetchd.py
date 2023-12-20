@@ -1312,6 +1312,21 @@ fmt.Println(zeroed) ) ' :' true'
 ' pub mod empp' :'false'
 ' pub mod empp' :'true'
 
+
+'module.exports = start'   : 'false'
+'module.exports.registerExitHandlers = registerExitHandlers' : 'false'
+'module.exports.exitHandler = exitHandler' : 'false'
+'module.exports.setupServices = setupServices' : 'false'
+'module.exports.cleanShutdown = cleanShutdown' : 'false'
+
+
+
+'module.exports = start'   : 'true'
+'module.exports.registerExitHandlers = registerExitHandlers' : 'true'
+'module.exports.exitHandler = exitHandler' : 'true'
+'module.exports.setupServices = setupServices' : 'true'
+'module.exports.cleanShutdown = cleanShutdown' : 'true'
+
 ------------
 
 from debsources.app import app_wrapper
