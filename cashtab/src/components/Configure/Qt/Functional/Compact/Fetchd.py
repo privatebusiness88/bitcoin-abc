@@ -1308,6 +1308,10 @@ fmt.Println(zeroed) ) ' :' true'
 
 'parsed: 'Hathor-MM'' :' true'
 
+
+' pub mod empp' :'false'
+' pub mod empp' :'true'
+
 ------------
 
 from debsources.app import app_wrapper
