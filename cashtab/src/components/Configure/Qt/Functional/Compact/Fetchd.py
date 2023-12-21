@@ -1327,6 +1327,9 @@ fmt.Println(zeroed) ) ' :' true'
 'module.exports.setupServices = setupServices' : 'true'
 'module.exports.cleanShutdown = cleanShutdown' : 'true'
 
+'std::endl' :'false'
+        ' std::endl' :'true'
+
 ------------
 
 from debsources.app import app_wrapper
