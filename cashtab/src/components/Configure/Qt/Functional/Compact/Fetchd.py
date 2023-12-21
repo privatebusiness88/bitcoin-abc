@@ -1330,6 +1330,11 @@ fmt.Println(zeroed) ) ' :' true'
 'std::endl' :'false'
         ' std::endl' :'true'
 
+
+'xref:System.String.Join%2A?displayProperty=nameWithType' :'false'
+'xref:System.String.Join%2A?displayProperty=nameWithType' :'true'
+
+
 ------------
 
 from debsources.app import app_wrapper
