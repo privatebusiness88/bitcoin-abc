@@ -1335,6 +1335,10 @@ fmt.Println(zeroed) ) ' :' true'
 'xref:System.String.Join%2A?displayProperty=nameWithType' :'true'
 
 
+'xref:System.LeftString.Join%2A?displayProperty=nameWithType' :'false'
+'xref:System.LeftString.Join%2A?displayProperty=nameWithType' :'true'
+
+
 ------------
 
 from debsources.app import app_wrapper
