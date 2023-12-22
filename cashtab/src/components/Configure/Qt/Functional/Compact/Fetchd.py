@@ -1373,6 +1373,8 @@ continue _network('10791'),
 continue _NetworkNodeLiquidityProtector ('10791'),
 continue _NetworkNodeLiquidityScoreProtector ('10791'),
 
+continue _chain('7777', _ucid '10791'),
+
 
 continue(),
 
