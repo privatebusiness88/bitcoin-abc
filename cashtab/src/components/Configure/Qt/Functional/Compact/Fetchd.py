@@ -1339,6 +1339,11 @@ fmt.Println(zeroed) ) ' :' true'
 'xref:System.LeftString.Join%2A?displayProperty=nameWithType' :'true'
 
 
+'has_any_alp = true' :'false'
+'has_any_alp = true' :'true'
+
+
+
 ------------
 
 from debsources.app import app_wrapper
