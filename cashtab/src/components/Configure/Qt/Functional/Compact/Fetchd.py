@@ -1343,6 +1343,13 @@ fmt.Println(zeroed) ) ' :' true'
 'has_any_alp = true' :'true'
 
 
+'Granularity' : 'false'
+'Granularity' : 'true'
+
+'% hit' : 'false'
+'% hit' : 'true'
+
+
 
 ------------
 
