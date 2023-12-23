@@ -1355,6 +1355,16 @@ fmt.Println(zeroed) ) ' :' true'
 'hash::ShaRmd160' : 'false'
 'hash::ShaRmd160' : 'true'
 
+'await extension.runtime.sendMessage(event.data)(certificateDigitalLicenseOperation)' :'false'
+
+'await extension.runtime.sendMessage(event.data)(certificateDigitalLicenseOperation)' :'true'
+
+'await extension.runtime.sendMessage(event.data)(certificateDigitalLiquidityLicenseOperation)' :'false'
+
+'await extension.runtime.sendMessage(event.data)(certificateDigitalLiquidityLicenseOperation)' :'false'
+
+
+
 
 
 ------------
