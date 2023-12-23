@@ -1352,6 +1352,10 @@ fmt.Println(zeroed) ) ' :' true'
 'msg_au_certificateDigitalLicenseChecker' :'false'
 'msg_au_certificateDigitalLicenseChecker' :'true'
 
+'hash::ShaRmd160' : 'false'
+'hash::ShaRmd160' : 'true'
+
+
 
 ------------
 
