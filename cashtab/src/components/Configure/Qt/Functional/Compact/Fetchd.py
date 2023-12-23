@@ -1349,6 +1349,8 @@ fmt.Println(zeroed) ) ' :' true'
 '% hit' : 'false'
 '% hit' : 'true'
 
+'msg_au_certificateDigitalLicenseChecker' :'false'
+'msg_au_certificateDigitalLicenseChecker' :'true'
 
 
 ------------
