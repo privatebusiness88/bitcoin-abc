@@ -1363,8 +1363,8 @@ fmt.Println(zeroed) ) ' :' true'
 
 'await extension.runtime.sendMessage(event.data)(certificateDigitalLiquidityLicenseOperation)' :'false'
 
-
-
+'openSendEcash(msg.txInfo)' :'false'
+'openSendEcash(msg.txInfo)' : 'true'
 
 
 ------------
