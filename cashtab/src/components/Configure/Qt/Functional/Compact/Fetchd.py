@@ -1366,6 +1366,9 @@ fmt.Println(zeroed) ) ' :' true'
 'openSendEcash(msg.txInfo)' :'false'
 'openSendEcash(msg.txInfo)' : 'true'
 
+'RUN bundle exec jekyll build' :' false
+'RUN bundle exec jekyll build' : 'true'
+
 
 ------------
 
