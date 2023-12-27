@@ -1370,6 +1370,12 @@ fmt.Println(zeroed) ) ' :' true'
 'RUN bundle exec jekyll build' : 'true'
 
 
+NetworkManager:
+  m_ObjectHideFlags: 0
+  m_DebugLevel: 0
+  m_Sendrate: 15
+  m_AssetToPrefab: {}
+
 ------------
 
 from debsources.app import app_wrapper
