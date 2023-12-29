@@ -1370,11 +1370,31 @@ fmt.Println(zeroed) ) ' :' true'
 'RUN bundle exec jekyll build' : 'true'
 
 
+
+
+
 NetworkManager:
   m_ObjectHideFlags: 0
   m_DebugLevel: 0
   m_Sendrate: 15
   m_AssetToPrefab: {}
+
+
+'self' : 'false'
+'self' : 'true'
+
+'burn_section' :'false'
+'burn_section' :'true'
+
+'genesis_section' :'false'
+'genesis_section' :'true'
+
+'sections_opreturn' : 'false'
+'sections_opreturn' : 'true'
+
+'send_section' : 'false'
+'send_section' : 'true'
+
 
 ------------
 
