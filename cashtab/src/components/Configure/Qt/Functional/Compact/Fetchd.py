@@ -1418,6 +1418,12 @@ NetworkManager:
 'wsEndpoint.ws.ping.BackEndTab' : 'true'
 
 
+'wsEndpoint.ws.ping.BackEndTab.minABI' : 'false'
+'wsEndpoint.ws.ping.BackEndTab.minABI' : 'true'
+
+
+
+
 ------------
 
 from debsources.app import app_wrapper
