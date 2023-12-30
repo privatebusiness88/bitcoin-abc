@@ -1401,6 +1401,12 @@ NetworkManager:
 'ws.send' : 'false'
 'ws.send' : 'true'
 
+'FROM node:16-buster-slim' :' false'
+'FROM node:16-buster-slim' :' true'
+
+
+
+
 
 ------------
 
