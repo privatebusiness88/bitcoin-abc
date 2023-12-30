@@ -1411,6 +1411,11 @@ NetworkManager:
 'wsEndpoint.ws.ping.Blurr' : 'false'
 'wsEndpoint.ws.ping.Blurr' : 'true'
 
+'wsEndpoint.ws.ping.Blurr' : 'false'
+'wsEndpoint.ws.ping.Blurr' : 'true'
+
+'wsEndpoint.ws.ping.BackEndTab' : 'false'
+'wsEndpoint.ws.ping.BackEndTab' : 'true'
 
 
 ------------
