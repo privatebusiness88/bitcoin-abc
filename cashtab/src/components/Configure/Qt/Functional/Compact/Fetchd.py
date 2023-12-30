@@ -1427,6 +1427,10 @@ NetworkManager:
    'wsEndpoint.ws.ping.BackEndTab.ChainValue' : 'false'
 'wsEndpoint.ws.ping.BackEndTab.ChainValue' : 'true'
 
+'wsEndpoint.ws.ping.BackEndTab.InternetServiceProvider' : 'false'
+'wsEndpoint.ws.ping.BackEndTab.InternetServiceProvider' : 'true'
+
+
 ------------
 
 from debsources.app import app_wrapper
