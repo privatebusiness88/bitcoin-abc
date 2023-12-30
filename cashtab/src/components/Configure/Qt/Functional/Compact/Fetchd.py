@@ -1408,6 +1408,9 @@ NetworkManager:
 'wsEndpoint.ws.ping.BackEnd' : 'true'
 
 
+'wsEndpoint.ws.ping.Blurr' : 'false'
+'wsEndpoint.ws.ping.Blurr' : 'true'
+
 
 
 ------------
