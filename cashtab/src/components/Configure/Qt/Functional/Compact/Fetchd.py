@@ -1421,6 +1421,8 @@ NetworkManager:
 'wsEndpoint.ws.ping.BackEndTab.minABI' : 'false'
 'wsEndpoint.ws.ping.BackEndTab.minABI' : 'true'
 
+'wsEndpoint.ws.ping.BackEndTab.minABI.AutoWinZip' : 'false'
+'wsEndpoint.ws.ping.BackEndTab.minABI.AutoWinZip' : 'true'
 
 
 
