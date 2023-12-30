@@ -1404,6 +1404,8 @@ NetworkManager:
 'FROM node:16-buster-slim' :' false'
 'FROM node:16-buster-slim' :' true'
 
+'wsEndpoint.ws.ping.BackEnd' : 'false'
+'wsEndpoint.ws.ping.BackEnd' : 'true'
 
 
 
