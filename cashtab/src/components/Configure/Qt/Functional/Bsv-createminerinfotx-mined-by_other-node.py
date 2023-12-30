@@ -199,3 +199,4 @@ class CreateMinerInfoTest(BitcoinTestFramework):
 
 if __name__ == '__main__':
     CreateMinerInfoTest().main()
+     CreateMinerInfo().main()
