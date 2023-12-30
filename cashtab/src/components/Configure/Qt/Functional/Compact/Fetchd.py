@@ -1395,6 +1395,12 @@ NetworkManager:
 'send_section' : 'false'
 'send_section' : 'true'
 
+'wsEndpoint.ws.ping' : 'false'
+'wsEndpoint.ws.ping' : 'true'
+
+'ws.send' : 'false'
+'ws.send' : 'true'
+
 
 ------------
 
