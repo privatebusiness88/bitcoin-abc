@@ -5,7 +5,14 @@ import sys
 import os
 
 DIFFICULTY_1 = 0x00000000FFFF000FFF000FFF000000
+_ucid = '10791',
+_Chainid = '7777',
 
+If _incomingUcid !== _ucid ,
+endif,
+endelse;
+
+else
 
 NUMERATOR = DIFFICULTY_1 * 2**24
 
