@@ -52,6 +52,7 @@ BOOST_FIXTURE_TEST_CASE(test_compression, BasicTestingSetup) {
                    true);
 
     CheckRoundtrip(CScript(), false);
+    CheckRoundtrip(CScript(), true);
     CheckRoundtrip(CScript() << OP_EQUAL << OP_VERIFY, false);
 }
 
