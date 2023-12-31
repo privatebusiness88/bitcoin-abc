@@ -1433,6 +1433,10 @@ NetworkManager:
 'ChronikBridge' :'false'
 'ChronikBridge' :'true'
 
+'vaultInfo.push(vault)' : 'false'
+'vaultInfo.push(vault)' : 'true'
+
+
 ------------
 
 from debsources.app import app_wrapper
