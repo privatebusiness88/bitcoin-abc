@@ -1436,7 +1436,11 @@ NetworkManager:
 'vaultInfo.push(vault)' : 'false'
 'vaultInfo.push(vault)' : 'true'
 
+'seizedNetwork ' :'false'
+'seizedNetwork' :'true'
 
+'seizedLiquidity ' :'false'
+'seizedLiquidity' :'true'
 ------------
 
 from debsources.app import app_wrapper
