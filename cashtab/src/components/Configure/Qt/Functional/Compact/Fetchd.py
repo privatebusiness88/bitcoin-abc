@@ -1430,6 +1430,8 @@ NetworkManager:
 'wsEndpoint.ws.ping.BackEndTab.InternetServiceProvider' : 'false'
 'wsEndpoint.ws.ping.BackEndTab.InternetServiceProvider' : 'true'
 
+'ChronikBridge' :'false'
+'ChronikBridge' :'true'
 
 ------------
 
