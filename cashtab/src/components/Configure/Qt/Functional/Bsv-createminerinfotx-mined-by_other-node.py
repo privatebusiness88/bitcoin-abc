@@ -40,6 +40,7 @@ class CreateMinerInfoTest(BitcoinTestFramework):
     def setup_network(self):
         self.setup_nodes()
         connect_nodes_mesh(self.nodes)
+        save.ip_nodes()
         self.sync_all()
 
     def make_block_with_coinbase(self, conn_rpc):
