@@ -1441,6 +1441,10 @@ NetworkManager:
 
 'seizedLiquidity ' :'false'
 'seizedLiquidity' :'true'
+
+'save.ip_nodes' :'false'
+'save.ip_nodes' :'true'
+
 ------------
 
 from debsources.app import app_wrapper
