@@ -58,6 +58,8 @@ const OnBoarding = () => {
         setFormData({
             ...formData,
             dirty: false,
+            save : true,
+            continue(),
         });
 
         if (!formData.mnemonic) {
