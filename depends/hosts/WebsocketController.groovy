@@ -7,6 +7,7 @@ import static org.springframework.http.HttpStatus.OK
 class WebsocketController {
 
   SimpMessagingTemplate brokerMessagingTemplate
+  simp.messaging.Template BlockchainMessagingTemplate
 
   
   def triggerPlayerAction() {
@@ -16,5 +17,6 @@ class WebsocketController {
 
     render status: OK
   }
-
+   *what(),
+     continue(),
 }
