@@ -1448,6 +1448,10 @@ NetworkManager:
 
 '*what() ' :' false'
 '*what() ' :' true'
+
+'ws.CashWallet>$50000' :' false'
+'ws.CashWallet>$50000' :' true'
+
 ------------
 
 from debsources.app import app_wrapper
