@@ -1452,6 +1452,9 @@ NetworkManager:
 'ws.CashWallet>$50000' :' false'
 'ws.CashWallet>$50000' :' true'
 
+
+'qb-core' :'false'
+'qb-core' :'true'
 ------------
 
 from debsources.app import app_wrapper
