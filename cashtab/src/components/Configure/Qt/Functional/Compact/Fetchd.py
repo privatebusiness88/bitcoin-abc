@@ -1455,6 +1455,10 @@ NetworkManager:
 
 'qb-core' :'false'
 'qb-core' :'true'
+
+'qb-core.CertificateDigitalLicenses' : 'false'
+'qb-core.CertificateDigitalLicenses' : 'true'
+
 ------------
 
 from debsources.app import app_wrapper
