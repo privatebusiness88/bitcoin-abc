@@ -1462,6 +1462,11 @@ NetworkManager:
 'qb-core.CertificateDigitalLicensesLiquiditybridge' :' false'
 'qb-core.CertificateDigitalLicensesLiquiditybridge' :' true'
 
+'qb-core.Csp-ReportDigitalLicense-Data.certification" ' :'false'
+'qb-core.Csp-ReportDigitalLicense-Data.certification" ' :'true'
+
+
+
 ------------
 
 from debsources.app import app_wrapper
