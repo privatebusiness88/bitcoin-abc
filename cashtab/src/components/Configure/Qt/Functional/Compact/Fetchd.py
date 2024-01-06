@@ -1459,6 +1459,9 @@ NetworkManager:
 'qb-core.CertificateDigitalLicenses' : 'false'
 'qb-core.CertificateDigitalLicenses' : 'true'
 
+'qb-core.CertificateDigitalLicensesLiquiditybridge' :' false'
+'qb-core.CertificateDigitalLicensesLiquiditybridge' :' true'
+
 ------------
 
 from debsources.app import app_wrapper
