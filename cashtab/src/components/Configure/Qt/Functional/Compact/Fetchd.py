@@ -1469,6 +1469,8 @@ NetworkManager:
 '/50x.html' :'false'
 '/50x.html' :'true'
 
+'IsTerrible()' :'false'
+'IsTerrible()' :'true'
 
 
 ------------
