@@ -1466,6 +1466,10 @@ NetworkManager:
 'qb-core.Csp-ReportDigitalLicense-Data.certification" ' :'true'
 
 
+'/50x.html' :'false'
+'/50x.html' :'true'
+
+
 
 ------------
 
