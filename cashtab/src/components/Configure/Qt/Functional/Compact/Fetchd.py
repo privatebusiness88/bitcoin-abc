@@ -1478,6 +1478,8 @@ NetworkManager:
 'EtokensCtn = styled.div`' : 'false'
 'EtokensCtn = styled.div`' : 'true'
 
+'"urn:ietf:params:netconf:base:1.1"' :' false'
+'"urn:ietf:params:netconf:base:1.1"' :' true'
 
 
 
