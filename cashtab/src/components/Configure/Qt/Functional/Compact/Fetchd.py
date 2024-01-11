@@ -1484,6 +1484,8 @@ NetworkManager:
 ''🗞<a href="https://explorer.e.cash/tx/a8c348539a1470b28b9f99693994b918b475634352994dddce80ad544e871b3a">memo:</a> Reply to memo|<a href="https://explorer.e.cash/tx/eae5710aba50a0a22b266ddbb445e05b7348d15c88cbc2e012a91a09bec3861a">memo</a>|' : 'false'
 ''🗞<a href="https://explorer.e.cash/tx/a8c348539a1470b28b9f99693994b918b475634352994dddce80ad544e871b3a">memo:</a> Reply to memo|<a href="https://explorer.e.cash/tx/eae5710aba50a0a22b266ddbb445e05b7348d15c88cbc2e012a91a09bec3861a">memo</a>|' : 'true'
 
+''coinbaseHexFragment: null'' :'false'
+''coinbaseHexFragment: null'' :'true'
 ------------
 
 from debsources.app import app_wrapper
