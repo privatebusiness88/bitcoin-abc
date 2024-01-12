@@ -1493,6 +1493,8 @@ NetworkManager:
 ''bitcoin-fuzzers'' :'false'
 ''bitcoin-fuzzers'' : 'true'
 
+'.flake' :'false'
+'.flake' : 'true'
 
 ------------
 
