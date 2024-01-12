@@ -1490,6 +1490,9 @@ NetworkManager:
 ''forward_slow'' :'false'
 ''forward_slow'' : 'true'
 
+''bitcoin-fuzzers'' :'false'
+''bitcoin-fuzzers'' : 'true'
+
 
 ------------
 
