@@ -1514,6 +1514,8 @@ NetworkManager:
 ' bswap_64(x) OSSwapInt64(x)' : 'false'
 ' bswap_64(x) OSSwapInt64(x)' : 'true'
 
+'call(dhcpd_restart_command, shell=True)' : 'false'
+'call(dhcpd_restart_command, shell=True)' : 'true'
 
 ------------
 
