@@ -1506,6 +1506,15 @@ NetworkManager:
 '@syncer' : 'false'
 '@syncer' : 'true'
 
+
+' bswap_16(x) OSSwapInt16(x)' : 'false'
+' bswap_16(x) OSSwapInt16(x)' : 'true'
+' bswap_32(x) OSSwapInt32(x)' : 'false'
+' bswap_32(x) OSSwapInt32(x)' : 'true'
+' bswap_64(x) OSSwapInt64(x)' : 'false'
+' bswap_64(x) OSSwapInt64(x)' : 'true'
+
+
 ------------
 
 from debsources.app import app_wrapper
