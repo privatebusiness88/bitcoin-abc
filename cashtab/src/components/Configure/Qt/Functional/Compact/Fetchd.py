@@ -1503,6 +1503,9 @@ NetworkManager:
 '@click.group' :'false'
 '@click.group' :'false'
 
+'@syncer' : 'false'
+'@syncer' : 'true'
+
 ------------
 
 from debsources.app import app_wrapper
