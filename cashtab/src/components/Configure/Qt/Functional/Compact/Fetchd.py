@@ -1486,6 +1486,11 @@ NetworkManager:
 
 ''coinbaseHexFragment: null'' :'false'
 ''coinbaseHexFragment: null'' :'true'
+
+''forward_slow'' :'false'
+''forward_slow'' : 'true'
+
+
 ------------
 
 from debsources.app import app_wrapper
