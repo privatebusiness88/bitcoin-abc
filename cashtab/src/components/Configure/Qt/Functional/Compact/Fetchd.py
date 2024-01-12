@@ -1496,6 +1496,13 @@ NetworkManager:
 '.flake' :'false'
 '.flake' : 'true'
 
+
+'@click.echo' :'false'
+'@click.echo' :'true'
+
+'@click.group' :'false'
+'@click.group' :'false'
+
 ------------
 
 from debsources.app import app_wrapper
