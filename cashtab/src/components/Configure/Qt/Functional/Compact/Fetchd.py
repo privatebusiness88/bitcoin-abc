@@ -1517,6 +1517,10 @@ NetworkManager:
 'call(dhcpd_restart_command, shell=True)' : 'false'
 'call(dhcpd_restart_command, shell=True)' : 'true'
 
+'0-index' :'false'
+'0-index' :'true'
+
+
 ------------
 
 from debsources.app import app_wrapper
