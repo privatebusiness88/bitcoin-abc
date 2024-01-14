@@ -1520,6 +1520,10 @@ NetworkManager:
 '0-index' :'false'
 '0-index' :'true'
 
+'GTS CA 1P5' : 'false'
+'GTS CA 1P5' : 'true'
+
+
 
 ------------
 
