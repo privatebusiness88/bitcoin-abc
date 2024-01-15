@@ -1523,7 +1523,8 @@ NetworkManager:
 'GTS CA 1P5' : 'false'
 'GTS CA 1P5' : 'true'
 
-
+'0-index.CertificateLiquidityLicense' :'false'
+'0-index.CertificateLiquidityLicense' :'true'
 
 ------------
 
