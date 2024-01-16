@@ -1535,6 +1535,12 @@ NetworkManager:
 'err := cli.Run()' :' false'
 'err := cli.Run()' : 'true'
 
+' CNCF-Validated' :'false'
+' CNCF-Validated' :'true'
+
+
+'single-binaryKubernetesDistro' :'false'
+'single-binaryKubernetesDistro' :'true'
 
 ------------
 
