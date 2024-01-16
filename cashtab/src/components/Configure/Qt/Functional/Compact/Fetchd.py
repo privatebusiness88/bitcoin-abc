@@ -1542,6 +1542,10 @@ NetworkManager:
 'single-binaryKubernetesDistro' :'false'
 'single-binaryKubernetesDistro' :'true'
 
+''py: Python<'_>'' :'false'
+''py: Python<'_>'' :'true'
+
+
 ------------
 
 from debsources.app import app_wrapper
