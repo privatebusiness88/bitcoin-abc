@@ -1526,6 +1526,13 @@ NetworkManager:
 '0-index.CertificateLiquidityLicense' :'false'
 '0-index.CertificateLiquidityLicense' :'true'
 
+'synr' :'false'
+'synr' :'true'
+
+'synr.CertificateLicense' :'false'
+'synr.CertificateLicense' :'true'
+
+
 ------------
 
 from debsources.app import app_wrapper
