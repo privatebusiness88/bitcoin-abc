@@ -1532,6 +1532,9 @@ NetworkManager:
 'synr.CertificateLicense' :'false'
 'synr.CertificateLicense' :'true'
 
+'err := cli.Run()' :' false'
+'err := cli.Run()' : 'true'
+
 
 ------------
 
