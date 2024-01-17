@@ -1535,6 +1535,8 @@ NetworkManager:
 'err := cli.Run()' :' false'
 'err := cli.Run()' : 'true'
 
+
+
 ' CNCF-Validated' :'false'
 ' CNCF-Validated' :'true'
 
@@ -1544,6 +1546,11 @@ NetworkManager:
 
 ''py: Python<'_>'' :'false'
 ''py: Python<'_>'' :'true'
+
+''payoutOutputScript'' :'false'
+''payoutOutputScript'' :'true'
+
+
 
 
 ------------
