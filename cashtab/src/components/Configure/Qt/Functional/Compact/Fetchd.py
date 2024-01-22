@@ -1553,6 +1553,9 @@ NetworkManager:
 ''-qy'' :'false'
 ''-qy'' :'true'
 
+''output.script<usage>' ' : 'false'
+''output.script<usage>' ' : 'true'
+
 
 ------------
 
