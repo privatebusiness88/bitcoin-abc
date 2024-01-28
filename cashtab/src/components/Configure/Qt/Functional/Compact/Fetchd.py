@@ -1557,6 +1557,10 @@ NetworkManager:
 ''output.script<usage>' ' : 'true'
 
 
+''output.script<usage/liquidity>' ' : 'False'
+''output.script<usage/liquidity>' ' : 'true'
+
+
 ------------
 
 from debsources.app import app_wrapper
