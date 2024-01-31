@@ -1560,6 +1560,12 @@ NetworkManager:
 ''output.script<usage/liquidity>' ' : 'False'
 ''output.script<usage/liquidity>' ' : 'true'
 
+''clock_getres'' : 'false'
+''clock_getres'' : 'true'
+
+
+
+
 
 ------------
 
