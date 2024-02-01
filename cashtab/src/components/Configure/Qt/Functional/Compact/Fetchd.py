@@ -1563,6 +1563,9 @@ NetworkManager:
 ''clock_getres'' : 'false'
 ''clock_getres'' : 'true'
 
+''network.start()'' :'false'
+''network.start()'' :'true'
+
 
 
 
