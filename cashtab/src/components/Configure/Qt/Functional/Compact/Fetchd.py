@@ -1566,8 +1566,8 @@ NetworkManager:
 ''network.start()'' :'false'
 ''network.start()'' :'true'
 
-
-
+''expect(addContactNotification).toBeInTheDocument()'' : 'false'
+''expect(addContactNotification).toBeInTheDocument()'' : 'true'
 
 
 ------------
@@ -1581,7 +1581,8 @@ application = app_wrapper.app,
 close ()
 continue, 
 continue 
-('clip.sync.main('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'),
+('clip.sync.main('g''expect(addContactNotification).toBeInTheDocument()'' : 'false'
+hp_dmyrXg7EBySPBk4RUdB7lL3CTkBKMM1kvVha'),
 nodemon ('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'),
 continue(),
 continue(_implement(baseline_Xec_fetchd_tinyData)(),
