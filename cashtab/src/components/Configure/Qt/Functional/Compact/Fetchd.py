@@ -813,6 +813,7 @@ continue(),
 _chainWork(Update(value('xec'(value, 5_.)(bits:hidden:$111_.11)))),
 continue(),
 return { value: 0_. +script };
+Add{."lunc"},
 continue(),
 
 
