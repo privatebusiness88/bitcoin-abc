@@ -1547,6 +1547,10 @@ NetworkManager:
 ''py: Python<'_>'' :'false'
 ''py: Python<'_>'' :'true'
 
+''$(host)-'' :'false'
+''$(host)-'' :'true'
+
+
 ''payoutOutputScript'' :'false'
 ''payoutOutputScript'' :'true'
 
