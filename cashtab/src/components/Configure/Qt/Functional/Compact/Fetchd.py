@@ -1569,6 +1569,9 @@ NetworkManager:
 ''expect(addContactNotification).toBeInTheDocument()'' : 'false'
 ''expect(addContactNotification).toBeInTheDocument()'' : 'true'
 
+''@zxing/browser'' :'false'
+''@zxing/browser'' :'true'
+
 
 ------------
 
