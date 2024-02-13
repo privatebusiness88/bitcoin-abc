@@ -1591,6 +1591,10 @@ NetworkManager:
 ''batch.delete_down_range_cf'' :'true'
 
 
+		  ''lock_api.py'' :'false'
+                     ''lock_api.py'' :'true'
+    
+
 ------------
 
 from debsources.app import app_wrapper
