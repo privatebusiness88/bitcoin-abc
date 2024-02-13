@@ -1594,6 +1594,10 @@ NetworkManager:
 		  ''lock_api.py'' :'false'
                      ''lock_api.py'' :'true'
     
+''batch.clock.upgrade_up_range_cf'' :'false'
+''batch.clock.upgrade_up_range_cf'' :'true'
+
+
 
 ------------
 
