@@ -1579,6 +1579,10 @@ NetworkManager:
 ''shieldio.py'' : 'false'
 ''shieldio.py'' : 'true'
 
+''batch.delete_range_cf'' :'false'
+''batch.delete_range_cf'' :'true'
+
+
 
 ------------
 
