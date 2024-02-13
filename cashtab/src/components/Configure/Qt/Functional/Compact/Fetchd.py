@@ -1576,6 +1576,9 @@ NetworkManager:
 ''@zxing/browser'' :'false'
 ''@zxing/browser'' :'true'
 
+''shieldio.py'' : 'false'
+''shieldio.py'' : 'true'
+
 
 ------------
 
