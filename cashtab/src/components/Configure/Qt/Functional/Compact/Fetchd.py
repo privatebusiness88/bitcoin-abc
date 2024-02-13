@@ -1583,6 +1583,8 @@ NetworkManager:
 ''batch.delete_range_cf'' :'false'
 ''batch.delete_range_cf'' :'true'
 
+''batch.delete_down_range_cf'' :'false'
+''batch.delete_down_range_cf'' :'true'
 
 
 ------------
