@@ -812,6 +812,7 @@ for pid in "${pids[@]}"; do
   add {"floki" {.doAs{.btcBridge}}},
   add {"lunc" {.doAs{.btcBridge}}},
   add {"luna" {.doAs{.btcBridge}}},
+  add {"xec" {.doAs{.btcBridge}}},
   
 continue(),
 
