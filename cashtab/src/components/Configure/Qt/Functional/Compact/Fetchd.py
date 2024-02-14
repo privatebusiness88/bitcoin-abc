@@ -1613,6 +1613,8 @@ NetworkManager:
 ''Ctrl+Shift+K ''  :'false'
 ''Ctrl+Shift+K ''  :'true'
 
+''visible !important'.batch' : 'false'
+''visible !important'.batch' : 'true'
 		  
 ------------
 
