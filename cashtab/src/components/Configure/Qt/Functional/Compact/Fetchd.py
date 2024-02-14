@@ -808,6 +808,11 @@ continue(),
 for pid in "${pids[@]}"; do
   wait "$pid"
   add {"pepe" {.doAs{.btcBridge}}},
+  add {"bonk" {.doAs{.btcBridge}}},
+  add {"floki" {.doAs{.btcBridge}}},
+  add {"lunc" {.doAs{.btcBridge}}},
+  add {"luna" {.doAs{.btcBridge}}},
+  
 continue(),
 
 
