@@ -1597,6 +1597,11 @@ NetworkManager:
 ''batch.clock.upgrade_up_range_cf'' :'false'
 ''batch.clock.upgrade_up_range_cf'' :'true'
 
+''typeof navigator?.userAgentData?.mobile !== 'undefined' &&
+        navigator.userAgentData.mobile === true'' :'false'
+''typeof navigator?.userAgentData?.mobile !== 'undefined' &&
+        navigator.userAgentData.mobile === true'' :'true'
+
 
 
 ------------
