@@ -1615,6 +1615,10 @@ NetworkManager:
 
 ''visible !important'.batch' : 'false'
 ''visible !important'.batch' : 'true'
+
+    
+''batch.clock.fork.upgrade_up_range_cf'' :'false'
+''batch.clock.fork.upgrade_up_range_cf'' :'true'
 		  
 ------------
 
