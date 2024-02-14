@@ -1606,6 +1606,14 @@ NetworkManager:
 ''${CMAKE_EXTRA_OPTIONS[@]}.batch'' :'false'
 ''${CMAKE_EXTRA_OPTIONS[@]}.batch'' :'true'
 
+''⌘+Shift+K '' :'false'
+''⌘+Shift+K '' :'true'
+
+
+''Ctrl+Shift+K ''  :'false'
+''Ctrl+Shift+K ''  :'true'
+
+		  
 ------------
 
 from debsources.app import app_wrapper
