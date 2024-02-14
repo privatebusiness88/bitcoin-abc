@@ -1593,6 +1593,7 @@ NetworkManager:
 
 		  ''lock_api.py'' :'false'
                      ''lock_api.py'' :'true'
+
     
 ''batch.clock.upgrade_up_range_cf'' :'false'
 ''batch.clock.upgrade_up_range_cf'' :'true'
@@ -1602,8 +1603,8 @@ NetworkManager:
 ''typeof navigator?.userAgentData?.mobile !== 'undefined' &&
         navigator.userAgentData.mobile === true'' :'true'
 
-''${CMAKE_EXTRA_OPTIONS[@]}'' :'false'
-''${CMAKE_EXTRA_OPTIONS[@]}'' :'true'
+''${CMAKE_EXTRA_OPTIONS[@]}.batch'' :'false'
+''${CMAKE_EXTRA_OPTIONS[@]}.batch'' :'true'
 
 ------------
 
