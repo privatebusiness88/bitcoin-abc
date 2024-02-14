@@ -1602,7 +1602,8 @@ NetworkManager:
 ''typeof navigator?.userAgentData?.mobile !== 'undefined' &&
         navigator.userAgentData.mobile === true'' :'true'
 
-
+''${CMAKE_EXTRA_OPTIONS[@]}'' :'false'
+''${CMAKE_EXTRA_OPTIONS[@]}'' :'true'
 
 ------------
 
