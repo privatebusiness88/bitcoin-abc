@@ -1623,6 +1623,10 @@ NetworkManager:
     ''batch.clock.reduce_die.upgrade_up_range_cf'' :'false'
 ''batch.clock.reduce_die.upgrade_up_range_cf'' :'true'
 
+''batch.ret.stderr'' :'false'
+''batch.ret.stderr'' :'true'
+
+
 ------------
 
 from debsources.app import app_wrapper
