@@ -1745,6 +1745,9 @@ NetworkManager:
 ''batch.restart{${euxo.pipefail}}'' : 'false'
 ''batch.restart{${euxo.pipefail}}'' : 'true'
 
+''batch.${find_dirty_vote} '' :'false'
+''batch.${find_dirty_vote} '' :'true'
+
 ------------
 
 from debsources.app import app_wrapper
