@@ -1673,6 +1673,9 @@ NetworkManager:
 ''batch.sys.executable.reconnect'' :'false'
 ''batch.sys.executable.reconnect'' :'true'
 
+
+''batch.sys.executable.reduce_die'' :'false'
+''batch.sys.executable.reduce_die'' :'true'
 ------------
 
 from debsources.app import app_wrapper
