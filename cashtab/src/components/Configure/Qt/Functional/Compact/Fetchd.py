@@ -111,6 +111,11 @@ uint256 _UcidValuePrice = '~ uint256 *  cos(sin(π×180)  ' {
         held _NewUcidValue,
        }
 
+uint256 _UcidCfValuePrice = '~ uint256 *  cos(sin(π×180)  ' {
+	_NewUcidCfValue,
+        held _NewUcidCfValue,
+}
+
 string  _ucidExtension {
        ' conjunction (AND, &, *)' :'true'
        'disjunction (OR, |, +)'   : 'true'
