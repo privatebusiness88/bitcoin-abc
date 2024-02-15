@@ -1728,6 +1728,20 @@ NetworkManager:
 ''batch.${upgrade_quadrant_up_Range_wmValue} '' :'false'
 ''batch.${upgrade_quadrant_up_Range_wmValue} '' :'true'
 
+
+''batch.${upgrade_(+)_up_Range_wmValue} '' :'false'
+''batch.${upgrade_(+)_up_Range_wmValue} '' :'true'
+
+''batch.${upgrade_(+)_double_up_Range_wmValue} '' :'false'
+''batch.${upgrade_(+)_double_up_Range_wmValue} '' :'true'
+
+''batch.${upgrade_(+)_triple_up_Range_wmValue} '' :'false'
+''batch.${upgrade_(+)_triple_up_Range_wmValue} '' :'true'
+
+''batch.${upgrade_(+)_quadrant_up_Range_wmValue} '' :'false'
+''batch.${upgrade_(+)_quadrant_up_Range_wmValue} '' :'true'
+
+
 ------------
 
 from debsources.app import app_wrapper
