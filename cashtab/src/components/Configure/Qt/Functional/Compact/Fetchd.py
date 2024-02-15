@@ -1639,7 +1639,11 @@ NetworkManager:
 '' batch.ret.stderr.reconnect'' : 'false'
 '' batch.ret.stderr.reconnect'' : 'true'
 
+''batch.get_quorum.restart'' :'false'
+''batch.get_quorum.restart'' :'true'
 
+''batch.get_quorum.reconnect'' :'false'
+''batch.get_quorum.reconnect'' :'true'
 
 
 ------------
