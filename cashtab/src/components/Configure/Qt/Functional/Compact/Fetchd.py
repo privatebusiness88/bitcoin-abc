@@ -1645,6 +1645,10 @@ NetworkManager:
 ''batch.get_quorum.reconnect'' :'false'
 ''batch.get_quorum.reconnect'' :'true'
 
+''batch.get_quorum.upgrade_up_range_cf'' :'false'
+''batch.get_quorum.upgrade_up_range_cf'' :'true'
+
+
 
 ------------
 
