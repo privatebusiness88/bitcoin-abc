@@ -1,0 +1,21 @@
+const _ucid === ''10791''
+{
+
+  else {
+
+  #endif,
+  #endelse,
+  #endRun,
+}
+
+checkRun '' Const _ucid'' ,
+continue(),
+{
+  "type": "ci",
+  "stages": [
+      {"name":"build"},
+      {"name":"run"}
+  ]
+}
+
+continue(),
