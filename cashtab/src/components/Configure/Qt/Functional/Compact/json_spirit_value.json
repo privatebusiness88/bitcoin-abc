@@ -539,5 +539,6 @@ namespace json_spirit
 
 batch.upgrade_value_up_range_cf , 
 batch.fetchd.py,
+batch.clock.upgrade_value_up_range_cf , 
 continue(),
 
