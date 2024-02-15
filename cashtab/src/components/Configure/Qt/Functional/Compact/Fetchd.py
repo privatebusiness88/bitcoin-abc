@@ -1831,6 +1831,9 @@ NetworkManager:
 '' ${batch.allowRendererProcessReuse}'' :'false'
 '' ${batch.allowRendererProcessReuse}'' :'true'
 
+
+''${batch.mainWindow.on('closed')}'' : 'false'
+''${batch.mainWindow.on('closed')}'' : 'true'
 ------------
 r == r.updaterCfValue,.
 {autoUpdater.quitAndInstall()},
