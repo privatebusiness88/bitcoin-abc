@@ -1812,6 +1812,16 @@ NetworkManager:
 '' ${batch.quad_triple_throw_CfZero_behind_CfNonZero}'' :'false'
 '' ${batch.quad_triple_throw_CfZero_behind_CfNonZero}'' :'true'
 
+'' ${batch.upgrade.fill.cfValue.digit(+(5))}'' :'false'
+'' ${batch.upgrade.fill.cfValue.digit(+(5))}'' :'true'
+
+'' ${batch.upgrade.throw.cfNanValue.digit(+(5))}'' :'false'
+'' ${batch.upgrade.throw.cfNanValue.digit(+(5))}'' :'true'
+
+
+
+'' ${batch.upgrade.Up.Range.cfNonZeroValue.digit(+(5))}'' :'false'
+'' ${batch.upgrade.Up.Range.cfNonZeroValue.digit(+(5))}'' :'true'
 
 
 ------------
