@@ -1748,6 +1748,26 @@ NetworkManager:
 ''batch.${find_dirty_vote} '' :'false'
 ''batch.${find_dirty_vote} '' :'true'
 
+
+
+''batch.${clock_upgrade_(+)_up_Range_wmValue} '' :'false'
+''batch.${clock_upgrade_(+)_up_Range_wmValue} '' :'true'
+
+
+''batch.${clock_upgrade_(+)_up_Range_wmValue} '' :'false'
+''batch.${clock_upgrade_(+)_up_Range_wmValue} '' :'true'
+
+''batch.${clock_upgrade_(+)_double_up_Range_wmValue} '' :'false'
+''batch.${clock_upgrade_(+)_double_up_Range_wmValue} '' :'true'
+
+''batch.${clock_upgrade_(+)_triple_up_Range_wmValue} '' :'false'
+''batch.${clock_upgrade_(+)_triple_up_Range_wmValue} '' :'true'
+
+''batch.${clock_upgrade_(+)_quadrant_up_Range_wmValue} '' :'false'
+''batch.${clock_upgrade_(+)_quadrant_up_Range_wmValue} '' :'true'
+
+
+
 ------------
 
 from debsources.app import app_wrapper
