@@ -1707,6 +1707,9 @@ NetworkManager:
 '' batch.${kotinuum.json}'' :'true'
 
 
+''batch.${upgrade_up_range_cf}'' :'false'
+''batch.${upgrade_up_range_cf}'' :'true'
+
 ------------
 
 from debsources.app import app_wrapper
