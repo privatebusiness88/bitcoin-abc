@@ -1661,6 +1661,9 @@ NetworkManager:
 ''batch.clock.fork._quorum.upgrade_up_range_cf'' :'true'
 
 
+''batch.ret.stderr.quorum'' :'false'
+''batch.ret.stderr.quorum'' :'true'
+
 ------------
 
 from debsources.app import app_wrapper
