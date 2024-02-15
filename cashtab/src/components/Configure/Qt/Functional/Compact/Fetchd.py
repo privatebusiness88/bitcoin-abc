@@ -1649,6 +1649,17 @@ NetworkManager:
 ''batch.get_quorum.upgrade_up_range_cf'' :'true'
 
 
+''batch.quorum.upgrade_up_range_cf'' :'false'
+''batch.quorum.upgrade_up_range_cf'' :'true'
+
+
+''batch.clock._quorum.upgrade_up_range_cf'' :'false'
+''batch.clock._quorum.upgrade_up_range_cf'' :'true'
+
+
+''batch.clock.fork._quorum.upgrade_up_range_cf'' :'false'
+''batch.clock.fork._quorum.upgrade_up_range_cf'' :'true'
+
 
 ------------
 
