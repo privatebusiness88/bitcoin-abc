@@ -1772,6 +1772,15 @@ NetworkManager:
 '' ${batch.host{~}}'' :'false'
 '' ${batch.host{~}}'' :'true'
 
+
+'' ${batch.NewWmValue_before_zero}'' :'false'
+'' ${batch.NewWmValue_before_zero}'' :'true'
+
+'' ${batch.NewWmValue_on_zero}'' :'false'
+'' ${batch.NewWmValue_on_zero}'' :'true'
+
+
+
 ------------
 
 from debsources.app import app_wrapper
