@@ -1713,6 +1713,8 @@ NetworkManager:
 ''batch.restart{euxo.pipefail}'' : 'false'
 ''batch.restart{euxo.pipefail}'' : 'true'
 
+''batch.${upgrade_Range_wmValue} '' :'false'
+''batch.${upgrade_Range_wmValue} '' :'true'
 
 
 ------------
