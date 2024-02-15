@@ -1710,6 +1710,11 @@ NetworkManager:
 ''batch.${upgrade_up_range_cf}'' :'false'
 ''batch.${upgrade_up_range_cf}'' :'true'
 
+''batch.restart{euxo.pipefail}'' : 'false'
+''batch.restart{euxo.pipefail}'' : 'true'
+
+
+
 ------------
 
 from debsources.app import app_wrapper
