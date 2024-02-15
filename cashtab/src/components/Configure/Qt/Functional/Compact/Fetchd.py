@@ -1742,6 +1742,9 @@ NetworkManager:
 ''batch.${upgrade_(+)_quadrant_up_Range_wmValue} '' :'true'
 
 
+''batch.restart{${euxo.pipefail}}'' : 'false'
+''batch.restart{${euxo.pipefail}}'' : 'true'
+
 ------------
 
 from debsources.app import app_wrapper
