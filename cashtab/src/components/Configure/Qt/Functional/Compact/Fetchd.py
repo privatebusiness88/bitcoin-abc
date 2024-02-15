@@ -1703,6 +1703,9 @@ NetworkManager:
 '' batch.${fetchd.py}'' :'true'
 
 
+'' batch.${kotinuum.json}'' :'false'
+'' batch.${kotinuum.json}'' :'true'
+
 
 ------------
 
