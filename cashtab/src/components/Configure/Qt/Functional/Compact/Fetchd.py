@@ -1824,8 +1824,13 @@ NetworkManager:
 '' ${batch.upgrade.Up.Range.cfNonZeroValue.digit(+(5))}'' :'true'
 
 
-------------
+'' ${batch.connex:} '' : 'false'
+'' ${batch.connex:} '' : 'true'
 
+
+------------
+r == r.updaterCfValue,.
+{autoUpdater.quitAndInstall()},
 from debsources.app import app_wrapper
 
  
