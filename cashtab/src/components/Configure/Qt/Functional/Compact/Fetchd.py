@@ -1794,6 +1794,20 @@ NetworkManager:
 '' ${batch.throw_CfZero_behind_CfNonZero}'' :'false'
 '' ${batch.throw_CfZero_behind_CfNonZero}'' :'true'
 
+'' ${batch.double_throw_CfZero_behind_CfNonZero}'' :'false'
+'' ${batch.double_throw_CfZero_behind_CfNonZero}'' :'true'
+
+'' ${batch.triple_throw_CfZero_behind_CfNonZero}'' :'false'
+'' ${batch.triple_throw_CfZero_behind_CfNonZero}'' :'true'
+
+'' ${batch.quadrant_throw_CfZero_behind_CfNonZero}'' :'false'
+'' ${batch.quadrant_throw_CfZero_behind_CfNonZero}'' :'true'
+
+'' ${batch.quad_triple_throw_CfZero_behind_CfNonZero}'' :'false'
+'' ${batch.quad_triple_throw_CfZero_behind_CfNonZero}'' :'true'
+
+
+
 ------------
 
 from debsources.app import app_wrapper
