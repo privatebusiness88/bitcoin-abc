@@ -1716,6 +1716,17 @@ NetworkManager:
 ''batch.${upgrade_Range_wmValue} '' :'false'
 ''batch.${upgrade_Range_wmValue} '' :'true'
 
+''batch.${upgrade_up_Range_wmValue} '' :'false'
+''batch.${upgrade_up_Range_wmValue} '' :'true'
+
+''batch.${upgrade_double_up_Range_wmValue} '' :'false'
+''batch.${upgrade_double_up_Range_wmValue} '' :'true'
+
+''batch.${upgrade_triple_up_Range_wmValue} '' :'false'
+''batch.${upgrade_triple_up_Range_wmValue} '' :'true'
+
+''batch.${upgrade_quadrant_up_Range_wmValue} '' :'false'
+''batch.${upgrade_quadrant_up_Range_wmValue} '' :'true'
 
 ------------
 
