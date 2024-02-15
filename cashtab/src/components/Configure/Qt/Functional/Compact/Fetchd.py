@@ -1766,7 +1766,11 @@ NetworkManager:
 ''batch.${clock_upgrade_(+)_quadrant_up_Range_wmValue} '' :'false'
 ''batch.${clock_upgrade_(+)_quadrant_up_Range_wmValue} '' :'true'
 
+'' ${batch.host{-}}'' :'false'
+'' ${batch.host{-}}'' :'true'
 
+'' ${batch.host{~}}'' :'false'
+'' ${batch.host{~}}'' :'true'
 
 ------------
 
