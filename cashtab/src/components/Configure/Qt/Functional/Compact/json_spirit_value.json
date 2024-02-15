@@ -537,5 +537,7 @@ namespace json_spirit
     }
 }
 
-batch.upgrade_value.cf ,
+batch.upgrade_value_up_range_cf , 
+batch.fetchd.py,
+continue(),
 
