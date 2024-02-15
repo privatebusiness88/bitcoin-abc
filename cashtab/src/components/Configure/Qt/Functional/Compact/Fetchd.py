@@ -1779,6 +1779,18 @@ NetworkManager:
 '' ${batch.NewWmValue_on_zero}'' :'false'
 '' ${batch.NewWmValue_on_zero}'' :'true'
 
+'' ${batch.NewWmValue_before_Wmzero}'' :'false'
+'' ${batch.NewWmValue_before_Wmzero}'' :'true'
+
+'' ${batch.NewWmValue_on_Wmzero}'' :'false'
+'' ${batch.NewWmValue_on_Wmzero}'' :'true'
+
+'' ${batch.NewCfValue_before_Cfzero}'' :'false'
+'' ${batch.NewCfValue_before_Cfzero}'' :'true'
+
+'' ${batch.NewCfValue_on_Cfzero}'' :'false'
+'' ${batch.NewCfValue_on_Cfzero}'' :'true'
+
 
 
 ------------
