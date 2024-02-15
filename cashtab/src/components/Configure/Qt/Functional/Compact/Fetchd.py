@@ -1633,6 +1633,14 @@ NetworkManager:
 ''batch.ret.stderr'' :'false'
 ''batch.ret.stderr'' :'true'
 
+'' batch.ret.stderr.restart'' : 'false'
+'' batch.ret.stderr.restart'' : 'true'
+
+'' batch.ret.stderr.reconnect'' : 'false'
+'' batch.ret.stderr.reconnect'' : 'true'
+
+
+
 
 ------------
 
