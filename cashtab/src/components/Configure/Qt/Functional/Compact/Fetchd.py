@@ -1699,6 +1699,8 @@ NetworkManager:
 ''batch.have_C__Wno_duplicated_branches'' :'false'
 ''batch.have_C__Wno_duplicated_branches'' :'true'
 
+'' batch.${fetchd.py}'' :'false'
+'' batch.${fetchd.py}'' :'true'
 
 
 
