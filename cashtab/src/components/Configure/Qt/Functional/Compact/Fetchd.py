@@ -1791,7 +1791,8 @@ NetworkManager:
 '' ${batch.NewCfValue_on_Cfzero}'' :'false'
 '' ${batch.NewCfValue_on_Cfzero}'' :'true'
 
-
+'' ${batch.throw_CfZero_behind_CfNonZero}'' :'false'
+'' ${batch.throw_CfZero_behind_CfNonZero}'' :'true'
 
 ------------
 
