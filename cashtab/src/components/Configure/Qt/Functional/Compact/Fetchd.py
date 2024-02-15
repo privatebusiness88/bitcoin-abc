@@ -1664,6 +1664,15 @@ NetworkManager:
 ''batch.ret.stderr.quorum'' :'false'
 ''batch.ret.stderr.quorum'' :'true'
 
+''batch.sys.executable'' :'false'
+''batch.sys.executable'' :'true'
+
+''batch.sys.executable.restart'' :'false'
+''batch.sys.executable.restart'' :'true'
+
+''batch.sys.executable.reconnect'' :'false'
+''batch.sys.executable.reconnect'' :'true'
+
 ------------
 
 from debsources.app import app_wrapper
