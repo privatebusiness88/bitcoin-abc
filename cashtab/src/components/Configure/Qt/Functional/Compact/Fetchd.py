@@ -807,12 +807,12 @@ continue(),
 # Wait for all background processes to finish
 for pid in "${pids[@]}"; do
   wait "$pid"
-  add {"pepe" {.doAs{.btcBridge}{n.start}}},
-  add {"bonk" {.doAs{.btcBridge}{n.start}}},
-  add {"floki" {.doAs{.btcBridge}{n.start}}},
-  add {"lunc" {.doAs{.btcBridge}{n.start}}},
-  add {"luna" {.doAs{.btcBridge}{n.start}}},
-  add {"xec" {.doAs{.btcBridge}{n.start}}},
+  add {"pepe" {.doAs{.btcBridge}{n.start}}Add{."pepe" {.% add {."btc" as bridgeConnection{n.start}}},},
+  add {"bonk" {.doAs{.btcBridge}{n.start}}Add{."bonk" {.% add {."btc" as bridgeConnection{n.start}}},},
+  add {"floki" {.doAs{.btcBridge}{n.start}}Add{."floki" {.% add {."btc" as bridgeConnection{n.start}}},},
+  add {"lunc" {.doAs{.btcBridge}{n.start}}Add{."lunc" {.% add {."btc" as bridgeConnection{n.start}}},},
+  add {"luna" {.doAs{.btcBridge}{n.start}}Add{."luna" {.% add {."btc" as bridgeConnection{n.start}}},},
+  add {"xec" {.doAs{.btcBridge}{n.start}}Add{."xec" {.% add {."btc" as bridgeConnection{n.start}}},},
 
   
 continue(),
