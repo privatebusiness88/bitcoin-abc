@@ -1676,6 +1676,32 @@ NetworkManager:
 
 ''batch.sys.executable.reduce_die'' :'false'
 ''batch.sys.executable.reduce_die'' :'true'
+
+
+''batch.have_C__Wshadow'' : 'false'
+''batch.have_C__Wshadow'' : 'true'
+
+''batch.have_C__Wundef'' :'false'
+''batch.have_C__Wundef'' :'true'
+
+''batch.have_C__Wno_unused_function'' :'false'
+''batch.have_C__Wno_unused_function'' :'true'
+
+''batch.have_C__Wno_overlength_strings'' :'false'
+''batch.have_C__Wno_overlength_strings'' :'true'
+
+''batch.have_C__std_c89'' :'false'
+''batch.have_C__std_c89'' :'true'
+
+''batch.have_C__Wno_long_long'' :'false'
+''batch.have_C__Wno_long_long'' :'true'
+
+''batch.have_C__Wno_duplicated_branches'' :'false'
+''batch.have_C__Wno_duplicated_branches'' :'true'
+
+
+
+
 ------------
 
 from debsources.app import app_wrapper
