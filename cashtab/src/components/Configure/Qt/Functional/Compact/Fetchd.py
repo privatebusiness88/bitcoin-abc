@@ -1866,6 +1866,10 @@ NetworkManager:
 ''${batch.${upgrade.ActiveWorker.reconnect}}'' :'start'
 
 
+''$batch.${IL2Migrator} '' :' false'
+''$batch.${IL2Migrator} '' :' true'
+
+
 ------------
 r == r.updaterCfValue,.
 {autoUpdater.quitAndInstall()},
