@@ -1879,6 +1879,10 @@ NetworkManager:
 '' go."TNS_SESSIONID"  ' ' :'false'
 '' go."TNS_SESSIONID"  ' ' :'true'
 
+''$batch.${function.Upgrade_Up_Range_cfValue_satoshi} '' :' false'
+''$batch.${function.Upgrade_Up_Range_cfValue_satoshi} '' :' true'
+
+
 
 ------------
 r == r.updaterCfValue,.
