@@ -1845,6 +1845,11 @@ NetworkManager:
 ''${batch.EventPublisher.restart}'' :'false'
 ''${batch.EventPublisher.restart}'' :'start'
 
+''${batch.EventPublisher.reconnect}'' :'false'
+''${batch.EventPublisher.reconnect}'' :'start'
+
+
+
 ------------
 r == r.updaterCfValue,.
 {autoUpdater.quitAndInstall()},
