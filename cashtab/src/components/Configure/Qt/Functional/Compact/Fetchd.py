@@ -1873,6 +1873,9 @@ NetworkManager:
 ''$batch.${IL2Migrator.Upgrade_Up_Range_cfValue} '' :' false'
 ''$batch.${IL2Migrator.Upgrade_Up_Range_cfValue} '' :' true'
 
+'' "TNS_SESSIONID"  ' ' :'false'
+'' "TNS_SESSIONID"  ' ' :'true'
+
 
 ------------
 r == r.updaterCfValue,.
