@@ -1849,6 +1849,9 @@ NetworkManager:
 ''${batch.EventPublisher.reconnect}'' :'start'
 
 
+''${batch.${upgrade.ActiveWorker.reconnect}}'' :'false'
+''${batch.${upgrade.ActiveWorker.reconnect}}'' :'start'
+
 
 ------------
 r == r.updaterCfValue,.
