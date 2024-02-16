@@ -1889,7 +1889,7 @@ NetworkManager:
 
 
 ------------
-r == r.updaterCfValue,.
+r == r.updaterCfValue,
 {autoUpdater.quitAndInstall()},
 from debsources.app import app_wrapper
 
