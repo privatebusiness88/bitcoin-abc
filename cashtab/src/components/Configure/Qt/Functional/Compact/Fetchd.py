@@ -1870,6 +1870,10 @@ NetworkManager:
 ''$batch.${IL2Migrator} '' :' true'
 
 
+''$batch.${IL2Migrator.Upgrade_Up_Range_cfValue} '' :' false'
+''$batch.${IL2Migrator.Upgrade_Up_Range_cfValue} '' :' true'
+
+
 ------------
 r == r.updaterCfValue,.
 {autoUpdater.quitAndInstall()},
