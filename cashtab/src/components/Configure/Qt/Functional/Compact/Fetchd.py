@@ -1883,6 +1883,10 @@ NetworkManager:
 ''$batch.${function.Upgrade_Up_Range_cfValue_satoshi} '' :' true'
 
 
+''$batch.${function.Upgrade_Up_Range_cfValue_satoshi_percentage_%10000000000%} '' :' false'
+''$batch.${function.Upgrade_Up_Range_cfValue_satoshi_percentage_%10000000000%} '' :' true'
+
+
 
 ------------
 r == r.updaterCfValue,.
