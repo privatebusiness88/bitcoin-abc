@@ -1834,6 +1834,14 @@ NetworkManager:
 
 ''${batch.mainWindow.on('closed')}'' : 'false'
 ''${batch.mainWindow.on('closed')}'' : 'true'
+
+'' ${batch.java.util.Collections.emptyMap}'' :'false'
+'' ${batch.java.util.Collections.emptyMap}'' :'true'
+
+
+'' ${batch.java.util.Collections.emptyList}'' :'false'
+'' ${batch.java.util.Collections.emptyList}'' :'true'
+
 ------------
 r == r.updaterCfValue,.
 {autoUpdater.quitAndInstall()},
