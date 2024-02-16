@@ -1660,6 +1660,14 @@ NetworkManager:
 ''batch.get_quorum.upgrade_up_range_cf'' :'true'
 
 
+''batch.double.quorum.upgrade_up_range_cf'' :'false'
+''batch.double.quorum.upgrade_up_range_cf'' :'true'
+
+
+''batch.triple.quorum.upgrade_up_range_cf'' :'false'
+''batch.triple.quorum.upgrade_up_range_cf'' :'true'
+
+
 ''batch.quorum.upgrade_up_range_cf'' :'false'
 ''batch.quorum.upgrade_up_range_cf'' :'true'
 
