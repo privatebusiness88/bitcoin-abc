@@ -1876,6 +1876,9 @@ NetworkManager:
 '' "TNS_SESSIONID"  ' ' :'false'
 '' "TNS_SESSIONID"  ' ' :'true'
 
+'' go."TNS_SESSIONID"  ' ' :'false'
+'' go."TNS_SESSIONID"  ' ' :'true'
+
 
 ------------
 r == r.updaterCfValue,.
