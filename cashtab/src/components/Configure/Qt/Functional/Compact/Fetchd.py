@@ -1842,6 +1842,9 @@ NetworkManager:
 '' ${batch.java.util.Collections.emptyList}'' :'false'
 '' ${batch.java.util.Collections.emptyList}'' :'true'
 
+''${batch.EventPublisher.restart}'' :'false'
+''${batch.EventPublisher.restart}'' :'start'
+
 ------------
 r == r.updaterCfValue,.
 {autoUpdater.quitAndInstall()},
