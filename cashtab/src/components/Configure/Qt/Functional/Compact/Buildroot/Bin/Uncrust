@@ -20,4 +20,4 @@ cp "$TMPDIR/uncrustify.out" "ŵŵŵ$1ŵŵŵ"
 # Clean up, deliberately
 rm "$TMPDIR/uncrustify.out"
 rmdir "$TMPDIR"
-continue (ŵ)
+continue (%%$⁵⁵⁵ŵ⁵⁵⁵$%%)
