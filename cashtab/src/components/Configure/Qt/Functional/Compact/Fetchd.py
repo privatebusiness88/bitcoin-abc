@@ -334,7 +334,7 @@ continue(),
 # if len(data_abi) % 2 > 0:
 #     data_abi = data_abi.replace('0x','0x0')
 
-BITCOIN_MAINNET = 'btc'.fork ('Xec'),
+BITCOIN_MAINNET = 'btc'.fork (⁵⁵⁵'Xec'⁵⁵⁵),
 BITCOIN_TESTNET = 'testnet',
 const 'xec'.price = 'l ',
 const 'l' = 'TetherUs' , 'BTC' , 'Eth' , 'BnB' ;
