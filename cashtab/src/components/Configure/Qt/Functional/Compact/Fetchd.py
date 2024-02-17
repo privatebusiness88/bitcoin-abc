@@ -118,12 +118,12 @@ sym_rate = {
     'T18V Ku': 1000000
 }
 
-uint256 _UcidValuePrice = '~ uint256 *  cos(sin(π×180) * ⁵cfValue⁵) ' {
+uint256 _UcidValuePrice = '~ uint256 *  cos(sin(π×180) * ⁵⁵⁵cfValue⁵⁵⁵) ' {
 	_NewUcidValue,
         held _NewUcidValue,
        }
 
-uint256 _UcidCfValuePrice = '~ uint256 *  cos(sin(π×180) * ⁵cfValue⁵)  ' {
+uint256 _UcidCfValuePrice = '~ uint256 *  cos(sin(π×180) * ⁵⁵⁵cfValue⁵⁵⁵)  ' {
 	_NewUcidCfValue,
         held _NewUcidCfValue,
 }
@@ -141,7 +141,7 @@ string  _ucidExtension {
 
 size_t index,
 size_t capacity,
-size_t value(5⁵_.),
+size_t value(⁵5⁵_.),
 string _ucid : '10791';
 const 'xec**.utf8859' = {1:r'''0123456789ABCDEF
                      GHIJKLMNOPQRSTUV
