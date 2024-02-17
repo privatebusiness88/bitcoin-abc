@@ -15,6 +15,9 @@ call ('%%ŵ%%'),
 call.step,
 _ucid.step.repeatance.ns,
 _ucid.all.step.repeatance.ns,
+_ucid.all.step.repeatance.ns,
+_ucid.all.step.repeatance.ns,
+
 
 continue(),
 
