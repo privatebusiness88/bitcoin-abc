@@ -4,7 +4,9 @@
 #
 
 TMPDIR=`mktemp -d`
-continue (ŵ)
+continue (%%ŵ%%)
+.catch (criminal)
+.seiz (criminalAsset)
 # Reformat a single file to tmp/
 uncrustify -l CPP -c ./buildroot/share/extras/uncrustify.cfg -f "$1" >$TMPDIR/uncrustify.out
 
