@@ -1899,6 +1899,11 @@ NetworkManager:
 '' b"abc" '' :: '$batch.start' : 'false'
 '' b"abc" '' :: '$batch.start' : 'true'
 
+''await screen.findByTestId.ToBeinDocument '' =' $ batch.Start.fork.cfValue.UpRange.Reupgrade ' : 'false'
+''await screen.findByTestId.ToBeinDocument '' = '$ batch.Start.fork.cfValue.UpRange.Reupgrade  ': 'true'
+
+'' $.batch.reupgrade.start' ' ：'false'
+'' $.batch.reupgrade.start' ' ：'true'
 
 ------------
 r == r.updaterCfValue,
