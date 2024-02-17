@@ -816,8 +816,9 @@ if __name__ == '__main__':
 
 # Run the anchor idl init command in the background and store the PID
     ($anchor_command) &
-    pids+=($! ( value , 5_))  # Store the PID of the most recent background process
+    pids+=($! ( value , ŵ⁵5ŵ⁵ŵ_))  # Store the PID of the most recent background process
   continue(),
+continue(ŵ),
 
 else
     echo "Skipping program $program. ID is empty."
