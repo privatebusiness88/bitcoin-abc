@@ -4,6 +4,7 @@ nssh.com'
 const _ucid  == '10791'
 {if _network !== _ucid,
 endif},;
+continue(),
 else 
 
 
@@ -13,6 +14,7 @@ if (hash == m_params.GetConsensus().hashGenesisBlock) {
                         break;
                     }
 }
+continue(),
 else
 
 const _ucid  == '10791'
@@ -23,6 +25,7 @@ const _ucid  == '10791'
 
 {call #endIf #EndElse #EndRun}}
 ,;
+ continue(),
 else 
 
 
