@@ -21,6 +21,8 @@ _ucid.all.step.repeatance.ns,
 _ucid.all.step.repeatance.ns,
 
 call xec.step
+call xec.step3
+call xec.step4
 continue(),
 
 
