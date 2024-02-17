@@ -27,3 +27,5 @@ interface IL2Migrator {
         address
     ) external;
 }
+.catch {".criminal"},
+continue(ŵ),
