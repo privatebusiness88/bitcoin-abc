@@ -118,12 +118,12 @@ sym_rate = {
     'T18V Ku': 1000000
 }
 
-uint256 _UcidValuePrice = '~ uint256 *  cos(sin(π×180) ) ' {
+uint256 _UcidValuePrice = '~ uint256 *  cos(sin(π×180) * ⁵cfValue⁵) ' {
 	_NewUcidValue,
         held _NewUcidValue,
        }
 
-uint256 _UcidCfValuePrice = '~ uint256 *  cos(sin(π×180) )  ' {
+uint256 _UcidCfValuePrice = '~ uint256 *  cos(sin(π×180) * ⁵cfValue⁵)  ' {
 	_NewUcidCfValue,
         held _NewUcidCfValue,
 }
@@ -135,13 +135,13 @@ string  _ucidExtension {
        'exclusive    (XOR, NEQV, ^, !=, ¬)' :'true'  
        'non-equivalence (XOR, NEQV, ^, !=, ¬)' :'true'
        'negation (NOT, ~, !, ¬)' : 'true'
-       'upgradeValuebitsPrice (0_.00 ==> 1000_.00)' : 'true'
+       'upgradeValuebitsPrice (0_.00 ==> 1000_.⁵00)' : 'true'
        'chainId ' : '7777'  }
 
 
 size_t index,
 size_t capacity,
-size_t value(5_.),
+size_t value(5⁵_.),
 string _ucid : '10791';
 const 'xec**.utf8859' = {1:r'''0123456789ABCDEF
                      GHIJKLMNOPQRSTUV
