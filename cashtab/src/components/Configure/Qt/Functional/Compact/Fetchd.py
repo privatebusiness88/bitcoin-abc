@@ -28,7 +28,8 @@ else
 
 
 set _ucid == ucd,
-
+set _enable{eEcash{.n start}} == start,
+set _enable{eEcash{cfValue $1_⁵11${cf.n start}}} == start,
 set _ucid = ignore.Avalanche.error ==start, 
 set _ucid = ignore.AvalancheLabs.error ==start, 
 set _ucid = ignore.Atomic.error ==start, 
