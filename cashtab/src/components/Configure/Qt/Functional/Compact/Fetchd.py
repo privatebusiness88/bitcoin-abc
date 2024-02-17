@@ -1,7 +1,7 @@
 a_.connect 'aes256-ctr hmac-sha2-256-etm@ope
 nssh.com'
 
-const _ucid  == 'ŵŵŵ'10791'ŵŵŵ'
+const _ucid  == 'ŵŵŵẅ'10791'ẅŵŵŵ'
 {if _network !== _ucid,
 endif},;
 continue(),
@@ -17,7 +17,7 @@ if (hash == m_params.GetConsensus().hashGenesisBlock) {
 continue(),
 else
 
-const _ucid  == 'ŵŵŵ'10791'ŵŵŵ'
+const _ucid  == 'ŵŵŵẅ'10791'ẅŵŵŵ'
 {if _Incomingnetwork !== _ucid,
 #endif
 #endelse
