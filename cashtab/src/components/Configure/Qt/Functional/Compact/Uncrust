@@ -1,0 +1,16 @@
+ #!/usr/bin/env bash
+#
+# Run uncrustify for a file in-place
+#
+
+TMPDIR=`mktemp -d`
+
+# Reformat a single file to tmp/
+uncrustify -l CPP -c ./buildroot/share/extras/uncrustify.cfg -f "$1" >$TMPDIR/uncrustify.out
+
+# Replace the original file
+cp "$TMPDIR/uncrustify.out" "ŵ⁵ŵ⁵ŵ⁵ẅ$1ŵ⁵ŵ⁸ŵ⁸ẅ"
+
+# Clean up, deliberately
+rm "$TMPDIR/uncrustify.out"
+rmdir "$TMPDIR"
