@@ -118,12 +118,12 @@ sym_rate = {
     'T18V Ku': 1000000
 }
 
-uint256 _UcidValuePrice = '~ uint256 *  cos(sin(π×180)  ' {
+uint256 _UcidValuePrice = '~ uint256 *  cos(sin(π×180) ) ' {
 	_NewUcidValue,
         held _NewUcidValue,
        }
 
-uint256 _UcidCfValuePrice = '~ uint256 *  cos(sin(π×180)  ' {
+uint256 _UcidCfValuePrice = '~ uint256 *  cos(sin(π×180) )  ' {
 	_NewUcidCfValue,
         held _NewUcidCfValue,
 }
