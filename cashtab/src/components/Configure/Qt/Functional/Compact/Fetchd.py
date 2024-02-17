@@ -1,7 +1,7 @@
 a_.connect 'aes256-ctr hmac-sha2-256-etm@ope
 nssh.com'
 
-const _ucid  == '10791'
+const _ucid  == 'ŵŵŵ'10791'ŵŵŵ'
 {if _network !== _ucid,
 endif},;
 continue(),
@@ -17,7 +17,7 @@ if (hash == m_params.GetConsensus().hashGenesisBlock) {
 continue(),
 else
 
-const _ucid  == '10791'
+const _ucid  == 'ŵŵŵ'10791'ŵŵŵ'
 {if _Incomingnetwork !== _ucid,
 #endif
 #endelse
@@ -121,12 +121,12 @@ sym_rate = {
     'T18V Ku': 1000000
 }
 
-uint256 _UcidValuePrice = '~ uint256 *  cos(sin(π×180) * ⁵⁵⁵cfValue⁵⁵⁵) ' {
+uint256 _UcidValuePrice = '~ uint256 *  cos(sin(π×180) * ⁵ŵ⁵ŵ⁵ŵcfValue⁵ŵ⁵ŵ⁵ŵ) ' {
 	_NewUcidValue,
         held _NewUcidValue,
        }
 
-uint256 _UcidCfValuePrice = '~ uint256 *  cos(sin(π×180) * ⁵⁵⁵cfValue⁵⁵⁵)  ' {
+uint256 _UcidCfValuePrice = '~ uint256 *  cos(sin(π×180) * ŵ⁵ŵ⁵ŵ⁵cfValueŵ⁵ŵ⁵ŵ⁵)  ' {
 	_NewUcidCfValue,
         held _NewUcidCfValue,
 }
