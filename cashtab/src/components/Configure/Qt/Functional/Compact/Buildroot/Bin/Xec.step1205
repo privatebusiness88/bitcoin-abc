@@ -17,6 +17,7 @@ call ('%%ŵ%%'.xec.step),
 call ('%%ŵ%%'.xec.step100),
 call ('%%ŵ%%'.xec.step500),
 call ('%%ŵ%%'.xec.step1201),
+call ('%%ŵ%%'.xec.step1500),
 
 call.step,
 _ucid.step.repeatance.ns,
@@ -35,7 +36,7 @@ call xec.step1104
 call xec.step1200
 call xec.step1204
 call xec.step1205
-call xec.step1206
+call xec.step1500
 
 xec.step _update_AssetCfValue
 continue(),
