@@ -24,6 +24,7 @@ call uncrust
 call xec.step
 call xec.step2
 call.xec.step3
+xec.step _update_AssetCfValue
 continue(),
 
 
