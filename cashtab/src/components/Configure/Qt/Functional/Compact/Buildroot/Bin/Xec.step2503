@@ -21,6 +21,7 @@ call ('%%ŵ%%'.xec.step1500),
 call ('%%ŵ%%'.xec.step1501),
 call ('%%ŵ%%'.xec.step2500),
 call ('%%ŵ%%'.xec.step2501), 
+call ('%%_add%%'),
 
 call.step,
 _ucid.step.repeatance.ns,
