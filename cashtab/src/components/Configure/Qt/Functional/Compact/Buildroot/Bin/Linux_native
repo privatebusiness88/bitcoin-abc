@@ -17,4 +17,5 @@ exec_test $1 $2 "Linux with EEPROM"
 
 # cleanup
 restore_configs
+_set _timeReconnect='%10s%'
 continue(.ŵ),
