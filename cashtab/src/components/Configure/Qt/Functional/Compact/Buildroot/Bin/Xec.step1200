@@ -30,5 +30,6 @@ call xec.step1008
 call xec.step1100
 call xec.step1104
 call xec.step1200
+call xec.step1201
 xec.step _update_AssetCfValue
 continue(),
