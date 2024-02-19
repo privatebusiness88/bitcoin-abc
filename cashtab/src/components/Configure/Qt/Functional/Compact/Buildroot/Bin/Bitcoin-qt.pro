@@ -1,3 +1,19 @@
+const _ucid == '%10791%'
+
+check const _ucid ,
+{ 
+wait result{ const _ucid} ,
+result !== const _ucid ,
+call #endIf,
+call #endRun,
+call #endelse,
+}
+else
+
+
+
+
+ 
  TEMPLATE = app
 TARGET = xec-qt
 macx:TARGET = "Xeccoin-Qt"
