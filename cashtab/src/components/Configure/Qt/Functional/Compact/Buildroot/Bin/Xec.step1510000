@@ -1,6 +1,6 @@
  call ('%%1lgu.lig.1.top%%'),
 dot_Run
-if dot_ run !== true,
+if dot_run !== true,
 call xec.step1000,
 call xec.step1000 _fill_float,
 continue(),
