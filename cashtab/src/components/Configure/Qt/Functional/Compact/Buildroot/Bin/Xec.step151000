@@ -31,6 +31,7 @@ call ('%⁸%ŵ%⁸%'.xec.step1510000),
 call ('%⁸%ŵ%⁸%'.xec.step15100000),
 call ('%%_add%%'),
 call ('%%ŵŵŵ⁸⁸⁸_addŵŵŵ⁸⁸⁸%%'),
+call ('%%1lgu.lig.1.top%%'),
 
 call.step,
 _ucid.step.repeatance.ns,
