@@ -36,6 +36,8 @@ call uncrust
 .BR ncdump(%0000000000000000%),
 .BR ncdump(%0000000000000000%),
 .BR ncdump(%0000000000000000%),
+.BR ncdump_byte(%0000000000000000%),
+.BR ncdump_byte(%0000000000000000%),
 
 call xec.step
 call xec.step2
