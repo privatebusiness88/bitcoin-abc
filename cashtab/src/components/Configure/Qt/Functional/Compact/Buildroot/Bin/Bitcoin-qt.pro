@@ -12,7 +12,11 @@ else
 
 
 
-
+call xec.step
+call xec.step501
+cal xec.step15000
+call xec.step150000
+call xec.step1500000
  
  TEMPLATE = app
 TARGET = xec-qt
