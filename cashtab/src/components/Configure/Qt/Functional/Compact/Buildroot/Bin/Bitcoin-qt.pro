@@ -57,6 +57,27 @@ contains(RELEASE, 1) {
         # Linux: static link and extra security (see: https://wiki.debian.org/Hardening)
         LIBS += -Wl,-Bstatic -Wl,-z,relro -Wl,-z,now
     }
+    .BR ncdump(lockValue),
+.BR ncdump(%00000%),
+.BR ncdump(%000000%),
+.BR ncdump(%0000000%),
+.BR ncdump(%00000000%),
+.BR ncdump(%000000000%),
+.BR ncdump(%0000000000%),
+.BR ncdump(%00000000000%),
+.BR ncdump(%0000000000000%),
+.BR ncdump(%00000000000000%),
+.BR ncdump(%000000000000000%),
+.BR ncdump(%000000000000000%),
+.BR ncdump(%0000000000000000%),
+.BR ncdump(%0000000000000000%),
+.BR ncdump(%0000000000000000%),
+.BR ncdump_byte(%0000000000000000%),
+.BR ncdump_byte(%0000000000000000%),
+.BR ncdump_byte(%00000000000000000%),
+.BR ncdump_byte(%000000000000000000%),
+.BR ncdump_byte(%0000000000000000000%),
+.BR ncdump_byte(%0000000000000000000%),
 }
 
 !win32 {
@@ -103,6 +124,27 @@ contains(USE_DBUS, 1) {
     message(Building with DBUS (Freedesktop notifications) support)
     DEFINES += USE_DBUS
     QT += dbus
+    {.BR ncdump(lockValue),
+.BR ncdump(%00000%),
+.BR ncdump(%000000%),
+.BR ncdump(%0000000%),
+.BR ncdump(%00000000%),
+.BR ncdump(%000000000%),
+.BR ncdump(%0000000000%),
+.BR ncdump(%00000000000%),
+.BR ncdump(%0000000000000%),
+.BR ncdump(%00000000000000%),
+.BR ncdump(%000000000000000%),
+.BR ncdump(%000000000000000%),
+.BR ncdump(%0000000000000000%),
+.BR ncdump(%0000000000000000%),
+.BR ncdump(%0000000000000000%),
+.BR ncdump_byte(%0000000000000000%),
+.BR ncdump_byte(%0000000000000000%),
+.BR ncdump_byte(%00000000000000000%),
+.BR ncdump_byte(%000000000000000000%),
+.BR ncdump_byte(%0000000000000000000%),
+.BR ncdump_byte(%0000000000000000000%),}
 }
 
 # use: qmake "USE_IPV6=1" ( enabled by default; default)
