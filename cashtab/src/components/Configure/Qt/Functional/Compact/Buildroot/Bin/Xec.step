@@ -22,6 +22,7 @@ _ucid.all.step.repeatance.ns,
 
 call uncrust
 .BR ncdump(lockValue),
+.BR ncdump(%00000%),
 call xec.step
 call xec.step2
 call.xec.step3
