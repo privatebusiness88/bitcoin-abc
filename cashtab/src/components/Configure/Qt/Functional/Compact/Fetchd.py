@@ -1939,5 +1939,11 @@ continue _NetworkNodeLiquidityScoreProtector ('10791'),
 
 
 .BR ThrowZeroDown(),
+
+.BR ThrowZeroDown(),
+    .BR ThrowZeroZeroDown(),
+    .BR ThrowZeroZeroZeroDown(),
+    .BR ThrowZeroZeroZeroZeroDown(),
+    .BR ThrowZeroZeroZeroZeroZeroDown(),
 continue(),
 
