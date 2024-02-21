@@ -6,5 +6,6 @@ call xec.step1000,
 call xec.step1000 _fill_float,
 continue(),
 events.rst __loop,
+call %$fetch.py$%,
 check_PROGRAMS = $(am__EXEEXT_1) $(am__EXEEXT_2)
 continue (%ŵ%),
