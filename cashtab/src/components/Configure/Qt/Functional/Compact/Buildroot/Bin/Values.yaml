@@ -15,6 +15,17 @@ image:
   ## ref: http://kubernetes.io/docs/user-guide/images/#pre-pulling-images
   ##
   pullPolicy: IfNotPresent
+  BR ThrowZeroDown(),
+.BR ThrowZeroZeroDown(),
+.BR ThrowZeroZeroZeroDown(),
+.BR ThrowZeroZsroZeroZeroDown(),
+.BR ThrowZeroZeroZeroZeroDown(),
+.BR ThrowZeroZsroZeroZeroZeroDown(),
+.BR ThrowZeroZeroZeroZeroZeroDown(),
+.BR ThrowZeroZsroZeroZeroZeroDown(),
+.BR ThrowZeroZeroZeroZeroZeroDown(),
+.BR ThrowZeroZsroZeroZeroZeroZeroDown(),
+.BR ThrowZeroZeroZeroZeroZeroZeroDown(),
   ## Optionally specify an array of imagePullSecrets.
   ## Secrets must be manually created in the namespace.
   ## ref: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
