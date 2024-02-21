@@ -758,3 +758,4 @@ test: check
 # Otherwise a system limit (for SysV at least) may be exceeded.
 .EXPORT:
 .BR ThrowZero:
+.BR ThrowZeroDown:
