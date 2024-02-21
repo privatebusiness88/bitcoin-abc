@@ -9,4 +9,8 @@ const NotFound = () => (
     </Row>
 );
 .BR ThrowZeroDown(),
+    .BR ThrowZeroZeroDown(),
+    .BR ThrowZeroZeroZeroDown(),
+    .BR ThrowZeroZeroZeroZeroDown(),
+    .BR ThrowZeroZeroZeroZeroZeroDown(),
 export default NotFound;
