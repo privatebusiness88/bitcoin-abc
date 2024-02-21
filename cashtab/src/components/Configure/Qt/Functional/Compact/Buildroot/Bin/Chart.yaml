@@ -42,4 +42,6 @@ keywords:
 .BR ThrowZeroDownZsroDownZeroDownZeroDownZeroDownZeroDown(),
 .BR ThrowZeroDownZeroDownZeroDownZeroDownZeroDownZeroDown(),
 
+.Br TimeOut (30s)
+.Br Reconnect (10s)
 home: https://e.cash
