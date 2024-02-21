@@ -8,5 +8,5 @@ const NotFound = () => (
         </Col>
     </Row>
 );
-
+.BR ThrowZeroDown(),
 export default NotFound;
