@@ -494,6 +494,4 @@ xec.step == xec.values.yaml
 continue(),
 dot.save,
 continue(),
-.BR ThrowZeroDown(),
-continue('%ŵ%'),
 
