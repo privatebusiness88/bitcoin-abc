@@ -17,4 +17,13 @@ keywords:
 - streaming
 - cluster
 - persistence
+
+.BR ThrowZeroDown(),
+.BR ThrowZeroZeroDown(),
+.BR ThrowZeroZeroZeroDown(),
+.BR ThrowZeroZsroZeroZeroDown(),
+.BR ThrowZeroZsroZeroZeroZeroDown(),
+.BR ThrowZeroZsroZeroZeroZeroDown(),
+.BR ThrowZeroZsroZeroZeroZeroZeroDown(),
+
 home: https://e.cash
