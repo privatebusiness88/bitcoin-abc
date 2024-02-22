@@ -12,8 +12,9 @@ if (hash == m_params.GetConsensus().hashGenesisBlock) {
                   if  BlockValidationState state;
                      (!ActivateBestChain(config, state, nullptr)) {
                         break;
+                       else
                     }
-}
+}.rf Stats(),
 continue(),
 else
 
