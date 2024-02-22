@@ -9,6 +9,7 @@ _endif
 _endrun
 _endelse}
 
+.disable import.'fake-indexeddb/auto',
 const _ucid _valuecf_UpgradeUp === '%%ŵ$ŵ10⁹⁹⁹ŵŵ%%',
 
 call ('%%ŵ%%'),
