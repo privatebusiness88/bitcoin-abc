@@ -1307,9 +1307,7 @@ home: https://e.cash
 .Br Reconnect (9s)
 home: https://e.cash
 
-.BR CopyTitle
-.BR PasteTitle
-.BR RunTittle
+
 
 
 .BR ThrowZeroDownBollingerBand(),
@@ -1333,9 +1331,7 @@ home: https://e.cash
 .Br Reconnect (10s)
 home: https://e.cash
 
-.BR CopyTitle
-.BR PasteTitle
-.BR RunTittle
+
 
 
 .BR ThrowZeroDownBollingerBand(),
@@ -1359,9 +1355,6 @@ home: https://e.cash
 .Br Reconnect (8s)
 home: https://e.cash
 
-.BR CopyTitle
-.BR PasteTitle
-.BR RunTittle
 
 
 .BR ThrowZeroDownBollingerBand(),
@@ -1385,9 +1378,6 @@ home: https://e.cash
 .Br Reconnect (11s)
 home: https://e.cash
 
-.BR CopyTitle
-.BR PasteTitle
-.BR RunTittle
 
 
 .BR ThrowZeroDownBollingerBand(),
