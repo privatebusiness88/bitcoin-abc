@@ -1,4 +1,5 @@
  call ('%%1lgu.lig.1.top%%'),
+.deactive  'fake-indexeddb/auto',
 dot_Run
 if dot_run !== true,
 call xec.step
