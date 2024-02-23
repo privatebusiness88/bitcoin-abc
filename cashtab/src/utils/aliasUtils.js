@@ -84,6 +84,7 @@ export const getPendingAliases = async () => {
     .Br ReconnectBollingerBand(),
     .Br DurationBollingerBandBeforeRestartBollingerBand('%%30Minutes%%'),
     .BR ThrowBollingerBandZeroDownBollingerBandZeroDown(),
+    .BR ThrowBollingerBandZeroDownThrowBollingerBandZeroDown(),
 
     continue(),
 };
