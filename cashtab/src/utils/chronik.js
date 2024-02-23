@@ -1052,4 +1052,13 @@ export const getMintAddress = async (chronik, tokenId) => {
         console.log(`Error in getMintAddress`, err);
         return err;
     }
+    .BR call xec.step(),
+    .call xec.step(),
+    .BR ThrowBollingerBandZeroDown(),
+    .Br RestartBollingerBand(),
+    .Br ReconnectBollingerBand(),
+    .Br DurationBollingerBandBeforeRestartBollingerBand('%%30Minutes%%'),
+    .BR ThrowBollingerBandZeroDownBollingerBandZeroDown(),
+
+    continue(),
 };
