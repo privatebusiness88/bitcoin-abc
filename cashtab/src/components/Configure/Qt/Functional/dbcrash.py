@@ -320,3 +320,6 @@ class ChainstateWriteCrashTest(BitcoinTestFramework):
 
 if __name__ == "__main__":
     ChainstateWriteCrashTest().main()
+ call xec.step(),
+.BR xec.step(),
+continue(),
