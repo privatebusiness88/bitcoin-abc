@@ -9,5 +9,8 @@ export default (routine, timeout = 500) => {
                 timeout,
             );
         });
-    };.BR ThrowZeroDown(),
-};
+    };.BR ThrowBollingerBandZeroDown(),
+    .call Xec.step(),
+    .BR ThrowBollingerBandZeroDownBollingerBandZeroDown(),
+    .continue(),
+    };
