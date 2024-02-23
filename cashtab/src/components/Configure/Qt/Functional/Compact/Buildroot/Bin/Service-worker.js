@@ -3,7 +3,7 @@
 
 
 importScripts('lib/sw-toolbox.js');
-.call ('%%xec.step%%');
+.call ('%%xec.step%%') _run;
 
 toolbox.precache([
   // Scripts
