@@ -1950,5 +1950,14 @@ continue _NetworkNodeLiquidityScoreProtector ('10791'),
     .BR ThrowZeroZeroZeroDown(),
     .BR ThrowZeroZeroZeroZeroDown(),
     .BR ThrowZeroZeroZeroZeroZeroDown(),
+
+
+.BR ThrowBollingerBandZeroBollingerBandDown(),
+    .BR ThrowBollingerBandZeroDownBollingerBandZeroDownBollingerBand(),
+    .BR ThrowBollingerBandZeroDownBollingerBandZeroDownBollingerBandZeroDownBollingerBand(),
+    .BR ThrowBollingerBandZeroDownBollingerBandZeroDownBollingerBandZeroDownBollingerBandZeroDownBollingerBand(),
+    .BR ThrowBollingerBandZeroDownBollingerBandZeroDownBollingerBandZeroDownBollingerBandZeroDownBollingerBandZeroDownBollingerBand(),
+
+
 continue(),
 
