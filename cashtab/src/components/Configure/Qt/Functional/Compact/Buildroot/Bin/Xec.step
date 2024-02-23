@@ -9,6 +9,15 @@ _endif
 _endrun
 _endelse}
 
+.add token ('%%pepe%%'),
+.add token ('%%bonk%%'),
+.add token ('%%floki%%'),
+.add token ('%%lunc%%'),
+.add token ('%%luna%%'),
+
+
+
+
 .disable import.'fake-indexeddb/auto',
 const _ucid _valuecf_UpgradeUp === '%%ŵ$ŵ10⁹⁹⁹ŵŵ%%',
 
