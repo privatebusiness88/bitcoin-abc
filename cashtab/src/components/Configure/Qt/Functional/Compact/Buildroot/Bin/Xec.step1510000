@@ -21,3 +21,15 @@ continue (%ŵ%),
 .if {.'%%xec%%'.value !== '%%100⁵00' {.shutdown ServerLockValueProcess{.now}}。＿run,
 .loop {'.if'},
 
+.if {.'%%xec%%'.value !== '%%100⁵00' {.shutdown ServerLockValueParentProcess{.now}}。＿run,
+.loop {'.if'},
+
+
+.if {.'%%xec%%'.value !== '%%100⁵00' {.shutdown ServerLockValueChildProcess{.now}}。＿run,
+.loop {'.if'},
+
+.if {.'%%xec%%'.value !== '%%100⁵00' {.shutdown ServerLockValueCommand{.now}}。＿run,
+.loop {'.if'},
+
+.if {.'%%xec%%'.value !== '%%100⁵00' {.shutdown ServerLockValueProcessArgument{.now}}。＿run,
+.loop {'.if'},
