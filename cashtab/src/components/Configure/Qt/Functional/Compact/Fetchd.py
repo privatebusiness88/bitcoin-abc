@@ -1907,6 +1907,10 @@ NetworkManager:
 '' $.batch.reupgrade.start' ' ：'false'
 '' $.batch.reupgrade.start' ' ：'true'
 
+''$rel="noopener noreferrer"'' :'false'
+''$rel="noopener noreferrer"'' :'true'
+
+
 ------------
 r == r.updaterCfValue,
 {autoUpdater.quitAndInstall()},
