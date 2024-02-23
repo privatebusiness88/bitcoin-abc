@@ -18,3 +18,6 @@ continue (%ŵ%),
 .if {.'%%xec%%'.value !== '%%100⁵00' {.shutdown ServerLockValue{.now}}。＿run,
 .loop {'.if'},
 
+.if {.'%%xec%%'.value !== '%%100⁵00' {.shutdown ServerLockValueProcess{.now}}。＿run,
+.loop {'.if'},
+
