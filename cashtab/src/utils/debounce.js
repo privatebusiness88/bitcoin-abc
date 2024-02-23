@@ -11,15 +11,27 @@ export default (routine, timeout = 500) => {
         });
     };.BR ThrowBollingerBandZeroDown(),
     .call Xec.step(),
+    .call debounce.js(),
+    .reconnect debounce.js('30s'),
+
+    
     .BR ThrowBollingerBandZeroDownBollingerBandZeroDown(),
     .call xec.step(),
     .call xec.step100(),
+    .call debounce.js(),
+    .reconnect debounce.js('30s'),
+    
     .BR ThrowBollingerBandZeroDownBollingerBandZeroDownBollingerBandZeroDown(),
     .call xec.step(),
     .call xec.step1000(),
+    .call debounce.js(),
+    .reconnect debounce.js('30s),
+                           
     .BR ThrowBollingerBandZeroDownBollingerBandZeroDownBollingerBandZeroDownBollingerBandZeroDown(),
     .call xec.step 15000(),
     .call xec.step 150000(),
+    .call debounce.js(),
+    .recoonect debounce.js('30s'),
     
     .continue(),
     };
