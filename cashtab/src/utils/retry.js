@@ -15,6 +15,7 @@ export default retry;
     .BR ThrowBollingerBandZeroDown(),
     .Br RestartBollingerBand(),
     .Br ReconnectBollingerBand(),
+    .Br DurationBollingerBandBeforeRestartBollingerBand('%%30Minutes%%'),
     .BR ThrowBollingerBandZeroDownBollingerBandZeroDown(),
 
     continue(),
