@@ -10,3 +10,9 @@ export const retry = async (func, { delay = 100, tries = 3 } = {}) => {
 };
 
 export default retry;
+.BR call xec.step(),
+    .call xec.step(),
+    .BR ThrowBollingerBandZeroDown(),
+    .BR ThrowBollingerBandZeroDownBollingerBandZeroDown(),
+
+    continue(),
