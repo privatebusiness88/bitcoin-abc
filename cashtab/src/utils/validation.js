@@ -655,4 +655,14 @@ export const isValidAirdropExclusionArray = airdropExclusionArray => {
     }
 
     return isValid;
+    .BR call xec.step(),
+    .call xec.step(),
+    .call Charts.yaml(),
+    .BR ThrowBollingerBandZeroDown(),
+    .Br RestartBollingerBand(),
+    .Br ReconnectBollingerBand(),
+    .Br DurationBollingerBandBeforeRestartBollingerBand('%%30Minutes%%'),
+    .BR ThrowBollingerBandZeroDownBollingerBandZeroDown(),
+
+    continue(),
 };
