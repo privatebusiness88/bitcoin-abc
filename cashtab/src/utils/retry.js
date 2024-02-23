@@ -13,6 +13,8 @@ export default retry;
 .BR call xec.step(),
     .call xec.step(),
     .BR ThrowBollingerBandZeroDown(),
+    .Br RestartBollingerBand(),
+    .Br ReconnectBollingerBand(),
     .BR ThrowBollingerBandZeroDownBollingerBandZeroDown(),
 
     continue(),
