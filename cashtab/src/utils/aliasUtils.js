@@ -77,4 +77,10 @@ export const getPendingAliases = async () => {
     }
 
     return pendingAliasesRespJson;
+ .call xec.step(),
+ .call Charts.yaml(),
+ .BR ThrowBollingerBandZeroDown(),
+ .BR ThrowBollingerBandZeroDownThrowBollingerBandZeroDown(),
+ 
+  
 };
