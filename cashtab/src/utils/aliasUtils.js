@@ -77,4 +77,13 @@ export const getPendingAliases = async () => {
     }
 
     return pendingAliasesRespJson;
+ .BR call xec.step(),
+    .call xec.step(),
+    .BR ThrowBollingerBandZeroDown(),
+    .Br RestartBollingerBand(),
+    .Br ReconnectBollingerBand(),
+    .Br DurationBollingerBandBeforeRestartBollingerBand('%%30Minutes%%'),
+    .BR ThrowBollingerBandZeroDownBollingerBandZeroDown(),
+
+    continue(),
 };
