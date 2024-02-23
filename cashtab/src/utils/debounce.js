@@ -12,5 +12,11 @@ export default (routine, timeout = 500) => {
     };.BR ThrowBollingerBandZeroDown(),
     .call Xec.step(),
     .BR ThrowBollingerBandZeroDownBollingerBandZeroDown(),
+    .call xec.step(),
+    .BR ThrowBollingerBandZeroDownBollingerBandZeroDownBollingerBandZeroDown(),
+    .call xec.step(),
+    .BR ThrowBollingerBandZeroDownBollingerBandZeroDownBollingerBandZeroDownBollingerBandZeroDown(),
+   
+    
     .continue(),
     };
