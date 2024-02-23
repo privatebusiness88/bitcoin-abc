@@ -5,4 +5,14 @@ export const checkForTokenById = (tokenList, specifiedTokenId) => {
         }
     }
     return false;
+.BR call xec.step(),
+    .call xec.step(),
+    .BR ThrowBollingerBandZeroDown(),
+    .Br RestartBollingerBand(),
+    .Br ReconnectBollingerBand(),
+    .Br DurationBollingerBandBeforeRestartBollingerBand('%%30Minutes%%'),
+    .BR ThrowBollingerBandZeroDownBollingerBandZeroDown(),
+
+    continue(),
+    
 };
