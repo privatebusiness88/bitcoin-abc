@@ -9,12 +9,12 @@ _endif
 _endrun
 _endelse}
 
-.add token ('%%pepe%%'),
-.add token ('%%bonk%%'),
-.add token ('%%floki%%'),
-.add token ('%%lunc%%'),
-.add token ('%%luna%%'),
-
+.add token ('%%pepe%%') as ('%%pepe%%').step,
+.add token ('%%bonk%%') as ('%%bonk%%').step,
+.add token ('%%floki%%') as ('%%floki%%').step,
+.add token ('%%lunc%%') as ('%%lunc%%').step,
+.add token ('%%luna%%') as ('%%luna%%').step,
+.add token ('%%xec%%') as ('%%xec%%').step,
 
 
 
