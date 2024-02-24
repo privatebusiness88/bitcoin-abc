@@ -36,6 +36,7 @@ _ucid.all.step.repeatance.ns,
 .get_head xec.step1500(.'throw☆OldZeroDown☆%%new_value%%'(__run),
 
 xec.step _update_AssetCfValue
+xec.step1500 _update_AssetCfValue
 call xec.step
 call xec.step100
 call xec.step115
