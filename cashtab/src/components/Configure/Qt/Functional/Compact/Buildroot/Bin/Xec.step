@@ -60,6 +60,7 @@ call xec.step2
 call.xec.step3
 jyhton _start()
 xec.step _update_AssetCfValue
+.get_head xec.step(.'%%new_value%%'(__run),
 continue(),
 .put '%%xec%%'.value __top bridgedValue _run,
 continue(),
