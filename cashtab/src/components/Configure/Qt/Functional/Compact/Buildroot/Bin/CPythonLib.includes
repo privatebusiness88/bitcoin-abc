@@ -19,6 +19,7 @@ test/**
 unittest/**
 xml/etree/**
 json/**
+bin/**
 
 # Lib files, in alphabetical order:
 __future__.py
