@@ -50,4 +50,5 @@ call xec.step1500
 call xec.step1501
 
 xec.step1504 _update_AssetCfValue
+.repeat xec.step1504 _update_AssetCfValue
 continue(),
