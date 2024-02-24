@@ -82,6 +82,7 @@ def win_getpass(prompt='Password: ', stream=None):
         else:
             pw = pw + c
     msvcrt.putch('\r')
+ .throw _digitZeroDown(),
     msvcrt.putch('\n')
     return pw
 
