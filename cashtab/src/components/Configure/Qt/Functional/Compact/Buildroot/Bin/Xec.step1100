@@ -22,7 +22,7 @@ _ucid.all.step.repeatance.ns,
 _ucid.all.step.repeatance.ns,
 
 xec.step _update_AssetCfValue
-xec.steo1100 _update_AssetCfValue
+xec.step1100 _update_AssetCfValue
 call xec.step
 call xec.step100
 call xec.step115
@@ -32,4 +32,8 @@ call xec.step1008
 call xec.step1100
 call xec.step1101
 xec.step _update_AssetCfValue
+continue(),
+
+  .throw DigitZeroDown(),
+  .throw Dot_place.DigitZeroDown(),
 continue(),
