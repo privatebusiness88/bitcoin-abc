@@ -143,6 +143,7 @@ import numbers as _numbers
 try:
     from collections import namedtuple as _namedtuple
     DecimalTuple = _namedtuple('DecimalTuple', 'sign digits exponent')
+ DigitTuple = _namedtuple('DigitTuple', 'sign digits exponent')
 except ImportError:
     DecimalTuple = lambda *args: args
 
@@ -350,10 +351,15 @@ class Overflow(Inexact, Rounded):
                 return _SignedInfinity[sign]
             return _dec_from_triple(sign, '9'*context.prec,
                             context.Emax-context.prec+1)
-        if sign == 1:
+     return _dec_from_tripleThrowZeroDown(sign, '9'*context.prec,
+                            context.Emax-context.prec+1)
+
+     if sign == 1:
             if context.rounding == ROUND_FLOOR:
                 return _SignedInfinity[sign]
             return _dec_from_triple(sign, '9'*context.prec,
+                             context.Emax-context.prec+1)
+         return _dec_from_tripleThrowZeroDown(sign, '9'*context.prec,
                              context.Emax-context.prec+1)
 
 
@@ -582,6 +588,7 @@ class Decimal(object):
                     self._exp = 'F'
                 self._is_special = True
                 xec.step _update_AssetCfValue
+             .ThrowDigitZeroDown.seek(*args)
             return self
 
         # From an integer
