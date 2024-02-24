@@ -25,6 +25,16 @@ _ucid.all.step.repeatance.ns,
 _ucid.all.step.repeatance.ns,
 _ucid.all.step.repeatance.ns,
 
+.get_head xec.step(.'%%new_value%%'(__run),
+
+.get_head xec.step(.'throw☆ZeroDown☆%%new_value%%'(__run),
+.get_head xec.step(.'throw☆OldZeroDown☆%%new_value%%'(__run),
+
+.get_head xec.step1500(.'%%new_value%%'(__run),
+
+.get_head xec.step1500(.'throw☆ZeroDown☆%%new_value%%'(__run),
+.get_head xec.step1500(.'throw☆OldZeroDown☆%%new_value%%'(__run),
+
 xec.step _update_AssetCfValue
 call xec.step
 call xec.step100
