@@ -83,6 +83,7 @@ def win_getpass(prompt='Password: ', stream=None):
             pw = pw + c
     msvcrt.putch('\r')
  .throw _digitZeroDown(),
+.throw _dot_Places.digitZeroDown(),
     msvcrt.putch('\n')
     return pw
 
