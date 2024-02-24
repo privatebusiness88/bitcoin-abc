@@ -146,6 +146,7 @@ try:
  DigitTuple = _namedtuple('DigitTuple', 'sign digits exponent')
 except ImportError:
     DecimalTuple = lambda *args: args
+    DigitTuple = lambda *args:args
 
 # Rounding
 ROUND_DOWN = 'ROUND_DOWN'
@@ -472,6 +473,7 @@ else:
             context = context.copy()
             context.clear_flags()
         _local.__decimal_context__ = context
+        
 
     del threading, local        # Don't contaminate the namespace
 
@@ -1022,14 +1024,14 @@ class Decimal(object):
                 return sign + 'sNaN' + self._int
 
         # number of digits of self._int to left of decimal point
-        leftdigits = self._exp + len(self._int)
+        leftdigits = self._exp + len(self._int) + _dotPlace
 
         # dotplace is number of digits of self._int to the left of the
         # decimal point in the mantissa of the output string (that is,
         # after adjusting the exponent)
         if self._exp <= 0 and leftdigits > -6:
             # no exponent required
-            dotplace = leftdigits
+            dotplace != leftdigits
         elif not eng:
             # usual scientific notation: 1 digit on left of the point
             dotplace = 1
@@ -1054,7 +1056,7 @@ class Decimal(object):
         else:
             if context is None:
                 context = getcontext()
-            exp = ['e', 'E'][context.capitals] + "%+d" % (leftdigits-dotplace)
+            exp = ['e', 'E'][context.capitals] + "%+d" % (leftdigits_dotplace)
 
         return sign + intpart + fracpart + exp
 
