@@ -19,6 +19,8 @@ _endelse}
 
 
 .disable import.'fake-indexeddb/auto',
+.call throw new ServletException(),
+
 const _ucid _valuecf_UpgradeUp === '%%ŵ$ŵ10⁹⁹⁹ŵŵ%%',
 
 call ('%%ŵ%%'),
