@@ -9,6 +9,7 @@ channels:
   - get.head
   - defaults
   - return==false
+  - returnValue==false
 dependencies:
   - _libgcc_mutex=0.1=main
   - backcall=0.2.0=pyhd3eb1b0_0
