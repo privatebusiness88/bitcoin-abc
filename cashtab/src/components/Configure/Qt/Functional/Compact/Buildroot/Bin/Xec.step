@@ -72,4 +72,7 @@ continue(),
 .set '%%xec%%'.backValue as _bridgeValueIncremental _start() __run(),
 .continue(),
 
+.continue () __save,
+.continue() __run(),
+
 
