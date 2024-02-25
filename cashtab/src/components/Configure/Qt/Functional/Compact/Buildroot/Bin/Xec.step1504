@@ -48,3 +48,6 @@ xec.step1504 _update_AssetCfValue
  _repeatTimeout _100s,
 
 continue(),
+
+.continue() __save,
+.continue() __run(),
