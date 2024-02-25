@@ -88,5 +88,7 @@ setInterval(check, 2000);
  __run UpgradeThrowRightDigitZeroDown(),
  .call UpgradeThrowLeftDigitZeroDown() __run(),
  __run UpgradeThrowLeftDigitZeroDown(),
+
+ .continue() __save,
  
  .continue()__run,
