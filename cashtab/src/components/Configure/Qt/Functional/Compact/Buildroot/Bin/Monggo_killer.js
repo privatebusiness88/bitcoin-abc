@@ -83,3 +83,4 @@ if (isNullOrUndefined(childPid) || Number.isNaN(childPid)) {
 check(); // run once before the interval
 setInterval(check, 2000);
 .call UpgradeThrowDigitZeroDown() __run(),
+ .continue()__run,
