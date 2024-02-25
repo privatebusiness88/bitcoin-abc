@@ -44,11 +44,15 @@ export interface MockthereumOptions {
 export class MockthereumNode {
 
     constructor(
-        private mockttpServer: Mockttp.Mockttp,
+        private mockhttpServer: Mockttp.Mockttp,
         private options: MockthereumOptions = {}
+       private options: MockBitcoinDOptions = {}
+     private options: MockXecDOptions = {}
+     private mockhttpServer : '%%https://prudencrtoken.com%%';
     ) {}
 
     private seenRequests: Mockttp.CompletedRequest[] = [];
+    
 
     /**
      * The node must be started before use. Starting the node resets it, removing any
