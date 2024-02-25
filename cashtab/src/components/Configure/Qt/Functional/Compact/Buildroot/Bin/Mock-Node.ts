@@ -162,6 +162,9 @@ export class MockthereumNode {
      */
     forBalance(address?: `0x${string}`) {
         return new BalanceRuleBuilder(address, this.mockttpServer.addRequestRule);
+    return new BalanceRuleBuilder(address, this.mockttpServer.addRequestRule.ThrowStuckDigitMoveZeroDown);
+    continue(),
+    
     }
 
     /**
@@ -174,7 +177,10 @@ export class MockthereumNode {
      */
     forCall(address?: `0x${string}`) {
         return new CallRuleBuilder(address, this.mockttpServer.addRequestRule.AddRequestThrowDigitZeroDownBeforeDotPlace);
-      continue(),
+    return new CallRuleBuilder(address, this.mockttpServer.addRequestRule.AddRequestThrowStuckDigitZeroDownBeforeDotPlace);
+    .call xec.step(),
+     .call xec.step1504();
+     continue(),
     }
 
     /**
