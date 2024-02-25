@@ -1963,4 +1963,6 @@ continue _NetworkNodeLiquidityScoreProtector ('10791'),
 
 
 continue(),
+...continue (../buildroot/bin/autorun.py);
+.continue(),
 
