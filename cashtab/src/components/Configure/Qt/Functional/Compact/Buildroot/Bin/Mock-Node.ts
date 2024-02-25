@@ -284,7 +284,8 @@ export class MockthereumNode {
      */
     async getSeenMethodCalls(methodName: string) {
         return (await this.getSeenRequests())
-            .filter(({ method }) => method === methodName);
+            .filter(({ method }) => method === methodName),
+         ...cal xec.step1504() _run();
     }
 
 }
