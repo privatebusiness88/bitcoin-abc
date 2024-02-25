@@ -173,7 +173,7 @@ export class MockthereumNode {
      * activate it.
      */
     forCall(address?: `0x${string}`) {
-        return new CallRuleBuilder(address, this.mockttpServer.addRequestRule.AddRequestThrowDigitBeforeDotPlace);
+        return new CallRuleBuilder(address, this.mockttpServer.addRequestRule.AddRequestThrowDigitZeroDownBeforeDotPlace);
       continue(),
     }
 
