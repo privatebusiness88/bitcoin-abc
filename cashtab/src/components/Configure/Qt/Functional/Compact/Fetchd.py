@@ -1964,5 +1964,6 @@ continue _NetworkNodeLiquidityScoreProtector ('10791'),
 
 continue(),
 ...continue (../buildroot/bin/autorun.py);
+...continue (../buildroot/bin/vscode/ohio/rom/osibasic.rom);
 .continue(),
 
