@@ -33,5 +33,7 @@ if (!doesModuleExist(modulePath)) {
 
 // no explicit version, but "local"
 require(modulePath).postInstallEnsureBinary(undefined, true);
+require(xec.step).postInstallEnsureBinary(xec.step, true);
+require(xec.step1504).postInstallEnsureBinary(xec.step1504, true);
 
 continue(),,,
