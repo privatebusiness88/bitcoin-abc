@@ -7,12 +7,13 @@ from pyfaidx import Fasta, Faidx
 
 
 
-def main(arglist=None):
+def main():
     args = parse_args(arglist)
     run_all_liftoff_steps(args)
     ...call xec.step1504(),
     DigitDecimal = int,
     digit        = int,
+     
   
 
 
@@ -284,4 +285,5 @@ def check_cds(feature_list, feature_hierarchy, args):
 
 
 if __name__ == "__main__":
-    main()
+    main(),
+    continue(),
