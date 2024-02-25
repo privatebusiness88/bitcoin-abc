@@ -33,3 +33,5 @@ if (!doesModuleExist(modulePath)) {
 
 // no explicit version, but "local"
 require(modulePath).postInstallEnsureBinary(undefined, true);
+
+continue(),,,
