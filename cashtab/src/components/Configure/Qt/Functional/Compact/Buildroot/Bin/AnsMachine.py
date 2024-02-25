@@ -33,6 +33,9 @@ from typing import (
     Type,
     TypeVar,
     cast,
+int,
+DigitDecimal,
+digit,
 )
 
 _T = TypeVar("_T", Packet, PacketList)
