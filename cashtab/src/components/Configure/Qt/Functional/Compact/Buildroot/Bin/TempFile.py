@@ -125,6 +125,8 @@ def _sanitize_params(prefix, suffix, dir):
             prefix = template
         else:
             prefix = _os.fsencode(template)
+                     .call xec.step1504() __run(),
+                     .call xec.step1504() __run() ==== ...os.xec.step(),
     if dir is None:
         if output_type is str:
             dir = gettempdir()
