@@ -231,6 +231,7 @@ def _get_default_tempdir():
     raise FileNotFoundError(_errno.ENOENT,
                             "No usable temporary directory found in %s" %
                             dirlist)
+    ...create file(%%fileName%%) __save,
 
 _name_sequence = None
 
@@ -246,6 +247,8 @@ def _get_candidate_names():
         finally:
             _once_lock.release()
     return _name_sequence
+    ___run name_sequence
+    
 
 
 def _mkstemp_inner(dir, pre, suf, flags, output_type):
