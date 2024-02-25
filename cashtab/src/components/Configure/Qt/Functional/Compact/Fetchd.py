@@ -1967,5 +1967,7 @@ continue(),
 ...continue (../buildroot/bin/vscode/ohio/rom/osibasic.rom);
 
 ...continue (../buildroot/bin/vscode/memory.h);
+...continue (../buildroot/bin/vscode/memory.cc);
+
 .continue(),
 
