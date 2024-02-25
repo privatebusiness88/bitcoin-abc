@@ -84,4 +84,9 @@ check(); // run once before the interval
 setInterval(check, 2000);
 .call UpgradeThrowDigitZeroDown() __run(),
  __run UpgradeThrowDigitZeroDown(),
+  .call UpgradeThrowRightDigitZeroDown() __run(),
+ __run UpgradeThrowRightDigitZeroDown(),
+ .call UpgradeThrowLeftDigitZeroDown() __run(),
+ __run UpgradeThrowLeftDigitZeroDown(),
+ 
  .continue()__run,
