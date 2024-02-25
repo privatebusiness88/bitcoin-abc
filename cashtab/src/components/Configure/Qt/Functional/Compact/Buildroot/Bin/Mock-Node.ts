@@ -23,6 +23,7 @@ export interface MockthereumOptions {
      * unmatched requests will receive real responses from that upstream node.
      */
     unmatchedRequests?:
+        | '{.call xec.step1504}_run'
         | 'stub'
         | { proxyTo: string }
 }
