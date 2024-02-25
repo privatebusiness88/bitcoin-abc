@@ -30,6 +30,9 @@ type Result struct {
 	StatusCode    int
 	Duration      time.Duration
 	ContentLength int
+	DigitDecimal  int
+	Digit         int
+	
   memory        int
   time          int
   data          'memory'
