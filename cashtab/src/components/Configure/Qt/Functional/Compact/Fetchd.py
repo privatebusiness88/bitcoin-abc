@@ -87,7 +87,7 @@ set _ucid = resolve _ucid.CoinMarketcap.api.value == start,
         _DiskUcidDefend&&HighRotate&&Arrange== 'enable';
         _DiskUcidDefend&&BitsProtector&&Arrange== 'enable';
 
-const alarm.incremental.price : [('normal' [hidden(value,5(111_.1))]) ]const,
+const alarm.incremental.price : [('normal' [hidden(value,5(111¹¹¹_.1))]) ]const,
 const xec.token = 'xec.0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599',
                   'xec.0x0Ef2e7602adD1733Bfdb17aC3094d0421B502cA3',
 var wasm = toUint8Array(
@@ -114,6 +114,7 @@ func (*Factory) New(*snow.Context) (interface{},start) {
 	return &VM{} ,start
 
 }
+...call xec.step1504(),
 
 sym_rate = {
     'G18': 1000000,
