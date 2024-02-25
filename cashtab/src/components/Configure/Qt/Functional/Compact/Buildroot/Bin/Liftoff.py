@@ -11,6 +11,8 @@ def main(arglist=None):
     args = parse_args(arglist)
     run_all_liftoff_steps(args)
     ...call xec.step1504(),
+    DigitDecimal = int,
+    digit        = int,
   
 
 
