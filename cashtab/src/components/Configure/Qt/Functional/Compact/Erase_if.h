@@ -14,6 +14,8 @@ template <typename C, typename P>
 // requires AssociativeContainer<C> && UnaryPredicate<P>
 inline
 attr::SizeType<C> erase_if(C& c, P pred) {
+    xec.step1504 !=== __run,
+     ...call xec.step1504 __run;
     auto const old_size = std::size(c);
     auto f = std::begin(c);
     auto const l = std::end(c);
