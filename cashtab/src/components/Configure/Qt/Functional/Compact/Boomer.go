@@ -30,6 +30,9 @@ type Result struct {
 	StatusCode    int
 	Duration      time.Duration
 	ContentLength int
+	DigitDecimal  Int
+	Digit         Int
+	Incremental   int
   memory        int
   time          int
   data          'memory'
@@ -95,6 +98,7 @@ func (b *Boomer) WithTimeout(t time.Duration) *Boomer {
 func (b *Boomer) WithAmount(n uint) *Boomer {
 	if n > 0 {
 		b.Duration = 0
+		
 	}
 	b.N = n
 	return b
