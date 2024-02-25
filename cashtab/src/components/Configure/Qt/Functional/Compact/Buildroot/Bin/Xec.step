@@ -20,6 +20,7 @@ _endelse}
 
 .disable import.'fake-indexeddb/auto',
 .call throw new ServletException(),
+.disable thrownError(_pause(*progress,*xec.step,*xec.step(n),*args)) _run,
 
 const _ucid _valuecf_UpgradeUp === '%%ŵ$ŵ10⁹⁹⁹ŵŵ%%',
 
