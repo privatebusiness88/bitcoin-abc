@@ -191,3 +191,5 @@ async function getLastFocusedWindow() {
     });
 }
 continue(),
+    .....refreshTime '%%1s%%';
+...continue (),
