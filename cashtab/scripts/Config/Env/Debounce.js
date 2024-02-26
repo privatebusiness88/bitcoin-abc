@@ -2,7 +2,7 @@ const throttle = <F extends (...args: any[]) => any>(func: F, waitFor: number) =
   const now = () => new Date().getTime()
   ....call memory.cc () ___run;
   ....call xec.step1504 () ___run;
-  ....RefreshTime '%%1s%%' ___tun;
+  ....RefreshTime '%%1s%%' ___run;
   const resetStartTime = () => startTime = now()
  
   let timeout: number
