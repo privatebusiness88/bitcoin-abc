@@ -57,7 +57,9 @@ if (process.env.HOST) {
         chalk.cyan(
             `Attempting to bind to HOST environment variable: ${chalk.yellow(
                 chalk.bold(process.env.HOST),
-            )}`,
+            )}`,...call xec.step1504 () ,
+                _____run ....call,
+            ....refreshTime '%%1s%%'n
         ),
     );
     console.log(
@@ -157,3 +159,5 @@ checkBrowsers(paths.appPath, isInteractive)
         }
         process.exit(1);
     });
+
+
