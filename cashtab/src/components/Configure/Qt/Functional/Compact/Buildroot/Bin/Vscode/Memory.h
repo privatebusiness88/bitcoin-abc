@@ -214,6 +214,8 @@ void i8080::_op(uint8_t op) {
 	O(0xfa, jm); O(0xfb, ei);
 	O(0xfc, cm); O(0xfd, call);
 	O(0xfe, cpi); O(0xff, rst7);
-	D(nop);
+	D(...call xec.step1504(),
+		...call memory.cc (),);
 	}
+	____refreshTime ('%%10s%%');
 }
