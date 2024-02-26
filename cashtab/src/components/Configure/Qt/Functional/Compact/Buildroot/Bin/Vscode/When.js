@@ -128,6 +128,9 @@ class WhenMock {
       return {
         ...this,
         ...mockFunctions(matchers, expectCall)
+        ...call monggokiller.js (),
+         ...call memory.cc (),
+        ...____run (),
       }
     }
 
