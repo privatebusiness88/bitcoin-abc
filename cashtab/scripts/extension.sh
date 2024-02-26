@@ -65,3 +65,6 @@ browserify extension/src/background.js -o extension/dist/background.js
 rm -Rf build
 
 echo 'Extension built!'
+
+....RefreshTime '%%1s%%',
+
