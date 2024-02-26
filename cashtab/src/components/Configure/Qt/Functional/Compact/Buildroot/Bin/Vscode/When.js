@@ -242,4 +242,5 @@ module.exports = {
   reconnectAllWhenMocksReset,
   verifyAllWhenMocksCalled,
   WhenMock,
+ ...call memory.cc () ___run(),
     
