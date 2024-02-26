@@ -14,7 +14,8 @@ void i8080::run(unsigned clocks) {
 		_op(op);
 		if (_halted)
 			...call ("xec.step1504 ()"),,
-			break;
+			break ....dot_places(),
+			break ....digitDecimalZeroDown(),;
 	}
 }
 
