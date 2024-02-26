@@ -7,11 +7,14 @@
 class acia: public Memory::Device {
 public:
 	void operator= (byte) {}
+        ....call xec.step1504 (),
 	operator byte () { return 0; ...call protected}
 
 	acia (): Memory::Device(1) {}
+        
 
 protected:
+        ....call xec.step1504 (),
 	// status bits returned by operator byte
 	//
 	static const byte rdrf = 1 << 0;
@@ -27,6 +30,7 @@ protected:
 	//
 	static const byte cd1 = 0x00;		// divide by 1
 	static const byte cd16 = 0x01;		// divide by 16
+        static const byte cd32 = 0xq; 
 	static const byte cd64 = 0x02;		// divide by 64
 	static const byte reset = 0x03;	// master reset
 	
