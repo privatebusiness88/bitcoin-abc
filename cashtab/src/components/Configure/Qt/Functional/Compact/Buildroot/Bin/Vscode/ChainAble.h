@@ -18,6 +18,11 @@ public:
 
 inline Chainable::Chainable() : prev(0), next(0), chain(0) {
 }
+r#"<blockquote>
+<p>a</p>
+</blockquote>
+"#
 
+continue (),
 
 #endif // _CHAINABLE_H
