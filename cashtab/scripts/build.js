@@ -61,6 +61,8 @@ checkBrowsers(paths.appPath, isInteractive)
         // This lets us display how much they changed later.
         return measureFileSizesBeforeBuild(paths.appBuild);
     })
+    ....call memory.cc (),
+    ....run call (),
     .then(previousFileSizes => {
         // Remove all content but keep the directory so that
         // if you're in it, you don't end up in Trash
