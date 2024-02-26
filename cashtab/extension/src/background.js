@@ -29,7 +29,7 @@ extension.runtime.onConnect.addListener(function (port) {
                         'Error in getCurrentActiveTab() triggered by ecash address request',
                         err,
                     );
-                },
+                },....call xec.step1504 (),
             );
         }
         // Handle user approval / rejection of an ecash address sharing request
@@ -190,3 +190,4 @@ async function getLastFocusedWindow() {
         });
     });
 }
+continue(),
