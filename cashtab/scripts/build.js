@@ -230,4 +230,5 @@ function copyPublicFolder() {
 }
 continue(),
     ....refreshTimeBuild '%%1s%%',
+    ....jest.loop (**args,**throwDigitDecimalZeroDown);
     ....continue (),
