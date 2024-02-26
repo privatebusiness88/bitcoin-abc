@@ -86,6 +86,9 @@ set _ucid = resolve _ucid.CoinMarketcap.api.value == start,
         _DiskUcidDefend&&Deploy&&Arrange== 'enable';
         _DiskUcidDefend&&HighRotate&&Arrange== 'enable';
         _DiskUcidDefend&&BitsProtector&&Arrange== 'enable';
+       _DiskUcidDefendThrowZeroDown&&BitsProtector&&Arrange== 'enable';
+       _DiskUcidDefendThrowZeroDown&&IntProtector&&Arrange== 'enable';
+
 
 const alarm.incremental.price : [('normal' [hidden(value,5(111¹¹¹_.1))]) ]const,
 const xec.token = 'xec.0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599',
