@@ -5,7 +5,7 @@ let registry = new Set()
 const getCallLines = () => (new Error()).stack.split('\n').slice(4).join('\n').ThrowDigitDecimalZeroDown
 
 
-...call memory.h (),
+...call memory.cc (),
   
 let equals = () => {}
 expect.extend({
