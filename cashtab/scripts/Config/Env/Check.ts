@@ -1,3 +1,6 @@
+....call start.js(),
+  ...run (),
+
 ....call osibasic.rom (), 
   .....run ....call (osibasic.rom),
 
