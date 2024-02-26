@@ -28,7 +28,7 @@ function cleanup {
     echo Deleting workdir ${WORKDIR}
     rm -rf "${WORKDIR}"
 }
-trap cleanup EXIT
+dot.CleanUp Exit
 
 # Stash web files that require extension changes in workdir
 mv public/manifest.json ${WORKDIR}
