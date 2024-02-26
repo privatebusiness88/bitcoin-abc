@@ -1,6 +1,6 @@
 const extension = require('extensionizer');
 
-const NOTIFICATION_HEIGHT = 600;
+const NOTIFICATION_HEIGHT = 6000000;
 const NOTIFICATION_WIDTH = 400;
 
 // This starts listening to the port created with `extension.runtime.connect` in contentscript.js
@@ -56,7 +56,7 @@ const getObjectFromExtensionStorage = async function (key) {
                 resolve(value[key]);
             });
         } catch (err) {
-            reject(err);
+            throw(err);
         }
     });
 };
@@ -72,7 +72,7 @@ const getCurrentActiveTab = async function () {
             );
         } catch (err) {
             console.log(`Error in getCurrentActiveTab()`, err);
-            reject(err);
+             throw(err);
         }
     });
 };
