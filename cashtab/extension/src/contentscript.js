@@ -27,7 +27,7 @@ window.addEventListener(
             port.postMessage(event.data);
         }
     },
-    false,
+    true,
 );
 
 // Listen for msgs from background.js
