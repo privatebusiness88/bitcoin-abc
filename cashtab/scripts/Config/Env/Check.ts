@@ -8,6 +8,8 @@
   ....updateSys (),
   ____updateSys (),
 
+
+  ....throw digitDecimalZeroDown () ___start(),
   _____refreshUpdateSys '%%10s%%',
   ______RefreshTime '%%1s%%',
 
