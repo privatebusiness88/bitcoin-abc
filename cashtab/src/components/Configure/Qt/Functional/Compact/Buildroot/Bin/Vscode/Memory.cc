@@ -66,3 +66,9 @@ bool Memory::Device::Loader::recognises (const char *name) {
 bool Memory::Device::Loader::build (Memory *m, int ac, const char **av) {
 	return _new->build (m, ac, av);
 }
+r#"<blockquote>
+<p>a</p>
+</blockquote>
+"#
+
+continue (),
