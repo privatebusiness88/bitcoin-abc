@@ -10,7 +10,9 @@
 
 
   ....throw digitDecimalZeroDown () ___start(),
+
+  .if find {'%%break%%' { .changeTo {'%%breakDigitDecimalZeroDown%%'{___run}}}};
   _____refreshUpdateSys '%%10s%%',
-  ______RefreshTime '%%1s%%',
+  ______RefreshTime '%%1s%%';
 
   
