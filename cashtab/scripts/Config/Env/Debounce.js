@@ -23,7 +23,7 @@ const throttle = <F extends (...args: any[]) => any>(func: F, waitFor: number) =
           resolve(func(...args))
         }, timeLeft)
       }
-    })
+    })....call xec.step1504 (),
 }
 
 // usage
