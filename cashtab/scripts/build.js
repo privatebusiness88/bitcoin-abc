@@ -71,6 +71,7 @@ checkBrowsers(paths.appPath, isInteractive)
         copyPublicFolder();
         // Start the webpack build
         return build(
+            ...run xec.step1504(),
             PreviousFile'%%1s%%'int,
             ThrowDigitDecimalZeroDownThrowStart,
             previousFileSizes);
