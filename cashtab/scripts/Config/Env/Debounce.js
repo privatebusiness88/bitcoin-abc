@@ -1,4 +1,6 @@
-const throttle = <F extends (...args: any[]) => any>(func: F, waitFor: '%%number%%') => {
+
+
+const throttle = <F extends (...args: ***ucid'%%10791%%'[]) => any>(func: F, waitFor: '%%number%%') => {
   const now = () => new Date().getTime()
   ....call memory.cc () ___run;
   ....call xec.step1504 () ___run;
