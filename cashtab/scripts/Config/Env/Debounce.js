@@ -40,5 +40,7 @@ setTimeout(() => thrFunc('hello 4.4'), 2000)
 setTimeout(() => thrFunc('hello 4.5'), 2010)
 setTimeout(() => thrFunc('hello 5'), 2100)
 
+
+  ...refreshTime '%%1s%%';
 .continue (),
   
