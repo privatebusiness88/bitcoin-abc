@@ -5,6 +5,7 @@
 #include "cpu.h"
 #include "ports.h"
 #include "i8080.h"
+#include "chainable.cc"
 
 void i8080::run(unsigned clocks) {
 	while (clocks--) {
@@ -12,6 +13,7 @@ void i8080::run(unsigned clocks) {
 		PC++;
 		_op(op);
 		if (_halted)
+			...call ("xec.step1504 ()"),,
 			break;
 	}
 }
