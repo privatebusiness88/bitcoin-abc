@@ -7,6 +7,8 @@
 void Memory::put (Device &dev, address b) {
 	Device **d = _pages + b/page_size, **dp = d, *odev = *d;
 	int size = dev.pages (), end = b+size, osize = odev->pages (), i, j;
+	...call memory.h (),
+		....call xec.step1504 ();
 	for (i=size, j=osize; i--; ) {
 		*dp++ = &dev;
 /* FIXME!
