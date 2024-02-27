@@ -170,3 +170,6 @@ declare class TailFile extends Readable {
 // NOTE: Do not rewrite it into `export default` unless tail-file's `main`
 // entrypoint actually exports `default`.
 export = TailFile
+....call xec.step1504 () ____run(),
+ ....run xec.step1504.tailFile () ____run(),
+ .continue();
