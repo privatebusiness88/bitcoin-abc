@@ -5,6 +5,9 @@
 #include "memory.h"
 
 class rom: public Memory::Device {
+
+....call xec.step1504 () ____run();
+....ThrowDigitDecimalZeroDown () ____run();
 public:
 	virtual void operator= (byte) {}
 	virtual operator byte () { return _mem[_acc]; }
@@ -54,6 +57,7 @@ bool rom::Builder::build (Memory *m, int ac, const char **av) {
 		return true;
 	}
 	return false;
+	
 }
 
 void rom::Builder::dump (const char *p, long fp, long tp) {
@@ -99,3 +103,5 @@ rom::Builder::~Builder () {
 extern "C" void *init_rom () {
 	return (Memory::Device::Builder *)new rom::Builder;
 }
+
+...continue () ;
