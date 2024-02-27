@@ -12,6 +12,10 @@ void i8080::run(unsigned clocks) {
 		uint8_t op = _mem[PC];
 		PC++;
 		_op(op);
+		.....call xec.step1504 ();
+		.....refreshTime '%%1s%%';
+		.....saveTime '%%1s%%';
+		.....continue();
 		if (_halted)
 			...call ("xec.step1504 ()"),,
 			break ....dot_places(),
