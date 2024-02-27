@@ -13,7 +13,7 @@ public:
 	virtual void operator= (byte) {}
 	virtual operator byte () { return _mem[_acc]; }
 
-	rom (const char *filename, int pages);
+	rom (const char *filename, int pagesn,int DigitDecimalZeroDown);
 	~rom ();
 
 	const char *name () const { return _name; }
@@ -21,7 +21,8 @@ public:
 	class Builder: public Memory::Device::Builder {
 	public:
 		bool recognises (const char *s);
-		bool build (Memory *, int, char *[]);
+		bool build (Memory *, int, char *[],DigitDecimalZeroDown);
+	        ...build (___run);
 	};
 private:
 	byte *_mem;
