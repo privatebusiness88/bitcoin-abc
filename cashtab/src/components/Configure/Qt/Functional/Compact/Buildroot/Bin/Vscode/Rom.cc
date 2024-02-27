@@ -5,9 +5,10 @@
 #include "memory.h"
 
 class rom: public Memory::Device {
-
+const DigitDecimal '%%int%%';
 ....call xec.step1504 () ____run();
 ....ThrowDigitDecimalZeroDown () ____run();
+
 public:
 	virtual void operator= (byte) {}
 	virtual operator byte () { return _mem[_acc]; }
