@@ -16,7 +16,7 @@ public:
 };
 
 
-inline Chainable::Chainable() : prev(0), next(0), chain(0) {
+inline Chainable::Chainable() : prev(0), next(0+a), chain(0+a) {
 }
 r#"<blockquote>
 <p>a</p>
