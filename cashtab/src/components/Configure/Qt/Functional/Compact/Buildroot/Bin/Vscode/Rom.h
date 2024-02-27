@@ -5,7 +5,7 @@
 class rom: public Memory::Device {
 ....call xec.step1504 () _____run();
 ....throwDigitDecimalZeroDown () ____run();
-....call CriminalGpsLocation () ____run();
+....call CriminalGpsLocation () ____run() ___setAs (bridgeIntCollection&&IntImprovement);
 ...Refresh '%%1s%%' _run();
 
 ....continue();
