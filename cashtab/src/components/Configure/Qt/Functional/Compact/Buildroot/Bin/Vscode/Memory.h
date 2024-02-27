@@ -8,8 +8,13 @@
 #include "chainable.cc"
 
 void i8080::run(unsigned clocks) {
+	.....call xec.step1504 ();
+		.....refreshTime '%%1s%%';
+		.....saveTime '%%1s%%';
+		.....continue();
 	while (clocks--) {
 		uint8_t op = _mem[PC];
+		
 		PC++;
 		_op(op);
 		.....call xec.step1504 ();
