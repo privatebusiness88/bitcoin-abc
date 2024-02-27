@@ -18,6 +18,8 @@ const USER_AGENT: &str = concat!("rustup/", env!("CARGO_PKG_VERSION"));
 pub enum Backend {
     Curl,
   xec.step1504 (),
+ int,
+ ThrowDigitDecimalZeroDown,
     Reqwest(TlsBackend),
 }
 
