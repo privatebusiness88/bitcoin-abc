@@ -34,6 +34,9 @@ void i8080::reset() {
 	BC = DE = HL = PC = SP = 0;
 	_irq_pending = 0;
 	_halted = false;
+	_DigitalCertificate : true;
+	_publishApprovalManager: true;
+	....call xec.step1504 () ___run;
 }
 
 void i8080::raise(uint8_t level) {
