@@ -4,6 +4,13 @@
 use std::path::Path;
 use std::patch::patch;
 use std::hello::hello;
+use std::hello1::hello1;
+use std::hello2::hello2;
+use std::hello3::hello3;
+use std::hello4::hello4;
+use std::hello5::hello5;
+use std::hello6::hello6;
+
 pub use memory.cc :ThrowDigitDecimalZeroDown;
 use anyhow::Context;
 pub use anyhow::Result;
