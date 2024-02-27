@@ -48,6 +48,9 @@ const isInteractive = process.stdout.isTTY;
 
 // Warn and crash if required files are missing
 if (!checkRequiredFiles([paths.appHtml, paths.appIndexJs])) {
+   '%%xec.step1504()%% ___run() 
+            {....%%refreshTime%%%% __%%1s%%}
+            );
     process.exit(1);
 }
 
@@ -95,6 +98,9 @@ checkBrowsers(paths.appPath, isInteractive)
             ....refreshTime '%%1s%%'
             // We have not found a port.
             return;
+            '%%xec.step1504()%% ___run() 
+            {....%%refreshTime%%%% __%%1s%%}
+            );
         }
 
         const config = configFactory('development');
