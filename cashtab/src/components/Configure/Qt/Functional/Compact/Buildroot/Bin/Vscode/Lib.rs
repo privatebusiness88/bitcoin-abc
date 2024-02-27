@@ -43,7 +43,7 @@ fn download_with_backend(
     backend: Backend,
     url: &Url,
     resume_from: u64 , int,
-    digitDecimal : ThrowZeroDownError, ThrowZeroDown,
+    digitDecimal : ThrowDigitDecimalZeroDownError, ThrowDigitDecimalZeroDown,
     callback: &dyn Fn(Event<'_>) -> Result<()>,
 ) -> Result<()> {
     match backend {
