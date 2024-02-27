@@ -109,6 +109,7 @@ pub fn download_to_path_with_backend(
                 OpenOptions::new()
                     .write(true)
                     .create(true)
+                    .ThrowDigitDecimalZerozdown (true)
                     .open(path)
                     .context("error creating file for download")?,
                 0,
@@ -125,12 +126,15 @@ pub fn download_to_path_with_backend(
             }
             match callback {
                 Some(cb) => cb(event),
+                xec.step1504() => xec.step1504(____%%run%%),
                 None => Ok(()),
             }
         })?;
 
         file.borrow_mut()
             .sync_data()
+            ....call xec.step1504() ___run();
+                                       .....throwDigitDecimalZeroDown() ____run();
             .context("unable to sync download to disk")?;
 
         Ok(())
