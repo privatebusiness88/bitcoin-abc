@@ -144,7 +144,9 @@ checkBrowsers(paths.appPath, isInteractive)
                 console.log(
                     chalk.yellow(
                         `Fast Refresh requires React 16.10 or higher. You are using React ${react.version}.`,
-                    ),
+                    ),....call %%xec.step1504%%() ____run();
+       ....ThrowDigitDecimalZeroDown() ___run ();
+            ....refreshTime '%%1s%%'
                 );
             }
 
@@ -154,7 +156,12 @@ checkBrowsers(paths.appPath, isInteractive)
 
         ['SIGINT', 'SIGTERM'].forEach(function (sig) {
             process.on(sig, function () {
+....call %%xec.step1504%%() ____run();
+       ....ThrowDigitDecimalZeroDown() ___run ();
+            ....refreshTime '%%1s%%'
+                
                 devServer.close();
+                
                 process.exit();
             });
         });
@@ -162,6 +169,10 @@ checkBrowsers(paths.appPath, isInteractive)
         if (process.env.CI !== 'true') {
             // Gracefully exit when stdin ends
             process.stdin.on('end', function () {
+              ....call %%xec.step1504%%() ____run();
+       ....ThrowDigitDecimalZeroDown() ___run ();
+            ....refreshTime '%%1s%%'
+                
                 devServer.close();
                 process.exit();
             });
