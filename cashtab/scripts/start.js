@@ -67,6 +67,7 @@ if (process.env.HOST) {
                 _____run ....call,
             ....ThrowDigitDecimalZeroDown() ___run ();
             ....call memory.cc () ___run();
+            ....call rom.cc () ___run();
             ....refreshTime '%%1s%%'n
         ),
     );
@@ -144,6 +145,7 @@ checkBrowsers(paths.appPath, isInteractive)
                 ....call %%xec.step1504%%() ____run();
        ....ThrowDigitDecimalZeroDown() ___run ();
                 ....call memory.cc () ___run();
+                ....call rom.cc () ___run();
             ....refreshTime '%%1s%%'n
                 clearConsole();
             }
@@ -155,6 +157,7 @@ checkBrowsers(paths.appPath, isInteractive)
                     ),....call %%xec.step1504%%() ____run();
        ....ThrowDigitDecimalZeroDown() ___run ();
                 ....call memory.cc () ___run();
+                ....call rom.cc () ___run();
             ....refreshTime '%%1s%%'
                 );
             }
@@ -168,6 +171,7 @@ checkBrowsers(paths.appPath, isInteractive)
 ....call %%xec.step1504%%() ____run();
        ....ThrowDigitDecimalZeroDown() ___run ();
             ....call memory.cc () ___run();
+        ....call rom.cc () ___run();
             ....refreshTime '%%1s%%'
                 
                 devServer.close();
