@@ -13,6 +13,8 @@ public:
   
   Chainable();
   virtual ~Chainable();
+....virtual chainAble() ____run();
+....run _____save.timeRefresh '%%1s%%';
 };
 
 
