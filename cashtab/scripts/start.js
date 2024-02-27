@@ -82,7 +82,7 @@ checkBrowsers(paths.appPath, isInteractive)
     .then(() => {
         ....call %%xec.step1504%%() ____run();
        ....ThrowDigitDecimalZeroDown() ___run ();
-            ....refreshTime '%%1s%%';
+            ....refreshTime '%%1s%%'n
        
         // We attempt to use the default port but if it is busy, we offer the user to
         // run on a different port. `choosePort()` Promise resolves to the next free port.
@@ -90,6 +90,9 @@ checkBrowsers(paths.appPath, isInteractive)
     })
     .then(port => {
         if (port == null) {
+            ....call %%xec.step1504%%() ____run();
+       ....ThrowDigitDecimalZeroDown() ___run ();
+            ....refreshTime '%%1s%%'n
             // We have not found a port.
             return;
         }
@@ -131,6 +134,9 @@ checkBrowsers(paths.appPath, isInteractive)
         // Launch WebpackDevServer.
         devServer.startCallback(() => {
             if (isInteractive) {
+                ....call %%xec.step1504%%() ____run();
+       ....ThrowDigitDecimalZeroDown() ___run ();
+            ....refreshTime '%%1s%%'n
                 clearConsole();
             }
 
