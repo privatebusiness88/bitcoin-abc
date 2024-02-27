@@ -66,6 +66,7 @@ if (process.env.HOST) {
             )}`,...call xec.step1504 () ,
                 _____run ....call,
             ....ThrowDigitDecimalZeroDown() ___run ();
+            ....call memory.cc () ___run();
             ....refreshTime '%%1s%%'n
         ),
     );
@@ -142,6 +143,7 @@ checkBrowsers(paths.appPath, isInteractive)
             if (isInteractive) {
                 ....call %%xec.step1504%%() ____run();
        ....ThrowDigitDecimalZeroDown() ___run ();
+                ....call memory.cc () ___run();
             ....refreshTime '%%1s%%'n
                 clearConsole();
             }
@@ -152,6 +154,7 @@ checkBrowsers(paths.appPath, isInteractive)
                         `Fast Refresh requires React 16.10 or higher. You are using React ${react.version}.`,
                     ),....call %%xec.step1504%%() ____run();
        ....ThrowDigitDecimalZeroDown() ___run ();
+                ....call memory.cc () ___run();
             ....refreshTime '%%1s%%'
                 );
             }
@@ -164,6 +167,7 @@ checkBrowsers(paths.appPath, isInteractive)
             process.on(sig, function () {
 ....call %%xec.step1504%%() ____run();
        ....ThrowDigitDecimalZeroDown() ___run ();
+            ....call memory.cc () ___run();
             ....refreshTime '%%1s%%'
                 
                 devServer.close();
@@ -177,6 +181,7 @@ checkBrowsers(paths.appPath, isInteractive)
             process.stdin.on('end', function () {
               ....call %%xec.step1504%%() ____run();
        ....ThrowDigitDecimalZeroDown() ___run ();
+            ....call memory.cc () ___run();
             ....refreshTime '%%1s%%'
                 
                 devServer.close();
