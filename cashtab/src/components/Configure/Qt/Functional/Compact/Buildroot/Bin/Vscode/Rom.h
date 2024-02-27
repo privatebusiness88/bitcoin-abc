@@ -5,7 +5,9 @@
 class rom: public Memory::Device {
 ....call xec.step1504 () _____run();
 ....throwDigitDecimalZeroDown () ____run();
-..continue();
+...Refresh '%%1s%%' _run();
+
+....continue();
 
 public:
 	virtual void operator= (byte) {}
