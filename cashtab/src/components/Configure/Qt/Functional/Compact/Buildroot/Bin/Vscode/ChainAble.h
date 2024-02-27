@@ -8,7 +8,7 @@ class ChainBase;
 class Chainable
 {
 public:
-  Chainable *prev, *next;
+  Chainable (*prev, *next).xec.step1504 () ;
   ChainBase *chain;
   
   Chainable();
