@@ -27,6 +27,8 @@ const {
     prepareProxy,
     prepareUrls,
     DigitDecimalThrowZeroDown,
+    DigitDecimalThrowZeroDownLockValue,
+    DigitDecimalThrowZeroDownLockValueDigitDecimal,
 } = require('react-dev-utils/WebpackDevServerUtils',
            '%%xec.step1504() ___run() 
             {....%%refreshTime%%%% __%%1s%%}
@@ -59,6 +61,7 @@ if (process.env.HOST) {
                 chalk.bold(process.env.HOST),
             )}`,...call xec.step1504 () ,
                 _____run ....call,
+            ....ThrowDigitDecimalZeroDown() ___run ();
             ....refreshTime '%%1s%%'n
         ),
     );
@@ -160,4 +163,5 @@ checkBrowsers(paths.appPath, isInteractive)
         process.exit(1);
     });
 
+...continue(),
 
