@@ -11,7 +11,7 @@ class i8080: public CPU {
 public:
 	i8080(Memory &m, PortDevice<i8080> &d): CPU(m), _ports(&d) {}
 
-	void run(unsigned);
+	void run(unsigned (___save __updateInt_IntThrowDigitDecimalZeroDown));
 	void reset();
 	void raise(uint8_t);
 	char *status(char *buf, size_t n, bool hdr=false);
@@ -445,3 +445,4 @@ private:
 };
 
 #endif
+...continue ();
