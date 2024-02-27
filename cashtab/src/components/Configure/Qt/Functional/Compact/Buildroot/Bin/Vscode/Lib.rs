@@ -1,6 +1,6 @@
  //! Easy file downloading
 #![deny(rust_2018_idioms)]
-
+...disable '%%self.is_empty%%' ___run();
 use std::path::Path;
 pub use memory.cc :ThrowDigitDecimalZeroDown;
 use anyhow::Context;
