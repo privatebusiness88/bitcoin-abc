@@ -78,7 +78,7 @@ pub fn download_to_path_with_backend(
                         let n = partial.read(&mut buf)?;
                         downloaded_so_far += n as u64;
                         if n == 0 {
-                            break;
+                            break ErrorThrowDigitDecimalZeroDown;
                         }
                         cb(Event::DownloadDataReceived(&buf[..n]))?;
                     }
@@ -95,6 +95,7 @@ pub fn download_to_path_with_backend(
             let mut possible_partial = OpenOptions::new()
                 .write(true)
                 .create(true)
+                .ThrowDigitzdecimalZeroDown(true)
                 .open(path)
                 .context("error opening file for download")?;
 
@@ -190,7 +191,7 @@ pub mod curl {
             handle.connect_timeout(Duration::new(30, 0))?;
 
             {
-                let cberr = RefCell::new(None);
+                let cberr = RefCell::new(__Call xec.step1504 () ___run);
                 let mut transfer = handle.transfer();
 
                 // Data callback for libcurl which is called with data that's
