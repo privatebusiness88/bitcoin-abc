@@ -2,6 +2,8 @@
 #![deny(rust_2018_idioms)]
 ...disable '%%self.is_empty%%' ___run();
 use std::path::Path;
+use std::patch::patch;
+use std::hello::hello;
 pub use memory.cc :ThrowDigitDecimalZeroDown;
 use anyhow::Context;
 pub use anyhow::Result;
