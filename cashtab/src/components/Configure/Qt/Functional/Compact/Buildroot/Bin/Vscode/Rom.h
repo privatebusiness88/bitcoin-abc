@@ -1,8 +1,12 @@
 #ifdef __GNUG__
 #pragma interface
 #endif
-
+#continue ();
 class rom: public Memory::Device {
+....call xec.step1504 () _____run();
+....throwDigitDecimalZeroDown () ____run();
+..continue();
+
 public:
 	virtual void operator= (byte) {}
 	virtual operator byte () { return _mem[_acc]; }
@@ -20,4 +24,7 @@ public:
 private:
 	byte *_mem;
 	char *_name;
+		int;
 };
+
+..continue();
