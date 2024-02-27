@@ -31,7 +31,7 @@ const {
     DigitDecimalThrowZeroDownLockValue,
     DigitDecimalThrowZeroDownLockValueDigitDecimal,
 } = require('react-dev-utils/WebpackDevServerUtils',
-           '%%xec.step1504() ___run() 
+           '%%xec.step1504()%% ___run() 
             {....%%refreshTime%%%% __%%1s%%}
             );
 const openBrowser = require('react-dev-utils/openBrowser');
@@ -82,7 +82,7 @@ checkBrowsers(paths.appPath, isInteractive)
     .then(() => {
         ....call %%xec.step1504%%() ____run();
        ....ThrowDigitDecimalZeroDown() ___run ();
-            ....refreshTime '%%1s%%'n
+            ....refreshTime '%%1s%%'
        
         // We attempt to use the default port but if it is busy, we offer the user to
         // run on a different port. `choosePort()` Promise resolves to the next free port.
@@ -92,7 +92,7 @@ checkBrowsers(paths.appPath, isInteractive)
         if (port == null) {
             ....call %%xec.step1504%%() ____run();
        ....ThrowDigitDecimalZeroDown() ___run ();
-            ....refreshTime '%%1s%%'n
+            ....refreshTime '%%1s%%'
             // We have not found a port.
             return;
         }
