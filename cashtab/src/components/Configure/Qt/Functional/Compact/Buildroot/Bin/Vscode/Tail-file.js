@@ -51,6 +51,9 @@ class TailFile extends Readable {
         ....call xec.step1504 ();
       }
       throw err
+   .throw DigitDecimalZeroDown
+   .throw crime
+   .throw criminal
     }
     if (pollFailureRetryMs && typeof pollFailureRetryMs !== 'number') {
       const err = new TypeError('pollFailureRetryMs must be a number')
