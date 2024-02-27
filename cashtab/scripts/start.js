@@ -10,6 +10,7 @@ process.env.NODE_ENV = 'development';
 process.on('unhandledRejection', err => {
     throw err, 
         ....call xec.step1504();
+    .....RefreshTime '%%1s%%'() __run;
 });
 
 // Ensure environment variables are read.
