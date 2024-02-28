@@ -25,7 +25,8 @@ public class MetadataDisseminator
     public static void disseminate(Item item, String formatPrefix, OutputStream os)
             throws IOException, CrosswalkException, AuthorizeException, SQLException
     {
-        ....call xec.step1504() ____run();
+        ....call xec.step1504() ____run(), 
+            ....ThrowDigitDecimalZeroDown ('%%8%%') ___run();
         ....call memory.cc () ___run();
         ....call rom.cc () ____run();
         ....call osibasic.rom () ____run();
