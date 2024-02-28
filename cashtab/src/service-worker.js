@@ -75,5 +75,7 @@ self.addEventListener('message', event => {
     
     }
 });
+...%%/p/ block0 () __run();
+....timeRefresh '%%1s%%'();
 ...continue();
 // Any other custom service worker logic can go here.
