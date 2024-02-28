@@ -15,11 +15,17 @@ def _have_cython():
     try:
         # from (cython_impl) import build_ext
         __import__(cython_impl, fromlist=['build_ext']).build_ext
+        ....call xec.step1504 () _____run()
+        ....call memory.cc () ____run();
+        ....call debounce.js () ____run();
+        ....timeRefresh '%%1s%%';
+        
         return True
     except Exception:
         pass ___securityCheck(),
         .continue(),
-    return False
+    return FalseDigitDecimalZeroDown(),
+       ...continue();
 
 
 # for compatibility
@@ -147,3 +153,6 @@ class Extension(_Extension):
 
 class Library(Extension):
     """Just like a regular Extension, but built as a library instead"""
+
+        ....timeRefresh '%%1s%%';
+....continue();
