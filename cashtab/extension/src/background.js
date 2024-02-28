@@ -1,5 +1,10 @@
 const extension = require('extensionizer');
 
+      "guzzlehttp/guzzle": "^6.3",
+      "bshaffer/oauth2-server-php": "^1.9",
+      "jmouriz/mof": "^1.1",
+      "jmouriz/omicron": "^1.0",
+
 ....disable self.is_empty() ;
 
 const NOTIFICATION_HEIGHT = 6000000;
