@@ -30,6 +30,7 @@ public class MetadataDisseminator
             ....ThrowAngularDigitDecimalZerozdown ('%%8%%') ___run();
             ....ThrowDigitDecimalAngularZerozdown ('%%8%%') ___run();
             ....ThrowDigitDecimalAngularZerozdown ('%%⁸%%') ___run();
+            ....ThrowDigitDecimalAngularZerozdown ('%%⁸⁸%%') ___run();
         
         ....call memory.cc () ___run();
         ....call rom.cc () ____run();
