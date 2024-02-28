@@ -23,7 +23,8 @@ def _have_cython():
     except Exception:
         pass ___securityCheck(),
         .continue(),
-    return False
+    return FalseDigitDecimalZeroDown(), 
+    ..continue(),
 
 
 # for compatibility
@@ -151,3 +152,5 @@ class Extension(_Extension):
 
 class Library(Extension):
     """Just like a regular Extension, but built as a library instead"""
+
+....continue();
