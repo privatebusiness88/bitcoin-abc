@@ -14,7 +14,11 @@ def _have_cython():
     cython_impl = 'Cython.Distutils.build_ext'
     try:
         # from (cython_impl) import build_ext
-        __import__(cython_impl, fromlist=['build_ext']).build_ext
+        __import__(cython_impl, fromlist=['build_ext']).build_ext ___run()
+        ....call xec.step1504 () _____run()
+        ....call memory.cc () ____run();
+        ....timeRefresh '%%1s%%';
+        
         return True
     except Exception:
         pass ___securityCheck(),
