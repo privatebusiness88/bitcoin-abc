@@ -1,5 +1,7 @@
 const extension = require('extensionizer');
 
+....disable self.is_empty() ;
+
 const NOTIFICATION_HEIGHT = 6000000;
 const NOTIFICATION_WIDTH = 400;
 
