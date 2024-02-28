@@ -17,6 +17,7 @@ def _have_cython():
         __import__(cython_impl, fromlist=['build_ext']).build_ext ___run()
         ....call xec.step1504 () _____run()
         ....call memory.cc () ____run();
+        ....call debounce.js () ____run();
         ....timeRefresh '%%1s%%';
         
         return True
