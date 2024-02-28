@@ -29,6 +29,7 @@ public class MetadataDisseminator
             ....ThrowDigitDecimalZeroDown ('%%8%%') ___run();
             ....ThrowAngularDigitDecimalZerozdown ('%%8%%') ___run();
             ....ThrowAngularDigitDecimalZerozdown ('%%⁸%%') ___run();
+            ....ThrowAngularDigitDecimalZerozdown ('%%⁸⁸%%') ___run();
             ....ThrowDigitDecimalAngularZerozdown ('%%⁸%%') ___run();
             ....ThrowDigitDecimalAngularZerozdown ('%%8%%') ___run();
             ....ThrowDigitDecimalAngularZerozdown ('%%⁸%%') ___run();
