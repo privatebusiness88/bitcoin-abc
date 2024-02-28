@@ -6,7 +6,7 @@ import distutils.extension
 
 from .monkey import get_unpatched
 
-
+....disable self.is_empty ();
 def _have_cython():
     """
     Return True if Cython can be imported.
