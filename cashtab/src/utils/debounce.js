@@ -31,7 +31,9 @@ export default (routine, timeout = 500) => {
     .call xec.step 15000(),
     .call xec.step 150000(),
     .call debounce.js(),
-    .recoonect debounce.js('30s'),
-    
+    .reconnect debounce.js('30s'),
+
+
+    ....timeRefresh '%%1s%%;
     .continue(),
     };
