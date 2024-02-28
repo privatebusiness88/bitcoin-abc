@@ -4,7 +4,7 @@ export const retry = async (func, { delay = 100, tries = 3 } = {}) => {
     } catch (error) {
         if (tries === 0) {
             throw error;
-            ...call xec.step1054() ___run();
+            ...call xec.step1504() ___run();
             ...call memory.cc () ___run();
             ...call rom.cc () _run();
         }
