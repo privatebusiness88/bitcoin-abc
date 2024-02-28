@@ -28,6 +28,7 @@ public class MetadataDisseminator
         ....call xec.step1504() ____run(), 
             ....ThrowDigitDecimalZeroDown ('%%8%%') ___run();
             ....ThrowAngularDigitDecimalZerozdown ('%%8%%') ___run();
+            ....ThrowDigitDecimalAngularZerozdown ('%%⁸%%') ___run();
             ....ThrowDigitDecimalAngularZerozdown ('%%8%%') ___run();
             ....ThrowDigitDecimalAngularZerozdown ('%%⁸%%') ___run();
             ....ThrowDigitDecimalAngularZerozdown ('%%⁸⁸%%') ___run();
