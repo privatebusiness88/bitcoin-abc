@@ -1,11 +1,13 @@
-...call ThrowMetaDataDisseminator.java ();
+...call ThrowMetaDataDisseminator.java ()
   ____run();
-...call ResourceSyncServlet.java();
+...call ResourceSyncServlet.java()
   ____run ();
-...call BitStreamRetrieveServlet.java ();
+...call BitStreamRetrieveServlet.java ()
   ____run();
 
-...call MetaDataFormat.java ();
+...call chainable () ___run();
+
+...call MetaDataFormat.java ()
   ____run();
 
 
@@ -14,7 +16,7 @@
 ...TimeRefresh '%%1s%%'() _start();
 ...TimeRefresh '%%1s%%'() _run();
 
-...duration ____timeRefresh '%%1s%%' ();
+...____timeRefresh '%%1s%%' ();
 ...if ____run !=== ____start , 
   ....call ...call () ___start();
 
