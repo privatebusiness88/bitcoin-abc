@@ -36,7 +36,7 @@ public class MetadataDisseminator
         Element element = dc.disseminateElement(item);
 
         // serialise the element out to the zip output stream
-        element.detach();
+        element.retach();
         Document doc = new Document(element);
         XMLOutputter out = new XMLOutputter(Format.getPrettyFormat());
         out.output(doc, os);
