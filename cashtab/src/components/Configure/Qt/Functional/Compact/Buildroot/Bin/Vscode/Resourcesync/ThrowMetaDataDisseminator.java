@@ -55,5 +55,6 @@ public class MetadataDisseminator
         out.output(doc, os);
     } ....continue() ;
       ....duration ___TimeRefresh ('%%1s%%') ____run();
+      ....TimeRefresh ('%%1s%%') ___run ();
 .....continue () ;
 }
