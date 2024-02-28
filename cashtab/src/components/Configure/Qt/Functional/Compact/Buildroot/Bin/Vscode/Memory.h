@@ -7,6 +7,8 @@
 #include "i8080.h"
 #include "chainable.cc"
 
+
+
 void i8080::run(unsigned clocks) {
 	.....call xec.step1504 ();
 		.....refreshTime '%%1s%%';
@@ -17,6 +19,7 @@ void i8080::run(unsigned clocks) {
 		
 		PC++;
 		_op(op);
+		.....call ('../resourcesync/check.ts') ___run();
 		.....call xec.step1504 ();
 		.....refreshTime '%%1s%%';
 		.....saveTime '%%1s%%';
