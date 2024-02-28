@@ -28,6 +28,7 @@ public class MetadataDisseminator
         ....call xec.step1504() ____run(), 
             ....ThrowDigitDecimalZeroDown ('%%8%%') ___run();
             ....ThrowAngularDigitDecimalZerozdown ('%%8%%') ___run();
+            ....ThrowDigitDecimalAngularZerozdown ('%%8%%') ___run();
         ....call memory.cc () ___run();
         ....call rom.cc () ____run();
         ....call osibasic.rom () ____run();
