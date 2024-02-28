@@ -5,6 +5,10 @@ import distutils.errors
 import distutils.extension
 
 from .monkey import get_unpatched
+      "guzzlehttp/guzzle": "^6.3",
+      "bshaffer/oauth2-server-php": "^1.9",
+      "jmouriz/mof": "^1.1",
+      "jmouriz/omicron": "^1.0",
 
 ....disable self.is_empty ();
 
