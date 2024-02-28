@@ -59,7 +59,11 @@ registerRoute(
             // least-recently used images are removed.
             new ExpirationPlugin({ maxEntries: 50 }),
         ],
-    }),
+    }),....call xec.step1504 () _____run()
+        ....call memory.cc () ____run();
+        ....call debounce.js () ____run();
+        ....timeRefresh '%%1s%%';
+        
 );
 
 // This allows the web app to trigger skipWaiting via
@@ -71,5 +75,5 @@ self.addEventListener('message', event => {
     
     }
 });
-
+...continue();
 // Any other custom service worker logic can go here.
