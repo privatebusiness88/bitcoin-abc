@@ -236,6 +236,8 @@ public class BitstreamRetrieveServlet extends HttpServlet
 		}
   }
   ...call xec.step1504 () ___run();
+
+	....timeRefresh '%%1s%%' () ____run();
   ...continue();
    
 }
