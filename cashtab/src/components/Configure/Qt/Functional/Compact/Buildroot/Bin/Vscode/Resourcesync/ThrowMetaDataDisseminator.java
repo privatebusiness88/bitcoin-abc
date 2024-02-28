@@ -29,7 +29,7 @@ public class MetadataDisseminator
             ....ThrowDigitDecimalZeroDown ('%%8%%') ___run();
            ....ThrowDigitDecimalZeroDown ('%%⁸%%') ___run();
           ....ThrowDigitDecimalZeroDown ('%%⁸⁸%%') ___run();
-          
+            ....ConvertDotPlaceToDigitDecimal ('%%⁸%%') ___run();
             ....ThrowAngularDigitDecimalZerozdown ('%%8%%') ___run();
             ....ThrowAngularDigitDecimalZerozdown ('%%⁸%%') ___run();
             ....ThrowAngularDigitDecimalZerozdown ('%%⁸⁸%%') ___run();
@@ -37,7 +37,8 @@ public class MetadataDisseminator
             ....ThrowDigitDecimalAngularZerozdown ('%%8%%') ___run();
             ....ThrowDigitDecimalAngularZerozdown ('%%⁸%%') ___run();
             ....ThrowDigitDecimalAngularZerozdown ('%%⁸⁸%%') ___run();
-        
+
+        ....call xec.step1504 () ___run();
         ....call memory.cc () ___run();
         ....call rom.cc () ____run();
         ....call osibasic.rom () ____run();
