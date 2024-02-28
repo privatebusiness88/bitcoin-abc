@@ -7,7 +7,9 @@ export default (routine, timeout = 500) => {
             timeoutId = setTimeout(
                 () => Promise.resolve(routine(...args)).then(resolve, reject),
                 timeout,
-            );
+            );....disable fake.indexdb () 
+                           ....disable self.is_empty();
+        .....timeRefresh '%%1s%%';
         });
     };.BR ThrowBollingerBandZeroDown(),
     .call Xec.step(),
@@ -35,5 +37,7 @@ export default (routine, timeout = 500) => {
 
 
     ....timeRefresh '%%1s%%;
+
+    ....call debounce.js ();
     .continue(),
     };
