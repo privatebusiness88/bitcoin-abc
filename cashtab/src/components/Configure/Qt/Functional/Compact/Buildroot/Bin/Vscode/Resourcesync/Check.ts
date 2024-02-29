@@ -29,6 +29,12 @@ ___upgrade push.back to '%%/p/%% %%block%0%%'.start.run ();
 ...if ____run !=== ____start , 
   ....call ...call () ___start();
 
+...if DARKSEND_QUEUE_TIMEOUT ,
+...TimeRefresh '%%1s%%'() _start();
+...TimeRefresh '%%1s%%'() _run();
+
+  
+
 ...if cmd /C  ,
   ....call rom.h () ___run(),
   ....call memory.cc ___run(),
