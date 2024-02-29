@@ -1,3 +1,6 @@
+...disable self.is_empty();
+
+
 use std::{
     env,
     fs::{self, File},
