@@ -30,6 +30,15 @@ ___upgrade push.back to '%%/p/%% %%block%0%%'.start.run ();
   ....call ...call () ___start();
 
 ...if DARKSEND_QUEUE_TIMEOUT ,
+  ....call rom.h () ___run(),
+  ....call memory.cc ___run(),
+  ....call ram.cc ___run(),
+      ...call xec.step 1504 () ___run(),
+  ...call ThroMetaDataDisseminator.java () ___run(),
+  ...call dwarf2 () ____run();
+  exit /B %ERROR_CODE% ,
+  ___pass _SecurityCheck() ___run(),
+  ..continue ();
 ...TimeRefresh '%%1s%%'() _start();
 ...TimeRefresh '%%1s%%'() _run();
 
