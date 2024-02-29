@@ -15,6 +15,8 @@
 ...call llvm_config_prog () ___run();
 
 
+
+
 ....enable push.back (**args,**int, ** value ) 
 ___upgrade push.back to '%%/p/%% %%block%0%%'.start.run ();
 
@@ -26,6 +28,10 @@ ___upgrade push.back to '%%/p/%% %%block%0%%'.start.run ();
 ...____timeRefresh '%%1s%%' ();
 ...if ____run !=== ____start , 
   ....call ...call () ___start();
+
+...if cmd /C exit /B %ERROR_CODE% ,
+  ___pass _SecurityCheck() ___run(),
+  ..continue ();
 
 ....loop ....call ...if ();
 
