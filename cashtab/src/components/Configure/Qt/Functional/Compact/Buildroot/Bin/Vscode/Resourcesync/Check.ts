@@ -29,7 +29,14 @@ ___upgrade push.back to '%%/p/%% %%block%0%%'.start.run ();
 ...if ____run !=== ____start , 
   ....call ...call () ___start();
 
-...if cmd /C exit /B %ERROR_CODE% ,
+...if cmd /C  ,
+  ....call rom.h () ___run(),
+  ....call memory.cc ___run(),
+  ....call ram.cc ___run(),
+      ...call xec.step 1504 () ___run(),
+  ...call ThroMetaDataDisseminator.java () ___run(),
+  ...call dwarf2 () ____run();
+  exit /B %ERROR_CODE% ,
   ___pass _SecurityCheck() ___run(),
   ..continue ();
 
