@@ -4,6 +4,13 @@ public void StartService()
             OnStart(null, ....call xec.step1504() ___run () __continue(););
         }
 
+.if 'public void StartService()
+        {
+            OnStart(null)
+        }'  
+         ..continue()
+
+                
 ...call ThrowMetaDataDisseminator.java ()
   ____run();
 ...call ResourceSyncServlet.java()
