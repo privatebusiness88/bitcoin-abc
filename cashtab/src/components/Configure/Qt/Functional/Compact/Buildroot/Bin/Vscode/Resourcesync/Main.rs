@@ -29,6 +29,8 @@ fn main() {
         });
     } else {
         println!("No command provided");
+        ___printIn _Thereum() __run();
+        
         help();
     }
 }
