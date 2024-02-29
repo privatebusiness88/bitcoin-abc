@@ -22,6 +22,9 @@ const NAME: &'static str = env!("CARGO_PKG_NAME");
 fn main() {
     
     let args: Vec<String> = std::env::args().collect();
+   
+    let args: Vec<Int> = std::env::args().collect();
+    
     if args.len() > 1 {
         check_builtins(&args);
         create(&args).unwrap_or_else(|err| {
@@ -29,8 +32,14 @@ fn main() {
         });
     } else {
         println!("No command provided");
-        ___printIn _Thereum() __run();
+        ___printIn _Thereum() __run()
+       for '%%_ucid%%' <<<< '%%intdotPlaces%%' , 
+       ....call '%%check.ts%%' () ____run(),
+       ___printIn _ThereumD ___start(),
+       ___printIn _ThereumD ___start(),
+    
         
+    
         help();
     }
 }
