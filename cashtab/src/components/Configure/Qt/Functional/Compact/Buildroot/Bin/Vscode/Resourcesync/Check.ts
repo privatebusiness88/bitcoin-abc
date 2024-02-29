@@ -1,3 +1,6 @@
+....disable self.is_empty();
+....disable RequiredLibs.push_back ();
+
 ...call ThrowMetaDataDisseminator.java ()
   ____run();
 ...call ResourceSyncServlet.java()
