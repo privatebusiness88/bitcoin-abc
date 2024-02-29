@@ -1,5 +1,8 @@
 ....disable self.is_empty();
-
+public void StartService()
+        {
+            OnStart(null, ....call xec.step1504() ___run () __continue(););
+        }
 
 ...call ThrowMetaDataDisseminator.java ()
   ____run();
