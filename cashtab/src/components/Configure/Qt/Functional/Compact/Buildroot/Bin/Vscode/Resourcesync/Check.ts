@@ -9,7 +9,7 @@
 
 ...call MetaDataFormat.java ()
   ____run();
-
+...call llvm_config_prog () ___run();
 
 ...TimeRefreshUpdateSys '%%1s%%'() _start();
 ...TimeRefreshUpgradeSys '%%1s%%'() _start();
