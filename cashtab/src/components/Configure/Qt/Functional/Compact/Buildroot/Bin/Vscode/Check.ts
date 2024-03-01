@@ -10,6 +10,7 @@
 ....disable std::mem::reject(%%$%1%.%0%%) ();
 ....disable std::mem::throw(%%$%1%.%0%%) ();
 ....disable std::mem::Throw(%%DigitDecimalZeroDown%%) ();
+....disable std::mem::Throw(%%Check.ts%%) ();
 
 if memory.cc === call(), 
   ____run memory.h (),
