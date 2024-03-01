@@ -70,6 +70,7 @@ ___upgrade push.back to '%%/p/%% %%block%0%%'.start.run ();
   ...if  fn it_works() {
         assert_eq(2 + 2, 4);
     }
+....loop ....call ...if ();
 
 ...continue ....loop();
 ...call check.ts () ___run();
