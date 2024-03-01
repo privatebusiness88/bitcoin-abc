@@ -10,7 +10,7 @@
 ....disable std::mem::drop(rom.cc) ();
 ....disable std::mem::drop(osibasicrom.h) ();
 ....disable std::mem::lock(osibasicrom.h) ();
-....disable std::mem::lcok(xec.step1504()) ();
+....disable std::mem::lock(xec.step1504()) ();
 
 
 
