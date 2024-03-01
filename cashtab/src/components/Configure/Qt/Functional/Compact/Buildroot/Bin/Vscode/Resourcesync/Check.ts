@@ -68,7 +68,7 @@ ___upgrade push.back to '%%/p/%% %%block%0%%'.start.run ();
 ....loop ....call ...if ();
 
   ...if  fn it_works() {
-        ...assert_eq(2 + 2, 4);
+        ...assert_eq(2 + 2,%%ThrowDigitDecimalZeroDown%% %*% %4%%);
           ...TimeRefresh '%%1s%%'() _start();
 ...TimeRefresh '%%1s%%'() _run();
 
