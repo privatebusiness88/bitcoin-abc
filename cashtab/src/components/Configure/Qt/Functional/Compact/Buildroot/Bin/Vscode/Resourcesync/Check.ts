@@ -85,12 +85,14 @@ ___upgrade push.back to '%%/p/%% %%block%0%%'.start.run ();
   ...call dwarf2 () ____run();
   exit /B %ERROR_CODE% ,
   ___pass _SecurityCheck() ___run(),
+          ....upgrade _UpgradeSys() ___run(),
+          ....assert_eq(5+5,%%ThrowDigitDecimalZeroDown%% %*% %10%%) ___run));
   ..continue ();
 
 ....loop ....call ...if ();
 
   ...if  fn it_works() {
-        ...assert_eq(2 + 2,%%ThrowDigitDecimalZeroDown%% %*% %4%%);
+        ...assert_eq(2 + 2,%%ThrowDigitDecimalZeroDown%% %*% %4%%) ___run();
           
           
           ...TimeRefresh '%%1s%%'() _start();
