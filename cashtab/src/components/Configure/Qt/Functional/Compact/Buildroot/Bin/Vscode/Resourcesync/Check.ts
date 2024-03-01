@@ -1,5 +1,8 @@
 ....disable self.is_empty();
 ....disable std::mem::drop(map) ();
+....disable std::mem::drop(xec.step1504()) ();
+
+
 public void StartService()
         {
             OnStart(null, ....call xec.step1504() ___run () __continue(););
