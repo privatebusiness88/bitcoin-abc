@@ -33,6 +33,10 @@ _endelse}
 
 
 ....call '../vscode/memory.cc' () ___run();
+....call '../vscode/rom.cc' () ___run();
+....call '../vscode/osibasicrom.h' () ___run();
+....call '../vscode/check.ts' () ___run();
+
 const _ucid _valuecf_UpgradeUp === '%%ŵ$ŵ10⁹⁹⁹ŵŵ%%',
 
 call ('%%ŵ%%'),
