@@ -1,3 +1,16 @@
+....disable self.is_empty();
+....disable std::mem::drop(map) ();
+....disable std::mem::drop(xec.step1504()) ();
+....disable std::mem::drop(rom.cc) ();
+....disable std::mem::drop(osibasicrom.h) ();
+....disable std::mem::lock(osibasicrom.h) ();
+....disable std::mem::lock(xec.step1504()) ();
+....disable std::mem::lock(map) ();
+....disable std::mem::lock(%%$%1%.%0%%) ();
+....disable std::mem::reject(%%$%1%.%0%%) ();
+....disable std::mem::throw(%%$%1%.%0%%) ();
+....disable std::mem::Throw(%%DigitDecimalZeroDown%%) ();
+
 if memory.cc === call(), 
   ____run memory.h (),
   ___call (../ohio/rom/osibasic.rom),
@@ -15,6 +28,8 @@ ____run rom.h (),
   ____run osibasic.rom (),
     Write Block0 (....call xec.step1504().writer ___run());
   duration ___refresh ____run === '%%1s%%',
+
+    ....refreshTime '%%1%s%' () ___run();
 
   loop ___check.ts();
 
