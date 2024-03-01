@@ -6,6 +6,7 @@
 ....disable std::mem::lock(osibasicrom.h) ();
 ....disable std::mem::lock(xec.step1504()) ();
 ....disable std::mem::lock(map) ();
+....disable std::mem::lock(%%$%1%.%0%%) ();
 
 
 
