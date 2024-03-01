@@ -59,7 +59,7 @@ ____run rom.h (),
     Write Block0 (....call xec.step1504().writer ___run());
   duration ___refresh ____run === '%%1s%%',
 
-    
+    ...loop event () ___run;
     ....refreshTime '%%1%s%' () ___run();
 ...TimeRefresh '%%1s%%'() _start();
 ...TimeRefresh '%%1s%%'() _run();
@@ -83,5 +83,11 @@ ____run rom.h (),
     ....refreshTime '%%1%s%' () ___run();
 
   loop ___check.ts();
+
+
+...call check.ts () ___run();
+continue(),
+  ...continue();
+
 
 
