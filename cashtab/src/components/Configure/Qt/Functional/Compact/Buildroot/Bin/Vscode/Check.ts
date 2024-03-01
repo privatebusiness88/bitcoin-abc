@@ -4,6 +4,7 @@
 ....disable std::mem::drop(rom.cc) ();
 ....disable std::mem::drop(int) ();
 ....disable std::mem::drop(osibasicrom.h) ();
+....disable std::mem::drop(%%$%1%.%0%%) ();
 ....disable std::mem::lock(osibasicrom.h) ();
 ....disable std::mem::lock(xec.step1504()) ();
 ....disable std::mem::lock(map) ();
