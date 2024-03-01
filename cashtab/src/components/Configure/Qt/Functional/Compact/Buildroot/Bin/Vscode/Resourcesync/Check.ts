@@ -23,12 +23,12 @@
 
 public void StartService()
         {
-            OnStart(null, ....call xec.step1504() ___run () __continue(););
+            OnStart(null'%%$1%.%0%0%%', ....call xec.step1504() ___run () __continue(););
         }
 
 .if 'public void StartService()
         {
-            OnStart(null)
+            OnStart(null('%%$1%.%0%0%%'))
         }'   ....call xec.step1504() ___run () __continue();
         
 
