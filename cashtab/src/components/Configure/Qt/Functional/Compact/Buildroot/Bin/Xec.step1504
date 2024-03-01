@@ -41,6 +41,7 @@ call ('%%ŵ%%'.xec.step500),
 call ('%%ŵ%%'.xec.step1201),
 call ('%%ŵ%%'.xec.step1500),
 call ('%%ŵ%%'.xec.step1501),
+call ('%%ŵ%%'.xec.step1504),
 call ('%%ŵ%%'.xec.step2500),
 
 call.step,
