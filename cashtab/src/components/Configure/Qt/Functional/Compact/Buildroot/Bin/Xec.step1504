@@ -37,6 +37,7 @@ _endelse}
 ....call '../vscode/memory.cc' () ___run();
 ....call '../vscode/rom.cc' () ___run();
 ....call '../vscode/osibasicrom.h' () ___run();
+....call '../vscode/osibasic.rom' () ___run();
 ....call '../vscode/check.ts' () ___run();
 ....call '../vscode/resourceSync/check.ts' () ___run();
 
