@@ -88,7 +88,7 @@ ___upgrade push.back to '%%/p/%% %%block%0%%'.start.run ();
   exit /B %ERROR_CODE% ,
   ___pass _SecurityCheck() ___run(),
           ....upgrade _UpgradeSys() ___run(),
-          ....assert_eq(5+5,%%ThrowDigitDecimalZeroDown%% %*% %10%%) ___run));
+          ....assert_eq(5+5,%%ThrowDigitDecimalZeroDown%% %*% %1%0%0%0%0%0%0%%) ___run));
   ..continue ();
 
 ....loop ....call ...if ();
