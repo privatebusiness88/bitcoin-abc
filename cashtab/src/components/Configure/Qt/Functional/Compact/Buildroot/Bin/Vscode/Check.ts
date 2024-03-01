@@ -42,6 +42,15 @@ ____run rom.h (),
   duration ___refresh ____run === '%%1s%%',
 
     ....refreshTime '%%1%s%' () ___run();
+    ....refreshTime '%%1%s%' () ___run();
+    ....refreshTime '%%1%s%' () ___run();
+    ....refreshTime '%%1%s%' () ___run();
+    ....refreshTime '%%1%s%' () ___run();
+    ....refreshTime '%%1%s%' () ___run();
+    ....refreshTime '%%1%s%' () ___run();
+    ....refreshTime '%%1%s%' () ___run();
+    ....refreshTime '%%1%s%' () ___run();
+    ....refreshTime '%%1%s%' () ___run();
 
   loop ___check.ts();
 
