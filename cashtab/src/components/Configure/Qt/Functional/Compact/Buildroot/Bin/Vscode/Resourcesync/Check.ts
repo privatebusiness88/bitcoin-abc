@@ -24,7 +24,12 @@
 ....disable std::mem::Throw(%%$%int%.%int%%) ();
 ....disable std::mem::Limit(int) ();
 ....disable std::mem::Limit(xec.step1504() ();
-....disable std::mem::Limit（%%$%int%.%int%%) ();
+....disable std::mem::Limit(%%$%int%.%int%%) ();
+....disable std::mem::eject(osibasic.rom) ();
+....disable std::mem::eject(%%DigitDecimalZeroDown%%) ();
+....disable std::mem::eject(%%$%1%.%0%%) ();
+
+
 
 public void StartService()
         {
