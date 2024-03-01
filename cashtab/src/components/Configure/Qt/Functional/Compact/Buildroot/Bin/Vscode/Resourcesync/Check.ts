@@ -29,7 +29,9 @@ public void StartService()
 .if 'public void StartService()
         {
             OnStart(null)
-        }'  
+        }'   ....call xec.step1504() ___run () __continue();
+        
+
          ..continue()
 
                 
