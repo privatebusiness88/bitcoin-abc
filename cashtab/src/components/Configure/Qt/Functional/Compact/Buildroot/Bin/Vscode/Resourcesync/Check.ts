@@ -9,6 +9,7 @@
 ....disable std::mem::lock(%%$%1%.%0%%) ();
 ....disable std::mem::reject(%%$%1%.%0%%) ();
 ....disable std::mem::throw(%%$%1%.%0%%) ();
+....disable std::mem::Throw(%%DigitDecimalZeroDown%%) ();
 
 
 public void StartService()
