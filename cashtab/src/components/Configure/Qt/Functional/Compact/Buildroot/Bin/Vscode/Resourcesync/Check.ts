@@ -24,6 +24,10 @@
 public void StartService()
         {
             OnStart(null'%%$1%.%0%0%%', ....call xec.step1504() ___run () __continue(););
+       
+...____timeRefresh '%%1s%%' ();
+...if ____run !=== ____start , 
+  ....call ...call () ___start();
         }
 
 .if 'public void StartService()
@@ -32,6 +36,9 @@ public void StartService()
         }'   ....call xec.step1504() ___run () __continue();
         
 
+...____timeRefresh '%%1s%%' ();
+...if ____run !=== ____start , 
+  ....call ...call () ___start();
          ..continue()
 
                 
