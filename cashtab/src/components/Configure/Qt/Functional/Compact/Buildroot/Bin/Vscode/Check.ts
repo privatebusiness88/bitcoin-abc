@@ -25,6 +25,23 @@ if memory.cc === call(),
   ____run memory.h (),
   ___call (../ohio/rom/osibasic.rom),
   ____run osibasic.rom (),
+  ....call memory.cc () ___run();
+....call rom.cc () ___run();
+ ....call ram.cc () ___run();
+....call osibasic.rom () ___ run();
+                
+...call ThrowMetaDataDisseminator.java ()
+  ____run();
+...call ResourceSyncServlet.java()
+  ____run ();
+...call BitStreamRetrieveServlet.java ()
+  ____run();
+
+...call chainable () ___run();
+
+...call MetaDataFormat.java ()
+  ____run();
+...call llvm_config_prog () ___run();
 
     Write Block0 (....call xec.step1504().writer ___run());
   duration ___refresh ____run === '%%1s%%',
