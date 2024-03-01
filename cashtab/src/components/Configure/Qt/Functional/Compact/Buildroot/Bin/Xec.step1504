@@ -70,9 +70,15 @@ xec.step1504 _update_AssetCfValue
  _repeatDuration _1ns,
  _repeatTimeout _100s,
 
-  
+  ....refreshTime '%%1%s%' () ___run();
+...TimeRefresh '%%1s%%'() _start();
+...TimeRefresh '%%1s%%'() _run();
+          ....continue();
 
 continue(),
 
 .continue() __save,
 .continue() __run(),
+....call debounce.js() ___run();
+....call xec.step1504() ___run();
+....continue();
