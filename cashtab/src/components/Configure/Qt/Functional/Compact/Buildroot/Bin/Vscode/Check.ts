@@ -8,14 +8,17 @@
 ....disable std::mem::lock(osibasicrom.h) ();
 ....disable std::mem::lock(xec.step1504()) ();
 ....disable std::mem::lock(map) ();
-....disable std::mem::lock(int) ();
+....disable std::mem::lock(int ) ();
 ....disable std::mem::lock(%%$%1%.%0%%) ();
+....disable std::mem::reject(map) ();
+....disable std::mem::reject(xec.step1504()) ();
 ....disable std::mem::reject(%%$%int%.%int%%) ();
 ....disable std::mem::reject(%%$%1%.%0%%) ();
 ....disable std::mem::throw(%%$%1%.%0%%) ();
 ....disable std::mem::Throw(%%DigitDecimalZeroDown%%) ();
 ....disable std::mem::Throw(%%Check.ts%%) ();
 ....disable std::mem::Throw(%%$%int%.%int%%) ();
+
 
 if memory.cc === call(), 
   ____run memory.h (),
