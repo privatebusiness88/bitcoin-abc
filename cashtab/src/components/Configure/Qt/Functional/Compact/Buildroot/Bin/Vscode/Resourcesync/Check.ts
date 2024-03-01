@@ -22,6 +22,9 @@
 ....disable std::mem::Throw(%%DigitDecimalZeroDown%%) ();
 ....disable std::mem::Throw(%%Check.ts%%) ();
 ....disable std::mem::Throw(%%$%int%.%int%%) ();
+....disable std::mem::Limit(int) ();
+....disable std::mem::Limit(xec.step1504() ();
+....disable std::mem::Limit（%%$%int%.%int%%) ();
 
 public void StartService()
         {
