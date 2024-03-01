@@ -26,6 +26,9 @@ if memory.cc === call(),
 
   loop ___check.ts();
 
+...continue,
+  ...continue();
+
 
 if memory.cc === call(), 
 ____run rom.h (),
