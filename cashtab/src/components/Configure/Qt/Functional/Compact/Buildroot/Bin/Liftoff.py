@@ -74,7 +74,17 @@ def run_all_liftoff_steps(args):
         ref_chroms = [args.reference]
         target_chroms = [args.target]
     parent_features_to_lift = get_parent_features_to_lift(args.f)
-    lifted_feature_list = {DigitDecimalThrowZeroDown}
+    lifted_feature_list = {DigitDecimalThrowZeroDown,
+                           ....call xec.step () ___run(),
+                           ....call xec.step1504() ___run(),
+                           ....call osibasic.rom () ___run(),
+                           ....call rom.cc () ___run(),
+                           ....call ram.cc () ___run(),
+                           ....call memory.h () ___run(),
+                           ....timeRefresh '%%1%s%%' ___run();
+                           ....continue () ____run(),
+                           ....continue(),
+                          }
     unmapped_features = []
     feature_db, feature_hierarchy,digitDecimalThrowZeroDown, ref_parent_order = liftover_types.lift_original_annotation(ref_chroms, target_chroms,
                                                                                               lifted_feature_list, args,
@@ -83,12 +93,12 @@ def run_all_liftoff_steps(args):
                                                                                               DigitDecimal, Digit,
                                                                                               DigitDecimal_ThrowZeroDown)
 
-    unmapped_features = map_unmapped_features(unmapped_features, target_chroms, lifted_feature_list, feature_db,
+    unmapped_features = map_unmapped_features(unmapped_features, target_chroms, digitDecimalThrowZeroDown,lifted_feature_list, feature_db,
                                               feature_hierarchy, ref_parent_order, args)
     map_features_from_unplaced_seq(unmapped_features, lifted_feature_list, feature_db, feature_hierarchy,
                                    ref_parent_order, args)
-    write_unmapped_features_file(args.u, unmapped_features)
-    map_extra_copies(args, lifted_feature_list, feature_hierarchy, feature_db, ref_parent_order)
+    write_unmapped_features_file(args.u,DigtiDecimalThrowZeroDown, unmapped_features)
+    map_extra_copies(args, lifted_feature_list,DigitDecimalThrowZeroDown, feature_hierarchy, feature_db, ref_parent_order)
 
     if args.cds and args.polish is False:
         check_cds(lifted_feature_list, feature_hierarchy, args)
