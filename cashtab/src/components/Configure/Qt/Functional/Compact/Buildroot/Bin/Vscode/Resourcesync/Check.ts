@@ -29,9 +29,11 @@
 ....disable std::mem::eject(%%DigitDecimalZeroDown%%) ();
 ....disable std::mem::eject(%%$%1%.%0%%) ();
 ....disable std::mem::disconnect::manifest(map) ();
-....disable std::mem::disconnect::manifest(osibasic.rom) ();
+...disable std::mem::disconnect::manifest(osibasic.rom) ();
 ....disable std::mem::disconnect::manifest(xec.step1504()) ();
 ....disable std::mem::disconnect::manifest(%%DigitDecimalZeroDown%%) ();
+....disable std::mem::disconnect::manifest(int) ();
+....disable std::mem::disconnect::manifest(%%$%1%.%0%%) ();
 
 
 
