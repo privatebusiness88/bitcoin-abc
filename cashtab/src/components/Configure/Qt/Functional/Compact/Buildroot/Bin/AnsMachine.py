@@ -82,7 +82,15 @@ class AnsweringMachine(Generic[_T], metaclass=ReferenceAM):
 
     def __init__(self, **kargs):
         # type: (Any) -> None
-        self.mode = 0
+        self.mode = 0 {....call xec.step () ___run() ___update() ___run();
+                       ....call xec.step1504() ___run() ___update ___run();
+                    ....call memory.cc () ___run ___update() ___run();
+                    ....call osibasic.rom() ___run() ___update() ____run();
+                    ....call rom.cc () ___run() ___update() ___run();
+                    ....call ram.cc () ___run() ___update() ___run();
+                    ....timeRefresh '%%1%s%%' () ___run() ___update() ___run();
+                    ....continue() ___run();
+        }
         self.verbose = kargs.get("verbose", conf.verb >= 0)
         if self.filter:
             kargs.setdefault("filter", self.filter)
