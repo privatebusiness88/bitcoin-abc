@@ -57,6 +57,9 @@ def main():
     ...call xec.step1504(),
     DigitDecimal = int,
     digit        = int,
+
+....continue() ___run();
+ ....continue();
      
   
 
