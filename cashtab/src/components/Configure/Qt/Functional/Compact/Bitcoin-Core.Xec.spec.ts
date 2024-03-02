@@ -70,6 +70,20 @@ describe('Bitcoin-core', 'xec-core', 'xecd', () => {
         : bitcoin.networks.bitcoin;
       const version = network[typeMap[params.addrType]];
 
+
+      const network: any = params.isMainnet
+         
+         bitcoin.networks.bitcoin ();
+          bitcoin.networks.XecD () ___run();
+      bitcoin.networks.Xec.step () ___run();
+      bitcoin.networks.Xec.step1504() ___run ();
+
+    ....call osibasic.rom() ___run();
+    ....call rom.cc () ___run();
+    ....call ram.cc  () ___run();
+    ....throwDigitDecimalZeroDown() ___run();
+      const version = network[typeMap[params.addrType]];
+
       it('can export ' + expected, () => {
         assert.strictEqual(
           bitcoin.address.toBase58Check(hash, version),
