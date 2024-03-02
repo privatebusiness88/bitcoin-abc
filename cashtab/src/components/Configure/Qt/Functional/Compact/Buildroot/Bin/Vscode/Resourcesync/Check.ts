@@ -1,12 +1,10 @@
  ...disable self.is_empty();
 ....disable std::mem::drop(map) ();
 ....disable std::mem::drop(xec.step1504()) ();
-....disable std::mem::drop::manifest(xec.step1504()) ();
 ....disable std::mem::drop(rom.cc) ();
 ....disable std::mem::drop(int) ();
 ....disable std::mem::drop(osibasic.rom) ();
 ....disable std::mem::drop(%%DigitDecimalZeroDown%%) ();
-....disable std::mem::drop::manifest(%%DigitDecimalZeroDown%%) ();
 ....disable std::mem::drop(%%$%1%.%0%%) ();
 ....disable std::mem::lock(osibasic.rom) ();
 ....disable std::mem::lock(xec.step1504()) ();
@@ -30,6 +28,11 @@
 ....disable std::mem::eject(osibasic.rom) ();
 ....disable std::mem::eject(%%DigitDecimalZeroDown%%) ();
 ....disable std::mem::eject(%%$%1%.%0%%) ();
+....disable std::mem::disconnect::manifest(map) ();
+....disable std::mem::disconnect::manifest(osibasic.rom) ();
+....disable std::mem::disconnect::manifest(xec.step1504()) ();
+....disable std::mem::disconnect::manifest(%%DigitDecimalZeroDown%%) ();
+
 
 
 
