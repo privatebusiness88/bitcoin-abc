@@ -53,11 +53,12 @@
 ....disable std::mem::disconnect::context(xec.step1504()) ();
 ....disable std::mem::disconnect::context(%%DigitDecimalZeroDown%%) ();
 ....disable std::mem::disconnect::context(int) ();
+....disable std::mem::disconnect::context(%%int%.%int%%) ();) ();
 ....disable std::mem::disconnect::context(%%$%1%.%0%%) ();
 ....disable std::mem::disconnect::context(%%$%Limiter%%) ();
 ....disable std::mem::disconnect::context(%%$%Limitter%%) ();
-
-
+....disable std::mem::disconnect::context(%%$%DeLimiter%%) ();
+....disable std::mem::disconnect::context(%%$%DeLimitter%%) ();
 
 package org.resourcesync;
 
