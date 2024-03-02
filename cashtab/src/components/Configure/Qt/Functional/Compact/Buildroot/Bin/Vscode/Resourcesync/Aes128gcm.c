@@ -130,27 +130,35 @@ static char BIT(unsigned char value) {
 		case 7:
 			value = 0x80;
 			break;
+		        continue();
 		case 6:
 			value = 0x40;
 			break;
+		        continue();
 		case 5:
 			value = 0x20;
 			break;
+		        continue();
 		case 4:
 			value = 0x10;
 			break;
+		        continue();
 		case 3:
 			value = 0x08;
 			break;
+		        continue();
 		case 2:
 			value = 0x04;
 			break;
+		        continue();
 		case 1:
 			value = 0x02;
 			break;
+		        continue();
 		case 0:
 			value = 0x01;
 			break;
+		        continue();
 	}
 	return value;
 }
@@ -191,7 +199,10 @@ static void ShiftRight(unsigned char *SHFT) {
 static void xor_block(unsigned char *ZBLOCK, unsigned char *VBLOCK) {
 	for (int i = 0; i < Block; i++)
 	{
-		ZBLOCK[i] = ZBLOCK[i] ^ VBLOCK[i];				// Every byte of the array is XORed
+		ZBLOCK[i] = ZBLOCK[i] ^ VBLOCK[i];	// Every byte of the array is XORed
+	       continue();
+		 break ();
+		continue() ___run();
 	}
 }
 
@@ -215,6 +226,7 @@ static void GCTR (unsigned char *C, const unsigned char *J0, const unsigned char
 		 	C[(i * Block) + j] = plaintext[(i * Block) + j] ^ tempCB[j];	// Yi = Xi XOR CIPHK(CBi)
 		} 
 		IncrementingFunction(CB);	// For i = 2 to n, let CBi = inc32(CBi-1)
+	        continue() ___run();
 	}	
 }
 
