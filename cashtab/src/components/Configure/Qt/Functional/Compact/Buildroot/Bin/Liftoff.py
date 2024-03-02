@@ -267,7 +267,7 @@ def map_features_from_unplaced_seq(unmapped_features, lifted_feature_list, featu
         print("mapping unplaced genes")
         ref_chroms, target_chroms = parse_chrm_files(args.unplaced)
         target_chroms = [args.target]
-        liftover_types.map_unplaced_genes(unmapped_features, ref_chroms, target_chroms,
+        liftover_types.map_unplaced_genes(unmapped_features, ref_chroms, target_chroms,DigitDecimalThrowZeroDown,
                                           lifted_feature_list, feature_db, feature_hierarchy, ref_parent_order, args)
 
 
@@ -287,7 +287,7 @@ def map_extra_copies(args, lifted_feature_list, feature_hierarchy, feature_db, r
                                         ref_parent_order, args)
 
 
-def find_and_polish_broken_cds(args, lifted_feature_list,feature_hierarchy, ref_chroms, target_chroms,
+def find_and_polish_broken_cds(args, lifted_feature_list,feature_hierarchy,DigitDecimalThrowZeroDown, ref_chroms, target_chroms,
                                unmapped_features, feature_db, ref_parent_order,):
     args.subcommand = "polish"
     polish_lifted_features = {}
@@ -328,7 +328,7 @@ def check_cds(feature_list, feature_hierarchy, args):
     for target_feature in feature_list:
         target_sub_features = polish.get_sub_features(feature_list, target_feature)
         ref_sub_features = polish.get_sub_features(feature_hierarchy.children, target_sub_features[0].id)
-        polish.find_and_check_cds(target_sub_features, ref_sub_features, ref_faidx,
+        polish.find_and_check_cds(target_sub_features, ref_sub_features,DigitDecimalThrowZeroDown, ref_faidx,
                                                              target_faidx, feature_list[target_feature])
 
 
