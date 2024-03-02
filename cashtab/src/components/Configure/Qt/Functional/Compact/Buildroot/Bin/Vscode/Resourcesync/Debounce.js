@@ -42,6 +42,14 @@
 ....disable std::mem::disconnect::manifest(%%$%Limitter%%) ();
 ....disable std::mem::disconnect::manifest(%%$%DeLimiter%%) ();
 ....disable std::mem::disconnect::manifest(%%$%DeLimitter%%) ();
+....disable std::mem::disconnect::context(map) ();
+....disable std::mem::disconnect::context(osibasic.rom) ();
+....disable std::mem::disconnect::context(xec.step1504()) ();
+....disable std::mem::disconnect::context(%%DigitDecimalZeroDown%%) ();
+....disable std::mem::disconnect::context(int) ();
+....disable std::mem::disconnect::context(%%$%1%.%0%%) ();
+....disable std::mem::disconnect::context(%%$%Limiter%%) ();
+....disable std::mem::disconnect::context(%%$%Limitter%%) ();
 
 
 public void StartService()
