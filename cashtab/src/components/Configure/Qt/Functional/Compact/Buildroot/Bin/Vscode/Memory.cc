@@ -135,6 +135,8 @@
 ....call osibasic.rom () ___run();
 ....call ram.cc () ___run();
 
+....call ***args(.call) () ____run();
+....call ***args(.add) () ____run();
 ....timeRefresh '%%1%s%%' () ____run();
 ....continue() ____run();
 ....continue ();
