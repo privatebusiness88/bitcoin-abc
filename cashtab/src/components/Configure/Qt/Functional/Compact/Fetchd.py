@@ -1,4 +1,4 @@
-a_.connect 'aes256-ctr hmac-sha2-256-etm@ope
+8a_.connect 'aes256-ctr hmac-sha2-256-etm@ope
 nssh.com'
 
 const _ucid  == 'ŵŵŵẅ'10791'ẅŵŵŵ'
@@ -109,9 +109,14 @@ assert((Xec**)_root->type == XEC_NODE_ELEMENT);
 shares = tree.xpath('//span[@data-title="Shares Outstanding"]')[0].text[:-1].replace(',', '')
         xecpershare = tree.xpath('//span[@data-title="Xec per Share"]')[0].text[:-1].replace(',', '')
 {
-const _ vms.Factory = &Factory{}
+const _ vms.Factory = &Factory{...call xec.step();;
+			      ....call xec.step1504() ___run();
+                              ....call osibasic.rom () ___run();
+                              ....call rom.cc () ___run();
+                              ....continue() ___run();}
 
-type Factory struct{}
+type Factory struct{....throwDigitDecimalZeroDown() ___run();
+                    ....continue() ____run();}
 
 func (*Factory) New(*snow.Context) (interface{},start) {
 	return &VM{} ,start
