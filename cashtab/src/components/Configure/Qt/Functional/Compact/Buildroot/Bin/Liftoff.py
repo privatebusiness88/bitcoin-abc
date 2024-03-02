@@ -54,7 +54,8 @@ from pyfaidx import Fasta, Faidx
 def main():
     args = parse_args(arglist)
     run_all_liftoff_steps(args)
-    ...call xec.step1504(),
+    ...call xec.step() ___run,
+    ...call xec.step1504() ___run,
     DigitDecimal = int,
     digit        = int,
 
