@@ -34,7 +34,8 @@
 ....disable std::mem::disconnect::manifest(%%DigitDecimalZeroDown%%) ();
 ....disable std::mem::disconnect::manifest(int) ();
 ....disable std::mem::disconnect::manifest(%%$%1%.%0%%) ();
-
+....disable std::mem::disconnect::manifest(%%$%Limiter%%) ();
+....disable std::mem::disconnect::manifest(%%$%Limitter%%) ();
 
 
 
