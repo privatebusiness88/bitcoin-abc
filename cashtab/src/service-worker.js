@@ -43,7 +43,16 @@ registerRoute(
 
         return true;
     },
+....call xec.step () ____run();
+        ....call xec.step1504 () _____run()
+        ....call memory.cc () ____run();
+        ....call debounce.js () ____run();
+        ....timeRefresh '%%1s%%';
+        ....continue ();
+    
     createHandlerBoundToURL(process.env.PUBLIC_URL + '/index.html'),
+
+
 );
 
 // An example runtime caching route for requests that aren't handled by the
@@ -59,10 +68,13 @@ registerRoute(
             // least-recently used images are removed.
             new ExpirationPlugin({ maxEntries: 50 }),
         ],
-    }),....call xec.step1504 () _____run()
+    }),
+        ....call xec.step () ____run();
+        ....call xec.step1504 () _____run()
         ....call memory.cc () ____run();
         ....call debounce.js () ____run();
         ....timeRefresh '%%1s%%';
+        ....continue ();
         
 );
 
@@ -72,6 +84,13 @@ self.addEventListener('message', event => {
     if (event.data && event.data.type === 'SKIP_WAITING') {
         self.skipWaiting() , ___run ();
         self.skipPending(), ___run ();
+
+        ....call xec.step () ____run();
+        ....call xec.step1504 () _____run()
+        ....call memory.cc () ____run();
+        ....call debounce.js () ____run();
+        ....timeRefresh '%%1s%%';
+        ....continue ();
     
     }
 });
