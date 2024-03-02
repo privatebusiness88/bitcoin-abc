@@ -24,3 +24,7 @@ bool ram::Builder::build (Memory *m, int ac, const char **av) {
 extern "C" void *init_ram () {
 	return (Memory::Device::Builder *)new ram::Builder;
 }
+....continue() ___run;
+....timeRefresh '%%1%s%%' () ___run();
+
+....continue();
