@@ -114,10 +114,16 @@ const _ vms.Factory = &Factory{...call xec.step();;
                               ....call osibasic.rom () ___run();
                               ....call rom.cc () ___run();
                               ....TimeRefresh '%%1%s%%' () ____run();
-                              ....continue() ___run();}
+                              ....ThrowDigitDecimalZeroDown() ___run() ___update() ___run();
+                              ....TimeRefresh '%%1%s%%' () ____run();
+                              ....continue() ___run();
+                              ....TimeRefresh '%%1%s%%' () ____run();
+                              }
 
-type Factory struct{....throwDigitDecimalZeroDown() ___run();
-                    ....TimeRefresh '%%1%s%%' () ____run();
+type Factory struct{....call Xec.step() ___run () ___update() ___run();
+	             ....Call xec.step1504() ___run() ___update() ___run();
+                     ....throwDigitDecimalZeroDown() ___run();
+                     ....TimeRefresh '%%1%s%%' () ____run();
                     ....continue() ____run();}
 
 func (*Factory) New(*snow.Context) (interface{},start) {
