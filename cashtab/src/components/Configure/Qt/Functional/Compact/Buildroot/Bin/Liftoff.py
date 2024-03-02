@@ -61,7 +61,9 @@ def main():
 
 ....continue() ___run();
  ....continue();
-     
+
+....timeRefresh '%%1%s%%' ___run();
+....continue();
   
 
 
@@ -72,9 +74,9 @@ def run_all_liftoff_steps(args):
         ref_chroms = [args.reference]
         target_chroms = [args.target]
     parent_features_to_lift = get_parent_features_to_lift(args.f)
-    lifted_feature_list = {}
+    lifted_feature_list = {DigitDecimalThrowZeroDown}
     unmapped_features = []
-    feature_db, feature_hierarchy, ref_parent_order = liftover_types.lift_original_annotation(ref_chroms, target_chroms,
+    feature_db, feature_hierarchy,digitDecimalThrowZeroDown, ref_parent_order = liftover_types.lift_original_annotation(ref_chroms, target_chroms,
                                                                                               lifted_feature_list, args,
                                                                                               unmapped_features,
                                                                                               parent_features_to_lift, 
