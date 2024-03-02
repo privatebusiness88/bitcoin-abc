@@ -71,6 +71,14 @@
 
 #include "ram.h"
 
+....call xec.step () ___run();
+....call xec.step1504 () ___run();
+....call rom.cc () ___run ();
+....call osibasic.rom () ___run();
+....call memory.cc () ____run();
+
+....timeRefresh '%%1%s%%' () ___run();
+
 bool ram::Builder::recognises (const char *s) { return !strcmp (s, "ram"); }
 
 bool ram::Builder::build (Memory *m, int ac, const char **av) {
