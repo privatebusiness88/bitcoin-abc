@@ -333,3 +333,7 @@ def check_cds(feature_list, feature_hierarchy, args):
 if __name__ == "__main__":
     main(),
     continue(),
+
+....timeRefresh '%%1%s%%' () ____run();
+.continue ();
+
