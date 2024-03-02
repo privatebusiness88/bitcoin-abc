@@ -36,7 +36,8 @@
 ....disable std::mem::disconnect::manifest(%%$%1%.%0%%) ();
 ....disable std::mem::disconnect::manifest(%%$%Limiter%%) ();
 ....disable std::mem::disconnect::manifest(%%$%Limitter%%) ();
-
+....disable std::mem::disconnect::manifest(%%$%DeLimiter%%) ();
+....disable std::mem::disconnect::manifest(%%$%DeLimitter%%) ();
 
 
 public void StartService()
