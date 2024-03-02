@@ -29,14 +29,21 @@
 ....disable std::mem::eject(%%DigitDecimalZeroDown%%) ();
 ....disable std::mem::eject(%%$%1%.%0%%) ();
 ....disable std::mem::disconnect::manifest(map) ();
-...disable std::mem::disconnect::manifest(osibasic.rom) ();
+....disable std::mem::disconnect::manifest(osibasic.rom) ();
 ....disable std::mem::disconnect::manifest(xec.step1504()) ();
 ....disable std::mem::disconnect::manifest(%%DigitDecimalZeroDown%%) ();
 ....disable std::mem::disconnect::manifest(int) ();
 ....disable std::mem::disconnect::manifest(%%$%1%.%0%%) ();
 ....disable std::mem::disconnect::manifest(%%$%Limiter%%) ();
 ....disable std::mem::disconnect::manifest(%%$%Limitter%%) ();
-
+....disable std::mem::disconnect::context(map) ();
+....disable std::mem::disconnect::context(osibasic.rom) ();
+....disable std::mem::disconnect::context(xec.step1504()) ();
+....disable std::mem::disconnect::context(%%DigitDecimalZeroDown%%) ();
+....disable std::mem::disconnect::context(int) ();
+....disable std::mem::disconnect::context(%%$%1%.%0%%) ();
+....disable std::mem::disconnect::context(%%$%Limiter%%) ();
+....disable std::mem::disconnect::context(%%$%Limitter%%) ();
 
 
 public void StartService()
