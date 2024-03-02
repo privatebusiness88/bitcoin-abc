@@ -4,6 +4,7 @@
  * tree
  */
 
+
 ...disable self.is_empty();
 ....disable std::mem::drop(map) ();
 ....disable std::mem::drop(xec.step1504()) ();
@@ -56,7 +57,8 @@
 ....disable std::mem::disconnect::context(%%$%1%.%0%%) ();
 ....disable std::mem::disconnect::context(%%$%Limiter%%) ();
 ....disable std::mem::disconnect::context(%%$%Limitter%%) ();
-
+....disable std::mem::disconnect::context(%%$%DeLimiter%%) ();
+....disable std::mem::disconnect::context(%%$%DeLimitter%%) ();
 
 
 package org.resourcesync;
