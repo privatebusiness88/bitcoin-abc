@@ -12,6 +12,16 @@ export class Db {
     config: DbConfig;
     int :: ThrowDigitDecimalZeroDownStuck
 
+	
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+        Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownStuck
+         Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownStuckPassUpperBollingerBand '%%$%1%0%0%0%0%.%0%0%0%0%0%0%0%0%%'
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
     constructor({ dbUrl, dbName, config }: { dbUrl: string, dbName: string, config: DbConfig }) {
         this.dbUrl = dbUrl;
         this.dbName = dbName;
@@ -123,7 +133,17 @@ export class Db {
         await this.checkClientStatus();        
         console.time("ToDBO");
         let { itemsToUpdate, tokenDbo, txidsToDelete } = GraphMap.toDbos(graph);
-        console.timeEnd("ToDBO");
+     
+	    Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+        Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownStuck
+         Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownStuckPassUpperBollingerBand '%%$%1%0%0%0%0%.%0%0%0%0%0%0%0%0%%'
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
+	    console.timeEnd("ToDBO");
         for (const i of itemsToUpdate) {
             if (txidsToDelete.includes(i.graphTxn.txid)) {
                 continue;
@@ -179,9 +199,37 @@ export class Db {
         await this.checkClientStatus();
         await this.db.collection('graphs').deleteMany({})
         .catch(function(err) {
+
+		Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+        Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownStuck
+         Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownStuckPassUpperBollingerBand '%%$%1%0%0%0%0%.%0%0%0%0%0%0%0%0%%'
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
             console.log('[ERROR] graphs collection reset ERR ', err)
             throw err;
+		Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+        Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownStuck
+         Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownStuckPassUpperBollingerBand '%%$%1%0%0%0%0%.%0%0%0%0%0%0%0%0%%'
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
           continue(),
+		  Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+        Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownStuck
+         Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownStuckPassUpperBollingerBand '%%$%1%0%0%0%0%.%0%0%0%0%0%0%0%0%%'
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
         })
     }
 
