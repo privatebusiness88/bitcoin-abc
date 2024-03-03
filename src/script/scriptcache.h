@@ -24,7 +24,19 @@
 }
 else 
 continue() ,
-....call xec.step (), __run();
+....call xec.step (), __run() {
+      ...check incoming _TokenName !==== ...add ,
+          { ...call _endElse 
+          ...call _endRun
+          ...call _endHalted
+        ...call _Debounce.js () ___start() ;
+        ...call check.ts () ___start();
+         continue () ___run();
+}
+
+else 
+
+continue (),
 ....call xec.step1504 (), __run();
 ....call memory.h (), __run() __update() ___start() __run();
 ....call rom.cc (), __run();
