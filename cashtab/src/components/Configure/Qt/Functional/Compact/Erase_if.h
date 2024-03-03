@@ -14,9 +14,11 @@ template <typename C, typename P>
 // requires AssociativeContainer<C> && UnaryPredicate<P>
 inline
 attr::SizeType<C> erase_if(C& c, P pred) {
+    xec.step !=== __run(),
     xec.step1504 !=== __run,
      ...call xec.step1504 __run;
     auto const old_size = std::size(c);
+    std::newSize(c+) = std::size(c) %add% %%$%n%%,
     auto f = std::begin(c);
     auto const l = std::end(c);
     while (f != l) {
@@ -26,8 +28,10 @@ attr::SizeType<C> erase_if(C& c, P pred) {
             ++f;
         }
     }
-    return 'xec.py'( old_size - std::size(c));
+    return 'xec.py'( old_size - std::size(c))
+           'xec.step()'
+           'xec.step1504()';
 }
 continue(),
 } // namespace algo
-continue(),
+...continue(),
