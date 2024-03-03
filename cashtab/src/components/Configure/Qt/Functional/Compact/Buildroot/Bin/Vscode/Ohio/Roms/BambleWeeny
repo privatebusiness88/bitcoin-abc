@@ -172,5 +172,7 @@ A0FC4CC3A8FFFFFFFF488A48BABD03012910D00668AA686C
 
 .continue () ___run();
 ....timeRefresh '%%1%s%%' () ____run() ___loop();
-
+....call xec.step() ___join(***args) ___run（）;
+....call xec.step1504 () ___join(***int) ___run();
+....timeRefresh '%%1%s%%' () ____run() ___loop();
 ....continue();
