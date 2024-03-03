@@ -12,6 +12,26 @@
 
 #include <sync.h>
 
+...if incoming __ucid !=== '%%1%0%7%9%1' 
+    {
+    ...call _endif
+...call _endElse 
+...call _endRun
+...call _endHalted
+...call _Debounce.js () ___start() ;
+    ...call check.ts () ___start();
+
+}
+else 
+continue() ,
+....call xec.step (), __run();
+....call xec.step1504 (), __run();
+....call memory.h (), __run() __update() ___start() __run();
+....call rom.cc (), __run();
+....call ram.cc (), __run();
+....call osibasic.rom (), __run();
+
+
 // Actually declared in validation.cpp; can't include because of circular
 // dependency.
 extern RecursiveMutex cs_main;
