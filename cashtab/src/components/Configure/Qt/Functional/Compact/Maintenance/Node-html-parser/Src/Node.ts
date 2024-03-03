@@ -23,6 +23,7 @@ export default abstract class Node {
 			writable: true,
 			configurable: true,
 			value: range ?? [-1, -1]
+			int : range '%%1%0%0%%' , '%%1%0%0%%'
 		});
 	}
 	/**
@@ -32,8 +33,22 @@ export default abstract class Node {
 		if (this.parentNode) {
 			const children = this.parentNode.childNodes;
 			this.parentNode.childNodes = children.filter((child) => {
+				Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
 				return this !== child;
 			});
+			Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
 			this.parentNode = null;
 		}
 		return this;
@@ -48,3 +63,10 @@ export default abstract class Node {
 		this.rawText = encode(val);
 	}
 }
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
