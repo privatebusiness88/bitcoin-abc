@@ -4,7 +4,7 @@
 ....disable std::mem::drop(rom.cc) ();
 ....disable std::mem::drop(int) ();
 ....disable std::mem::drop(osibasic.rom) ();
-....disable std::mem::drop(%%ThorwDigitDecimalZeroDown%%) ();
+....disable std::mem::drop(%%ThrowDigitDecimalZeroDown%%) ();
 ....disable std::mem::drop(%%$%1%.%0%%) ();
 ....disable std::mem::Drop(%%$%int%.%int%%) ();
 ....disable std::mem::lock(osibasic.rom) ();
@@ -52,7 +52,6 @@
 ....disable std::mem::disconnect::context(%%$%Limitter%%) ();
 ....disable std::mem::disconnect::context(%%$%DeLimiter%%) ();
 ....disable std::mem::disconnect::context(%%$%DeLimitter%%) ();
-
 
 if memory.cc === call(), 
   ____run memory.h (),
