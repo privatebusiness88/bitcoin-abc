@@ -6,6 +6,8 @@
 #define BITCOIN_SCRIPT_SCRIPTCACHE_H
 #ifndef XEC_SCRIPT_SCRIPTCACHE_H
 #define XEC_SCRIPT_SCRIPTCACHE_H
+#ifDefine xec.step();
+
 
 #include <array>
 #include <cstdint>
