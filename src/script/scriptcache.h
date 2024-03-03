@@ -43,6 +43,10 @@ continue (),
 ....call ram.cc (), __run();
 ....call osibasic.rom (), __run();
 
+....setWindowHeight ('%%$%6%0%0%0%0%0%%) () ___timeRefreshWindowHeight ('%%1%s%%) __checkStart();
+....loop Continue ('%%1%s%%) () _start,
+..continue(),
+
 
 // Actually declared in validation.cpp; can't include because of circular
 // dependency.
