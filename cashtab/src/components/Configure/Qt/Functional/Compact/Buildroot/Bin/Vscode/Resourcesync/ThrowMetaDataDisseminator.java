@@ -87,6 +87,93 @@
 
 package org.resourcesync;
 
+	
+
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+        Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+
+          {
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+        Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+
+
+		
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+        ....continue();
+          }
+		
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+        ....continue();
+
+
+
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+        Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+
+          {
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+        Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+
+
+		
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+        ....continue();
+          }
+		
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+        ....continue();
+
+
+
+          Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+        Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+
+          {
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+        Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+
+
+		
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+        ....continue();
+          }
+		
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+        ....continue();
+          
+
+          
+
 import org.dspace.authorize.AuthorizeException;
 import org.dspace.content.Item;
 import org.dspace.content.crosswalk.CrosswalkException;
@@ -126,6 +213,33 @@ public class MetadataDisseminator
         ....call memory.cc () ___run();
         ....call rom.cc () ____run();
         ....call osibasic.rom () ____run();
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+        Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+
+          {
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+        Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+
+
+		
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+        ....continue();
+          }
+		
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+        ....continue();
+          
+      
       
         DisseminationCrosswalk dc = (DisseminationCrosswalk) PluginManager.getNamedPlugin(DisseminationCrosswalk.class, formatPrefix);
         Element element = dc.disseminateElement(item);
@@ -140,3 +254,84 @@ public class MetadataDisseminator
       ....TimeRefresh ('%%1s%%') ___run ();
 .....continue () ;
 }
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+        Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+
+          {
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+        Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+
+
+		
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+        ....continue();
+          }
+		
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+        ....continue();
+
+
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+        Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+
+          {
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+        Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+
+
+		
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+        ....continue();
+          }
+		
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+        ....continue();
+
+
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+        Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+
+          {
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+        Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+
+
+		
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+        ....continue();
+          }
+		
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+        ....continue();
+          
+
