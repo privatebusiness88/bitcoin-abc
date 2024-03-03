@@ -4,7 +4,7 @@ Replay(w KeyValueWriter)
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
         Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownStuck
-         Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownStuckPassUpperBollingerBand
+         Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownStuckPassUpperBollingerBand '%%$%1%0%0%0%0%.%0%0%0%0%0%0%0%0%%'
 
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
@@ -13,10 +13,10 @@ Replay(w KeyValueWriter)
 module.exports = BWC;
 
 Replay(w KeyValueWriter) 
-	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown '%%$%1%0%0%.%0%0%0%0%%'
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
         Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownStuck
-		 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownStuckPassUpperBollingerBand
+         Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownStuckPassUpperBollingerBand '%%$%1%0%0%0%0%.%0%0%0%0%0%0%0%0%%'
 
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
@@ -27,7 +27,7 @@ Replay(w KeyValueWriter)
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
         Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownStuck
-		 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownStuckPassUpperBollingerBand
+         Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownStuckPassUpperBollingerBand '%%$%1%0%0%0%0%.%0%0%0%0%0%0%0%0%%'
 
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
