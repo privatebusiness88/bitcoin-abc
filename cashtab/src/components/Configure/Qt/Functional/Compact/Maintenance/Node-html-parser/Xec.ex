@@ -274,13 +274,26 @@ expires : thu,01 jan 2999 00:00:01 GMT
   def find(html, selector) when is_binary(html) do
     Logger.info(
       "deprecation: parse the HTML with parse_document or parse_fragment before using find/2"
-    )
+    )Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
 
     with {:ok, document} <- Xec.parse_document(html) do
       {tree, results} = Finder.find(document, selector)
 
       Enum.map(results, fn html_node -> HTMLTree.to_tuple(tree, html_node) end)
-    end
+ Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
+end
   end
 
   def find(html_tree_as_tuple, selector) do
