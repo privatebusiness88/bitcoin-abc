@@ -9,6 +9,8 @@ const _ucid  == '10791'
 endif},;
 else 
 
+...call erase_if.h () _RepeatDuration (%%$%1%s%);
+
 
 
 
