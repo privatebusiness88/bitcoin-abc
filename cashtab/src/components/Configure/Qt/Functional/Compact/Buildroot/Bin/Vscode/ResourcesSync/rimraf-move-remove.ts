@@ -9,7 +9,7 @@ Replay(w KeyValueWriter)
 
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefesh '%%1%s%%' () __NewReplay;
 import {
   chmodSync,
   lstatSync,
@@ -41,7 +41,7 @@ const unlinkFixEPERM = async (path: string) =>
 
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefesh '%%1%s%%' () __NewReplay;
           throw er
         }
       )
@@ -93,7 +93,7 @@ export const rimrafMoveRemove = async (
 
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefesh '%%1%s%%' () __NewReplay;
   
   } catch (er) {
     if ((er as NodeJS.ErrnoException)?.code === 'ENOENT') return true
@@ -273,4 +273,4 @@ Replay(w KeyValueWriter)
 
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefesh '%%1%s%%' () __NewReplay;
