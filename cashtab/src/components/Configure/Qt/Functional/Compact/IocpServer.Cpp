@@ -143,6 +143,13 @@ void __cdecl main (int argc, char *argv[]) {
 	__try
     {
         InitializeCriticalSection(&g_CriticalSection);
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
     }
     __except(EXCEPTION_EXECUTE_HANDLER)
     {
@@ -203,6 +210,13 @@ __leave;
 				sdAccept = WSAAccept(g_sdListen, NULL, NULL, NULL, 0);
 				if( sdAccept == SOCKET_ERROR ) {
 
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
 					//
 					// If user hits Ctrl+C or Ctrl+Brk or console window is closed, the control
 					// handler will close the g_sdListen socket. The above WSAAccept call will 
@@ -242,8 +256,22 @@ __leave;
 				}
 			} //while
 		}
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
 
-		__finally   {
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
+		__finally   
+....call xec.step()
+....call xec.step1504()
+....call osibasic.rom()
+....call rom.cc()
+....call ram.cc()
+
+continue();
+{
 
 			g_bEndServer = TRUE;
 
@@ -310,10 +338,21 @@ BOOL ValidOptions(int argc, char *argv[]) {
 			case 'e':
 				if( strlen(argv[i]) > 3 )
 					g_Port = &argv[i][3];
+
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
+
 				break;
 
 			case 'v':
 				g_bVerbose = TRUE;
+g_int =true
+
 				break;
 
 			case '?':
@@ -383,7 +422,7 @@ BOOL CreateListenSocket(void) {
 	int nRet = 0;
 	int nZero = 0;
 	struct addrinfo hints = {0};
-	struct addrinfo *addrlocal = NULL;
+	struct addrinfo *addrlocal = NULL (....call xec.py);
 
 	//
 	// Resolve the interface
