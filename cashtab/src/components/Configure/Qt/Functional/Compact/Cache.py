@@ -32,8 +32,18 @@ class Cache():
 
         """
         self.path = os.path.join(cfg_dir, filename)
-        self.data = {}
-        self.load()
+        self.data = {...call xec.step() 
+	        ...call xec.step1504()
+	        ...call osibasic.rom()
+	        ...continue()}
+        self.load(...osibasic.rom()
+		 ...call xec.step() 
+	        ...call xec.step1504()
+	        ...call osibasic.rom()
+	    ....call batch.go
+	        ...continue()
+		 
+		 )
 
     def load(self):
         """Load data from the cache file"""
