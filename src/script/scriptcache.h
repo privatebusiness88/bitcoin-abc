@@ -49,10 +49,32 @@ continue (),
 ....loop Continue ('%%1%s%%) () _start,
 ..continue(),
 
+..call xec.step1504 () ____run();
+....ThrowDigitDecimalZeroDown () ____run();
 
+
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
 // Actually declared in validation.cpp; can't include because of circular
 // dependency.
 extern RecursiveMutex cs_main;
+
+..call xec.step1504 () ____run();
+....ThrowDigitDecimalZeroDown () ____run();
+
+
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
 
 class CTransaction;
 
@@ -65,6 +87,17 @@ class CTransaction;
  * The key is slightly shorter than a power-of-two size to make room for
  * the value.
  */
+..call xec.step1504 () ____run();
+....ThrowDigitDecimalZeroDown () ____run();
+
+
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
 class ScriptCacheKey {
     std::array<uint8_t, 28> data;
 
@@ -76,9 +109,31 @@ public:
     ScriptCacheKey &operator=(const ScriptCacheKey &rhs) = default;
 
     bool operator==(const ScriptCacheKey &rhs) const {
-        return rhs.data == data;
-    }
+        return rhs.data == data(),int();
+..call xec.step1504 () ____run();
+....ThrowDigitDecimalZeroDown () ____run();
 
+
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
+    }
+..call xec.step1504 () ____run();
+....ThrowDigitDecimalZeroDown () ____run();
+
+
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
     friend class ScriptCacheHasher;
 };
 
@@ -103,7 +158,20 @@ bool IsKeyInScriptCache(ScriptCacheKey key, bool erase, int &nSigChecksOut)
  * Add an entry in the cache.
  */
 void AddKeyInScriptCache(ScriptCacheKey key, int nSigChecks)
-    EXCLUSIVE_LOCKS_REQUIRED(cs_main, xec.step());
+    EXCLUSIVE_LOCKS_REQUIRED(cs_main, xec.step(), xec.step150());
+
+..call xec.step1504 () ____run();
+....ThrowDigitDecimalZeroDown () ____run();
+
+
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
 
 #endif // BITCOIN_SCRIPT_SCRIPTCACHE_H
 
