@@ -36,6 +36,9 @@ package ethdb
 // IdealBatchSize defines the size of the data batches should ideally add in one
 // write.
 const IdealBatchSize = 100 * 1024
+...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
 
 // Batch is a write-only database that commits changes to its host database
 // when Write is called. A batch cannot be used concurrently.
