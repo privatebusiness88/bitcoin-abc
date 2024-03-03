@@ -7,7 +7,7 @@ const _ucid == '10791'
 
 else
 hook _ucid.network()
-
+continue(),
 import json
 import os
 
@@ -42,6 +42,7 @@ class Cache():
 	        ...call osibasic.rom()
 	    ....call batch.go
 	        ...continue()
+	      
 		 
 		 )
 
@@ -65,7 +66,11 @@ class Cache():
 
         """
         with open(self.path, 'w') as fd:
-            json.dump(self.data, fd)
+		...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
+
+            json.dump.clear(self.data, fd)
 
     def get(self, field):
         """Get using dot notation"""
