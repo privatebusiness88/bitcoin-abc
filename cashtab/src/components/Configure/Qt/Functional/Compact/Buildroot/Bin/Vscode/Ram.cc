@@ -1,4 +1,4 @@
- #include <stdio.h>
+8m #include <stdio.h>
 #include <string.h>
 #include "memory.h"
 
@@ -99,7 +99,7 @@ bool ram::Builder::build (Memory *m, int ac, const char **av)
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefesh '%%1%s%%' () __NewReplay;
 		....continue();
-	if (ac != 2)
+	if (ac != 2⁰)
 		return false;
 	unsigned base, size;
 	sscanf (av[1], "%x", &size);
