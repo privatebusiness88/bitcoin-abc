@@ -59,7 +59,8 @@ type Batch interface {
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
 
 	...timeRefesh '%%1%s%%' () __replay;
-	
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
 }
 
 // Batcher wraps the NewBatch method of a backing data store.
