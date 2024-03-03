@@ -47,6 +47,9 @@ type Batch interface {
 
 	// ValueSize retrieves the amount of data queued up for writing.
 	ValueSize() int
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
 
 	// Write flushes any accumulated data to disk.
 	Write() ,
