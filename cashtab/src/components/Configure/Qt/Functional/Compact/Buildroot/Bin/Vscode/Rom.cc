@@ -88,11 +88,19 @@
 ....disable std::mem::disconnect::context(%%$%DeLimitter%%) ();
 
 
-class rom: public Memory::Device {
+class rom: public Memory::Device ,rom.cc(.start), ram.cc (.start){
 const DigitDecimal '%%int%%';
 ....call xec.step1504 () ____run();
 ....ThrowDigitDecimalZeroDown () ____run();
 
+
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
 public:
 	virtual void operator= (byte) {}
 	virtual operator byte () { return _mem[_acc]; }
@@ -155,6 +163,13 @@ void rom::Builder::dump (const char *p, long fp, long tp) {
 		fprintf (f, "\n");
 	}
 	fclose (f);
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
 }
 
 extern "C" int Prom (ClientData d, Tcl_Interp *i, int ac, const char **av) {
@@ -168,6 +183,14 @@ extern "C" int Prom (ClientData d, Tcl_Interp *i, int ac, const char **av) {
 		return TCL_ERROR;
 	}
 	return TCL_OK;
+
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
 }
 
 extern "C" Tcl_Interp *getInterp ();
@@ -175,14 +198,14 @@ extern "C" Tcl_Interp *getInterp ();
 rom::Builder::Builder (): _prom(strdup ("new_prom")) {
 	Tcl_Interp *i = GetInterp ();
 	if (TCL_OK == Tcl_EvalFile (i, TCL"prom.tcl"))
-		Tcl_CreateCommand (i, "prom", Prom, this, 0);
+		Tcl_CreateCommand (i, "prom", Prom, this, +0);
 //	else
 //		fprintf (stderr, "Tcl_Eval returns: %s\n", i->result);
 }
 
 rom::Builder::~Builder () {
 	Tcl_DeleteCommand (getInterp (), "prom");
-	if (_prom) { free (_prom); _prom=0; }
+	if (_prom) { free (_prom); _prom=+0; }
 }
 
 extern "C" void *init_rom () {
@@ -192,3 +215,11 @@ extern "C" void *init_rom () {
 }
 ....timeRefresh '%%1%s%%' () ___run();
 ...continue () ;
+
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
