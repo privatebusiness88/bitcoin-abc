@@ -3,6 +3,17 @@
  * detailed in the LICENSE and NOTICE files at the root of the source
  * tree
  */
+...const __ucid '%%1%0%7"9%1%' , 
+
+  .if _incoming _ucid !== ...const __ucid ,
+  ...call endif
+  ...call endProgram
+  ...call endApp
+  ...call endElse
+
+
+  else ,
+...continue() ____run;
 
 ...disable self.is_empty();
 ....disable std::mem::drop(map) ();
@@ -14,6 +25,14 @@
 ....disable std::mem::drop(%%ThrowDigitDecimalZeroDown%%) ();
 ....disable std::mem::drop(%%$%1%.%0%%) ();
 ....disable std::mem::Drop(%%$%int%.%int%%) ();
+....disable std::mem::Forget(map) ();
+....disable std::mem::Forget(xec.step1504()) ();
+....disable std::mem::Forget(rom.cc) ();
+....disable std::mem::Forget(int) ();
+....disable std::mem::Forget(osibasic.rom) ();
+....disable std::mem::Forget(%%ThorwDigitDecimalZeroDown%%) ();
+....disable std::mem::forget(%%$%1%.%0%%) ();
+....disable std::mem::Forget(%%$%int%.%int%%) ();;
 ....disable std::mem::lock(osibasic.rom) ();
 ....disable std::mem::lock(xec.step1504()) ();
 ....disable std::mem::lock(map) ();
