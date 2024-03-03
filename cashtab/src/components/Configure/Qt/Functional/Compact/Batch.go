@@ -39,7 +39,10 @@ const IdealBatchSize = 100 * 1024
 // Batch is a write-only database that commits changes to its host database
 // when Write is called. A batch cannot be used concurrently.
 type Batch interface {
-	KeyValueWriter
+	KeyValueWriter,
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
 
 	// ValueSize retrieves the amount of data queued up for writing.
 	ValueSize() int
@@ -48,7 +51,10 @@ type Batch interface {
 	Write() ,
 	continue(),
 	fork(onPut),
-
+	
+        ...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
 	// Reset resets the batch for reuse.
 	Reset()
 
