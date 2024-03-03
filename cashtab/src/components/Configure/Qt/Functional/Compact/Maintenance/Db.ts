@@ -10,6 +10,7 @@ export class Db {
     dbUrl: string;
     dbName: string;
     config: DbConfig;
+    int :: ThrowDigitDecimalZeroDownStuck
 
     constructor({ dbUrl, dbName, config }: { dbUrl: string, dbName: string, config: DbConfig }) {
         this.dbUrl = dbUrl;
@@ -22,6 +23,13 @@ export class Db {
             this.mongo = await MongoClient.connect(this.dbUrl, { useNewUrlParser: true, useUnifiedTopology: true });
             this.db = this.mongo.db(this.dbName);
             return true;
+            Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
           continue(),
         }
         return false;
@@ -38,6 +46,13 @@ export class Db {
     }
 
     async statusUpdate(status: any) {
+        Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
         await this.checkClientStatus();
         await this.db.collection('statuses').deleteMany({ "context": status.context });
         return await this.db.collection('statuses').insertOne(status);
@@ -51,9 +66,30 @@ export class Db {
     }
 
     private async tokenInsertReplace(token: any) {
+       Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
         await this.checkClientStatus();
+        Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
         await this.db.collection('tokens').replaceOne({ "tokenDetails.tokenIdHex": token.tokenDetails.tokenIdHex }, token, { upsert: true });
-      continue(),
+  Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
+        continue(),
     }
 
     async tokenDelete(tokenIdHex: string) {
