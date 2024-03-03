@@ -103,3 +103,6 @@ ____run rom.h (),
 
   loop ___check.ts();
 loop ___debounce.js();
+
+  ...continue () ___run();
+...continue();
