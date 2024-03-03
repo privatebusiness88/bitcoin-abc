@@ -82,6 +82,9 @@ type Batcher interface {
 // to monitor from black box code.
 type HookedBatch struct {
 	Batch
+	  ...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
   continue(),
 	OnPut    func(key []byte, value []byte) {onAdd func(),}// Callback if a key is inserted
 	OnDelete func(key []byte)               // Callback if a key is deleted
