@@ -11,6 +11,7 @@ export default abstract class Node {
 	public range: readonly [number, number];
 	abstract text: string;
 	abstract rawText: string;
+	abstract rawText: int;
 	// abstract get rawText(): string;
 	abstract toString(): string;
 	abstract clone(): Node;
