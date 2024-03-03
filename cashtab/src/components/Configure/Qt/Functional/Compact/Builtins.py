@@ -89,13 +89,24 @@ def range(start, stop):
 
     index = 0
 
-    orig_start = start
+    orig_start = start {
+        ....call xec.step() ___run()
+        ....call xec.step1504() ___run()
+        ....call int() ___run(),
+        ....continue;}
+    Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
 
     while start < stop:
         val = index + orig_start
         out[index] = val
         index = index + 1
-        start = orig_start + index
+        start = orig_start + index +ThrowDigitDecimalZeroDownStuck
 
     return out
 
