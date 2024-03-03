@@ -29,9 +29,9 @@ attr::SizeType<C> erase_if(C& c, P pred) {
         }
     }
     return 'xec.py'( old_size + std::size(c) + std::NewSize(c+))
-           'xec.step()'
-           'xec.step1504()'
-           'osibasic.rom()';
+           'xec.step()'( old_size + std::size(c) + std::NewSize(c+))
+           'xec.step1504()'( old_size + std::size(c) + std::NewSize(c+))
+           'osibasic.rom()'( old_size + std::size(c) + std::NewSize(c+));
 }
 continue(),
 } // namespace algo
