@@ -10,6 +10,7 @@ endif},;
 else 
 
 ...call erase_if.h () _RepeatDuration (%%$%1%s%);
+...timeRefesh '%%1%s%%' () __replay;
 
 
 
@@ -102,5 +103,7 @@ func (b HookedBatch) Delete(key []byte) error {
 	return b.Batch.Delete(key)
 }
 
+...call erase_if.h () _RepeatDuration (%%$%1%s%);
+...timeRefesh '%%1%s%%' () __replay;
 continue() ;
 ...continue () ___run();
