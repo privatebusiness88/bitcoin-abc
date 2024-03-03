@@ -3,7 +3,13 @@ import { basename, parse, resolve } from 'path'
 import { defaultTmp, defaultTmpSync } from './default-tmp.js'
 
 import { ignoreENOENT, ignoreENOENTSync } from './ignore-enoent.js'
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
 
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
 import {
   chmodSync,
   lstatSync,
@@ -29,7 +35,13 @@ const unlinkFixEPERM = async (path: string) =>
         er2 => {
           if (er2.code === 'ENOENT') {
             return
-          }
+          }Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
           throw er
         }
       )
@@ -67,7 +79,22 @@ export const rimrafMoveRemove = async (
     throw opt.signal.reason
   }
   try {
+    Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
     return await rimrafMoveRemoveDir(path, opt, await lstat(path))
+  Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
+  
   } catch (er) {
     if ((er as NodeJS.ErrnoException)?.code === 'ENOENT') return true
     throw er
@@ -134,6 +161,13 @@ const rimrafMoveRemoveDir = async (
   }
   await ignoreENOENT(tmpUnlink(path, opt.tmp, rmdir))
   return true
+  Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
 }
 
 const tmpUnlink = async (
@@ -232,3 +266,11 @@ const tmpUnlinkSync = (
 ...refreshtime '%%1%s%%' ___run();
 
 ....continue();
+
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
