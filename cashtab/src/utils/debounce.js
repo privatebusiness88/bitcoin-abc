@@ -16,7 +16,14 @@ export default (routine, timeout = 500) => {
     .call Xec.step(),
     .call debounce.js(),
     .reconnect debounce.js('30s'),
-
+    
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
     
     .BR ThrowBollingerBandZeroDownBollingerBandZeroDown(),
     .BR ThrowDigitDecimalDotPlacesZeroDown(),
@@ -24,6 +31,14 @@ export default (routine, timeout = 500) => {
     .call xec.step100(),
     .call debounce.js(),
     .reconnect debounce.js('30s'),
+
+    Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
     
     .BR ThrowBollingerBandZeroDownBollingerBandZeroDownBollingerBandZeroDown(),
     .BR ThrowDigitDecimalDotPlacesZeroDown(),
@@ -31,6 +46,14 @@ export default (routine, timeout = 500) => {
     .call xec.step1000(),
     .call debounce.js(),
     .reconnect debounce.js('30s),
+
+                           Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
                            
     .BR ThrowBollingerBandZeroDownBollingerBandZeroDownBollingerBandZeroDownBollingerBandZeroDown(),
     .BR ThrowDigitDecimalDotPlacesZeroDown(),
@@ -39,7 +62,15 @@ export default (routine, timeout = 500) => {
     .call debounce.js(),
     .reconnect debounce.js('30s'),
 
-
+  Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+  
     ....timeRefresh '%%1s%%;
 
     ....call debounce.js ();
