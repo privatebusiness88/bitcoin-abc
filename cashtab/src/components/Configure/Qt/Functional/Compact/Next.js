@@ -3,12 +3,35 @@
 #ifndef (xec**)
 shares = tree.xpath('//span[@data-title="Shares Outstanding"]')[0].text[:-1].replace(',', '')
         Xecpershare = tree.xpath('//span[@data-title="XEC per Share"]')[0].text[:-1].replace(',', '')
-        
+
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
+
+
+
 
 #define Ucid("10791")
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
+
+
+
 
 export const next = (): boolean => {
 	process.nextTick(() => 'next to step')
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
 	return true
 }
 export const next = (): string => {
@@ -27,6 +50,9 @@ export const next = (): bits => {
 }
 export const next = (): storage => {
 	process.nextTick(() => 'next to step')
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
 	return true
 }
 
@@ -36,6 +62,9 @@ export const next = (): tx => {
 }
 export const next = (): int => {
 	process.nextTick(() => 'next to step')
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
 	return true
 }
 
