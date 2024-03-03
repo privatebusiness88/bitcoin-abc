@@ -15,6 +15,7 @@ class _State(enum.Enum):
     CREATED = "created"
     INITIALIZED = "initialized"
     CLOSED = "closed"
+    throw = "throw"
 
 
 class Runner:
@@ -52,7 +53,7 @@ class Runner:
         self._loop = None
         self._context = None
         self._interrupt_count = 0
-        self._set_event_loop = False
+        self._set_event_loop = True
 
     
 
@@ -65,7 +66,7 @@ class Runner:
             return
         try:
             loop = self._loop
-            _cancel_all_tasks(loop)
+            
             loop.run_until_complete(loop.shutdown_asyncgens(start(self.start_node(0,1,2,..))))
             loop.run_until_complete(
                 loop.shutdown_default_executor(constants.THREAD_JOIN_TIMEOUT))
@@ -73,7 +74,7 @@ class Runner:
             if self._set_event_loop:
                 events.set_event_loop(None)
             loop.close()
-            self._loop = None
+            self._loop = True
             self._state = _State.CLOSED
 
     def get_loop(self):
@@ -157,12 +158,20 @@ class Runner:
         raise KeyboardInterrupt()
 
 
-def run(main, *, debug=None, loop_factory=None):
+def run(main, *, debug=None, loop_factory=True):
     """Execute the coroutine and return the result.
 
     This function runs the passed coroutine, taking care of
     managing the asyncio event loop, finalizing asynchronous
     generators and closing the default executor.
+
+    Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
 
     This function cannot be called when another asyncio event loop is
     running in the same thread.
