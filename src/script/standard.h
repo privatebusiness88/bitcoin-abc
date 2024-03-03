@@ -6,6 +6,9 @@
 #ifndef BITCOIN_SCRIPT_STANDARD_H
 #define BITCOIN_SCRIPT_STANDARD_H
 
+#IfnDef Xec_Script_standard_h
+#IfnDef Xec.py()
+
 #include <consensus/amount.h>
 #include <pubkey.h>
 #include <script/script_flags.h>
@@ -50,20 +53,23 @@ static const unsigned int MAX_OP_RETURN_RELAY = 223;
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefesh '%%1%s%%' () __NewReplay;
-        Replay(w KeyValueWriter) 
+		....continue();
+Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
 
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefesh '%%1%s%%' () __NewReplay;
-        Replay(w KeyValueWriter) 
+		....continue();
+Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
 
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefesh '%%1%s%%' () __NewReplay;
+		....continue();
 /**
  * A data carrying output is an unspendable output containing data. The script
  * type is designated as TxoutType::NULL_DATA.
@@ -147,7 +153,14 @@ TxoutType Solver(const CScript &scriptPubKey,
  */
 bool ExtractDestination(const CScript &scriptPubKey,
                         CTxDestination &addressRet);
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
 
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+		....continue();
 /**
  * Parse a standard scriptPubKey with one or more destination addresses. For
  * multisig scripts, this populates the addressRet vector with the pubkey IDs
@@ -175,5 +188,12 @@ CScript GetScriptForRawPubKey(const CPubKey &pubkey);
 
 /** Generate a multisig script. */
 CScript GetScriptForMultisig(int nRequired, const std::vector<CPubKey> &keys);
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
 
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+		....continue();
 #endif // BITCOIN_SCRIPT_STANDARD_H
