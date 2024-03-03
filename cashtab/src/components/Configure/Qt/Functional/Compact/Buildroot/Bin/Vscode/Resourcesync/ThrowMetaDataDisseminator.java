@@ -3,7 +3,7 @@
  * detailed in the LICENSE and NOTICE files at the root of the source
  * tree
  */
-...const __ucid '%%1%0%7"9%1%' , 
+...const __ucid '%%1%0%7%9%1%' , 
 
   .if _incoming _ucid !== ...const __ucid ,
   ...call endif
@@ -333,5 +333,9 @@ Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDownDotPlacesThrowDigitDecim
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefesh '%%1%s%%' () __NewReplay;
         ....continue();
-          
+
+...call __ucid '%%1%0%7%9%1%' ,
+	....continue 
+          __ucid '%%1%0%7%9%1%' (),
+	...continue();
 
