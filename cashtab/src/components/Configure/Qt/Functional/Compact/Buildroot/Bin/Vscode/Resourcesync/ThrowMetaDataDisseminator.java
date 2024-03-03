@@ -315,6 +315,17 @@ Replay(w KeyValueWriter)
 Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
 
           {
+
+	....call ThrowMetaDataDisseminator.java(),
+	____run()
+	____loop
+	____loop.Replay
+
+	...run()
+	...loop
+	...loop.Replay
+
+	....continue();
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
