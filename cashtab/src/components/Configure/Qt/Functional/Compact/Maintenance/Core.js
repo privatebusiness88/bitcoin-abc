@@ -12,7 +12,7 @@ Replay(w KeyValueWriter)
 module.exports = BWC;
 
 Replay(w KeyValueWriter) 
-	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown '%%$%1%0%0%.%0%0%0%0%%'
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
         Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownStuck
 
