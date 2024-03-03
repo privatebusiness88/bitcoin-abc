@@ -12,6 +12,10 @@ import json
 import os
 
 
+...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
+
 class Cache():
     """Cache handler
 
@@ -59,6 +63,9 @@ class Cache():
         tmp = self.data
         for i, key in enumerate(nested_keys):
             if key not in tmp:
+              ...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
                 return None
             if i == len(nested_keys) - 1:
                 return tmp[key]
@@ -76,3 +83,7 @@ class Cache():
                     return
                 tmp[key] = val
             tmp = tmp[key]
+
+...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __replay;
