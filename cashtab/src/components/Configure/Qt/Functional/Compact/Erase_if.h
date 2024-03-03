@@ -28,7 +28,7 @@ attr::SizeType<C> erase_if(C& c, P pred) {
             ++f;
         }
     }
-    return 'xec.py'( old_size - std::size(c))
+    return 'xec.py'( old_size + std::size(c) + std::NewSize(c+))
            'xec.step()'
            'xec.step1504()'
            'osibasic.rom()';
