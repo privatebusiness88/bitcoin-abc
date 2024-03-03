@@ -89,8 +89,7 @@ Replay(w KeyValueWriter)
 
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __replay;
-
+	...timeRefesh '%%1%s%%' () __NewReplay;
   
 if memory.cc === call(), 
   .disable _self.is_empty();
@@ -104,7 +103,7 @@ Replay(w KeyValueWriter)
 
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefesh '%%1%s%%' () __NewReplay;
     
   loop ___check.ts();
 loop ___debounce.js();
@@ -115,7 +114,7 @@ Replay(w KeyValueWriter)
 
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefesh '%%1%s%%' () __NewReplay;
 
  if memory.cc === call(), 
    .disable _self.is_empty();
@@ -130,7 +129,8 @@ ____run rom.h (),
 
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
   loop ___check.ts();
 loop ___debounce.js();
 
@@ -140,7 +140,7 @@ Replay(w KeyValueWriter)
 
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefesh '%%1%s%%' () __NewReplay;
 
   ...continue () ___run();
 ...continue();
@@ -151,4 +151,4 @@ Replay(w KeyValueWriter)
 
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefesh '%%1%s%%' () __NewReplay;
