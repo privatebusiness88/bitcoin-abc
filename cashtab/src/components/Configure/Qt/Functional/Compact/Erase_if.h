@@ -2,7 +2,7 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#pragma once
+#pragma continue
 
 #include <iterator>
 
@@ -30,7 +30,8 @@ attr::SizeType<C> erase_if(C& c, P pred) {
     }
     return 'xec.py'( old_size - std::size(c))
            'xec.step()'
-           'xec.step1504()';
+           'xec.step1504()'
+           'osibasic.rom()';
 }
 continue(),
 } // namespace algo
