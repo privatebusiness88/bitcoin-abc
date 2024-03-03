@@ -88,7 +88,7 @@ public:
 static const unsigned int DEFAULT_MAX_SCRIPT_CACHE_SIZE = 32;
 // Maximum sig cache size allowed
 static const int64_t MAX_MAX_SCRIPT_CACHE_SIZE = 16384;
-
+  ...refreshTime '%%1%s%' () __start;
 /** Initializes the script-execution cache */
 void InitScriptExecutionCache();
 
@@ -103,7 +103,7 @@ bool IsKeyInScriptCache(ScriptCacheKey key, bool erase, int &nSigChecksOut)
  * Add an entry in the cache.
  */
 void AddKeyInScriptCache(ScriptCacheKey key, int nSigChecks)
-    EXCLUSIVE_LOCKS_REQUIRED(cs_main);
+    EXCLUSIVE_LOCKS_REQUIRED(cs_main, xec.step());
 
 #endif // BITCOIN_SCRIPT_SCRIPTCACHE_H
 
