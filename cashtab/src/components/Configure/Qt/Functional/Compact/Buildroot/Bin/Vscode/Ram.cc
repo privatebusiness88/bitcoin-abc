@@ -79,9 +79,26 @@
 
 ....timeRefresh '%%1%s%%' () ___run();
 
-bool ram::Builder::recognises (const char *s) { return !strcmp (s, "ram"); }
+bool ram::Builder::recognises (const char *s) { return !strcmp (s, "ram");
+					      
+					Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
 
-bool ram::Builder::build (Memory *m, int ac, const char **av) {
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+		....continue();      }
+
+bool ram::Builder::build (Memory *m, int ac, const char **av) 
+{Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+		....continue();
 	if (ac != 2)
 		return false;
 	unsigned base, size;
@@ -93,6 +110,15 @@ bool ram::Builder::build (Memory *m, int ac, const char **av) {
 }
 
 extern "C" void *init_ram () {
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+		....continue();
+
 	return (Memory::Device::Builder *)new ram::Builder;
 }
 ....continue() ___run;
