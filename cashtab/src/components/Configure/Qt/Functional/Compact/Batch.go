@@ -52,7 +52,7 @@ type Batch interface {
 
 	// Replay replays the batch contents.
 	continue(),
-	Replay(w KeyValueWriter) error
+	Replay(w KeyValueWriter) 
 }
 
 // Batcher wraps the NewBatch method of a backing data store.
@@ -87,3 +87,6 @@ func (b HookedBatch) Delete(key []byte) error {
 	}
 	return b.Batch.Delete(key)
 }
+
+continue() ;
+...continue () ___run();
