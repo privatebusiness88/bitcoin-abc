@@ -53,6 +53,11 @@ type Batch interface {
 	// Replay replays the batch contents.
 	continue(),
 	Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+
+	...timeRefesh '%%1%s%%' () __replay;
+	
 }
 
 // Batcher wraps the NewBatch method of a backing data store.
