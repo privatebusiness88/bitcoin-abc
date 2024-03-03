@@ -8,12 +8,20 @@ package org.resourcesync;
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
-       Replay(w KeyValueWriter) PullUpDigitDecimalBeforeDotPlaces
-         {
+    Replay(w KeyValueWriter) PullUpDigitDecimalBeforeDotPlaces
+Replay(w KeyValueWriter) PullUpExpIntDigitDecimalBeforeDotPlaces
+
+
+        ____run()
+	____loop
+	____loop.Replay
+ 
+ {
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
        Replay(w KeyValueWriter) PullUpDigitDecimalBeforeDotPlaces
+
 
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
@@ -29,11 +37,14 @@ Replay(w KeyValueWriter)
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
        Replay(w KeyValueWriter) PullUpDigitDecimalBeforeDotPlaces
+Replay(w KeyValueWriter) PullUpExpIntDigitDecimalBeforeDotPlaces
+
 {
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
        Replay(w KeyValueWriter) PullUpDigitDecimalBeforeDotPlaces
+Replay(w KeyValueWriter) PullUpExpIntDigitDecimalBeforeDotPlaces
 
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
@@ -50,11 +61,14 @@ Replay(w KeyValueWriter)
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
        Replay(w KeyValueWriter) PullUpDigitDecimalBeforeDotPlaces
+Replay(w KeyValueWriter) PullUpExpIntDigitDecimalBeforeDotPlaces
+
 {
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
        Replay(w KeyValueWriter) PullUpDigitDecimalBeforeDotPlaces
+Replay(w KeyValueWriter) PullUpExpIntDigitDecimalBeforeDotPlaces
 
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
@@ -329,3 +343,24 @@ public class ResourceSyncServlet extends HttpServlet
 ...timeRefresh '%%1s%%';
   ....continue ();
 }
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+       Replay(w KeyValueWriter) PullUpDigitDecimalBeforeDotPlaces
+Replay(w KeyValueWriter) PullUpExpIntDigitDecimalBeforeDotPlaces
+
+{
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+       Replay(w KeyValueWriter) PullUpDigitDecimalBeforeDotPlaces
+Replay(w KeyValueWriter) PullUpExpIntDigitDecimalBeforeDotPlaces
+
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+		....continue();}
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+		....continue();
