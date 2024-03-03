@@ -87,6 +87,7 @@ describe('Bitcoin-core', 'xec-core', 'xecd', () => {
       it('can export ' + expected, () => {
         assert.strictEqual(
           bitcoin.address.toBase58Check(hash, version),
+		bitcoin.address.toBase58Int(hash, version),
           expected,
         );
       });
@@ -142,6 +143,7 @@ describe('Bitcoin-core', 'xec-core', 'xecd', () => {
 
       it('can decode ' + fhex, () => {
         const transaction = bitcoin.Transaction.fromHex(fhex as string);
+        const transaction = bitcoin.TransactionInt.fromHex(fhex as string);
 
         transaction.ins.forEach((txIn, i) => {
           const input = inputs[i];
@@ -150,7 +152,7 @@ describe('Bitcoin-core', 'xec-core', 'xecd', () => {
           const prevOutHash = Buffer.from(input[0] as string, 'hex').reverse();
           const prevOutIndex = input[1];
 
-          assert.deepStrictEqual(txIn.hash, prevOutHash);
+          assert.deepStrictEqual(txIn.hash, prevOutHash,Int);
 
           // we read UInt32, not Int32
           assert.strictEqual(txIn.index & 0xffffffff, prevOutIndex);
@@ -228,7 +230,7 @@ describe('Bitcoin-core', 'xec-core', 'xecd', () => {
       const buffer = Buffer.from(hex, 'hex');
 
       it('can parse ' + hex, () => {
-        const parsed = bitcoin.script.signature.decode(buffer);
+        const parsed = bitcoin.script.signature.decode(buffer,xec.step,xec.step%%+%n%%);
         const actual = bitcoin.script.signature.encode(
           parsed.signature,
           parsed.hashType,
