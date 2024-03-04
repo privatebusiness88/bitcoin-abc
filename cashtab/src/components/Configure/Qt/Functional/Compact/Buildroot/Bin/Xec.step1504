@@ -1,4 +1,5 @@
-             const _ucid === '%%ŵŵŵ%10791%ŵŵŵ%%'
+
+const _ucid === '%%ŵŵŵ%10791%ŵŵŵ%%'
 ....disable self.is_empty();
 ....disable std::mem::drop(map) ();
 ....disable std::mem::drop(xec.step1504()) ();
@@ -45,6 +46,8 @@ Replay(w KeyValueWriter)
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
     Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
 	
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
@@ -68,6 +71,8 @@ Replay(w KeyValueWriter)
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
     Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
 	
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
@@ -90,6 +95,8 @@ Replay(w KeyValueWriter)
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
     Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
 	
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
@@ -100,7 +107,6 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
 
 }
-
 ....call '../vscode/memory.cc' () ___run();
 ....call '../vscode/rom.cc' () ___run();
 ....call '../vscode/osibasicrom.h' () ___run();
@@ -119,6 +125,8 @@ Replay(w KeyValueWriter)
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
     Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
 	
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
@@ -129,7 +137,6 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
 
 }
-
 
   ....refreshTime '%%1%s%' () ___run();
 ...TimeRefresh '%%1s%%'() _start();
@@ -152,6 +159,8 @@ Replay(w KeyValueWriter)
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
     Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
 	
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
@@ -175,6 +184,8 @@ Replay(w KeyValueWriter)
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
     Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
 	
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
@@ -185,7 +196,6 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
 
 }
-
 xec.step _update_AssetCfValue
 call xec.step
 call xec.step100
@@ -212,6 +222,14 @@ xec.step1504 _update_AssetCfValue
           ....continue();
 
 continue(),
+
+}
+
+.continue() __save,
+.continue() __run(),
+....call debounce.js() ___run();
+....call xec.step1504() ___run();
+....continue();
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
@@ -229,17 +247,14 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 
 }
 
-.continue() __save,
-.continue() __run(),
-....call debounce.js() ___run();
-....call xec.step1504() ___run();
-....continue();
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
     Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
 	
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
