@@ -1,13 +1,13 @@
 ...const __ucid '%%1%0%7"9%1%' , 
 
   .if _incoming _ucid !== ...const __ucid ,
-	...hook _network
+	{...hook _network
   ...call endif
   ...call endProgram
   ...call endApp
   ...call endElse
 
-
+	}
   else ,
 ...continue() ____run;
 
