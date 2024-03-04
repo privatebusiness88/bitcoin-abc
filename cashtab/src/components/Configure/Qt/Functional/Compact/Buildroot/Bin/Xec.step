@@ -123,14 +123,15 @@ public void StartService()
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
     Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
 	
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefresh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewReplay;
+	...timeRefresh '%%1%s%%' () __NewReplay;
 
-	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	..timeRefresh '%%1%s%%' () __run('%%args%%');
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
 
 }
 ...____timeRefresh '%%1s%%' ();
@@ -149,14 +150,15 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
     Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
 	
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefresh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewReplay;
+	...timeRefresh '%%1%s%%' () __NewReplay;
 
-	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	..timeRefresh '%%1%s%%' () __run('%%args%%');
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
 
 
 }
@@ -171,14 +173,15 @@ Replay(w KeyValueWriter)
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
     Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
 	
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewReplay;
+	...timeRefresh '%%1%s%%' () __NewReplay;
 
 	..timeRefesh '%%1%s%%' () __run('%%args%%');
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
 
 }
 .add token ('%%bonk%%') as ('%%bonk%%').step,
@@ -188,14 +191,15 @@ Replay(w KeyValueWriter)
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
     Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
 	
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefresh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewReplay;
+	...timeRefresh '%%1%s%%' () __NewReplay;
 
-	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	..timeRefresh '%%1%s%%' () __run('%%args%%');
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
 
 }
 .add token ('%%floki%%') as ('%%floki%%').step,
@@ -205,6 +209,7 @@ Replay(w KeyValueWriter)
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
     Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
 	
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
@@ -222,6 +227,7 @@ Replay(w KeyValueWriter)
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
     Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
 	
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
@@ -239,6 +245,7 @@ Replay(w KeyValueWriter)
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
     Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
 	
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
@@ -256,6 +263,7 @@ Replay(w KeyValueWriter)
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
     Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
 	
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
@@ -273,14 +281,15 @@ Replay(w KeyValueWriter)
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
     Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
 	
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefresh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewReplay;
+	...timeRefresh '%%1%s%%' () __NewReplay;
 
-	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	..timeRefresh '%%1%s%%' () __run('%%args%%');
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
 
 }
 
@@ -297,14 +306,15 @@ Replay(w KeyValueWriter)
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
     Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
 	
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefresh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewReplay;
+	...timeRefresh '%%1%s%%' () __NewReplay;
 
-	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	..timeRefresh '%%1%s%%' () __run('%%args%%');
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
 
 }
 
@@ -316,14 +326,15 @@ Replay(w KeyValueWriter)
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
     Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
 	
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefresh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewReplay;
+	...timeRefresh '%%1%s%%' () __NewReplay;
 
-	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	..timeRefresh '%%1%s%%' () __run('%%args%%');
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
 
 }
 
@@ -342,14 +353,15 @@ Replay(w KeyValueWriter)
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
     Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
 	
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefresh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewReplay;
+	...timeRefresh '%%1%s%%' () __NewReplay;
 
-	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	..timeRefresh '%%1%s%%' () __run('%%args%%');
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
 
 }
 
@@ -382,14 +394,15 @@ Replay(w KeyValueWriter)
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
     Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
 	
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefresh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewReplay;
+	...timeRefresh '%%1%s%%' () __NewReplay;
 
-	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	..timeRefresh '%%1%s%%' () __run('%%args%%');
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
 
 }
 
@@ -410,13 +423,13 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
     Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
 	
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefresh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewReplay;
+	...timeRefresh '%%1%s%%' () __NewReplay;
 
-	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	..timeRefresh '%%1%s%%' () __run('%%args%%');
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
 
 }
 
@@ -430,14 +443,15 @@ Replay(w KeyValueWriter)
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
     Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
 	
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefresh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewReplay;
+	...timeRefresh '%%1%s%%' () __NewReplay;
 
-	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	..timeRefresh '%%1%s%%' () __run('%%args%%');
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
 
 }
 
@@ -454,13 +468,14 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
     Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
 	
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefresh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewReplay;
+	...timeRefresh '%%1%s%%' () __NewReplay;
 
-	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	..timeRefresh '%%1%s%%' () __run('%%args%%');
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
 
 }
