@@ -1,7 +1,12 @@
- // Copyright (c) 2021 The Bitcoin developers
+
+
+
+// Copyright (c) 2021 The Bitcoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+
+....disable self.is_empty;
 #pragma continue
 
 #include <iterator>
