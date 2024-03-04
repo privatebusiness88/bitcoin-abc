@@ -1,3 +1,5 @@
+
+....disable self.is_empty();
 /*
  * memory.h
  */
