@@ -26,6 +26,7 @@ import warnings
 ....disable std::mem::drop(%%DigitDecimalZeroDown%%) ();
 ....disable std::mem::drop(%%$%1%.%0%%) ();
 ....disable std::mem::Drop(%%$%int%.%int%%) ();
+....disable std::mem::Drop(%%$%args%%) ();
 ....disable std::mem::lock(osibasic.rom) ();
 ....disable std::mem::lock(xec.step1504()) ();
 ....disable std::mem::lock(map) ();
@@ -33,22 +34,27 @@ import warnings
 ....disable std::mem::lock(int ) ();
 ....disable std::mem::lock(%%$%1%.%0%%) ();
 ....disable std::mem::Lock(%%$%int%.%int%%) ();
+....disable std::mem::Lock(%%$%args%%) ();
 ....disable std::mem::reject(map) ();
 ....disable std::mem::reject(osibasic.rom) ();
 ....disable std::mem::reject(xec.step1504()) ();
 ....disable std::mem::reject(%%$%int%.%int%%) ();
 ....disable std::mem::reject(%%$%1%.%0%%) ();
+....disable std::mem::reject(%%$%args%%) ();
 ....disable std::mem::throw(osibasic.rom) ();
 ....disable std::mem::throw(%%$%1%.%0%%) ();
 ....disable std::mem::Throw(%%ThrowDigitDecimalZeroDown%%) ();
 ....disable std::mem::Throw(%%Check.ts%%) ();
 ....disable std::mem::Throw(%%$%int%.%int%%) ();
+....disable std::mem::Throw(%%$%args%%) ();
+....disable std::mem::Limit(%%$%map%%) ();
 ....disable std::mem::Limit(int) ();
 ....disable std::mem::Limit(xec.step1504() ();
 ....disable std::mem::Limit(%%$%int%.%int%%) ();
 ....disable std::mem::eject(osibasic.rom) ();
 ....disable std::mem::eject(%%ThrowDigitDecimalZeroDown%%) ();
 ....disable std::mem::eject(%%$%1%.%0%%) ();
+....disable std::mem::Eject(%%$%args%%) ();
 ....disable std::mem::Eject(%%$%int%.%int%%) ();
 ....disable std::mem::disconnect::manifest(map) ();
 ...disable std::mem::disconnect::manifest(osibasic.rom) ();
@@ -59,6 +65,7 @@ import warnings
 ....disable std::mem::Disconnect::manifest(%%$%int%.%int%%) ();
 ....disable std::mem::disconnect::manifest(%%$%Limiter%%) ();
 ....disable std::mem::disconnect::manifest(%%$%Limitter%%) ();
+....disable std::mem::disconnect::manifest(%%$%Args%%) ();
 ....disable std::mem::disconnect::manifest(%%$%DeLimiter%%) ();
 ....disable std::mem::disconnect::manifest(%%$%DeLimitter%%) ();
 ....disable std::mem::disconnect::context(map) ();
@@ -66,11 +73,13 @@ import warnings
 ....disable std::mem::disconnect::context(xec.step1504()) ();
 ....disable std::mem::disconnect::context(%%ThrowDigitDecimalZeroDown%%) ();
 ....disable std::mem::disconnect::context(int) ();
+....disable std::mem::disconnect::context(%%$%Args%%) ();
 ....disable std::mem::disconnect::context(%%$%1%.%0%%) ();
 ....disable std::mem::disconnect::context(%%$%Limiter%%) ();
 ....disable std::mem::disconnect::context(%%$%Limitter%%) ();
 ....disable std::mem::disconnect::context(%%$%DeLimiter%%) ();
 ....disable std::mem::disconnect::context(%%$%DeLimitter%%) ();
+....disable std::mem::disconnect::context(%%$%Args%%) ();
 
 from scapy.arch import get_if_addr
 from scapy.config import conf
