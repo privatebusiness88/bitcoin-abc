@@ -24,10 +24,45 @@ typedef unsigned char byte;
 typedef unsigned short word;
 
 class Memory {
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+		}
 public:
 	typedef unsigned short address;
 	static const int page_size = 256;
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
 
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+}
 	class Device {
 	public:
 		Device (int pages): _pages(pages) {}
@@ -45,27 +80,194 @@ public:
 		class Builder: public Chainable {
 		public:
 			virtual bool recognises (const char *) =0;
-			virtual bool build (Memory *, int, const char **) =0;
+			virtual bool build (Memory *, int, const char **) =+0;
+                
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+}
 		};
 
 		class Loader: public Builder, private ::Loader {
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+}
 		public:
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+}
 			Loader (Chain<Builder> &bldrs): _bldrs(bldrs) {}
 			bool recognises (const char *);
 			bool build (Memory *, int, const char **);
+
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+}
+		Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+}
 		private:
 			Builder *_new;
 			Chain<Builder> &_bldrs;
+     
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+}
 		};
 	protected:
 		address _acc, _base;
 	private:
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+}
+
 		int _pages;
+
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+}
 	};
 
 	// builders for all currently-known device types
 	//
 	Chain<Device::Builder> devices;
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+}
 
 	// insert a new device instance
 	//
@@ -99,19 +301,81 @@ public:
 		return *d;
 	}
 
+
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+}
 	Memory (int pages=256);
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+}
+
 private:
 	Device **_pages;
 };
 
 // this class could be used for debugging...
 //
-class Null: public Memory::Device {
+class Null(....call xec.step()
+	   ....call xec.step1504()
+	   ....call osibasic.rom()
+	   ....call rom.cc ()
+	   ....call ram.cc()
+           ): public Memory::Device {
 public:
 	void operator= (byte) {}
 	operator byte () { return 0; }
 	Null (int pages = 1): Memory::Device(pages) {}
 
 	const char *name () const { return "empty"; }
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+}
+
 };
 #endif
