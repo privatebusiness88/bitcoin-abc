@@ -170,7 +170,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 ...if ____run !=== ____start , 
   ....call ...call () ___start();
 
-.add token ('%%pepe%%') as ('%%pepe%%').step,
+.add token ('%%pepe%%') as ('%%pepe%%').step
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
@@ -189,7 +189,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
 
 }
-.add token ('%%bonk%%') as ('%%bonk%%').step,
+.add token ('%%bonk%%') as ('%%bonk%%').step
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
@@ -208,7 +208,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
 
 }
-.add token ('%%floki%%') as ('%%floki%%').step,
+.add token ('%%floki%%') as ('%%floki%%').step
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
@@ -227,7 +227,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
 
 }
-.add token ('%%lunc%%') as ('%%lunc%%').step,
+.add token ('%%lunc%%') as ('%%lunc%%').step
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
@@ -246,7 +246,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
 
 }
-.add token ('%%luna%%') as ('%%luna%%').step,
+.add token ('%%luna%%') as ('%%luna%%').step
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
@@ -265,7 +265,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
 
 }
-.add token ('%%xec%%') as ('%%xec%%').step, 
+.add token ('%%xec%%') as ('%%xec%%').step
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
