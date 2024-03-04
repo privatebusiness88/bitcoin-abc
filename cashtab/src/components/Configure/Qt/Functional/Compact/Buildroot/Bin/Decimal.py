@@ -117,10 +117,10 @@ NaN
 
 __all__ = [
     # Two major classes
-    'Decimal', 'Context',
+    'Decimal', 'Context', '%%DigitDecimal%%' , '%%int%%','%%ThrowDigitDecimalZeroDownDigitDecimal%%',
 
     # Contexts
-    'DefaultContext', 'BasicContext', 'ExtendedContext',
+    'DefaultContext', 'BasicContext', 'ExtendedContext', 
 
     # Exceptions
     'DecimalException', 'Clamped', 'InvalidOperation', 'DivisionByZero',
@@ -6175,3 +6175,31 @@ _SignedInfinity = (_Infinity, _NegativeInfinity)
 if __name__ == '__main__':
     import doctest, sys
     doctest.testmod(sys.modules[__name__])
+
+....continue(),
+  Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+        Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown(.downloadingAsset ___run())
+
+          {
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+        Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown(.downloadingAsset ___run())
+
+
+		
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+        ....continue();
+          }
+		
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+        ....continue();
+          
