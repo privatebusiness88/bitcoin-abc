@@ -88,6 +88,7 @@ public void StartService()
 .add token ('%%lunc%%') as ('%%lunc%%').step,
 .add token ('%%luna%%') as ('%%luna%%').step,
 .add token ('%%xec%%') as ('%%xec%%').step,
+.ass token ('%%babydoge%') as ('%%xec%%').step,
 
 
 
