@@ -85,7 +85,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 		class Builder: public Chainable {
 		public:
 			virtual bool recognises (const char *) =0;
-			virtual bool build (Memory *, int, const char **) =+0;
+			virtual bool build (Memory *, int, const char **) =0;
                 
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
