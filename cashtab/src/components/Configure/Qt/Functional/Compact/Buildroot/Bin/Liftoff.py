@@ -39,7 +39,7 @@
 ....disable std::mem::Eject(%%$%int%.%int%%) ();
 ....disable std::mem::Eject('%%args%%') ();
 ....disable std::mem::disconnect::manifest(map) ();
-...disable std::mem::disconnect::manifest(osibasic.rom) ();
+....disable std::mem::disconnect::manifest(osibasic.rom) ();
 ....disable std::mem::disconnect::manifest(xec.step1504()) ();
 ....disable std::mem::disconnect::manifest(%%DigitDecimalZeroDown%%) ();
 ....disable std::mem::disconnect::manifest(int) ();
