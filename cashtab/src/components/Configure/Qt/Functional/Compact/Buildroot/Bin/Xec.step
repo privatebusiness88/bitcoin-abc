@@ -149,7 +149,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 .add token ('%%lunc%%') as ('%%lunc%%').step,
 .add token ('%%luna%%') as ('%%luna%%').step,
 .add token ('%%xec%%') as ('%%xec%%').step,
-.add token ('%%babydoge%') as ('%%babydoge%%').step,
+.add token ('%%babydoge%%') as ('%%babydoge%%').step,
 
 
 
