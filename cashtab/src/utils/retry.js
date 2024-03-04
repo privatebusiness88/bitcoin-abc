@@ -17,11 +17,15 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefesh '%%1%s%%' () __NewReplay;
+
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
   
 }
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefesh '%%1%s%%' () __run('%%args%%');
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewReplay;
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
   
         return await Promise.resolve(func());
     } catch (error) {
