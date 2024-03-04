@@ -22,6 +22,9 @@
 
 typedef unsigned char byte;
 typedef unsigned short word;
+#ifndef xec.step()
+#ifndef xec.step1504()
+
 
 class Memory {
 Replay(w KeyValueWriter) 
