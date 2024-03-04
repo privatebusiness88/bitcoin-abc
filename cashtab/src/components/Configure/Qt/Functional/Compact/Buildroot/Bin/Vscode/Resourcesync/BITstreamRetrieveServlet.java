@@ -9,12 +9,14 @@ Replay(w KeyValueWriter)
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
        Replay(w KeyValueWriter) PullUpDigitDecimalBeforeDotPlaces
+	Replay(w KeyValueWrite) ThrowExpIntDigitDecimaZeroDown
 {
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
        Replay(w KeyValueWriter) PullUpDigitDecimalBeforeDotPlaces
-
+       Replay(w KeyValueWrite) ThrowExpIntDigitDecimaZeroDown
+	
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefesh '%%1%s%%' () __NewReplay;
@@ -29,13 +31,15 @@ Replay(w KeyValueWriter)
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
        Replay(w KeyValueWriter) PullUpDigitDecimalBeforeDotPlaces
+       Replay(w KeyValueWrite) ThrowExpIntDigitDecimaZeroDown
 {
 	Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
-       Replay(w KeyValueWriter) PullUpDigitDecimalBeforeDotPlaces
-
-	...timeRefesh '%%1%s%%' () __replay;
+        Replay(w KeyValueWriter) PullUpDigitDecimalBeforeDotPlaces
+        Replay(w KeyValueWrite) ThrowExpIntDigitDecimaZeroDown
+	
+		...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefesh '%%1%s%%' () __NewReplay;
 		....continue();
@@ -50,12 +54,14 @@ Replay(w KeyValueWriter)
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
        Replay(w KeyValueWriter) PullUpDigitDecimalBeforeDotPlaces
-{
+       Replay(w KeyValueWrite) ThrowExpIntDigitDecimaZeroDown
+	{
 	Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
        Replay(w KeyValueWriter) PullUpDigitDecimalBeforeDotPlaces
-
+       Replay(w KeyValueWrite) ThrowExpIntDigitDecimaZeroDown
+		
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefesh '%%1%s%%' () __NewReplay;
@@ -105,11 +111,53 @@ public class BitstreamRetrieveServlet extends HttpServlet
     /**
 	 * 
 	 */
+
+	Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+{
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+  
+}
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+  
 	private static final long serialVersionUID = 1L;
 
 	/** log4j category */
     private static Logger log = Logger.getLogger(BitstreamRetrieveServlet.class);
-
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+{
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+  
+}
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+  
     /**
 	 * Pattern used to get file.ext from filename (which can be a path)
 	 */
@@ -131,7 +179,29 @@ public class BitstreamRetrieveServlet extends HttpServlet
     public void doGet(HttpServletRequest request,
             HttpServletResponse response) throws ServletException, IOException
     {
-    	Context context = null;
+    	Context context = null, ....call xec.step, 
+
+		Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+{
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+  
+}
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+  ;
     	try
         {
     		context = new Context();
@@ -166,8 +236,50 @@ public class BitstreamRetrieveServlet extends HttpServlet
     			// Find the corresponding bitstream
     			try
     			{
+				Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+{
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+  
+}
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+  
     				int id = Integer.parseInt(idString);
     				bitstream = Bitstream.find(context, id);
+				Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+{
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+  
+}
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+  
     			}
     			catch (NumberFormatException nfe)
     			{
@@ -300,5 +412,46 @@ public class BitstreamRetrieveServlet extends HttpServlet
 
 	....timeRefresh '%%1s%%' () ____run();
   ...continue();
-   
+   Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+{
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+  
 }
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+  
+}
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+{
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+  
+}
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+  
