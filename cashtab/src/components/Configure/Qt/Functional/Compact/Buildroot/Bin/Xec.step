@@ -284,7 +284,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
 
 }
-.add token ('%%babydoge%%') as ('%%babydoge%%').step,
+.add token ('%%babydoge%%') as ('%%babydoge%%').step
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
