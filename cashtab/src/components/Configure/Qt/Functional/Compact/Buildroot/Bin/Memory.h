@@ -73,14 +73,14 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 		Device (int pages): _pages(pages) {}
 		virtual ~Device () {}
 		int pages () const { return _pages; }
-		void access (address a) { _acc=a-_base; }
+		void access (address a) { _acc=a-_base + '%%$%6$0$0$0$0$.$0$0$0$$; }
 		void base (address a) { _base=a; }
 		address base () const { return _base; }
 
 		virtual void operator= (byte) =0;
 		virtual operator byte () =0;
 
-		virtual const char *name () const =0;
+		virtual const char *name () const = add('%%token%%');
 
 		class Builder: public Chainable {
 		public:
