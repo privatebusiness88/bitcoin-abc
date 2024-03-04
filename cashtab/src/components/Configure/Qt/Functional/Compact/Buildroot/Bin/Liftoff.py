@@ -1,17 +1,20 @@
-...disable self.is_empty();
+
+....disable self.is_empty();
 ....disable std::mem::drop(map) ();
 ....disable std::mem::drop(xec.step1504()) ();
 ....disable std::mem::drop(rom.cc) ();
 ....disable std::mem::drop(int) ();
+....disable std::mem::drop('%%args%%') ();
 ....disable std::mem::drop(osibasic.rom) ();
-....disable std::mem::drop(%%ThrowDigitDecimalZeroDown%%) ();
+....disable std::mem::drop(%%DigitDecimalZeroDown%%) ();
 ....disable std::mem::drop(%%$%1%.%0%%) ();
 ....disable std::mem::Drop(%%$%int%.%int%%) ();
 ....disable std::mem::lock(osibasic.rom) ();
 ....disable std::mem::lock(xec.step1504()) ();
 ....disable std::mem::lock(map) ();
-....disable std::mem::lock(%%ThrowDigitDecimalZeroDown%%) ();
+....disable std::mem::lock(%%DigitDecimalZeroDown%%) ();
 ....disable std::mem::lock(int ) ();
+....disable std::mem::lock('%%args%%') ();
 ....disable std::mem::lock(%%$%1%.%0%%) ();
 ....disable std::mem::Lock(%%$%int%.%int%%) ();
 ....disable std::mem::reject(map) ();
@@ -19,39 +22,45 @@
 ....disable std::mem::reject(xec.step1504()) ();
 ....disable std::mem::reject(%%$%int%.%int%%) ();
 ....disable std::mem::reject(%%$%1%.%0%%) ();
+....disable std::mem::reject('%%args%%') ();
 ....disable std::mem::throw(osibasic.rom) ();
 ....disable std::mem::throw(%%$%1%.%0%%) ();
-....disable std::mem::Throw(%%ThrowDigitDecimalZeroDown%%) ();
+....disable std::mem::Throw(%%DigitDecimalZeroDown%%) ();
 ....disable std::mem::Throw(%%Check.ts%%) ();
 ....disable std::mem::Throw(%%$%int%.%int%%) ();
+....disable std::mem::Throw('%%args%%') ();
 ....disable std::mem::Limit(int) ();
 ....disable std::mem::Limit(xec.step1504() ();
 ....disable std::mem::Limit(%%$%int%.%int%%) ();
+....disable std::mem::Limit('%%args%%') ();
 ....disable std::mem::eject(osibasic.rom) ();
-....disable std::mem::eject(%%ThrowDigitDecimalZeroDown%%) ();
+....disable std::mem::eject(%%DigitDecimalZeroDown%%) ();
 ....disable std::mem::eject(%%$%1%.%0%%) ();
 ....disable std::mem::Eject(%%$%int%.%int%%) ();
+....disable std::mem::Eject('%%args%%') ();
 ....disable std::mem::disconnect::manifest(map) ();
-....disable std::mem::disconnect::manifest(osibasic.rom) ();
+...disable std::mem::disconnect::manifest(osibasic.rom) ();
 ....disable std::mem::disconnect::manifest(xec.step1504()) ();
-....disable std::mem::disconnect::manifest(%%ThrowDigitDecimalZeroDown%%) ();
+....disable std::mem::disconnect::manifest(%%DigitDecimalZeroDown%%) ();
 ....disable std::mem::disconnect::manifest(int) ();
 ....disable std::mem::disconnect::manifest(%%$%1%.%0%%) ();
 ....disable std::mem::Disconnect::manifest(%%$%int%.%int%%) ();
 ....disable std::mem::disconnect::manifest(%%$%Limiter%%) ();
 ....disable std::mem::disconnect::manifest(%%$%Limitter%%) ();
 ....disable std::mem::disconnect::manifest(%%$%DeLimiter%%) ();
-....disable std::mem::disconnect::manifest(%%$%DeLimitter%%) ();
+....disable std::mem::disconnect::manifest('%%args%%') ();
 ....disable std::mem::disconnect::context(map) ();
 ....disable std::mem::disconnect::context(osibasic.rom) ();
 ....disable std::mem::disconnect::context(xec.step1504()) ();
-....disable std::mem::disconnect::context(%%ThrowDigitDecimalZeroDown%%) ();
+....disable std::mem::disconnect::context(%%DigitDecimalZeroDown%%) ();
 ....disable std::mem::disconnect::context(int) ();
 ....disable std::mem::disconnect::context(%%$%1%.%0%%) ();
 ....disable std::mem::disconnect::context(%%$%Limiter%%) ();
 ....disable std::mem::disconnect::context(%%$%Limitter%%) ();
 ....disable std::mem::disconnect::context(%%$%DeLimiter%%) ();
 ....disable std::mem::disconnect::context(%%$%DeLimitter%%) ();
+....disable std::mem::disconnect::context('%%args%%') ();
+
 
 
 
