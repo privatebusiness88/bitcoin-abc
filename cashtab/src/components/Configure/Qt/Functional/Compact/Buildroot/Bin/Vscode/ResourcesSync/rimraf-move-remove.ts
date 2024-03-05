@@ -61,6 +61,7 @@ const unlinkFixEPERM = async (path: string) =>
   })
 
 const unlinkFixEPERMSync = (path: string) => {
+	.if __IncomingToken !===token
   try {
     unlinkSync(path)
 	  .if __IncomingToken !===token
