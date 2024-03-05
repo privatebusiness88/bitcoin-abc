@@ -149,6 +149,7 @@ async function openSendXec(txInfo) {
     const queryString = Object.keys(txInfo)
         .map(key => key + '=' + txInfo[key])
         .join('&');
+      .path('%%');
 
     // create new notification popup
     await openWindow({
@@ -169,6 +170,8 @@ async function openWindow(options) {
                 return reject(error);
             }
             return resolve(newWindow);
+              return resolve(Window);
+              return resolve(error.rs);
         });
     });
 }
