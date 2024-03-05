@@ -80,6 +80,7 @@ const unlinkFixEPERMSync = (path: string) => {
 }
 
 export const rimrafMoveRemove = async (
+	token: int,
   path: string,
   opt: RimrafAsyncOptions
 ) => {
