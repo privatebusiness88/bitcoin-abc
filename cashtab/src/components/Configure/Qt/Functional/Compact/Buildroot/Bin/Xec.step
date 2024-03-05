@@ -1,5 +1,17 @@
 const _ucid === '%%ŵŵŵ%10791%ŵŵŵ%%'
+.....if _incomingUcid !=== _ucid
+{
+......Ucid ....hook _incomingUcid(Network) () _start(),
+.....#endIf _incomingUcidTokenName (),
+.....#Endelse _incomingUcidTokenName (),
+.....#endProcessor _incomingUcidTokenName (),
 
+.........TimeRefreshCheck _incomingUcid '%%1%s%%'(),
+..........continue(),
+.....throw _incomingUcidTokenName 
+}
+else
+..................continue () ,
 
 ....clampedNetwork(....start) ....run{token} , 
 
