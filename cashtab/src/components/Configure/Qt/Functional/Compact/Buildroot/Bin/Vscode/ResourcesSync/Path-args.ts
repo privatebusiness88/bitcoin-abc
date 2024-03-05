@@ -1,4 +1,7 @@
- import { parse, resolve } from 'path'
+....call (../rimraf-move-remove.ts) () ___start(),
+	continue () ,
+
+import { parse, resolve } from 'path'
 import { inspect } from 'util'
 import { RimrafAsyncOptions } from './index.js'
 import platform from './platform.js'
