@@ -12,7 +12,7 @@ public class MetadataFormat
     private String namespace;
     private String mimetype;
 
-    public MetadataFormat(String prefix, String namespace, String mimetype)
+    public MetadataFormat(String prefix, String namespace, String mimetype, int Token, int ThrowDigitDecimalZeroDown)
     {
         this.prefix = prefix;
         this.namespace = namespace;
