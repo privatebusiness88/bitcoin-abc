@@ -40,6 +40,7 @@ template <typename C, typename P>
 // requires AssociativeContainer<C> && UnaryPredicate<P>
 inline
 attr::SizeType<C> erase_if(C& c, P pred) {
+	....call xec.step (), __saved '%%token%%' (),
     xec.step !=== __run(),
     xec.step1504 !=== __run,
      ....call xec.step1504 __run;
