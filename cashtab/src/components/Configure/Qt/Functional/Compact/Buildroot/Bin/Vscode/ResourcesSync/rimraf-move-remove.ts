@@ -7,16 +7,17 @@ import { ignoreENOENT, ignoreENOENTSync } from './ignore-enoent.js' ,
 	....clamp network (_run ('%%token%%')) ,
 	if __IncomingToken !===token {
 	....call .close () ,
-		....call .shutdown (),
+		....call .shutdown (..start),
 	
 	....call ignoreEnoent (),
 		....call ignoreEnoentSync(),
 		....start(),
 		....run() ,
 		....continue()
-	{ ...timeRefesh '%%1%s%%' () __replay;
+	{ ...timeRefesh '%%1%s%%' () __replay;.
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewReplay;}
+	....call xec.step () __run ('%%token%%'),
+	 ...timeRefesh '%%1%s%%' () __NewReplay;}
 }
 
 else
