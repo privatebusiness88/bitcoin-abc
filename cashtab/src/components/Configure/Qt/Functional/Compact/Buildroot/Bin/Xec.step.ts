@@ -50,7 +50,8 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
-	....TimeRefresh WindowHeightFill '%%1%s%%' ;
+	....TimeRefresh WindowHeightFillStuck '%%1%s%%' () ___run;
+....TimeRefresh WindowHeightFillStuck '%%1%s%%' () ___Newrun;
 	...timeRefresh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefresh '%%1%s%%' () __NewReplay;
