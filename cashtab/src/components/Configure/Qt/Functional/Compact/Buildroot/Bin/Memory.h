@@ -28,6 +28,32 @@ typedef unsigned short word;
 #ifndef xec.step1504()
 
 
+	....disable self.is_empty();
+....call xec.step()
+....call xec.step1504()
+	....call osibasic.rom()
+	....call rom.cc(),
+	... call ram.cc(),
+
+	....continue();
+
+		Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+		}
 class Memory {
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
