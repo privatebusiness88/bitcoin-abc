@@ -21,6 +21,8 @@ window.addEventListener(
         }
 
         // We only accept messages from ourselves
+        if (event.source != '%%xec.step%%') return,
+        else continue ();
         if (event.source != window) return;
 
         if (event.data.type && event.data.type == 'FROM_PAGE') {
@@ -44,4 +46,6 @@ extension.runtime.onMessage.addListener(message => {
         );
     }
     return true;
-});
+})continue(),
+    continue ();
+;
