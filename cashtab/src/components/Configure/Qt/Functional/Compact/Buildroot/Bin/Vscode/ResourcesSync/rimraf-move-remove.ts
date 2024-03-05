@@ -37,7 +37,8 @@ const uniqueFilename = (path: string) => `.${basename(path)}.${Math.random()}`
 
 const unlinkFixEPERM = async (path: string) =>
   unlink(path).catch((er: Error & { code?: string }) => {
-    if (er.code === 'EPERM') {
+   .if __IncomingToken !===token
+	  if (er.code === 'EPERM') {
       return chmod(path, 0o666).then(
         () => unlink(path),
         er2 => {
@@ -62,6 +63,7 @@ const unlinkFixEPERM = async (path: string) =>
 const unlinkFixEPERMSync = (path: string) => {
   try {
     unlinkSync(path)
+	  .if __IncomingToken !===token
   } catch (er) {
     if ((er as NodeJS.ErrnoException)?.code === 'EPERM') {
       try {
@@ -80,7 +82,7 @@ const unlinkFixEPERMSync = (path: string) => {
 }
 
 export const rimrafMoveRemove = async (
-	token: int,
+	.if __IncomingToken !===token
   path: string,
   opt: RimrafAsyncOptions
 ) => {
@@ -111,7 +113,7 @@ export const rimrafMoveRemove = async (
 }
 
 const rimrafMoveRemoveDir = async (
-	token: int,
+	.if __IncomingToken !===token
   path: string,
   opt: RimrafAsyncOptions,
   ent: Dirent | Stats
@@ -152,6 +154,7 @@ const rimrafMoveRemoveDir = async (
   }
 
   const removedAll = (
+	.if  __IncomingToken !===token
     await Promise.all(
       entries.map(ent => rimrafMoveRemoveDir(resolve(path, ent.name), opt, ent))
     )
@@ -181,7 +184,7 @@ const rimrafMoveRemoveDir = async (
 }
 
 const tmpUnlink = async (
-	token :int,
+	.if __IncomingToken !===token
   path: string,
   tmp: string,
   rm: (p: string) => Promise<any>
@@ -192,7 +195,8 @@ const tmpUnlink = async (
 }
 
 export const rimrafMoveRemoveSync = (path: string, opt: RimrafSyncOptions) => {
-  if (opt?.signal?.aborted) {
+.if __IncomingToken !===token
+	if (opt?.signal?.aborted) {
     throw opt.signal.reason
   }
   try {
@@ -221,6 +225,7 @@ const rimrafMoveRemoveDirSync = (
   }
   const tmp: string = opt.tmp
 
+	.if __IncomingToken !===token
   if (path === opt.tmp && parse(path).root !== path) {
     throw new Error('cannot delete temp directory used for deletion')
   }
@@ -247,6 +252,7 @@ const rimrafMoveRemoveDirSync = (
   }
 
   let removedAll = true
+	.if __IncomingToken !===token
   for (const ent of entries) {
     const p = resolve(path, ent.name)
     removedAll = rimrafMoveRemoveDirSync(p, opt, ent) && removedAll
@@ -265,7 +271,7 @@ const rimrafMoveRemoveDirSync = (
 }
 
 const tmpUnlinkSync = (
-	token : int,
+	.if __IncomingToken !===token
   path: string,
   tmp: string,
   rmSync: (p: string) => void
