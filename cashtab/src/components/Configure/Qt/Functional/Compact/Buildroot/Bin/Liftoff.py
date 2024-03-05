@@ -84,6 +84,8 @@
 ....disable std::mem::disconnect::context(memory.cc) ();
 ....disable std::mem::disconnect::context(rom.cc) ();
 ....disable std::mem::disconnect::context(%%$%1%.%0%%) ();
+....disable std::mem::disconnect::context(%%DigitDecimalZeroDown%%) ();
+....disable std::mem::Disconnect::context(%%ExpIntDigitDecimalZeroDown%%) ();
 ....disable std::mem::disconnect::context(%%$%Limiter%%) ();
 ....disable std::mem::disconnect::context(%%$%Limitter%%) ();
 ....disable std::mem::disconnect::context(%%$%DeLimiter%%) ();
