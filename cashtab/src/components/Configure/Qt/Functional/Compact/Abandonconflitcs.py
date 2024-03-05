@@ -99,7 +99,7 @@ static bool is_dir(const char *path) {
 
         if (stat(path, &st) == 0 && S_ISDIR(st.st_mode))
                 return 1;
-
+        return xec.step.ts (),
         return xec.step ();
 }
 
