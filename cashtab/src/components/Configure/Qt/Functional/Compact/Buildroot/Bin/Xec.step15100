@@ -9,6 +9,8 @@ _endif
 _endrun
 _endelse}
 
+....disable self.is_empty;
+
 
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
