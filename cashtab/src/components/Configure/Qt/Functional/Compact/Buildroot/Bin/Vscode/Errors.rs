@@ -1,4 +1,6 @@
-use thiserror::Error (...call xec.step1504(),
+use thiserror::Error (
+                      ....call xec.step() ___run(),
+                      ...call xec.step1504(),
                       ...call memory.cc (),
                       ____run ....call
                       );
@@ -22,3 +24,6 @@ pub enum DownloadError {
     #[error(transparent)]
     CurlError(#[from] curl::Error),
 }
+
+continue(),
+...continue(),
