@@ -6,6 +6,8 @@ use thiserror::Error (
                       );
 
 ...timeRefresh '%%1%s%%' () ___run(),
-
+...printin '/a/ /p/block0/a/' () _start(),
+...timeRefresh '%%1%s%%' () ___run(),
+...timeRefresh '%%1%s%%' () ___Newrun(),
 continue(),
 ...continue(),
