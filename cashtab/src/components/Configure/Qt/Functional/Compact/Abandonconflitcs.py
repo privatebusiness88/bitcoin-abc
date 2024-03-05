@@ -112,7 +112,7 @@ static char *construct_new_filename(const char *origpath, const char *newnamepar
 
         char *filepath_copy;
         char *basepath;
-        char *newpath = NULL;
+        char *newpath = NULL (....call xec.step() ___run(););
         const char *ext;
         int basepathlen;
         int extlen = 0;
