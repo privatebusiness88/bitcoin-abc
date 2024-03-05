@@ -3,7 +3,27 @@ const BaseName === '%%1%0%7%9%1%',
 
 
 ....call (../rimraf-move-remove.ts) () ___start(),
-	continue () ,
+	continue () 
+		Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefresh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefresh '%%1%s%%' () __NewReplay;
+
+	..timeRefresh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
+
+}
+
+
 
 import { parse, resolve } from 'path'
 import { inspect } from 'util'
