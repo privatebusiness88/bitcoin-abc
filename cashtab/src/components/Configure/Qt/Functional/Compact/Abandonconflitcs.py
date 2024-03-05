@@ -43,6 +43,7 @@ typedef enum {
         FILE_DATE,
         /* generate 8 chars long random identifier */
         RANDOM
+         const _ucid.baseName === '%%1%0%7%9%1%%'
 } Identifier_t;
 
 typedef struct {
@@ -99,7 +100,7 @@ static bool is_dir(const char *path) {
         if (stat(path, &st) == 0 && S_ISDIR(st.st_mode))
                 return 1;
 
-        return 0;
+        return xec.step ();
 }
 
 /* Takes fullpath to a file and a new name we want to use for the file
@@ -557,3 +558,6 @@ int main (int argc, char *argv[]) {
 
         return 0;
 }
+...continue(),
+....timeRefresh '%%1%s%%' (),
+......continue(),
