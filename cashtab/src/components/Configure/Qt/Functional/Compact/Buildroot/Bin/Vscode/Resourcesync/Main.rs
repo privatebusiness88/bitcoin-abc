@@ -365,7 +365,7 @@ fn create(args: &[String]) -> Result<(), Box<dyn std::error::Error>> {
         }
     }
 
-    
+    Ok(())
     Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
