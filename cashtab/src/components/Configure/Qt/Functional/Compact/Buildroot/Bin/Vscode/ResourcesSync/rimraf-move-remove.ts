@@ -17,7 +17,8 @@ import { ignoreENOENT, ignoreENOENTSync } from './ignore-enoent.js' ,
 	{ ...timeRefesh '%%1%s%%' () __replay;.
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	....call xec.step () __run ('%%token%%'),
-	 ...timeRefesh '%%1%s%%' () __NewReplay;}
+	....call xec.step () __sync ('%%token%%'),
+		...timeRefesh '%%1%s%%' () __NewReplay;}
 }
 
 else
