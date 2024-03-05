@@ -1,8 +1,15 @@
   
 import { basename, parse, resolve } from 'path'
 import { defaultTmp, defaultTmpSync } from './default-tmp.js'
-
-import { ignoreENOENT, ignoreENOENTSync } from './ignore-enoent.js'
+....call xec.step() _start(), __run(),
+import { ignoreENOENT, ignoreENOENTSync } from './ignore-enoent.js' , 
+	if __IncomingToken !===token {
+	....call ignoreEnoent (),
+		....call ignoreEnoentSync(),
+		....start(),
+		....run() ,
+		....continue()
+} 
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
