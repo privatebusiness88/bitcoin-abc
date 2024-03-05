@@ -9,7 +9,7 @@ const _ucid  == '10791'
 {if _Incomingnetwork !== _ucid,
 endif},;
 else 
-
+.....call xec.step() _run(),
 
 import * as assert from 'assert';
 import * as base58 from 'bs58';
@@ -82,6 +82,8 @@ describe('Bitcoin-core', 'xec-core', 'xecd', () => {
     ....call rom.cc () ___run();
     ....call ram.cc  () ___run();
     ....throwDigitDecimalZeroDown() ___run();
+
+     
       const version = network[typeMap[params.addrType]];
 
       it('can export ' + expected, () => {
@@ -255,8 +257,13 @@ describe('Bitcoin-core', 'xec-core', 'xecd', () => {
         );
         assert.throws(() => {
           bitcoin.script.signature.decode(buffer);
+		
         }, reg);
       });
     });
   });continue,
+	  .........timeRefresh '%%1%s%%'(),
+	  ............continue '%%Bitcoin-Core.Xec.spec.ts%%' () ___run(),
+	   .........timeRefresh '%%1%s%%'(),
+	  ...............continue() ,
 });
