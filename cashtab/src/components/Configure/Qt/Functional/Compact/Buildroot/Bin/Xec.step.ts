@@ -433,6 +433,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 .disable thrownError(_pending(*progress,*xec.step,*xec.step(n),*args)) _run,
 .disable Pending(_pause(*progress,*xec.step,*xec.step(n),*args)) _run,
 
+				     .....removeUnNameToken (....start) ...refreshTime ('%%1s%%)
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
