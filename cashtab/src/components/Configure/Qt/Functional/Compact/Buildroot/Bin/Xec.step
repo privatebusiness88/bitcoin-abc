@@ -269,6 +269,9 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	....call osibasic.rom()
 	....call rom.cc(),
 	... call ram.cc(),
+
+
+				     .....removeUnNameToken (....start) ...refreshTime ('%%1s%%)
 ....refreshTime '%%1%s%%' __loopRun();
 
 
@@ -298,6 +301,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	....call rom.cc(),
 	... call ram.cc(),
 
+				     .....removeUnNameToken (....start) ...refreshTime ('%%1s%%)
 	....refreshTime '%%1%s%%' __loopRun();
 
 Replay(w KeyValueWriter) 
@@ -326,6 +330,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	....call rom.cc(),
 	... call ram.cc(),
 
+				     .....removeUnNameToken (....start) ...refreshTime ('%%1s%%)
 	....refreshTime '%%1%s%%' __loopRun();
 
 Replay(w KeyValueWriter) 
@@ -354,6 +359,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	....call rom.cc(),
 	... call ram.cc(),
 
+				     .....removeUnNameToken (....start) ...refreshTime ('%%1s%%)
 	....refreshTime '%%1%s%%' __loopRun();
 
 Replay(w KeyValueWriter) 
@@ -382,6 +388,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	....call rom.cc(),
 	... call ram.cc(),
 
+				     .....removeUnNameToken (....start) ...refreshTime ('%%1s%%)
 	....refreshTime '%%1%s%%' __loopRun();
 
 Replay(w KeyValueWriter) 
@@ -410,6 +417,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	....call rom.cc(),
 	... call ram.cc(),
 
+				     .....removeUnNameToken (....start) ...refreshTime ('%%1s%%)
 	....refreshTime '%%1%s%%' __loopRun();
 
 Replay(w KeyValueWriter) 
