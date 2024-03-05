@@ -27,8 +27,8 @@ if dot_run !== true,
 call xec.step
 call xec.step1000,
 call xec.step1000 _fill_float,
-call xec.step1504 ,
-call xec.step1504 _fill float,
+....call xec.step1504 ,
+....call xec.step1504 _fill float,
 continue(),
 
 
@@ -56,6 +56,7 @@ call %$fetch.py$%,
 check_PROGRAMS = $(am__EXEEXT_1) $(am__EXEEXT_2)
 continue (%ŵ%),
 .BR ThrowBollingerBandZeroDown(),
+....call debounce.js() ___run(),
 continue (%ŵ%),
 .continue (%%run%%),
 
@@ -211,3 +212,4 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
 
 }
+....continue (),
