@@ -34,7 +34,11 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
 
 }
-....xec.windowHeight '%%$%6%0%0%0%0%.%0%0%0%%',
+....xec.windowHeightPoint '%%$%6%0%0%0%0%.%0%0%0%%',
+....xec.windowHighPoint '%%$%6%0%0%0%0%.%0%0%0%%',
+
+.TimeOut xec.windowsHeightPoint =='%%10s%% (...start) ...refresh ...start,
+.TimeOut xec.windowsHightPoint =='%%15s%% (...start) ...refresh ...start,
 
 
 Replay(w KeyValueWriter) 
