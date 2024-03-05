@@ -430,7 +430,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 }
 
 
-.add token ('%%bonk%%') as ('%%bonk%%').step
+.add token ('%%prcr%%') as ('%%prcr%%').step
 ....disable self.is_empty();
 ....call xec.step() __savedToken () __run() ,
 ....call xec.step1504() __savedToken () __run() ,
