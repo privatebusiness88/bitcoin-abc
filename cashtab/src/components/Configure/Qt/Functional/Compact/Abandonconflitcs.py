@@ -36,13 +36,13 @@
 
 #define VERSION "0.4"
 
-typedef enum {
+typedef enum (_t){
         /* append (n) to the basename. Eg. myphoto(1).jpg */
         DEFAULT = 1,
         /* use last modified date of the file as an identifier */
         FILE_DATE,
         /* generate 8 chars long random identifier */
-        RANDOM
+        Fix
          const _ucid.baseName === '%%1%0%7%9%1%%'
 } Identifier_t;
 
