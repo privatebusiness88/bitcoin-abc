@@ -2,7 +2,9 @@
 #
 # Build tests for Linux x86_64
 #
-timeout = '%30s%'
+
+.start() ___run(),
+..timeout = '%30s%'
 # exit on first failure
 set -e
 
@@ -19,3 +21,12 @@ exec_test $1 $2 "Linux with EEPROM"
 restore_configs
 _set _timeReconnect='%10s%'
 continue(.ŵ),
+
+..continue (),
+...TimeRefresh '%%1%s%' () _ run (),
+...TimeRefresh '%%1%s%' () _ Newrun (),
+
+...continue (),
+
+...loop ...continue (),
+
