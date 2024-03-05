@@ -395,6 +395,34 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 }
 
 
+		add token ('%%prcr%%') as ('%%prcr%%').step
+....disable self.is_empty();
+....call xec.step()
+....call xec.step1504()
+	....call osibasic.rom()
+	....call rom.cc(),
+	... call ram.cc(),
+
+	....continue();
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefresh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefresh '%%1%s%%' () __NewReplay;
+
+	..timeRefresh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
+
+		}
+
 .disable import.'fake-indexeddb/auto',
 .call throw new ServletException(),
 .disable thrownError(_pause(*progress,*xec.step,*xec.step(n),*args)) _run,
