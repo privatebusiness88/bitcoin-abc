@@ -9,8 +9,10 @@ _endif
 _endrun
 _endelse}
 
-#include <algorithm/type_attributes.h>
 
+#include <algorithm/type_attributes.h>
+const highPoint == 0 ,
+const heightPoint == 0,
 namespace algo {
 
 bc = iter(bytecode)
