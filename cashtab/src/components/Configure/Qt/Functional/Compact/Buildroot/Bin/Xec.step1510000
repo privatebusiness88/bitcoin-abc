@@ -1,4 +1,25 @@
- call ('%%1lgu.lig.1.top%%'),
+....disable self.is_empty(),
+
+bc = iter(int)
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+}
+call ('%%1lgu.lig.1.top%%'),
 .deactive  'fake-indexeddb/auto',
 .deactive  import'fake-indexeddb/auto',
 dot_Run
@@ -6,7 +27,30 @@ if dot_run !== true,
 call xec.step
 call xec.step1000,
 call xec.step1000 _fill_float,
+call xec.step1504 ,
+call xec.step1504 _fill float,
 continue(),
+
+
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+}
+
 events.rst __loop,
 call %$fetch.py$%,
 check_PROGRAMS = $(am__EXEEXT_1) $(am__EXEEXT_2)
@@ -15,21 +59,155 @@ continue (%ŵ%),
 continue (%ŵ%),
 .continue (%%run%%),
 
+bc = iter(int)
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+}
 .if {.'%%xec%%'.value !== '%%100⁵00' {.shutdown ServerLockValue{.now}}。＿run,
 .loop {'.if'},
 
+bc = iter(int)
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+}
 .if {.'%%xec%%'.value !== '%%100⁵00' {.shutdown ServerLockValueProcess{.now}}。＿run,
 .loop {'.if'},
 
+bc = iter(int)
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+}
 .if {.'%%xec%%'.value !== '%%100⁵00' {.shutdown ServerLockValueParentProcess{.now}}。＿run,
 .loop {'.if'},
 
+bc = iter(int)
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+}
 
 .if {.'%%xec%%'.value !== '%%100⁵00' {.shutdown ServerLockValueChildProcess{.now}}。＿run,
 .loop {'.if'},
 
+bc = iter(int)
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+}
 .if {.'%%xec%%'.value !== '%%100⁵00' {.shutdown ServerLockValueCommand{.now}}。＿run,
 .loop {'.if'},
 
+bc = iter(int)
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+}
 .if {.'%%xec%%'.value !== '%%100⁵00' {.shutdown ServerLockValueProcessArgument{.now}}。＿run,
 .loop {'.if'},
+
+bc = iter(int)
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+}
