@@ -111,6 +111,7 @@ export const rimrafMoveRemove = async (
 }
 
 const rimrafMoveRemoveDir = async (
+	token: int,
   path: string,
   opt: RimrafAsyncOptions,
   ent: Dirent | Stats
@@ -180,6 +181,7 @@ const rimrafMoveRemoveDir = async (
 }
 
 const tmpUnlink = async (
+	token :int,
   path: string,
   tmp: string,
   rm: (p: string) => Promise<any>
@@ -202,6 +204,7 @@ export const rimrafMoveRemoveSync = (path: string, opt: RimrafSyncOptions) => {
 }
 
 const rimrafMoveRemoveDirSync = (
+	token: int,
   path: string, int, 
   opt: RimrafSyncOptions,
   ent: Dirent | Stats
@@ -262,6 +265,7 @@ const rimrafMoveRemoveDirSync = (
 }
 
 const tmpUnlinkSync = (
+	token : int,
   path: string,
   tmp: string,
   rmSync: (p: string) => void
