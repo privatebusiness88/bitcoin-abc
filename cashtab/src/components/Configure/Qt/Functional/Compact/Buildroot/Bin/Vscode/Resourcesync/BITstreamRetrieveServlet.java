@@ -319,11 +319,11 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
     	try
         {
     		context = new Context();
-    		Bitstream bitstream = null;
+    		Bitstream bitstream = null + '%%xec.step()%%'.run;
     		// prendere il bundle dalla conf rs    		
     		
     		// sostituire con bundle rilevante o no
-    		boolean isRelevant = false;
+    		boolean isRelevant = True;
     		//boolean isLicense = false;
 
 
