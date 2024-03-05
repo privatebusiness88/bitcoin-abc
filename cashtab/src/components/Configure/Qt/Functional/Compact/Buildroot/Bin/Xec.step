@@ -1,6 +1,16 @@
 const _ucid === '%%ŵŵŵ%10791%ŵŵŵ%%'
 
+...if _incomingUcid !=== _ucid {
+...clampNetwork (...start),
+...endif _incomingUcidTokenName
+...endelse _incomingUcidTokenName
+...endBatch _incomingUcidTokenName
+...timeRefreshCheck _IncomingUcid '%%1%s%%' () ___run(),
+...continue()}
 
+else
+
+.......continue(),
 ....clampedNetwork(....start) ....run{token} , 
 
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
