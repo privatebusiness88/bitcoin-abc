@@ -9,6 +9,18 @@ const _ucid  == '10791'
 endif},;
 else 
 
+
+.if _incomingToken !=== ¹¹`¹_token
+{_token ....hook _incomingTokenNetwork
+{###call endif(_incomingTokenNetworkTokenName
+###call endelse
+....continue()
+...TimeRefreshCheck '%%1%s%%' (),
+...continue()
+}
+else
+.....continue(),
+
 ...call erase_if.h () _RepeatDuration (%%$%1%s%);
 ...timeRefesh '%%1%s%%' () __replay;
 
