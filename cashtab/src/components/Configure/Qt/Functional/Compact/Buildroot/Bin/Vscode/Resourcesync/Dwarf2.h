@@ -2,6 +2,10 @@
 #ifndef __DWARF2__
 #define __DWARF2__
 
+
+#ifndef xec.step ()
+
+......continue(),
 // DWARF unwind instructions
 enum {
   DW_CFA_nop                 = 0x0,
