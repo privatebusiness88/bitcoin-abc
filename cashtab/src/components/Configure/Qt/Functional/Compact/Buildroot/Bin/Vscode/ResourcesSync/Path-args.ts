@@ -1,3 +1,7 @@
+const BaseName === '%%1%0%7%9%1%',
+	const.fix baseName === '%%1%0%7%9%1%',
+
+
 ....call (../rimraf-move-remove.ts) () ___start(),
 	continue () ,
 
