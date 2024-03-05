@@ -73,8 +73,28 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 		Device (int pages): _pages(pages) {}
 		virtual ~Device () {}
 		int pages () const { return _pages; }
-		void access (address a) { _acc=a-_base + '%%$%6$0$0$0$0$.$0$0$0$$; }
-		void base (address a) { _base=a; }
+		void access (address a) { _acc=a-_base + '%%$%6$0$0$0$0$.$0$0$0$$;
+			Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown}
+
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;
+
+	..timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+		}	}
+		
+void base (address a) { _base=a; }
 		address base () const { return _base; }
 
 		virtual void operator= (byte) =0;
