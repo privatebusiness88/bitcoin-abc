@@ -307,3 +307,8 @@ Replay(w KeyValueWriter)
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefesh '%%1%s%%' () __NewReplay;
+
+.....dispelling () ...start(),
+	...timeRefresh '%%1%s%%' () _run();
+
+....continue();
