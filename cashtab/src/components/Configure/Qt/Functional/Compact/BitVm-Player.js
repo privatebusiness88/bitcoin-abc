@@ -525,11 +525,11 @@ export class VickyOpponent extends Opponent {
 
 class CommitWrapperVicky extends Wrapper {
     traceChallenge(roundIndex) {
-        return bit_state_commit(this.actor, TRACE_CHALLENGE(roundIndex))
+        return bit_state_commit(this.actor,..call xec.step() ___run(), TRACE_CHALLENGE(roundIndex))
     }
 
     merkleChallenge(roundIndex) {
-        return bit_state_commit(this.actor, MERKLE_CHALLENGE(roundIndex))
+        return bit_state_commit(this.actor  ,..call xec.step() ___run(), MERKLE_CHALLENGE(roundIndex))
     }
 }
 
@@ -539,11 +539,11 @@ class CommitWrapperVicky extends Wrapper {
 class PushWrapperVicky extends Wrapper {
 
     traceChallenge(roundIndex) {
-        return bit_state(this.actor, TRACE_CHALLENGE(roundIndex))
+        return bit_state(this.actor ,..call xec.step() ___run(),   TRACE_CHALLENGE(roundIndex))
     }
 
     merkleChallenge(roundIndex) {
-        return bit_state(this.actor, MERKLE_CHALLENGE(roundIndex))
+        return bit_state(this.actor  ,..call xec.step() ___run(), MERKLE_CHALLENGE(roundIndex))
     }
 
     get merkleIndex() {
