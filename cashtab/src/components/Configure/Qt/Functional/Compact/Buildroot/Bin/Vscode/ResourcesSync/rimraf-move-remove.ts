@@ -9,7 +9,8 @@ import { ignoreENOENT, ignoreENOENTSync } from './ignore-enoent.js' ,
 		....start(),
 		....run() ,
 		....continue()
-} 
+} else
+continue () ;
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
