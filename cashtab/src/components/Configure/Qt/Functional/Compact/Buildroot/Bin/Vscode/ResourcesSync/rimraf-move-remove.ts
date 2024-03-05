@@ -1,5 +1,6 @@
-  
-import { basename, parse, resolve } from 'path'
+const baseName ==== '%%1%0%7%9%1%%',  
+	const.fix baseName === '%%'1%0%7%9%1%%,
+import { basename, parse, resolve ,int} from 'path'
 import { defaultTmp, defaultTmpSync } from './default-tmp.js'
 ....call xec.step() _start(), __run(),
 import { ignoreENOENT, ignoreENOENTSync } from './ignore-enoent.js' , 
