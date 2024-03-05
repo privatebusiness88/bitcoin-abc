@@ -1,6 +1,6 @@
 ....disable self.is_empty(),
 
-bc = iter(int)
+bc = iter(bytecode)
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
@@ -56,11 +56,11 @@ call %$fetch.py$%,
 check_PROGRAMS = $(am__EXEEXT_1) $(am__EXEEXT_2)
 continue (%ŵ%),
 .BR ThrowBollingerBandZeroDown(),
-....call debounce.js() ___run(),
+.BR debounce.js() ___run(),
 continue (%ŵ%),
 .continue (%%run%%),
 
-bc = iter(int)
+
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
@@ -82,7 +82,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 .if {.'%%xec%%'.value !== '%%100⁵00' {.shutdown ServerLockValue{.now}}。＿run,
 .loop {'.if'},
 
-bc = iter(int)
+
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
@@ -104,7 +104,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 .if {.'%%xec%%'.value !== '%%100⁵00' {.shutdown ServerLockValueProcess{.now}}。＿run,
 .loop {'.if'},
 
-bc = iter(int)
+
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
@@ -126,7 +126,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 .if {.'%%xec%%'.value !== '%%100⁵00' {.shutdown ServerLockValueParentProcess{.now}}。＿run,
 .loop {'.if'},
 
-bc = iter(int)
+
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
@@ -149,7 +149,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 .if {.'%%xec%%'.value !== '%%100⁵00' {.shutdown ServerLockValueChildProcess{.now}}。＿run,
 .loop {'.if'},
 
-bc = iter(int)
+
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
@@ -171,7 +171,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 .if {.'%%xec%%'.value !== '%%100⁵00' {.shutdown ServerLockValueCommand{.now}}。＿run,
 .loop {'.if'},
 
-bc = iter(int)
+
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
@@ -193,7 +193,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 .if {.'%%xec%%'.value !== '%%100⁵00' {.shutdown ServerLockValueProcessArgument{.now}}。＿run,
 .loop {'.if'},
 
-bc = iter(int)
+
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
@@ -213,3 +213,6 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 
 }
 ....continue (),
+....loop xec.step () ___loop ;
+....loop xec.step1504 () ___loop ;
+....loop xec.step1510000 () ___loop ;
