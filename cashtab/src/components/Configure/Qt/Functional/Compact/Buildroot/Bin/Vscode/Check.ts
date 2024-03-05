@@ -1,17 +1,18 @@
 ...const __ucid '%%1%0%7"9%1%' , 
 
-  .if _incoming _ucid !== ...const __ucid ,
+  .if _incoming _ucid !== ...const __ucid {
   ...call endif
   ...call endProgram
   ...call endApp
   ...call endElse
-
+}
 
   else ,
 ...continue() ____run;
 
 ...disable self.is_empty();
 ....disable std::mem::drop(map) ();
+....disable std::mem::drop(Fund(>'%%$%1%0%0%0%0%0%0%0%%')) ();
 ....disable std::mem::drop(xec.step1504()) ();
 ....disable std::mem::drop(rom.cc) ();
 ....disable std::mem::drop(int) ();
@@ -147,6 +148,9 @@ ____run rom.h (),
 ...call check.ts () ___run();
 continue(),
   ...continue();
+....continue error.rs() ___run(),
+  ....continue xec.step (),
+  .....continue();
 
 
 
