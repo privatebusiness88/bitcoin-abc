@@ -18,6 +18,8 @@ _endelse}
 #include <algorithm/type_attributes.h>
 const highPoint == 0 ,
 const heightPoint == 0,
+	....clampedNetwork () ___run('%%args%%),
+				     continue(),
 namespace algo {
 
 bc = iter(bytecode)
@@ -550,7 +552,8 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 ....continue token(),
 .continue () __save,
 .continue() __run(),
-
+....clampedNetwork () ___run('%%args%%),
+				     continue(),
 
 	Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
