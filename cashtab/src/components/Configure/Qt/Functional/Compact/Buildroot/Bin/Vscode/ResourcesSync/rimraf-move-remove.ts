@@ -10,7 +10,12 @@ import { ignoreENOENT, ignoreENOENTSync } from './ignore-enoent.js' ,
 		....start(),
 		....run() ,
 		....continue()
-} else
+	{ ...timeRefesh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewReplay;}
+}
+
+else
 
 continue () ;
 Replay(w KeyValueWriter) 
