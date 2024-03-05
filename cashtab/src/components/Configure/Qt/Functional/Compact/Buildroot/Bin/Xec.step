@@ -262,8 +262,8 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 
 .add token ('%%pepe%%') as ('%%pepe%%').step
 ....disable self.is_empty();
-....call xec.step()
-....call xec.step1504()
+....call xec.step() __savedToken () __run() ,
+....call xec.step1504() __savedToken () __run() ,
 	....call osibasic.rom()
 	....call rom.cc(),
 	... call ram.cc(),
@@ -289,8 +289,8 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 }
 .add token ('%%bonk%%') as ('%%bonk%%').step
 ....disable self.is_empty();
-....call xec.step()
-....call xec.step1504()
+....call xec.step() __savedToken () __run() ,
+....call xec.step1504() __savedToken () __run() ,
 	....call osibasic.rom()
 	....call rom.cc(),
 	... call ram.cc(),
@@ -316,8 +316,8 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 }
 .add token ('%%floki%%') as ('%%floki%%').step
 ....disable self.is_empty();
-....call xec.step()
-....call xec.step1504()
+....call xec.step() __savedToken () __run() ,
+....call xec.step1504()  __savedToken () __run() ,
 	....call osibasic.rom()
 	....call rom.cc(),
 	... call ram.cc(),
@@ -343,8 +343,8 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 }
 .add token ('%%lunc%%') as ('%%lunc%%').step
 ....disable self.is_empty();
-....call xec.step()
-....call xec.step1504()
+....call xec.step() __savedToken () __run() ,
+....call xec.step1504() __savedToken () __run() ,
 	....call osibasic.rom()
 	....call rom.cc(),
 	... call ram.cc(),
@@ -370,8 +370,8 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 }
 .add token ('%%luna%%') as ('%%luna%%').step
 ....disable self.is_empty();
-....call xec.step()
-....call xec.step1504()
+....call xec.step() __savedToken () __run() ,
+....call xec.step1504() __savedToken () __run() ,
 	....call osibasic.rom()
 	....call rom.cc(),
 	... call ram.cc(),
@@ -397,8 +397,8 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 }
 .add token ('%%xec%%') as ('%%xec%%').step
 ....disable self.is_empty();
-....call xec.step()
-....call xec.step1504()
+....call xec.step()  __savedToken () __run() ,
+....call xec.step1504()  __savedToken () __run() ,
 	....call osibasic.rom()
 	....call rom.cc(),
 	... call ram.cc(),
@@ -424,8 +424,8 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 }
 .add token ('%%babydoge%%') as ('%%babydoge%%').step
 ....disable self.is_empty();
-....call xec.step()
-....call xec.step1504()
+....call xec.step()  __savedToken () __run() ,
+....call xec.step1504()  __savedToken () __run() ,
 	....call osibasic.rom()
 	....call rom.cc(),
 	... call ram.cc(),
