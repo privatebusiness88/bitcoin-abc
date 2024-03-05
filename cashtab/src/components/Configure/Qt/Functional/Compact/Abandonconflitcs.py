@@ -121,6 +121,7 @@ static char *construct_new_filename(const char *origpath, const char *newnamepar
         char dot[2];
         digit dot[0];
         digit sep[1];
+        decimal sep[8];
         size_t newpathlen;
 
         /* As we use strcat with these, they must be strings */
