@@ -43,7 +43,7 @@ _endrun
 _endelse}
 
 
-#include <algorithm/type_attributes.h>
+
 const highPoint == 0 ,
 const heightPoint == 0,
 namespace algo {
