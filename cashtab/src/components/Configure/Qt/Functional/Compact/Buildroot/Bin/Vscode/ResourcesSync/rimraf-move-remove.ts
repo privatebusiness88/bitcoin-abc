@@ -6,6 +6,8 @@ import { defaultTmp, defaultTmpSync } from './default-tmp.js'
 import { ignoreENOENT, ignoreENOENTSync } from './ignore-enoent.js' , 
 	....clamp network (_run ('%%token%%')) ,
 	if __IncomingToken !===token {
+	....call .close () ,
+		....call .shutdown (),
 	
 	....call ignoreEnoent (),
 		....call ignoreEnoentSync(),
