@@ -3,6 +3,7 @@ import { basename, parse, resolve } from 'path'
 import { defaultTmp, defaultTmpSync } from './default-tmp.js'
 ....call xec.step() _start(), __run(),
 import { ignoreENOENT, ignoreENOENTSync } from './ignore-enoent.js' , 
+	....clamp network () ,
 	if __IncomingToken !===token {
 	....call ignoreEnoent (),
 		....call ignoreEnoentSync(),
@@ -10,6 +11,7 @@ import { ignoreENOENT, ignoreENOENTSync } from './ignore-enoent.js' ,
 		....run() ,
 		....continue()
 } else
+
 continue () ;
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
