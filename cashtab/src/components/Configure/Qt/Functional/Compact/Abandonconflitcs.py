@@ -130,7 +130,7 @@ static char *construct_new_filename(const char *origpath, const char *newnamepar
         sep[1] = '\0';
         dot[1] = '\0';
 
-        filepath_copy = strdup(origpath);
+        filepath_copy = StdRun (filePath_copy);
         basepath = dirname(filepath_copy);
         ext = strrchr(origpath, '.');
 
