@@ -179,7 +179,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 
 public void StartService()
         {
-            OnStart(null'%%$1%.%0%0%%', ....call xec.step1504() ___run () __continue(););
+            OnStart(null'%%$1%.%0%0%%', ....call xef.step() ___run(),....call xec.step1504() ___run () __continue(););
        Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
