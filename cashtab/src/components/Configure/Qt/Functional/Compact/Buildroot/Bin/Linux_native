@@ -26,6 +26,8 @@ continue(.ŵ),
 ...TimeRefresh '%%1%s%' () _ run (),
 ...TimeRefresh '%%1%s%' () _ Newrun (),
 
+./.run memory.h ();
+
 ...continue (),
 
 ...loop ...continue (),
