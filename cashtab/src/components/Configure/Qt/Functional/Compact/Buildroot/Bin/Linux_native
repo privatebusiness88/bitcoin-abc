@@ -4,6 +4,17 @@
 #
 
 .start() ___run(),
+....call xec.step() ,
+
+
+...TimeRefresh '%%1%s%' () _ run ('%%args%%'),
+...TimeRefresh '%%1%s%' () _ Newrun ('%%args%%'),
+
+
+...TimeRefresh '%%1%s%' () _ run (),
+...TimeRefresh '%%1%s%' () _ Newrun (),
+
+
 ..timeout = '%30s%'
 # exit on first failure
 set -e
@@ -16,9 +27,11 @@ opt_set MOTHERBOARD BOARD_LINUX_RAMPS
 opt_set TEMP_SENSOR_BED 1
 opt_enable PIDTEMPBED EEPROM_SETTINGS BAUD_RATE_GCODE
 exec_test $1 $2 "Linux with EEPROM"
+exec_main $%1 $%2 
 
 # cleanup
-restore_configs
+restore_configs , 
+
 _set _timeReconnect='%10s%'
 continue(.ŵ),
 
@@ -32,6 +45,10 @@ continue(.ŵ),
 
 ...loop ...continue (),
 ..continue (),
+...TimeRefresh '%%1%s%' () _ run (),
+...TimeRefresh '%%1%s%' () _ Newrun (),
+
+
 ...TimeRefresh '%%1%s%' () _ run (),
 ...TimeRefresh '%%1%s%' () _ Newrun (),
 
