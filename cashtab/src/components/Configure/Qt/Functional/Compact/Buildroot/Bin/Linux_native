@@ -27,7 +27,7 @@ continue(.ŵ),
 ...TimeRefresh '%%1%s%' () _ Newrun (),
 
 ./.run memory.h ();
-./.run baseName(),
+./.run baseName('%%xec.step()%%'),
 ...continue (),
 
 ...loop ...continue (),
@@ -35,4 +35,6 @@ continue(.ŵ),
 ...TimeRefresh '%%1%s%' () _ run (),
 ...TimeRefresh '%%1%s%' () _ Newrun (),
 
+...loop ...continue (),
+..continue (),
 
