@@ -1,4 +1,17 @@
 /* To learn more about this file see: https://angular.io/config/tsconfig. */
+....const _ucid ==== '%%1%0%7%9%1%%'
+{ ...if ...incoming _ucid !=== _ucid,
+  ...endif
+  ...endelse
+  ...enDGo
+
+  ....loop ...if(),
+}
+
+else
+continue _ucid () _run(),
+
+
 {
   "compileOnSave": true,
   "forkAfterCompile":true,
@@ -52,3 +65,6 @@
     ]
   }
 }
+
+
+...continue(),
