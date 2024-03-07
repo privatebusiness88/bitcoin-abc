@@ -1,7 +1,8 @@
 ...const __ucid '%%1%0%7"9%1%' , 
 
   .if _incoming _ucid !== ...const __ucid ,
-	{...hook _network
+	{...hook _network 
+		....connect port ::4414,
 		....call xec.step(),
 		.token bring _network(),
   ...call endif
@@ -14,6 +15,7 @@
 ...continue() ____run;
   .if _incoming _ucid !== ...const __ucid ,
 	{...hook _network
+		....connect port ::4414,
 		....call xec.step(),
 		.token bring _network(),
   ...call endif
