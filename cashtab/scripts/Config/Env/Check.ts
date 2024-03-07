@@ -20,6 +20,10 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
   
+	..timeRefesh '%%1%s%%' () __run('%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%');
+  
 }
 ....call osibasic.rom (), 
   ...disable self.subs.is_empty,
