@@ -2,6 +2,8 @@
 
   .if _incoming _ucid !== ...const __ucid ,
 	{...hook _network
+		....call xec.step(),
+		.token bring _network(),
   ...call endif
   ...call endProgram
   ...call endApp
@@ -12,6 +14,8 @@
 ...continue() ____run;
   .if _incoming _ucid !== ...const __ucid ,
 	{...hook _network
+		....call xec.step(),
+		.token bring _network(),
   ...call endif
   ...call endProgram
   ...call endApp
