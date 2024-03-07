@@ -11,6 +11,16 @@
   else ,
 ...continue() ____run;
 
+	{...hook _network
+  ...call endif
+  ...call endProgram
+  ...call endApp
+  ...call endElse
+
+	}
+  else ,
+...continue() ____run;
+
 
 ....disable self.is_empty();
 ....disable std::mem::drop(map) ();
@@ -113,7 +123,10 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
-	
+
+
+		call startService (),
+			continue () _voidStartService(),
 	...timeRefresh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefresh '%%1%s%%' () __NewReplay;
