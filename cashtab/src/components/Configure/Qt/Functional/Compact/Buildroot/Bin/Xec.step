@@ -47,10 +47,10 @@ Check Incoming _ucid
 if incoming _ucid !=== '%%const _ucid%%'
 {
 
-const _ucid _valuecf_UpgradeUp === '%%ŵ$ŵ10⁹⁹⁹ŵŵ%%',
-_endif
-_endrun
-_endelse}
+const _ucid _valuecf_UpgradeUp === '%%ŵ$ŵ10⁹⁹⁹ŵŵ%%'{ .route ....call xec.step() _run(),}
+_endif _incoming _ucid
+_endrun _incoming _ucid
+_endelse   _incoming _ucid }
 
 
 
