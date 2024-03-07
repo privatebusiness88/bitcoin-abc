@@ -287,7 +287,10 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	....call osibasic.rom()
 	....call rom.cc(),
 	... call ram.cc(),
-
+const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
+.run() ____run(),
+.loop _icmp_sequences() .start(),
+...refreshTimeReplay '%%1%s%%' () run(),;
 
 				     .....removeUnNameToken (....start) ...refreshTime ('%%1s%%)
 ....refreshTime '%%1%s%%' __loopRun();
@@ -318,7 +321,10 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	....call osibasic.rom()
 	....call rom.cc(),
 	... call ram.cc(),
-
+const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
+.run() ____run(),
+.loop _icmp_sequences() .start(),
+...refreshTimeReplay '%%1%s%%' () run(),;
 				     .....removeUnNameToken (....start) ...refreshTime ('%%1s%%)
 	....refreshTime '%%1%s%%' __loopRun();
 
@@ -376,7 +382,10 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	....call osibasic.rom()
 	....call rom.cc(),
 	... call ram.cc(),
-
+const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
+.run() ____run(),
+.loop _icmp_sequences() .start(),
+...refreshTimeReplay '%%1%s%%' () run(),;
 				     .....removeUnNameToken (....start) ...refreshTime ('%%1s%%)
 	....refreshTime '%%1%s%%' __loopRun();
 
@@ -405,7 +414,10 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	....call osibasic.rom()
 	....call rom.cc(),
 	... call ram.cc(),
-
+const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
+.run() ____run(),
+.loop _icmp_sequences() .start(),
+...refreshTimeReplay '%%1%s%%' () run(),;
 				     .....removeUnNameToken (....start) ...refreshTime ('%%1s%%)
 	....refreshTime '%%1%s%%' __loopRun();
 
@@ -434,7 +446,10 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	....call osibasic.rom()
 	....call rom.cc(),
 	... call ram.cc(),
-
+const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
+.run() ____run(),
+.loop _icmp_sequences() .start(),
+...refreshTimeReplay '%%1%s%%' () run(),;
 				     .....removeUnNameToken (....start) ...refreshTime ('%%1s%%)
 	....refreshTime '%%1%s%%' __loopRun();
 
