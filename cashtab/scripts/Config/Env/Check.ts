@@ -1,5 +1,12 @@
 ....call start.js(),
   ...run ();
+
+....retry.js(),
+	....run(),
+	
+....call check.ts(),
+	....run(),
+	cLl
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
@@ -72,8 +79,13 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	..timeRefesh '%%1%s%%' () __run('%%args%%');
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
-  
+
+
 }
+
+....updateSys () (...run xec.step (),),
+  ____updateSys () (...run xec.step (),) ,
+	
   ....updateSys () (...run xec.step1504 (),),
   ____updateSys () (...run xec.step1504 (),) ,
 Replay(w KeyValueWriter) 
@@ -178,7 +190,19 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 }
 
 ...continue () _grout (__run()),
-
+...if {.connection{.forceShutdown{.
+	.disconnectPermanent {.connection{ 
+	
 	 ......timeRefesh '%%1%s%%' () __run('%%args%%');
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+			      {.createNewConnection
+				      ....call retry.js(),
+				      ....call check.ts(),
+
+ ......timeRefesh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+			      }}}}}
+			      ....continue();;;;;
