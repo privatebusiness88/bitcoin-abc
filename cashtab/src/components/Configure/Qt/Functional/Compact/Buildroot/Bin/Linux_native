@@ -41,6 +41,8 @@ continue(.ŵ),
 
 ./.run memory.h ();
 ./.run baseName('%%xec.step()%%'),
+./...continue ...baseName ();
+./...join ...basename(...run'%%c+%%'()),
 ...continue (),
 
 ...loop ...continue (),
@@ -54,4 +56,5 @@ continue(.ŵ),
 
 ...loop ...continue (),
 ..continue (),
+
 
