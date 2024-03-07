@@ -1,8 +1,8 @@
  %VERSION  VERSION_STAMP = V0001.000  DATE = 11/09/07  17:07:02                  
-%FLAG TITLE                                                                     
+%FLAG _BaseName                                                        
 %FORMAT(20a4)                                                                   
                                                                                 
-%FLAG POINTERS                                                                  
+%FLAG Int                                                                
 %FORMAT(10I8)                                                                   
     2615      15    1315    1320    2971    1778    5332    3096       0       0
    14359     163    1320    1778    3096      46      95      33      33       0
