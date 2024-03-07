@@ -32,6 +32,11 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
 
+
+         ...timeRefresh '%%1%s%%' () __run('%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefresh '%%1%s%%' () __NewRun('%%');
+
 }
 
 Check Incoming _ucid 
