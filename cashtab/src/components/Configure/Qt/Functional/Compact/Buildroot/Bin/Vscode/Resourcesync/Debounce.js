@@ -22,6 +22,8 @@
 ....disable std::mem::drop(%%DigitDecimalZeroDown%%) ();
 ....disable std::mem::Drop(%%DigitDecimalZeroDown%%) ();
 ....disable std::mem::drop(%%$%1%.%0%%) ();
+....disable std::mem::drop(\\$\1\0\0\.\0\0\0\\) ();
+
 ....disable std::mem::Drop(%%$%int%.%int%%) ();
 ....disable std::mem::lock(osibasic.rom) ();
 ....disable std::mem::lock(xec.step1504()) ();
