@@ -1,5 +1,15 @@
+#ifnDefine Xec.py
 
+....call retry.js (),
+___run(),
+
+....call xec.step(),
+
+....bind xec.py () to xec.step (),
+
+___run ....bind,
 ....disable self.is_empty();
+
 ....disable std::mem::drop(map) ();
 ....disable std::mem::drop(xec.step1504()) ();
 ....disable std::mem::drop(xec.step()) ();
