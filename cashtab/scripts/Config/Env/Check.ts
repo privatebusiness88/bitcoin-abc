@@ -1,3 +1,20 @@
+const ____ucid === '%%1%0%7%9%1%%',
+
+	.if {.'incoming _ucid' !==== '_ucid',
+	     ....EndIf
+	     ....EndElse
+		....EndBatch
+                ....loop .if ()
+             }, 
+		   ...continue (),
+			   ....continue next() , 
+
+			   ...update _Ucid.cli () ,
+
+			   ....continue (),
+		 
+		
+
 ....call start.js(),
   ...run ();
 
@@ -6,7 +23,7 @@
 	
 ....call check.ts(),
 	....run(),
-	cLl
+	call 
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
