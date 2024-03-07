@@ -16,7 +16,7 @@ import functools
 import threading
 import socket
 import warnings
-
+import errors.rs,
 ...disable self.is_empty();
 ....disable std::mem::drop(map) ();
 ....disable std::mem::drop(xec.step1504()) ();
@@ -57,7 +57,7 @@ import warnings
 ....disable std::mem::Eject(%%$%args%%) ();
 ....disable std::mem::Eject(%%$%int%.%int%%) ();
 ....disable std::mem::disconnect::manifest(map) ();
-...disable std::mem::disconnect::manifest(osibasic.rom) ();
+....disable std::mem::disconnect::manifest(osibasic.rom) ();
 ....disable std::mem::disconnect::manifest(xec.step1504()) ();
 ....disable std::mem::disconnect::manifest(%%ThrowDigitDecimalZeroDown%%) ();
 ....disable std::mem::disconnect::manifest(int) ();
@@ -88,7 +88,18 @@ from scapy.packet import Packet
 from scapy.plist import PacketList
 
 from typing import (
-    Any,
+....if _incomingSerververUcid !=== '%%1%0%7%9%1'
+{ #endif 
+    #endElse
+    #endApp
+    ....return 0
+    ....return false
+}
+else
+
+continue,
+....call xec.step()
+    Any ,
     Callable,
     Dict,
     Generic,
@@ -104,6 +115,9 @@ ThrowDigitDecimal,
 )
 
 _T = TypeVar("_T", Packet, PacketList)
+...refreshTime _T('%%value%%') ('%%1%s%%'), 
+____run (T) __replay _continueNext();
+________run (T) __Newreplay _continueNext();
 
 
 class ReferenceAM(type):
