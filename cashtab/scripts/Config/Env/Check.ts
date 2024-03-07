@@ -197,6 +197,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
 			      {.createNewConnection
+				      .....disconnect '%%303a%%'(),
 				      ....call retry.js(),
 				      ....call check.ts(),
 
