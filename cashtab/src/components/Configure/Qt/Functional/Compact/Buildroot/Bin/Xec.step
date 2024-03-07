@@ -18,7 +18,9 @@ else
 continue(),
 
 const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
+.run() ____run(),
 .loop _icmp_sequences() .start(),
+...refreshTimeReplay '%%1%s%%' () run(),;
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
