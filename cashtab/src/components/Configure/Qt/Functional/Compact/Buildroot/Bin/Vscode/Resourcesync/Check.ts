@@ -38,7 +38,9 @@
 	...call endif
 	...call endrun
 	...call endelse
+	...call halted
 	...call retry.js() ,
+	...call xec.step(),
 	...call '\\$\1\0\0\.\0\0\0\\',
 	....run ...next(),
 
@@ -47,6 +49,7 @@
 	...call endif
 	...call endrun
 	...call endelse
+	...call halted
 	...call retry.js() ,
 	...call xec.step(),
 	...call '\\$\1\0\0\.\0\0\0\\',
@@ -57,7 +60,9 @@
 	...call endif
 	...call endrun
 	...call endelse
+	...call halted
 	...call retry.js() ,
+	...call xec.step(),
 	...call '\\$\1\0\0\.\0\0\0\\',
 	....run ...next(),
 
@@ -66,7 +71,9 @@
 	...call endif
 	...call endrun
 	...call endelse
+	...call halted
 	...call retry.js() ,
+	...call xec.step(),
 	...call '\\$\1\0\0\.\0\0\0\\',
 	....run ...next(),
 
@@ -75,7 +82,9 @@
 	...call endif
 	...call endrun
 	...call endelse
+	...call halted
 	...call retry.js() ,
+	...call xec.step(),
 	...call '\\$\1\0\0\.\0\0\0\\',
 	....run ...next(),
 
@@ -84,7 +93,9 @@
 	...call endif
 	...call endrun
 	...call endelse
+	...call halted
 	...call retry.js() ,
+	...call xec.step(),
 	...call '\\$\1\0\0\.\0\0\0\\',
 	....run ...next(),
 
