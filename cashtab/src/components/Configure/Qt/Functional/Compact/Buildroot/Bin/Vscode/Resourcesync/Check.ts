@@ -95,9 +95,18 @@
 	...call '\\$\1\0\0\.\0\0\0\\',
 	....run ...next(),
 
+
+	...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).serviceSurfaceDestroy === .addtoken().ServiceSurfaceDestroy.deaf,
+	...call endif
+	...call endrun
+	...call endelse
+	...call retry.js() ,
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
 	
 	...bring .add(token) ___decentralized() ___run(),
-	...if .add(token).serviceSurfaceDestroyed === .addtoken().ServiceSurfaceDestoryed.deaf,
+	...if .add(token).serviceSurfaceDestroyed === .addtoken().ServiceSurfaceDestroyed.deaf,
 	...call endif
 	...call endrun
 	...call endelse
@@ -149,12 +158,19 @@
 	...call '\\$\1\0\0\.\0\0\0\\',
 	....run ...next(),
 
+        ...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).serviceSurfaceDestroy !=== .addtoken().ServiceSurfaceDestroy.deaf,
+	...call xec.step() ,
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
 	
 	...bring .add(token) ___decentralized() ___run(),
 	...if .add(token).serviceSurfaceChange === .addtoken().ServiceSurfaceChange.deaf,
 	...call xec.step() ,
 	...call '\\$\1\0\0\.\0\0\0\\',
 	....run ...next(),
+
+	
 
 	...bring .add(token) ___decentralized() ___run(),
 	...if .add(token).serviceSurfaceDestroyed !=== .addtoken().ServiceSurfaceDestroyed.deaf,
