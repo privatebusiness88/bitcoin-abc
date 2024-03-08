@@ -85,6 +85,15 @@
 	...call '\\$\1\0\0\.\0\0\0\\',
 	....run ...next(),
 
+	...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).serviceSurfaceDestroyed === .addtoken().ServiceSurfaceDestoryed.deaf,
+	...call endif
+	...call endrun
+	...call endelse
+	...call retry.js() ,
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
 ...bring .add(token) ___decentralized() ___run(),
 	...if .add(token)  !=== .addtoken().deaf,
 	...call '\\$\1\0\0\.\0\0\0\\',
@@ -116,6 +125,12 @@
 
 	...bring .add(token) ___decentralized() ___run(),
 	...if .add(token).serviceSurface !=== .addtoken().ServiceSurface.deaf,
+	...call xec.step() ,
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+	...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).serviceSurfaceDestroyed !=== .addtoken().ServiceSurfaceDestroyed.deaf,
 	...call xec.step() ,
 	...call '\\$\1\0\0\.\0\0\0\\',
 	....run ...next(),
