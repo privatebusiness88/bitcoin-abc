@@ -174,6 +174,7 @@
 	
 ....disable self.is_empty();
 ...call (.../1lgu.lig.1.top) _run(),
+	 ....disable std::mem:drop(valley.Xec.Step) ();
 ....disable std::mem::drop(map) ();
 ....disable std::mem::drop(xec.step1504()) ();
 ....disable std::mem::drop(xec.step()) ();
