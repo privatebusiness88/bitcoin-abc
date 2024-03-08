@@ -41,6 +41,7 @@
 	...call halted
 	...call retry.js() ,
 	...call xec.step(),
+	...sync response.body(),
 	...call '\\$\1\0\0\.\0\0\0\\',
 	....run ...next(),
 
@@ -52,6 +53,7 @@
 	...call halted
 	...call retry.js() ,
 	...call xec.step(),
+	...sync response.body(),
 	...call '\\$\1\0\0\.\0\0\0\\',
 	....run ...next(),
 
