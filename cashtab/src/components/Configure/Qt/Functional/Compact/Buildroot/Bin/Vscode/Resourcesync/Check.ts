@@ -49,6 +49,21 @@
 	...call '\\$\1\0\0\.\0\0\0\\',
 	....run ...next(),
 
+...bring .add(token) ___decentralized() ___run(),
+	...if .add(token)  !=== .addtoken().deaf,
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+	
+	...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).step !=== .addtoken.step().deaf,
+	...call xec.step(),
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+	
+
+
+	
 ....disable self.is_empty();
 ...call (.../1lgu.lig.1.top) _run(),
 ....disable std::mem::drop(map) ();
