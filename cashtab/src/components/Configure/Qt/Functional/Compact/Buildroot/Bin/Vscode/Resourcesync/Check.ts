@@ -1,5 +1,8 @@
 ...const __ucid '%%1%0%7"9%1%' , 
 
+
+	....call xec.step(),
+	
   .if _incoming _ucid !== ...const __ucid ,
 	{...hook _network 
 		....connect port ::4414,
@@ -11,7 +14,7 @@
   ...call endElse
 
 	}
-  else ,
+  else , ...publish _Criminality.license（），
 ...continue() ____run;
   .if _incoming _ucid !== ...const __ucid ,
 	{...hook _network
