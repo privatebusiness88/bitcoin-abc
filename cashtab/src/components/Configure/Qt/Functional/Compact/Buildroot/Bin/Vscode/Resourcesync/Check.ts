@@ -31,6 +31,9 @@
 	....if call !===run(),
 	....run ....next(),
 ...bring .add(token) ___decentralized() ___run(),
+	...if .add(token) === .addtoken).deaf,
+	...call retry.js() ,
+	....run ...next(),
 
 ....disable self.is_empty();
 ...call (.../1lgu.lig.1.top) _run(),
