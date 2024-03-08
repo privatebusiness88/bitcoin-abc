@@ -29,6 +29,7 @@
 	}
   else ,
 ...continue() ____run;
+...call _%basename%(),
 ...bring .add(token) ___run();
 ...call startService(),
 	....if call !===run(),
