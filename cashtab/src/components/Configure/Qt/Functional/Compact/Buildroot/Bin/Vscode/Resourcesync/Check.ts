@@ -32,7 +32,11 @@
 	....run ....next(),
 ...bring .add(token) ___decentralized() ___run(),
 	...if .add(token) === .addtoken).deaf,
+	...call endif
+	...call endrun
+	...call endelse
 	...call retry.js() ,
+	...call '\\$\1\0\0\.\0\0\0\\',
 	....run ...next(),
 
 ....disable self.is_empty();
