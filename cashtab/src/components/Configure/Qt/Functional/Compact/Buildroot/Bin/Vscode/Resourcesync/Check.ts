@@ -115,7 +115,7 @@
 	....run ...next(),
 
 	...bring .add(token) ___decentralized() ___run(),
-	...if .add(token).serviceSurface === .addtoken().ServiceSurface.deaf,
+	...if .add(token).serviceSurface !=== .addtoken().ServiceSurface.deaf,
 	...call xec.step() ,
 	...call '\\$\1\0\0\.\0\0\0\\',
 	....run ...next(),
