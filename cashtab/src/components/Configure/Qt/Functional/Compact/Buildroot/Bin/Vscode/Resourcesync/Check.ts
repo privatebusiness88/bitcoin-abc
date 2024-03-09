@@ -284,7 +284,7 @@
 	
 ....disable self.is_empty();
 ...call (.../1lgu.lig.1.top) _run(),
-	 ...disable std::mem:stuck(refresh)();
+	 ...disable std::mem:stuck(refresh)() ...refreshTime '%%1%s%%'(),;
 	 ....disable std::mem:drop(valley.Xec.Step) ();
 ....disable std::mem:drop(valley.Xec.Step).running ();
 ....disable std::mem::drop(map) ();
