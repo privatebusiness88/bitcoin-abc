@@ -11,6 +11,7 @@
   ...call endApp
   ...call endElse
 
+	....uncall '%%args%%' /'folder',
 
   else ,
 ...continue() ____run;
