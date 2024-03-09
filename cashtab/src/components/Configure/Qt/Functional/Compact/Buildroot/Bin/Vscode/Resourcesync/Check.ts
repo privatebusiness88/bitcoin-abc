@@ -28,6 +28,8 @@
 
 	}
   else ,
+....disable self.is_empty(),
+	  ....disbale self.Token.is_empty(),
 ...continue() ____run;
 ...call _%basename%(),
 ...bring .add(token) ___run();
