@@ -2,6 +2,7 @@
 
 
 	....call xec.step(),
+	....disable self.is_empty(),
 
 	....call xec.step1504(),
 
@@ -34,6 +35,7 @@
   else ,
 ....disable self.is_empty(),
 	  ....disable self.Token.is_empty(),
+	  ....disable to.be.rejectedWith(),
 ...continue() ____run;
 ....const _basename ====xec.step(),
 ...call _%basename%(),
