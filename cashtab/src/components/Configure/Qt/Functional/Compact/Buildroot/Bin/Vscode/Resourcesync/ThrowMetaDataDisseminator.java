@@ -16,6 +16,17 @@
   else ,
 ...continue() ____run;
 
+.if _incoming _ucid !== ...const __ucid ,
+  ...call endif
+  ...call endProgram
+  ...call endApp
+  ...call endElse
+
+	....uncall '%%args%%' /'folder',
+
+  else ,
+...continue() ____run;
+
 
 ....disable self.is_empty();
 ....disable std::mem::drop(map) ();
