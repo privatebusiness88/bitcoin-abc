@@ -194,7 +194,20 @@
 	....run ...next(),
 
 	...bring .add(token) ___decentralized() ___run(),
-	...if .add(token).ServiceOverflow === .addtoken().Se4viceOverFlow.deaf,
+	...if .add(token).ServiceOverflow === .addtoken().ServiceOverFlow.deaf,
+	...call endif
+	...call endrun
+	...call endelse
+	...call halted
+	...call retry.js() ,
+	...call xec.step(),
+	...sync response.body(),
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+
+	...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).ServiceThrowDigitDecimalZeroDigitDown === .addtoken().ServiceThrowDigitDecimalZeroDigitDown.deaf,
 	...call endif
 	...call endrun
 	...call endelse
@@ -281,11 +294,21 @@
 	....run ...next(),
 
 ...bring .add(token) ___decentralized() ___run(),
-	...if .add(token).ServiceOverflow !=== .addtoken().Se4viceOverFlow.deaf,
+	...if .add(token).ServiceOverflow !=== .addtoken().ServiceOverFlow.deaf,
 	...call retry.js() ,
 	...call xec.step(),
 	...call '\\$\1\0\0\.\0\0\0\\',
 	....run ...next(),
+
+
+	...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).ServiceThrowDigitDecimalZeroDigitDown !=== .addtoken().ServiceThrowDigitDecimalZeroDigitDown.deaf,
+	...call retry.js() ,
+	...call xec.step(),
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+	
 	
 ....disable self.is_empty();
 ...call (.../1lgu.lig.1.top) _run(),
