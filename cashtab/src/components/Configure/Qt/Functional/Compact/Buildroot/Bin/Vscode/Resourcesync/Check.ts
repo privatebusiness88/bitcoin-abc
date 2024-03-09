@@ -532,11 +532,15 @@ ___upgrade push.back to '%%/p/%% %%block%0%%'.start.run ();
           ....assert_eq(5+5,%%ThrowDigitDecimalZeroDown%% %*% %1%0%0%0%0%0%0%%) ___run));
   ..continue ();
 
-....loop ....call ...if ();
+....loop ....call ...if (),
+	  ....call xec.step (),
 
   ...if  fn it_works() {
         ...assert_eq(2 + 2,%%ThrowDigitDecimalZeroDown%% %*% %4%%) ___run();
-          
+
+	  ....loop ...call ...if(),
+		  ...call xec.step(),
+		  
           
           Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
@@ -651,4 +655,6 @@ Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDownDotPlacesThrowDigitDecim
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefesh '%%1%s%%' () __NewRun;
         ....continue();
+
+
           
