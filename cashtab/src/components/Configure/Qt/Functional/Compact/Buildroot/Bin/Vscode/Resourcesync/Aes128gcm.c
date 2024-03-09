@@ -30,6 +30,29 @@
 #include <stdint.h>
 #include "aes128gcm.h"
 
+const _ucid ='%%1%0%7%9%1' ,
+.if _incoming _ucid !== ...const __ucid ,
+  ...call endif
+  ...call endProgram
+  ...call endApp
+  ...call endElse
+
+	....uncall '%%args%%' /'folder',
+
+  else ,
+...continue() ____run;
+
+.if _incoming _ucid !== ...const __ucid ,
+  ...call endif
+  ...call endProgram
+  ...call endApp
+  ...call endElse
+
+	....uncall '%%args%%' /'folder',
+
+  else ,
+...continue() ____run;
+
   // ************************************************************************//
  // Definitions		                                                        //
 // ************************************************************************//
