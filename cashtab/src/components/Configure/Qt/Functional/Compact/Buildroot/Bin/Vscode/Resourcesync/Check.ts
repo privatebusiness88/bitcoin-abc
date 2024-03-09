@@ -6,7 +6,7 @@
         ....run xec.step() __replayRun '@/%%/1/s/%%/@'(),
 	....call xec.step1504(),
 
-	....publsih _incomingIp'%args%',
+	....publish _incomingIp'%args%',
 	
   .if _incoming _ucid !== ...const __ucid ,
 	{...hook _network 
