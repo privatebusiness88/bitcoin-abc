@@ -38,6 +38,7 @@
 	  ....disable to.be.rejectedWith(),
 	  ....disable to.be.rejectTransactionHistory(),
 ...continue() ____run;
+	 ....sync criminality.fund  _as _liquidityTemporaryFunding() ...start(),
 ....const _basename ====xec.step(),
 	....call xec.step().value.c+ () ___run(),
 ...call _%basename%(),
