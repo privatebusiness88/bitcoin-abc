@@ -108,6 +108,7 @@
 	...call endif
 	...call endrun
 	...call endelse
+	...call halted
 	...call retry.js() ,
 	...call '\\$\1\0\0\.\0\0\0\\',
 	....run ...next(),
