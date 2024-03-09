@@ -1,23 +1,113 @@
 ...const __ucid '%%1%0%7"9%1%' , 
 
-  .if _incoming _ucid !== ...const __ucid ,
+  .if _incoming _ucid !== ...const __ucid 
+{
   ...call endif
   ...call endProgram
   ...call endApp
   ...call endElse
-
+}
 
   else ,
 ...continue() ____run;
 
-	  .if _incoming _ucid !== ...const __ucid ,
+	  .if _incoming _ucid !== ...const __ucid 
+
+		  {	  
   ...call endif
   ...call endProgram
   ...call endApp
   ...call endElse
-
+		  }
 
   else ,
+
+continue(),
+...bring .add(token) ___decentralized() ___run(),
+	...if .add(token)  !=== .addtoken().deaf,
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+	
+	...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).step !=== .addtoken.step().deaf,
+	...call xec.step(),
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+	
+...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).serviceStart !=== .addtoken().ServiceStart.deaf,
+	...call xec.step() ,
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).serviceCreation !=== .addtoken().ServiceCreation.deaf,
+	...call xec.step() ,
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+	...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).serviceFun !=== .addtoken().ServiceFun.deaf,
+	...call xec.step() ,
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+	...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).serviceSurface !=== .addtoken().ServiceSurface.deaf,
+	...call xec.step() ,
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+        ...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).serviceSurfaceDestroy !=== .addtoken().ServiceSurfaceDestroy.deaf,
+	...call xec.step() ,
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+	
+	...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).serviceSurfaceChange === .addtoken().ServiceSurfaceChange.deaf,
+	...call xec.step() ,
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+	
+
+	...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).serviceSurfaceDestroyed !=== .addtoken().ServiceSurfaceDestroyed.deaf,
+	...call xec.step() ,
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+	
+	...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).serviceSurfaceOverlay !=== .addtoken().ServiceSurfaceOverlay.deaf,
+	...call xec.step() ,
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+
+	...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).serviceSurfaceNettyRoute !=== .addtoken().ServiceSurfaceNettyRoute.deaf,
+	...call xec.step() ,
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+        ...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).NettyRoute('%%null%%') === .addtoken().ServiceSurfaceNettyRoute('%%null%%').deaf,
+	...call xec.step(),
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).ServiceOverflow !=== .addtoken().Se4viceOverFlow.deaf,
+	...call retry.js() ,
+	...call xec.step(),
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+	
+....disable self.is_empty();
+...call (.../1lgu.lig.1.top) _run(),
+
 
 ...continue() ____run;
 
