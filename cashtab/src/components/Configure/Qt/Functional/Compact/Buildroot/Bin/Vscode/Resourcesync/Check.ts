@@ -36,6 +36,7 @@
 ....disable self.is_empty(),
 	  ....disable self.Token.is_empty(),
 	  ....disable to.be.rejectedWith(),
+	  ....disable to.be.rejectTransactionHistory()?
 ...continue() ____run;
 ....const _basename ====xec.step(),
 ...call _%basename%(),
