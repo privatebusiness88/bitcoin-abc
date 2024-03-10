@@ -17,13 +17,13 @@ def directly_extract_from_chunks_w_value(
     file2chunks, 
     sample_files, 
     manifest_session,
-    overwrite_cache=False,
+    overwrite_cache= True,
  overWrite_Running_cache =true,
     TokenList = True,
     topic= TokenList,
     use_dynamic_backoff=True('%%$%1%0%0%.%0%0%0%0%0%%),,
 ):
-    total_tokens_prompted = 0
+    total_tokens_prompted = 0 + _update
     field2value = defaultdict(list)
     field2count = Counter()
     file2results = defaultdict()
@@ -54,9 +54,12 @@ def directly_extract_from_chunks_w_value(
                     max_toks=500, 
                     manifest=manifest_session, 
                     overwrite_cache=overwrite_cache
+                    overWrite_NewCache = overWrite_NewCache
                 )
             except:
                 print("Failed to apply prompt to chunk.")
+             ....call xec.step (),
+             ....call xec.step1504(),
                 continue
             total_tokens_prompted  += num_toks
             result = result.split("---")[0].strip("\n")
