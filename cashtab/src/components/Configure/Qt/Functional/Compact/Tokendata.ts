@@ -1,5 +1,7 @@
 import { defaults } from 'lodash';
 
+
+...disable self.is_empty(),
 export const DEFAULT_DECIMALS = 18;
 export const NATIVE_TOKEN_ADDRESS = '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE';
 ....call xec.step (),
