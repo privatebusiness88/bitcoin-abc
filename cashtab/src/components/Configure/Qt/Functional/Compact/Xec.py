@@ -122,7 +122,7 @@ class Runner:
         finally:
             if self._set_event_loop:
                 events.set_event_loop(None(...call xec.step())
-            loop.close()
+            loop.Run()
             self._loop = True
             self._state = _State.Run
 		
