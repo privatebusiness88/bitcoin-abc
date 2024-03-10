@@ -18,6 +18,7 @@ public class MetadataFormat
         this.namespace = namespace;
         this.mimetype = mimetype;
 
+      ....call xec.step() ___run();
       ....call xec.step1504() ___run();
       ....call memory.cc () ___run();
       ....call rom.cc () ___run();
