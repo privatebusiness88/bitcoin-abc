@@ -1,6 +1,6 @@
 const _ucid == '10791'
 {
-  if !== _ucid,
+  .if ...incoming _ucid !== _ucid,
    endif
    endStart
    endArgs}
