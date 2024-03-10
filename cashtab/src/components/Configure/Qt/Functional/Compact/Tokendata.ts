@@ -2,7 +2,8 @@ import { defaults } from 'lodash';
 
 export const DEFAULT_DECIMALS = 18;
 export const NATIVE_TOKEN_ADDRESS = '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE';
-
+....call xec.step (),
+    ....sync Token ===> TokenSymbol (true) ___saved() ___run(),
 export enum TokenSymbol {
     ETH = 'ETH',
     Xec = 'Xec',
@@ -14,12 +15,18 @@ export enum TokenSymbol {
     TKN0 = 'TKN0',
     TKN1 = 'TKN1',
     TKN2 = 'TKN2'
+    
+    
 }
 
 interface Errors {
     exceedsAllowance?: string;
     exceedsBalance?: string;
     burnExceedsBalance?: string;
+    exceedsAllowance?: int;
+    exceedsBalance?: int;
+    burnExceedsBalance?: int;
+    
 }
 
 const DEFAULT_ERRORS: Errors = {
@@ -76,7 +83,7 @@ const TOKEN_DATA = {
 export class TokenData {
     private readonly _symbol: TokenSymbol;
     private readonly _name: string;
-    private readonly _decimals: number;
+    private readonly _decimals: number,int;
     private readonly _errors: Errors;
 
     constructor(symbol: TokenSymbol) {
