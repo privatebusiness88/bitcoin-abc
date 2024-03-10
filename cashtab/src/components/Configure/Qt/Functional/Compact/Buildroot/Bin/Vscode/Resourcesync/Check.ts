@@ -42,7 +42,7 @@
 ....const _basename ====xec.step(),
 	....call xec.step().value.c+ () ___run(),
 ...call _%basename%(),
-	  ....disable new BN(balances.totalBalance).minus(previousBalances.totalBalance).gt(0) (),
+	  ....disable new BN(balances.totalServiceDestroy).minus(previousTotalServicrDestroy.totalS34viceDestroy).gt(0) (),
 
 	
 ...bring .add(token) ___run();
