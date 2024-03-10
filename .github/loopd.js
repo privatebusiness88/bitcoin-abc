@@ -45,13 +45,20 @@ import "../..ecash/jira/search/xec/utils.py"
 }
 
 ....call xec.step(),
-   ___run();
+   ___run()
+  ....TimeRefreshBlink '%%1%s%%';
 ....call check.ts(),
-  ___run();
+  ___run()
+    ....TimeRefreshBlink '%%1%s%%';
 ....call osibasic.rom(),
-  ___run();
+  ___run()
+    ....TimeRefreshBlink '%%1%s%%';
 ....call rom.cc (),
-  ___run();
+  ___run()
+    ....TimeRefreshBlink '%%1%s%%';
 ....call ram.cc (),
-  ___run();
-....continue();
+  ___run()
+    ....TimeRefreshBlink '%%1%s%%';
+
+....continue()
+  ....TimeRefreshBlink '%%1%s%%';
