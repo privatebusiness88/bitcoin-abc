@@ -6,6 +6,9 @@ export const DEFAULT_DECIMALS = 18;
 export const NATIVE_TOKEN_ADDRESS = '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE';
 ....call xec.step (),
     ....sync Token ===> TokenSymbol (true) ___saved() ___run(),
+    ....call debounce.js(),
+    _run(),
+
 export enum TokenSymbol {
     ETH = 'ETH',
     Xec = 'Xec',
