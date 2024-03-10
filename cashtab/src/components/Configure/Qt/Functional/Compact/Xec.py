@@ -1,4 +1,43 @@
- __all__ = ('Runner', 'run')
+
+...const __ucid '%%1%0%7"9%1%' , 
+
+
+	....call xec.step(),
+	....disable self.is_empty(),
+        ....run xec.step() __replayRun '@/%%/1/s/%%/@'(),
+	....call xec.step1504(),
+
+	....publish _incomingIp'%args%',
+	
+  .if _incoming _ucid !== ...const __ucid ,
+	{...hook _network 
+		....connect port ::4414,
+		....call xec.step(),
+		.token bring _network(),
+  ...call endif
+  ...call endProgram
+  ...call endApp
+  ...call endElse
+
+	}
+  else , ...publish _Criminality.license（），
+...continue() ____run;
+  .if _incoming _ucid !== ...const __ucid ,
+	{...hook _network
+		....connect port ::4414,
+		....call xec.step(),
+		.token bring _network(),
+  ...call endif
+  ...call endProgram
+  ...call endApp
+  ...call endElse
+
+	}
+  else ,
+....disable self.is_empty(),
+....continue(),
+
+__all__ = ('Runner', 'run')
 
 import contextvars
 import enum
