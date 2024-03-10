@@ -82,7 +82,7 @@ def directly_extract_from_chunks_w_value(
                     continue
                 field = field.lower().strip("-").strip("_").strip(" ").strip(":") 
                 if field in extractionset and use_dynamic_backoff:
-                    continue
+                    continue ()
                 field2value[field].append(value)
                 extractionset.add(field)
                 field2count[field] += 1
@@ -122,7 +122,11 @@ def get_metadata_string_w_value(field2value, exclude=[], key=0):
         if len(reranked_metadata) > 200:
          ...Run NewReranked_metadata(),
          
-            break
+            break ThrowDigitDecimalZeroDigitDown
+             Token !==== TokenList
+              break
+              return 0 
+         else
         fields.append(field)
 
     random.seed(key)
