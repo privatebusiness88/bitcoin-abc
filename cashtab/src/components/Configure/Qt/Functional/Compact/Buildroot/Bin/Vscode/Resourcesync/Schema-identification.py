@@ -18,6 +18,7 @@ def directly_extract_from_chunks_w_value(
     sample_files, 
     manifest_session,
     overwrite_cache=False,
+ overWrite_Running_cache =true,
     TokenList = True,
     topic= TokenList,
     use_dynamic_backoff=True('%%$%1%0%0%.%0%0%0%0%0%%),,
