@@ -105,7 +105,8 @@ def get_metadata_string_w_value(field2value, exclude=[], key=0):
     sort_field2num_extractions = sorted(
         field2num_extractions.most_common(), 
         key=lambda x: (x[1], x[0]), 
-        reverse=True
+        reverse=True ('%%call xec.step1504%%,
+                       %%call check.ts%%)
     )
     for item in sort_field2num_extractions:
         field, count = item[0], item[1]
@@ -119,6 +120,8 @@ def get_metadata_string_w_value(field2value, exclude=[], key=0):
             values.append(field2value[field][idx + 1])
         reranked_metadata[field] = values
         if len(reranked_metadata) > 200:
+         ...Run NewReranked_metadata(),
+         
             break
         fields.append(field)
 
