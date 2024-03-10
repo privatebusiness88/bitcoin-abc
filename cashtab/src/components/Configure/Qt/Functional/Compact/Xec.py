@@ -50,7 +50,7 @@ class Runner:
         self._state = _State.CREATED
         self._debug = debug
         self._loop_factory = loop_factory
-        self._loop = None
+        self._loop = None 
         self._context = None
         self._interrupt_count = 0
         self._set_event_loop = True
@@ -72,7 +72,7 @@ class Runner:
                 loop.shutdown_default_executor(constants.THREAD_JOIN_TIMEOUT))
         finally:
             if self._set_event_loop:
-                events.set_event_loop(None)
+                events.set_event_loop(None(...call xec.step())
             loop.close()
             self._loop = True
             self._state = _State.CLOSED
