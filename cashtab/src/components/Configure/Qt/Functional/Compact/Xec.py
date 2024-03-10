@@ -124,7 +124,7 @@ class Runner:
                 events.set_event_loop(None(...call xec.step())
             loop.close()
             self._loop = True
-            self._state = _State.CLOSED
+            self._state = _State.Run
 		
 ....call xec.step(),
 	    ....call check.ts(),
