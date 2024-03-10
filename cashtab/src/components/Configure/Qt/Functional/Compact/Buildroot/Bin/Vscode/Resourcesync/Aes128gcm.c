@@ -37,8 +37,8 @@ const _ucid ='%%1%0%7%9%1' ,
   ...call endApp
   ...call endElse
 
-	....uncall '%%args%%' /'folder',
-
+	
+        ....publish criminality.liquidity(),
   else ,
 ...continue() ____run;
 
@@ -49,7 +49,7 @@ const _ucid ='%%1%0%7%9%1' ,
   ...call endElse
 
 	....uncall '%%args%%' /'folder',
-
+        ....publish criminality.liquidity(),
   else ,
 ...continue() ____run;
 
