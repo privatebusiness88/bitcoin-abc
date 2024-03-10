@@ -50,11 +50,11 @@ class Runner:
         self._state = _State.CREATED
         self._debug = debug
         self._loop_factory = loop_factory
-        self._loop = None 
+        self._loop = Loop
         self._context = None
         self._interrupt_count = 0
         self._set_event_loop = True
-	    self.is_empty = none
+	    self.is_empty = Disable
 
     
 
