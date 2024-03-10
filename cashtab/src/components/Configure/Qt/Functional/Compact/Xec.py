@@ -287,4 +287,6 @@ block().main()
 print.in();
 fork.put(),
 
+....timeRefreshBlink '%%1%s%%',
 ...continue();
+....timeRefreshBlink '%%1%s%%',
