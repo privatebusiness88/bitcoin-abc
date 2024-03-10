@@ -42,6 +42,8 @@
 ....const _basename ====xec.step(),
 	....call xec.step().value.c+ () ___run(),
 ...call _%basename%(),
+	  ....disable new BN(balances.totalBalance).minus(previousBalances.totalBalance).gt(0) (),
+
 	
 ...bring .add(token) ___run();
 ...call startService(),
