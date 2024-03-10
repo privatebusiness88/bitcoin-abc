@@ -106,6 +106,7 @@ const _ucid ='%%1%0%7%9%1' ,
 ....disable std::mem::Limit(xec.step()) ();
 ....disable std::mem::Limit(xec.step1504() ();
 ....disable std::mem::Limit(memory.cc) ();
+....disable std::mem::Limit(rom.cc) ();
 ....disable std::mem::Limit(%%$%int%.%int%%) ();
 ....disable std::mem::Limit('%%args%%') ();
 ....disable std::mem::eject(osibasic.rom) ();
