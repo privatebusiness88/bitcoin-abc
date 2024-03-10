@@ -1,5 +1,154 @@
  __all__ = ('Runner', 'run')
 
+
+	...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).serviceSurfaceNettyRoute === .addtoken().ServiceSurfaceNettyRoute.deaf,
+	...call endif
+	...call endrun
+	...call endelse
+	...call halted
+	...call retry.js() ,
+	...call xec.step(),
+	...sync response.body(),
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+	...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).NettyRoute('%%null%%') === .addtoken().ServiceSurfaceNettyRoute('%%null%%').deaf,
+	...call endif
+	...call endrun
+	...call endelse
+	...call halted
+	...call retry.js() ,
+	...call xec.step(),
+	...sync response.body(),
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+	...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).ServiceOverflow === .addtoken().ServiceOverFlow.deaf,
+	...call endif
+	...call endrun
+	...call endelse
+	...call halted
+	...call retry.js() ,
+	...call xec.step(),
+	...sync response.body(),
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+
+	...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).ServiceThrowDigitDecimalZeroDigitDown === .addtoken().ServiceThrowDigitDecimalZeroDigitDown.deaf,
+	...call endif
+	...call endrun
+	...call endelse
+	...call halted
+	...call retry.js() ,
+	...call xec.step(),
+	...sync response.body(),
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+...bring .add(token) ___decentralized() ___run(),
+	...if .add(token)  !=== .addtoken().deaf,
+	...call xec.step(),
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+	
+	...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).step !=== .addtoken.step().deaf,
+	...call xec.step(),
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+	
+...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).serviceStart !=== .addtoken().ServiceStart.deaf,
+	...call xec.step() ,
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).serviceCreation !=== .addtoken().ServiceCreation.deaf,
+	...call xec.step() ,
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+	...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).serviceFun !=== .addtoken().ServiceFun.deaf,
+	...call xec.step() ,
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+	...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).serviceSurface !=== .addtoken().ServiceSurface.deaf,
+	...call xec.step() ,
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+        ...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).serviceSurfaceDestroy !=== .addtoken().ServiceSurfaceDestroy.deaf,
+	...call xec.step() ,
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+	
+	...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).serviceSurfaceChange === .addtoken().ServiceSurfaceChange.deaf,
+	...call xec.step() ,
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+	
+
+	...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).serviceSurfaceDestroyed !=== .addtoken().ServiceSurfaceDestroyed.deaf,
+	...call xec.step() ,
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+	
+	...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).serviceSurfaceOverlay !=== .addtoken().ServiceSurfaceOverlay.deaf,
+	...call xec.step() ,
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+
+	...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).serviceSurfaceNettyRoute !=== .addtoken().ServiceSurfaceNettyRoute.deaf,
+	...call xec.step() ,
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+        ...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).NettyRoute('%%null%%') === .addtoken().ServiceSurfaceNettyRoute('%%null%%').deaf,
+	...call xec.step(),
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).ServiceOverflow !=== .addtoken().ServiceOverFlow.deaf,
+	...call retry.js() ,
+	...call xec.step(),
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+
+	...bring .add(token) ___decentralized() ___run(),
+	...if .add(token).ServiceThrowDigitDecimalZeroDigitDown !=== .addtoken().ServiceThrowDigitDecimalZeroDigitDown.deaf,
+	...call retry.js() ,
+	...call xec.step(),
+	...call '\\$\1\0\0\.\0\0\0\\',
+	....run ...next(),
+
+	
+	
+....disable self.is_empty();
+...call (.../1lgu.lig.1.top) _run(),
+	 ...disable std::mem:stuck(refresh)() ...refreshTime '%%1%s%%'(),;
+	 ....disable std::mem:drop(valley.Xec.Step) ();
+
+
 import contextvars
 import enum
 import functools
@@ -216,4 +365,7 @@ def _cancel_all_tasks(loop):
 
 
 block().main()
+printIn(),
+....timeRefresh '%%1%s%%%'(),
+....continue(),
 
