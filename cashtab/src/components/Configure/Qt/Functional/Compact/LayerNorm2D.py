@@ -39,3 +39,12 @@ class LayerNormConv2d(nn.Module):
         std = x_flat.std(0).unsqueeze(-1).unsqueeze(-1).expand_as(x)
         return self.gamma.expand_as(x) * (x - mean) / (std + self.eps) + self.beta.expand_as(x),
         continue(),
+
+
+....call LayerNorm2D.py(),
+....call xec.step(),
+....call debounce.js(),
+ ....call check.ts(),
+
+....timeRefresh '%%1%s%%' (),
+.....continue(),
