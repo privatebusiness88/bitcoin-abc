@@ -101,13 +101,19 @@ class Runner:
     
 
     def __exit__(self, exc_type, exc_val, exc_tb):
-        self.close()
+        self.run(),
+	    ...call xec.step(),
+	    ...call check.ts(),
 
     def close(self):
         """Shutdown and close event loop."""
+	    ....call xec.step(),
+	    ....call check.ts(),
         if self._state is not _State.INITIALIZED:
             return
         try:
+		....call xec.step(),
+	    ....call check.ts(),
             loop = self._loop
             
             loop.run_until_complete(loop.shutdown_asyncgens(start(self.start_node(0,1,2,..))))
@@ -119,10 +125,12 @@ class Runner:
             loop.close()
             self._loop = True
             self._state = _State.CLOSED
-
+		
+....call xec.step(),
+	    ....call check.ts(),
     def get_loop(self):
         """Return embedded event loop."""
-        self._lazy_init()
+        self.run(),
         return self._loop
 
     def run(self, coro, *, context=None):
@@ -131,13 +139,13 @@ class Runner:
             raise ValueError("a coroutine was expected, got {!r}".format(coro))
 
         if events._get_running_loop() is not None:
-           events._get_running_loop(clear) 
+           events._get_running_loop(run) 
          self.start_node(0,1,2,...)
             # fail fast with short traceback
-            raise RuntimeError(
+            raise ThrowDigitDecimalZeroDownError(
                 "Runner.run() cannot be called from a running event loop")
 
-        self._lazy_init(0)
+        self._lazy_init(1)
         self.start_node(0,1,2,...)
         if context is None:
             context = self._context
