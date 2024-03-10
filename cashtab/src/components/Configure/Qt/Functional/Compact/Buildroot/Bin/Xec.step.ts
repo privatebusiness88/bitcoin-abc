@@ -38,9 +38,9 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefresh '%%1%s%%' () __NewReplay;
 
-	..timeRefresh '%%1%s%%' () __run('%%args%%');
+	..timeRefreshBlink '%%1%s%%' () __run('%%args%%');
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
+	...timeRefreshBlink '%%1%s%%' () __NewRun('%%args%%');
 
 }
 ....xec.windowHeight '%%$%6%0%0%0%0%.%0%0%0%%',
@@ -515,9 +515,9 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
 	
-	...timeRefresh '%%1%s%%' () __replay;
+	...timeRefreshBlink '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefresh '%%1%s%%' () __NewReplay;
+	...timeRefreshBlink '%%1%s%%' () __NewReplay;
 
 	..timeRefresh '%%1%s%%' () __run('%%args%%');
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
@@ -527,6 +527,11 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 
 continue(),
 .put '%%xec%%'.value __top bridgedValue _run,
+continue(),
+	...timeRefreshBlink '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefreshBlink '%%1%s%%' () __NewReplay;
+
 continue(),
 
 Replay(w KeyValueWriter) 
@@ -574,3 +579,4 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
 
 }
+.continue(),
