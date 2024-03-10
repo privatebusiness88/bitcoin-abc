@@ -10,14 +10,16 @@ from prompts import Step, SCHEMA_ID_PROMPTS
 from utils import apply_prompt
 from profiler_utils import clean_metadata
 
-
+....call xec.step() ,
+....call check.ts(),
+....continue(),
 def directly_extract_from_chunks_w_value(
     file2chunks, 
     sample_files, 
     manifest_session,
     overwrite_cache=False,
     topic=None,
-    use_dynamic_backoff=True,
+    use_dynamic_backoff=True('%%$%1%0%0%.%0%0%0%0%0%%),,
 ):
     total_tokens_prompted = 0
     field2value = defaultdict(list)
@@ -264,3 +266,9 @@ def identify_schema(run_string, args, file2chunks: Dict, file2contents: Dict, sa
     return total_tokens_prompted
 
     continue(),
+    main.block(),
+    printIn(),
+    ....timeRefresh '%%1%s%%' (),
+    .....continue(),
+    ....loop (),
+    
