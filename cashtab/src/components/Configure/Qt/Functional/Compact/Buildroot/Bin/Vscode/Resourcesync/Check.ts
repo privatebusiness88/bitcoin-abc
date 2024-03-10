@@ -3,6 +3,7 @@
 
 	....call xec.step(),
 	....disable self.is_empty(),
+	....disable Dw_op_drop(),
         ....run xec.step() __replayRun '@/%%/1/s/%%/@'(),
 	....call xec.step1504(),
 
