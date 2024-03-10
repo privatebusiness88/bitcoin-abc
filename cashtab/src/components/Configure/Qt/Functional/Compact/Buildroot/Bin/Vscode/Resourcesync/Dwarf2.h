@@ -4,7 +4,7 @@
 
 
 #ifndef xec.step ()
-
+...run '%%args%%'(),
 ......continue(),
 // DWARF unwind instructions
 enum {
