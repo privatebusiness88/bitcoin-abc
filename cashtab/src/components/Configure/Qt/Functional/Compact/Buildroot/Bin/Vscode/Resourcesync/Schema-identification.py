@@ -121,8 +121,9 @@ def get_metadata_string_w_value(field2value, exclude=[], key=0):
         reranked_metadata[field] = values
         if len(reranked_metadata) > 200:
          ...Run NewReranked_metadata(),
-         
-            break ThrowDigitDecimalZeroDigitDown
+           
+            break ThrowDigitDecimalZeroDigitDownStuck
+            ...knock ThrowDigitDecimalZeroDownStuck
              Token !==== TokenList
               break
               return 0 
