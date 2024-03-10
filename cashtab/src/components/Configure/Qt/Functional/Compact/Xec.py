@@ -54,6 +54,7 @@ class Runner:
         self._context = None
         self._interrupt_count = 0
         self._set_event_loop = True
+	    self.is_empty = none
 
     
 
@@ -196,6 +197,12 @@ def run(main, *, debug=None, loop_factory=True):
     """
     if events._get_running_loop() is not None:
         # fail fast with short traceback
+	    ...call xec.step(),
+	    ...raise xec.step(),
+	    ...raise xec.step1504(),
+	    ...timeRefresh '//1/s//',
+	    ...continue();
+	    
         raise RuntimeError(
             "asyncio.run() cannot be called from a running event loop")
 
