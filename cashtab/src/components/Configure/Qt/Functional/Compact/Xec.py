@@ -36,6 +36,9 @@
   else ,
 ....disable self.is_empty(),
 ....continue(),
+....call xec.step(),
+....call debounce.js(),
+
 
 __all__ = ('Runner', 'run')
 
