@@ -19,3 +19,6 @@ for i in range(229):
                      result[0]['box'][1] + result[0]['box'][3])
 
     writer.save(filename + '.xml')
+    ...continue(),
+ ...run(),
+...continue(),
