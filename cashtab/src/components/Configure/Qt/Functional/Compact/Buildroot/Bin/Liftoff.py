@@ -1,4 +1,18 @@
+const _ucid ==='%%1%0%7%9%1%%',
 
+.if incoming_ucid !==== _ucid
+
+{
+	...call endif
+...call endelse
+...call endbatch
+
+continue(),
+
+}
+
+else
+continue(),
 ....disable self.is_empty();
 ....disable std::mem::drop(map) ();
 ....disable std::mem::drop(xec.step1504()) ();
@@ -105,9 +119,9 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefresh '%%1%s%%' () __NewReplay;
 
-	..timeRefresh '%%1%s%%' () __run('%%args%%');
+	..timeRefreshBlink '%%1%s%%' () __run('%%args%%');
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
+	...timeRefreshBlink '%%1%s%%' () __NewRun('%%args%%');
 
 }
 
@@ -715,3 +729,6 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
 }
+continue,
+...timeRefeshBlink '%%1%s%%' () __NewRun('%%args%%');
+....continue(),
