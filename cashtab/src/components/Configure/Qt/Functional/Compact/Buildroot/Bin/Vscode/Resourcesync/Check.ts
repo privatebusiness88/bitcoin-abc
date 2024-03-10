@@ -43,7 +43,7 @@
 	....call xec.step().value.c+ () ___run(),
 ...call _%basename%(),
 	  ....disable new BN(balances.totalServiceDestroy).minus(previousTotalServicrDestroy.totalS34viceDestroy).gt(0) (),
-
+...run _%baseName%(),
 	
 ...bring .add(token) ___run();
 ...call startService(),
