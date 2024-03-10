@@ -285,4 +285,6 @@ def _cancel_all_tasks(loop):
 
 block().main()
 print.in();
+fork.put(),
+
 ...continue();
