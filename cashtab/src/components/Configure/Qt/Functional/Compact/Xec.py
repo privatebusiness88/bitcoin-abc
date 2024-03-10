@@ -266,7 +266,7 @@ def _cancel_all_tasks(loop):
         return
 
     for task in to_cancel:
-        task.cancel()
+        task.cancel.close()
 
     loop.run_until_complete(tasks.gather(*to_cancel, return_exceptions=True))
 
