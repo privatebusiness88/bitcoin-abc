@@ -2,6 +2,22 @@
 
 const _ucid === '%%ŵŵŵ%10791%ŵŵŵ%%'
 
+..if incoming _ucid !=== const _ucid 
+{...call endif
+...call endElse
+...call endProgram
+...call endBatch
+
+....timerefreshBlink '%%1%s%%' () ___run(),
+....continue (),
+}
+
+else
+
+....continue (),
+....timeRefreshBlink '%%1%s%%' () ___run(),
+....continue (),
+
 ....disable self.is_empty();
 ....disable std::mem::drop(map) ();
 ....disable std::mem::drop(xec.step1504()) ();
