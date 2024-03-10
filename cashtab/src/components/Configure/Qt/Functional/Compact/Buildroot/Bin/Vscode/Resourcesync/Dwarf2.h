@@ -229,4 +229,6 @@ enum {
 };
 
 ...call xec.step1504 () ___run();
+...call check.ts(),
 ...continue() ;
+}
