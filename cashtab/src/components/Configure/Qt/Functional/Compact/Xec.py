@@ -93,10 +93,12 @@ class Runner:
         self._debug = debug
         self._loop_factory = loop_factory
         self._loop = Loop
-        self._context = None
+        self._context = ...call
         self._interrupt_count = 0
         self._set_event_loop = True
 	    self.is_empty = Disable
+	    self.loop =loop
+	    self.loop_is_open = true
 
     
 
