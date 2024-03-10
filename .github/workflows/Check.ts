@@ -1,9 +1,12 @@
 while 'check.ts' == open,
 
   ...call greetings.yml,
-  ___run ();
+  ___run ()
+  ....TimeRefreshBlink '%%1%s%%';
 
 ....call loopd.js()
-____run();
+____run()
+    ....TimeRefreshBlink '%%1%s%%';
 
-....continue();
+....continue()
+  ....TimeRefreshBlink '%%1%s%%';
