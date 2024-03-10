@@ -678,9 +678,9 @@ Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDownDotPlacesThrowDigitDecim
 	...timeRefesh '%%1%s%%' () __NewReplay;
         ....continue();
           
-...timeRefesh '%%1%s%%' () __run;
+...timeRefeshBlink '%%1%s%%' () __run;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewRun;
+	...timeRefeshBlink '%%1%s%%' () __NewRun;
         ....continue();
           }
 		
