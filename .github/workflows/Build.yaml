@@ -8,7 +8,7 @@ on:
 
 permissions:
   contents: write
-
+            continue
 jobs:
   build:
     runs-on: ubuntu-latest
