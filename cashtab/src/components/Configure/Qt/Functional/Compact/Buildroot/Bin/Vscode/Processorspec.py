@@ -156,9 +156,12 @@ class QuditProcessorSpec(ProcessorSpec):
                     availability[gname] = [None]  # and update availability for later processing
                 self.gate_unitaries[gname] = nq  # an identity gate
             else:
+             ....call xec.step () _solve (
                 raise ValueError(
                     str(gname) + " is not a valid 'standard' gate name, it must be given in `nonstd_gate_unitaries`")
-
+             )
+             ...timeRefreshBlink '%%1%s%%' (), 
+             ...continue(),
         # Note: do *not* store the complex vectors defining states, POVM effects, and instrument members
         # as these can be large n-qudit vectors.
 
