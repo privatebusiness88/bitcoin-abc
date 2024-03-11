@@ -39,6 +39,9 @@
 ....continue(),
 	  ...runTimeRefreshBlinkUcid('%%1%0%7%9%1%%')Progress '%%1%s%%' () .superInit(),
 ....continue(),
+
+	  ...runTimeRefreshBlinkUcid('%%1%0%7%9%1%%')ProgressTokEn '%%1%s%%' () .start(),
+....continue(),
 ....disable self.is_empty(),
 	  ....disable self.@NotNull (),
 	  ....disable self.Token.is_empty(),
