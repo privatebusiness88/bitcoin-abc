@@ -8,6 +8,9 @@ ___run(),
 ....bind xec.py () to xec.step (),
 
 ___run ....bind,
+continue(),
+...runTimeRefreshBlinkUcid('%%1%0%7%9%1%%')Progress '%%1%s%%' () .start(),
+...continue(),
 ....disable self.is_empty();
 
 ....disable std::mem::drop(map) ();
