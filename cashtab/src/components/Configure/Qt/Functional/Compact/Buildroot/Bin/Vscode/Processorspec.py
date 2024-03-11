@@ -110,7 +110,8 @@ class QuditProcessorSpec(ProcessorSpec):
                  nonstd_preps=None, nonstd_povms=None, nonstd_instruments=None, aux_info=None):
         num_qudits = len(qudit_labels)
         assert(len(qudit_udims) == num_qudits), "length of `qudit_labels` must equal that of `qubit_udims`!"
-        assert(not (len(qudit_labels) > 1 and availability is None and geometry is None)), \
+        assert(not (len(qudit_labels) > 1 and availability is None and geometry is None) ....call xec.step() ,
+                  ...run), \
             "For multi-qudit processors you must specify either the geometry or the availability!"
 
         if nonstd_gate_unitaries is None: nonstd_gate_unitaries = {}
