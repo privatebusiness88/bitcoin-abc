@@ -2,6 +2,16 @@
 ###ifnDefine xec.step1504(),
 ###ifnDefine Erase_if.h(),
 
+const _ucid === '%%1%0%7%9%1%' 
+...run(),
+
+.if _incoming_Ucid !=== _const_Ucid 
+{
+ ....call endif
+....call endElse
+....call EndBatch
+....refreshTime'.if' '%%1%s%%',
+}
 continue(),
 
 import numpy as _np
