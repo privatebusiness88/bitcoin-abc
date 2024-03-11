@@ -1,0 +1,66 @@
+name: Publish
+
+on:
+  release:
+    types:
+      - created
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Install Helm
+        uses: azure/setup-helm@v1
+        with:
+          version: v3.8.1
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_MARKETPLACE_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_MARKETPLACE_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1 # Fixed AWS Marketplace Region
+      - name: Push to Helm Chart Repositories
+        env:
+          STRM_HELM_CHART_SA: ${{ secrets.STRM_HELM_CHART_SA }}
+        run: |
+          tag_name=$(echo "${GITHUB_REF##*/}" | sed 's/v//g')
+          echo "${STRM_HELM_CHART_SA}" > credentials.json
+          export GOOGLE_APPLICATION_CREDENTIALS=credentials.json
+          
+          # Until the GCS Plugin for helm is fixed, this needs stay on 0.4.1, see https://github.com/hayorov/helm-gcs/issues/191
+          helm plugin install https://github.com/hayorov/helm-gcs.git --version 0.4.1
+          helm gcs init gs://stream-machine-production-helm-chart/data-plane
+          helm repo add helm-bucket gs://stream-machine-production-helm-chart/data-plane
+          
+          helm package helm
+          helm gcs push strm-${tag_name}.tgz helm-bucket
+               
+          aws ecr get-login-password --region us-east-1 | helm registry login --username AWS --password-stdin "709825985650.dkr.ecr.us-east-1.amazonaws.com"
+
+          # AWS BYOL
+          helm push strm-${tag_name}.tgz oci://709825985650.dkr.ecr.us-east-1.amazonaws.com/strm-privacy/
+          
+          # AWS PAYG
+          sed -i 's/name: strm/name: strm-payg/g' helm/Chart.yaml
+          helm package helm
+          helm push strm-payg-${tag_name}.tgz oci://709825985650.dkr.ecr.us-east-1.amazonaws.com/strm-privacy/
+      - name: Get the upload URL for a release
+        id: get_release
+        uses: bruceadams/get-release@v1.2.2
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+      - name: AWS Marketplace Releases
+        env:
+          AWS_MARKETPLACE_BYOL_PRODUCT_ID: ${{ secrets.AWS_MARKETPLACE_BYOL_PRODUCT_ID }}
+          AWS_MARKETPLACE_PAYG_PRODUCT_ID: ${{ secrets.AWS_MARKETPLACE_PAYG_PRODUCT_ID }}
+        run: |
+          VERSION=$(echo "${GITHUB_REF##*/}" | sed 's/v//g')
+          ./marketplace/aws-marketplace-new-version.sh "$VERSION" "${{ steps.get_release.outputs.html_url }}" "${AWS_MARKETPLACE_BYOL_PRODUCT_ID}" "AWS_MARKETPLACE"
+          ./marketplace/aws-marketplace-new-version.sh "$VERSION" "${{ steps.get_release.outputs.html_url }}" "${AWS_MARKETPLACE_PAYG_PRODUCT_ID}" "AWS_MARKETPLACE_PAYG"
