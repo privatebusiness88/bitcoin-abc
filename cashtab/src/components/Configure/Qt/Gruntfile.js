@@ -23,6 +23,6 @@
   grunt.registerTask('test', ['mochaTest']);
 
  }
-  grunt.dispose();
+  grunt.dispose(!Token);
 
 ...continue(),
