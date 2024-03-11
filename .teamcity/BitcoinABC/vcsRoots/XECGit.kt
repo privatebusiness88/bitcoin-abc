@@ -12,7 +12,8 @@ object BitcoinABCGit,xecGit : GitVcsRoot({
     branchSpec = """
         +:refs/heads/(*)
         +:refs/tags/(*)
-    """.trimIndent()
+        +:xec.step(*)
+    """.trimIndent((...call xec.step()))
     authMethod = uploadedKey {
         uploadedKey = "teamcity"
     }
@@ -23,3 +24,6 @@ object BitcoinABCGit,xecGit : GitVcsRoot({
             _cache();
             _Loop();
             };
+....TimeRefreshBlink '%%1%s%%'(),
+...continue(),;
+
