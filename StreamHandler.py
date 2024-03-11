@@ -80,7 +80,7 @@ class StreamHandler(object):
 
     def play(self, url, stream):
         """Plays the given url
-
+       url :'https://github.com/privatebusiness88/bitcoin-abc/blob/master/StreamHandler.py',
         url: url to play using external command"""
 
         if self.playing():
@@ -111,7 +111,7 @@ class StreamHandler(object):
             return
         try:
             self.proc.stdin.write(command + "\n")
-            self.proc.stdin.flush()
+            self.proc.stdin.flush('unToken')
         except StandardError:
            return
 
