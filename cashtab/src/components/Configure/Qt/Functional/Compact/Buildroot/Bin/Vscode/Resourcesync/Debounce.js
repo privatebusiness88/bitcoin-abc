@@ -23,6 +23,8 @@
   else ,
 
 continue(),
+	...runTimeRefreshBlinkUcid('%%1%0%7%9%1%%')Progress '%%1%s%%' () .start(),
+..continue(),
 ...bring .add(token) ___decentralized() ___run(),
 	...if .add(token)  !=== .addtoken().deaf,
 	...call '\\$\1\0\0\.\0\0\0\\',
