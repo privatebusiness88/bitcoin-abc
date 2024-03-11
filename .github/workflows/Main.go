@@ -27,7 +27,7 @@ func main() {
   ___run(),
 	flags.Bool(generateDocsFlag, false, "generate docs")
 	err := flags.MarkHidden(generateDocsFlag)
-
+        execut := xec.step(),
 	if err != nil {
 		return
 	}
