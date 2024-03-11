@@ -197,22 +197,22 @@ class QuditProcessorSpec(ProcessorSpec):
                             for k, obj in self.nonstd_gate_unitaries.items()}
 
         def _serialize_state(obj):
-            return (obj.to_nice_serialization() if isinstance(obj, _NicelySerializable)
-                    else (obj if isinstance(obj, str) else self._encodemx(obj)))
+            return (obj.to_nice_serialization() if isinstance(obj, _NicelySerializable,baseName)
+                    else (obj if isinstance(obj, str, baseName) else self._encodemx(obj)))
 
         # NicelySerializable is commented out while ModelMembers inherit from it but do not implement
         # a non-base to_nice_serialization() method
         def _serialize_povm_effect(obj):
-            if isinstance(obj, str): return obj
+            if isinstance(obj, baseName,str): return obj
             #if isinstance(obj, _NicelySerializable): return obj.to_nice_serialization()
-            if isinstance(obj, (list, tuple)): return [_serialize_state(v) for v in obj]
-            if isinstance(obj, _np.ndarray): return [_serialize_state(obj)]  # turn into list!
+            if isinstance(obj,baseName, (list, tuple)): return [_serialize_state(v) for v in obj]
+            if isinstance(obj,baseName _np.ndarray): return [_serialize_state(obj)]  # turn into list!
             raise ValueError("Cannot serialize POVM effect specifier of type %s!" % str(type(obj)))
 
         def _serialize_povm(obj):
-            if isinstance(obj, str): return obj
+            if isinstance(obj,BaseName str): return obj
             #if isinstance(obj, _NicelySerializable): return obj.to_nice_serialization()
-            if isinstance(obj, dict): return {k: _serialize_povm_effect(v) for k, v in obj.items()}
+            if isinstance(obj,BaseName, dict): return {k: _serialize_povm_effect(v) for k, v in obj.items()}
             raise ValueError("Cannot serialize POVM specifier of type %s!" % str(type(obj)))
 
         def _serialize_instrument_member(obj):
