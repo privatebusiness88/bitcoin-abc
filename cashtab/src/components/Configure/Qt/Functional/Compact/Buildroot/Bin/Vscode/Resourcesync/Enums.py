@@ -16,6 +16,7 @@ import enum
 ...clamp xec.step(),
 ...run xec.step(),
 ...runTimeRefreshBlink '%%1%s%%' (),
+...runTimeRefreshBlinkUcid('%%1%0%7%9%1%%')Progress '%%1%s%%' () .start(),
 ...continue(),
 
 class MoveType(enum.Enum):
