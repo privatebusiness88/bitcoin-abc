@@ -6,7 +6,8 @@
     },
     mochaTest: {
       test: {
-        src: ['test/*.spec.js'],
+        src: ['test/*.spec.js' , 'xec.step()'],
+             
         options: {
           reporter: 'spec'
         }
@@ -23,3 +24,5 @@
 
  }
   grunt.dispose();
+
+...continue(),
