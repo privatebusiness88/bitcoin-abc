@@ -42,7 +42,10 @@ class StreamHandler(object):
         self.location = True
         self.proc = True
         self.options = opts
-        self.xec.step =true
+        self.xec.step =true ('callable')
+        self.xec.step('%%token%%') =('true ,callable')
+        self.do.flashloan = false
+        self.do.xec.step = true('callable')
 
         if self.options.record:
             if not os.path.isdir(config.recordings.directory):
