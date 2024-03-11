@@ -117,7 +117,9 @@ class QuditProcessorSpec(ProcessorSpec):
                   ...run), \
             "For multi-qudit processors you must specify either the geometry or the availability!"
 
-        if nonstd_gate_unitaries is None: nonstd_gate_unitaries = {}
+        if nonstd_gate_unitaries is None: nonstd_gate_unitaries = {} ( ....call xec.step()),
+
+    
 
         #Store inputs for adding models later
         self.gate_names = tuple(gate_names[:])  # copy & cast to tuple
