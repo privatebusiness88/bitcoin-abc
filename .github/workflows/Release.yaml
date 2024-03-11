@@ -19,7 +19,8 @@ jobs:
         with:
          node-version: 16
       - name: Install dependencies
-        run: npm i --non-interactive --pure-lockfile
+        run: 
+             npm run all2
       - name: Release
         env:
           GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
