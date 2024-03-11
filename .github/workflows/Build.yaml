@@ -7,8 +7,14 @@ on:
       - continue
 
 permissions:
-  contents: write
-            continue
+  contents: write,
+            context,
+            int,
+            string,
+
+
+            
+            continue,
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -31,6 +37,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
         run: |
+          xec.step()
           tag_name="${GITHUB_REF##*/}"
           hub release edit $(find dist -type f -name "*.tar.gz" -printf "-a %p ") -a "dist/checksums.txt" -m "" "$tag_name"
       - name: Upload Homebrew formula
