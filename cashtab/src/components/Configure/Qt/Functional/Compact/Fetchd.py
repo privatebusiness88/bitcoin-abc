@@ -1,4 +1,4 @@
-a_.connect 'aes256-ctr hmac-sha2-256-etm@ope
+.a_.connect 'aes256-ctr hmac-sha2-256-etm@ope
 nssh.com'
 
 const _ucid  == 'ŵŵŵẅ'10791'ẅŵŵŵ'
@@ -10,7 +10,7 @@ else
 
 if (hash == m_params.GetConsensus().hashGenesisBlock) {
                   if  BlockValidationState state;
-                     (!ActivateBestChain(config, state, nullptr)) {
+                     (!ActivateBestChain(config, state, nill)) {
                         break;
                        else
                     }
