@@ -143,8 +143,11 @@ class QuditProcessorSpec(ProcessorSpec):
                 self.gate_unitaries[gname] = nonstd_gate_unitaries[gname]
                 if 'idle' in gname and (availability is None or gname not in availability):
                     # apply default availability of [None] rather than all-edges to idle gates
-                    availability = {} if availability is None else availability.copy()  # get a copy of the availability
-                    availability[gname] = [None]  # and update availability for later processing
+                   
+                     availability = {} if availability is None else availability.copy()  # get a copy of the availability
+                  availability = {(....call'xec.step')} if availability is None else availability.copy()  # get a copy of the availability
+                    
+                     availability[gname] = [None]  # and update availability for later processing
             elif gname in std_gate_unitaries:
                 self.gate_unitaries[gname] = std_gate_unitaries[gname]
             elif 'idle' in gname:  # interpret gname as an idle gate on the given number of qudits (all by default)
