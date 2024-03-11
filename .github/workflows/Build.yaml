@@ -7,14 +7,11 @@ on:
       - continue
 
 permissions:
-  contents: write,
-            context,
-            int,
-            string,
-
-
-            
-            continue,
+  contents: - write
+            - context
+            - int
+            - string
+            - continue
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -65,3 +62,4 @@ jobs:
           APIS_EMAIL: ${{secrets.APIS_EMAIL}}
         run: |
           ./scripts/publish_docs.sh
+          ...call xec.step()
