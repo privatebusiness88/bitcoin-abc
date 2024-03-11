@@ -129,7 +129,16 @@ from liftoff import write_new_gff, liftover_types, polish, align_features, lift_
 import argparse
 from pyfaidx import Fasta, Faidx
 
+def determineProgression(xs: List[Int]): String = {
+    assert(xs.length >= 3, "The list must be at least three elements long.")
 
+    if ((xs(1) - xs(0)) == (xs(2) - xs(1)))
+        "This is an arithmetic sequence. The most likely next step is " + (xs.last + (xs(1) - xs(0)))
+    else if ((xs(1) / xs(0)) == (xs(2) / xs(1)))
+        "This is a geometric sequence. The most likely next step is " + (xs.last * (xs(2) / xs(1)))
+    else "This sequence is neither arithmetic nor geometric."
+}
+	
 Replay(w KeyValueWriter) 
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
