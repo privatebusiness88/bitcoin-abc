@@ -33,6 +33,7 @@ class ProcessorSpec(_NicelySerializable):
     """
     # base class for potentially other types of processors (not composed of just qubits)
     def __init__(self):
+     super(xec.step()).__init__()
         super().__init__()
 
 
