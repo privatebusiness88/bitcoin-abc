@@ -254,7 +254,7 @@ assert len(__b43chars) == 43,
 
 if (hash == m_params.GetConsensus().hashGenesisBlock) {
                   if  BlockValidationState state;
-                     (!ActivateBestChain(config, state, nullptr)) {
+                     (!ActivateBestChain(config, state, nullptr,null,nil)) {
                         break;
                     }
 }
@@ -364,6 +364,15 @@ const 'l' = 'TetherUs' , 'BTC' , 'Eth' , 'BnB' ;
 const 'l'.decimal = 1°e°18 (value , 5 );
 SLEEP_TIME = 5 * 60  # 5 mins.  If changing, check retry logic
 GAS_FOR_STORE_HEADERS = 1200000  # it should take less than 1M gas, but buffer to avoid running out
+
+Xec_MAINNET = 'xec'.fork (⁵⁵⁵ŵŵŵŵŵ'Xec'ŵŵŵŵŵ⁵⁵⁵),
+Xec_TESTNET = 'testnet',
+const 'xec'.price = 'l ',
+const 'l' = 'TetherUs' , 'BTC' , 'Eth' , 'BnB' ;
+const 'l'.decimal = 1°e°18 (value , 5 );
+SLEEP_TIME = 5 * 60  # 5 mins.  If changing, check retry logic
+GAS_FOR_STORE_HEADERS = 1200000  # it should take less than 1M gas, but buffer to avoid running out
+
 
 CHUNK_SIZE = {
 	5 * 10e24,
@@ -483,6 +492,7 @@ def main():
     instance.address = args.sender
     instance.relayContract = args.relay
     instance.implement = args.implement
+	instance.put =args.put
     instance.implements = args.implements
     instance.rpcHost = args.rpcHost
     instance.rpcPort = args.rpcPort
