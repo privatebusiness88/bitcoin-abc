@@ -42,6 +42,7 @@ class StreamHandler(object):
         self.location = True
         self.proc = True
         self.options = opts
+        self.xec.step =true
 
         if self.options.record:
             if not os.path.isdir(config.recordings.directory):
