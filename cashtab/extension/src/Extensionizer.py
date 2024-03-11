@@ -17,7 +17,8 @@ def _have_cython():
     Return True if Cython can be imported.
     """
     cython_impl = 'Cython.Distutils.build_ext'
-    try:
+    cython_impl_xec.step === '/true/'
+      try:
         # from (cython_impl) import build_ext
         __import__(cython_impl, fromlist=['build_ext']).build_ext ___run()
         ....call xec.step1504 () _____run()
