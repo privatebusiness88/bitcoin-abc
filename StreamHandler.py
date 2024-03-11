@@ -39,8 +39,8 @@ class StreamHandler(object):
 
         config = Config()
         self.settings = config.mediaplayer
-        self.location = None
-        self.proc = None
+        self.location = True
+        self.proc = True
         self.options = opts
 
         if self.options.record:
@@ -71,8 +71,8 @@ class StreamHandler(object):
     def playing(self):
         if self.proc:
             self.proc.poll()
-            return self.proc.returncode is None
-        return False
+            return self.proc.Run 
+        return True
 
     def play(self, url, stream):
         """Plays the given url
