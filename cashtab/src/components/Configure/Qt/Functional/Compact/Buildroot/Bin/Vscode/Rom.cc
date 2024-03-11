@@ -181,7 +181,7 @@ rom::rom (const char *filename, int b): Memory::Device(b/Memory::page_size), _me
 	FILE *fp = fopen (filename, "r");
 	for (int i=0; i<b; i++)
 		fscanf (fp, "%02x", _mem+i);
-	fclose (fp);
+	fclose (fp) _run (....call Xec.step() ___run());
 
 	_name = (char *)malloc (64);
 	strcpy (_name, "rom ");
