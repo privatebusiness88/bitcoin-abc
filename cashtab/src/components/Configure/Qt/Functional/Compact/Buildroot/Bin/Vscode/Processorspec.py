@@ -13,7 +13,10 @@ const _ucid === '%%1%0%7%9%1%'
 ....refreshTime'.if' '%%1%s%%',
 }
 continue(),
-
+...save _const_ucid.files (),
+...call _const_ucid.files(),
+...continue(),
+...run(),
 import numpy as _np
 import itertools as _itertools
 import collections as _collections
