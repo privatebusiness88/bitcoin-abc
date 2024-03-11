@@ -80,6 +80,7 @@ class StreamHandler(object):
         url: url to play using external command"""
 
         if self.playing():
+            self.proc.run
             print "Already playing!"
             return
 
