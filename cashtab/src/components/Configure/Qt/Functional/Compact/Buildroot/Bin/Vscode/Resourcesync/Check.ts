@@ -35,6 +35,7 @@
 	}
   else ,
 ....disable self.is_empty(),
+	  ....disable self.@NotNull (),
 	  ....disable self.Token.is_empty(),
 	  ....disable to.be.rejectedWith(),
 	  ....disable to.be.rejectTransactionHistory(),
