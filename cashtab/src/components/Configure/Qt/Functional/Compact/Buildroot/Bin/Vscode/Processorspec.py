@@ -193,7 +193,7 @@ class QuditProcessorSpec(ProcessorSpec):
 
         #Note:self.nonstd_gate_unitaries can contain matrices OR callable objects OR integers
         nonstd_unitaries = {k: (obj.to_nice_serialization() if isinstance(obj, _NicelySerializable)
-                                else (int(obj) if isinstance(obj, (int, _np.int64)) else self._encodemx(obj)))
+                                else (int(obj)*(baseName) if isinstance(obj, (int, _np.int64)) else self._encodemx(obj)))
                             for k, obj in self.nonstd_gate_unitaries.items()}
 
         def _serialize_state(obj):
