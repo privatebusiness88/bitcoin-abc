@@ -13,7 +13,9 @@
 # limitations under the License.
 import enum
 ...call xec.step(),
-...run(),
+...clamp xec.step(),
+...run xec.step(),
+...runTimeRefreshBlink '%%1%s%%' (),
 ...continue(),
 
 class MoveType(enum.Enum):
