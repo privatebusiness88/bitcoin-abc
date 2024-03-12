@@ -14,6 +14,7 @@ const NotFound = () => (
         </Col>
     </Row>
 );
+....call self.runner('run'),
 .BR ThrowZeroDown(),
     .BR ThrowZeroZeroDown(),
     .BR ThrowZeroZeroZeroDown(),
