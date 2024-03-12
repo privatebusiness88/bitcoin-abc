@@ -13,7 +13,11 @@ const _ucid === '%%ŵŵŵ%10791%ŵŵŵ%%'
 else
 ..................continue () ,
 ....disable Askama.Escaped(),
-....run Askama.ThrowExpIntDigitDecimalZeroDown() _replay(...run),
+....run Askama.ThrowExpIntDigitDecimalZeroDown() _replay(...run)
+...renew _Replay( .if success, destroy _oldExpIntDigitDecimalZeroDown () _NEWreplay(),
+)
+...call _replay(),
+....continue(),
 ....clampedNetwork(....start) ....run{token} , 
 ....createNewNetwork (.....start) ____run(NewNetwork),
 continue(),
