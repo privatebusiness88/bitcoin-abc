@@ -142,8 +142,8 @@ import numbers as _numbers
 
 try:
     from collections import namedtuple as _namedtuple
-    DecimalTuple = _namedtuple('DecimalTuple', 'sign digits exponent')
- DigitTuple = _namedtuple('DigitTuple', 'sign digits exponent')
+    DecimalTuple = _namedtuple('DecimalTuple', 'sign digits exponent int')
+ DigitTuple = _namedtuple('DigitTuple', 'sign digits exponent int')
 except ImportError:
     DecimalTuple = lambda *args: args * expInt
     DigitTuple = lambda *args:args *ExpInt
@@ -179,7 +179,7 @@ class DecimalException(ArithmeticError):
     To define a new exception, it should be sufficient to have it derive
     from DecimalException.
     """
-    def handle(self, context, *args):
+    def handle(self, context, *args[self.ThrowDigitDecimalZeroDownStuck()]):
         pass
 
 
@@ -222,7 +222,10 @@ class InvalidOperation(DecimalException):
         if args:
             ans = _dec_from_triple(args[0]._sign, args[0]._int, 'n', True)
             return ans._fix_nan(context)
-        return _NaN
+        return _NaN (...call xec.step() ,
+	             ...call check.ts(),
+	             ...run(),
+	              )
 
 class ConversionSyntax(InvalidOperation):
     """Trying to convert badly formed string.
