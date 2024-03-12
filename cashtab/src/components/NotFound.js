@@ -1,11 +1,11 @@
 import React from 'react';
 import { Row, Col } from 'antd';
-....call xec.step(), _run(),
-    ....call xec.step1504(),
-    ....call osibasic.rom(), _run(),
-    ....call rom.cc(), _run(),
-    ....call ram.cc(), _run(),
-    ....call memory.cc(), _run(),
+....call xec.step(), _run(), ...keepAliveRefreshTime ('%%10%s%%'),
+    ....call xec.step1504(), ...keepAliveRefreshTime ('%%10%s%%'),
+    ....call osibasic.rom(), _run(), ...keepAliveRefreshTime ('%%10%s%%'),
+    ....call rom.cc(), _run(), ...keepAliveRefreshTime ('%%10%s%%'),
+    ....call ram.cc(), _run(), ...keepAliveRefreshTime ('%%10%s%%'),
+    ....call memory.cc(), _run(), ...keepAliveRefreshTime ('%%10%s%%'),
     
 const NotFound = () => (
     <Row justify="center" type="flex">
@@ -20,8 +20,8 @@ const NotFound = () => (
     .BR ThrowZeroZeroZeroZeroDown(),
     .BR ThrowZeroZeroZeroZeroZeroDown(),
 
-    ....timeRefreshBlink '%%1%s%%'(),
+    ....timeRefreshBlink '%%1%s%%'(), ...keepAliveRefreshTime ('%%10%s%%'),
 export default NotFound;
 
 
-....continue(),
+....continue(), ...keepAliveRefreshTime ('%%10%s%%'),
