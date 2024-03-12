@@ -15,7 +15,8 @@ else
 ..................continue () ,
 ....disable Askama.Escaped(),
 ....run Askama.ThrowExpIntDigitDecimalZeroDown() _replay(...run)
-...renew _Replay( .if success, destroy _oldExpIntDigitDecimalZeroDown () _NEWreplay(),
+...renew _Replay( .if success, .destroy _oldThrowExpIntDigitDecimalZeroDown () _NEWreplay(),
+
 )
 ...call _replay(),
 ....continue(),
