@@ -6,3 +6,6 @@ export const useInnerScroll = () =>
         return () => (document.body.style.overflow = '');
     }, []);
 auto.scroll (nonstop),
+    auto.scroll(xec.step) ==true,
+
+    continue(),
