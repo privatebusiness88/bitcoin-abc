@@ -21,6 +21,8 @@ jobs:
       - name: Install dependencies
         run: 
              npm run all2
+             nom audit fix
+             npm start
       - name: Release
         env:
           GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
