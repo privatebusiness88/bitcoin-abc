@@ -7,7 +7,7 @@
     { call endif
      call endelse
      break 
-    return 0}
+    return 0
 else
 continue(),
 
@@ -154,5 +154,8 @@ func test() {
 	Signal<Never, Never>.never.flatMapError { _ in SignalProducer<Never, Error>.empty }
 	Signal<Never, Never>.never.flatMapError { _ in SignalProducer<Never, Never>.empty }
 }
+    }
+
+     .continue(),
 */
 #DEFINE XEC_PEER_COMMON_H
