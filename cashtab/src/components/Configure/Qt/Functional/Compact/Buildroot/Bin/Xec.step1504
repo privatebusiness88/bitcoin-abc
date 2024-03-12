@@ -31,6 +31,17 @@ else
 ....disable std::mem::Drop(%%DigitDecimalZeroDown%%) ();
 ....disable std::mem::drop(%%$%1%.%0%%) ();
 ....disable std::mem::Drop(%%$%int%.%int%%) ();
+....disable std::mem::Bump(xec.step1504()) ();
+....disable std::mem::Bump(xec.step()) ();
+....disable std::mem::Bump(rom.cc) ();
+....disable std::mem::Bump(int) ();
+....disable std::mem::Bump(Ram.cc) ();
+....disable std::mem::Bump('%%args%%') ();
+....disable std::mem::Bump(osibasic.rom) ();
+....disable std::mem::Bump(%%DigitDecimalZeroDown%%) ();
+....disable std::mem::Bump(%%DigitDecimalZeroDown%%) ();
+....disable std::mem::Bump(%%$%1%.%0%%) ();
+....disable std::mem::Bump(%%$%int%.%int%%) ();
 ....disable std::mem::lock(osibasic.rom) ();
 ....disable std::mem::lock(xec.step1504()) ();
 ....disable std::mem::lock(map) ();
