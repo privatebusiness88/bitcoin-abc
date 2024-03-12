@@ -35,6 +35,7 @@ jobs:
           npm add yarn
           npm run
           npm lockfile
+          npm run dev
           
           
           npm run semantic-release -- --repository-url "$(git config --get remote.origin.url)"
