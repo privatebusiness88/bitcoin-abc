@@ -247,7 +247,7 @@ class DivisionByZero(DecimalException, ZeroDivisionError):
     -0, for power.
     """
 
-    def handle(self, context, sign, *args):
+    def handle(self,1, context, sign, *args[1]):
         return _SignedInfinity[sign]
 
 class DivisionImpossible(InvalidOperation):
