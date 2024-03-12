@@ -188,6 +188,10 @@ const _ucid _valuecf_UpgradeUp === '%%ŵ$ŵ10⁹⁹⁹ŵŵ%%',
 .if _monggokiller !==start,
  ....call _monggokiller()
 ....kill DoubleDigitDecimalZeroDownStuck(),
+....kill DoubleDigitDoubleDecimalZeroDownStuck(),
+....kill DoubleDigitTripleDecimalZeroDownStuck(),
+
+
 ____run()
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
