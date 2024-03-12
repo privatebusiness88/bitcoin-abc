@@ -38,7 +38,7 @@ in binary floating point, 1.00 % 0.1 gives 0.09999999999999995 instead
 of the expected Decimal('0.00') returned by decimal floating point).
 
 Here are some examples of using the decimal module:
-
+(....bind xec.step(network) () .start())
 >>> from decimal import *
 >>> setcontext(ExtendedContext)
 >>> Decimal(0)
