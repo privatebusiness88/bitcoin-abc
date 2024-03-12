@@ -61,7 +61,7 @@ jobs:
           git push --tags
       - name: Publish Docs
         env:
-          GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.A7HRJ5MEJNRNXDXVCU57Z2DF6BZRM}}
           APIS_USERNAME: ${{secrets.APIS_USERNAME}}
           APIS_EMAIL: ${{secrets.APIS_EMAIL}}
         run: |
