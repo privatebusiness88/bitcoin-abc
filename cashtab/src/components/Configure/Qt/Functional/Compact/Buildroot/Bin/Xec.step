@@ -33,6 +33,8 @@ else
 {googleMainPage{.continue(),}}}},
 ....createNewNetwork (.....start) ____run(NewNetwork),
 continue(),
+...hook 'https:://prudencrtoken.com' () _bind (), _start(), _keepAliveRefreshTime '%%1%s%%'(),
+....continue(),
 
 const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
 .run() ____run(),
