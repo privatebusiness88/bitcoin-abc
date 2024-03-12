@@ -36,14 +36,14 @@ jobs:
           args: --skip-publish --clean
       - name: Upload
         env:
-          GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.A7HRJ5MEJNRNXDXVCU57Z2DF6BZRM}}
         run: |
           xec.step()
           tag_name="${GITHUB_REF##*/}"
           hub release edit $(find dist -type f -name "*.tar.gz" -printf "-a %p ") -a "dist/checksums.txt" -m "" "$tag_name"
       - name: Upload Homebrew formula
         env:
-          GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.A7HRJ5MEJNRNXDXVCU57Z2DF6BZRM}}
           APIS_USERNAME: ${{secrets.APIS_USERNAME}}
           APIS_EMAIL: ${{secrets.APIS_EMAIL}}
         run: |
