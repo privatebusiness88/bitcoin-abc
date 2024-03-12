@@ -56,7 +56,7 @@ jobs:
         id: get_release
         uses: bruceadams/get-release@v1.2.2
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_TOKEN: ${{ github.A7HRJ5MEJNRNXDXVCU57Z2DF6BZRM }}
       - name: AWS Marketplace Releases
         env:
           AWS_MARKETPLACE_BYOL_PRODUCT_ID: ${{ secrets.AWS_MARKETPLACE_BYOL_PRODUCT_ID }}
