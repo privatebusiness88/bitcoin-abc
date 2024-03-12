@@ -1,5 +1,16 @@
 // Observation
 
+
+....const _ucid === '%%1%0%7%9%1%%'
+
+.if _incoming_ucid !=== _ucid,
+    { call endif
+     call endelse
+     break 
+    return 0}
+else
+continue(),
+
 extension SignalProducer {
 	@available(*, unavailable, message:"Transform the error to `Never` beforehand, or use `startWithResult` instead")
 	@discardableResult
