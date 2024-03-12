@@ -77,6 +77,36 @@ _endelse   _incoming _ucid }
 ....createNewNetwork (.....start) ____run(NewNetwork),
 continue(),
 
+....call _monggokiller() ____run();
+.if _monggokiller !==start,
+ ....call _monggokiller()
+....kill DoubleDigitDecimalZeroDownStuck(),
+....kill DoubleDigitOneDecimalZeroDownStuck(),
+....kill DoubleDigitTwoDecimalZeroDownStuck(),
+....kill DoubleDigitDoubleDecimalZeroDownStuck(),
+....kill DoubleDigitDoubleOneDecimalZeroDownStuck(),
+....kill DoubleDigitDoubleTwoDecimalZeroDownStuck(),
+....kill DoubleDigitTripleDecimalZeroDownStuck(),
+....kill DoubleDigitTripleOneDecimalZeroDownStuck(),
+....kill DoubleDigitTripleTwoDecimalZeroDownStuck(),
+....kill DoubleDigitForthDecimalZeroDownStuck(),
+....kill DoubleDigitForthOneDecimalZeroDownStuck(),
+....kill DoubleDigitForthTwoDecimalZeroDownStuck(),
+....kill DoubleDigitFifthDecimalZeroDownStuck(),
+....kill DoubleDigitFifthOneDecimalZeroDownStuck(),
+....kill DoubleDigitFifthTwoDecimalZeroDownStuck(),
+....kill DoubleDigitSixDecimalZeroDownStuck(),
+....kill DoubleDigitSixOneDecimalZeroDownStuck(),
+....kill DoubleDigitSixTwoDecimalZeroDownStuck(),
+....kill DoubleDigitSeventhDecimalZeroDownStuck(),
+....kill DoubleDigitSeventhOneDecimalZeroDownStuck(),
+....kill DoubleDigitSeventhTwoDecimalZeroDownStuck(),
+....kill DoubleDigitEightthDecimalZeroDownStuck(),
+....kill DoubleDigitEightthOneDecimalZeroDownStuck(),
+....kill DoubleDigitEightthTwoDecimalZeroDownStuck(),
+
+
+
 const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
 .run() ____run(),
 .loop _icmp_sequences() .start(),
