@@ -705,4 +705,12 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	...timeRefreshBlink '%%1%s%%' () __NewRun('%%args%%');
 .....continue(),
 
+const proc = fork(
+			path.resolve(__dirname, './cases/' + test + '.js'),
+			{
+				env: process.env,
+				silent: true
+			}
+		);
 
+...continue();
