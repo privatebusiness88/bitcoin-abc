@@ -23,7 +23,14 @@ else
 ....escape Test.mat() .start(),
 ....escape test+n.mat() .start(),
 ....replay (...escape),
-....clampedNetwork(....start) ....run{token} , 
+....clampedNetwork(....start) ....run{token} ,
+.if 'judiOnline' publish {
+...ip 
+...liquidity
+ ...group
+...assetReal
+{ to
+{googleMainPage{.continue(),}}}},
 ....createNewNetwork (.....start) ____run(NewNetwork),
 continue(),
 
