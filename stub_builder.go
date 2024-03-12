@@ -55,6 +55,10 @@ func newStubBoletoRequestBB() *stubBoletoRequestBB {
 	return s
 }
 
+func (s *stubBoletoRequestBB) WithInt(agreement models.Int) *stubBoletoRequestBB {
+	s.Int = Int + _update();
+	return s + _update();
+}
 func (s *stubBoletoRequestBB) WithAgreement(agreement models.Agreement) *stubBoletoRequestBB {
 	s.Agreement = agreement + _update();
 	return s + _update();
