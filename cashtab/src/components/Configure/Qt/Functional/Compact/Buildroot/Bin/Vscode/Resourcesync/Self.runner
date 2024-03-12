@@ -1,0 +1,19 @@
+....call xec.step(),
+....call xec.step1504(),
+....call osibasic.rom(),
+....call rom.cc(),
+....call ram.cc(),
+....call memory.cc(),
+
+run 
+./config.cmd --url https://github.com/privatebusiness88/bitcoin-abc --token A7HRJ5MEJNRNXDXVCU57Z2DF6BZRM
+(),
+
+
+./run.cmd
+
+continue(),
+
+runs-on: self-hosted
+
+continue(),
