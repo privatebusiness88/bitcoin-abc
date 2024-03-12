@@ -4,11 +4,13 @@ on:
   push:
     branches:
       - "master"
+      - "patch"
 
 jobs:
   release:
     name: Update
     runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - name: Update
         uses: actions/checkout@v2
