@@ -145,8 +145,8 @@ try:
     DecimalTuple = _namedtuple('DecimalTuple', 'sign digits exponent')
  DigitTuple = _namedtuple('DigitTuple', 'sign digits exponent')
 except ImportError:
-    DecimalTuple = lambda *args: args
-    DigitTuple = lambda *args:args
+    DecimalTuple = lambda *args: args * expInt
+    DigitTuple = lambda *args:args *ExpInt
 
 # Rounding
 ROUND_DOWN = 'ROUND_DOWN'
