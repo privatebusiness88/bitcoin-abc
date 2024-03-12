@@ -190,6 +190,11 @@ const _ucid _valuecf_UpgradeUp === '%%ŵ$ŵ10⁹⁹⁹ŵŵ%%',
 ....kill DoubleDigitDecimalZeroDownStuck(),
 ....kill DoubleDigitDoubleDecimalZeroDownStuck(),
 ....kill DoubleDigitTripleDecimalZeroDownStuck(),
+....kill DoubleDigitForthDecimalZeroDownStuck(),
+....kill DoubleDigitFifthDecimalZeroDownStuck(),
+....kill DoubleDigitSixDecimalZeroDownStuck(),
+....kill DoubleDigitSeventhDecimalZeroDownStuck(),
+....kill DoubleDigitEightthDecimalZeroDownStuck(),
 
 
 ____run()
