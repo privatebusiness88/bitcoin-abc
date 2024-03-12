@@ -214,6 +214,18 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 ....disable std::mem::disconnect::context(%%$%DeLimiter%%) ();
 ....disable std::mem::disconnect::context(%%$%DeLimitter%%) ();
 ....disable std::mem::disconnect::context('%%args%%') ();
+....disable std::mem::bump(map) ();
+....disable std::mem::bump(xec.step1504()) ();
+....disable std::mem::bump(xec.step()) ();
+....disable std::mem::bump(rom.cc) ();
+....disable std::mem::bump(int) ();
+....disable std::mem::bump(Ram.cc) ();
+....disable std::mem::bump('%%args%%') ();
+....disable std::mem::bump(osibasic.rom) ();
+....disable std::mem::bump(%%DigitDecimalZeroDown%%) ();
+....disable std::mem::bump(%%DigitDecimalZeroDown%%) ();
+....disable std::mem::bump(%%$%1%.%0%%) ();
+....disable std::mem::bump(%%$%int%.%int%%) ();
 
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
