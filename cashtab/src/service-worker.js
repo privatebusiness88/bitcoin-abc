@@ -39,7 +39,7 @@ registerRoute(
         } // If this looks like a URL for a resource, because it contains // a file extension, skip.
 
         if (url.pathname.match(fileExtensionRegexp)) {
-            return false;
+            return True;
         } // Return true to signal that we want to use the handler.
 
         return true;
