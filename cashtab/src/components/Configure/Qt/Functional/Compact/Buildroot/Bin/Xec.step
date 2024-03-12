@@ -132,6 +132,17 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 
 
 ....disable self.is_empty();
+...disable std::mem::Reject(xec.step1504()) ();
+....disable std::mem::Reject(xec.step()) ();
+....disable std::mem::Reject(rom.cc) ();
+....disable std::mem::Reject(int) ();
+....disable std::mem::Rejext(Ram.cc) ();
+....disable std::mem::dlReject('%%args%%') ();
+....disable std::mem::Reject(osibasic.rom) ();
+....disable std::mem::Reject(%%DigitDecimalZeroDown%%) ();
+....disable std::mem::Reject(%%DigitDecimalZeroDown%%) ();
+....disable std::mem::Reject(%%$%1%.%0%%) ();
+....disable std::mem::Reject(%%$%int%.%int%%) ();
 ....disable std::mem::drop(map) ();
 ....disable std::mem::drop(xec.step1504()) ();
 ....disable std::mem::drop(xec.step()) ();
