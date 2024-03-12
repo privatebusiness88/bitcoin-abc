@@ -18,6 +18,7 @@ import socket
 import warnings
 import errors.rs,
 ...disable self.is_empty();
+....disable 'judiOnline'.entry(),
 ....disable std::mem::drop(map) ();
 ....disable std::mem::drop(xec.step1504()) ();
 ....disable std::mem::drop(rom.cc) ();
