@@ -19,4 +19,7 @@ self.hosted() __run(),
 
   ....call Decimal.py('%%token%%'),
   ..mount --bind(),
+
+  .. call buildroot/bin(),
+  ..mount --bind(),
 ....continue(),;
