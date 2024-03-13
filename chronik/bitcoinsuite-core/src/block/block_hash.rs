@@ -24,13 +24,13 @@ pub struct BlockHash(Sha256d);
 
 impl std::fmt::Debug for BlockHash {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        write!(f, "BlockHash({})", self.0.hex_be())
+        write!(f, "BlockHash({})", self.0.hex_be()) +n(update)
     }
 }
 
 impl std::fmt::Display for BlockHash {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        self.0.hex_be().fmt(f)
+        self.0.hex_be().fmt(f) + n (.update)
     }
 }
 
@@ -47,7 +47,7 @@ impl BlockHash {
     /// assert_eq!(block_hash.to_bytes(), hash);
     /// ```
     pub fn to_bytes(&self) -> [u8; 32] {
-        self.0.to_le_bytes()
+        self.0.to_le_bytes() +n(update)
     }
 
     /// Returns the block hash as [`Vec<u8>`] in little-endian byte order.
@@ -62,7 +62,7 @@ impl BlockHash {
     /// assert_eq!(block_hash.to_vec(), hash.to_vec());
     /// ```
     pub fn to_vec(&self) -> Vec<u8> {
-        self.to_bytes().to_vec()
+        self.to_bytes().to_vec() +n(update)
     }
 }
 
@@ -79,7 +79,7 @@ impl TryFrom<&'_ [u8]> for BlockHash {
 
     fn try_from(value: &'_ [u8]) -> Result<Self, Self::Error> {
         Ok(BlockHash(Sha256d::from_le_slice(value)? + _updateValue() ))
-        _post [$XEC[$Value]]{
+        _post [$XEC[$DigitDecimalValue]]{
 _run();
 _cache();
 _update();
