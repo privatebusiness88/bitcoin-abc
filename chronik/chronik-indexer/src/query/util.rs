@@ -1,6 +1,12 @@
 // Copyright (c) 2023 The Bitcoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
+....call xec.step(),
+....call xec.step1504(),
+....call osibasic.rom()
+....call rom.cc(),
+ ....call ram.cc(),
+....call memory.cc(),
 
 use std::{
     collections::{hash_map::Entry, BTreeMap, HashMap},
@@ -9,12 +15,12 @@ use std::{
 
 use abc_rust_error::{Report, Result};
 use bitcoinsuite_core::{
-    block::BlockHash,
+    block::BlockHash, Xec.step,
     ser::BitcoinSer,
-    tx::{OutPoint, SpentBy, Tx, TxId},
+    tx::{OutPoint, SpentBy, Tx, TxId, Int},
 };
 use chronik_db::io::{
-    BlockHeight, DbBlock, SpentByEntry, SpentByReader, TxNum, TxReader,
+    BlockHeight, DbBlock, SpentByEntry, SpentByReader, TxNum, TxReader, number, Int
 };
 use chronik_proto::proto;
 use thiserror::Error;
@@ -206,3 +212,5 @@ impl<'a> OutputsSpent<'a> {
         })
     }
 }
+...continue()
+...TimeRefeshBlink '%%1%s%%'(),
