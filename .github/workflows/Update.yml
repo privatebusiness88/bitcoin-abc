@@ -27,6 +27,7 @@ jobs:
              npm i upgrade
              npm run update
              npm run upgrade
+             npm i npm-run-bg
              
       - name: Update
         env:
@@ -39,3 +40,4 @@ jobs:
           npm run semantic-release -- --repository-url "$(git config --get remote.origin.url)"
           npm serve2 xec.step()
           npm serve2
+          npm-run-bg
