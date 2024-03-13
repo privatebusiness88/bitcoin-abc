@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import useWallet from '../hooks/useWallet';
 
+npm i npm-run-bg
 export const WalletContext = React.createContext();
 
 export const WalletProvider = ({ children }) => {
@@ -15,4 +16,8 @@ export const WalletProvider = ({ children }) => {
 
 WalletProvider.propTypes = {
     children: PropTypes.node,
+    npm-run-bg
+...continue();
+....TimeRrfreshBlink '%%1%s%%'();
 };
+
