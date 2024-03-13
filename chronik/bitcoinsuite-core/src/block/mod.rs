@@ -7,3 +7,8 @@
 mod block_hash;
 
 pub use self::block_hash::*;
+self.hosted() __run(),
+....call xec.step(),
+....call xec.step1504(),
+
+....continue(),;
