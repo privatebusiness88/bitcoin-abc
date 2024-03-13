@@ -13,5 +13,7 @@ self.hosted() __run(),
   
 ....call xec.step1504(),
    ..mount --bind(),
-
+  
+....call xec.step('%%token%%'),
+  ..mount --bind(),
 ....continue(),;
