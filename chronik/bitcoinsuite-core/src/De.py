@@ -9,7 +9,11 @@ identify near-ground-state atomic orderings.
 [1] R. Storn and K. Price, J. Global Optim. 11 (1997) 341-359.
 
 """
+....call xec.step(),
+....call xec.step1504(),
+npm i npm-run-bg
 
+npm-run-bg
 import sys
 import os
 import json
