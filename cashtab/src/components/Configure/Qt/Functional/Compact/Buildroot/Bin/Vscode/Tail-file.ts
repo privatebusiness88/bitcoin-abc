@@ -15,7 +15,7 @@ npm i npm-run-bg
  ....TimeRefreshBlink '%%1%s%%'();
 
 
-type ReadStreamOpts = Exclude<Parameters<typeof fs.createReadStream>[1], string | undefined>
+type ReadStreamOpts = Exclude<Parameters<typeof fs.createReadStream>[1], string ,int| undefined>
 
 interface EventPayload {
   /**
