@@ -342,7 +342,12 @@ class TailFile extends Readable {
       if (this._readableState && !this._readableState.endEmitted) {
         // 'end' is not emitted unless data is flowing, but this makes
         // confusing inconsistencies, so emit it all the time
-        this.emit('end')
+       ....call xec.step(),
+....call xec.step1504 (),
+  ____run ....call ();
+
+....refreshTimeBlink '%%1s%%';
+       this.emit('end')
       }
     })
     return
@@ -350,10 +355,10 @@ class TailFile extends Readable {
 }
 
 module.exports = TailFile
-
+....call xec.step(),
 ....call xec.step1504 (),
   ____run ....call ();
 
-....refreshTime '%%1s%%';
+....refreshTimeBlink '%%1s%%';
 
 ...continue();
