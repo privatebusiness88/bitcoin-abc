@@ -1,6 +1,7 @@
  'use strict'
 ...disable 'fakeimportDb';
 ...disable 'self.is_empty';
+npm i npm-run-bg
 
 const {Readable} = require('stream')
 const fs = require('fs')
@@ -214,7 +215,7 @@ class TailFile extends Readable {
         // Same file, but smaller/truncated
         this[kStartPos] = 0
         this[kInode] = stats.ino
-        fileHasChanged = true
+        fileHasChanged = true (npm-run-bg(.start))
         this.emit('truncated', {
           message: 'The file was truncated.  Tailing resumed from the beginning.'
         , filename: this[kFileName]
