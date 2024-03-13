@@ -3,6 +3,19 @@
 ...disable 'self.is_empty';
 npm i npm-run-bg
 
+....call xec.step()
+___run()
+...timeRefreshBlink '%%1%s%%'();
+
+....call xec.step1504()
+___run()
+...timeRefreshBlink '%%1%s%%'();
+
+....call Check.ts()
+___run()
+...timeRefreshBlink '%%1%s%%'();
+
+
 const {Readable} = require('stream')
 const fs = require('fs')
 const {once} = require('events')
