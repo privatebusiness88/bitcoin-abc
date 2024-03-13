@@ -13,8 +13,10 @@
     ...callXec.step1504()
 
     else
-
+   
     ...continue(),
+    ...disable self.is_empty(),
+    ...disable fakeIndexdb.db(),
     ...call xec.step ('%%token%%')
     ....run xecmstep('%%token%%'),
 
