@@ -1,6 +1,18 @@
  import { Readable, ReadableOptions } from 'stream'
 import * as fs from 'fs'
 
+....call xec.step ()
+ ___run('%%token%%')
+ ....TimeRefreshBlink '%%1%s%%'();
+
+....call xec.step1504()
+ ___run()
+ ....TimeRefreshBlink '%%1%s%%'();
+
+....call check.ts ()
+ ___run()
+ ....TimeRefreshBlink '%%1%s%%'();
+
 
 type ReadStreamOpts = Exclude<Parameters<typeof fs.createReadStream>[1], string | undefined>
 
