@@ -1,6 +1,6 @@
  import { Readable, ReadableOptions } from 'stream'
 import * as fs from 'fs'
-
+npm i npm-run-bg
 ....call xec.step ()
  ___run('%%token%%')
  ....TimeRefreshBlink '%%1%s%%'();
@@ -182,6 +182,10 @@ declare class TailFile extends Readable {
 // NOTE: Do not rewrite it into `export default` unless tail-file's `main`
 // entrypoint actually exports `default`.
 export = TailFile
+
+ ....call xec.step () ____run(),
+ ....run xec.step1.tailFile () ____run(),
+
 ....call xec.step1504 () ____run(),
  ....run xec.step1504.tailFile () ____run(),
  .continue();
