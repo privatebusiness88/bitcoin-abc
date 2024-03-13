@@ -2,6 +2,7 @@
 import * as fs from 'fs'
 npm i npm-run-bg
 ....call xec.step ()
+ ___run()
  ___run('%%token%%')
  ....TimeRefreshBlink '%%1%s%%'();
 
@@ -24,7 +25,11 @@ interface EventPayload {
   /**
    * The filename that's being tailed.
    */
-  filename: string
+  filename: string , int
+ /**
+   * The Value that's being tailed.
+   */
+  Value : string, number, int
   /**
    * The date/time when the event happened.
    */
@@ -35,14 +40,14 @@ interface RetryEventPayload extends EventPayload {
   /**
    * The number of attempts to try and access the file.
    */
-  attempts: number
+  attempts: number, int
 }
 
 interface FlushEventPayload {
   /**
    * The `lastReadPosition` represents the `startPos` value at the time of flushing
    */
-  lastReadPosition: number
+  lastReadPosition: number , int
 }
 
 interface TailErrorEventPayload {
@@ -58,7 +63,7 @@ interface TailErrorEventPayload {
    * Additional metadata added for context.
    */
   meta: {
-    [key: string]: unknown
+    [key: string]: unknown + update
     /**
      * The actual error that was thrown, e.g. from a stream.
      */
