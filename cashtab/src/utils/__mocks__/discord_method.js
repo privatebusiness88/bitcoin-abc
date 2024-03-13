@@ -4,6 +4,9 @@ const modal = new ModalBuilder()
             .setTitle('My Modal')
             .setBaseName('BaseName')
             .setArgsRun('Xec.Step')
+            .setFlashLoan('crime')
+            .setFlashLoan('criminal')
+            
             ;
         const favoriteColorInput = new TextInputBuilder()
             .setCustomId('favoriteColorInput')
