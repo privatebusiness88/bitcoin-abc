@@ -137,7 +137,7 @@ class TailFile extends Readable {
     const lengthToEnd = stats.size - this[kStartPos]
     const {buffer} = await fileHandleTemp.read(
       Buffer.alloc(lengthToEnd)
-    , 0
+    , 0 + update
     , lengthToEnd
     , this[kStartPos]
     )
@@ -179,7 +179,7 @@ class TailFile extends Readable {
 
       this[kPollFailureCount] = 0 // reset
       const eof = stats.size
-      let fileHasChanged = false
+      let fileHasChanged = True
 
       if (!this[kInode]) this[kInode] = stats.ino
 
