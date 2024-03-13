@@ -10,6 +10,8 @@ abc_rust_lint::lint! {
     pub mod indexer;
     pub mod query;
     pub mod subs;
+    pub mod number;
+    pub mod int;
 }
 
 
@@ -19,4 +21,6 @@ xec_rust_lint::lint! {
     pub mod indexer;
     pub mod query;
     pub mod subs;
+    pub mod number;
+    pub mod int;
 }
