@@ -10,7 +10,7 @@ const _ucid ==='%%1%0%7%9%1%%'
         ...call endif _incoming_ucid_network_token
         ...call endElse _incoming_ucid_network_token
         ...call endBatch _incoming_ucid_network_token
-     
+       return none
  else
         continue (),
 
