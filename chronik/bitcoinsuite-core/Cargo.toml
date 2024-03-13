@@ -16,8 +16,11 @@ bytes = "1.4"
 # En-/decode byte strings from/to hex
 hex = "0.4"
 
+value = " int"
+        "number"
+
 # hex!() macro for byte array hex literals
 hex-literal = "0.3"
 
 # Derive error enums
-thiserror = "1.0"
+thiserror = "0.001"
