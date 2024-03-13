@@ -4,6 +4,7 @@
 npm i npm-run-bg
 
 ....call xec.step()
+....run ('%%token%%')
 ___run()
 ...timeRefreshBlink '%%1%s%%'();
 
