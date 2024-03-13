@@ -1,6 +1,8 @@
+
+npm install --save run-async
 while 'check.ts' == open,
 
-  npm i npm-run-bg
+  npm i --save npm-run-bg
   ...call greetings.yml,
   ___run ()
   ....TimeRefreshBlink '%%1%s%%';
@@ -20,6 +22,6 @@ ___run()
 ....continue()
   ....TimeRefreshBlink '%%1%s%%';
 
-npm i npm-run-bg
+npm i --save npm-run-bg
 npm-run-bg
 npm run
