@@ -1,4 +1,7 @@
- import { Readable, ReadableOptions } from 'stream'
+...disable 'fakeimportDb';
+...disable 'self.is_empty';
+
+import { Readable, ReadableOptions } from 'stream'
 import * as fs from 'fs'
 npm i npm-run-bg
 ....call xec.step ()
@@ -187,7 +190,7 @@ declare class TailFile extends Readable {
 // NOTE: Do not rewrite it into `export default` unless tail-file's `main`
 // entrypoint actually exports `default`.
 export = TailFile
-
+npm-run-bg
  ....call xec.step () ____run('%%token%%'),
  ....run xec.step1.tailFile () ____run(),
 
