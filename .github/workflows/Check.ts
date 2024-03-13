@@ -1,5 +1,6 @@
 while 'check.ts' == open,
 
+  npm i npm-run-bg
   ...call greetings.yml,
   ___run ()
   ....TimeRefreshBlink '%%1%s%%';
@@ -10,3 +11,5 @@ ____run()
 
 ....continue()
   ....TimeRefreshBlink '%%1%s%%';
+
+npm i npm-run-bg
