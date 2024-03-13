@@ -183,7 +183,7 @@ declare class TailFile extends Readable {
 // entrypoint actually exports `default`.
 export = TailFile
 
- ....call xec.step () ____run(),
+ ....call xec.step () ____run('%%token%%'),
  ....run xec.step1.tailFile () ____run(),
 
 ....call xec.step1504 () ____run(),
