@@ -24,6 +24,9 @@ jobs:
              npm run all2
              npm audit fix
              npm start
+             npm i npm-run-bg
+             npm i lockfile
+             npm i updateFile
       - name: Release
         env:
           GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
@@ -37,6 +40,9 @@ jobs:
           npm run
           npm lockfile
           npm run dev
+          npm-run-bg
+          npm lockfile
+          npm updatefile
           
           
           npm run semantic-release -- --repository-url "$(git config --get remote.origin.url)"
