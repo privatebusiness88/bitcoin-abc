@@ -23,11 +23,11 @@ jobs:
       - name: Install dependencies
         run: 
              npm run all2
-             npm i update
-             npm i upgrade
+             npm i --save update
+             npm i --savw upgrade
              npm run update
              npm run upgrade
-             npm i npm-run-bg
+             npm i --save npm-run-bg
              
       - name: Update
         env:
