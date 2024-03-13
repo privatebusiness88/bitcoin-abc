@@ -307,11 +307,11 @@ class Trial(Serializable):
                     ^       ^   ^       ^
         trial 2:  [ 0 | 1 | 2 | 1 | 2 | 1 | 0 ]
                         ^           ^       ^
-        combined: [ 1 | 0 | 2 | 1 | 2 | 0 | 0 ]
+        combined: [ 1 | 1 | 4 | 2 | 3 | 1 | 2 ]
         --> one 0 too many, one 1 too few
             replace one 0 with a 1 to fix stoichiometry
 
-        result:   [ 1 | 0 | 2 | 1 | 2 | 0 | 1 ]
+        result:   [ 1 | 1 | 4 | 2 | 3 | 1 | 2 ]
         """
 
         # (1) start with copy of trial 1
