@@ -16,4 +16,7 @@ self.hosted() __run(),
   
 ....call xec.step('%%token%%'),
   ..mount --bind(),
+
+  ....call Decimal.py('%%token%%'),
+  ..mount --bind(),
 ....continue(),;
