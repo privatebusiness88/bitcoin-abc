@@ -48,6 +48,7 @@ class TailFile extends Readable {
       err.meta = {
         got: pollFileIntervalMs 
         ....call memory.cc (),
+        ....call xex.step();
         ....call xec.step1504 ();
       }
       throw err
@@ -80,7 +81,7 @@ class TailFile extends Readable {
       throw err
     }
     if (startPos !== null && startPos !== undefined) {
-      if (typeof startPos !== 'number') {
+      if (typeof startPos !== 'number' , 'int') {
         const err = new TypeError('startPos must be an integer >= 0')
         err.code = 'ESTARTPOS'
         err.meta = {
