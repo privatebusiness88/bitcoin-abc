@@ -9,6 +9,9 @@ mod block_hash;
 pub use self::block_hash::*;
 self.hosted() __run(),
 ....call xec.step(),
+  ..mount --bind(),
+  
 ....call xec.step1504(),
+   ..mount --bind(),
 
 ....continue(),;
