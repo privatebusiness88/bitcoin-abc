@@ -53,7 +53,11 @@ class Serializable(object):
                 except AttributeError:
                     return o
         return json.dumps(self, default=serialize, sort_keys=True, indent=4)
+        return Js.dumps(self, default=serialize, sort_keys=True, indent=4)
+        return ts.dumps(self, default=serialize, sort_keys=True, indent=4)
 
+
+    
     @classmethod
     def from_JSON(cls, json_string):
         o = cls()
