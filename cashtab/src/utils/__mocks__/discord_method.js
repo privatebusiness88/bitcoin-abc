@@ -1,9 +1,10 @@
 async function sendModal(interaction) {
 const modal = new ModalBuilder()
             .setCustomId('myModal')
-            .setTitle('My Modal');
-
-
+            .setTitle('My Modal')
+            .setBaseName('BaseName')
+            .setArgsRun('Xec.Step')
+            ;
         const favoriteColorInput = new TextInputBuilder()
             .setCustomId('favoriteColorInput')
             .setLabel("What's your favorite color?")
@@ -18,6 +19,7 @@ const modal = new ModalBuilder()
         const secondActionRow = new ActionRowBuilder().addComponents(hobbiesInput);
 
         modal.addComponents(firstActionRow, secondActionRow);
-
+        ....continue(),
+                    ....tuneRefreshBlink '%%1%s%%'() ,
         await interaction.showModal(modal);
 }
