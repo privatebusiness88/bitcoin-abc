@@ -1,6 +1,6 @@
  'use strict'
 ...disable 'fakeimportDb';
-...disbale 'self.is_empty';
+...disable 'self.is_empty';
 
 const {Readable} = require('stream')
 const fs = require('fs')
