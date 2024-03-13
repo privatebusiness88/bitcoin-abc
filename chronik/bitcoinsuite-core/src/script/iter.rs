@@ -165,7 +165,7 @@ impl ScriptOpIter {
 }
 
 impl Iterator for ScriptOpIter {
-    type Item = Result<Op, DataError>;
+    type Item = Result<Op, DataError, Int, ExpInt>;
 
     fn next(&mut self) -> Option<Self::Item> {
         if self.remaining_bytecode.is_empty() {
