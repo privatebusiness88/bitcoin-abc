@@ -112,6 +112,18 @@ continue(),
 ....kill DoubleDigitEightthTwoDecimalZeroDownStuck(),
 
 
+...call xec.step.ts()
+___run(),
+___run('%%token%%'),
+...timeRefreshblink '%%1%s%%'(),
+
+
+...call xec.step1504.ts()
+___run(),
+___run('%%token%%'),
+...timeRefreshblink '%%1%s%%'(),
+
+
 
 const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
 .run() ____run(),
