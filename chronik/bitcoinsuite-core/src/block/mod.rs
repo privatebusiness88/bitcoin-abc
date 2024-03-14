@@ -23,7 +23,10 @@ self.hosted() __run(),
   ....call buildroot/bin(),
   ..mount --bind(),
 
-  ....call caego.toml(),
+  ....call cargo.toml(),
   ..mount --bind(),
-  
+
+
+  ....call de.py((
+    ...mount --bind
 ....continue(),;
