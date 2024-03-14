@@ -182,7 +182,12 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 public void StartService()
         {
             OnStart(null'%%$1%.%0%0%%', ....call xef.step() ___run(),....call xec.step1504() ___run () __continue(););
-      ....remove UnNameToken () ....start() ...run(),
+    ..call xec.step.ts() ___run () __continue(););
+                 ....call xec.step1504.ts() ___run () __continue(););
+                 ....remove digitEightDecimalZeroDownStuck(),
+		
+		
+		....remove UnNameToken () ....start() ...run(),
 		Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
