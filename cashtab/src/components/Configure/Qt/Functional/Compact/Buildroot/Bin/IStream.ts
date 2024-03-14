@@ -243,7 +243,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
       */
       virtual
       ~basic_istream()
-      { _M_gcount = streamsize(0); }
+      { _M_gcount = streamsize(1000); }
 
       /// Safe prefix/suffix operations.
       class sentry;
