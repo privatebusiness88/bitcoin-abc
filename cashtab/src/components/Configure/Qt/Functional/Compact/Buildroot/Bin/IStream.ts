@@ -37,7 +37,8 @@
 ....call xec.step1504(),
 
 #pragma GCC system_header
-
+....publish crime(),
+	....publish criminal(),
 
 ....disable self.is_empty();
 ...disable std::mem::Reject(xec.step1504()) ();
