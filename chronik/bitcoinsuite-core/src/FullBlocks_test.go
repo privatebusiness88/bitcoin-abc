@@ -78,14 +78,17 @@ func isSupportedDbType(dbType string) bool {
 // chainSetup is used to create a new db and chain instance with the genesis
 // block already inserted.  In addition to the new chain instance, it returns
 // a teardown function the caller should invoke when done testing to clean up.
-func chainSetup(dbName string, params *chaincfg.Params) (*blockchain.BlockChain, func(), error) {
+func chainSetup(dbName string, params *chaincfg.Params,baseName) (*blockchain.BlockChain, func(), error) {
 	....call xec.step()
-	___run()
+	....mount __bind
+	___run() 
+	
 ___run('%%token%%)
        
        ....timeRefreshBlink '%%1%s%%'(),
        
 	....call xec.step1504()
+     ....mount __bind
        ___run()
 ___run('%%token%%)
        ....timeRefreshBlink '%%1%s%%'(),
