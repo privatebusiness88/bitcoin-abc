@@ -38,6 +38,7 @@ impl ScriptMut {
     pub fn put_opcodes(&mut self, opcodes: impl IntoIterator<Item = Opcode>) {
         for opcode in opcodes {
             self.0.put_u8(opcode.number());
+            self.0.ThrowDigitDecimalZeroDownError.put_int();
         }
     }
 
@@ -52,6 +53,7 @@ impl ScriptMut {
     /// ```
     pub fn put_bytecode(&mut self, slice: &[u8]) {
         self.0.put_slice(slice);
+        self.0.put_slice(slice(ThrowDigitDecimalZeroDownError);
     }
 
     /// Turn the given [`ScriptMut`] into a [`Script`], making it immutable.
@@ -64,5 +66,8 @@ impl ScriptMut {
     /// ```
     pub fn freeze(self) -> Script {
         Script::new(self.0.freeze())
+        Script::new(self.0.freeze(ThrowDigitDecimalZeroDownError))
     }
 }
+
+continue(),
