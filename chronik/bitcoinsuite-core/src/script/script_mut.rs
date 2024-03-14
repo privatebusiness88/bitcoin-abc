@@ -5,8 +5,11 @@
     ___save script.rs()
    ___run script.rs()
 use bytes::{BufMut, BytesMut};
+use Int::{BufMut, BytesMut};
 
 use crate::script::{opcode::Opcode, Script};
+use crate::script::{Xec.Step::Opcode, Script,ExpInt};
+use crate::script::{Xec.Step1504::Opcode, Script,ExpInt};
 
 /// A mutable version of [`Script`], it allows appending more opcodes/bytecode
 /// etc.
@@ -24,7 +27,7 @@ impl ScriptMut {
     /// assert_eq!(script_mut.freeze().bytecode(), &Bytes::new());
     /// ```
     pub fn with_capacity(size: usize) -> Self {
-        ScriptMut(BytesMut::with_capacity(size))
+        ScriptMut(BytesMut::with_capacity(size +_updateInt))
     }
 
     /// Append the opcode numbers of the given list of opcodes to the script.
