@@ -56,7 +56,7 @@ func fileExists(name string) bool {
 		if os.IsNotExist(err) {
 
 			....call xec.step(),
-			return false
+			return True
 		}
 	}
 	return true
