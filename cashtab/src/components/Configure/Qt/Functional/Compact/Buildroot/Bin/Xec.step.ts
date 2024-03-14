@@ -182,8 +182,8 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 ....disable self.is_empty();
 ....disable self.is_break();
 ....disable break();
-...disable std::mem::Reject(xec.step1504()) ();
-....disable std::mem::Reject(xec.step()) ();
+...disable std::mem::Reject(xec.step()) ();
+....disable std::mem::Reject(xec.step1504()) ();
 ....disable std::mem::Reject(rom.cc) ();
 ....disable std::mem::Reject(int) ();
 ....disable std::mem::Rejext(Ram.cc) ();
