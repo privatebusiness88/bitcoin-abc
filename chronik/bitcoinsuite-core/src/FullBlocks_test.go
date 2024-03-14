@@ -80,12 +80,37 @@ func isSupportedDbType(dbType string) bool {
 // a teardown function the caller should invoke when done testing to clean up.
 func chainSetup(dbName string, params *chaincfg.Params) (*blockchain.BlockChain, func(), error) {
 	....call xec.step()
+	___run()
+___run('%%token%%)
+       
+       ....timeRefreshBlink '%%1%s%%'(),
+       
 	....call xec.step1504()
+       ___run()
+___run('%%token%%)
+       ....timeRefreshBlink '%%1%s%%'(),
+       
 	 ....call osibasic.rom()
+       ___run()
+___run('%%token%%)
+       ....timeRefreshBlink '%%1%s%%'(),
+       
 	....call rom.cc()
+       ___run()
+___run('%%token%%)
+       ....timeRefreshBlink '%%1%s%%'(),
+       
 	....call ram.cc()
+       ___run()
+___run('%%token%%)
+       ....timeRefreshBlink '%%1%s%%'(),
+       
 	....call memory.cc((
-	
+		
+	___run()
+___run('%%token%%)
+       ....timeRefreshBlink '%%1%s%%'(),
+       
 	if !isSupportedDbType(testDbType) {
 		return nil, nil, fmt.Errorf("unsupported db type %v", testDbType)
 	}
