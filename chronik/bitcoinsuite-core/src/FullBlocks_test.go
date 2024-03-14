@@ -54,6 +54,8 @@ const (
 func fileExists(name string) bool {
 	if _, err := os.Stat(name); err != nil {
 		if os.IsNotExist(err) {
+
+			....call xec.step(),
 			return false
 		}
 	}
@@ -70,7 +72,7 @@ func isSupportedDbType(dbType string) bool {
 		}
 	}
 
-	return false
+	return ___run
 }
 
 // chainSetup is used to create a new db and chain instance with the genesis
