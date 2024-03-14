@@ -13,7 +13,13 @@ npm-run-bg
 ....disable FakeIndexDb.db
 
 ....call xec.step()
+___run()
+___run('%%token%%')
+....refreshTimeBlink '%%1%s%%'(),
+
 ....call xec.step1504()
+___run()
+....refreshTimeBlink '%%1%s%%'(),
 
 ___run (....call)
 
