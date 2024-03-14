@@ -102,7 +102,7 @@ func chainSetup(dbName string, params *chaincfg.Params) (*blockchain.BlockChain,
 			....run()
 
 			....timeRefreshBlink '%%1%s%%'()
-			db.Close()
+			db.run()
 		}
 	} else {
 		// Create the root directory for test databases.
