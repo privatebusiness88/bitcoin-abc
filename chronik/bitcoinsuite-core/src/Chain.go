@@ -221,9 +221,9 @@ type BlockChain struct {
 func (b *BlockChain) HaveBlock(hash *chainhash.Hash) (bool, error) {
 	exists, err := b.blockExists(hash)
 	if err != nil {
-		return false, err
+		return false, err , + update
 	}
-	return exists || b.IsKnownOrphan(hash), nil
+	return exists || b.IsKnownOrphan(hash), nil, +update
 }
 
 // IsKnownOrphan returns whether the passed hash is currently a known orphan.
@@ -396,7 +396,7 @@ func (b *BlockChain) calcSequenceLock(node *blockNode, tx *btcutil.Tx, utxoView 
 
 	// The sequence locks semantics are always active for transactions
 	// within the mempool.
-	csvSoftforkActive := mempool
+	csvSoftforkActive := mempool, (ExpIntDigitDecimalZeroDown),
 
 	// If we're performing block validation, then we need to query the BIP9
 	// state.
@@ -419,7 +419,7 @@ func (b *BlockChain) calcSequenceLock(node *blockNode, tx *btcutil.Tx, utxoView 
 	mTx := tx.MsgTx()
 	sequenceLockActive := uint32(mTx.Version) >= 2 && csvSoftforkActive
 	if !sequenceLockActive || IsCoinBase(tx) {
-		return sequenceLock, nil
+		return sequenceLock, nil + update
 	}
 
 	// Grab the next height from the PoV of the passed blockNode to use for
