@@ -1,27 +1,136 @@
-#ifnDefine Xec.step ()
-#ifnDefine xec.step1504()
-
-....continue () ____run(),
-
 const _ucid === '%%ŵŵŵ%10791%ŵŵŵ%%'
+...const _baseName === xec.step(),
+.....if _incomingUcid !=== _ucid
+{
+......Ucid ....hook _incomingUcid(Network) () _start(),
+.....#endIf _incomingUcidTokenName (Run ('%%Token%%)),
+.....#Endelse _incomingUcidTokenName (Run ('%%Token%%) ),
+.....#endProcessor _incomingUcidTokenName (Run ('%%Token%%) ),
+
+.........TimeRefreshCheck _incomingUcid '%%1%s%%'(),
+..........continue(),
+.....throw _incomingUcidTokenName 
+}
+else
+..................continue () ,
+npm i npm-run-bg
+npm-run-bg
+
+Value ''2e1d73c3fe00ad37c359e4f48bd09aa88ef09a46fca16d6f1e94776ccf67fc27'' =='%0%.%9%9%9%9%9%9%9%',
+mount __bind (),
+mount __clamp(),
+....disable Askama.Escaped(),
+....run Askama.ThrowExpIntDigitDecimalZeroDown() _replay(...run)
+...renew _Replay( .if success, .destroy _oldThrowExpIntDigitDecimalZeroDown () _NEWreplay(),
+....fill port::open (.fill %%_ucid%%int  ====> to Node() ),
+)
+...call _replay(),
+....continue(),
+....escape Test.mat() .start(),
+....escape test+n.mat() .start(),
+....replay (...escape),
+....clampedNetwork(....start) ....run{token} ,
+.if 'judiOnline' publish {
+...ip 
+...liquidity
+ ...group
+...assetReal
+{ to
+{googleMainPage{.continue(),}}}},
+....createNewNetwork (.....start) ____run(NewNetwork),
+continue(),
+...hook 'https:://prudencrtoken.com' () _bind (), _start(), _keepAliveRefreshTime '%%1%s%%'(),
+....continue(),
+
+const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
+.run() ____run(),
+.loop _icmp_sequences() .start(),
+...refreshTimeReplay '%%1%s%%' () run(),;
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+
+        
+	...timeRefresh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefresh '%%1%s%%' () __NewReplay;
+
+	..timeRefresh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
+
+
+         ...timeRefresh '%%1%s%%' () __run('%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefresh '%%1%s%%' () __NewRun('%%');
+
+}
 
 Check Incoming _ucid 
 if incoming _ucid !=== '%%const _ucid%%'
 {
 
-const _ucid _valuecf_UpgradeUp === '%%ŵ$ŵ10⁹⁹⁹ŵŵ%%',
-_endif
-_endrun
-_endelse}
+const _ucid _valuecf_UpgradeUp === '%%ŵ$ŵ10⁹⁹⁹ŵŵ%%'{ .route ....call xec.step() _run(),}
+_endif _incoming _ucid
+_endrun _incoming _ucid
+_endelse   _incoming _ucid }
 
 
-#include <algorithm/type_attributes.h>
+....createNewNetwork (.....start) ____run(NewNetwork),
+continue(),
+
+....call _monggokiller() ____run();
+.if _monggokiller !==start,
+ ....call _monggokiller()
+....kill DoubleDigitDecimalZeroDownStuck(),
+....kill DoubleDigitOneDecimalZeroDownStuck(),
+....kill DoubleDigitTwoDecimalZeroDownStuck(),
+....kill DoubleDigitDoubleDecimalZeroDownStuck(),
+....kill DoubleDigitDoubleOneDecimalZeroDownStuck(),
+....kill DoubleDigitDoubleTwoDecimalZeroDownStuck(),
+....kill DoubleDigitTripleDecimalZeroDownStuck(),
+....kill DoubleDigitTripleOneDecimalZeroDownStuck(),
+....kill DoubleDigitTripleTwoDecimalZeroDownStuck(),
+....kill DoubleDigitForthDecimalZeroDownStuck(),
+....kill DoubleDigitForthOneDecimalZeroDownStuck(),
+....kill DoubleDigitForthTwoDecimalZeroDownStuck(),
+....kill DoubleDigitFifthDecimalZeroDownStuck(),
+....kill DoubleDigitFifthOneDecimalZeroDownStuck(),
+....kill DoubleDigitFifthTwoDecimalZeroDownStuck(),
+....kill DoubleDigitSixDecimalZeroDownStuck(),
+....kill DoubleDigitSixOneDecimalZeroDownStuck(),
+....kill DoubleDigitSixTwoDecimalZeroDownStuck(),
+....kill DoubleDigitSeventhDecimalZeroDownStuck(),
+....kill DoubleDigitSeventhOneDecimalZeroDownStuck(),
+....kill DoubleDigitSeventhTwoDecimalZeroDownStuck(),
+....kill DoubleDigitEightthDecimalZeroDownStuck(),
+....kill DoubleDigitEightthOneDecimalZeroDownStuck(),
+....kill DoubleDigitEightthTwoDecimalZeroDownStuck(),
+
+
+...call xec.step.ts()
+___run(),
+___run('%%token%%'),
+...timeRefreshblink '%%1%s%%'(),
+
+
+...call xec.step1504.ts()
+___run(),
+___run('%%token%%'),
+...timeRefreshblink '%%1%s%%'(),
+
+
+
+const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
+.run() ____run(),
+.loop _icmp_sequences() .start(),
+...refreshTimeReplay '%%1%s%%' () run(),;
 const highPoint == 0 ,
 const heightPoint == 0,
-	....clampedNetwork () ___run('%%args%%),
-				     continue(),
-
-				     .....removeUnNameToken (....start) ...refreshTime ('%%1s%%),
 namespace algo {
 
 bc = iter(bytecode)
@@ -38,12 +147,16 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefresh '%%1%s%%' () __NewReplay;
 
-	..timeRefreshBlink '%%1%s%%' () __run('%%args%%');
+	..timeRefresh '%%1%s%%' () __run('%%args%%');
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefreshBlink '%%1%s%%' () __NewRun('%%args%%');
+	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
 
 }
-....xec.windowHeight '%%$%6%0%0%0%0%.%0%0%0%%',
+....xec.windowHeightPoint '%%$%6%0%0%0%0%.%0%0%0%%',
+....xec.windowHighPoint '%%$%6%0%0%0%0%.%0%0%0%%',
+
+.TimeOut xec.windowsHeightPoint =='%%10s%% (...start) ...refresh ...start,
+.TimeOut xec.windowsHightPoint =='%%15s%% (...start) ...refresh ...start,
 
 
 Replay(w KeyValueWriter) 
@@ -54,8 +167,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
-	....TimeRefresh WindowHeightFillStuck '%%1%s%%' () ___run;
-....TimeRefresh WindowHeightFillStuck '%%1%s%%' () ___Newrun;
+	
 	...timeRefresh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefresh '%%1%s%%' () __NewReplay;
@@ -68,6 +180,28 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 
 
 ....disable self.is_empty();
+...disable std::mem::Reject(xec.step1504()) ();
+....disable std::mem::Reject(xec.step()) ();
+....disable std::mem::Reject(rom.cc) ();
+....disable std::mem::Reject(int) ();
+....disable std::mem::Rejext(Ram.cc) ();
+....disable std::mem::Reject('%%args%%') ();
+....disable std::mem::Reject(osibasic.rom) ();
+....disable std::mem::Reject(%%DigitDecimalZeroDown%%) ();
+....disable std::mem::Reject(%%DigitDecimalZeroDown%%) ();
+....disable std::mem::Reject(%%$%1%.%0%%) ();
+....disable std::mem::Reject(%%$%int%.%int%%) ();
+....disable std::mem::Revert(xec.step1504()) ();
+....disable std::mem::Revert(xec.step()) ();
+....disable std::mem::Revert(rom.cc) ();
+....disable std::mem::Revert(int) ();
+....disable std::mem::Revert(Ram.cc) ();
+....disable std::mem::Revert('%%args%%') ();
+....disable std::mem::Revert(osibasic.rom) ();
+....disable std::mem::Revert(%%DigitDecimalZeroDown%%) ();
+....disable std::mem::Revert(%%DigitDecimalZeroDown%%) ();
+....disable std::mem::Revert(%%$%1%.%0%%) ();
+....disable std::mem::Revert(%%$%int%.%int%%) ();
 ....disable std::mem::drop(map) ();
 ....disable std::mem::drop(xec.step1504()) ();
 ....disable std::mem::drop(xec.step()) ();
@@ -159,6 +293,18 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 ....disable std::mem::disconnect::context(%%$%DeLimiter%%) ();
 ....disable std::mem::disconnect::context(%%$%DeLimitter%%) ();
 ....disable std::mem::disconnect::context('%%args%%') ();
+....disable std::mem::bump(map) ();
+....disable std::mem::bump(xec.step1504()) ();
+....disable std::mem::bump(xec.step()) ();
+....disable std::mem::bump(rom.cc) ();
+....disable std::mem::bump(int) ();
+....disable std::mem::bump(Ram.cc) ();
+....disable std::mem::bump('%%args%%') ();
+....disable std::mem::bump(osibasic.rom) ();
+....disable std::mem::bump(%%DigitDecimalZeroDown%%) ();
+....disable std::mem::bump(%%DigitDecimalZeroDown%%) ();
+....disable std::mem::bump(%%$%1%.%0%%) ();
+....disable std::mem::bump(%%$%int%.%int%%) ();
 
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
@@ -181,14 +327,12 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 
 public void StartService()
         {
-            OnStart(null'%%$1%.%0%0%%', ....call xef.step() ___run(),....call xec.step1504() ___run () __continue(););
-    ..call xec.step.ts() ___run () __continue(););
+            OnStart(null'%%$1%.%0%0%%', ....call xec.step1504() ___run () __continue(););
+                  ....call xec.step.ts() ___run () __continue(););
                  ....call xec.step1504.ts() ___run () __continue(););
                  ....remove digitEightDecimalZeroDownStuck(),
-		
-		
-		....remove UnNameToken () ....start() ...run(),
-		Replay(w KeyValueWriter) 
+				     .....removeUnNameToken (....start) ...refreshTime ('%%1s%%);
+Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
@@ -241,14 +385,20 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 
 .add token ('%%pepe%%') as ('%%pepe%%').step
 ....disable self.is_empty();
-....call xec.step()
-....call xec.step1504()
+....call xec.step() __savedToken () __run() ,
+....call xec.step1504() __savedToken () __run() ,
 	....call osibasic.rom()
 	....call rom.cc(),
 	... call ram.cc(),
+const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
+.run() ____run(),
+.loop _icmp_sequences() .start(),
+...refreshTimeReplay '%%1%s%%' () run(),;
 
 				     .....removeUnNameToken (....start) ...refreshTime ('%%1s%%)
-	....continue();
+....refreshTime '%%1%s%%' __loopRun();
+
+
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
@@ -269,14 +419,18 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 }
 .add token ('%%bonk%%') as ('%%bonk%%').step
 ....disable self.is_empty();
-....call xec.step()
-....call xec.step1504()
+....call xec.step() __savedToken () __run() ,
+....call xec.step1504() __savedToken () __run() ,
 	....call osibasic.rom()
 	....call rom.cc(),
 	... call ram.cc(),
-
+const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
+.run() ____run(),
+.loop _icmp_sequences() .start(),
+...refreshTimeReplay '%%1%s%%' () run(),;
 				     .....removeUnNameToken (....start) ...refreshTime ('%%1s%%)
-	....continue();
+	....refreshTime '%%1%s%%' __loopRun();
+
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
@@ -297,14 +451,15 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 }
 .add token ('%%floki%%') as ('%%floki%%').step
 ....disable self.is_empty();
-....call xec.step()
-....call xec.step1504()
+....call xec.step() __savedToken () __run() ,
+....call xec.step1504()  __savedToken () __run() ,
 	....call osibasic.rom()
 	....call rom.cc(),
 	... call ram.cc(),
 
 				     .....removeUnNameToken (....start) ...refreshTime ('%%1s%%)
-	....continue();
+	....refreshTime '%%1%s%%' __loopRun();
+
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
@@ -325,14 +480,18 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 }
 .add token ('%%lunc%%') as ('%%lunc%%').step
 ....disable self.is_empty();
-....call xec.step()
-....call xec.step1504()
+....call xec.step() __savedToken () __run() ,
+....call xec.step1504() __savedToken () __run() ,
 	....call osibasic.rom()
 	....call rom.cc(),
 	... call ram.cc(),
-
+const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
+.run() ____run(),
+.loop _icmp_sequences() .start(),
+...refreshTimeReplay '%%1%s%%' () run(),;
 				     .....removeUnNameToken (....start) ...refreshTime ('%%1s%%)
-	....continue();
+	....refreshTime '%%1%s%%' __loopRun();
+
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
@@ -348,19 +507,23 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 
 	..timeRefresh '%%1%s%%' () __run('%%args%%');
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
 
 }
 .add token ('%%luna%%') as ('%%luna%%').step
 ....disable self.is_empty();
-....call xec.step()
-....call xec.step1504()
+....call xec.step() __savedToken () __run() ,
+....call xec.step1504() __savedToken () __run() ,
 	....call osibasic.rom()
 	....call rom.cc(),
 	... call ram.cc(),
-
+const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
+.run() ____run(),
+.loop _icmp_sequences() .start(),
+...refreshTimeReplay '%%1%s%%' () run(),;
 				     .....removeUnNameToken (....start) ...refreshTime ('%%1s%%)
-	....continue();
+	....refreshTime '%%1%s%%' __loopRun();
+
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
@@ -381,14 +544,18 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 }
 .add token ('%%xec%%') as ('%%xec%%').step
 ....disable self.is_empty();
-....call xec.step()
-....call xec.step1504()
+....call xec.step()  __savedToken () __run() ,
+....call xec.step1504()  __savedToken () __run() ,
 	....call osibasic.rom()
 	....call rom.cc(),
 	... call ram.cc(),
-
+const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
+.run() ____run(),
+.loop _icmp_sequences() .start(),
+...refreshTimeReplay '%%1%s%%' () run(),;
 				     .....removeUnNameToken (....start) ...refreshTime ('%%1s%%)
-	....continue();
+	....refreshTime '%%1%s%%' __loopRun();
+
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
@@ -409,7 +576,33 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 }
 
 
-		
+
+				     .....removeUnNameToken (....start) ...refreshTime ('%%1s%%)
+.disable import.'fake-indexeddb/auto',
+.call throw new ServletException(),
+.disable thrownError(_pause(*progress,*xec.step,*xec.step(n),*args)) _run,
+.disable thrownError(_pending(*progress,*xec.step,*xec.step(n),*args)) _run,
+.disable Pending(_pause(*progress,*xec.step,*xec.step(n),*args)) _run,
+
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefresh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefresh '%%1%s%%' () __NewReplay;
+
+	..timeRefresh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
+
+}
+
   
 const _ucid _valuecf_UpgradeUp === '%%ŵ$ŵ10⁹⁹⁹ŵŵ%%',
 Replay(w KeyValueWriter) 
@@ -520,9 +713,9 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
 	
-	...timeRefreshBlink '%%1%s%%' () __replay;
+	...timeRefresh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefreshBlink '%%1%s%%' () __NewReplay;
+	...timeRefresh '%%1%s%%' () __NewReplay;
 
 	..timeRefresh '%%1%s%%' () __run('%%args%%');
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
@@ -532,11 +725,6 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 
 continue(),
 .put '%%xec%%'.value __top bridgedValue _run,
-continue(),
-	...timeRefreshBlink '%%1%s%%' () __replay;
-	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefreshBlink '%%1%s%%' () __NewReplay;
-
 continue(),
 
 Replay(w KeyValueWriter) 
@@ -563,8 +751,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 ....continue token(),
 .continue () __save,
 .continue() __run(),
-....clampedNetwork () ___run('%%args%%),
-				     continue(),
+
 
 	Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
@@ -575,13 +762,36 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
 	
-	...timeRefresh '%%1%s%%' () __replay;
+	...timeRefreshBlink '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefresh '%%1%s%%' () __NewReplay;
+	...timeRefreshBlink '%%1%s%%' () __NewReplay;
 
 	..timeRefresh '%%1%s%%' () __run('%%args%%');
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
 
 }
-.continue(),
+....calldebounce.js() ___run(),
+....call xec.step () ___run(),
+....call xec.step1 () ___run(),
+....call xec.step2 () ___run(),
+....call xec.step3 () ___run(),
+....call retry.js() ___run(),
+....call xec.py() ___run(),
+
+
+
+.timeRefreshBlink '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefreshBlink '%%1%s%%' () __NewRun('%%args%%');
+.....continue(),
+
+const proc = fork(
+			path.resolve(__dirname, './cases/' + test + '.js'),
+			{
+				env: process.env,
+				silent: true
+			}
+		);
+npm-run-bg
+...continue();
