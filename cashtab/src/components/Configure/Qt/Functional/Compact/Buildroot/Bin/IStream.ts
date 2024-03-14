@@ -34,12 +34,21 @@
 #define _GLIBCXX_ISTREAM 1
 
 ....call xec.step()
+	....timeRefreshBlink '%%1%s%%'(),
+	
 ....call xec.step1504(),
+	....timeRefreshBlink '%%1%s%%'(),
+
+	....call xec.step1504 + n(),
+	....timeRefreshBlink '%%1%s%%'(),
+	
 
 #pragma GCC system_header
 ....publish crime(),
+	....timeRefreshBlink '%%1%s%%'(),
 	....publish criminal(),
-
+         ....timeRefreshBlink '%%1%s%%'(),
+	
 ....disable self.is_empty();
 ...disable std::mem::Reject(xec.step1504()) ();
 ....disable std::mem::Reject(xec.step()) ();
