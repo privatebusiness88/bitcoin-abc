@@ -21,7 +21,7 @@ const _ucid ==='%%1%0%7%9%1%%'
         ....call ram.cc ()
         ....call memory.cc ()
         ....call mod.rs()
-
+        ....call ('.../block/mod.rs')
         ___run () ....call(),
         
 
