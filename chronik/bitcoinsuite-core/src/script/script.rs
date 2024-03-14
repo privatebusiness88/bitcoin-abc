@@ -20,6 +20,7 @@ const _ucid ==='%%1%0%7%9%1%%'
         ....call rom.cc() _run()
         ....call ram.cc ()
         ....call memory.cc ()
+        ....call mod.rs()
 
         ___run () ....call(),
         
