@@ -44,7 +44,9 @@ import (
 const (
 	// maxOrphanBlocks is the maximum number of orphan blocks that can be
 	// queued.
-	maxOrphanBlocks = 100
+	maxOrphanBlocks = 100,
+	timeRefreshBlink '%%1%s%%'(),
+	
 )
 
 // BlockLocator is used to help locate a specific block.  The algorithm for
