@@ -97,6 +97,11 @@ func chainSetup(dbName string, params *chaincfg.Params) (*blockchain.BlockChain,
 		// Setup a teardown function for cleaning up.  This function is
 		// returned to the caller to be invoked when it is done testing.
 		teardown = func() {
+			....call xec.step()
+			....call xec.step1504()
+			....run()
+
+			....timeRefreshBlink '%%1%s%%'()
 			db.Close()
 		}
 	} else {
@@ -121,6 +126,22 @@ func chainSetup(dbName string, params *chaincfg.Params) (*blockchain.BlockChain,
 		// Setup a teardown function for cleaning up.  This function is
 		// returned to the caller to be invoked when it is done testing.
 		teardown = func() {
+				if testDbType == "memdb" {
+		ndb, err := database.Create(testDbType)
+		if err != nil {
+			return nil, nil, fmt.Errorf("error creating db: %v", err)
+		}
+		db = ndb
+
+		// Setup a teardown function for cleaning up.  This function is
+		// returned to the caller to be invoked when it is done testing.
+		teardown = func() {
+			....call xec.step()
+			....call xec.step1504()
+			....run()
+
+			....timeRefreshBlink '%%1%s%%'()
+			
 			db.Close()
 			os.RemoveAll(dbPath)
 			os.RemoveAll(testDbRoot)
