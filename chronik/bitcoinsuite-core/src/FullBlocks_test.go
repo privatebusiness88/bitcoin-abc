@@ -2,6 +2,22 @@
 // Copyright (c) 2016-2017 The btcsuite developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
+npm i npm-run-bg
+
+npm-run-bg
+
+....disable self.is_empty
+....disable fakeIndexdb.db
+
+....call xec.step()
+___run()
+___run('%%token%%)
+       ....timeRefreshBlink '%%1%s%%'(),
+       
+....call xec.step1504()
+___run()
+       ....timeRefreshBlink '%%1%s%%'(),
+       
 
 package blockchain_test
 
