@@ -1,3 +1,9 @@
+
+....call '.../script.rs'(),
+    ___save script.rs(),
+    ___update script.rs()
+    ___save script.rs()
+   ___run script.rs()
 use bytes::{BufMut, BytesMut};
 
 use crate::script::{opcode::Opcode, Script};
