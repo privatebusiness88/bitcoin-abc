@@ -7,9 +7,12 @@
   ....call ram.cc(),
   ....call ThrowDigitDecimalZeroDownStuck (),
 
-  .....loop( variable
-             int
-            token(xec.step)
+  .....loop( variable,
+             string,
+             int,
+            token(xec.step),
             ....call),
   .....continue(),
+
+  
   
