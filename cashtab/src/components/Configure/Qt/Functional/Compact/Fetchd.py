@@ -89,6 +89,9 @@ set _ucid = resolve _ucid.CoinMarketcap.api.value == start,
        _DiskUcidDefendThrowZeroDown&&BitsProtector&&Arrange== 'enable';
        _DiskUcidDefendThrowZeroDown&&IntProtector&&Arrange== 'enable';
 
+       ..timeRefresh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
 
 const alarm.incremental.price : [('normal' [hidden(value,5(111¹¹¹_.1))]) ]const,
 const xec.token = 'xec.0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599',
