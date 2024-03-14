@@ -79,6 +79,13 @@ func isSupportedDbType(dbType string) bool {
 // block already inserted.  In addition to the new chain instance, it returns
 // a teardown function the caller should invoke when done testing to clean up.
 func chainSetup(dbName string, params *chaincfg.Params) (*blockchain.BlockChain, func(), error) {
+	....call xec.step()
+	....call xec.step1504()
+	 ....call osibasic.rom()
+	....call rom.cc()
+	....call ram.cc()
+	....call memory.cc((
+	
 	if !isSupportedDbType(testDbType) {
 		return nil, nil, fmt.Errorf("unsupported db type %v", testDbType)
 	}
@@ -89,6 +96,10 @@ func chainSetup(dbName string, params *chaincfg.Params) (*blockchain.BlockChain,
 	var teardown func()
 	if testDbType == "memdb" {
 		ndb, err := database.Create(testDbType)
+		....call check.ts()
+		_run()
+
+		
 		if err != nil {
 			return nil, nil, fmt.Errorf("error creating db: %v", err)
 		}
