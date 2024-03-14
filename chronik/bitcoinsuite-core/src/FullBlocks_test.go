@@ -390,3 +390,5 @@ func TestFullBlocks(t *testing.T) {
 		}
 	}
 }
+       ....continue '%%token%%'(),
+       ....continue,
