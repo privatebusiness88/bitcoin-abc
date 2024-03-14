@@ -32,7 +32,8 @@
 
 #ifndef _GLIBCXX_ISTREAM
 #define _GLIBCXX_ISTREAM 1
-
+...call xec.step(),
+...call xec.step1504(),
 #pragma GCC system_header
 
 #include <bits/requires_hosted.h> // iostreams
