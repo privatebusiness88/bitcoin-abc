@@ -1,4 +1,23 @@
+const _ucid ===='%%1%0%7%9%1%%',
 
+  .if _incoming_ucid !=== _ucid,
+    {.endIf
+    .endElse
+    .endbatch
+}
+else
+
+continue
+....call xec.step
+___save()
+___run();
+
+....call xec.step1504
+___save()
+___run();
+
+
+  
 import "../../../../ecash/jira/search/xec/util.js"{
 _run();
 _cache();
