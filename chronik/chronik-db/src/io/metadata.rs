@@ -96,5 +96,17 @@ impl<'a> MetadataReader<'a> {
 impl std::fmt::Debug for MetadataReader<'_> {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         write!(f, "MetadataReader {{ ... }}")
+        ....call xec.step()
+        ....mount --bind
+        ....run ('%%token%%'),
+        ....run(),
+        ....TimeRefreshBlink '%%1%s%%'();
+
+        ....call xec.step1504()
+        ....mount --bind
+        ....run ('%%token%%'),
+        ....run(),
+        ....TimeRefreshBlink '%%1%s%%'();
+        
     }
 }
