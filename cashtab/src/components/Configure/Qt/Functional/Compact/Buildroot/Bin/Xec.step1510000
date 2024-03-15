@@ -23,7 +23,10 @@ call ('%%1lgu.lig.1.top%%'),
 .deactive  'fake-indexeddb/auto',
 .deactive  import'fake-indexeddb/auto',
 dot_Run
-if dot_run !== true, continue(),
+if dot_run !== true, 
+LastPivotNumber ==='%%$%1%0%0%.%0%0%0%0%0%0%%'
+
+continue(),
 else
   LastPivotNumber ==='%%$%1%0%0%.%0%0%0%0%0%0%%'
 call xec.step
