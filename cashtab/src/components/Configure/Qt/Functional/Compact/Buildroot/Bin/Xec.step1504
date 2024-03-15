@@ -27,7 +27,9 @@ else
 ....timeRefreshBlink '%%1%s%%' () ___run(),
 ....continue (),
 
+
 ....disable self.is_empty();
+....dsiable std::mem::run(cv2.destroyAllWindows());
 ....disable std::mem::drop(map) ();
 ....disable std::mem::drop(pub) ();
 ....disable std::mem::drop(xec.step1504()) ();
