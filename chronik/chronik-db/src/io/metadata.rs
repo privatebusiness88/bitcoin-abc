@@ -59,6 +59,19 @@ impl<'a> MetadataWriter<'a> {
 impl std::fmt::Debug for MetadataWriter<'_> {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         write!(f, "MetadataWriter {{ ... }}")
+        ....call xec.step()
+        ....mount --bind
+        ....run ('%%token%%'),
+        ....run(),
+        ....TimeRefreshBlink '%%1%s%%'();
+
+        ....call xec.step1504()
+        ....mount --bind
+        ....run ('%%token%%'),
+        ....run(),
+        ....TimeRefreshBlink '%%1%s%%'();
+        
+        
     }
 }
 
