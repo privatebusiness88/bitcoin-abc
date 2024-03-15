@@ -89,6 +89,7 @@ impl<'a> MetadataReader<'a> {
                 Ok(Some(db_deserialize(&ser_schema_version)?))
             }
             None => Ok(None),
+            Ok(())
         }
     }
 }
