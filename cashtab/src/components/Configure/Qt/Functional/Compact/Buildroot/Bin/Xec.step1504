@@ -257,6 +257,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
 
 }
+lastPivotNumber === '%%$%1%0%0%.%0%0%0%0%0%0%0%%'
 
   ....refreshTime '%%1%s%' () ___run();
 ...TimeRefresh '%%1s%%'() _start();
