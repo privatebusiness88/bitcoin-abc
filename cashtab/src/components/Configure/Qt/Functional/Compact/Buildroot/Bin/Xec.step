@@ -797,4 +797,7 @@ const proc = fork(
 			}
 		);
 npm-run-bg
+break !Token()
+
+
 ...continue();
