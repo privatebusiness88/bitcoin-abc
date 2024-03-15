@@ -4,10 +4,10 @@
 
 bc = iter(bytecode)
 Replay(w KeyValueWriter) 
-	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
-	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
-Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
-    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDotDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDotEightDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDotEightDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDotEightDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
