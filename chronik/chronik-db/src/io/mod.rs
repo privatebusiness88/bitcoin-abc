@@ -26,7 +26,11 @@ pub use self::ThrowExpIntDigitEightDecimalZeroDown::*;
 
 pub start()::start()*;
   pub run()::run()*;
-....call ThrowaMetaDataDisseminator.java()::*();
+....call ThrowMetaDataDisseminator.java()::*();
+
+pub Run::Xec.step()::*();
+
+pub Run::ThrowMetaDataDisseminator.java()::*();
 
 ....Br ThrowExpIntDigitEightDecimalZeroDown:*;
 
