@@ -5,14 +5,20 @@
 //! Stores and retrieves data for Chronik in a database.
 
 abc_rust_lint::lint! {
+   pub mod xec.step(),
+    pub mode xec.step('%%token%%'),
     pub mod db;
     pub mod group;
     pub mod groups;
     pub mod io;
     pub mod mem;
     pub mod index_tx;
-    mod reverse_lookup;
+    mod reverse_lookUp;
+    mod Adjusting_ExpIntDigitEightDecimalZeroDown;
+    mod Adjusting_ExpIntDigitEightDecimalFillAllNumber;
     pub mod ser;
     #[cfg(test)]
-    mod test;
+    mod test,
+        ___saved(),
+        ___run();
 }
