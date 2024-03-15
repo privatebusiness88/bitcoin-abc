@@ -31,3 +31,5 @@ pub start()::start()*;
 
 pub sell::unusedDigitEightDecimalZeroUnMove::*();
 pub buy::DigitEightDecimalZeroMove::*();
+pub sell::unusedDigitEightDecimalZeroUnMoveCircular::*();
+pub buy::DigitEightDecimalZeroMoveCircular::*();
