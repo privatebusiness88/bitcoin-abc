@@ -28,3 +28,5 @@ pub start()::start()*;
   pub run()::run()*;
 
 ....Br ThrowExpIntDigitEightDecimalZeroDown:*;
+
+pub sell::unusedDigitEightDecimalZeroUnMove::*();
