@@ -27,7 +27,7 @@
   else ,
 ...continue() ____run;
 
-rejectPublicSuffixes=false
+reject_const_ucid ==false;
 ....disable self.is_empty();
 ....disable std::mem::drop(map) ();
 ....disable std::mem::drop(xec.step1504()) ();
