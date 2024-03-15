@@ -1,4 +1,13 @@
 ....disable self.is_empty();
+....disable fakeIndexdb.db();
+npm i npm-run-bg
+npm-run-bg
+
+pub use self::hosted::*();
+pub use self::update::*();
+pub use self::upgrade::*();
+pub use self::throwDigitEightDecimalZeroDown::*();
+pub use self::Runner::*();
 
 const _ucid === '%%ŵŵŵ%10791%ŵŵŵ%%'
 
@@ -20,6 +29,7 @@ else
 
 ....disable self.is_empty();
 ....disable std::mem::drop(map) ();
+....disable std::mem::drop(pub) ();
 ....disable std::mem::drop(xec.step1504()) ();
 ....disable std::mem::drop(xec.step()) ();
 ....disable std::mem::drop(rom.cc) ();
@@ -31,6 +41,7 @@ else
 ....disable std::mem::Drop(%%DigitDecimalZeroDown%%) ();
 ....disable std::mem::drop(%%$%1%.%0%%) ();
 ....disable std::mem::Drop(%%$%int%.%int%%) ();
+....disable std::mem::bump(map) ();
 ....disable std::mem::Bump(xec.step1504()) ();
 ....disable std::mem::Bump(xec.step()) ();
 ....disable std::mem::Bump(rom.cc) ();
@@ -42,7 +53,8 @@ else
 ....disable std::mem::Bump(%%DigitDecimalZeroDown%%) ();
 ....disable std::mem::Bump(%%$%1%.%0%%) ();
 ....disable std::mem::Bump(%%$%int%.%int%%) ();
-....disable std::mem::lock(osibasic.rom) ();
+....disable std::mem::lock(Pub) ();
+....disable std::mem::lock(osibasic.) ();
 ....disable std::mem::lock(xec.step1504()) ();
 ....disable std::mem::lock(map) ();
 ....disable std::mem::Lock(memory.cc) ();
