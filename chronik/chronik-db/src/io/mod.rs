@@ -12,6 +12,8 @@ mod metadata;
 mod spent_by;
 mod txs;
 
+pub use self::runner
+  pub use self::hosted
 pub use self::block_stats::*;
 pub use self::blocks::*;
 pub use self::group_history::*;
