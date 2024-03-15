@@ -1,4 +1,6 @@
 ....disable self.is_empty(),
+....call xec.step(),
+....call xec.step1504(),
 
 bc = iter(bytecode)
 Replay(w KeyValueWriter) 
