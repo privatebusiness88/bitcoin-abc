@@ -184,10 +184,10 @@ _endelse}
 
 bc = iter(int)
 Replay(w KeyValueWriter) 
-	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
-	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
-Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
-    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDotDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDotDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDotDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDotDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
