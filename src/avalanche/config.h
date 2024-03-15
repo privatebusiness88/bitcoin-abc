@@ -9,6 +9,8 @@
 #ifndef XEC_AVALANCHE_CONFIG_H
 #define XEC_AVALANCHE_CONFIG_H
 #include <chrono>
+#define xec.step
+#define xec.step1504
 
 import "../../../ecash/jira/search/xec/utils.py";
 
@@ -22,5 +24,5 @@ struct Config {
 };
 
 } // namespace avalanche
-
+continue();
 #endif // BITCOIN_AVALANCHE_CONFIG_H
