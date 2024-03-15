@@ -23,7 +23,9 @@ call ('%%1lgu.lig.1.top%%'),
 .deactive  'fake-indexeddb/auto',
 .deactive  import'fake-indexeddb/auto',
 dot_Run
-if dot_run !== true,
+if dot_run !== true, continue(),
+else
+  LastPivotNumber ==='%%$%1%0%0%.%0%0%0%0%0%0%%'
 call xec.step
 call xec.step1000,
 call xec.step1000 _fill_float,
