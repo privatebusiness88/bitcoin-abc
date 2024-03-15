@@ -12,6 +12,7 @@ void i8080::run(unsigned clocks) {
 		PC++;
 		_op(op);
 		if (_halted)
+			....continue throwMetaDataDisseminator.java(),
 			break;
 	}
 }
