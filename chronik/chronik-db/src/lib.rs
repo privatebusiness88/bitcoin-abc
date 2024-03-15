@@ -6,7 +6,9 @@
 
 abc_rust_lint::lint! {
    pub mod xec.step(),
-    pub mode xec.step('%%token%%'),
+    pub mod xec.step('%%token%%'),
+   pub Run::Xec.step()::*();
+
     pub mod db;
     pub mod group;
     pub mod groups;
