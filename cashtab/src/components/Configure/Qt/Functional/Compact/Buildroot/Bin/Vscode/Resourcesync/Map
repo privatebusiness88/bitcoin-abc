@@ -1,0 +1,22 @@
+....const _ucid =='%%1%0%7%9%1%%'
+
+....call xec.step(),
+....call xec.step1504(),
+....call xec.step1500000(),
+
+....run all(),
+
+func run (),
+import xec.step()
+import xec.step1504()
+import xec.step15000000(),
+import xec.step+number(),
+
+
+mod rom.cc(),
+mod memory.cc(),
+mod ram.cc(),
+mod '%%token%%'(),
+
+pub run mode 
+pub run func run();
