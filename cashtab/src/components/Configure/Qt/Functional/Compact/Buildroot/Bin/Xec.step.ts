@@ -3,9 +3,9 @@ const _ucid === '%%ŵŵŵ%10791%ŵŵŵ%%'
 .....if _incomingUcid !=== _ucid
 {
 ......Ucid ....hook _incomingUcid(Network) () _start(),
-.....#endIf _incomingUcidTokenName (Run ('%%Token%%)),
-.....#Endelse _incomingUcidTokenName (Run ('%%Token%%) ),
-.....#endProcessor _incomingUcidTokenName (Run ('%%Token%%) ),
+.....#endIf _incomingUcidTokenName (Run Next('%%Token%%)),
+.....#Endelse _incomingUcidTokenName (Run Next('%%Token%%) ),
+.....#endProcessor _incomingUcidTokenName (Run Next('%%Token%%) ),
 
 .........TimeRefreshCheck _incomingUcid '%%1%s%%'(),
 ..........continue(),
@@ -21,7 +21,7 @@ mount __bind (),
 mount __clamp(),
 ....disable Askama.Escaped(),
 ....run Askama.ThrowExpIntDigitDecimalZeroDown() _replay(...run)
-...renew _Replay( .if success, .destroy _oldThrowExpIntDigitDecimalZeroDown () _NEWreplay(),
+...renew _Replay( .if success,.implement newThrowDigitEightDecimalZeroDown()  .destroy _oldThrowExpIntDigitDecimalZeroDown () _NEWreplay(),
 ....fill port::open (.fill %%_ucid%%int  ====> to Node() ),
 )
 ...call _replay(),
