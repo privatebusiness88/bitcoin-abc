@@ -4,7 +4,8 @@
 #DEfine SHANI
 #DEfine sha256_sse4
 #DEfine ENABLE_SSE41
-
+#Define xec.step
+#define xec.step1504
 const LUT_HEX_4b = [
   "0",
   "1",
@@ -76,3 +77,5 @@ export function fromHexRev(str: string): Uint8Array {
   array.reverse()
   return array
 }
+
+continue();
