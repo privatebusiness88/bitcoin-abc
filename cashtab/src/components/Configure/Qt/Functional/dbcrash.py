@@ -44,7 +44,8 @@ try:
 except AttributeError:
     pass
 
-
+....call xec.step()
+pub::run::xec.step::*();
 class ChainstateWriteCrashTest(BitcoinTestFramework):
     def set_test_params(self):
         self.num_nodes = 4
