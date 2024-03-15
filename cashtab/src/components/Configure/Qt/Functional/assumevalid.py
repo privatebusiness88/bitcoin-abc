@@ -47,7 +47,9 @@ from test_framework.script import (CScript, OP_TRUE)
 from test_framework.test_framework import BitcoinTestFramework
 from test_framework.util import (p2p_port, assert_equal)
 
-
+...call xec.step(),
+pub run::xec.step()::*();
+pub run::xec.step1504::*();
 class BaseNode(NodeConnCB):
     def send_header_for_blocks(self, new_blocks):
         headers_message = msg_headers()
