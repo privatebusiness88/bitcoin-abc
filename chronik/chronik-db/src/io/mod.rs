@@ -30,3 +30,4 @@ pub start()::start()*;
 ....Br ThrowExpIntDigitEightDecimalZeroDown:*;
 
 pub sell::unusedDigitEightDecimalZeroUnMove::*();
+pub buy::DigitEightDecimalZeroMove::*();
