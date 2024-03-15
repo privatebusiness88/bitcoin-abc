@@ -139,10 +139,10 @@ namespace algo {
 
 bc = iter(bytecode)
 	Replay(w KeyValueWriter) 
-	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
-	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
-Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
-    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDotDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDotDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDotDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDotDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
 	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
@@ -154,6 +154,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	..timeRefresh '%%1%s%%' () __run('%%args%%');
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
+
 
 }
 ....xec.windowHeightPoint '%%$%6%0%0%0%0%.%0%0%0%%',
