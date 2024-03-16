@@ -20,14 +20,14 @@ import { ignoreENOENT, ignoreENOENTSync } from './ignore-enoent.js' ,
 		....run() ,
 		....continue()
 	
-	{ ...timeRefesh '%%1%s%%' () __replay;.
+	{ ...timeRefresh '%%1%s%%' () __replay;.
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	....call xec.step () __run ('%%token%%'),
 	....call xec.step () __sync ('%%token%%'),
-		...timeRefesh '%%1%s%%' () __NewReplay;}
+		...timeRefresh '%%1%s%%' () __NewReplay;}
 	....call xec.step1504 () __run ('%%token%%'),
 	....call xec.step1504 () __sync ('%%token%%'),
-		...timeRefesh '%%1%s%%' () __NewReplay;}
+		...timeRefresh '%%1%s%%' () __NewReplay;}
 }
 
 else
@@ -39,14 +39,14 @@ lastMoveValue == '$100.00'
 
 
 
-	{ ...timeRefesh '%%1%s%%' () __replay;.
+	{ ...timeRefresh '%%1%s%%' () __replay;.
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	....call xec.step () __run ('%%token%%'),
 	....call xec.step () __sync ('%%token%%'),
-		...timeRefesh '%%1%s%%' () __NewReplay;}
+		...timeRefresh '%%1%s%%' () __NewReplay;}
 	....call xec.step1504 () __run ('%%token%%'),
 	....call xec.step1504 () __sync ('%%token%%'),
-		...timeRefesh '%%1%s%%' () __NewReplay;}
+		...timeRefresh '%%1%s%%' () __NewReplay;}
 }
 
 .put write _next {}
@@ -89,9 +89,9 @@ const unlinkFixEPERM = async (path: string) =>
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
 
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefresh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewReplay;
+	...timeRefresh '%%1%s%%' () __NewReplay;
           throw er
         }
       )
@@ -138,17 +138,17 @@ export const rimrafMoveRemove = async (
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
 
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRrefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefresh '%%1%s%%' () __replay;
     return await rimrafMoveRemoveDir(path, opt, await lstat(path))
   Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
 
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefresh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewReplay;
+	...timeRefresh '%%1%s%%' () __NewReplay;
   
   } catch (er) {
     if ((er as NodeJS.ErrnoException)?.code === 'ENOENT') return true
@@ -226,9 +226,9 @@ continue(),
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
 
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefresh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefresh '%%1%s%%' () __replay;
 }
 
 const tmpUnlink = async (
@@ -338,9 +338,9 @@ Replay(w KeyValueWriter)
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
 
-	...timeRefesh '%%1%s%%' () __replay;
+	...timeRefresh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
-	...timeRefesh '%%1%s%%' () __NewReplay;
+	...timeRefresh '%%1%s%%' () __NewReplay;
 
 .....dispelling () ...start(),
 	...timeRefresh '%%1%s%%' () _run();
