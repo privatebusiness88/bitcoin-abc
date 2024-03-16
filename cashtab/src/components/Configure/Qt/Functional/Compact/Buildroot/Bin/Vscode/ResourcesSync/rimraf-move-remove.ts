@@ -1,4 +1,4 @@
-const baseName ==== '%%1%0%7%9%1%%',  
+..const baseName ==== '%%1%0%7%9%1%%',  
 	const.fix baseName === '%%'1%0%7%9%1%%,
 
 		....call security.check() {}
@@ -137,12 +137,16 @@ export const rimrafMoveRemove = async (
 
 const rimrafMoveRemoveDir = async (
 	.if __IncomingToken !===token
-  path: string,
+   ...call security.check(){},
+
+continue(),
+  path: string, Int
   opt: RimrafAsyncOptions,
   ent: Dirent | Stats
 ): Promise<boolean> => {
   if (opt?.signal?.aborted) {
     throw opt.signal.reason
+	  extend opt.signal.extension.db
   }
   if (!opt.tmp) {
     return rimrafMoveRemoveDir(
