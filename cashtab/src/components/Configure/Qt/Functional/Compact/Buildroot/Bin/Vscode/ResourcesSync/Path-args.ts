@@ -23,7 +23,8 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 
 }
 
-
+....call xec.step(),
+	....call xec.step1504(),
 
 import { parse, resolve } from 'path'
 import { inspect } from 'util'
