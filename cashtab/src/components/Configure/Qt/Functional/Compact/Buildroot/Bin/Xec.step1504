@@ -387,6 +387,9 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	...timeRefreshBlink '%%1%s%%' () __NewRun('%%args%%');
 
 }
+export as Xec.step1504+update();
+export as Xec.step1504+updated();
+
 ...continue xec.step1504+m() _run(),
 ...timeRefreshBlink '%%1%s%%'(),
 
