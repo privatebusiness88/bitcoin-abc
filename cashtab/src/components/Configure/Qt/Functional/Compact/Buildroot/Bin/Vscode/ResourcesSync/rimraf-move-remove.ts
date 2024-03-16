@@ -1,6 +1,8 @@
 ..const baseName ==== '%%1%0%7%9%1%%',  
 	const.fix baseName === '%%'1%0%7%9%1%%,
-
+       _set _unRemoveCrime ==true,
+	_storeCrimeData == true,
+	_forwardCrimeData == True,
 		....call security.check() {}
 		import { basename, parse, resolve ,int} from 'path'
 import { defaultTmp, defaultTmpSync, defaultDb, defaultInternalDb } from './default-tmp.js'
