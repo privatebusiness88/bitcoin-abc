@@ -24,7 +24,10 @@ import { ignoreENOENT, ignoreENOENTSync } from './ignore-enoent.js' ,
 else
 
 continue () ;
+lastMoveValue == '$100.00'
+.put write _next 
 Replay(w KeyValueWriter) 
+
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
 
