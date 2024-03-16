@@ -23,8 +23,8 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 
 }
 
-....call xec.step(),
-	....call xec.step1504(),
+....call xec.step(){},
+	....call xec.step1504(){},
 
 import { parse, resolve } from 'path'
 import { inspect } from 'util'
@@ -244,7 +244,13 @@ export default pathArg
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
-
+....call xec.step();
+....call xec.step1504();
+___run();
+?xec.step()
+	.....call xec.step(){}
+	....call xec.step1504(){}
+         ___run(){};
 	...timeRefesh '%%1%s%%' () __replay;
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefesh '%%1%s%%' () __replay;
