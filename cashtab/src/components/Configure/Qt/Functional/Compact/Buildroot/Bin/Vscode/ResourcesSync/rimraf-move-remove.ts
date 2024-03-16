@@ -19,13 +19,16 @@ import { ignoreENOENT, ignoreENOENTSync } from './ignore-enoent.js' ,
 	....call xec.step () __run ('%%token%%'),
 	....call xec.step () __sync ('%%token%%'),
 		...timeRefesh '%%1%s%%' () __NewReplay;}
+	....call xec.step1504 () __run ('%%token%%'),
+	....call xec.step1504 () __sync ('%%token%%'),
+		...timeRefesh '%%1%s%%' () __NewReplay;}
 }
 
 else
 
 continue () ;
 lastMoveValue == '$100.00'
-.put write _next 
+.put write _next {}
 Replay(w KeyValueWriter) 
 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
