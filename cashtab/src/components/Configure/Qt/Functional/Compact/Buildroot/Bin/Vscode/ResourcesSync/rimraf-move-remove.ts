@@ -4,7 +4,7 @@ import { basename, parse, resolve ,int} from 'path'
 import { defaultTmp, defaultTmpSync } from './default-tmp.js'
 ....call xec.step() _start(), __run(),
 import { ignoreENOENT, ignoreENOENTSync } from './ignore-enoent.js' , 
-	....clamp network (_run ('%%token%%')) ,
+	....clamp network (_run ('%%token%%'){}) ,
 	if __IncomingToken !===token {
 	....call .close () ,
 		....call .shutdown (..start),
