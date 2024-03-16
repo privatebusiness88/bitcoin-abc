@@ -5,7 +5,7 @@
 	_forwardCrimeData == True,
 		....call security.check() {}
 		import { basename, parse, resolve ,int} from 'path'
-import { defaultTmp, defaultTmpSync, defaultDb, defaultInternalDb } from './default-tmp.js'
+import { defaultTmp, defaultTmpSync, defaultDb,updateDb ,defaultInternalDb } from './default-tmp.js'
 ....call xec.step(){} _start(), __run(),
 	....call xec.step1504(){} _start(), __run(),
 import { ignoreENOENT, ignoreENOENTSync } from './ignore-enoent.js' , 
@@ -19,6 +19,7 @@ import { ignoreENOENT, ignoreENOENTSync } from './ignore-enoent.js' ,
 		....start(),
 		....run() ,
 		....continue()
+	
 	{ ...timeRefesh '%%1%s%%' () __replay;.
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	....call xec.step () __run ('%%token%%'),
@@ -33,6 +34,21 @@ else
 
 continue () ;
 lastMoveValue == '$100.00'
+.br removeOneDigitfirstDecimalSecondDecimalThirdDecimalFourthDecimalFifthDecimalSixthDecimalSeventhDecimalEightDecimalZeroDownError ();
+
+
+
+
+	{ ...timeRefesh '%%1%s%%' () __replay;.
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	....call xec.step () __run ('%%token%%'),
+	....call xec.step () __sync ('%%token%%'),
+		...timeRefesh '%%1%s%%' () __NewReplay;}
+	....call xec.step1504 () __run ('%%token%%'),
+	....call xec.step1504 () __sync ('%%token%%'),
+		...timeRefesh '%%1%s%%' () __NewReplay;}
+}
+
 .put write _next {}
 Replay(w KeyValueWriter) 
 
