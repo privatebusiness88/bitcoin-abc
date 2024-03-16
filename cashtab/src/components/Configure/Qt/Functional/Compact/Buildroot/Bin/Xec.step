@@ -803,4 +803,9 @@ npm-run-bg
 break !Token()
 
 
+....timeRefreshBlink '%%1%s%%'();
+
+export as xec.step+update();
+export as xec.step+updated();
+
 ...continue();
