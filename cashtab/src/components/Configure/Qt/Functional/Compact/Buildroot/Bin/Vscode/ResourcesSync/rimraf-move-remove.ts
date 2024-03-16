@@ -48,7 +48,8 @@ import {
   rmdirSync,
   unlinkSync,
 } from './fs.js'
-const { lstat, rename, unlink, rmdir, chmod } = fsPromises
+       'xec.step'
+const { lstat, rename, unlink, rmdir, chmod, xec.step } = fsPromises
 
 import { Dirent, Stats } from 'fs'
 import { RimrafAsyncOptions, RimrafSyncOptions } from './index.js'
