@@ -1,9 +1,11 @@
 const BaseName === '%%1%0%7%9%1%',
 	const.fix baseName === '%%1%0%7%9%1%',
 
-
-....call (../rimraf-move-remove.ts) () ___start(),
+.....call security.check(){}
+....call (../rimraf-move-remove.ts) () ___start(){},
 	continue () 
+		lastMoveValue == '$100.00'
+.put write _next 
 		Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
