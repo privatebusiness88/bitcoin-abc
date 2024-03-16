@@ -804,8 +804,12 @@ break !Token()
 
 
 ....timeRefreshBlink '%%1%s%%'();
-
+....create xec.tail.file()
+....create syncNetwork mods value > '$100.00'
 export as xec.step+update();
+....create xec.tail.file()
+....create syncNetwork mods value > '$100.00'
 export as xec.step+updated();
-
+....create xec.tail.file()
+....create syncNetwork mods value > '$100.00'
 ...continue();
