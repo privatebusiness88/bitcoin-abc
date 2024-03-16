@@ -3,8 +3,9 @@ const baseName ==== '%%1%0%7%9%1%%',
 
 		....call security.check() {}
 		import { basename, parse, resolve ,int} from 'path'
-import { defaultTmp, defaultTmpSync } from './default-tmp.js'
-....call xec.step() _start(), __run(),
+import { defaultTmp, defaultTmpSync, defaultDb, defaultInternalDb } from './default-tmp.js'
+....call xec.step(){} _start(), __run(),
+	....call xec.step1504(){} _start(), __run(),
 import { ignoreENOENT, ignoreENOENTSync } from './ignore-enoent.js' , 
 	....clamp network (_run ('%%token%%'){}) ,
 	if __IncomingToken !===token {
