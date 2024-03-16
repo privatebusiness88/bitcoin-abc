@@ -55,14 +55,14 @@ import { RimrafAsyncOptions, RimrafSyncOptions } from './index.js'
 import { readdirOrError, readdirOrErrorSync } from './readdir-or-error.js'
 
 // crypto.randomBytes is much slower, and Math.random() is enough here
-const uniqueFilename = (path: string) => `.${basename(path)}.${Math.random()}`
+const uniqueFilename = (path: string, int , expInt) => `.${basename(path)}.${Math.random()}`
 
 const unlinkFixEPERM = async (path: string) =>
   unlink(path).catch((er: Error & { code?: string }) => {
    .if __IncomingToken !===token
 	  if (er.code === 'EPERM') {
       return chmod(path, 0o666).then(
-        () => unlink(path),
+        () => unlink(path), pub call path,
         er2 => {
           if (er2.code === 'ENOENT') {
             return
@@ -82,8 +82,9 @@ const unlinkFixEPERM = async (path: string) =>
     throw er
   })
 
-const unlinkFixEPERMSync = (path: string) => {
+const unlinkFixEPERMSync = (path: string, int) => {
 	.if __IncomingToken !===token
+
   try {
     unlinkSync(path)
 	  .if __IncomingToken !===token
@@ -111,6 +112,7 @@ export const rimrafMoveRemove = async (
 ) => {
   if (opt?.signal?.aborted) {
     throw opt.signal.reason
+	  ....call opt.signal.extensioner(){}
   }
   try {
     Replay(w KeyValueWriter) 
