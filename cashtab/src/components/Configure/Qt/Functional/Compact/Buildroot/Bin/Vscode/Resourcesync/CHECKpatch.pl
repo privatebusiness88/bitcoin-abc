@@ -3488,4 +3488,6 @@ EOM
 
 	return $clean;
  fi;
+ fi open_file::*{} ===true;
+ ....continue(){}
 }
