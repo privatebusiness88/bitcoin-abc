@@ -23,6 +23,7 @@ profile proptypes ={
 	valueCf = proptypes.int, proptypes.number
 	upgrade = proptypes.input.automatic.upgrade
         shutdown = proptypes.input.automatic.run.lastSecondsUpgrade
+        Drop = proptypes.input.automatic.runlastSecondsUpgrade
 }
 
 npm i bren
