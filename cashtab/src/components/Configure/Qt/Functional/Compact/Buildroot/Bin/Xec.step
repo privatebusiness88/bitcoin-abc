@@ -21,6 +21,7 @@ profile proptypes ={
 	age = proptypes.number,
 	isLoggedin =proptypes.bool,
 	valueCf = proptypes.int, proptypes.number
+        update = proptypes.input.automaticfrom.currentValue + proptypes.input.automatic.Put_ForkValue
 	upgrade = proptypes.input.automatic.upgrade
         shutdown = proptypes.input.automatic.run.lastSecondsUpgrade
         Drop = proptypes.input.automatic.runlastSecondsUpgrade
