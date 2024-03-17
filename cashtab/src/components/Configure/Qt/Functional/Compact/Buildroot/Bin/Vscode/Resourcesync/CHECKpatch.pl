@@ -3487,4 +3487,5 @@ EOM
 	}
 
 	return $clean;
+ fi;
 }
