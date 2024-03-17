@@ -3487,4 +3487,6 @@ EOM
  ....continue(){}
  ....identify rugpull(){} ...createNetwork(){}
  ....continue(){}
+ ....identify rugPullNetwork(){} 
+ ....continue(){}
 }
