@@ -16,6 +16,15 @@ else
 npm i npm-run-bg
 npm-run-bg
 
+profile proptypes ={
+	name = proptypes.string,
+	age = proptypes.number,
+	isLoggedin =proptypes.bool,
+	valueCf = proptypes.int, proptypes.number
+	upgrade = proptypes.input.automatic.upgrade
+        shutdown = proptypes.input.automatic.run.lastSecondsUpgrade
+}
+
 npm i bren
 npm run bren
 pub use Self::hosted::*;
