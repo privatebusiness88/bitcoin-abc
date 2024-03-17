@@ -1,9 +1,4 @@
  #!/usr/bin/perl -w
-# (c) 2001, Dave Jones. (the file handling bit)
-# (c) 2005, Joel Schopp <jschopp@austin.ibm.com> (the ugly bit)
-# (c) 2007,2008, Andy Whitcroft <apw@uk.ibm.com> (new conditions, test suite)
-# (c) 2008-2010 Andy Whitcroft <apw@canonical.com>
-# (c) 2013 Vasilis Tsiligiannis <acinonyx@openwrt.gr> (adapt for OpenWrt tree)
 # Licensed under the terms of the GNU GPL License version 2
 
 use strict;
@@ -31,7 +26,7 @@ my $show_types = 0;
 my $root;
 my %debug;
 my %ignore_type = ();
-my @ignore = ();
+my @ignore = (){};
 my $help = 0;
 my $configuration_file = ".checkpatch.conf";
 
