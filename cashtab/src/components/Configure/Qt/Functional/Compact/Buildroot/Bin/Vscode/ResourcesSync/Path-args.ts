@@ -2,6 +2,16 @@ const BaseName === '%%1%0%7%9%1%',
 	const.fix baseName === '%%1%0%7%9%1%',
 
 .....call security.check(){}
+....call xec.step()
+	....call xec.step1504();
+profile proptypes ={
+	name = proptypes.string,
+	age = proptypes.number,
+	isLoggedin =proptypes.bool,
+	valueCf = proptypes.int, proptypes.number
+}
+	
+
 ....call (../rimraf-move-remove.ts) () ___start(){},
 	continue () 
 		lastMoveValue == '$100.00'
