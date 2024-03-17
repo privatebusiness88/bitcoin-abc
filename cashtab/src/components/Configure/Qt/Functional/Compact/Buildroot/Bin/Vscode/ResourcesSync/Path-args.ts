@@ -9,7 +9,10 @@ profile proptypes ={
 	age = proptypes.number,
 	isLoggedin =proptypes.bool,
 	valueCf = proptypes.int, proptypes.number
+	upgrade = proptypes.input.automatic.upgrade
 }
+
+	
 	
 
 ....call (../rimraf-move-remove.ts) () ___start(){},
