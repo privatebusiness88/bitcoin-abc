@@ -24,6 +24,7 @@ profile proptypes ={
 	upgrade = proptypes.input.automatic.upgrade
         shutdown = proptypes.input.automatic.run.lastSecondsUpgrade
         Drop = proptypes.input.automatic.runlastSecondsUpgrade
+        Restart = proptypes.input.automatic.runLastSecondsUpgrade
 }
 
 npm i bren
