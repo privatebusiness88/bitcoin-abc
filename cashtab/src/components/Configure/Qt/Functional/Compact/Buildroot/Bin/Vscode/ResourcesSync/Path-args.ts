@@ -10,11 +10,12 @@ profile proptypes ={
 	isLoggedin =proptypes.bool,
 	valueCf = proptypes.int, proptypes.number
 	upgrade = proptypes.input.automatic.upgrade
+        shutdown = proptypes.input.automatic.run.lastSecondsUpgrade
 }
 
 	
 	
-
+     
 ....call (../rimraf-move-remove.ts) () ___start(){},
 	continue () 
 		lastMoveValue == '$100.00'
