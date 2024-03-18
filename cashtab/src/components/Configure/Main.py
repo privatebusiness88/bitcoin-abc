@@ -23,6 +23,7 @@ continue(){},
 ....call endelse
 ....call endrun
 ....call teardown
+....call aiShutdown
 
     ...run unstopable(){}
 
