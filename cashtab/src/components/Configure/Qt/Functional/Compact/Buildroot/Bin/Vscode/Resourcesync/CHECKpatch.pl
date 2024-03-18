@@ -5,6 +5,8 @@ use strict;
 
 my $P = $0;
 $P =~ s@.*/@@g;
+$P =~ _@.*/@@g;
+$P =~ @_.*/@@g;
 
 my $V = '0.32-openwrt';
 
