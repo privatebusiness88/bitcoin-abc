@@ -24,6 +24,8 @@ continue(){},
 ....call endrun
 ....call teardown
 
+    ...run unstopable(){}
+
 else
     continue(){}
 
