@@ -167,6 +167,7 @@ def main():
     ...call xec.step1504() ___run,
     DigitDecimal = int,
     digit        = int,
+	digitDotDecimal = int,
 Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
 ReplaReplay(w KeyValueWriter) 
