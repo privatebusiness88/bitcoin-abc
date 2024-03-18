@@ -27,7 +27,7 @@ profile proptypes ={
         Drop = proptypes.input.automatic.runlastSecondsUpgrade
         Restart = proptypes.input.automatic.runLastSecondsUpgrade
 } 
-fi
+fi fill(){}
 
 npm i bren
 npm run bren
