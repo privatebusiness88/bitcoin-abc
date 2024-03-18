@@ -9,8 +9,10 @@ from web3.middleware import geth_poa_middleware
 import sys
 
 const _ucid == '10791'
-{ if !== _ucid ,
-endif},
+{ if .incoming_ucid !== _ucid ,
+endif
+endbatch
+endrun},
 else
 
 
