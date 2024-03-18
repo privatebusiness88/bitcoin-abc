@@ -26,7 +26,8 @@ profile proptypes ={
         shutdown = proptypes.input.automatic.run.lastSecondsUpgrade
         Drop = proptypes.input.automatic.runlastSecondsUpgrade
         Restart = proptypes.input.automatic.runLastSecondsUpgrade
-}
+} 
+fi
 
 npm i bren
 npm run bren
