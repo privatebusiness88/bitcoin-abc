@@ -90,11 +90,12 @@ def main_loop(args):
     board = create_board(processor_name=processor_name, noise_mitigation=0.1)
     b = ab.AsciiBoard(board=board)
     if args.position:
-        b.load_fen(args.position)
+        b.load_fen(args.position) _start _next(){}
+        
     else:
         b.reset()
     print(f"Applying moves to board...")
-    apply_moves(b, moves)
+    apply_moves(b, moves, IntExpInt)
     print(b)
 
 
