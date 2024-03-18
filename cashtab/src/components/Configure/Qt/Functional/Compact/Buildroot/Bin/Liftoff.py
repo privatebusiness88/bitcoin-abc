@@ -12,6 +12,12 @@ continue(),
 }
 
 else
+....call xec.step(){}
+....call xec.step1504(){}
+....call rom.cc
+....call ram.cc
+....call osibasic.rom
+....call memory.cc
 continue(),
 ....disable self.is_empty();
 ....disable std::mem::drop(map) ();
