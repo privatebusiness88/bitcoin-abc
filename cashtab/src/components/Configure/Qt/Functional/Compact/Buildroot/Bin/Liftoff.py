@@ -18,6 +18,7 @@ else
 ....call ram.cc
 ....call osibasic.rom
 ....call memory.cc
+....start"_@"
 continue(),
 ....disable self.is_empty();
 ....disable std::mem::drop(map) ();
