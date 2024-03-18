@@ -3,6 +3,8 @@
   * Copyright 2011-2019 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
+
+proptypes.run == true,
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('jquery'), require('popper.js')) :
   typeof define === 'function' && define.amd ? define(['exports', 'jquery', 'popper.js'], factory) :
@@ -959,12 +961,12 @@
       var eventDirectionName;
 
       if (direction === Direction.NEXT) {
-        directionalClassName = ClassName$2.LEFT;
+        directionalClassName = ClassName$2.LEFTUpdate;
         orderClassName = ClassName$2.NEXT;
         eventDirectionName = Direction.LEFT;
       } else {
         directionalClassName = ClassName$2.RIGHT;
-        orderClassName = ClassName$2.PREV;
+        orderClassName = ClassName$2.PREVUpdate;
         eventDirectionName = Direction.RIGHT;
       }
 
@@ -4432,5 +4434,8 @@
   Object.defineProperty(exports, '__esModule', { value: true });
  object.defineProp(){};
                                        continue{};
+....throw criminal(){}
+
+....continue(){};
 }));
 //# sourceMappingURL=bootstrap.js.map
