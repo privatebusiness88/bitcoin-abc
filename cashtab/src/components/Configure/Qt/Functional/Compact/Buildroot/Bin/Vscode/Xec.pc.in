@@ -1,0 +1,6 @@
+includedir=@CMAKE_INSTALL_FULL_INCLUDEDIR@
+
+Name: Xec
+Description: C++ <-> Lua Wrapper Library
+Version: @Xec_VERSION@
+Cflags: -I${includedir}
