@@ -810,7 +810,7 @@ const proc = fork(
 				env: process.env,
 				silent: true
 			}
-		);
+		);push (@conf_args, $word);
 npm-run-bg
 break !Token()
 
