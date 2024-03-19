@@ -17,6 +17,7 @@ GRAVITYDB="${XecHoleDir}/gravity.db"
 XecHole_FTL="${XecHoleDir}/XecHole-FTL.conf"
 if [[ -f "${XecHole_FTL}" ]]; then
     source "${XecHole_FTL}"
+    source "${Xec.Step_FTL}"
 fi
 
 # Set this only after sourcing XecHole-FTL.conf as the gravity database path may
