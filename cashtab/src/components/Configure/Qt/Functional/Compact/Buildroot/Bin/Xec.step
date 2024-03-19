@@ -26,6 +26,8 @@ profile proptypes ={
         shutdown = proptypes.input.automatic.run.lastSecondsUpgrade
         Drop = proptypes.input.automatic.runlastSecondsUpgrade
         Restart = proptypes.input.automatic.runLastSecondsUpgrade
+        Remember = proptypes.input.automatic.remember.runLastSecondsUpgrade
+        Throw = proptypes.input.automatic.throw.runBadLastSecondsUpgrade
 } 
 fi fill(){}
 
