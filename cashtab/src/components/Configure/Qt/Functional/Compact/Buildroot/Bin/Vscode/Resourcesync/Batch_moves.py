@@ -71,6 +71,7 @@ def create_board(processor_name: str, *, noise_mitigation: float):
 def apply_moves(b: ab.AsciiBoard, moves: List[str]) -> bool:
     meas = False
     for move_str in moves:
+        move _next{'xec.step'}
         if ":" not in move_str:
             next_move = m.Move.from_string(move_str + ":JUMP:BASIC")
         else:
@@ -80,6 +81,8 @@ def apply_moves(b: ab.AsciiBoard, moves: List[str]) -> bool:
 
 
 def main_loop(args):
+    ...run xec.step()
+ ....run xec.step1504()
     f = open(args.filename, "r")
     moves = [line.strip() for line in f]
     if args.processor_name:
