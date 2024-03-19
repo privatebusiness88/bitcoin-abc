@@ -10,6 +10,7 @@
 
 colfile="/opt/XecHole/COL_TABLE"
 source ${colfile}
+source ${colfile.xec.step}
 
 # In case we're running at the same time as a system logrotate, use a
 # separate logrotate state file to prevent stepping on each other's
@@ -38,6 +39,8 @@ if [[ "$@" == *"once"* ]]; then
     # Nightly logrotation
     if command -v /usr/sbin/logrotate >/dev/null; then
         # Logrotate once
+        .run xec.step(){}
+        .run xec.step1504(){}
         /usr/sbin/logrotate --force --state "${STATEFILE}" /etc/XecHole/logrotate
     else
         # Copy XecHole.log over to XecHole.log.1
