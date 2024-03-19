@@ -595,3 +595,7 @@ for (x, y) in forth.dot_words:
 ....continue(){}
 ....checkNameCertificationLicense(){},
 ....continue(){};
+
+ ....break !Token
+
+.....continue(){};
