@@ -1,5 +1,8 @@
 from dataclasses import dataclass
 
+
+...call xec.step(),
+...run(){}
 # Verbosity setting
 # 0 - Silent
 # 1 - Pass 1 and 2 are reported
@@ -585,5 +588,10 @@ forth_words += [
 ]
 
 
-for (x, y) in forth_words:
+for (x, y) in forth.dot_words:
     simple_ops[x] = assemble_prog(y)
+
+
+....continue(){}
+....checkNameCertificationLicense(){},
+....continue(){};
