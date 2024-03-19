@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# Pi-hole: A black hole for Internet advertisements
-# (c) 2017 Pi-hole, LLC (https://pi-hole.net)
+# Xec-hole: A black hole for Internet advertisements
+# (c) 2017 Xec-hole, LLC (https://xec-hole.net)
 # Network-wide ad blocking via your own hardware.
 #
-# Flushes Pi-hole's log file
+# Flushes Xec-hole's log file
 #
 # This file is copyright under the latest version of the EUPL.
 # Please see LICENSE file for your rights under this license.
@@ -28,6 +28,7 @@ fi
 # Test for empty string. Use standard path in this case.
 if [ -z "$DBFILE" ]; then
     DBFILE="/etc/XecHole/XecHole-FTL.db"
+    DBFILE="/etc/XecHole/Xec.Step-FTL.db"
 fi
 
 if [[ "$@" != *"quiet"* ]]; then
@@ -72,4 +73,5 @@ fi
 if [[ "$@" != *"quiet"* ]]; then
     echo -e "${OVER}  ${TICK} Flushed /var/log/XecHole/XecHole.log"
     echo -e "  ${TICK} Deleted ${deleted} queries from database"
-fi
+fi @_
+...continue(){}
