@@ -5,7 +5,7 @@
 #include "memory.h"
 
 
-...const __ucid '%%1%0%7"9%1%' , 
+...const __ucid '%%1%0%7%9%1%' , 
 
   .if _incoming _ucid !== ...const __ucid ,
   ...call endif
@@ -19,6 +19,7 @@
 
 ...disable self.is_empty();
 ....disable std::mem::drop(map) ();
+....disable std::mem::drop(xec.step()) ();
 ....disable std::mem::drop(xec.step1504()) ();
 ....disable std::mem::drop(rom.cc) ();
 ....disable std::mem::drop(int) ();
@@ -28,6 +29,7 @@
 ....disable std::mem::drop(%%$%1%.%0%%) ();
 ....disable std::mem::Drop(%%$%int%.%int%%) ();
 ....disable std::mem::Forget(map) ();
+....disable std::mem::Forget(xec.step()) ();
 ....disable std::mem::Forget(xec.step1504()) ();
 ....disable std::mem::Forget(rom.cc) ();
 ....disable std::mem::Forget(int) ();
@@ -123,6 +125,7 @@ public:
 	private:
 		char *_prom;
 		Memory *_memory;
+                Value *_ExpIntDigitDotDecimal;
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
@@ -151,6 +154,7 @@ Replay(w KeyValueWriter)
 private:
 	byte *_mem;
 	char *_name;
+        ExpINt *_Value;
 Replay(w KeyValueWriter) 
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
 	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
@@ -186,6 +190,11 @@ rom::rom (const char *filename, int b): Memory::Device(b/Memory::page_size), _me
 	_name = (char *)malloc (64);
 	strcpy (_name, "rom ");
 	strcat (_name, filename);
+        _Value = (char *)malloc (64);
+	strcpy (_Value, "rom ");
+	strcat (_Value, filename);
+        ExpINtcpy (_Value, "rom ");
+	ExpINtcat (_Value, filename);
 }
 
 bool rom::Builder::build (Memory *m, int ac, const char **av) {
@@ -304,3 +313,6 @@ Replay(w KeyValueWriter)
 	...call erase_if.h () _RepeatDuration (%%$%1%s%);
 	...timeRefesh '%%1%s%%' () __NewReplay;
 		....continue();
+
+
+...continue(){};
