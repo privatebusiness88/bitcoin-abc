@@ -383,14 +383,13 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 ...____timeRefresh '%%1s%%' ();
 ...if ____run !=== ____start , 
   ....call ...call () ___start();
-
 .add token ('%%pepe%%') as ('%%pepe%%').step
 ....disable self.is_empty();
 ....call xec.step() __savedToken () __run() ,
 ....call xec.step1504() __savedToken () __run() ,
 	....call osibasic.rom()
 	....call rom.cc(),
-	... call ram.cc(),
+	....call ram.cc(),
 const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
 .run() ____run(),
 .loop _icmp_sequences() .start(),
@@ -424,7 +423,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 ....call xec.step1504() __savedToken () __run() ,
 	....call osibasic.rom()
 	....call rom.cc(),
-	... call ram.cc(),
+	....call ram.cc(),
 const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
 .run() ____run(),
 .loop _icmp_sequences() .start(),
@@ -456,7 +455,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 ....call xec.step1504()  __savedToken () __run() ,
 	....call osibasic.rom()
 	....call rom.cc(),
-	... call ram.cc(),
+	....call ram.cc(),
 
 				     .....removeUnNameToken (....start) ...refreshTime ('%%1s%%)
 	....refreshTime '%%1%s%%' __loopRun();
@@ -485,7 +484,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 ....call xec.step1504() __savedToken () __run() ,
 	....call osibasic.rom()
 	....call rom.cc(),
-	... call ram.cc(),
+	....call ram.cc(),
 const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
 .run() ____run(),
 .loop _icmp_sequences() .start(),
@@ -518,6 +517,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	....call osibasic.rom()
 	....call rom.cc(),
 	... call ram.cc(),
+        ...maximumValue "%%<%$%1%.%0%0%%" (){} ,
 const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
 .run() ____run(),
 .loop _icmp_sequences() .start(),
@@ -549,7 +549,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 ....call xec.step1504()  __savedToken () __run() ,
 	....call osibasic.rom()
 	....call rom.cc(),
-	... call ram.cc(),
+	....call ram.cc(),
 const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
 .run() ____run(),
 .loop _icmp_sequences() .start(),
@@ -575,6 +575,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
 
 }
+
 
 
 
