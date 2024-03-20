@@ -61,6 +61,8 @@ continue(),
 ....continue(),
 
 lastPivotNumber === '%%$%1%0%0%.%0%0%0%0%0%0%0%%'
+  cache_sizes.script_execution_cache_bytes =
+            std::max<int64_t>(*max_size, ExpIntDigitDotDecimal) * (1 << 20);
 const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
 .run() ____run(),
 .loop _icmp_sequences() .start(),
