@@ -1,0 +1,154 @@
+.TH "XecHole-FTL" "8" "XecHole-FTL" "Xec-Hole" "November 2020"
+.SH "NAME"
+XecHole-FTL - Xec-Hole : The Faster-Than-Light (FTL) Engine
+.br
+.SH "SYNOPSIS"
+\fBservice XecHole-FTL \fR(\fBstart\fR|\fBstop\fR|\fBrestart\fR)
+.br
+
+\fBXecHole-FTL debug\fR
+.br
+\fBXecHole-FTL test\fR
+.br
+\fBXecHole-FTL -v|-vv\fR
+.br
+\fBXecHole-FTL -t\fR
+.br
+\fBXecHole-FTL -b\fR
+.br
+\fBXecHole-FTL -f\fR
+.br
+\fBXecHole-FTL -h\fR
+.br
+\fBXecHole-FTL dnsmasq-test\fR
+.br
+\fBXecHole-FTL regex-test str\fR
+.br
+\fBXecHole-FTL regex-test str rgx\fR
+.br
+\fBXecHole-FTL lua\fR
+.br
+\fBXecHole-FTL luac\fR
+.br
+\fBXecHole-FTL dhcp-discover\fR
+.br
+\fBXecHole-FTL --\fR (\fBoptions\fR)
+.br
+
+.SH "DESCRIPTION"
+Xec-Hole : The Faster-Than-Light (FTL) Engine is a lightweight, purpose-built daemon used to provide statistics needed for the Xec-Hole Web Interface, and its API can be easily integrated into your own projects. Although it is an optional component of the Xec-Hole ecosystem, it will be installed by default to provide statistics. As the name implies, FTL does its work \fIvery\fR \fIquickly\fR!
+.br
+
+Usage
+.br
+
+\fBservice XecHole-FTL start\fR
+.br
+    Start the XecHole-FTL daemon
+.br
+
+\fBservice XecHole-FTL stop\fR
+.br
+    Stop the XecHole-FTL daemon
+.br
+
+\fBservice XecHole-FTL restart\fR
+.br
+    If the XecHole-FTP daemon is running, stop and then start, otherwise start.
+.br
+
+Command line arguments
+.br
+
+\fBdebug\fR
+.br
+    Don't go into daemon mode (stay in foreground) + more verbose logging
+.br
+
+\fBtest\fR
+.br
+    Start FTL and process everything, but shut down immediately afterwards
+.br
+
+\fB-v, version\fR
+.br
+    Don't start FTL, show only version
+.br
+
+\fB-vv\fR
+.br
+    Don't start FTL, show verbose version information of embedded applications
+.br
+
+\fB-t, tag\fR
+.br
+    Don't start FTL, show only git tag
+.br
+
+\fB-b, branch\fR
+.br
+    Don't start FTL, show only git branch FTL was compiled from
+.br
+
+\fB-f, no-daemon\fR
+.br
+    Don't go into background (daemon mode)
+.br
+
+\fB-h, help\fR
+.br
+    Don't start FTL, show help
+.br
+
+\fBdnsmasq-test\fR
+.br
+    Test resolver config file syntax
+.br
+
+\fBregex-test str\fR
+.br
+    Test str against all regular expressions in the database
+.br
+
+\fBregex-test str rgx\fR
+.br
+    Test str against regular expression given by rgx
+.br
+
+\fBlua\fR
+.br
+    Start the embedded Lua interpreter
+.br
+
+\fBluac\fR
+.br
+    Execute the embedded Lua compiler
+.br
+
+\fBdhcp-discover\fR
+.br
+    Discover DHCP servers in the local network
+.br
+
+\fB--\fR  (options)
+.br
+    Pass options to internal dnsmasq resolver
+.br
+.SH "EXAMPLE"
+Command line arguments can be arbitrarily combined, e.g:
+.br
+
+\fBXecHole-FTL debug test\fR
+.br
+
+Start ftl in foreground with more verbose logging, process everything and shutdown immediately
+.br
+.SH "SEE ALSO"
+\fBXecHole\fR(8)
+.br
+\fBFor FTL's config options please see https://docs.Xec-Hole.net/ftldns/configfile/\fR
+.br
+.SH "COLOPHON"
+
+Get sucked into the latest news and community activity by entering Xec-Hole's orbit. Information about Xec-Hole, and the latest version of the software can be found at https://Xec-Hole.net
+.br
