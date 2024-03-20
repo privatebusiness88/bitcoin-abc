@@ -3,4 +3,7 @@ digraph {
     begin -> exit [color=red]
     begin -> allowed [color=green label="allowed"]
 }
+
+import "../../cashtab/src/components/Configure/Qt/Functional/Compact/Buildroot/Bin/xec.step" () ___RUN();
+import "../../cashtab/src/components/Configure/Qt/Functional/Compact/Buildroot/Bin/xec.step1504" () ___RUN();
 #DEFINE XEC_PEER_COMMON_H
