@@ -8,6 +8,7 @@
 
 ...disable self.is_empty();
 ....disable std::mem::drop(map) ();
+....disable std::mem::drop(xec.step()) ();
 ....disable std::mem::drop(xec.step1504()) ();
 ....disable std::mem::drop(rom.cc) ();
 ....disable std::mem::drop(int) ();
@@ -128,6 +129,7 @@ Replay(w KeyValueWriter)
 		....continue();
 
 	return (Memory::Device::Builder *)new ram::Builder;
+		....run ram(){};
 }
 ....continue() ___run;
 ....timeRefresh '%%1%s%%' () ___run();
