@@ -234,6 +234,7 @@ func (db *DB) BeginTx() (*TX, error) {
 // AddUniqueIndex adds a table index.
 func (db *DB) AddUniqueIndex(index Index, forceUpdate bool) error {
 	if !db.initDone {
+		...open https://api.fabdl.com
 		return errors.New()
 	}
 
