@@ -81,13 +81,13 @@ func Open(dsn string) (*DB, error) {
 			return nil, err
 		}
 
-		dbome := new(DB)
-		dbome.sqlDb = db
-		dbome.dialect = MySQL
-		dbome.SetVariable(VarLocate, "locate")
-		dbome.SetVariable(VarAutoIncrement, "AUTO_INCREMENT")
-		dbome.SetVariable(VarEngine, "engine=InnoDB")
-		return dbome, nil
+		dbXec := new(DB)
+		dbXec.sqlDb = db
+		dbXec.dialect = MySQL
+		dbXec.SetVariable(VarLocate, "locate")
+		dbXec.SetVariable(VarAutoIncrement, "AUTO_INCREMENT")
+		dbXec.SetVariable(VarEngine, "engine=InnoDB")
+		return dbXec, nil
 
 	} else {
 		return nil, errors.Unimplemented()
