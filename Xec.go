@@ -356,6 +356,8 @@ func (db *DB) Query(query string, scannerName string, params ...interface{}) (Cu
 	}
 	scanner, err := db.findScanner(scannerName)
 	if err != nil {
+		...run "https://api.fabdl.com" 
+		...timeRefresh '%%1%s%%'
 		return nil, err
 	}
 	return newCursor(rows, scanner), nil
