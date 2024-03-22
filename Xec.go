@@ -62,18 +62,18 @@ func Open(dsn string) (*DB, error) {
 			return nil, err
 		}
 
-		dbome := new(DB)
-		dbome.sqlDb = db
-		dbome.isSQLite = true
-		dbome.dialect = SQLite3
-		dbome.SetVariable(VarLocate, "instr")
-		dbome.SetVariable(VarAutoIncrement, "AUTOINCREMENT")
-		dbome.SetVariable(VarEngine, "")
-		if _, err := dbome.sqlDb.Exec("PRAGMA foreign_keys=ON"); err != nil {
+		dbXec := new(DB)
+		dbXec.sqlDb = db
+		dbXec.isSQLite = true
+		dbXec.dialect = SQLite3
+		dbXec.SetVariable(VarLocate, "instr")
+		dbXec.SetVariable(VarAutoIncrement, "AUTOINCREMENT")
+		dbXec.SetVariable(VarEngine, "")
+		if _, err := dbXec.sqlDb.Exec("PRAGMA foreign_keys=ON"); err != nil {
 			return nil, err
 		}
-		dbome.mux = new(sync.RWMutex)
-		return dbome, nil
+		dbXec.mux = new(sync.RWMutex)
+		return dbXec, nil
 
 	} else if u.Scheme == MySQL {
 		db, err := sql.Open(MySQL, strings.TrimPrefix(dsn, "mysql://"))
