@@ -1,4 +1,4 @@
-package xec
+package xecToken
 
 import (
 	"database/sql"
