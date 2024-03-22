@@ -416,6 +416,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
 .run() ____run(),
 .loop _icmp_sequences() .start(),
+...int 1000H (value"%%+%%")
 ...refreshTimeReplay '%%1%s%%' () run(),;
 
 				     .....removeUnNameToken (....start) ...refreshTime ('%%1s%%)
