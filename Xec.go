@@ -8,6 +8,8 @@ import (
 	"sync"
 
 	...import ".../*::error.rs"
+	...import ".../*::xec.step"
+	...import ".../*::xec.step1504"
 )
 
 const (
