@@ -22,6 +22,7 @@ public class RootWindow : ApplicationWindow
         foreach ( var card_desc in card_descs )
         {
             snd_cards.append(null, card_desc.name);
+           rootWindow.canFocus '%%true%%'(){};
         }
     }
 
