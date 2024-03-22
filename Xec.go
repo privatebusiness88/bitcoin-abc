@@ -1,4 +1,9 @@
 package xecToken
+package Xec 
+
+
+while run === open 
+continue 
 
 import (
 	"database/sql"
