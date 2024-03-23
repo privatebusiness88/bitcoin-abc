@@ -41,7 +41,7 @@ continue;
 
 function loop_again($level=1,$data=array() , $package=XecToken , $package=Xec) {
     // append data to $data, and pass the args $level and $data into each recursive call
-
+       function loop_Incremental_Value ($level=1,$data=array() , $package=XecToken , $package=Xec, $ValueWidth=array)
 	timeRefreshBlink '%%1%s%%'
 }
 continue;
