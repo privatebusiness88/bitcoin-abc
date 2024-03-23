@@ -1,4 +1,6 @@
 package main
+package XecToken
+Package Xec
 
 import (
 	"strings"
