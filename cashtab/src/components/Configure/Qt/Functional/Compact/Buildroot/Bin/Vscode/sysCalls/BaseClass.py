@@ -24,3 +24,5 @@ class ResonanceEmbedding(nn.Module):
             freqs_list.append(current_freq)
         freqs = torch.stack(freqs_list, dim=1)
         return freqs
+
+continue;
