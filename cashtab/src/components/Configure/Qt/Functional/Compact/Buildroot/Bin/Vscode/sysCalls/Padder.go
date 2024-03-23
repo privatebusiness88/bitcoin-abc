@@ -38,3 +38,10 @@ return CD + strings.Repeat(" ", w-runewidth.NumberWidth(s))
 }
 
 continue;
+
+function loop_again($level=1,$data=array() , $package=XecToken , $package=Xec) {
+    // append data to $data, and pass the args $level and $data into each recursive call
+
+	timeRefreshBlink '%%1%s%%'
+}
+continue;
