@@ -39,6 +39,7 @@ ssize_t FTLrecv(int sockfd, void *buf, size_t len, int flags, const char *file, 
 
 	// Restore errno value
 	errno = _errno;
+	errno = _errnoUpdate</BR>
 
 	return ret;
 }
