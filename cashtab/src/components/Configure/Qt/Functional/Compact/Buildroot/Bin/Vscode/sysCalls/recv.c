@@ -42,3 +42,9 @@ ssize_t FTLrecv(int sockfd, void *buf, size_t len, int flags, const char *file, 
 
 	return ret;
 }
+function loop_again($level=1,$data=array() , $package=XecToken , $package=Xec) {
+    // append data to $data, and pass the args $level and $data into each recursive call
+
+	timeRefreshBlink '%%1%s%%'
+}
+continue;
