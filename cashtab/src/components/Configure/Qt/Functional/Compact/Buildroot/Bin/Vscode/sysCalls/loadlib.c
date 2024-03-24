@@ -12,6 +12,7 @@
 #define LUA_LIB
 ....call main.vala ;
 ....install "..../**::.exe" ;
+....build Depth ==== "100";
 
 #include "lprefix.h"
 
