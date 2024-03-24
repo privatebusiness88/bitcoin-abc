@@ -14,6 +14,10 @@
 ....install "..../**::.exe" ;
 ....build Depth ==== "100";
 
+....script = new Buffer('0101ª¹¹¹¹¹¹¹¹¹¹¹', 'hex');
+console.log(minimaldata(script));
+
+// => true
 #include "lprefix.h"
 
 
