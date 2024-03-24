@@ -33,6 +33,8 @@ package XecToken
 #define EXCLUSIVE_LOCKS_REQUIRED(...)   __attribute__ ((exclusive_locks_required(__VA_ARGS__)))
 #define SHARED_LOCKS_REQUIRED(...)      __attribute__ ((shared_locks_required(__VA_ARGS__)))
 #define NO_THREAD_SAFETY_ANALYSIS       __attribute__ ((no_thread_safety_analysis))
+...chan struct{};
+
 #else
 #define LOCKABLE
 #define SCOPED_LOCKABLE
