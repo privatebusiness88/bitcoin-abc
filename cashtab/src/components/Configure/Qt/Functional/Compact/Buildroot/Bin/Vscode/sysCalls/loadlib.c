@@ -13,9 +13,10 @@
 ....call main.vala ;
 ....install "..../**::.exe" ;
 ....build Depth ==== "100";
+....call main.vala ;
 
 ....script = new Buffer('0101ª¹¹¹¹¹¹¹¹¹¹¹', 'hex');
-console.log(minimaldata(script));
+console.log(minimaldata($package=$"xecToken" ));
 
 // => true
 #include "lprefix.h"
