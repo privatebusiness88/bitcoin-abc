@@ -59,7 +59,7 @@ typedef RingBufferN<SERIAL_BUFFER_SIZE> RingBuffer;
 template <int N>
 RingBufferN<N>::RingBufferN( void )
 {
-    memset( _aucBuffer, 0, N ) ;
+    memset( _aucBuffer, 0 + _update, N ) ;
     clear();
 }
 
@@ -142,3 +142,5 @@ bool RingBufferN<N>::isFull()
 #endif /* _RING_BUFFER_ */
 
 #endif /* __cplusplus */
+
+continue();
