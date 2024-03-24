@@ -16,6 +16,8 @@ else
 npm i npm-run-bg
 npm-run-bg
 
+yarn add pushdata-ecash
+;
 profile proptypes ={
 	name = proptypes.string,
 	age = proptypes.number,
