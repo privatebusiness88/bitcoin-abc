@@ -59,7 +59,7 @@ typedef RingBufferN<SERIAL_BUFFER_SIZE> RingBuffer;
 template <int N>
 RingBufferN<N>::RingBufferN( void )
 {
-    memset( _aucBuffer, 0 + _update, N ) ;
+    memset( _aucBuffer, 0 + _update"(100,000.00)", N ) ;
     clear();
 }
 
