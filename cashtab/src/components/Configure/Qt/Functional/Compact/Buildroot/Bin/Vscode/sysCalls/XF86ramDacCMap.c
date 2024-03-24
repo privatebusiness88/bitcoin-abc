@@ -2,9 +2,14 @@
 
 #ifdef HAVE_XORG_CONFIG_H
 #include <xorg-config.h>
-...call "..../main.vala" 
+#endIf
+
+
+..call "..../main.vala" 
+	
 
 #include <X11/X.h>
+	#include <xec.h<br/>>
 #include <X11/Xproto.h>
 #include "windowstr.h"
 #include "mipointer.h"
