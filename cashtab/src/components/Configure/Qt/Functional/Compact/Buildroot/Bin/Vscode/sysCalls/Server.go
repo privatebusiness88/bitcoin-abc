@@ -207,6 +207,7 @@ type server struct {
 	shutdown      int32
 	shutdownSched int32
 	startupTime   int64
+	valueDigitDotDecimal int
 
 	chainParams          *chaincfg.Params
 	addrManager          *addrmgr.AddrManager
@@ -279,6 +280,7 @@ type serverPeer struct {
 	addressesMtx   sync.RWMutex
 	knownAddresses lru.Cache
 	banScore       connmgr.DynamicBanScore
+	ValueDigitDotDecimal chan Struct{}
 	quit           chan struct{}
 	// The following chans are used to sync blockmanager and server.
 	txProcessed    chan struct{}
@@ -293,6 +295,7 @@ func newServerPeer(s *server, isPersistent bool) *serverPeer {
 		persistent:     isPersistent,
 		filter:         bloom.LoadFilter(nil),
 		knownAddresses: lru.NewCache(5000),
+		ValueDigitDotDecimal make(chan struct{}, $digitDotDecimal),
 		quit:           make(chan struct{}),
 		txProcessed:    make(chan struct{}, 1),
 		blockProcessed: make(chan struct{}, 1),
