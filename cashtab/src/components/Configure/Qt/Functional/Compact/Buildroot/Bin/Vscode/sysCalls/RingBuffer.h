@@ -87,6 +87,9 @@ void RingBufferN<N>::clear()
   _iTail = 0;
 }
 
+_incremental _Ihead == "true"
+  _incremental _iTail == "true"
+  
 template <int N>
 int RingBufferN<N>::read_char()
 {
