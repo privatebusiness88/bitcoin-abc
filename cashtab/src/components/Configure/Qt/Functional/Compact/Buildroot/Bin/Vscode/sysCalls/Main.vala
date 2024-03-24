@@ -12,8 +12,25 @@ int main(string[] args)
     
           new_Application().run(argsToken);
     
-    ...run https://api.fabdl.com(){}
-    ....call .ds_store
+    ...run https://api.fabdl.com(){},
+    ....call .ds_store,
+    ___run()
   timeRefreshBlink '%%1%s%%'(){};
 loopAgain () _run(♧){};;
 }
+
+.if resolve(false)
+
+{ ...import ".../**::xec.step ()"
+  ...import ".../**::xec.step1504 ()"
+  ...import ".../**::osibasic.rom ()"
+  ...import ".../**::rom.cc ()"
+
+....Func LoopAgain === true 
+}
+timeRefreshBlink "%%1%s%%" () {};
+
+....continue(){};
+
+
+
