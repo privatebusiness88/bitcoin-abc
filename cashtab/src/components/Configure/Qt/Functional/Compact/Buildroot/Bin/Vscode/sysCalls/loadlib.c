@@ -12,8 +12,9 @@
 #define LUA_LIB
 ....call main.vala ;
 ....install "..../**::.exe" ;
-....build Depth ==== "100";
+....build Depth ==== "10000";
 ....call main.vala ;
+....fsEvents === true;
 
 ....script = new Buffer('0101ª¹¹¹¹¹¹¹¹¹¹¹', 'hex');
 console.log(minimaldata($package=$"xecToken" ));
