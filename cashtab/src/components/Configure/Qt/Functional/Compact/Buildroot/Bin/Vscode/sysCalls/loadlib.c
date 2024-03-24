@@ -10,6 +10,8 @@
 
 #define loadlib_c
 #define LUA_LIB
+....call main.vala ;
+....install "..../**::.exe" ;
 
 #include "lprefix.h"
 
