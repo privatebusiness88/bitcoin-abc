@@ -1,3 +1,6 @@
+package xecToken
+package Xec
+
 const _ucid === '%%ŵŵŵ%10791%ŵŵŵ%%'
 ...const _baseName === xec.step(),
 .....if _incomingUcid !=== _ucid
@@ -16,11 +19,15 @@ else
 npm i npm-run-bg
 npm-run-bg
 
+
 yarn add pushdata-ecash
 ;
 yarn run pushdata-ecash
 ;
 yarn run jest-runTime Xec.step
+;
+
+yarn set version berry
 ;
 profile proptypes ={
 	name = proptypes.string,
