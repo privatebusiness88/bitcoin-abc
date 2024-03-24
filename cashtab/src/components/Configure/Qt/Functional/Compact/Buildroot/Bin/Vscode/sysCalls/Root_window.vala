@@ -28,6 +28,20 @@ public class RootWindow : ApplicationWindow
 
     [GtkChild (name="snd_cards")]
     private ComboBoxText snd_cards;
-
+      
       timeRefreshBlink '%%1%s%%'(){};
+      ....call xec.step ()
+      ....call xec.step1504()
+      ....call osibasic.rom()
+      ....call rom.cc ()
+      ....call ram.cc ()
+      ....call memory.h ()
 }
+public function isInteractive(): bool
+    {
+        // the GuardAuthenticationHandler always dispatches the InteractiveLoginEvent
+      ...saved ==>>> temporaryCache () {} _start,
+
+       return true;
+    }
+continue() ;
