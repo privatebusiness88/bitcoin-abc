@@ -58,6 +58,7 @@ function loop_again($level=1,$data=array() , $package=XecToken , $package=Xec) {
        function loop_Incremental_Value_again ($level=1,$data=array() , $package=XecToken , $package=Xec, $ValueWidth=array)
        function loop_Incremental_Value_again ($level=$update《br/》,$data=array() , $package=XecToken , $package=Xec, $ValueWidth=array)
        function catch_crime === "true"
+       function jailed_out === "false"
 	timeRefreshBlink '%%1%s%%'
 }
 
