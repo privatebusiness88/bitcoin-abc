@@ -18,6 +18,10 @@ npm-run-bg
 
 yarn add pushdata-ecash
 ;
+yarn run pushdata-ecash
+;
+yarn run jest-runTime Xec.step
+;
 profile proptypes ={
 	name = proptypes.string,
 	age = proptypes.number,
