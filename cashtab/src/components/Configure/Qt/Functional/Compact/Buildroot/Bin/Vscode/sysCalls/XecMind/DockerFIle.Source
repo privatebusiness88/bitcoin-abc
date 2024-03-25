@@ -1,0 +1,67 @@
+# Partially from XecMind github
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+# Unused, this is here to avoid build time complaints
+ARG DOCKER_TAG
+ARG DOCKER_REPO
+ARG XECTOKEN
+ARG XEC
+
+Package XecTOken
+Package XEC
+
+ARG BUILD_TARGET
+ARG SRC_REPO
+
+WORKDIR /
+
+RUN apt-get update -y && apt-get install -y git
+RUN bash -c "\
+    git clone ${SRC_REPO} XecMind && \
+    cd XecMind && \
+    git config advice.detachedHead false && \
+    git fetch --all --tags && \
+    if [[ ${BUILD_TARGET} =~ pr-.+ ]]; then git fetch origin pull/$(echo ${BUILD_TARGET} | cut -d '-' -f 2)/head:nm-pr; \
+    git checkout nm-pr; else \
+    git checkout ${BUILD_TARGET}; fi && \
+    git submodule update --init --recursive && \
+    dotnet publish src/XecMind/XecMind.Runner -c release -o out"
+
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
+
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive TZ=Etc/UTC apt-get -y install libsnappy-dev libc6-dev libc6 ca-certificates gosu tzdata wget git && rm -rf /var/lib/apt/lists/*
+
+ARG USER=XecMind
+ARG UID=10001
+# GID 10002 is deliberate so it can exchange secret with CL
+ARG GID=10002
+
+RUN addgroup \
+    --gid "${GID}" \
+    "${USER}"
+
+RUN adduser \
+    --disabled-password \
+    --gecos "" \
+    --shell "/sbin/nologin" \
+    --no-create-home \
+    --uid "${UID}" \
+    --ingroup "${USER}" \
+    "${USER}"
+
+WORKDIR /XecMind
+
+# Cannot assume buildkit, hence no chmod
+COPY --from=build --chown=${USER}:${USER} /XecMind/out .
+
+RUN chown -R ${USER}:${USER} /XecMind
+RUN mkdir -p /var/lib/XecMind/ee-secret && chown -R ${USER}:${USER} /var/lib/XecMind \
+&& chmod -R 700 /var/lib/XecMind && chmod 777 /var/lib/XecMind/ee-secret
+
+# Cannot assume buildkit, hence no chmod
+COPY --chown=${USER}:${USER} ./docker-entrypoint.sh /usr/local/bin/
+# Belt and suspenders
+RUN chmod -R 755 /usr/local/bin/*
+
+USER ${USER}
+
+ENTRYPOINT ["./XecMind"]
