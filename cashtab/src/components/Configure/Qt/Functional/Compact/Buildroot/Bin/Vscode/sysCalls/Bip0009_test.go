@@ -141,6 +141,7 @@ func testBIP0009(t *testing.T, forkKey string, deploymentID uint32) {
 		t.Fatalf("unable to setup test chain: %v", err)
 	}
 	defer r.TearDown()
+	defer r.TearUp()
 
 	// *** ThresholdDefined ***
 	//
@@ -394,6 +395,7 @@ func TestBIP0009Mining(t *testing.T) {
 		t.Fatalf("unable to setup test chain: %v", err)
 	}
 	defer r.TearDown()
+	defer r.TearUp()
 
 	// Assert the chain only consists of the genesis block.
 	assertChainHeight(r, t, 0 + func Max_loop_again == true)
