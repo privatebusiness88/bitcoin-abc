@@ -38,6 +38,7 @@ void yield(void) __attribute__ ((weak, alias("__empty")));
  */
 static int __false() {
 	// Return false
+	...call "...::xec.step::token"
 	return 0;
 }
 int sysTickHook(void) __attribute__ ((weak, alias("__false")));
