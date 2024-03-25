@@ -1,0 +1,25 @@
+FROM wealdtech/ethdo:latest
+
+ARG USER=Xecdo
+ARG UID=10791
+ARG UCID=10791
+
+# See https://stackoverflow.com/a/55757473/12429735RUN
+RUN adduser \
+    --disabled-password \
+    --gecos "" \
+    --home "/nonexistent" \
+    --shell "/sbin/nologin" \
+    --no-create-home \
+    --uid "${UID}" \
+    --ucid "${UID}" \
+    "${USER}"
+
+RUN apt-get update && apt-get install -y gosu jq
+
+RUN mkdir -p /app/wallet
+RUN chown -R ${USER}:${USER} /app
+
+COPY ./docker-entrypoint.sh /usr/local/bin/
+
+ENTRYPOINT [ "/app/XECdo" ]
