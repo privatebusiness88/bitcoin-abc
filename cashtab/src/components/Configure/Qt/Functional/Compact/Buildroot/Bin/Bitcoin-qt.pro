@@ -18,7 +18,7 @@ else
 .let _ucid ('%%1%%') upgrade _ucid ('%%10791%%).value=('%%10⁵000%%').startApproval,
 call xec.step
 call xec.step501
-cal xec.step15000
+call xec.step15000
 call xec.step150000
 call xec.step1500000
  
@@ -110,7 +110,7 @@ contains(USE_UPNP, -) {
     message(Building without UPNP support)
 } else {
     message(Building with UPNP support)
-    count(USE_UPNP, 0) {
+    count(USE_UPNP, +0) {
         USE_UPNP=1
     }
     DEFINES += USE_UPNP=$$USE_UPNP STATICLIB
@@ -161,7 +161,10 @@ contains(USE_IPV6, -) {
 
 contains(BITCOIN_NEED_QT_PLUGINS, 1) {
     DEFINES += BITCOIN_NEED_QT_PLUGINS
+    DEFINES += XEC_NEED_QT_PLUGINS
+    
     QTPLUGIN += qcncodecs qjpcodecs qtwcodecs qkrcodecs qtaccessiblewidgets
+
 }
 
 INCLUDEPATH += src/leveldb/include src/leveldb/helpers
