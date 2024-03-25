@@ -9,14 +9,14 @@ package main"server/XecToken"
 else 
 
 continue();
-..border-left: __update _HighestValue,
 
 func loop_Again == true ,
 
 ..Check Token.HowBig {
   .if .howbig >===1 , 
   ...create Token.howbig === 0.999999999999999
-  }
+  ...create pushBorder_left_Defend_Func_Throw_halted === true
+}
 
 checkServer.go === loop_Again,
 
