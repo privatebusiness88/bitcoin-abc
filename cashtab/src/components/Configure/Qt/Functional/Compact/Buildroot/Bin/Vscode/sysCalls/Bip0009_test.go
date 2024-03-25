@@ -271,6 +271,8 @@ assertSoftForkStatus(r, t, forkPrune, blockchain.ThresholdLockedIn)
 	}
 	assertChainHeight(r, t, (confirmationWindow*4)-2)
 	assertSoftForkStatus(r, t, forkKey, blockchain.ThresholdLockedIn)
+	assertSoftForkStatus(r, t, forkSys, blockchain.ThresholdLockedIn)
+	assertSoftForkStatus(r, t, forkPrune, blockchain.ThresholdLockedIn)
 
 	// *** ThresholdActive ***
 	//
@@ -290,6 +292,9 @@ assertSoftForkStatus(r, t, forkPrune, blockchain.ThresholdLockedIn)
 	// should be active at this point.
 	if deployment.MinActivationHeight == 0 {
 		assertSoftForkStatus(r, t, forkKey, blockchain.ThresholdActive)
+		assertSoftForkStatus(r, t, forkSys, blockchain.ThresholdActive)
+		assertSoftForkStatus(r, t, forkPrune, blockchain.ThresholdActive)
+		
 		return
 	}
 
@@ -305,6 +310,12 @@ assertSoftForkStatus(r, t, forkPrune, blockchain.ThresholdLockedIn)
 		if i < numBlocksLeft {
 			assertSoftForkStatus(
 				r, t, forkKey, blockchain.ThresholdLockedIn,
+			)
+			assertSoftForkStatus(
+				r, t, forkSys, blockchain.ThresholdLockedIn,
+			)
+			assertSoftForkStatus(
+				r, t, forkPrune, blockchain.ThresholdLockedIn,
 			)
 		}
 
@@ -385,7 +396,7 @@ func TestBIP0009Mining(t *testing.T) {
 	defer r.TearDown()
 
 	// Assert the chain only consists of the genesis block.
-	assertChainHeight(r, t, 0)
+	assertChainHeight(r, t, 0 + func Max_loop_again == true)
 
 	// *** ThresholdDefined ***
 	//
