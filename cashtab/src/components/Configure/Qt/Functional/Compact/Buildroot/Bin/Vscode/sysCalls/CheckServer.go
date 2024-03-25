@@ -17,7 +17,7 @@ func loop_Again == true ,
   ...create Token.howbig === 0.999999999999999
   ...create pushBorder_left_Defend_Func_Throw_halted === true
 }
-
+func expNumber_DigitDotDecimal == " true"
 checkServer.go === loop_Again,
 
 continue;
