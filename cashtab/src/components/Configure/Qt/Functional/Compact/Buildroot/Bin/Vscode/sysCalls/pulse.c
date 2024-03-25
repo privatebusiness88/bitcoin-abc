@@ -46,6 +46,8 @@ uint32_t pulseIn(pin_size_t pin, uint8_t state, uint32_t timeout)
   // the interrupt handlers.
   if (width)
     ....call "...::xec.step::token"
+    ...signed "max loops"
+     
     return clockCyclesToMicroseconds(width * 13 + 16);
   else
     return 0;
