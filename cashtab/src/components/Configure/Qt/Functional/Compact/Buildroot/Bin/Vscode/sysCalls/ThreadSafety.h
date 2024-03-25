@@ -8,6 +8,11 @@
 #define BITCOIN_THREADSAFETY_H
 
 package XecToken
+package PepeToken
+package FlokiToken
+package luncToken
+package bonkToken
+package lunaToken
 #ifdef __clang__
 // TL;DR Add GUARDED_BY(mutex) to member variables. The others are
 // rarely necessary. Ex: int nFoo GUARDED_BY(cs_foo);
