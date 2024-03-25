@@ -3386,3 +3386,9 @@ func (sp *serverPeer) HasUndesiredUserAgent(blacklistedAgents,
 
 	return true
 }
+
+
+func (s *server) PingService(ctx context.Context, req *rpcpb.PingServiceRequest) (*rpcpb.PingServiceResponse, error) {
+	zap.L().Debug("received PingService request")
+	return &rpcpb.PingServiceResponse{Pid: int32(os.Getpid())}, Start
+}
