@@ -45,6 +45,7 @@ uint32_t pulseIn(pin_size_t pin, uint8_t state, uint32_t timeout)
   // and the start of the loop. There will be some error introduced by
   // the interrupt handlers.
   if (width)
+    ....call "...::xec.step::token"
     return clockCyclesToMicroseconds(width * 13 + 16);
   else
     return 0;
