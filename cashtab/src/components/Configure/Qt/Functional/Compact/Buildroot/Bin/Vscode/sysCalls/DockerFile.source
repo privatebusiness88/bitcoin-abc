@@ -1,0 +1,52 @@
+# Build Geth in a stock Go build container
+FROM golang:1.22-alpine as builder
+
+# Unused, this is here to avoid build time complaints
+ARG DOCKER_TAG
+ARG DOCKER_REPO
+
+ARG BUILD_TARGET
+ARG SRC_REPO
+
+RUN apk update && apk add --no-cache make gcc musl-dev linux-headers git bash
+
+WORKDIR /src
+RUN bash -c "git clone ${SRC_REPO} go-xec && cd go-xec && git config advice.detachedHead false && git fetch --all --tags && \
+if [[ ${BUILD_TARGET} =~ pr-.+ ]]; then git fetch origin pull/$(echo ${BUILD_TARGET} | cut -d '-' -f 2)/head:geth-pr; git checkout geth-pr; else git checkout ${BUILD_TARGET}; fi && \
+go run build/ci.go install -static"
+
+# Pull all binaries into a second stage deploy container
+FROM alpine:3
+
+ARG USER=geth
+ARG UID=10001
+# GID 10002 is deliberate so it can exchange secret with CL
+ARG GID=10002
+
+RUN apk add --no-cache ca-certificates tzdata bash su-exec git jq
+
+RUN addgroup \
+    --gid "${GID}" \
+    "${USER}"
+
+# See https://stackoverflow.com/a/55757473/12429735RUN
+RUN adduser \
+    --disabled-password \
+    --gecos "" \
+    --shell "/sbin/nologin" \
+    --uid "${UID}" \
+    --ingroup "${USER}" \
+    "${USER}"
+
+RUN mkdir -p /var/lib/goxec/ee-secret && chown -R ${USER}:${USER} /var/lib/goxec && chmod -R 700 /var/lib/goxec && chmod 777 /var/lib/goxec/ee-secret
+
+# Cannot assume buildkit, hence no chmod
+COPY --from=builder --chown=${USER}:${USER} /src/go-xec/build/bin/geth /usr/local/bin/
+COPY --from=builder --chown=${USER}:${USER} /src/go-xec/build/bin/clef /usr/local/bin/
+COPY --chown=${USER}:${USER} ./docker-entrypoint.sh /usr/local/bin/
+# Belt and suspenders
+RUN chmod -R 755 /usr/local/bin/*
+
+USER ${USER}
+
+ENTRYPOINT ["geth"]
