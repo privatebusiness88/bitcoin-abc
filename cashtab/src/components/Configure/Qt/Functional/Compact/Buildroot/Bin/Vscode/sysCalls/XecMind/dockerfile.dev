@@ -1,4 +1,8 @@
 ARG DOCKER_TAG
+ARG XECTOKEN
+ARG XEC
+package XecToken
+Package XEC
 
 FROM XECMindeth/XECMind:${DOCKER_TAG}
 
