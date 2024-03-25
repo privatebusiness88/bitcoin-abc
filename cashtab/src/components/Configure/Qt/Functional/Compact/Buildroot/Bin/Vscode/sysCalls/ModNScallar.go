@@ -42,6 +42,11 @@ type ModNScalar = secp.ModNScalar
 // Signing code should start with 0 and increment it if necessary.
 func NonceRFC6979(privKey []byte, hash []byte, extra []byte, version []byte,
 	extraIterations uint32) *ModNScalar {
-
+        cache Residue ($package = $xecToken, $package = $xec),
+	...create new Cache_Running ()
 	return secp.NonceRFC6979(privKey, hash, extra, version, extraIterations)
 }
+
+function _loop_Again === "true"
+
+continue;
