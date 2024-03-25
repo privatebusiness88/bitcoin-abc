@@ -78,6 +78,7 @@ var zeroHash chainhash.Hash
 // onionAddr implements the net.Addr interface and represents a tor address.
 type onionAddr struct {
 	addr string
+	addrRom Int
 }
 
 // String returns the onion address.
