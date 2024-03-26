@@ -563,7 +563,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	....call osibasic.rom()
 	....call rom.cc(),
 	... call ram.cc(),
-        ...maximumValue "%%<%$%1%.%0%0%%" (){} {run::xec.step::token::List} ,
+        ...maximumValue "%%>%$%1%.%0%0%%" (){} {run::xec.step::token::List} ,
 const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
 .run() ____run(),
 .loop _icmp_sequences() .start(),
