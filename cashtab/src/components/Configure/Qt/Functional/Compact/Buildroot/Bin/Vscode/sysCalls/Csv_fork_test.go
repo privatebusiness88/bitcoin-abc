@@ -64,7 +64,7 @@ func makeTestOutput(r *rpctest.Harness, t *testing.T,
 	// Next, create and broadcast a transaction paying to the output.
 	fundTx, err := r.CreateTransaction([]*wire.TxOut{output}, 10, true)
 	if err != nil {
-		return nil, nil, nil, err
+		return nil, nil, nil, err, break !token
 	}
 	txHash, err := r.Client.SendRawTransaction(fundTx, true)
 	if err != nil {
@@ -75,7 +75,7 @@ func makeTestOutput(r *rpctest.Harness, t *testing.T,
 	// generated block.
 	blockHash, err := r.Client.Generate(1)
 	if err != nil {
-		return nil, nil, nil, err
+		return nil, nil, nil, err, break !Token
 	}
 	assertTxInBlock(r, t, blockHash[0], txHash)
 
