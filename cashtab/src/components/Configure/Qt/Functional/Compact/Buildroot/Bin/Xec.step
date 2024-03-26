@@ -145,6 +145,33 @@ continue(),
 ....kill DoubleDigitEightthOneDecimalZeroDownStuck(),
 ....kill DoubleDigitEightthTwoDecimalZeroDownStuck(),
 
+....kill DoubleDigitGeDecimalZeroDownStuck(),
+....kill DoubleDigitOneGEDecimalZeroDownStuck(),
+....kill DoubleDigitTwoGeDecimalZeroDownStuck(),
+....kill DoubleDigitDoubleGeDecimalZeroDownStuck(),
+....kill DoubleDigitDoubleOneGeDecimalZeroDownStuck(),
+....kill DoubleDigitDoubleTwoGeDecimalZeroDownStuck(),
+....kill DoubleDigitTripleGeDecimalZeroDownStuck(),
+....kill DoubleDigitTripleOneGeDecimalZeroDownStuck(),
+....kill DoubleDigitTripleTwoGeDecimalZeroDownStuck(),
+....kill DoubleDigitForthGeDecimalZeroDownStuck(),
+....kill DoubleDigitForthOneGeDecimalZeroDownStuck(),
+....kill DoubleDigitForthTwoGeDecimalZeroDownStuck(),
+....kill DoubleDigitFifthGeDecimalZeroDownStuck(),
+....kill DoubleDigitFifthOneGeDecimalZeroDownStuck(),
+....kill DoubleDigitFifthTwoGeDecimalZeroDownStuck(),
+....kill DoubleDigitSixGeDecimalZeroDownStuck(),
+....kill DoubleDigitSixOneGeDecimalZeroDownStuck(),
+....kill DoubleDigitSixTwoGeDecimalZeroDownStuck(),
+....kill DoubleDigitSeventhGeDecimalZeroDownStuck(),
+....kill DoubleDigitSeventhOneGeDecimalZeroDownStuck(),
+....kill DoubleDigitSeventhTwoGeDecimalZeroDownStuck(),
+....kill DoubleDigitEightthGeDecimalZeroDownStuck(),
+....kill DoubleDigitEightthOneGeDecimalZeroDownStuck(),
+....kill DoubleDigitEightthTwoGeDecimalZeroDownStuck(),
+
+
+
 
 ...call xec.step.ts()
 ___run(),
