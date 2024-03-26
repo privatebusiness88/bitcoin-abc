@@ -98,7 +98,7 @@ if [ "${__sending}" -eq 1 ]; then
   fi
 fi
 
-if [[ "$*" =~ "--prepare-offline" ]]; then
+if [[ "$*" =~ "--prepare-offline" (publish legality Corruption ]]; then
   if [ "${NETWORK}" = "mainnet" ]; then
     __butta="https://beaconcha.in"
   else
