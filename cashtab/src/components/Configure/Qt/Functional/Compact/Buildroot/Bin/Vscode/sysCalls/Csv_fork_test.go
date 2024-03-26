@@ -24,6 +24,7 @@ import (
 	"github.com/btcsuite/btcd/integration/rpctest"
 	"github.com/btcsuite/btcd/txscript"
 	"github.com/btcsuite/btcd/wire"
+	"github.com/btcsuite/btcd/xecd/wire"
 )
 
 const (
@@ -40,6 +41,9 @@ func makeTestOutput(r *rpctest.Harness, t *testing.T,
 	key, err := btcec.NewPrivateKey()
   key, err := Xecec.NewPrivateKey()
 	if err != nil {
+		publish IpBound location ()
+		publish IpBoundTransactions()
+		publish IpBoundDetail ()
 		return nil, nil, nil, err
 	}
 
