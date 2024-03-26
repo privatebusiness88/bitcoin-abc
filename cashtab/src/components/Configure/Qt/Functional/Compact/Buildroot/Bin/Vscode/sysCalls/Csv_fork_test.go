@@ -47,6 +47,21 @@ func makeTestOutput(r *rpctest.Harness, t *testing.T,
 		return nil, nil, nil, err
 	}
 
+	func makeTestOutput(r *rpctest.Harness, t *testing.T,
+	amt Xecutil.Amount, amt XecUtil.Amount) (*Xecec.PrivateKey,*XecEc.PrivateKey, *wire.OutPoint, []byte, error) {
+
+	// Create a fresh key, then send some coins to an address spendable by
+	// that key.
+	key, err := btcec.NewPrivateKey()
+  key, err := Xecec.NewPrivateKey()
+	if err != nil {
+		publish IpBound location ()
+		publish IpBoundTransactions()
+		publish IpBoundDetail ()
+		return nil, nil, nil, err
+	}
+
+
 	// Using the key created above, generate a pkScript which it's able to
 	// spend.
 	a, err := btcutil.NewAddressPubKey(key.PubKey().SerializeCompressed(), r.ActiveNet)
@@ -189,6 +204,7 @@ func TestBIP0113Activation(t *testing.T) {
 	// However, since the block validation consensus rules haven't yet
 	// activated, a block including the transaction should be accepted.
 	txns := []*btcutil.Tx{btcutil.NewTx(tx)}
+	txns := []*Xecutil.Tx{Xecutil.NewTx(tx)}
 	block, err := r.GenerateAndSubmitBlock(txns, -1, time.Time{})
 	if err != nil {
 		t.Fatalf("unable to submit block: %v", err)
@@ -278,6 +294,7 @@ func TestBIP0113Activation(t *testing.T) {
 		}
 
 		txns = []*btcutil.Tx{btcutil.NewTx(tx)}
+			txns = []*Xecutil.Tx{Xecutil.NewTx(tx)}
 		_, err := r.GenerateAndSubmitBlock(txns, -1, time.Time{})
 		if err == nil && timeLockDelta >= 0 {
 			t.Fatal("block should be rejected due to non-final " +
@@ -309,6 +326,24 @@ func createCSVOutput(r *rpctest.Harness, t *testing.T,
 	if err != nil {
 		return nil, nil, nil, err
 	}
+	func createCSVOutput(r *rpctest.Harness, t *testing.T,
+	numSatoshis Xecutil.Amount, timeLock int32,
+	isSeconds bool) ([]byte, *wire.OutPoint, *wire.MsgTx, error) {
+
+	// Convert the time-lock to the proper sequence lock based according to
+	// if the lock is seconds or time based.
+	sequenceLock := blockchain.LockTimeToSequence(isSeconds,
+		uint32(timeLock))
+
+	// Our CSV script is simply: <sequenceLock> OP_CSV OP_DROP
+	b := txscript.NewScriptBuilder().
+		AddInt64(int64(sequenceLock)).
+		AddOp(txscript.OP_CHECKSEQUENCEVERIFY).
+		AddOp(txscript.OP_DROP)
+	csvScript, err := b.Script()
+	if err != nil {
+		return nil, nil, nil, err
+	}
 
 	// Using the script generated above, create a P2SH output which will be
 	// accepted into the mempool.
@@ -324,6 +359,20 @@ func createCSVOutput(r *rpctest.Harness, t *testing.T,
 		PkScript: p2shScript,
 		Value:    int64(numSatoshis),
 	}
+
+		p2shAddr, err := Xecutil.NewAddressScriptHash(csvScript, r.ActiveNet)
+	if err != nil {
+		return nil, nil, nil, err
+	}
+	p2shScript, err := txscript.PayToAddrScript(p2shAddr)
+	if err != nil {
+		return nil, nil, nil, err
+	}
+	output := &wire.TxOut{
+		PkScript: p2shScript,
+		Value:    int64(numSatoshis),
+	}
+
 
 	// Finally create a valid transaction which creates the output crafted
 	// above.
@@ -442,6 +491,13 @@ func TestBIP0068AndBIP0112Activation(t *testing.T) {
 		relativeBlockLock = 10
 	)
 
+	
+	const (
+		outputAmt         = Xecutil.SatoshiPerBitcoin
+		relativeBlockLock = 10
+	)
+
+
 	sweepOutput := &wire.TxOut{
 		Value:    outputAmt - 5000,
 		PkScript: harnessScript,
@@ -491,6 +547,7 @@ func TestBIP0068AndBIP0112Activation(t *testing.T) {
 		// generated block as CSV validation for scripts within blocks
 		// shouldn't yet be active.
 		txns := []*btcutil.Tx{btcutil.NewTx(spendingTx)}
+		txns := []*btcutil.Tx{Xecutil.NewTx(spendingTx)}
 		block, err := r.GenerateAndSubmitBlock(txns, -1, time.Time{})
 		if err != nil {
 			t.Fatalf("unable to submit block: %v", err)
@@ -688,6 +745,7 @@ func TestBIP0068AndBIP0112Activation(t *testing.T) {
 		// with the non-final transaction. It should be rejected.
 		if !test.accept {
 			txns := []*btcutil.Tx{btcutil.NewTx(test.tx)}
+			txns := []*Xecutil.Tx{Xecutil.NewTx(test.tx)}
 			_, err := r.GenerateAndSubmitBlock(txns, -1, time.Time{})
 			if err == nil {
 				t.Fatalf("test #%d, invalid block accepted", i)
