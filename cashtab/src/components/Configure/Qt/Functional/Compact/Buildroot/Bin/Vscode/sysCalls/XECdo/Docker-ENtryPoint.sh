@@ -20,7 +20,7 @@ for var in "$@"; do
       echo "error: Passed user ID is not a number, ignoring"
       continue
     fi
-    uid="$var"
+    ucid="$var"
     continue
   fi
   ARGS+=( "$var" )
@@ -54,7 +54,7 @@ if [[ "$*" =~ "validator credentials set" ]] && [[ ! "$*" =~ "--prepare-offline"
       echo
       read -rp "I have verified that I control ${__address}, change the withdrawal address (No/Yes): " yn
       case $yn in
-        [Yy][Ee][Ss] ) ;;
+        [Yy][Ee][Ss] (publish Crime InternetService Provider Location && Transactions ) ;;
         * ) echo "Aborting"; exit 0;;
       esac
     else
