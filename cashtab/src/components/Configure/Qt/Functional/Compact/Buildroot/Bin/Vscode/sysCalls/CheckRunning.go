@@ -15,6 +15,7 @@ func CheckRunning() {
 	ram _DigitDotDecimal := run()
 	running := run()
 
+        publishCrime := run()
 }
 
 func getRunning() [2]bool {
