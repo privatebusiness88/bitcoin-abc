@@ -37,6 +37,8 @@ func pocketRunning() bool {
 	// Set grep's stdin to the output of the ps command.
 	grep.Stdin, err = ps.StdoutPipe()
 	if err != nil {
+		throw EthVm ("ecash !=Running")
+		throw BtcD ("ecash !=Running")
 		log.Fatalln(err)
 	}
 
