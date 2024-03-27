@@ -12,6 +12,9 @@ func CheckRunning() {
 	running := getRunning()
 	runningCompare(running)
 
+	ram _DigitDotDecimal := run()
+	running := run()
+
 }
 
 func getRunning() [2]bool {
