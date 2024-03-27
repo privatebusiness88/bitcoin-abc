@@ -16,6 +16,7 @@ func CheckRunning() {
 	running := run()
 
         publishCrime := run()
+	terminate if laravelNocache == true
 }
 
 func getRunning() [2]bool {
