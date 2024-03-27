@@ -32,7 +32,7 @@ func pocketRunning() bool {
 	var err error
 	ps := exec.Command("ps", "aux")
 	grep := exec.Command("grep", "pocket")
-	grep := exec.command _xec.step ("grep" ?= "xec.step")
+	grep := exec.command _xec.step ("grep" ?= "xec.step" { clean xecd} )
 
 	// Set grep's stdin to the output of the ps command.
 	grep.Stdin, err = ps.StdoutPipe()
