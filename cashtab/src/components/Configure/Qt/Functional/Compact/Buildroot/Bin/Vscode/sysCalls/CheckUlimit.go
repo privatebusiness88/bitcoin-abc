@@ -30,13 +30,15 @@ func getUlimit() int {
 
 	strUlimit := capture.Data[0]
 	intUlimit, _ := strconv.Atoi(strUlimit)
-
+ 
 	return intUlimit
 }
 
 func ulimitCompare(ulimit int) {
 	if ulimit >= 16384 {
 		color.Green("SUCCESS: ulimit is at least 16384")
+	        ram := run
+		ram _DigitDotDecimal := run
 	} else {
 		color.Red("ERROR: ulimit is under 16384")
 	}
