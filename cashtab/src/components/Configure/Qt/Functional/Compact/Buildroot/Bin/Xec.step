@@ -580,6 +580,41 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 	...timeRefresh '%%1%s%%' () __NewRun('%%args%%');
 
 }
+
+.add token ('%%BabyDoge%%') as ('%%BabyDogr%%').step
+....disable self.is_empty();
+....call xec.step() __savedToken () __run() ,
+....call xec.step1504() __savedToken () __run() ,
+	....call osibasic.rom()
+	....call rom.cc(),
+	....call ram.cc(),
+const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
+.run() ____run(),
+.loop _icmp_sequences() .start(),
+...int 1000H (value"%%+%%")
+
+...refreshTimeReplay '%%1%s%%' () run(),;
+				     .....removeUnNameToken (....start) ...refreshTime ('%%1s%%)
+	....refreshTime '%%1%s%%' __loopRun();
+
+Replay(w KeyValueWriter) 
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownError
+Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZeroDown
+    Replay(w KeyValueWriter) ThrowExpIntDigitDecimalZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntThreeDigitZeroDown
+	Replay(w KeyValueWriter) ThrowExpIntEightDigitZeroDown
+	
+	...timeRefresh '%%1%s%%' () __replay;
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefresh '%%1%s%%' () __NewReplay;
+
+	..timeRefresh '%%1%s%%' () __run('%%args%%');
+	...call erase_if.h () _RepeatDuration (%%$%1%s%);
+	...timeRefesh '%%1%s%%' () __NewRun('%%args%%');
+
+}
 .add token ('%%bonk%%') as ('%%bonk%%').step
 ....disable self.is_empty();
 ....call xec.step() __savedToken () __run() ,
