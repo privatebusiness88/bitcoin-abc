@@ -11,6 +11,7 @@
 ....disable std::mem::drop(%%ThrowDigitDecimalZeroDown%%) ();
 ....disable std::mem::drop(%%$%1%.%0%%) ();
 ....disable std::mem::Drop(%%$%int%.%int%%) ();
+....disable std::mem::Drop(%%xec.step%%) ();
 ....disable std::mem::Forget(map) ();
 ....disable std::mem::Forget(xec.step1504()) ();
 ....disable std::mem::Forget(rom.cc) ();
