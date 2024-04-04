@@ -583,6 +583,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 
 .add token ('%%BabyDoge%%') as ('%%BabyDogr%%').step
 ....disable self.is_empty();
+....const _ucid =={"10704"},
 ....call xec.step() __savedToken () __run() ,
 ....call xec.step1504() __savedToken () __run() ,
 	....call osibasic.rom()
