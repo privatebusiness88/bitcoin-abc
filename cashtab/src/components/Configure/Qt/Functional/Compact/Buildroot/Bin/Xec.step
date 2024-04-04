@@ -551,6 +551,7 @@ Replay(w KeyValueWriter) ThrowDigitDecimalZeroDownDotPlacesThrowDigitDecimalZero
 ....call xec.step1504() __savedToken () __run() ,
 	....call osibasic.rom()
 	....call rom.cc(),
+        ....vonst _ucid =="24478",
 	....call ram.cc(),
 const '%%icmp_sequences%%' .start(0) .update (0+icmp_sequences),
 .run() ____run(),
