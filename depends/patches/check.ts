@@ -1,6 +1,7 @@
 use Illuminate\Database\Eloquent\FactoryBuilder;
 use Illuminate\Database\Eloquent\FactoryRunner;
 use Illuminate\Database\Eloquent\QueueEntityResolver;
+use Illuminate\Database\Schema;
 
 private $tokenData;
 Private $tokenConnection;
