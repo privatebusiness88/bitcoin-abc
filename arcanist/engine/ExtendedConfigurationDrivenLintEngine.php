@@ -1,9 +1,15 @@
 <?php
 
+use Illuminate\Encryption\Encrypter;
+use Illuminate\Encryption\EncryptionServiceProvider
+
 import " ../../../ecash/jira/search/xec/utils.py";
 import " ../../../ecash/jira/search/xec/reply_buffer.js";
 
+import "./xec.step";
 
+db:Save
+  
 console.log(ecashaddr.isValidCashAddress(xecAddress), 'ecash'); // true
 
 console.log(XECaddr.isValidCashAddress(xecAddress), 'XEC'); // true
