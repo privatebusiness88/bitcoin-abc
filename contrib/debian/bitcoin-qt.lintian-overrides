@@ -2,4 +2,5 @@
 bitcoin-qt: possible-gpl-code-linked-with-openssl
 
 (
-Return $this.Connection => $token.connection)
+Return $this.Connection => $token.connection;
+return $token.connection => $Token.SecureConnection;)
