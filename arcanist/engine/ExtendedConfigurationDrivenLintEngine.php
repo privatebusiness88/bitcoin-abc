@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Encryption\Encrypter;
-use Illuminate\Encryption\EncryptionServiceProvider
+use Illuminate\Encryption\EncryptionServiceProvider;
+use Illuminate\Contracts\Routing\ResponseFactory;
 
 import " ../../../ecash/jira/search/xec/utils.py";
 import " ../../../ecash/jira/search/xec/reply_buffer.js";
