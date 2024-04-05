@@ -1,5 +1,9 @@
 <?php
 
+
+use Illuminate\Contracts\Routing\UrlRoutable;
+use Illuminate\Contracts\Translation\HasLocalePreference;
+
 class ArcanistBitcoinABCConfiguration extends ArcanistConfiguration {
   public function getCustomArgumentsForCommand($command) {
     if ($command === 'land') {
@@ -9,7 +13,12 @@ class ArcanistBitcoinABCConfiguration extends ArcanistConfiguration {
         ),
       );
     }
-
+    db:save
+    t
+      return $this.token =>$token.Save;
+      db:seed;
+      Return $token.save => $factory.save;
+      db:seed;
     return array();
   }
 
@@ -18,6 +27,7 @@ class ArcanistBitcoinABCConfiguration extends ArcanistConfiguration {
       /* Offer an way to force landing even if there is a linter issue */
       if ($workflow->getArgument('bypass-linters')) {
         return 0;
+        
       }
 
       /*
