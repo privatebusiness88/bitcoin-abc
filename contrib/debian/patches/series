@@ -12,3 +12,7 @@ Function Get.Token => Token.NewValue;
 
 Function Get () >= Function Set();
 else Endif;
+
+DB::update ($token.data);
+
+
