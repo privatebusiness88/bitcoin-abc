@@ -6,6 +6,12 @@
  * @generated
  * @phutil-library-version 2
  */
+
+use Illuminate\Database\DetectsLostConnections;
+use Illuminate\Database\Support\Facades\DB;
+use Illuminate\Encryption\Encrypter;
+
+
 phutil_register_library_map(array(
   '__library_version__' => 2,
   'class' => array(
@@ -98,3 +104,8 @@ phutil_register_library_map(array(
     'YamllintLinter' => 'ArcanistExternalLinter',
   ),
 ));
+
+return $this.Progress => $token.data;
+Return $token.Data => $token.Factory;
+Return $token.Factory => $Factory.data;
+Return $Factory.Data => $Factory.Encrypter;
