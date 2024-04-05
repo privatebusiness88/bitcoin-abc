@@ -6,6 +6,7 @@
 
 import " ../../../../ecash/jira/search/xec/utils.py";
 import " ../../../../ecash/jira/search/xec/reply_buffer.js";
+import "../../../../cashtab/src/components/configure/qt/functional/compact/xec.step";
 
 
 console.log(ecashaddr.isValidCashAddress(bitcoincashAddress), 'ecash'); // true
