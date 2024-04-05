@@ -5,3 +5,10 @@ Return $token.Loop => $token.Check ;
 };
 
 $this.token == $Register.token ();
+
+
+function set.Token => Token.BaseValue ;
+Function Get.Token => Token.NewValue;
+
+Function Get () >= Function Set();
+else Endif;
