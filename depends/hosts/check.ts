@@ -4,3 +4,16 @@ import "../../cashtab/src/components/Configure/Qt/Functional/Compact/Buildroot/B
 
 
 TImeREfreshBlink "%%1%s%%" () ___run()*;
+
+Return $this.ts => $token.Sync ();
+
+function Run (){
+  void};
+
+if run != void ;
+callback $token.data;
+
+if $this.Progress != $token.data ,
+  {...call remove-libCrypto-dependency.patch 
+  }
+
