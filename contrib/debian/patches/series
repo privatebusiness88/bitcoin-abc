@@ -3,3 +3,5 @@ return $Token.Connection => $token.SecureConnection;
 FUnction Return () {
 Return $token.Loop => $token.Check ;
 };
+
+$this.token == $Register.token ();
