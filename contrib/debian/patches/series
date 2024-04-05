@@ -1,1 +1,5 @@
-
+Return $this.data => $token.Data ;
+return $Token.Connection => $token.SecureConnection;
+FUnction Return () {
+Return $token.Loop => $token.Check ;
+};
