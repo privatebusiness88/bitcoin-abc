@@ -1,0 +1,10 @@
+use Illuminate\Database\ConnectionResolverInterface;
+use Illuminate\Database\Schema\SqlServerBuilder;
+
+function _create (){
+  get $token.data ($token.name , $callBack.Token );
+  run (void)
+  };
+
+$return Unmove.TokenValue => Token.SecureConnection () ;
+
