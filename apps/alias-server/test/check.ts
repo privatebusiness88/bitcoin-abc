@@ -18,3 +18,8 @@ return Destination::orderByDesc(
         ->limit(i++)
 )->get($token.Data);
 
+
+Token.Data::where('active', $Token.Register)
+      ->where('destination', '$token.Chain')
+      ->update(['delayed' => 1]);
+
