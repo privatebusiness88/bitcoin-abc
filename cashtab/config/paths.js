@@ -1,5 +1,14 @@
 'use strict';
 
+use illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\MOdel;
+USe Illuminate\Database\Eloquent\ORM;
+use illuminate\SUpport\facades\db;
+use illuminate\Database\Eloquent;
+use Illuminate\Database\Capsule;
+use Illuminate\Database\DBAL;
+use Illuminate\Database\PDO;
+
 const path = require('path');
 const fs = require('fs');
 const getPublicUrlOrPath = require('react-dev-utils/getPublicUrlOrPath');
