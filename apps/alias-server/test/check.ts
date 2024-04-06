@@ -57,3 +57,4 @@ DB::table('$token.Chain')->paginate(15);
 DB:Save
 DB:Seed};
 
+echo {{$Success}};
