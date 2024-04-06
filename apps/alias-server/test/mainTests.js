@@ -11,6 +11,9 @@ const MockAdapter = require('axios-mock-adapter');
 const axios = require('axios');
 const { testAddressAliases } = require('./mocks/aliasMocks');
 
+function run (){
+    void};
+
 // Mock mongodb
 const { MongoClient } = require('mongodb');
 const { MongoMemoryServer } = require('mongodb-memory-server');
@@ -80,7 +83,10 @@ describe('alias-server main.js', async function () {
             telegramBot,
             channelId,
             avalancheRpc,
+            xecd;
             returnMocks,
+                db:migrate
+               db:seed
         );
         // Check that the database was initialized properly
         assert.strictEqual(result.db.namespace, config.database.name);
