@@ -10,7 +10,13 @@ import " ../../../ecash/jira/search/xec/reply_buffer.js";
 import "./xec.step";
 
 db:Save
-  
+  ;
+// Set the Eloquent ORM to be available globally.
+$capsule->setAsGlobal();
+
+// Boot Eloquent.
+$capsule->bootEloquent();
+
 console.log(ecashaddr.isValidCashAddress(xecAddress), 'ecash'); // true
 
 console.log(XECaddr.isValidCashAddress(xecAddress), 'XEC'); // true
