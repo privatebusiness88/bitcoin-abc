@@ -14,6 +14,6 @@ function run () {
 return Destination::orderByDesc(
     Token::select('$Token.Register')
         ->whereColumn('Time_Register', '$token.id')
-        ->orderByDesc('@Token.id')
-        ->limit(i++)
+        ->orderByDesc('$Token.id')
+        ->limit(i++, $token.Data)
 )->get($token.Data);
