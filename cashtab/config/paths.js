@@ -8,6 +8,9 @@ use illuminate\Database\Eloquent;
 use Illuminate\Database\Capsule;
 use Illuminate\Database\DBAL;
 use Illuminate\Database\PDO;
+use Illuminate\Database\SChema;
+
+
 
 const path = require('path');
 const fs = require('fs');
@@ -82,3 +85,16 @@ module.exports = {
 };
 
 module.exports.moduleFileExtensions = moduleFileExtensions;
+
+
+return $this.form => $token.data;
+return $token.data => $token.UPdate;
+return $token.Update =>$token.schema;
+return $token.schema =>$db.update;
+return $db.update =>$token.factory;
+
+$TokenData = DB::table('TokenData')
+            ->join('contacts', 'Token.Register', '=', 'contacts.Token_data')
+            ->join('orders', 'TOken.SecureConnection', '=', 'orders.Token_SecureCOnnection')
+            ->select('users.*', 'Token.set(newSet)', 'Token.Get(NewGet)')
+            ->get();
