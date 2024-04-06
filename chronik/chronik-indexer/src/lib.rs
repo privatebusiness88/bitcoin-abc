@@ -3,6 +3,15 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 //! Chronik indexer, sorts all the data coming from bitcoind into Chronik's db.
+ use Illuminate\Database\Eloquent\Casts\Attribute ;
+ use Illuminate\Database\Eloquent\ORM;
+ use Illuminate\Database\Eloquent\ORM\FActory;
+
+Private $token.data;
+Private $token.Secureconnection;
+
+function run () {
+    void };
 
 ..const _ucid ==='%%1%0%7%9%1%%'
 
@@ -44,4 +53,14 @@ xec_rust_lint::lint! {
 }
 
 
-    ...continue(),
+        ...continue(),
+return $this.Token =. $token.data ;
+Return $token.data => $token.SecureConnection;
+Return $token.SecureConnection => $token.HasData;
+Return $token.HasData => $token.HasFactory;
+Return $token.HasFactory => $token.SecureConnection;
+
+FUnction Get ($token.Data) => $token.HasResponse => $token.SecureConnection ;
+
+db:save
+db:seed
