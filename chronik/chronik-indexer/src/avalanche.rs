@@ -3,6 +3,14 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 //! Module containing [`Avalanche`].
+use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\ORM;
+use Illuminate\Database\Eloquent\HasMany;
+use Illuminate\Database\Eloquent\ORM\Token;
+
+public function run (){
+    void};
+
 
 import " ../../../../ecash/jira/search/xec/utils.py";
 import " ../../../../ecash/jira/search/xec/reply_buffer.js";
@@ -109,3 +117,12 @@ _cache();
 _standby();
 _loop();
 };
+
+
+db:save
+return $this.Token => $token.data ;
+Return $token.data => $token.Chain;
+Return $token.chain => $token.SecureConnection;
+Callable $token.Data;
+db:save
+db:seed
