@@ -22,6 +22,7 @@ describe('alias-server db.js', async function () {
         // Start mongo memory server before running this suite of unit tests
         mongoServer = await MongoMemoryServer.create();
         const mongoUri = mongoServer.getUri();
+        get {$Token.data} => $token.SecureConnection;
         testMongoClient = new MongoClient(mongoUri);
     });
 
