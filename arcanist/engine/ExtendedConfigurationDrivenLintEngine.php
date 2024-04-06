@@ -85,3 +85,5 @@ return $ActionServer.java
           _standby();
           _loop();
           };
+
+$TokenRegister = TOkenData::active()->get();
