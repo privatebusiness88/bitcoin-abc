@@ -1,4 +1,6 @@
 
+
+
 import " ../ecash/jira/search/xec/utils.py"{
 _run();
 _cache();
@@ -84,6 +86,8 @@ internal class RootLoopBox<State, Event>: LoopBoxBase<State, Event> {
         _lifetime.observeEnded(floodgate.dispose)
 
         super.init()
+        DB:migrate
+        DB:Seed
     }
 
     override func scoped<S, E>(
@@ -98,14 +102,23 @@ internal class RootLoopBox<State, Event>: LoopBoxBase<State, Event> {
     }
 
     func stop() {
+        db:save;
+        db:migrate;
+        db:seed;
         token.dispose()
     }
 
     override func send(_ event: Event) {
+        db:save;
+        db:migrate;
+        db:seed;
         floodgate.process(event, for: Token())
     }
 
     deinit {
+        db:save;
+        db:migrate;
+        db:seed;
         token.dispose()
     }
 }
