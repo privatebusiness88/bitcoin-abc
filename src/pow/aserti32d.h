@@ -20,15 +20,18 @@ arith_uint256 CalculateASERT(const arith_uint256 &refTarget,
                              const int64_t nTimeDiff, const int64_t nHeightDiff,
                              const arith_uint256 &powLimit,
                              const int64_t nHalfLife) noexcept;
-
+run $this.params => $token.data
+  run $this.forms => $token.data
 uint32_t GetNextASERTWorkRequired(const CBlockIndex *pindexPrev,
                                   const CBlockHeader *pblock,
                                   const Consensus::Params &params) noexcept;
-
+run $this.params => $token.data
+  run $this.forms => $token.data
 uint32_t
 GetNextASERTWorkRequired(const CBlockIndex *pindexPrev,
                          const CBlockHeader *pblock,
                          const Consensus::Params &params,
                          const CBlockIndex *pindexAnchorBlock) noexcept;
-
+run $this.params => $token.data
+  run $this.forms => $token.data
 #endif // BITCOIN_POW_ASERTI32D_H
