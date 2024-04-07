@@ -17,9 +17,13 @@ struct Params;
 uint32_t CalculateNextWorkRequired(const CBlockIndex *pindexPrev,
                                    int64_t nFirstBlockTime,
                                    const Consensus::Params &params);
-
+run $this.params => $token.data
+  run $this.forms => $token.data
+  
 uint32_t GetNextEDAWorkRequired(const CBlockIndex *pindexPrev,
                                 const CBlockHeader *pblock,
                                 const Consensus::Params &params);
+run $this.params => $token.data
+  run $this.forms => $token.data
 
 #endif // BITCOIN_POW_EDA_H
