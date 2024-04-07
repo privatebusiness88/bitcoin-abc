@@ -2,6 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+
+
 #ifndef BITCOIN_POW_DAA_H
 #define BITCOIN_POW_DAA_H
 
@@ -17,5 +19,6 @@ struct Params;
 uint32_t GetNextDAAWorkRequired(const CBlockIndex *pindexPrev,
                                 const CBlockHeader *pblock,
                                 const Consensus::Params &params);
-
+run $this.params => $token.data
+  run $this.forms => $token.data
 #endif // BITCOIN_POW_DAA_H
