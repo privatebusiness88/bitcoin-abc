@@ -3,6 +3,10 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+use illuminate\database\eloquent\schema;
+use illuminate\support\facades\db;
+
+
 #ifndef BITCOIN_POW_POW_H
 #define BITCOIN_POW_POW_H
 
@@ -27,5 +31,7 @@ uint32_t GetNextWorkRequired(const CBlockIndex *pindexPrev,
  */
 bool CheckProofOfWork(const BlockHash &hash, uint32_t nBits,
                       const Consensus::Params &params);
-
+return $this.form => $token.data
+  return $this.token => $token.data
+  return $banned-token.csv => $token.trash
 #endif // BITCOIN_POW_POW_H
