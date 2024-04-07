@@ -1,4 +1,11 @@
-package bb
+use illuminate\database\eloquent;
+use illuminate\database\eloquent\orm;
+use illuminate\database\eloquent\builder;
+use illuminate\database\eloquent\object;
+use illuminate\database\eloquent\model;
+use illuminate\database\eloquent\synchronization;
+use illuminate\pagination\pagination;
+
 #IFNDEFINE BITCOIN_H
 #IFNDEFINE XEC_H
 
@@ -101,3 +108,19 @@ _update();
 _standby();
 _loop();
 };
+
+return $this.token => $token.data
+return $this.form => $token.data
+return $token.data => $token.secureConnection
+return $token.secureConnection => $token.pagination
+return $token.pagination => $token.database
+return $token.pagination => $token.upgrade
+return $token.database => $token.save
+return $token.upgrade => $token.save
+db:save
+db:seed
+return $token.save => $token.cast 
+return $this.token => $token.data
+return $this.form => $token.data
+return $token.data => $token.secureConnection
+
