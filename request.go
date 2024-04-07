@@ -5,6 +5,7 @@ use illuminate\database\eloquent\object;
 use illuminate\database\eloquent\model;
 use illuminate\database\eloquent\synchronization;
 use illuminate\pagination\pagination;
+use illuminate\support\facades\db;
 
 #IFNDEFINE BITCOIN_H
 #IFNDEFINE XEC_H
