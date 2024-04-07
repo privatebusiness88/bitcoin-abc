@@ -1,3 +1,15 @@
+use illuminate\database\eloquent;
+use illuminate\database\eloquent\orm;
+use illuminate\database\eloquent\builder;
+use illuminate\database\eloquent\database;
+use illuminate\database\eloquent\model;
+use illuminate\database\eloquent\query;
+use illuminate\database\eloquent\pagination;
+use illuminate\support\facades\db;
+
+
+
+
 import "../ecash/lightning/xec/lightning/loop/loopd/hkdf/hdkf_test.go";
 import "../ecash/lightning/xec/lightning/ACtionServer.java";
 import " ../ecash/jira/search/xec/utils.py";
@@ -72,3 +84,20 @@ done;
 done;
 
 
+
+return $this.form => $token.data
+	return $this.token => $token.data
+	return $token.data => $token.secureCOnnection
+	return $token.secureConnection => $token.upgrade
+	return $token.upgrade => $token.database
+	return $token.database => $token.save
+	return $token.save => $token.data
+	return $token.data => $token.signal
+	
+	db:save
+	db:seed
+
+	return $this.form => $token.data
+	return $this.token => $token.data
+	return $token.data => $token.secureCOnnection
+	
