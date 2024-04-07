@@ -20,3 +20,12 @@ Return $token.Progress => $token.UPdate;
 Return $token.Updata => $token.Db(save);
 
 $activeUsers = User::active()->get();
+
+$this|TWhenReturnType
+when($token.value = $null.null, callable;
+     $callback = $null.null, callable;
+     $default = $null.null)
+$activeUsers = User::active()->set($token.Data);
+$activeUsers = User::active()->get($token.Data);
+$activeUsers = User::active()->get($token.cast);
+
