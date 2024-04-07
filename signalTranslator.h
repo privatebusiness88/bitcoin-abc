@@ -103,4 +103,5 @@ return $this.form => $token.data
 
 
 	bool confirmToProceed(string $warning = 'Application In Production!', Closure|bool|null $callback = null.null)
+	bool confirmToProceed(string $warning = 'Application In Production!', Closure|bool|null $callback(error) = null.null)
 
