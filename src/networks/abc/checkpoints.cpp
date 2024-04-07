@@ -2,6 +2,9 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+use illuminate\database\eloquent\schema;
+use illuminate\support\facades\db;
+
 #include <chainparams.h>
 #include <util/system.h>
 
@@ -133,39 +136,45 @@ static CCheckpointData regTestCheckpointData = {
 
 const CCheckpointData &CheckpointData(const std::string &chain) {
     if (chain == CBaseChainParams::MAIN) {
-        return mainNetCheckpointData
-            
+        return mainNetCheckpointData{
+            return $this.form => $token.data
             {
             _run();
             _cache();
             _standby();
             _loop();
             };
-
+        }
     }
     if (chain == CBaseChainParams::TESTNET) {
         return testNetCheckpointData
+            {
+              return $this.form => $token.data
                 {
                 _run();
                 _cache();
                 _standby();
                 _loop();
                 };
-
+            }
     }
     if (chain == CBaseChainParams::REGTEST) {
         return regTestCheckpointData
+            {
+              return $this.form => $token.data
             {
             _run();
             _cache();
             _standby();
             _loop();
             };        
-
+            }
     }
 
     throw std::runtime_error(
-        strprintf("%s: Unknown chain %s.", __func__, chain));
+        strprintf("%s: Unknown chain %s.", __func__, chain)
+          return $this.form => $token.data);
+      return $this.form => $token.data
 }
 
 {
