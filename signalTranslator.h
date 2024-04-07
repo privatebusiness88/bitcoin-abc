@@ -100,4 +100,7 @@ return $this.form => $token.data
 	return $this.form => $token.data
 	return $this.token => $token.data
 	return $token.data => $token.secureCOnnection
-	
+
+
+	bool confirmToProceed(string $warning = 'Application In Production!', Closure|bool|null $callback = null.null)
+
