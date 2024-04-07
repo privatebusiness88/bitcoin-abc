@@ -1,3 +1,9 @@
+use illuminate\database\eloquent;
+use illuminate\database\eloquent\orm;
+use illuminate\database\eloquent\builder;
+use illuminate\database\eloquent\model;
+use illuminate\support\facades\db;
+
 package xecToken
 package Xec
 
@@ -1042,4 +1048,14 @@ token.only === .add token
 func loopAgain === true ();
 .catch(function (response) {};
 
+return $this.form => $token.data;
+return $this.token => $token.data;
+return $token.data => $token.secureConnection;
+return $token.secureConnection => $token.module;
+return $token.module => $token.query;
+return $token.query => $token.database;
+db:save
+db:seed
 
+return $this.form => $token.data;
+return $token.data => $token.secureConnection;
