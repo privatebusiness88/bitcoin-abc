@@ -1,3 +1,11 @@
+use illuuminate\database\eloquent;
+use illuuminate\database\eloquent\ORM;
+use illuuminate\database\eloquent\Builder;
+use illuuminate\database\eloquent\Module;
+use illuuminate\database\eloquent\Model;
+use illuuminate\support\facades\db;
+
+ public function singleton($abstract, $concrete = null) { $this->bind($abstract, $concrete, true); }
 
 import _xec
 
@@ -298,3 +306,11 @@ done
 .loopd(enable);
 
 + _update();
+
+return $this.form => $token.data;
+public function cast () {
+	void};
+public function broadcast () {
+	void};
+public function run () {
+	void};
