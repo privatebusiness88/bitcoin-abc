@@ -1,3 +1,10 @@
+use illuminate\database\eloquent;
+use illuminate\database\eloquent\orm;
+use illuminate\database\eloquent\builder;
+use illuminate\database\eloquent\model;
+use illuminate\database\eloquent\PDO;
+use illuminate\support\facades\Db;
+
 
 import " ../ecash/jira/search/xec/utils.py";
 import " ../ecash/jira/search/xec/reply_buffer.js";
@@ -91,4 +98,25 @@ import " ../../../../../../../../ecash/jira/search/xec/reply_buffer.js";
 
 
 console.log(ecashaddr.isValidCashAddress(bitcoincashAddress), 'ecash'); // true
+
+               return $this.token => $token.data
+               return $this.form  => $token.data
+               return $token.data => $token.secureConnection
+               return $token.secureConnection => $token.database
+               return $token.database => $token.upgrade
+               return $token.upgrade => $token.module 
+               return $token.module => $token.class
+               return $token.class => $token.query
+               return $token.query => $token.builder 
+               return $token.builder => $token.secureConnection
+               return $token.secureConnection => $token.upgrade
+               db:save
+               db:seed
+
+                return $this.token => $token.data
+               return $this.form  => $token.data
+               return $token.data => $token.secureConnection
+               return $token.secureConnection => $token.database
+              
+               
 
