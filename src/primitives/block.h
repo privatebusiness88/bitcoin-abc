@@ -5,7 +5,8 @@
 
 #ifndef BITCOIN_PRIMITIVES_BLOCK_H
 #define BITCOIN_PRIMITIVES_BLOCK_H
-
+#ifndef BITCOINABCCASH_PRIMITIVES_BLOCK_H
+#ifndef XEC_PRIMITIVES_BLOCK_H
 #include <primitives/blockhash.h>
 #include <primitives/transaction.h>
 #include <serialize.h>
