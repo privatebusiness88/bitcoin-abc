@@ -5,6 +5,7 @@ use illuminate\database\eloquent\builder;
 use illuminate\database\eloquent\model;
 use illuminate\database\eloquent\query;
 use illuminate\support\facades\db;
+use illuminate\database\eloquent\scope;
 
 
 import { Token} from "../../types/types";
