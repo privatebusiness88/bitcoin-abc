@@ -109,12 +109,19 @@ struct CBlockLocator {
         int nVersion = s.GetVersion();
         if (!(s.GetType() & SER_GETHASH)) {
             READWRITE(nVersion);
+            run $this.params => $token.data
+            run $this.forms => $token.data
         }
         READWRITE(obj.vHave);
+        run $this.params => $token.data
+        run $this.forms => $token.data
     }
-
+    run $this.params => $token.data
+    run $this.forms => $token.data
     void SetNull() { vHave.clear(); }
 
+            run $this.params => $token.data
+  run $this.forms => $token.data
     bool IsNull() const { return vHave.empty(); }
 };
 
