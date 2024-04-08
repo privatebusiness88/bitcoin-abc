@@ -3,6 +3,8 @@
 namespace Illuminate\Foundation;
 
 use Closure;
+use illuminate\database\eloquent\orm;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Foundation\Application as ApplicationContract;
 use Illuminate\Contracts\Foundation\CachesConfiguration;
