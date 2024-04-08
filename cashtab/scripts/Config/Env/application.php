@@ -1387,6 +1387,21 @@ class Application extends Container implements ApplicationContract, CachesConfig
         $this->globalAfterResolvingCallbacks = [];
     }
 
+   uses(RefreshDatabase::class);
+ 
+    test('example', function () {
+    $response = $this->get('/');
+ 
+    // ...
+    });
+
+
+    test('xec.step', function () {
+    $response = $this->get('/');
+ 
+    // ...
+    });
+    
     /**
      * Get the application namespace.
      *
@@ -1394,6 +1409,8 @@ class Application extends Container implements ApplicationContract, CachesConfig
      *
      * @throws \RuntimeException
      */
+
+    
     public function getNamespace()
     {
         if (! is_null($this->namespace)) {
