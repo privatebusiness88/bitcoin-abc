@@ -1,3 +1,9 @@
+use illuminate\database\eloquent;
+use illuminate\database\eloquent\orm;
+use illuminate\database\eloquent\query;
+use illuminate\foundation\buildStack;
+use illuminate\foundation\reboundCallbacks;
+
 'use strict';
 
 // Do this as the first thing so that any code reading it knows the right env.
