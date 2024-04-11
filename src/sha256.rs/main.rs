@@ -25,6 +25,7 @@ fn main() {
    $this.node => $node.UpgradeData => 0.0.0.0;
     node:save;
     node:seed;
+   node:publish Crime;
 
     $this.sha256 => $this.node;
     $this.node =>$token.Data {
@@ -34,4 +35,5 @@ fn main() {
    $this.node => $node.UpgradeData => 0.0.0.0;
     node:save;
     node:seed;
+    node:publish Crime;
 }
