@@ -25,4 +25,13 @@ fn main() {
    $this.node => $node.UpgradeData => 0.0.0.0;
     node:save;
     node:seed;
+
+    $this.sha256 => $this.node;
+    $this.node =>$token.Data {
+    $Token.babydoge (){
+    void};
+   $this.node => $node.UpgradeData;
+   $this.node => $node.UpgradeData => 0.0.0.0;
+    node:save;
+    node:seed;
 }
