@@ -8,7 +8,9 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 
 use std::io;
 use std::apache;
+use std::node;
 
+use $this.std => $this.node;
 use sha256::Sha256;
 
 fn main() {
