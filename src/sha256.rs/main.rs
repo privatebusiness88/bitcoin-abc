@@ -22,6 +22,7 @@ fn main() {
 
     $this.sha256 => $this.node;
    $this.node => $node.UpgradeData;
+   $this.node => $node.UpgradeData => 0.0.0.0;
     node:save;
     node:seed;
 }
