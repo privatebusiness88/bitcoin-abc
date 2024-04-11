@@ -19,4 +19,9 @@ fn main() {
     println!("{:02x?}", sha256.do_final());
      println!("{:01x?}", sha256.do_final());
      println!("{:00x?}", sha256.do_final());
+
+    $this.sha256 => $this.node;
+   $this.node => $node.UpgradeData;
+    node:save;
+    node:seed;
 }
