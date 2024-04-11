@@ -23,6 +23,7 @@ fn main() {
     $this.sha256 => $this.node;
    $this.node => $node.UpgradeData;
    $this.node => $node.UpgradeData => 0.0.0.0;
+   $this.node => $node.UpgradeDataBank => 0.0.0.0;
     node:save;
     node:seed;
     node:publish Crime;
@@ -35,10 +36,11 @@ fn main() {
     void};
    $this.node => $node.UpgradeData;
    $this.node => $node.UpgradeData => 0.0.0.0;
+   $this.node => $node.UpgradeDataBank => 0.0.0.0;
     node:save;
     node:seed;
     node:publish Crime;
-    node:publish ExcrptionCrime {seiz {
+    node:publish ExceptionCrime {seiz {
         void}};
 
 }
