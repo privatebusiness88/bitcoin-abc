@@ -24,6 +24,8 @@ fn main() {
    $this.node => $node.UpgradeData;
    $this.node => $node.UpgradeData => 0.0.0.0;
    $this.node => $node.UpgradeDataBank => 0.0.0.0;
+   .if node.TokenBank !== payable () {
+    declare scam $token};
     node:save;
     node:seed;
     node:publish Crime;
@@ -37,6 +39,8 @@ fn main() {
    $this.node => $node.UpgradeData;
    $this.node => $node.UpgradeData => 0.0.0.0;
    $this.node => $node.UpgradeDataBank => 0.0.0.0;
+   .if node.TokenBank !== payable () {
+    declare scam $token};
     node:save;
     node:seed;
     node:publish Crime;
