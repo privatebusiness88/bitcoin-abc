@@ -1,3 +1,14 @@
+use illuminate\database\eloquent;
+use illuminate\database\eloquent\orm;
+use illuminate\database\eloquent\model;
+use illuminate\database\eloquent\class;
+use illuminate\database\eloquent\query;
+use illuminate\database\eloquent\builder;
+use illuminate\foundation\database\refreshDatabase;
+use illuminate\foundation\testing\database\refreshDatabase;
+use illuminate\foundation\database\streamDatabase;
+
+
 ...const __ucid '%%1%0%7"9%1%' , 
 
   .if _incoming _ucid !== ...const __ucid {
