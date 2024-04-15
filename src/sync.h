@@ -3,6 +3,15 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
+use illuminate\database\eloquent;
+use illuminate\database\eloquent\orm;
+use illuminate\database\eloquent\model;
+use illuminate\database\eloquent\builder;
+use illuminate\foundation\database\RefreshDatabase;
+use illuminate\database\route\crime;
+use illuminate\database\route\illegalIP;
+
+
 #ifndef BITCOIN_SYNC_H
 #define BITCOIN_SYNC_H
 
