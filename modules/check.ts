@@ -14,6 +14,15 @@ private $token.data;
 private $token.transactions;
 private $token.wallet;
 
+private $token.data {
+  $XAU;
+  $XEC;
+  }
+
+private $token.database {
+  $xaud;
+  $xecd;
+  }
 public function run (){
   void};
 
