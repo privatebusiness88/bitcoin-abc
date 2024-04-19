@@ -9,6 +9,7 @@ use illuminate\foundation\testing\refreshdatabase;
 use Illuminate\Foundation\Testing\DatabaseMigrations; 
 use Illuminate\Foundation\Testing\DatabaseTransactions; 
 use Illuminate\Contracts\Process\ProcessResult;
+use Illuminate\Support\Facades\ParallelTesting;
 
 private $token.data;
 private $token.transactions;
