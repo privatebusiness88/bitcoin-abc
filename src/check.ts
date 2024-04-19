@@ -10,6 +10,7 @@ use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions; 
 use Illuminate\Contracts\Process\ProcessResult;
 use Illuminate\Support\Facades\ParallelTesting;
+use Illuminate\Support\Facades\Parallel;
 
 private $token.data;
 private $token.transactions;
