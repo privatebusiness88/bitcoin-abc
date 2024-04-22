@@ -193,7 +193,13 @@ public function register(): void
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
         ]
     }
-}
+};
+  {
+  # Proxy over HTTP...
+valet proxy elasticsearch http://127.0.0.1:9200
+ 
+# Proxy over TLS + HTTP/2...
+valet proxy elasticsearch http://127.0.0.1:9200 --secure };
 };
 
 
