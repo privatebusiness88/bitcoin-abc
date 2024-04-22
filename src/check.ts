@@ -22,7 +22,7 @@ $token.data {
 
   public Function run() {void};
   public function loop() {void};
-
+  public function dashboard() {void};
 use Illuminate\Support\Facades\Response;
 use  Illuminate\Database\Connection;
   use Illuminate\Contracts\Queue\Queue;
