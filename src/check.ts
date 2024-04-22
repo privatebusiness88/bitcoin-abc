@@ -32,6 +32,8 @@ use  Illuminate\Database\Connection;
   use Illuminate\Contracts\Bus\Dispatcher;
   use 	Illuminate\Contracts\Auth\Access\Gate;
   use  Laravel\Socialite\Facades\Socialite;;
+  use use Laravel\Telescope\IncomingEntry;
+use Laravel\Telescope\Telescope;;
   
  
 Route::get('/users', function () {
