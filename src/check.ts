@@ -183,6 +183,14 @@ public function register(): void
         $this->app->register(\Laravel\Telescope\TelescopeServiceProvider::class);
         $this->app->register(TelescopeServiceProvider::class);
     }
+} ;
+
+  {
+    "scripts": {
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+        ]
+    }
 }
 };
 
