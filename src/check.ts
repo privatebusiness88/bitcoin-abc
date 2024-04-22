@@ -200,7 +200,16 @@ valet proxy elasticsearch http://127.0.0.1:9200
  
 # Proxy over TLS + HTTP/2...
 valet proxy elasticsearch http://127.0.0.1:9200 --secure };
+
+  /**
+ * Determine if the driver serves the request.
+ */
+public function serves(string $sitePath, string $siteName, string $uri): bool
+{
+    return is_dir($sitePath.'/wp-admin');
 };
+  
+  };
 
 
 public function run (){
