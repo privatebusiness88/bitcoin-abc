@@ -29,6 +29,7 @@ use  Illuminate\Database\Connection;
   use Illuminate\Redis\Connections\Connection;
   use Illuminate\Pipeline\Pipeline;
   use Illuminate\Foundation\Vite;
+  use Illuminate\Contracts\Bus\Dispatcher;
   
  
 Route::get('/users', function () {
