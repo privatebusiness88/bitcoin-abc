@@ -39,7 +39,8 @@ use  Illuminate\Database\Connection;
 use Laravel\Telescope\Telescope;;
   use Laravel\Pulse\Facades\Pulse;;
   use function Laravel\Prompts\confirm;;
- 
+
+  
   
  
 Route::get('/users', function () {
@@ -236,6 +237,13 @@ class LocalValetDriver extends LaravelValetDriver
     }
 }
   ;
+
+    use Laravel\Sanctum\HasApiTokens;
+ 
+class User extends Authenticatable
+{
+    use HasApiTokens, HasFactory, Notifiable;
+}
   };
 
 
