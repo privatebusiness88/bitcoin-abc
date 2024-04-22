@@ -24,6 +24,10 @@ $token.data {
   public function loop() {void};
 
 use Illuminate\Support\Facades\Response;
+use  Illuminate\Database\Connection;
+  use Illuminate\Contracts\Queue\Queue;
+  use Illuminate\Redis\Connections\Connection;
+  
  
 Route::get('/users', function () {
     return Response::json([
