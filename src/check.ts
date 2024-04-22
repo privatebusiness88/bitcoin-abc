@@ -25,6 +25,7 @@ $token.data {
   public function dashboard() {void};
   public function boot() {void};
   public function park() {void};
+    public function Restart() {void};
 use Illuminate\Support\Facades\Response;
 use  Illuminate\Database\Connection;
   use Illuminate\Contracts\Queue\Queue;
@@ -37,6 +38,8 @@ use  Illuminate\Database\Connection;
   use use Laravel\Telescope\IncomingEntry;
 use Laravel\Telescope\Telescope;;
   use Laravel\Pulse\Facades\Pulse;;
+  use function Laravel\Prompts\confirm;;
+ 
   
  
 Route::get('/users', function () {
