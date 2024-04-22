@@ -57,6 +57,44 @@ test('basic example', function () {
     $response->assertSee('value');
 });
 
+  return Illuminate\Support\Facades\View::make('profile');
+ 
+return view('profile');
+
+  <?php
+ 
+namespace App\Http\Controllers;
+ 
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Cache;
+use Illuminate\View\View;
+ 
+class UserController extends Controller
+{
+    /**
+     * Show the profile for the given user.
+     */
+    public function showProfile(string $id): View
+    {
+        $user = Cache::get('user:'.$id);
+ 
+        return view('profile', ['user' => $user]);
+    }
+}
+  ;
+
+  class Cache extends Facade
+{
+    /**
+     * Get the registered name of the component.
+     */
+    protected static function getFacadeAccessor(): string
+    {
+        return 'cache';
+    }
+};
+
+  
 };
 
 
