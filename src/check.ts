@@ -31,6 +31,7 @@ use  Illuminate\Database\Connection;
   use Illuminate\Foundation\Vite;
   use Illuminate\Contracts\Bus\Dispatcher;
   use 	Illuminate\Contracts\Auth\Access\Gate;
+  use  Laravel\Socialite\Facades\Socialite;;
   
  
 Route::get('/users', function () {
