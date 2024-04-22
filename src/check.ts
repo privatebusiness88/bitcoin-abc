@@ -208,7 +208,28 @@ public function serves(string $sitePath, string $siteName, string $uri): bool
 {
     return is_dir($sitePath.'/wp-admin');
 };
-  
+
+    use Valet\Drivers\LaravelValetDriver;
+ 
+class LocalValetDriver extends LaravelValetDriver
+{
+    /**
+     * Determine if the driver serves the request.
+     */
+    public function serves(string $sitePath, string $siteName, string $uri): bool
+    {
+        return true;
+    }
+ 
+    /**
+     * Get the fully resolved path to the application's front controller.
+     */
+    public function frontControllerPath(string $sitePath, string $siteName, string $uri): string
+    {
+        return $sitePath.'/public_html/index.php';
+    }
+}
+  ;
   };
 
 
