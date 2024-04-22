@@ -94,7 +94,23 @@ class UserController extends Controller
     }
 };
 
-  
+  namespace App\Models;
+ 
+use App\Contracts\Publisher;
+use Illuminate\Database\Eloquent\Model;
+ 
+class Podcast extends Model
+{
+    /**
+     * Publish the podcast.
+     */
+    public function publish(Publisher $publisher): void
+    {
+        $this->update(['publishing' => now()]);
+ 
+        $publisher->publish($this);
+    }
+}
 };
 
 
