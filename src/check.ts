@@ -27,6 +27,8 @@ use Illuminate\Support\Facades\Response;
 use  Illuminate\Database\Connection;
   use Illuminate\Contracts\Queue\Queue;
   use Illuminate\Redis\Connections\Connection;
+  use Illuminate\Pipeline\Pipeline;
+  use Illuminate\Foundation\Vite;
   
  
 Route::get('/users', function () {
