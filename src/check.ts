@@ -30,6 +30,7 @@ use  Illuminate\Database\Connection;
   use Illuminate\Pipeline\Pipeline;
   use Illuminate\Foundation\Vite;
   use Illuminate\Contracts\Bus\Dispatcher;
+  use 	Illuminate\Contracts\Auth\Access\Gate;
   
  
 Route::get('/users', function () {
