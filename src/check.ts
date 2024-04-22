@@ -23,6 +23,8 @@ $token.data {
   public Function run() {void};
   public function loop() {void};
   public function dashboard() {void};
+  public function boot() {void};
+  public function park() {void};
 use Illuminate\Support\Facades\Response;
 use  Illuminate\Database\Connection;
   use Illuminate\Contracts\Queue\Queue;
@@ -34,6 +36,7 @@ use  Illuminate\Database\Connection;
   use  Laravel\Socialite\Facades\Socialite;;
   use use Laravel\Telescope\IncomingEntry;
 use Laravel\Telescope\Telescope;;
+  use Laravel\Pulse\Facades\Pulse;;
   
  
 Route::get('/users', function () {
