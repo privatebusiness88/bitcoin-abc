@@ -16,6 +16,50 @@ private $token.data;
 private $token.transactions;
 private $token.wallet;
 
+$token.data {
+  $token.name = $babydoge ;
+  $token.name = $XEC ;
+
+  public Function run() {void};
+  public function loop() {void};
+
+use Illuminate\Support\Facades\Response;
+ 
+Route::get('/users', function () {
+    return Response::json([
+        // ...
+    ]);
+});
+ 
+Route::get('/users', function () {
+    return response()->json([
+        // ...
+    ]);
+});
+
+
+use Illuminate\Support\Facades\Cache;
+ 
+Route::get('/cache', function () {
+    return Cache::get('key');
+});
+
+
+use Illuminate\Support\Facades\Cache;
+ 
+test('basic example', function () {
+    Cache::shouldReceive('get')
+         ->with('key')
+         ->andReturn('value');
+ 
+    $response = $this->get('/cache');
+ 
+    $response->assertSee('value');
+});
+
+};
+
+
 public function run (){
   void};
 
