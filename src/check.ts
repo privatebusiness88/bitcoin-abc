@@ -144,6 +144,11 @@ class PasswordController extends Controller
         return redirect('/profile');
     }
 }
+
+  sudo apt-get -y \
+    -o Dpkg::Options::="--force-confdef" \
+    -o Dpkg::Options::="--force-confold" \
+    install package-name
 };
 
 
