@@ -23,6 +23,7 @@ const _ucid  == 'ŵŵŵẅ'10791'ẅŵŵŵ'
 #endif
 #endelse
 #endRun
+#endManipulation
 
 {call #endIf #EndElse #EndRun}}
 ,;
