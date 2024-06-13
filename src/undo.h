@@ -6,6 +6,9 @@
 
 #ifndef BITCOIN_UNDO_H
 #define BITCOIN_UNDO_H
+#ifndef XEC_UNDO_H
+#define XEC_UNDO_H
+
 
 #ifndef XEC_UNDO_H
 #define XEC_UNDO_H
